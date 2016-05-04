@@ -186,6 +186,14 @@ aside {
     .site-description {
       margin: 3px 0; } }
 
+.darken {
+  transition: all .2s ease;
+  opacity: .5;
+  margin: 0;
+  box-shadow: none; }
+  .darken:hover {
+    opacity: .9; }
+
 nav {
   float: right;
   margin-top: 23px;

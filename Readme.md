@@ -3,4 +3,4 @@
 ##### Made using Jekyll
 
 
-[Link to Website](http://http://nihal111.github.io/)
+[Link to Website](http://nihal111.github.io/)
