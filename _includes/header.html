@@ -1,0 +1,33 @@
+<aside>
+	<div class="container">
+		<nav>
+			<ul>
+				{% for page in site.pages %} {% if page.title %}
+				<li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+				{% endif %} {% endfor %}
+				<li><a href="{{ "/blog" | prepend: site.baseurl }}">Blog</a></li>
+			</ul>
+			</li>
+			</ul>
+		</nav>
+	</div>
+</aside>
+
+<div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.myname }}</a></h1>
+            <p class="site-description">{{ site.byline }}</p>
+          </div>
+          
+          <!-- <nav>
+            <a href="/">Blog</a>
+            <a href="/about">About</a>
+          </nav> -->
+          
+        </header>
+      </div>
+</div>
