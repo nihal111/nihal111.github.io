@@ -6,8 +6,8 @@
 </description>
     <link>http://nihal111.github.io/about/</link>
     <atom:link href="http://nihal111.github.io/about/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 04 May 2016 08:56:35 +0530</pubDate>
-    <lastBuildDate>Wed, 04 May 2016 08:56:35 +0530</lastBuildDate>
+    <pubDate>Wed, 04 May 2016 09:08:43 +0530</pubDate>
+    <lastBuildDate>Wed, 04 May 2016 09:08:43 +0530</lastBuildDate>
     <generator>Jekyll v3.1.3</generator>
     
       <item>
@@ -16,9 +16,9 @@
 
 &lt;p&gt;It’s been a while since I first thought of creating my github homepage and blog. And I can’t believe I finally made it.&lt;/p&gt;
 
-&lt;p&gt;Also, this is the first time I’ve used Jekyll to create a website. Apart from a few impediments in CSS, the journey to completion smooth. The markdown to HTML conversion is awesome and blog maintenance is easy as well.&lt;/p&gt;
+&lt;p&gt;Also, this is the first time I’ve used &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; to create a website. Apart from a few impediments in CSS, the journey to completion was smooth. The markdown to HTML conversion is awesome and blog maintenance is easy as well. You could &lt;a href=&quot;https://github.com/nihal111/nihal111.github.io/fork&quot;&gt;fork&lt;/a&gt; this &lt;a href=&quot;https://github.com/nihal111/nihal111.github.io&quot;&gt;repo&lt;/a&gt; and play around with it.&lt;/p&gt;
 
-&lt;p&gt;I’ve made a projects section which I’ll keep updating with my latest developments and contributions. I plan to use this blog to write about my experiences and other interesting stuff I come across.&lt;/p&gt;
+&lt;p&gt;I’ve made a &lt;a href=&quot;/projects&quot;&gt;projects&lt;/a&gt; section which I’ll keep updating with my latest developments and contributions. I plan to use this blog to write about my experiences and other interesting stuff I come across.&lt;/p&gt;
 
 &lt;p&gt;It’s been a long night. I should go to bed before sunrise!&lt;/p&gt;
 

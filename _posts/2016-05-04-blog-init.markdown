@@ -8,9 +8,9 @@ Hi, there! You've stumbled upon my first blog post.
 
 It's been a while since I first thought of creating my github homepage and blog. And I can't believe I finally made it.
 
-Also, this is the first time I've used Jekyll to create a website. Apart from a few impediments in CSS, the journey to completion smooth. The markdown to HTML conversion is awesome and blog maintenance is easy as well.
+Also, this is the first time I've used [Jekyll](https://jekyllrb.com/) to create a website. Apart from a few impediments in CSS, the journey to completion was smooth. The markdown to HTML conversion is awesome and blog maintenance is easy as well. You could [fork](https://github.com/nihal111/nihal111.github.io/fork) this [repo](https://github.com/nihal111/nihal111.github.io) and play around with it.
 
-I've made a projects section which I'll keep updating with my latest developments and contributions. I plan to use this blog to write about my experiences and other interesting stuff I come across.
+I've made a [projects](/projects) section which I'll keep updating with my latest developments and contributions. I plan to use this blog to write about my experiences and other interesting stuff I come across.
 
 It's been a long night. I should go to bed before sunrise!
 
