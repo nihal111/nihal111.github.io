@@ -286,6 +286,49 @@ nav {
     float: none;
     width: -webkit-calc(100% - (30px / 2));
     width: calc(100% - (30px / 2)); } }
+.tag-cloud {
+  list-style: none;
+  padding: 0;
+  text-align: justify;
+  font-size: 16px; }
+  .tag-cloud li {
+    display: inline-block;
+    margin: 0 12px 12px 0; }
+
+#archives {
+  padding: 5px; }
+
+.archive-group {
+  margin: 5px;
+  border-top: 1px solid #ddd; }
+
+.archive-item {
+  margin-left: 5px; }
+
+.tag {
+  padding: 3px 6px;
+  border-radius: 3px;
+  font-size: 1.1rem;
+  background: #ededed;
+  color: #666;
+  letter-spacing: 1px;
+  margin: 0 0.5rem;
+  text-decoration: none; }
+
+.tag-date {
+  position: relative;
+  top: 2px;
+  margin: 0;
+  width: 25%;
+  float: right;
+  font-weight: 300;
+  color: #FFF;
+  text-align: right;
+  font-size: 1.2rem; }
+
+.tag-link :hover {
+  color: #4183C4; }
+
 /**
  * Syntax highlighting styles
  */

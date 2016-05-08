@@ -2,32 +2,38 @@
 layout: default
 --- 
 
-	<h2>{{ page.title }}</h2>
-	<time>{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</time>
-	{{ content }}
+<center>
+<h2>{{ page.title }}</h2>
+<time><i>Wriiten on {{ page.date | date: "%b %-d, %Y" }}</i>{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</time>
+<br><br>
+{% include post-tags.html %}
+</center>
 
 
-	<!-- Code for disqus comments -->
-	{% if page.comments %}
-	<div id="disqus_thread"></div>
-	<script>
-	
-	var disqus_config = function () {
-	this.page.url = "{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"; // Replace PAGE_URL with your page's canonical URL variable
-	this.page.identifier = "{{ page.id }}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-	};
+{{ content }}
 
-	(function() { // DON'T EDIT BELOW THIS LINE
-	var d = document, s = d.createElement('script');
 
-	s.src = '//nihal111.disqus.com/embed.js';
+<!-- Code for disqus comments -->
+{% if page.comments %}
+<div id="disqus_thread"></div>
+<script>
 
-	s.setAttribute('data-timestamp', +new Date());
-	(d.head || d.body).appendChild(s);
-	})();
-	</script>
-	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-	{% endif %}	
+var disqus_config = function () {
+this.page.url = "{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"; // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = "{{ page.id }}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+
+s.src = '//nihal111.disqus.com/embed.js';
+
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+{% endif %}	
 
 
 

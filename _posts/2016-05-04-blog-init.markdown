@@ -3,6 +3,9 @@ layout: post
 title:  "Blog init"
 date: 2016-05-04
 comments: true
+tags:
+- firstpost
+- jekyll
 ---
 Hi, there! You've stumbled upon my first blog post.
 

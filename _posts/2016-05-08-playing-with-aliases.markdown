@@ -2,6 +2,9 @@
 layout: post
 title:  "Playing with aliases"
 date: 2016-05-08
+tags:
+- bash
+- tutorial
 ---
 
 Since I can't do without my games, I can't do without Windows, and I have to dualboot. This means that most of my data is stored on a disk shared between both the operating systems. The path to the directory where I keep my projects thus becomes rather long. And I like to keep an alias for it.
