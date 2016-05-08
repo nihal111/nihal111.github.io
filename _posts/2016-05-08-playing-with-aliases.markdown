@@ -2,6 +2,7 @@
 layout: post
 title:  "Playing with aliases"
 date: 2016-05-08
+comments: true
 tags:
 - bash
 - tutorial
