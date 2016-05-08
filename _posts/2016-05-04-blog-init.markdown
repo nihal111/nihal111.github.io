@@ -13,7 +13,7 @@ I've made a [projects](/projects) section which I'll keep updating with my lates
 
 It's been a long night. I should go to bed before sunrise!
 
-{% highlight python %}
+{% highlight bash %}
 blog init
 echo "Hello World!"
 {% endhighlight %}

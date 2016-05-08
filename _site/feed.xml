@@ -6,9 +6,132 @@
 </description>
     <link>http://nihal111.github.io/about/</link>
     <atom:link href="http://nihal111.github.io/about/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 04 May 2016 20:22:36 +0530</pubDate>
-    <lastBuildDate>Wed, 04 May 2016 20:22:36 +0530</lastBuildDate>
+    <pubDate>Sun, 08 May 2016 19:01:18 +0530</pubDate>
+    <lastBuildDate>Sun, 08 May 2016 19:01:18 +0530</lastBuildDate>
     <generator>Jekyll v3.1.3</generator>
+    
+      <item>
+        <title>Playing with aliases</title>
+        <description>&lt;p&gt;Since I can’t do without my games, I can’t do without Windows, and I have to dualboot. This means that most of my data is stored on a disk shared between both the operating systems. The path to the directory where I keep my projects thus becomes rather long. And I like to keep an alias for it.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;code&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;cd /media/Nihal/Code&#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;What this would do is create an alias by the name of ‘code’ which would exist till the time you killed the terminal. Rather I have created a permanent alias for it, which is stored by copying the above line into the &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.bash_aliases&lt;/code&gt;&lt;/strong&gt; file in the home directory (if it doesn’t exist, you should really create one). I wanted to create a few more permanent aliases as and when needed and the process to do so felt tedious. Alas! I wrote another alias for it. Let’s talk about the &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.bashrc&lt;/code&gt;&lt;/strong&gt; and &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.bash_aliases&lt;/code&gt;&lt;/strong&gt; file before getting there.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-bashrc-file&quot;&gt;The &lt;strong&gt;&lt;em&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.bashrc&lt;/code&gt;&lt;/em&gt;&lt;/strong&gt; file&lt;/h3&gt;
+&lt;p&gt;In the home directory there also exists a &lt;code class=&quot;highlighter-rouge&quot;&gt;.bashrc&lt;/code&gt; file which shall contain a lot of oher things. The &lt;code class=&quot;highlighter-rouge&quot;&gt;.bashrc&lt;/code&gt; file is a script which executes evereytime a terminal is started in the &lt;strong&gt;interactive mode&lt;/strong&gt;. It contains a set of configurations for the terminal.  The &lt;code class=&quot;highlighter-rouge&quot;&gt;.bashrc&lt;/code&gt; file provides a space to set up variables, functions, aliases etc that you may want to use. The &lt;code class=&quot;highlighter-rouge&quot;&gt;.bashrc&lt;/code&gt; is then run every time you open up a new terminal. Be careful, that any error or change you make in the &lt;code class=&quot;highlighter-rouge&quot;&gt;.bashrc&lt;/code&gt; file will be reflected in all subsequent terminal windows launced. Also if you have a terminal window running, and you make changes to the &lt;code class=&quot;highlighter-rouge&quot;&gt;.bashrc&lt;/code&gt; file thereafter, you will obviously have no effect on the running terminal and you may want to restart it.&lt;/p&gt;
+
+&lt;h3 id=&quot;loading-the-bashaliases-file&quot;&gt;Loading the &lt;strong&gt;&lt;em&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.bash_aliases&lt;/code&gt;&lt;/em&gt;&lt;/strong&gt; file&lt;/h3&gt;
+&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;.bashrc&lt;/code&gt; file does a fine job of loading the &lt;code class=&quot;highlighter-rouge&quot;&gt;.bash_aliases&lt;/code&gt; file like so:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; -f ~/.bash_aliases &lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;; &lt;span class=&quot;k&quot;&gt;then&lt;/span&gt;
+    . ~/.bash_aliases
+&lt;span class=&quot;k&quot;&gt;fi&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;This essentially allows &lt;code class=&quot;highlighter-rouge&quot;&gt;.bashrc&lt;/code&gt; to load the ‘.bash_aliases’ file within itself, preventing you from meddling with it and managing the list of aliases neatly.&lt;/p&gt;
+
+&lt;h3 id=&quot;creating-a-permanent-alias&quot;&gt;Creating a Permanent Alias&lt;/h3&gt;
+&lt;p&gt;Creating a permanent alias is easy. Just open up ~/.bash_aliases and append the following line to it.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;bar&#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Whenever you type in “foo”, “bar” will be passed as an input to the terminal.&lt;br /&gt;
+&lt;strong&gt;Note:&lt;/strong&gt; You can do this with ~/.bashrc as well but it is neater not to.&lt;/p&gt;
+
+&lt;p&gt;A perhaps better way to do this would be to automate the task and save yourself the hassle of opening a the fine and appending to it manually. And what better way to create aliases by using another alias? I wanted to have a way to create a permanent alias by just typing in a ‘p’ before alias like so:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;palias &lt;span class=&quot;nv&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;bar&#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;To do this, I opened up &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.bash_aliases&lt;/code&gt; and created a function called permanent_alias and called it every time I entered “palias” on the terminal:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;permanent_alias&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;KEY&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$1&lt;/span&gt; | cut -d&lt;span class=&quot;s2&quot;&gt;&quot;=&quot;&lt;/span&gt; -f 1&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;VALUE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$1&lt;/span&gt; | cut -d&lt;span class=&quot;s2&quot;&gt;&quot;=&quot;&lt;/span&gt; -f 2-&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; -e &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$KEY&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;=&#39;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$VALUE&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&#39;&quot;&lt;/span&gt; &amp;gt;&amp;gt; /home/nihal/.bash_aliases
+    &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;New permanent bash alias set: alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$KEY&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;=&#39;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$VALUE&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&#39;&quot;&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;alias&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$KEY&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;$VALUE&#39;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;#Create alias for function call&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;palias&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;permanent_alias&#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h4 id=&quot;explanation&quot;&gt;Explanation&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;$1 is a &lt;strong&gt;positional parameter&lt;/strong&gt; that returns the first argument passed. Since “palias” is an alias to a function call, it returns the first word after the word “palias”, without the inverted commas. &lt;code class=&quot;highlighter-rouge&quot;&gt;palias foo=&#39;bar&#39;&lt;/code&gt; will return foo=bar as $1.&lt;br /&gt;
+Interestingly, $0 returns the address of the script or shell running. In this case /bin/bash&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;$KEY&lt;/strong&gt; and &lt;strong&gt;$VALUE&lt;/strong&gt; variables are defined by splitting the string in $1 at the first “=”. The string &lt;strong&gt;$1&lt;/strong&gt; is passed to cut and with delimiter (&lt;strong&gt;-d&lt;/strong&gt;) as “&lt;strong&gt;=&lt;/strong&gt;”, fields (&lt;strong&gt;-f&lt;/strong&gt;) &lt;strong&gt;1&lt;/strong&gt; and &lt;strong&gt;2-&lt;/strong&gt; are selected&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;foo=&#39;bar&#39;&quot;&lt;/span&gt; | cut -d&lt;span class=&quot;s2&quot;&gt;&quot;=&quot;&lt;/span&gt; -f 1
+&lt;span class=&quot;c&quot;&gt;#returns &quot;foo&quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;foo=&#39;bar&#39;&quot;&lt;/span&gt; | cut -d&lt;span class=&quot;s2&quot;&gt;&quot;=&quot;&lt;/span&gt; -f 1
+&lt;span class=&quot;c&quot;&gt;#returns &quot;bar&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;echo &quot;foo=&#39;bar&#39;&quot; | cut -d&quot;=&quot; -f 1&lt;/code&gt; has the same effect as &lt;code class=&quot;highlighter-rouge&quot;&gt;echo &quot;foo=&#39;bar&#39;&quot; | cut --delimiter=&quot;=&quot; --fields 1 &lt;/code&gt;&lt;br /&gt;
+&lt;strong&gt;Note:&lt;/strong&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;echo &quot;foo=&#39;bar==car&#39;&quot; | cut -d&quot;=&quot; -f 2-&lt;/code&gt; fetches ‘bar==car’ while &lt;code class=&quot;highlighter-rouge&quot;&gt;echo &quot;foo=&#39;bar==car&#39;&quot; | cut 2&lt;/code&gt; fetches ‘bar&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Once KEY and VALUE are abstracted, they are appended to the &lt;code class=&quot;highlighter-rouge&quot;&gt;.bash_aliases&lt;/code&gt; file using&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; -e &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$KEY&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;=&#39;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$VALUE&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&#39;&quot;&lt;/span&gt; &amp;gt;&amp;gt; /home/user/.bash_aliases&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt;  The -e flag is for enabling interpretation of backslash escapes like “\n” (newline). &lt;code class=&quot;highlighter-rouge&quot;&gt;echo &quot;string&quot; &amp;gt;&amp;gt; file&lt;/code&gt; is used to append “string” at the end of file.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;alias $KEY=&#39;$VALUE&#39;&lt;/code&gt; allows you to use your newly declared permanent alias in the running terminal too, by declaring a temporary variable. Not doing this, would result in restarting of terminal for changes to take effect.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;usage&quot;&gt;Usage&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;For single word aliases, scrapping the inverted commas would do.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;palias &lt;span class=&quot;nv&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;bar&#39;&lt;/span&gt;
+and
+palias &lt;span class=&quot;nv&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;bar
+would have same effect as we manually add inverted commas later.&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	However,
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;palias &lt;span class=&quot;nv&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;cd /home&#39;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#$1 = &quot;cd /home&quot;&lt;/span&gt;
+and
+palias &lt;span class=&quot;nv&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /home	
+&lt;span class=&quot;c&quot;&gt;#$1 = &quot;cd&quot;&lt;/span&gt;
+would not have the same effect.&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;For special characters like “ ( , ) , @” etc, scrapping the inverted commas would not work&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;palias &lt;span class=&quot;nv&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;permanent_alias()&#39;&lt;/span&gt;
+and
+palias &lt;span class=&quot;nv&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;permanent_alias&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
+would not have same effect as &lt;span class=&quot;s2&quot;&gt;&quot;(&quot;&lt;/span&gt; would be an unexpected token.&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Garbage after the first space won’t matter.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;palias &lt;span class=&quot;nv&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;bar&#39;&lt;/span&gt;
+and
+palias &lt;span class=&quot;nv&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;bar&#39;&lt;/span&gt; this is an amazing blog
+would have same effect.&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Spaces around the “=” in &lt;code class=&quot;highlighter-rouge&quot;&gt;palias foo = &#39;bar&#39;&lt;/code&gt; wouldn’t work. They wouldn’t work with regular alias either, for that matter.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you’re still reading, I hope you found it useful. Till next time! :)&lt;/p&gt;
+</description>
+        <pubDate>Sun, 08 May 2016 00:00:00 +0530</pubDate>
+        <link>http://nihal111.github.io/about/2016/05/08/playing-with-aliases.html</link>
+        <guid isPermaLink="true">http://nihal111.github.io/about/2016/05/08/playing-with-aliases.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Blog init</title>
