@@ -67,11 +67,11 @@ Interestingly, $0 returns the address of the script or shell running. In this ca
 + **$KEY** and **$VALUE** variables are defined by splitting the string in $1 at the first "=". The string **$1** is passed to cut and with delimiter (**-d**) as "**=**", fields (**-f**) **1** and **2-** are selected
 {% highlight bash %}echo "foo='bar'" | cut -d"=" -f 1
 #returns "foo"
-echo "foo='bar'" | cut -d"=" -f 1
+echo "foo='bar'" | cut -d"=" -f 2
 #returns "bar"
 {% endhighlight %} 
 **Note:** `echo "foo='bar'" | cut -d"=" -f 1` has the same effect as `echo "foo='bar'" | cut --delimiter="=" --fields 1 `<br>
-**Note:** `echo "foo='bar==car'" | cut -d"=" -f 2-` fetches 'bar==car' while `echo "foo='bar==car'" | cut 2` fetches 'bar
+**Note:** `echo "foo='bar==car'" | cut -d"=" -f 2-` fetches 'bar==car' while `echo "foo='bar==car'" | cut -d"=" -f 2` fetches 'bar
 
 + Once KEY and VALUE are abstracted, they are appended to the `.bash_aliases` file using {% highlight bash %}echo -e "\nalias $KEY='$VALUE'" >> /home/user/.bash_aliases{% endhighlight %}
 **Note:**  The -e flag is for enabling interpretation of backslash escapes like "\n" (newline). `echo "string" >> file` is used to append "string" at the end of file.
@@ -89,10 +89,10 @@ would have same effect as we manually add inverted commas later.
 		However,
 {% highlight bash %}
 palias foo='cd /home'
-#$1 = "cd /home"
+#$1 = "foo=cd /home"
 and
 palias foo=cd /home	
-#$1 = "cd"
+#$1 = "foo=cd"
 would not have the same effect.
 {% endhighlight %}
 
