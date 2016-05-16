@@ -1,0 +1,182 @@
+---
+layout: post
+title:  "J.A.R.V.I.S."
+date: 2016-05-16
+comments: true
+tags:
+- AI
+- python
+---
+
+{: .center}
+![J.A.R.V.I.S.]({{ site.baseurl }}/img/jarvis.jpg "J.A.R.V.I.S.")
+
+Almost a week ago, I attempted to create [my own version](https://github.com/nihal111/J.A.R.V.I.S) of Iron Man's J.A.R.V.I.S. which would perform a few tasks and have chatbot like abilities. After a bit of research I found out about [AIML](http://www.alicebot.org/aiml.html) and its [interpreter for python](https://pypi.python.org/pypi/PyAIML). I also found ways to convert text to speech and speech to to text using python libraries like [pyttsx](https://pypi.python.org/pypi/pyttsx) and [SpeechRecognition](https://pypi.python.org/pypi/SpeechRecognition/3.4.3). I soon ended up making a J.A.R.V.I.S. which understood some of the things I said and performed a few fun actions.
+
+## Configuring voice input and output:
+
+### Text to Speech:
+
+With pyttsx installed through `pip install pyttsx` or otherwise,
+
+{% highlight python %}
+import pyttsx
+def speak(jarvis_speech):
+	engine = pyttsx.init()
+	engine.say(jarvis_speech)
+	engine.runAndWait()
+
+speak("Hello world")
+{% endhighlight %}
+
+This should produce an audio output of "Hello World" in a slightly mechanical voice.
+
+### Speech-to-Text:
+
+With SpeechRecognition installed through `pip install SpeechRecognition` or otherwise,
+
+{% highlight python %}
+
+import speech_recognition as sr
+def listen():
+	r = sr.Recognizer()
+	with sr.Microphone() as source:
+	    print("Talk to J.A.R.V.I.S: ")
+	    audio = r.listen(source)
+	try:
+	    print r.recognize_google(audio)
+	    return r.recognize_google(audio)
+	except sr.UnknownValueError:
+	    offline_speak("I couldn't understand what you said! Would you like to repeat?")
+	    return(listen())
+	except sr.RequestError as e:
+	    print("Could not request results from Google Speech Recognition service; {0}".format(e))
+
+listen()
+{% endhighlight %}
+
+This should listen to an audio input once from the microphone. However this can produce a series of warnings and errors. Resolution for some errors can be found in the Troubleshooting section of [this page](https://pypi.python.org/pypi/SpeechRecognition/3.4.3).
+
+## Working with AIML:
+
+AIML stands for Artificial Intelligence Markup Language. AIML is XML based markup language meant to create artificial intelligent application to create human interface. Using AIML, the implementation remains easy to program and highly maintainable. However, the development for AIML has become rather stagnant and AIML 1.0 (the one which has a python interpreter) has a documentation dating back to 2005, making it quite obsolete. Nevertheless, AIML is easy to learn and fun to use. At the very basic level, AIML recognizes patterns and gives responses as programmed. The patterns are called categories and responses are called templates. A very basic AIML code looks like this:
+
+{% highlight XML %}
+<aiml version="1.0.1" encoding="UTF-8"?>
+	<category>
+		<pattern>HELLO</pattern>
+		<template>
+		Well, hello!
+		</template>
+	</category>
+</aiml>
+{% endhighlight %}
+
+This small piece of code allows J.A.R.V.I.S. to reply with "Well, hello!" for every "HELLO" it gets as input.
+
+Such a code can then be customised to give a random output from a list of templates, redirect to a already defined pattern, use a part or whole of the user's input, run shell scripts etc. Out of all these running a shell script makes AIML, or atleast J.A.R.V.I.S. very powerful.
+
+All one has to do to create a chatbot using AIML, is to make up a list of `.aiml` files containing categories like the one defined above and use the aiml library for python to import them into a kernel using a `startup.xml` file which looks like this:
+
+{% highlight XML %}
+<aiml version="1.0.1" encoding="UTF-8">
+    <category>
+        <pattern>LOAD AIML</pattern>
+        <template>          
+            <learn>*.aiml</learn>
+        </template>        
+    </category>
+</aiml>
+{% endhighlight %}
+
+This should allow one to load up all the aiml files present in the working directory to the created kernel. A simple python script to do is:
+
+{% highlight python %}
+import aiml
+
+kernel = aiml.Kernel()
+kernel.learn("startup.xml")
+kernel.respond("load aiml")
+
+while True:
+    print kernel.respond(raw_input("Talk to J.A.R.V.I.S: "))
+{% endhighlight %}
+
+A good guide to get started with AIML using the python interpreter can be found [here](http://www.devdungeon.com/content/ai-chat-bot-python-aiml).
+
+## Using the \<system> tag:
+
+The system tag in AIML is a very powerful tag. It allows the script to run a shell command and use its output. A very simple example of this is:
+
+{% highlight XML %}
+<category>
+    <pattern>WHAT TIME IS IT</pattern>
+    <template>
+        The time is <system>date "+%l:%M %P"</system>
+    </template>
+</category>
+{% endhighlight %}
+
+Running `date "+%l:%M %P"` in shell returns the current time in a 12 hour format like "6:12 PM". This can be used as a template output for the question "What time is it?".
+
+Using the \<system> tag one can achieve a lot of functionalities like opening applications, killing running processes, changing volume levels, adjusting brightness, changing wallpapers etc. And J.A.R.V.I.S. does quite a few of them.
+
+## Integrating Python scripts
+
+Since it is easy enough to use shell commands through AIML. It is equally easy to use the shell to run python scripts and perform tasks using their output. A really fun example and perhaps the best feature of J.A.R.V.I.S. is the following.
+
+### Finding and playing a song on youtube
+With the following python script, to find the link for first result for a given `query`:
+
+{% highlight python %}
+import urllib
+import urllib2
+from bs4 import BeautifulSoup
+import sys
+
+flag = 0
+query = sys.argv[1].strip("\"").replace(" ","+")
+url = "https://www.youtube.com/results?search_query=" + query
+response = urllib2.urlopen(url)
+html = response.read()
+soup = BeautifulSoup(html,"lxml")
+for vid in soup.findAll(attrs={'class':'yt-uix-tile-link'}):
+    if ('https://www.youtube.com' + vid['href']).startswith("https://www.youtube.com/watch?v="):
+    	flag = 1
+    	print 'https://www.youtube.com' + vid['href']
+if flag == 0:
+	print "https://www.youtube.com"
+{% endhighlight %}
+
+and this AIML file which opens the link provided by the above script in chromium-browser:
+
+{% highlight XML %}
+<category>
+    <pattern>PLAY SONG *</pattern>
+    <template>
+         <random>
+           <li>Sure thing! </li>
+           <li>Right away, sir! </li>
+           <li>On it! </li>
+        </random>
+        <system> chromium-browser "<system> python youtube.py "<star/>"</system>"</system>
+    </template>
+</category>
+{% endhighlight %}
+
+the following output can be achieved:
+
+**Talk to J.A.R.V.I.S :** play song Killswitch Engage This Fire Burns<br/>
+**J.A.R.V.I.S:** Sure thing!  Created new window in existing browser session.
+
+With this [song](https://www.youtube.com/watch?v=OPpJ7xyUapc) opened in a new chromium-browser tab.<br/>
+I have improved the above AIML code to produce this output:
+
+**Talk to J.A.R.V.I.S :** play me a song<br>
+**J.A.R.V.I.S :** What song, sir?<br>
+**Talk to J.A.R.V.I.S :** Killswitch Engage This Fire Burns<br>
+**J.A.R.V.I.S :** On it!  Created new window in existing browser session.
+
+The repository for J.A.R.V.I.S. lies [here](https://github.com/nihal111/J.A.R.V.I.S). Feel free to [fork](https://github.com/nihal111/J.A.R.V.I.S/fork) it and customise it. Create a PR if you feel you have an interesting feature that could be added.
+
+Happy coding!

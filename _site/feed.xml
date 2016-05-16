@@ -6,9 +6,177 @@
 </description>
     <link>http://nihal111.github.io/about/</link>
     <atom:link href="http://nihal111.github.io/about/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 08 May 2016 23:40:58 +0530</pubDate>
-    <lastBuildDate>Sun, 08 May 2016 23:40:58 +0530</lastBuildDate>
+    <pubDate>Mon, 16 May 2016 19:16:42 +0530</pubDate>
+    <lastBuildDate>Mon, 16 May 2016 19:16:42 +0530</lastBuildDate>
     <generator>Jekyll v3.1.3</generator>
+    
+      <item>
+        <title>J.A.R.V.I.S.</title>
+        <description>&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/jarvis.jpg&quot; alt=&quot;J.A.R.V.I.S.&quot; title=&quot;J.A.R.V.I.S.&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Almost a week ago, I attempted to create &lt;a href=&quot;https://github.com/nihal111/J.A.R.V.I.S&quot;&gt;my own version&lt;/a&gt; of Iron Man’s J.A.R.V.I.S. which would perform a few tasks and have chatbot like abilities. After a bit of research I found out about &lt;a href=&quot;http://www.alicebot.org/aiml.html&quot;&gt;AIML&lt;/a&gt; and its &lt;a href=&quot;https://pypi.python.org/pypi/PyAIML&quot;&gt;interpreter for python&lt;/a&gt;. I also found ways to convert text to speech and speech to to text using python libraries like &lt;a href=&quot;https://pypi.python.org/pypi/pyttsx&quot;&gt;pyttsx&lt;/a&gt; and &lt;a href=&quot;https://pypi.python.org/pypi/SpeechRecognition/3.4.3&quot;&gt;SpeechRecognition&lt;/a&gt;. I soon ended up making a J.A.R.V.I.S. which understood some of the things I said and performed a few fun actions.&lt;/p&gt;
+
+&lt;h2 id=&quot;configuring-voice-input-and-output&quot;&gt;Configuring voice input and output:&lt;/h2&gt;
+
+&lt;h3 id=&quot;text-to-speech&quot;&gt;Text to Speech:&lt;/h3&gt;
+
+&lt;p&gt;With pyttsx installed through &lt;code class=&quot;highlighter-rouge&quot;&gt;pip install pyttsx&lt;/code&gt; or otherwise,&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pyttsx&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;speak&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;jarvis_speech&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;engine&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pyttsx&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;init&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;engine&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;say&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;jarvis_speech&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;engine&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;runAndWait&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;speak&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello world&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;This should produce an audio output of “Hello World” in a slightly mechanical voice.&lt;/p&gt;
+
+&lt;h3 id=&quot;speech-to-text&quot;&gt;Speech-to-Text:&lt;/h3&gt;
+
+&lt;p&gt;With SpeechRecognition installed through &lt;code class=&quot;highlighter-rouge&quot;&gt;pip install SpeechRecognition&lt;/code&gt; or otherwise,&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;speech_recognition&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sr&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;listen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Recognizer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Microphone&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;source&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+	    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Talk to J.A.R.V.I.S: &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	    &lt;span class=&quot;n&quot;&gt;audio&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;listen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;source&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;try&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+	    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;recognize_google&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;audio&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;recognize_google&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;audio&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;except&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;UnknownValueError&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+	    &lt;span class=&quot;n&quot;&gt;offline_speak&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;I couldn&#39;t understand what you said! Would you like to repeat?&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;listen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;except&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;RequestError&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+	    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Could not request results from Google Speech Recognition service; {0}&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;listen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;This should listen to an audio input once from the microphone. However this can produce a series of warnings and errors. Resolution for some errors can be found in the Troubleshooting section of &lt;a href=&quot;https://pypi.python.org/pypi/SpeechRecognition/3.4.3&quot;&gt;this page&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;working-with-aiml&quot;&gt;Working with AIML:&lt;/h2&gt;
+
+&lt;p&gt;AIML stands for Artificial Intelligence Markup Language. AIML is XML based markup language meant to create artificial intelligent application to create human interface. Using AIML, the implementation remains easy to program and highly maintainable. However, the development for AIML has become rather stagnant and AIML 1.0 (the one which has a python interpreter) has a documentation dating back to 2005, making it quite obsolete. Nevertheless, AIML is easy to learn and fun to use. At the very basic level, AIML recognizes patterns and gives responses as programmed. The patterns are called categories and responses are called templates. A very basic AIML code looks like this:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;aiml&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;version=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1.0.1&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;encoding=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;UTF-8&quot;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;category&amp;gt;&lt;/span&gt;
+		&lt;span class=&quot;nt&quot;&gt;&amp;lt;pattern&amp;gt;&lt;/span&gt;HELLO&lt;span class=&quot;nt&quot;&gt;&amp;lt;/pattern&amp;gt;&lt;/span&gt;
+		&lt;span class=&quot;nt&quot;&gt;&amp;lt;template&amp;gt;&lt;/span&gt;
+		Well, hello!
+		&lt;span class=&quot;nt&quot;&gt;&amp;lt;/template&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;/category&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/aiml&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;This small piece of code allows J.A.R.V.I.S. to reply with “Well, hello!” for every “HELLO” it gets as input.&lt;/p&gt;
+
+&lt;p&gt;Such a code can then be customised to give a random output from a list of templates, redirect to a already defined pattern, use a part or whole of the user’s input, run shell scripts etc. Out of all these running a shell script makes AIML, or atleast J.A.R.V.I.S. very powerful.&lt;/p&gt;
+
+&lt;p&gt;All one has to do to create a chatbot using AIML, is to make up a list of &lt;code class=&quot;highlighter-rouge&quot;&gt;.aiml&lt;/code&gt; files containing categories like the one defined above and use the aiml library for python to import them into a kernel using a &lt;code class=&quot;highlighter-rouge&quot;&gt;startup.xml&lt;/code&gt; file which looks like this:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;aiml&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;version=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1.0.1&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;encoding=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;UTF-8&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;category&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;pattern&amp;gt;&lt;/span&gt;LOAD AIML&lt;span class=&quot;nt&quot;&gt;&amp;lt;/pattern&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;template&amp;gt;&lt;/span&gt;          
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;learn&amp;gt;&lt;/span&gt;*.aiml&lt;span class=&quot;nt&quot;&gt;&amp;lt;/learn&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/template&amp;gt;&lt;/span&gt;        
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/category&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/aiml&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;This should allow one to load up all the aiml files present in the working directory to the created kernel. A simple python script to do is:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;aiml&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;kernel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;aiml&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Kernel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;kernel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;learn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;startup.xml&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;kernel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;respond&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;load aiml&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;kernel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;respond&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;raw_input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Talk to J.A.R.V.I.S: &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;A good guide to get started with AIML using the python interpreter can be found &lt;a href=&quot;http://www.devdungeon.com/content/ai-chat-bot-python-aiml&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;using-the-system-tag&quot;&gt;Using the &amp;lt;system&amp;gt; tag:&lt;/h2&gt;
+
+&lt;p&gt;The system tag in AIML is a very powerful tag. It allows the script to run a shell command and use its output. A very simple example of this is:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;category&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;pattern&amp;gt;&lt;/span&gt;WHAT TIME IS IT&lt;span class=&quot;nt&quot;&gt;&amp;lt;/pattern&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;template&amp;gt;&lt;/span&gt;
+        The time is &lt;span class=&quot;nt&quot;&gt;&amp;lt;system&amp;gt;&lt;/span&gt;date &quot;+%l:%M %P&quot;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/system&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/template&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/category&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Running &lt;code class=&quot;highlighter-rouge&quot;&gt;date &quot;+%l:%M %P&quot;&lt;/code&gt; in shell returns the current time in a 12 hour format like “6:12 PM”. This can be used as a template output for the question “What time is it?”.&lt;/p&gt;
+
+&lt;p&gt;Using the &amp;lt;system&amp;gt; tag one can achieve a lot of functionalities like opening applications, killing running processes, changing volume levels, adjusting brightness, changing wallpapers etc. And J.A.R.V.I.S. does quite a few of them.&lt;/p&gt;
+
+&lt;h2 id=&quot;integrating-python-scripts&quot;&gt;Integrating Python scripts&lt;/h2&gt;
+
+&lt;p&gt;Since it is easy enough to use shell commands through AIML. It is equally easy to use the shell to run python scripts and perform tasks using their output. A really fun example and perhaps the best feature of J.A.R.V.I.S. is the following.&lt;/p&gt;
+
+&lt;h3 id=&quot;finding-and-playing-a-song-on-youtube&quot;&gt;Finding and playing a song on youtube&lt;/h3&gt;
+&lt;p&gt;With the following python script, to find the link for first result for a given &lt;code class=&quot;highlighter-rouge&quot;&gt;query&lt;/code&gt;:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;urllib&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;urllib2&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;bs4&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;BeautifulSoup&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sys&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;flag&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;query&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sys&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;argv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;strip&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;replace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot; &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;+&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;url&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;https://www.youtube.com/results?search_query=&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;query&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;response&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;urllib2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;urlopen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;html&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;soup&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;BeautifulSoup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;lxml&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vid&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;soup&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;findAll&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;attrs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;class&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;yt-uix-tile-link&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;https://www.youtube.com&#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;href&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;startswith&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://www.youtube.com/watch?v=&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    	&lt;span class=&quot;n&quot;&gt;flag&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+    	&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;https://www.youtube.com&#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;href&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;flag&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;https://www.youtube.com&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;and this AIML file which opens the link provided by the above script in chromium-browser:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;category&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;pattern&amp;gt;&lt;/span&gt;PLAY SONG *&lt;span class=&quot;nt&quot;&gt;&amp;lt;/pattern&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;template&amp;gt;&lt;/span&gt;
+         &lt;span class=&quot;nt&quot;&gt;&amp;lt;random&amp;gt;&lt;/span&gt;
+           &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Sure thing! &lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+           &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Right away, sir! &lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+           &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;On it! &lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/random&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;system&amp;gt;&lt;/span&gt; chromium-browser &quot;&lt;span class=&quot;nt&quot;&gt;&amp;lt;system&amp;gt;&lt;/span&gt; python youtube.py &quot;&lt;span class=&quot;nt&quot;&gt;&amp;lt;star/&amp;gt;&lt;/span&gt;&quot;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/system&amp;gt;&lt;/span&gt;&quot;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/system&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/template&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/category&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;the following output can be achieved:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Talk to J.A.R.V.I.S :&lt;/strong&gt; play song Killswitch Engage This Fire Burns&lt;br /&gt;
+&lt;strong&gt;J.A.R.V.I.S:&lt;/strong&gt; Sure thing!  Created new window in existing browser session.&lt;/p&gt;
+
+&lt;p&gt;With this &lt;a href=&quot;https://www.youtube.com/watch?v=OPpJ7xyUapc&quot;&gt;song&lt;/a&gt; opened in a new chromium-browser tab.&lt;br /&gt;
+I have improved the above AIML code to produce this output:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Talk to J.A.R.V.I.S :&lt;/strong&gt; play me a song&lt;br /&gt;
+&lt;strong&gt;J.A.R.V.I.S :&lt;/strong&gt; What song, sir?&lt;br /&gt;
+&lt;strong&gt;Talk to J.A.R.V.I.S :&lt;/strong&gt; Killswitch Engage This Fire Burns&lt;br /&gt;
+&lt;strong&gt;J.A.R.V.I.S :&lt;/strong&gt; On it!  Created new window in existing browser session.&lt;/p&gt;
+
+&lt;p&gt;The repository for J.A.R.V.I.S. lies &lt;a href=&quot;https://github.com/nihal111/J.A.R.V.I.S&quot;&gt;here&lt;/a&gt;. Feel free to &lt;a href=&quot;https://github.com/nihal111/J.A.R.V.I.S/fork&quot;&gt;fork&lt;/a&gt; it and customise it. Create a PR if you feel you have an interesting feature that could be added.&lt;/p&gt;
+
+&lt;p&gt;Happy coding!&lt;/p&gt;
+</description>
+        <pubDate>Mon, 16 May 2016 00:00:00 +0530</pubDate>
+        <link>http://nihal111.github.io/about/2016/05/16/J.A.R.V.I.S..html</link>
+        <guid isPermaLink="true">http://nihal111.github.io/about/2016/05/16/J.A.R.V.I.S..html</guid>
+        
+        <category>AI</category>
+        
+        <category>python</category>
+        
+        
+      </item>
     
       <item>
         <title>Playing with aliases</title>
@@ -64,11 +232,11 @@ Interestingly, $0 returns the address of the script or shell running. In this ca
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;foo=&#39;bar&#39;&quot;&lt;/span&gt; | cut -d&lt;span class=&quot;s2&quot;&gt;&quot;=&quot;&lt;/span&gt; -f 1
 &lt;span class=&quot;c&quot;&gt;#returns &quot;foo&quot;&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;foo=&#39;bar&#39;&quot;&lt;/span&gt; | cut -d&lt;span class=&quot;s2&quot;&gt;&quot;=&quot;&lt;/span&gt; -f 1
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;foo=&#39;bar&#39;&quot;&lt;/span&gt; | cut -d&lt;span class=&quot;s2&quot;&gt;&quot;=&quot;&lt;/span&gt; -f 2
 &lt;span class=&quot;c&quot;&gt;#returns &quot;bar&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;echo &quot;foo=&#39;bar&#39;&quot; | cut -d&quot;=&quot; -f 1&lt;/code&gt; has the same effect as &lt;code class=&quot;highlighter-rouge&quot;&gt;echo &quot;foo=&#39;bar&#39;&quot; | cut --delimiter=&quot;=&quot; --fields 1 &lt;/code&gt;&lt;br /&gt;
-&lt;strong&gt;Note:&lt;/strong&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;echo &quot;foo=&#39;bar==car&#39;&quot; | cut -d&quot;=&quot; -f 2-&lt;/code&gt; fetches ‘bar==car’ while &lt;code class=&quot;highlighter-rouge&quot;&gt;echo &quot;foo=&#39;bar==car&#39;&quot; | cut 2&lt;/code&gt; fetches ‘bar&lt;/p&gt;
+&lt;strong&gt;Note:&lt;/strong&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;echo &quot;foo=&#39;bar==car&#39;&quot; | cut -d&quot;=&quot; -f 2-&lt;/code&gt; fetches ‘bar==car’ while &lt;code class=&quot;highlighter-rouge&quot;&gt;echo &quot;foo=&#39;bar==car&#39;&quot; | cut -d&quot;=&quot; -f 2&lt;/code&gt; fetches ‘bar&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Once KEY and VALUE are abstracted, they are appended to the &lt;code class=&quot;highlighter-rouge&quot;&gt;.bash_aliases&lt;/code&gt; file using&lt;/li&gt;
@@ -96,10 +264,10 @@ would have same effect as we manually add inverted commas later.&lt;/code&gt;&lt
 &lt;/div&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;palias &lt;span class=&quot;nv&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;cd /home&#39;&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;#$1 = &quot;cd /home&quot;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#$1 = &quot;foo=cd /home&quot;&lt;/span&gt;
 and
 palias &lt;span class=&quot;nv&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /home	
-&lt;span class=&quot;c&quot;&gt;#$1 = &quot;cd&quot;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#$1 = &quot;foo=cd&quot;&lt;/span&gt;
 would not have the same effect.&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;ul&gt;
