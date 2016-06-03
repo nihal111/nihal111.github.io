@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Mozilla: Quarter of Contribution"
-date: 2016-06-04
+date: 2016-06-03
 comments: true
 tags:
 - open source
