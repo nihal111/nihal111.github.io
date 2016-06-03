@@ -6,9 +6,94 @@
 </description>
     <link>http://nihal111.github.io/about/</link>
     <atom:link href="http://nihal111.github.io/about/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 16 May 2016 19:16:42 +0530</pubDate>
-    <lastBuildDate>Mon, 16 May 2016 19:16:42 +0530</lastBuildDate>
+    <pubDate>Sat, 04 Jun 2016 01:23:38 +0530</pubDate>
+    <lastBuildDate>Sat, 04 Jun 2016 01:23:38 +0530</lastBuildDate>
     <generator>Jekyll v3.1.3</generator>
+    
+      <item>
+        <title>Mozilla: Quarter of Contribution</title>
+        <description>&lt;p&gt;I have decided to dive into open source development this summer. Under the WnCC Seasons of Code programme, I have chosen to take part in the Mozilla Seasons of Code project mentored by Kalpesh Krishna (&lt;a href=&quot;https://github.com/martiansideofthemoon&quot;&gt;martiansideofthemoon&lt;/a&gt;). The &lt;a href=&quot;http://wncc-iitb.org/soc/&quot;&gt;WnCC Seasons of Code&lt;/a&gt; is an initiative by the Web and Coding Club of IIT Bombay, much akin to the Google Summer Of Code but without any monetary incentive.&lt;/p&gt;
+
+&lt;h3 id=&quot;mozilla-quarter-of-contribution&quot;&gt;Mozilla: Quarter of Contribution&lt;/h3&gt;
+&lt;p&gt;The &lt;a href=&quot;https://wiki.mozilla.org/Auto-tools/New_Contributor/Quarter_of_Contribution&quot;&gt;Mozilla: Quarter of Contribution&lt;/a&gt; is an opportunity to work on a large project for a couple of months. Current projects for Summer 2016 are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Web Platform Tests - Results Viewer Refactoring (:jgraham, :martianwars)&lt;/li&gt;
+  &lt;li&gt;Perfherder (:wlach, :jmaher)&lt;/li&gt;
+  &lt;li&gt;Talos (:jmaher, :rwood)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I have made a few bug fixes and have merged PRs on Web Platform Tests as well as Perfherder. I have decided to work on wptview under &lt;a href=&quot;https://github.com/jgraham&quot;&gt;:jgraham&lt;/a&gt; and &lt;a href=&quot;https://mozillians.org/en-US/u/martianwars/&quot;&gt;:martianwars&lt;/a&gt; as a part of Mozilla QoC.&lt;/p&gt;
+
+&lt;h3 id=&quot;wptview&quot;&gt;wptview&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/mozilla/wptview&quot;&gt;Wptview&lt;/a&gt; is a web platform test viewer. The Web Platform Tests (WPT) are a set of cross browser validation tests designed to validate common functionality on the web between browsers. Wptview is used for viewing the results of web-platform-tests and for easy visual comparison between different tests results. One can add the test data available as mozlog files and all the tests along with their results will be loaded in the form of a table. These results can be studied further by adding filters and sorting by status.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://wiki.mozilla.org/Auto-tools/New_Contributor/Quarter_of_Contribution/WPTViewer_Refactor&quot;&gt;agenda for the QoC&lt;/a&gt; is a UI revamp, addition of unit testing as well as adding visualizations to be accompanied by test results. I would like to work on all these fratures.&lt;/p&gt;
+
+&lt;p&gt;I have fixed a few basic bugs due to which I know a little about the codebase. I am a beginner in AngularJS and plan to learn as I go on contributing to this project.&lt;/p&gt;
+
+&lt;p&gt;In conclusion, I plan to learn a lot contributing to this project. This is my first hand at open source as well, so I hope it turns out to be an exciting learning experience.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 04 Jun 2016 00:00:00 +0530</pubDate>
+        <link>http://nihal111.github.io/about/2016/06/04/Mozilla-Quarter-of-Contribution.html</link>
+        <guid isPermaLink="true">http://nihal111.github.io/about/2016/06/04/Mozilla-Quarter-of-Contribution.html</guid>
+        
+        <category>open source</category>
+        
+        <category>mozilla</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Auto Deploy on Server</title>
+        <description>&lt;p&gt;It had been a while since I had been using a server to host the &lt;a href=&quot;http://www.wncc-iitb.org&quot;&gt;website for WnCC&lt;/a&gt;. With a lot of development happening around, updating and testing changes on the server, had become a requirement. Having built the site in Jekyll, I required to shift the contents of &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; from my local machine to &lt;code class=&quot;highlighter-rouge&quot;&gt;/var/www/html&lt;/code&gt; on the server, after every build. I had been following the simple, standard method of using scp, for a long time. Copying all the content from &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;/var/www/html&lt;/code&gt; was now becoming inefficient (as I copied all the files in the folder all over again), took a lot of time as the site started expanding with more multimedia content, and required a long terminal command too. I could have used a probably more efficient way of SSHing into the server, pulling from the git repository and copying the contents of the &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; folder into &lt;code class=&quot;highlighter-rouge&quot;&gt;/var/www/html&lt;/code&gt;. But this would have been tedious too, and probably could have been made easier with a script. Nevertheless, it would have required me to SSH into the server, and atleast a couple of terminal commands.&lt;/p&gt;
+
+&lt;h3 id=&quot;discovering-github-webhookshttpsdevelopergithubcomwebhooks&quot;&gt;Discovering &lt;a href=&quot;https://developer.github.com/webhooks/&quot;&gt;Github Webhooks&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Enter webhooks. &lt;a href=&quot;https://developer.github.com/webhooks/&quot;&gt;Webhooks&lt;/a&gt; allow one to set up an integration with their github repository to listen for one or more events. Whenever such an event occurs, Github sends a HTTP POST payload to the webhook’s configured URL. An event can occur with the creation of an issue, a push to the server or be triggered whenever a repository is starred, forked etc. Webhooks can be used to do a lot of things. I have used a webhook, in this example for the quite general purpose of setting up an auto-deplow on my server.&lt;/p&gt;
+
+&lt;p&gt;Github provides a quite &lt;a href=&quot;https://developer.github.com/webhooks/configuring/&quot;&gt;comprehensive guide&lt;/a&gt; about how to set up a webhook to the local host which is connected to the web using &lt;a href=&quot;https://ngrok.com/download&quot;&gt;ngrok&lt;/a&gt;. I followed the guide and replicated similar steps on my server to get my webhook configured to send a HTTP POST payload to the server.&lt;/p&gt;
+
+&lt;h3 id=&quot;using-sinatrahttpwwwsinatrarbcom&quot;&gt;Using &lt;a href=&quot;http://www.sinatrarb.com/&quot;&gt;Sinatra&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;I used Sintara to create a simple web framework which would receive a HTTP POST made to the configured server URL, and run a small shell command. Having written this small piece of code, I could now reflect all changes made in the repository on the website, everytime a push is made to the repository. The following code renames the &lt;code class=&quot;highlighter-rouge&quot;&gt;html&lt;/code&gt; folder inside &lt;code class=&quot;highlighter-rouge&quot;&gt;/var/www/&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; and performs a git pull inside &lt;code class=&quot;highlighter-rouge&quot;&gt;/var/www&lt;/code&gt; and later renames it back to &lt;code class=&quot;highlighter-rouge&quot;&gt;html&lt;/code&gt;. This is done as the built site lies inside the &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; folder of the repository. I&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;c1&quot;&gt;# hook.rb&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;sinatra&#39;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;json&#39;&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:bind&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;0.0.0.0&#39;&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;post&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;/payload&#39;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;#push = JSON.parse(request.body.read)&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;#puts &quot;I got some JSON: #{push.inspect}&quot;&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;output&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;sb&quot;&gt;`mv html _site ; git pull origin master; mv _site html`&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;output&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Running a &lt;code class=&quot;highlighter-rouge&quot;&gt;ruby hook.rb -o 0.0.0.0&lt;/code&gt; will give a message like &lt;code class=&quot;highlighter-rouge&quot;&gt;Sinatra/1.4.4 has taken the stage on 4567...&lt;/code&gt;. Making a POST request on http://IP:4567/payload, will now trigger the shell command in the above script. (&lt;code class=&quot;highlighter-rouge&quot;&gt;-o 0.0.0.0&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;set :bind, &#39;0.0.0.0&#39;&lt;/code&gt; allows access from networks other than localhost)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; You may have to enable the port if you are using a firewall on your server. A simple &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo ufw allow 4567&lt;/code&gt; should do it.&lt;/p&gt;
+
+&lt;p&gt;However this session of Sinatra will close as soon as you CTRL+C out of it or logout. To keep such an instance running even after logout you could try&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;nohup sudo ruby hook.rb -o 0.0.0.0 &amp;amp;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This would put the Sinatra process in background and keep it running even after you have logged out.&lt;/p&gt;
+
+&lt;p&gt;I did not know about github webhooks earlier and this was an interesting find. The above was a quick setup for automation. If you know a way in which I could improve it, do let me know in the comments.&lt;/p&gt;
+
+&lt;p&gt;Till next time!&lt;/p&gt;
+</description>
+        <pubDate>Wed, 18 May 2016 00:00:00 +0530</pubDate>
+        <link>http://nihal111.github.io/about/2016/05/18/auto-deploy.html</link>
+        <guid isPermaLink="true">http://nihal111.github.io/about/2016/05/18/auto-deploy.html</guid>
+        
+        <category>git</category>
+        
+        <category>ruby</category>
+        
+        
+      </item>
     
       <item>
         <title>J.A.R.V.I.S.</title>
