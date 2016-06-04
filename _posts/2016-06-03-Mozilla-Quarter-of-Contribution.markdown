@@ -7,7 +7,7 @@ tags:
 - open source
 - mozilla
 ---
-I have decided to dive into open source development this summer. Under the WnCC Seasons of Code programme, I have chosen to take part in the Mozilla Seasons of Code project mentored by Kalpesh Krishna ([martiansideofthemoon](https://github.com/martiansideofthemoon)). The [WnCC Seasons of Code](http://wncc-iitb.org/soc/) is an initiative by the Web and Coding Club of IIT Bombay, much akin to the Google Summer Of Code but without any monetary incentive.
+I have decided to dive into open source development this summer. Under the WnCC Seasons of Code programme, I have chosen to take part in the Mozilla Quarter of Contribution project mentored by Kalpesh Krishna ([martiansideofthemoon](https://github.com/martiansideofthemoon)). The [WnCC Seasons of Code](http://wncc-iitb.org/soc/) is an initiative by the Web and Coding Club of IIT Bombay, much akin to the Google Summer Of Code but without any monetary incentive.
 
 ### Mozilla: Quarter of Contribution
 The [Mozilla: Quarter of Contribution](https://wiki.mozilla.org/Auto-tools/New_Contributor/Quarter_of_Contribution) is an opportunity to work on a large project for a couple of months. Current projects for Summer 2016 are:
