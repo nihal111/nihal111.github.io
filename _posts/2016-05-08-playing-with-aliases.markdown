@@ -54,7 +54,9 @@ permanent_alias(){
     VALUE=$(echo $1 | cut -d"=" -f 2-)
     echo -e "\nalias $KEY='$VALUE'" >> /home/nihal/.bash_aliases
     echo "New permanent bash alias set: alias $KEY='$VALUE'"
-    alias $KEY='$VALUE'
+    if [ -f ~/.bash_aliases ]; then
+	    . ~/.bash_aliases
+	fi
 }
 
 #Create alias for function call
@@ -76,7 +78,7 @@ echo "foo='bar'" | cut -d"=" -f 2
 + Once KEY and VALUE are abstracted, they are appended to the `.bash_aliases` file using {% highlight bash %}echo -e "\nalias $KEY='$VALUE'" >> /home/user/.bash_aliases{% endhighlight %}
 **Note:**  The -e flag is for enabling interpretation of backslash escapes like "\n" (newline). `echo "string" >> file` is used to append "string" at the end of file.
 
-+ The `alias $KEY='$VALUE'` allows you to use your newly declared permanent alias in the running terminal too, by declaring a temporary variable. Not doing this, would result in restarting of terminal for changes to take effect.
++ The `if [ -f ~/.bash_aliases ]; then . ~/.bash_aliases fi` allows you to use your newly declared permanent alias in the running terminal too, by loading the bash_aliases file again. Not doing this, would result in restarting of terminal for changes to take effect. (Thanks Vinayak for pointing out)
 
 #### Usage
 + For single word aliases, scrapping the inverted commas would do. 
