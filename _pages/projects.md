@@ -9,7 +9,7 @@ Here is the list of projects I own or have contributed to:
 
 ### Hobby Projects
 
-* [MooDLD][MooDLD]: The ultimate Moodle Downloader. A pythonic application that automates the download of course material from [moodle.iitb.ac.in](moodle.iitb.ac.in). It has a Tkinter based GUI and uses Mechanize for scraping. Made independently for Windows, it consists of a setup which installs MooDLD with all dependencies. Developed further as an android app that lets you download all the courses with the click of a button. [***UPDATE***: **Was officially launched by the UG Academics Council at IIT Bombay in Aug '16**. However, project ***temporarily unavailable*** due to server side incapabilities from ASC-IITB. This will shift to the Open Source section soon after the restrictions are lifted.]
+* [MooDLD][MooDLD]: The ultimate Moodle Downloader. A pythonic application that automates the download of course material from [moodle.iitb.ac.in](moodle.iitb.ac.in). It has a Tkinter based GUI and uses Mechanize for scraping. Made independently for Windows, it consists of a setup which installs MooDLD with all dependencies. Developed further as an android app that lets you download all the courses with the click of a button. [***UPDATE***: **Was officially launched by the UG Academics Council at IIT Bombay in Aug '16**. However, project is ***temporarily unavailable*** due to server side incapabilities from ASC-IITB. This will shift to the Open Source section soon after the restrictions are lifted.]
 
 * [EVENTual][EVENTual]: No more painstakingly filling or remembering event details. Save events to your default calendar with one tap. Fill out the details and get a sharable link and QR code. Use the [android app][EVENTualApp] to directly add that.
 
@@ -31,7 +31,7 @@ Here is the list of projects I own or have contributed to:
 
 * [WnCC Website][WnCC]: The official Web and Coding Club, IIT Bombay website. Created, managed and maintained by me. The entire website is static and runs on Jekyll. Mainly serves as a portal for the Seasons Of Code (SOC) program. If you want to mentor a SOC project or have any ideas to make it look better, send a PR [here][WnCCRepo].
 
-* [Terasology][Terasology]: Terasology is an open source renedition of Minecraft and is a platform to develop gameplay settings in the voxel world. I've been contributing to this project since October '15. The community is very active and enthusiastic, and I've had a great time with them.
+* [Terasology][Terasology]: Terasology is an open source renedition of Minecraft and is a platform to develop gameplay settings in the voxel world. I've been contributing to this project since October '16. The community is very active and enthusiastic, and I've had a great time with them.
 
 ### Others
 
