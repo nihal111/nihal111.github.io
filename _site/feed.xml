@@ -6,9 +6,246 @@
 </description>
     <link>http://nihal111.github.io/about/</link>
     <atom:link href="http://nihal111.github.io/about/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 23 Nov 2016 20:59:44 +0530</pubDate>
-    <lastBuildDate>Wed, 23 Nov 2016 20:59:44 +0530</lastBuildDate>
+    <pubDate>Thu, 24 Nov 2016 01:00:19 +0530</pubDate>
+    <lastBuildDate>Thu, 24 Nov 2016 01:00:19 +0530</lastBuildDate>
     <generator>Jekyll v3.1.3</generator>
+    
+      <item>
+        <title>Terasology: Getting Started</title>
+        <description>&lt;style type=&quot;text/css&quot;&gt;
+    .collapsiblecontainer {
+    width:100%;
+    border:1px solid #d3d3d3;
+}
+.collapsiblecontainer div {
+    width:100%;
+}
+.collapsiblecontainer .collapsibleheader {
+    background-color:#d3d3d3;
+    padding: 2px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.collapsiblecontainer .collapsiblecontent {
+    display: none;
+    padding : 5px;
+}
+&lt;/style&gt;
+
+&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+$(document).ready(function(){
+    $(&quot;.collapsibleheader&quot;).click(function () {
+        $collapsibleheader = $(this);
+        //getting the next element
+        $collapsiblecontent = $collapsibleheader.next();
+        //open up the collapsiblecontent needed - toggle the slide- if visible, slide up, if not slidedown.
+        $collapsiblecontent.slideToggle(500, function () {
+            //execute this after slideToggle is done
+            //change text of collapsibleheader based on visibility of collapsiblecontent div
+            $collapsibleheader.find(&quot;span:first-child&quot;).text(function () {
+                //change text based on condition
+                return $collapsiblecontent.is(&quot;:visible&quot;) ? &quot;- &quot; : &quot;+ &quot;;
+            });
+        });
+
+    });
+}); 
+
+&lt;/script&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/Terasology.jpg&quot; alt=&quot;Terasology&quot; title=&quot;Terasology&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This is a comprehensive guide for getting started with your first contribution to the Terasology project. If you’ve stumbled here and don’t know what Terasology is, check out the &lt;a href=&quot;https://github.com/MovingBlocks/Terasology&quot;&gt;github repository&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://github.com/MovingBlocks/Terasology/wiki/Dev-Setup&quot;&gt;Quick Start guide&lt;/a&gt; on the github wiki of the repository is pretty complete, but it can get a little confusing if this is your first time. If not and you want to get cracking as soon as possible, do head over there.&lt;/p&gt;
+
+&lt;p&gt;Without any further ado, let’s get started.&lt;/p&gt;
+
+&lt;h1 id=&quot;run-from-source&quot;&gt;Run from source&lt;/h1&gt;
+&lt;p&gt;This is probably the first and most important step you need to do before you can do anything else. Also, the first question you’ll be asked on IRC when you’re in doubt, is whether you’re able to “run from source”.&lt;/p&gt;
+
+&lt;h2 id=&quot;get-java&quot;&gt;1. Get Java&lt;/h2&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/java.png&quot; alt=&quot;Java&quot; title=&quot;Java&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Java 8 SDK is a requirement for the game to run. You can download this from &lt;a href=&quot;http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html&quot;&gt;here&lt;/a&gt; by choosing your OS.&lt;/p&gt;
+
+&lt;h2 id=&quot;get-git&quot;&gt;2. Get Git&lt;/h2&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/git.png&quot; alt=&quot;Git&quot; title=&quot;Git&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If you don’t have git setup, you need to do so before going any further. You’ll need git to collaborate and contribute to this project.&lt;/p&gt;
+&lt;div class=&quot;collapsiblecontainer&quot;&gt;
+&lt;div class=&quot;collapsibleheader&quot;&gt;&lt;span&gt;+ &lt;/span&gt;&lt;span&gt;What is git?&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;collapsiblecontent&quot;&gt;   
+	Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
+	Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later.
+	&lt;br /&gt;
+	Git allows the users working on a project to mirror and save all changes they make on the central server as well as keep a copy in their own system.
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h4 id=&quot;for-linux&quot;&gt;For Linux:&lt;/h4&gt;
+&lt;p&gt;If you’re on Fedora, you can use yum:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;sudo yum install git-all&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;If you’re on a Debian-based distribution like Ubuntu, try apt-get:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;sudo apt-get install git-all&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h4 id=&quot;for-windows&quot;&gt;For Windows:&lt;/h4&gt;
+&lt;p&gt;Download git for windows &lt;a href=&quot;https://git-scm.com/download/win&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;configuration&quot;&gt;Configuration:&lt;/h4&gt;
+&lt;p&gt;Once you have git installed, open bash (terminal) in Linux or git bash (from Programs) in Windows and get it configured.
+git config –global user.name “Your Name”
+git config –global user.email “your_email@whatever.com”&lt;/p&gt;
+
+&lt;h2 id=&quot;fork&quot;&gt;3. Fork&lt;/h2&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/fork.png&quot; alt=&quot;Fork&quot; title=&quot;Fork&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;collapsiblecontainer&quot;&gt;
+&lt;div class=&quot;collapsibleheader&quot;&gt;&lt;span&gt;+ &lt;/span&gt;&lt;span&gt;What is a fork?&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;collapsiblecontent&quot;&gt;   
+A fork is a copy of a repository. Forking a repository allows you to freely experiment with changes without affecting the original project. Forking the &lt;a href=&quot;https://github.com/MovingBlocks/Terasology&quot;&gt;MovingBlocks/Terasology&lt;/a&gt; repository would create a copy of it at &lt;a&gt;www.github.com/your_github_username/Terasology&lt;/a&gt;.
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Click &lt;em&gt;&lt;a href=&quot;https://github.com/MovingBlocks/Terasology/fork&quot;&gt;here&lt;/a&gt;&lt;/em&gt; to fork the &lt;em&gt;&lt;a href=&quot;https://github.com/MovingBlocks/Terasology&quot;&gt;Terasology github repository&lt;/a&gt;.&lt;/em&gt; Doing so will create a repository named “Terasology” under your github account and take you to it. From now you can access your copy of the repository here: &lt;a&gt;www.github.com/your_github_username/Terasology&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;clone&quot;&gt;4. Clone&lt;/h2&gt;
+&lt;div class=&quot;collapsiblecontainer&quot;&gt;
+&lt;div class=&quot;collapsibleheader&quot;&gt;&lt;span&gt;+ &lt;/span&gt;&lt;span&gt;What is cloning?&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;collapsiblecontent&quot;&gt;   
+Cloning downloads or &quot;clones&quot; a repository into a newly created directory by the name of the repository. Cloning www.github.com/your_github_username/Terasology on your machine would create a folder named Teraslogy and download all the content inside it. Use cd to move in and out of directories when inside bash/git-bash.
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Open up bash (Linux) or git-bash (Windows), go to the directory where you want to clone the repository:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;path/to/directory/
+git clone www.github.com/your_github_username/Terasology
+&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;Terasology/&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;run-the-game&quot;&gt;5. Run the game&lt;/h2&gt;
+&lt;p&gt;You now have the repository cloned and can run the game using gradlew.&lt;/p&gt;
+
+&lt;p&gt;Open bash or git-bash, cd in to the Terasology directory and type in:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;./gradlew game&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;div class=&quot;collapsiblecontainer&quot;&gt;
+&lt;div class=&quot;collapsibleheader&quot;&gt;&lt;span&gt;+ &lt;/span&gt;&lt;span&gt;What is gradlew?&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;collapsiblecontent&quot;&gt;   
+The gradlew is a script which downloads a version of the Gradle through which most of the automation happens. The initial gradlew execution will download all project dependencies and could take a while. So, be patient.&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This should show a build log, and launch the game. If this worked you’re able to run from source. If it didn’t you should get back to IRC and ask for help in debugging. However, any problem encountered at this point is usually from Java not being configured right, such as having an older version as your default Java. See &lt;a href=&quot;https://github.com/MovingBlocks/Terasology/wiki/Common-Issues&quot;&gt;Common Issues&lt;/a&gt; for more.&lt;/p&gt;
+
+&lt;p&gt;Ask in the Support Forum if issues remain, or come join us on #terasology on Freenode IRC. See &lt;a href=&quot;https://github.com/MovingBlocks/Terasology/wiki/Using-IRC&quot;&gt;Using IRC&lt;/a&gt; and please be patient! IRC isn’t necessarily instant communication and it may take a while to get a reply.&lt;/p&gt;
+
+&lt;h2 id=&quot;use-an-ide&quot;&gt;6. Use an IDE&lt;/h2&gt;
+
+&lt;p&gt;With this large a project, you could easily get lost and ‘grep’ing would be inefficient. We have a series of customizations that prepare run configurations, Git integration, and so on for the project, specifically for IntelliJ. Eclipse has fewer of these but is still entirely usable, as is NetBeans, but you’ll need to figure out some details there yourself. I personally recommend the use of Intelij IDEA.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/intellij.jpeg&quot; alt=&quot;Intellij&quot; title=&quot;Intellij&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;install-intellij-idea-on-linux&quot;&gt;Install Intellij IDEA on Linux:&lt;/h4&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo apt-add-repository ppa:mmk2410/intellij-idea-community
+sudo apt-get update
+sudo apt-get install intellij-idea-community&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h4 id=&quot;install-intellij-idea-on-windows&quot;&gt;Install Intellij IDEA on Windows:&lt;/h4&gt;
+
+&lt;p&gt;Download and install the setup from &lt;a href=&quot;https://www.jetbrains.com/idea/download/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Open bash or git-bash and type:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;./gradlew idea&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;This would prepare project files for Intellij. Open the resulting Terasology.ipr as an existing project in IntelliJ - do not create a new project or attempt to import the project via Gradle.&lt;/p&gt;
+
+&lt;h2 id=&quot;find-a-bug&quot;&gt;7. Find a Bug&lt;/h2&gt;
+
+&lt;p&gt;Once you are able to run from source and preferably have an IDE set up, you should get started with working on your first bug. The complete list of issues can be found &lt;a href=&quot;https://github.com/MovingBlocks/Terasology/issues&quot;&gt;here&lt;/a&gt;. However, you should look for issus with the tag &lt;code class=&quot;highlighter-rouge&quot;&gt;Bite-size&lt;/code&gt;. All bite-sized issues can be found &lt;a href=&quot;https://github.com/MovingBlocks/Terasology/issues?q=is%3Aissue+is%3Aopen+label%3ABite-size&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;code-code-and-code&quot;&gt;8. Code, code and code&lt;/h2&gt;
+
+&lt;p&gt;By default you would be on the develop branch. Before you start making changes to the code, remember to create a new branch. This can be skipped, however it is the best practice, especially when working on multiple issues. Also, if you don’t create a new branch, a Pull Request for your second bug fix will also contain a fix for the first bug, if the first PR isn’t merged till then.&lt;/p&gt;
+
+&lt;div class=&quot;collapsiblecontainer&quot;&gt;
+&lt;div class=&quot;collapsibleheader&quot;&gt;&lt;span&gt;+ &lt;/span&gt;&lt;span&gt;What is a branch?&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;collapsiblecontent&quot;&gt;   
+Within a repository you have branches, which are effectively forks within your own repository. Your branches will have an ancestor commit in your repository, and will diverge from that commit with your changes. You can later merge your branch changes. Branches let you work on multiple disparate features at once.
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;creating-a-new-branch&quot;&gt;Creating a new branch&lt;/h3&gt;
+&lt;p&gt;Open bash or git-bash and type:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;git checkout -b new_branch_name&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Get cracking on a solution. Ask on IRC when in doubt.&lt;/p&gt;
+
+&lt;h2 id=&quot;make-your-first-contribution&quot;&gt;9. Make your first contribution&lt;/h2&gt;
+
+&lt;p&gt;Once you’ve come up with a fix, it’s time to commit those changes and create a pull request.&lt;/p&gt;
+
+&lt;h3 id=&quot;commit-your-changes&quot;&gt;Commit your changes&lt;/h3&gt;
+&lt;p&gt;Open bash or git-bash and type:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;git add -A
+&lt;span class=&quot;c&quot;&gt;# to add all files to staging. You could select individual files too&lt;/span&gt;
+git commit -m &lt;span class=&quot;s2&quot;&gt;&quot;Fix for #1234&quot;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# to commit changes with a relevant commit message.&lt;/span&gt;
+git push origin new_branch_name
+&lt;span class=&quot;c&quot;&gt;# Push to the newly created branch on your fork&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;div class=&quot;collapsiblecontainer&quot;&gt;
+&lt;div class=&quot;collapsibleheader&quot;&gt;&lt;span&gt;+ &lt;/span&gt;&lt;span&gt;What is a commit?&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;collapsiblecontent&quot;&gt;   
+Whenever you commit in git, you take a screenshot of your working directory or your repository. You could come back to this state of your repository later at any point or publish these changes to your fork of the repository.
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;collapsiblecontainer&quot;&gt;
+&lt;div class=&quot;collapsibleheader&quot;&gt;&lt;span&gt;+ &lt;/span&gt;&lt;span&gt;What is pushing?&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;collapsiblecontent&quot;&gt;   
+In git, when you push, you bring the changes on your local repository come into effect in the remote repository. In this case changes to the branch &quot;new_branch_name&quot; are published on the remote (&quot;origin&quot;) repository www.github.com/your_github_username/Terasology.
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Once you’ve pushed successfully, open up your fork (www.github.com/your_github_username/Terasology). This should show something like:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/terasologyPR.png&quot; alt=&quot;PR&quot; title=&quot;PR&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Clicking on “Compare &amp;amp; pull request” opens a page for you to describe your bug and solution. The pull request compares (head) your_github_username/Terasology/new_branch_name with (base) MovingBlocks/Terasology/develop. Fill in everything and hit “Create Pull Request”.&lt;/p&gt;
+
+&lt;p&gt;Once done, let the mentors have a look at your PR. If they want changes, you should make the required changes, test locally and then, create a new commit in the same branch and finally push.&lt;/p&gt;
+
+&lt;h2 id=&quot;goto-7&quot;&gt;10. Goto 7&lt;/h2&gt;
+
+&lt;p&gt;Don’t stop now. Go find another bug to fix! :D&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 23 Nov 2016 00:00:00 +0530</pubDate>
+        <link>http://nihal111.github.io/about/2016/11/23/Terasology-Getting-started.html</link>
+        <guid isPermaLink="true">http://nihal111.github.io/about/2016/11/23/Terasology-Getting-started.html</guid>
+        
+        <category>open source</category>
+        
+        <category>MovingBlocks</category>
+        
+        <category>Terasology</category>
+        
+        <category>GCI</category>
+        
+        
+      </item>
     
       <item>
         <title>Mozilla: Quarter of Contribution</title>
