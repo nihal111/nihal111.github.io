@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Terasology: Getting Started"
-date: 2016-11-23
+date: 2016-11-22
 comments: true
 tags:
 - open source
