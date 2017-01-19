@@ -4,11 +4,11 @@
     <title>Nihal Singh</title>
     <description>A guide to getting started with Jekyll.
 </description>
-    <link>http://nihal111.github.io/about/</link>
-    <atom:link href="http://nihal111.github.io/about/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 19 Jan 2017 14:37:34 +0530</pubDate>
-    <lastBuildDate>Thu, 19 Jan 2017 14:37:34 +0530</lastBuildDate>
-    <generator>Jekyll v3.1.3</generator>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Thu, 19 Jan 2017 18:31:54 +0530</pubDate>
+    <lastBuildDate>Thu, 19 Jan 2017 18:31:54 +0530</lastBuildDate>
+    <generator>Jekyll v3.3.1</generator>
     
       <item>
         <title>Terasology: Getting Started</title>
@@ -233,8 +233,8 @@ In git, when you push, you bring the changes on your local repository come into 
 
 </description>
         <pubDate>Tue, 22 Nov 2016 00:00:00 +0530</pubDate>
-        <link>http://nihal111.github.io/about/2016/11/22/Terasology-Getting-started.html</link>
-        <guid isPermaLink="true">http://nihal111.github.io/about/2016/11/22/Terasology-Getting-started.html</guid>
+        <link>http://localhost:4000/2016/11/22/Terasology-Getting-started.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/11/22/Terasology-Getting-started.html</guid>
         
         <category>open source</category>
         
@@ -272,8 +272,8 @@ In git, when you push, you bring the changes on your local repository come into 
 &lt;p&gt;In conclusion, I plan to learn a lot contributing to this project. This is my first hand at open source as well, so I hope it turns out to be an exciting learning experience.&lt;/p&gt;
 </description>
         <pubDate>Fri, 03 Jun 2016 00:00:00 +0530</pubDate>
-        <link>http://nihal111.github.io/about/2016/06/03/Mozilla-Quarter-of-Contribution.html</link>
-        <guid isPermaLink="true">http://nihal111.github.io/about/2016/06/03/Mozilla-Quarter-of-Contribution.html</guid>
+        <link>http://localhost:4000/2016/06/03/Mozilla-Quarter-of-Contribution.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/06/03/Mozilla-Quarter-of-Contribution.html</guid>
         
         <category>open source</category>
         
@@ -295,19 +295,19 @@ In git, when you push, you bring the changes on your local repository come into 
 &lt;p&gt;I used Sintara to create a simple web framework which would receive a HTTP POST made to the configured server URL, and run a small shell command. Having written this small piece of code, I could now reflect all changes made in the repository on the website, everytime a push is made to the repository. The following code renames the &lt;code class=&quot;highlighter-rouge&quot;&gt;html&lt;/code&gt; folder inside &lt;code class=&quot;highlighter-rouge&quot;&gt;/var/www/&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; and performs a git pull inside &lt;code class=&quot;highlighter-rouge&quot;&gt;/var/www&lt;/code&gt; and later renames it back to &lt;code class=&quot;highlighter-rouge&quot;&gt;html&lt;/code&gt;. This is done as the built site lies inside the &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; folder of the repository. I&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;c1&quot;&gt;# hook.rb&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;sinatra&#39;&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;json&#39;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'sinatra'&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'json'&lt;/span&gt;
 
-&lt;span class=&quot;n&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:bind&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;0.0.0.0&#39;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:bind&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'0.0.0.0'&lt;/span&gt;
 
-&lt;span class=&quot;n&quot;&gt;post&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;/payload&#39;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;post&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'/payload'&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
   &lt;span class=&quot;c1&quot;&gt;#push = JSON.parse(request.body.read)&lt;/span&gt;
   &lt;span class=&quot;c1&quot;&gt;#puts &quot;I got some JSON: #{push.inspect}&quot;&lt;/span&gt;
   &lt;span class=&quot;n&quot;&gt;output&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;sb&quot;&gt;`mv html _site ; git pull origin master; mv _site html`&lt;/span&gt;
   &lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;output&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Running a &lt;code class=&quot;highlighter-rouge&quot;&gt;ruby hook.rb -o 0.0.0.0&lt;/code&gt; will give a message like &lt;code class=&quot;highlighter-rouge&quot;&gt;Sinatra/1.4.4 has taken the stage on 4567...&lt;/code&gt;. Making a POST request on http://IP:4567/payload, will now trigger the shell command in the above script. (&lt;code class=&quot;highlighter-rouge&quot;&gt;-o 0.0.0.0&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;set :bind, &#39;0.0.0.0&#39;&lt;/code&gt; allows access from networks other than localhost)&lt;/p&gt;
+&lt;p&gt;Running a &lt;code class=&quot;highlighter-rouge&quot;&gt;ruby hook.rb -o 0.0.0.0&lt;/code&gt; will give a message like &lt;code class=&quot;highlighter-rouge&quot;&gt;Sinatra/1.4.4 has taken the stage on 4567...&lt;/code&gt;. Making a POST request on http://IP:4567/payload, will now trigger the shell command in the above script. (&lt;code class=&quot;highlighter-rouge&quot;&gt;-o 0.0.0.0&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;set :bind, '0.0.0.0'&lt;/code&gt; allows access from networks other than localhost)&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; You may have to enable the port if you are using a firewall on your server. A simple &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo ufw allow 4567&lt;/code&gt; should do it.&lt;/p&gt;
 
@@ -322,8 +322,8 @@ In git, when you push, you bring the changes on your local repository come into 
 &lt;p&gt;Till next time!&lt;/p&gt;
 </description>
         <pubDate>Wed, 18 May 2016 00:00:00 +0530</pubDate>
-        <link>http://nihal111.github.io/about/2016/05/18/auto-deploy.html</link>
-        <guid isPermaLink="true">http://nihal111.github.io/about/2016/05/18/auto-deploy.html</guid>
+        <link>http://localhost:4000/2016/05/18/auto-deploy.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/05/18/auto-deploy.html</guid>
         
         <category>git</category>
         
@@ -368,7 +368,7 @@ In git, when you push, you bring the changes on your local repository come into 
 	    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;recognize_google&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;audio&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 	    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;recognize_google&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;audio&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 	&lt;span class=&quot;k&quot;&gt;except&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;UnknownValueError&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-	    &lt;span class=&quot;n&quot;&gt;offline_speak&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;I couldn&#39;t understand what you said! Would you like to repeat?&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+	    &lt;span class=&quot;n&quot;&gt;offline_speak&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;I couldn't understand what you said! Would you like to repeat?&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 	    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;listen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
 	&lt;span class=&quot;k&quot;&gt;except&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;RequestError&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
 	    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Could not request results from Google Speech Recognition service; {0}&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
@@ -451,10 +451,10 @@ In git, when you push, you bring the changes on your local repository come into 
 &lt;span class=&quot;n&quot;&gt;response&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;urllib2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;urlopen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;html&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;soup&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;BeautifulSoup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;lxml&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vid&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;soup&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;findAll&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;attrs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;class&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;yt-uix-tile-link&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}):&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;https://www.youtube.com&#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;href&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;startswith&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://www.youtube.com/watch?v=&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vid&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;soup&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;findAll&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;attrs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'class'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'yt-uix-tile-link'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'https://www.youtube.com'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'href'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;startswith&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://www.youtube.com/watch?v=&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
     	&lt;span class=&quot;n&quot;&gt;flag&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
-    	&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&#39;https://www.youtube.com&#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&#39;href&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+    	&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'https://www.youtube.com'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'href'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;flag&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
 	&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;https://www.youtube.com&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
@@ -490,8 +490,8 @@ I have improved the above AIML code to produce this output:&lt;/p&gt;
 &lt;p&gt;Happy coding!&lt;/p&gt;
 </description>
         <pubDate>Mon, 16 May 2016 00:00:00 +0530</pubDate>
-        <link>http://nihal111.github.io/about/2016/05/16/J.A.R.V.I.S..html</link>
-        <guid isPermaLink="true">http://nihal111.github.io/about/2016/05/16/J.A.R.V.I.S..html</guid>
+        <link>http://localhost:4000/2016/05/16/J.A.R.V.I.S..html</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/05/16/J.A.R.V.I.S..html</guid>
         
         <category>AI</category>
         
@@ -504,7 +504,7 @@ I have improved the above AIML code to produce this output:&lt;/p&gt;
         <title>Playing with aliases</title>
         <description>&lt;p&gt;Since I can’t do without my games, I can’t do without Windows, and I have to dualboot. This means that most of my data is stored on a disk shared between both the operating systems. The path to the directory where I keep my projects thus becomes rather long. And I like to keep an alias for it.&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;code&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;cd /media/Nihal/Code&#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;code&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'cd /media/Nihal/Code'&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;What this would do is create an alias by the name of ‘code’ which would exist till the time you killed the terminal. Rather I have created a permanent alias for it, which is stored by copying the above line into the &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.bash_aliases&lt;/code&gt;&lt;/strong&gt; file in the home directory (if it doesn’t exist, you should really create one). I wanted to create a few more permanent aliases as and when needed and the process to do so felt tedious. Alas! I wrote another alias for it. Let’s talk about the &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.bashrc&lt;/code&gt;&lt;/strong&gt; and &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.bash_aliases&lt;/code&gt;&lt;/strong&gt; file before getting there.&lt;/p&gt;
 
@@ -523,49 +523,49 @@ I have improved the above AIML code to produce this output:&lt;/p&gt;
 &lt;h3 id=&quot;creating-a-permanent-alias&quot;&gt;Creating a Permanent Alias&lt;/h3&gt;
 &lt;p&gt;Creating a permanent alias is easy. Just open up ~/.bash_aliases and append the following line to it.&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;bar&#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'bar'&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Whenever you type in “foo”, “bar” will be passed as an input to the terminal.&lt;br /&gt;
 &lt;strong&gt;Note:&lt;/strong&gt; You can do this with ~/.bashrc as well but it is neater not to.&lt;/p&gt;
 
 &lt;p&gt;A perhaps better way to do this would be to automate the task and save yourself the hassle of opening a the fine and appending to it manually. And what better way to create aliases by using another alias? I wanted to have a way to create a permanent alias by just typing in a ‘p’ before alias like so:&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;palias &lt;span class=&quot;nv&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;bar&#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;palias &lt;span class=&quot;nv&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'bar'&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;To do this, I opened up &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.bash_aliases&lt;/code&gt; and created a function called permanent_alias and called it every time I entered “palias” on the terminal:&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;permanent_alias&lt;span class=&quot;o&quot;&gt;(){&lt;/span&gt;
     &lt;span class=&quot;nv&quot;&gt;KEY&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$1&lt;/span&gt; | cut -d&lt;span class=&quot;s2&quot;&gt;&quot;=&quot;&lt;/span&gt; -f 1&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt;
     &lt;span class=&quot;nv&quot;&gt;VALUE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$1&lt;/span&gt; | cut -d&lt;span class=&quot;s2&quot;&gt;&quot;=&quot;&lt;/span&gt; -f 2-&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; -e &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$KEY&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;=&#39;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$VALUE&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&#39;&quot;&lt;/span&gt; &amp;gt;&amp;gt; /home/nihal/.bash_aliases
-    &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;New permanent bash alias set: alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$KEY&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;=&#39;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$VALUE&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&#39;&quot;&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; -e &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$KEY&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;='&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$VALUE&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;'&quot;&lt;/span&gt; &amp;gt;&amp;gt; /home/nihal/.bash_aliases
+    &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;New permanent bash alias set: alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$KEY&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;='&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$VALUE&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;'&quot;&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; -f ~/.bash_aliases &lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;; &lt;span class=&quot;k&quot;&gt;then&lt;/span&gt;
 	    . ~/.bash_aliases
 	&lt;span class=&quot;k&quot;&gt;fi&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 
 &lt;span class=&quot;c&quot;&gt;#Create alias for function call&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;palias&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;permanent_alias&#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;palias&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'permanent_alias'&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;h4 id=&quot;explanation&quot;&gt;Explanation&lt;/h4&gt;
 &lt;ul&gt;
-  &lt;li&gt;$1 is a &lt;strong&gt;positional parameter&lt;/strong&gt; that returns the first argument passed. Since “palias” is an alias to a function call, it returns the first word after the word “palias”, without the inverted commas. &lt;code class=&quot;highlighter-rouge&quot;&gt;palias foo=&#39;bar&#39;&lt;/code&gt; will return foo=bar as $1.&lt;br /&gt;
+  &lt;li&gt;$1 is a &lt;strong&gt;positional parameter&lt;/strong&gt; that returns the first argument passed. Since “palias” is an alias to a function call, it returns the first word after the word “palias”, without the inverted commas. &lt;code class=&quot;highlighter-rouge&quot;&gt;palias foo='bar'&lt;/code&gt; will return foo=bar as $1.&lt;br /&gt;
 Interestingly, $0 returns the address of the script or shell running. In this case /bin/bash&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;$KEY&lt;/strong&gt; and &lt;strong&gt;$VALUE&lt;/strong&gt; variables are defined by splitting the string in $1 at the first “=”. The string &lt;strong&gt;$1&lt;/strong&gt; is passed to cut and with delimiter (&lt;strong&gt;-d&lt;/strong&gt;) as “&lt;strong&gt;=&lt;/strong&gt;”, fields (&lt;strong&gt;-f&lt;/strong&gt;) &lt;strong&gt;1&lt;/strong&gt; and &lt;strong&gt;2-&lt;/strong&gt; are selected&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;foo=&#39;bar&#39;&quot;&lt;/span&gt; | cut -d&lt;span class=&quot;s2&quot;&gt;&quot;=&quot;&lt;/span&gt; -f 1
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;foo='bar'&quot;&lt;/span&gt; | cut -d&lt;span class=&quot;s2&quot;&gt;&quot;=&quot;&lt;/span&gt; -f 1
 &lt;span class=&quot;c&quot;&gt;#returns &quot;foo&quot;&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;foo=&#39;bar&#39;&quot;&lt;/span&gt; | cut -d&lt;span class=&quot;s2&quot;&gt;&quot;=&quot;&lt;/span&gt; -f 2
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;foo='bar'&quot;&lt;/span&gt; | cut -d&lt;span class=&quot;s2&quot;&gt;&quot;=&quot;&lt;/span&gt; -f 2
 &lt;span class=&quot;c&quot;&gt;#returns &quot;bar&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;echo &quot;foo=&#39;bar&#39;&quot; | cut -d&quot;=&quot; -f 1&lt;/code&gt; has the same effect as &lt;code class=&quot;highlighter-rouge&quot;&gt;echo &quot;foo=&#39;bar&#39;&quot; | cut --delimiter=&quot;=&quot; --fields 1 &lt;/code&gt;&lt;br /&gt;
-&lt;strong&gt;Note:&lt;/strong&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;echo &quot;foo=&#39;bar==car&#39;&quot; | cut -d&quot;=&quot; -f 2-&lt;/code&gt; fetches ‘bar==car’ while &lt;code class=&quot;highlighter-rouge&quot;&gt;echo &quot;foo=&#39;bar==car&#39;&quot; | cut -d&quot;=&quot; -f 2&lt;/code&gt; fetches ‘bar&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;echo &quot;foo='bar'&quot; | cut -d&quot;=&quot; -f 1&lt;/code&gt; has the same effect as &lt;code class=&quot;highlighter-rouge&quot;&gt;echo &quot;foo='bar'&quot; | cut --delimiter=&quot;=&quot; --fields 1 &lt;/code&gt;&lt;br /&gt;
+&lt;strong&gt;Note:&lt;/strong&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;echo &quot;foo='bar==car'&quot; | cut -d&quot;=&quot; -f 2-&lt;/code&gt; fetches ‘bar==car’ while &lt;code class=&quot;highlighter-rouge&quot;&gt;echo &quot;foo='bar==car'&quot; | cut -d&quot;=&quot; -f 2&lt;/code&gt; fetches ‘bar&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Once KEY and VALUE are abstracted, they are appended to the &lt;code class=&quot;highlighter-rouge&quot;&gt;.bash_aliases&lt;/code&gt; file using&lt;/li&gt;
 &lt;/ul&gt;
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; -e &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$KEY&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;=&#39;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$VALUE&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&#39;&quot;&lt;/span&gt; &amp;gt;&amp;gt; /home/user/.bash_aliases&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; -e &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$KEY&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;='&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$VALUE&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;'&quot;&lt;/span&gt; &amp;gt;&amp;gt; /home/user/.bash_aliases&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt;  The -e flag is for enabling interpretation of backslash escapes like “\n” (newline). &lt;code class=&quot;highlighter-rouge&quot;&gt;echo &quot;string&quot; &amp;gt;&amp;gt; file&lt;/code&gt; is used to append “string” at the end of file.&lt;/p&gt;
 
@@ -578,7 +578,7 @@ Interestingly, $0 returns the address of the script or shell running. In this ca
   &lt;li&gt;For single word aliases, scrapping the inverted commas would do.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;palias &lt;span class=&quot;nv&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;bar&#39;&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;palias &lt;span class=&quot;nv&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'bar'&lt;/span&gt;
 and
 palias &lt;span class=&quot;nv&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;bar
 would have same effect as we manually add inverted commas later.&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
@@ -587,7 +587,7 @@ would have same effect as we manually add inverted commas later.&lt;/code&gt;&lt
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;palias &lt;span class=&quot;nv&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;cd /home&#39;&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;palias &lt;span class=&quot;nv&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'cd /home'&lt;/span&gt;
 &lt;span class=&quot;c&quot;&gt;#$1 = &quot;foo=cd /home&quot;&lt;/span&gt;
 and
 palias &lt;span class=&quot;nv&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /home	
@@ -598,7 +598,7 @@ would not have the same effect.&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
   &lt;li&gt;For special characters like “ ( , ) , @” etc, scrapping the inverted commas would not work&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;palias &lt;span class=&quot;nv&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;permanent_alias()&#39;&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;palias &lt;span class=&quot;nv&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'permanent_alias()'&lt;/span&gt;
 and
 palias &lt;span class=&quot;nv&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;permanent_alias&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
 would not have same effect as &lt;span class=&quot;s2&quot;&gt;&quot;(&quot;&lt;/span&gt; would be an unexpected token.&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
@@ -607,20 +607,20 @@ would not have same effect as &lt;span class=&quot;s2&quot;&gt;&quot;(&quot;&lt;
   &lt;li&gt;Garbage after the first space won’t matter.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;palias &lt;span class=&quot;nv&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;bar&#39;&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;palias &lt;span class=&quot;nv&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'bar'&lt;/span&gt;
 and
-palias &lt;span class=&quot;nv&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;bar&#39;&lt;/span&gt; this is an amazing blog
+palias &lt;span class=&quot;nv&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'bar'&lt;/span&gt; this is an amazing blog
 would have same effect.&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Spaces around the “=” in &lt;code class=&quot;highlighter-rouge&quot;&gt;palias foo = &#39;bar&#39;&lt;/code&gt; wouldn’t work. They wouldn’t work with regular alias either, for that matter.&lt;/li&gt;
+  &lt;li&gt;Spaces around the “=” in &lt;code class=&quot;highlighter-rouge&quot;&gt;palias foo = 'bar'&lt;/code&gt; wouldn’t work. They wouldn’t work with regular alias either, for that matter.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;If you’re still reading, I hope you found it useful. Till next time! :)&lt;/p&gt;
 </description>
         <pubDate>Sun, 08 May 2016 00:00:00 +0530</pubDate>
-        <link>http://nihal111.github.io/about/2016/05/08/playing-with-aliases.html</link>
-        <guid isPermaLink="true">http://nihal111.github.io/about/2016/05/08/playing-with-aliases.html</guid>
+        <link>http://localhost:4000/2016/05/08/playing-with-aliases.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/05/08/playing-with-aliases.html</guid>
         
         <category>bash</category>
         
@@ -645,8 +645,8 @@ would have same effect.&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hello World!&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 </description>
         <pubDate>Wed, 04 May 2016 00:00:00 +0530</pubDate>
-        <link>http://nihal111.github.io/about/2016/05/04/blog-init.html</link>
-        <guid isPermaLink="true">http://nihal111.github.io/about/2016/05/04/blog-init.html</guid>
+        <link>http://localhost:4000/2016/05/04/blog-init.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/05/04/blog-init.html</guid>
         
         <category>firstpost</category>
         

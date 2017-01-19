@@ -62,3 +62,8 @@ sass:
 include: ['_pages']
 kramdown:
   input: GFM
+gems:
+  - jekyll-redirect-from
+
+whitelist:
+  - jekyll-redirect-from
