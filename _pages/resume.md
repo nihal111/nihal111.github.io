@@ -7,5 +7,5 @@ redirect_from:
   - /cv
   - /CV
 redirect_to:
-  - https://www.overleaf.com/docs/7618063mpkkbrvvhkbk/pdf.pdf
+  - /docs/awesome-cv.pdf
 ---
