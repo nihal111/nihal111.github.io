@@ -20,9 +20,9 @@ After an exciting and productive summer that saw huge commitment, dedication and
 {: .center}
 ![GCI]({{ site.baseurl }}/img/GCI.png "GCI")
 
-Google Code-in is a contest that introduces pre-university students (ages 13-17) to open source software development. Students claim tasks from a pre-selected pool of problems from varying genres and difficulty-levels, work on them one at a time, have them approved by the mentors and repeat. At the end, students are awarded with t-shirts, hoodies and a certificate. The top two winners from each organisation get to go on a trip to Google's Mountain View office in California, along with a mentor. This year, that is the winter of 2016-17, saw *1,340 students from 62 countries* completing an impressive 6,418 tasks.
+Google Code-in is a contest that introduces pre-university students (ages 13-17) to open source software development. Students claim tasks from a pre-selected pool of problems from varying genres and difficulty-levels, work on them one at a time, have them approved by the mentors and repeat. At the end, students are awarded with t-shirts, hoodies and a certificate. The top two winners from each organisation get to go on a trip to Google's Mountain View office in California, along with a mentor. This year, that is the winter of 2016-17, saw **1,340 students from 62 countries** completing an impressive 6,418 tasks.
 
-MovingBlocks having become a veteran org in GSoC, was eligible to participate in this edition of GCI. By mid November, we had gathered a team of mentors who were actively creating bite-sized tasks ranging in complexity and theme. These tasks were assorted as *Code, Documentation/Training, Outreach/Research, Quality Assurance, User Interface* etc. *November 28th* marked the start of student activity that would last till *January 18th*.
+MovingBlocks having become a veteran org in GSoC, was eligible to participate in this edition of GCI. By mid November, we had gathered a team of mentors who were actively creating bite-sized tasks ranging in complexity and theme. These tasks were assorted as **Code, Documentation/Training, Outreach/Research, Quality Assurance, User Interface** etc. **November 28th** marked the start of student activity that would last till **January 18th**.
 
 ## Winter Has Come
 
@@ -44,9 +44,9 @@ The "hell week" concept which we had just heard about prior to our participation
 {: .center}
 ![Finish Line]({{ site.baseurl }}/img/finishflag.png "Finish Line")
 
-On 18th January, the closing whistle for this edition of Google Code-In was blown. At the end we had- *606 tasks completed by 138 students*, with a total of 222 starting or otherwise getting in touch with us. The *highest* was from a student who had *42 tasks* completed. Out of the 17 organisations that had participated, we came out as the *third highest org* (with respect to number of tasks completed) which was impressive for a first-timer.
+On 18th January, the closing whistle for this edition of Google Code-In was blown. At the end we had- **606 tasks completed by 138 students**, with a total of 222 starting or otherwise getting in touch with us. The **highest** was from a student who had **42 tasks** completed. Out of the 17 organisations that had participated, we came out as the **third highest org** (with respect to number of tasks completed) which was impressive for a first-timer.
 
-Once again with the end of winter, we saw amazing work by so many students around the globe. A huge thank you to all the students who participated, for all their contributions. Keep up the entusiasm and foster the love for open source. Most of all, hats off to all of the 11 other overworked mentors (excluding myself)- *Cervator, Skaldarnar, rzats, oniatus, flo, xtariq, SkySom, manu3d, anthodeus, avalancs, josharias*. Lastly, thanks to Google for provinding us a platform once again to reach out to students and developers across the globe.
+Once again with the end of winter, we saw amazing work by so many students around the globe. A huge thank you to all the students who participated, for all their contributions. Keep up the entusiasm and foster the love for open source. Most of all, hats off to all of the 11 other overworked mentors (excluding myself)- **Cervator, Skaldarnar, rzats, oniatus, flo, xtariq, SkySom, manu3d, anthodeus, avalancs, josharias**. Lastly, thanks to Google for provinding us a platform once again to reach out to students and developers across the globe.
 
 ## Who's the Winner?
 
