@@ -50,7 +50,7 @@ Once again with the end of winter, we saw amazing work by so many students aroun
 
 ## Who's the Winner?
 
-With GCI closing, there was one more task left, but this time for the mentors. But this was no 'bite-sized' task. The mentors were required to select the winners, from the top 11 students by quantity of tasks completed (we had a three way tie at the bottom of the top 10 so it became a top 11. This was extremely difficult as all the students in the list had done great and it was just a numbers game for us to select only 5 winners.
+With GCI closing, there was one more task left, but this time for the mentors. But this was no 'bite-sized' task. The mentors were required to select the winners, from the top 11 students by quantity of tasks completed (we had a three way tie at the bottom of the top 10 so it became a top 11). This was extremely difficult as all the students in the list had done great and it was just a numbers game for us to select only 5 winners.
 
 {: .center}
 ![GCI Winners]({{ site.baseurl }}/img/GCIwinners.png "GCI Winners")
