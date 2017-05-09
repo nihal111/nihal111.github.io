@@ -6,9 +6,54 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 18 Feb 2017 19:46:22 +0530</pubDate>
-    <lastBuildDate>Sat, 18 Feb 2017 19:46:22 +0530</lastBuildDate>
-    <generator>Jekyll v3.3.1</generator>
+    <pubDate>Tue, 09 May 2017 14:48:16 +0530</pubDate>
+    <lastBuildDate>Tue, 09 May 2017 14:48:16 +0530</lastBuildDate>
+    <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title>Google Summer of Code Selection</title>
+        <description>&lt;p&gt;Summer has kicked off with great news. My proposal for the Google Summer of Code with MovingBlocks- Terasology has been selected.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-the-google-summer-of-code&quot;&gt;What is the Google Summer of Code?&lt;/h2&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/GSoC.png&quot; alt=&quot;GSoC&quot; title=&quot;GSoC&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;To the uninitiated, Google Summer of Code is a global program targeted at bringing university students into open source. Students work with an open source organization on a 3 month programming project during their summer break. Google first selects around 200 organisations and funds their open source projects. It’s a win-win. The students get an awesome learning experience and a huge stipend. The organisations get a lot of work done from the dedicated students. Well, Google just plays the nice guy being a good Samaritan.&lt;/p&gt;
+
+&lt;p&gt;This would be MovingBlocks’ second GSoC selection as a mentoring organisation, which makes it a veteran org already. With a total of 10 slots this year, way more than last year’s 3, this summer might prove to be the immensely productive for MovingBlocks.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-movingblocks--terasology&quot;&gt;What is MovingBlocks- Terasology?&lt;/h2&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/gooey.png&quot; alt=&quot;Gooey&quot; title=&quot;Gooey&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/MovingBlocks/Terasology&quot;&gt;Moving Blocks- Terasology&lt;/a&gt; is a minecraft-like open source game built in a voxel world. A &lt;a href=&quot;https://en.wikipedia.org/wiki/Voxel&quot;&gt;voxel&lt;/a&gt; world is essentially a 3-D world made up from blocks. Terasology is still in it’s Alpha stage, but what makes it really special is it’s modularity. With a huge, diverse set of modules already developed/in-development, Terasology offers amazing possibilities. It has a very basic minimal engine, where even core features like health, inventory, combat etc can be added on top or removed as plug-in modules.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-am-i-doing&quot;&gt;What am I doing?&lt;/h2&gt;
+
+&lt;p&gt;My &lt;a href=&quot;https://summerofcode.withgoogle.com/projects/#6685506025816064&quot;&gt;project&lt;/a&gt; is titled as &lt;strong&gt;Exploration World- Improved Gameplay&lt;/strong&gt; (proposal &lt;a href=&quot;https://drive.google.com/file/d/0B3HM64I0M4DmYnVWUUpyQkZ2b1k/view&quot;&gt;here&lt;/a&gt;). In a gist, I plan to add WildAnimals, Puzzles, Exploration and other content to create a new gameplay module. The new gameplay module would pack together the best of whatever is created yet, to create a new gameplay setting that would add meaning and purpose for the end user.&lt;/p&gt;
+
+&lt;h2 id=&quot;when-am-i-doing-this&quot;&gt;When am I doing this?&lt;/h2&gt;
+
+&lt;p&gt;Since my college reopens mid-July, I’ve already started work on the Project. Officially May is meant to be a Community-Bonding period for most and the Coding phase only starts in July. However I plan to finish my GSoC early and I’ve already started off with the coding phase.&lt;/p&gt;
+
+&lt;h2 id=&quot;blog-for-updates&quot;&gt;Blog for updates&lt;/h2&gt;
+
+&lt;p&gt;I plan to use this blog to keep updating my progress. This blog will also be an attempt to document the work that I’ll be doing. This is gonna be an exciting summer!&lt;/p&gt;
+</description>
+        <pubDate>Thu, 04 May 2017 00:00:00 +0530</pubDate>
+        <link>http://localhost:4000/2017/05/04/Google-Summer-Of-Code.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/05/04/Google-Summer-Of-Code.html</guid>
+        
+        <category>open source</category>
+        
+        <category>MovingBlocks</category>
+        
+        <category>Terasology</category>
+        
+        <category>GSoC</category>
+        
+        
+      </item>
     
       <item>
         <title>MovingBlocks- GCI Wrap Up</title>
@@ -28,9 +73,9 @@
 
 &lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/winterhascome.jpg&quot; alt=&quot;Winter Has Come&quot; title=&quot;Winter Has Come&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;With the winter winds came gusts of excited students ready to dive into the pool of tasks that we had created. We had for long discussed how the first week (called the “hell week”) is usually the most intense and oh boy, it did get hectic and overwhelming at times. We saw the pile of tasks deplete faster than we could imagine, and students kept sending in work faster than we could review it. At times it became really helpful to have mentors dispersed over the globe so that we spanned all time-zones. At other times, coffee was the only dose of caffeine we could rely on.&lt;/p&gt;
+&lt;p&gt;With the winter winds came gusts of excited students ready to dive into the pool of tasks that we had created. We had for long discussed how the first week (called the “hell week”) is usually the most intense and oh boy, it did get hectic and overwhelming at times. We saw the pile of tasks deplete faster than we could imagine, and students kept sending in work faster than we could review it. At times it became really helpful to have mentors dispersed over the globe so that we spanned all time-zones. At other times, caffeine was our only reliable salvation.&lt;/p&gt;
 
-&lt;p&gt;IRC exploded with curious students asking for assistance, Github notifications set new records and we began running out of tasks before we could wipe the sweat off our forehead. But the entire mentor team pulled up their socks, converted half-baked ideas into well written task desciptions, added more research, design and documentation related tasks, allowed for existing issued on Github to count as tasks. Luckily, Terasology had huge potential for multi-instance tasks in creating equipments, food items, recipes and even new plants inside the game. Some of the best works by students were the splendid World Generators they created. More often than not, most of these tasks were threaded, such that each bite-sized task provided an introduction to a topic and had a follow up tasks which ensured a gradual increase in complexity and provided direcion to students.&lt;/p&gt;
+&lt;p&gt;IRC exploded with curious students asking for assistance, Github notifications set new records and we began running out of tasks before we could even wipe the sweat off our foreheads. But the entire mentor team pulled up their socks, converted half-baked ideas into well written task desciptions, added more research, design and documentation related tasks, allowed for existing issued on Github to count as tasks and did lots more. Luckily, Terasology had huge potential for multi-instance tasks in creating equipments, food items, recipes and even new plants inside the game. Some of the best works by students were the splendid World Generators they created. More often than not, most of these tasks were in chains containing sequential tasks, such that each bite-sized task provided an introduction to a topic and had a follow up tasks which ensured a gradual increase in complexity and provided direcion to students.&lt;/p&gt;
 
 &lt;p&gt;The Alpha 6 release event happened midway through GCI and went great with several students checking out our event server, which didn’t even crash once in over 60 hours.&lt;/p&gt;
 
@@ -48,7 +93,7 @@
 
 &lt;h2 id=&quot;whos-the-winner&quot;&gt;Who’s the Winner?&lt;/h2&gt;
 
-&lt;p&gt;With GCI closing, there was one more task left, but this time for the mentors. But this was no ‘bite-sized’ task. The mentors were required to select the winners, from the top 11 students by quantity of tasks completed (we had a three way tie at the bottom of the top 10 so it became a top 11. This was extremely difficult as all the students in the list had done great and it was just a numbers game for us to select only 5 winners.&lt;/p&gt;
+&lt;p&gt;With GCI closing, there was one more task left, but this time for the mentors. But this was no ‘bite-sized’ task. The mentors were required to select the winners, from the top 11 students by quantity of tasks completed (we had a three way tie at the bottom of the top 10 so it became a top 11). This was extremely difficult as all the students in the list had done great and it was just a numbers game for us to select only 5 winners.&lt;/p&gt;
 
 &lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/GCIwinners.png&quot; alt=&quot;GCI Winners&quot; title=&quot;GCI Winners&quot; /&gt;&lt;/p&gt;
 
@@ -140,13 +185,13 @@ $(document).ready(function(){
 &lt;h1 id=&quot;run-from-source&quot;&gt;Run from source&lt;/h1&gt;
 &lt;p&gt;This is probably the first and most important step you need to do before you can do anything else. Also, the first question you’ll be asked on IRC when you’re in doubt, is whether you’re able to “run from source”.&lt;/p&gt;
 
-&lt;h2 id=&quot;get-java&quot;&gt;1. Get Java&lt;/h2&gt;
+&lt;h2 id=&quot;1-get-java&quot;&gt;1. Get Java&lt;/h2&gt;
 
 &lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/java.png&quot; alt=&quot;Java&quot; title=&quot;Java&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Java 8 SDK is a requirement for the game to run. You can download this from &lt;a href=&quot;http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html&quot;&gt;here&lt;/a&gt; by choosing your OS.&lt;/p&gt;
 
-&lt;h2 id=&quot;get-git&quot;&gt;2. Get Git&lt;/h2&gt;
+&lt;h2 id=&quot;2-get-git&quot;&gt;2. Get Git&lt;/h2&gt;
 
 &lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/git.png&quot; alt=&quot;Git&quot; title=&quot;Git&quot; /&gt;&lt;/p&gt;
 
@@ -178,7 +223,7 @@ $(document).ready(function(){
 git config –global user.name “Your Name”
 git config –global user.email “your_email@whatever.com”&lt;/p&gt;
 
-&lt;h2 id=&quot;fork&quot;&gt;3. Fork&lt;/h2&gt;
+&lt;h2 id=&quot;3-fork&quot;&gt;3. Fork&lt;/h2&gt;
 
 &lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/fork.png&quot; alt=&quot;Fork&quot; title=&quot;Fork&quot; /&gt;&lt;/p&gt;
 
@@ -190,7 +235,7 @@ A fork is a copy of a repository. Forking a repository allows you to freely expe
 &lt;/div&gt;
 &lt;p&gt;Click &lt;em&gt;&lt;a href=&quot;https://github.com/MovingBlocks/Terasology/fork&quot;&gt;here&lt;/a&gt;&lt;/em&gt; to fork the &lt;em&gt;&lt;a href=&quot;https://github.com/MovingBlocks/Terasology&quot;&gt;Terasology github repository&lt;/a&gt;.&lt;/em&gt; Doing so will create a repository named “Terasology” under your github account and take you to it. From now you can access your copy of the repository here: &lt;a&gt;www.github.com/your_github_username/Terasology&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;clone&quot;&gt;4. Clone&lt;/h2&gt;
+&lt;h2 id=&quot;4-clone&quot;&gt;4. Clone&lt;/h2&gt;
 &lt;div class=&quot;collapsiblecontainer&quot;&gt;
 &lt;div class=&quot;collapsibleheader&quot;&gt;&lt;span&gt;+ &lt;/span&gt;&lt;span&gt;What is cloning?&lt;/span&gt;&lt;/div&gt;
 &lt;div class=&quot;collapsiblecontent&quot;&gt;   
@@ -204,7 +249,7 @@ Cloning downloads or &quot;clones&quot; a repository into a newly created direct
 git clone www.github.com/your_github_username/Terasology
 &lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;Terasology/&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;h2 id=&quot;run-the-game&quot;&gt;5. Run the game&lt;/h2&gt;
+&lt;h2 id=&quot;5-run-the-game&quot;&gt;5. Run the game&lt;/h2&gt;
 &lt;p&gt;You now have the repository cloned and can run the game using gradlew.&lt;/p&gt;
 
 &lt;p&gt;Open bash or git-bash, cd in to the Terasology directory and type in:&lt;/p&gt;
@@ -221,7 +266,7 @@ The gradlew is a script which downloads a version of the Gradle through which mo
 
 &lt;p&gt;Ask in the Support Forum if issues remain, or come join us on #terasology on Freenode IRC. See &lt;a href=&quot;https://github.com/MovingBlocks/Terasology/wiki/Using-IRC&quot;&gt;Using IRC&lt;/a&gt; and please be patient! IRC isn’t necessarily instant communication and it may take a while to get a reply.&lt;/p&gt;
 
-&lt;h2 id=&quot;use-an-ide&quot;&gt;6. Use an IDE&lt;/h2&gt;
+&lt;h2 id=&quot;6-use-an-ide&quot;&gt;6. Use an IDE&lt;/h2&gt;
 
 &lt;p&gt;With this large a project, you could easily get lost and ‘grep’ing would be inefficient. We have a series of customizations that prepare run configurations, Git integration, and so on for the project, specifically for IntelliJ. Eclipse has fewer of these but is still entirely usable, as is NetBeans, but you’ll need to figure out some details there yourself. I personally recommend the use of Intelij IDEA.&lt;/p&gt;
 
@@ -243,11 +288,11 @@ sudo apt-get install intellij-idea-community&lt;/code&gt;&lt;/pre&gt;&lt;/figure
 
 &lt;p&gt;This would prepare project files for Intellij. Open the resulting Terasology.ipr as an existing project in IntelliJ - do not create a new project or attempt to import the project via Gradle.&lt;/p&gt;
 
-&lt;h2 id=&quot;find-a-bug&quot;&gt;7. Find a Bug&lt;/h2&gt;
+&lt;h2 id=&quot;7-find-a-bug&quot;&gt;7. Find a Bug&lt;/h2&gt;
 
 &lt;p&gt;Once you are able to run from source and preferably have an IDE set up, you should get started with working on your first bug. The complete list of issues can be found &lt;a href=&quot;https://github.com/MovingBlocks/Terasology/issues&quot;&gt;here&lt;/a&gt;. However, you should look for issus with the tag &lt;code class=&quot;highlighter-rouge&quot;&gt;Bite-size&lt;/code&gt;. All bite-sized issues can be found &lt;a href=&quot;https://github.com/MovingBlocks/Terasology/issues?q=is%3Aissue+is%3Aopen+label%3ABite-size&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&quot;code-code-and-code&quot;&gt;8. Code, code and code&lt;/h2&gt;
+&lt;h2 id=&quot;8-code-code-and-code&quot;&gt;8. Code, code and code&lt;/h2&gt;
 
 &lt;p&gt;By default you would be on the develop branch. Before you start making changes to the code, remember to create a new branch. This can be skipped, however it is the best practice, especially when working on multiple issues. Also, if you don’t create a new branch, a Pull Request for your second bug fix will also contain a fix for the first bug, if the first PR isn’t merged till then.&lt;/p&gt;
 
@@ -265,7 +310,7 @@ Within a repository you have branches, which are effectively forks within your o
 
 &lt;p&gt;Get cracking on a solution. Ask on IRC when in doubt.&lt;/p&gt;
 
-&lt;h2 id=&quot;make-your-first-contribution&quot;&gt;9. Make your first contribution&lt;/h2&gt;
+&lt;h2 id=&quot;9-make-your-first-contribution&quot;&gt;9. Make your first contribution&lt;/h2&gt;
 
 &lt;p&gt;Once you’ve come up with a fix, it’s time to commit those changes and create a pull request.&lt;/p&gt;
 
@@ -301,7 +346,7 @@ In git, when you push, you bring the changes on your local repository come into 
 
 &lt;p&gt;Once done, let the mentors have a look at your PR. If they want changes, you should make the required changes, test locally and then, create a new commit in the same branch and finally push.&lt;/p&gt;
 
-&lt;h2 id=&quot;goto-7&quot;&gt;10. Goto 7&lt;/h2&gt;
+&lt;h2 id=&quot;10-goto-7&quot;&gt;10. Goto 7&lt;/h2&gt;
 
 &lt;p&gt;Don’t stop now. Go find another bug to fix! :D&lt;/p&gt;
 
@@ -360,12 +405,12 @@ In git, when you push, you bring the changes on your local repository come into 
         <title>Auto Deploy on Server</title>
         <description>&lt;p&gt;It had been a while since I had been using a server to host the &lt;a href=&quot;http://www.wncc-iitb.org&quot;&gt;website for WnCC&lt;/a&gt;. With a lot of development happening around, updating and testing changes on the server, had become a requirement. Having built the site in Jekyll, I required to shift the contents of &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; from my local machine to &lt;code class=&quot;highlighter-rouge&quot;&gt;/var/www/html&lt;/code&gt; on the server, after every build. I had been following the simple, standard method of using scp, for a long time. Copying all the content from &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;/var/www/html&lt;/code&gt; was now becoming inefficient (as I copied all the files in the folder all over again), took a lot of time as the site started expanding with more multimedia content, and required a long terminal command too. I could have used a probably more efficient way of SSHing into the server, pulling from the git repository and copying the contents of the &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; folder into &lt;code class=&quot;highlighter-rouge&quot;&gt;/var/www/html&lt;/code&gt;. But this would have been tedious too, and probably could have been made easier with a script. Nevertheless, it would have required me to SSH into the server, and atleast a couple of terminal commands.&lt;/p&gt;
 
-&lt;h3 id=&quot;discovering-github-webhookshttpsdevelopergithubcomwebhooks&quot;&gt;Discovering &lt;a href=&quot;https://developer.github.com/webhooks/&quot;&gt;Github Webhooks&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;discovering-github-webhooks&quot;&gt;Discovering &lt;a href=&quot;https://developer.github.com/webhooks/&quot;&gt;Github Webhooks&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Enter webhooks. &lt;a href=&quot;https://developer.github.com/webhooks/&quot;&gt;Webhooks&lt;/a&gt; allow one to set up an integration with their github repository to listen for one or more events. Whenever such an event occurs, Github sends a HTTP POST payload to the webhook’s configured URL. An event can occur with the creation of an issue, a push to the server or be triggered whenever a repository is starred, forked etc. Webhooks can be used to do a lot of things. I have used a webhook, in this example for the quite general purpose of setting up an auto-deplow on my server.&lt;/p&gt;
 
 &lt;p&gt;Github provides a quite &lt;a href=&quot;https://developer.github.com/webhooks/configuring/&quot;&gt;comprehensive guide&lt;/a&gt; about how to set up a webhook to the local host which is connected to the web using &lt;a href=&quot;https://ngrok.com/download&quot;&gt;ngrok&lt;/a&gt;. I followed the guide and replicated similar steps on my server to get my webhook configured to send a HTTP POST payload to the server.&lt;/p&gt;
 
-&lt;h3 id=&quot;using-sinatrahttpwwwsinatrarbcom&quot;&gt;Using &lt;a href=&quot;http://www.sinatrarb.com/&quot;&gt;Sinatra&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;using-sinatra&quot;&gt;Using &lt;a href=&quot;http://www.sinatrarb.com/&quot;&gt;Sinatra&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;I used Sintara to create a simple web framework which would receive a HTTP POST made to the configured server URL, and run a small shell command. Having written this small piece of code, I could now reflect all changes made in the repository on the website, everytime a push is made to the repository. The following code renames the &lt;code class=&quot;highlighter-rouge&quot;&gt;html&lt;/code&gt; folder inside &lt;code class=&quot;highlighter-rouge&quot;&gt;/var/www/&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; and performs a git pull inside &lt;code class=&quot;highlighter-rouge&quot;&gt;/var/www&lt;/code&gt; and later renames it back to &lt;code class=&quot;highlighter-rouge&quot;&gt;html&lt;/code&gt;. This is done as the built site lies inside the &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; folder of the repository. I&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;c1&quot;&gt;# hook.rb&lt;/span&gt;
@@ -585,7 +630,7 @@ I have improved the above AIML code to produce this output:&lt;/p&gt;
 &lt;h3 id=&quot;the-bashrc-file&quot;&gt;The &lt;strong&gt;&lt;em&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.bashrc&lt;/code&gt;&lt;/em&gt;&lt;/strong&gt; file&lt;/h3&gt;
 &lt;p&gt;In the home directory there also exists a &lt;code class=&quot;highlighter-rouge&quot;&gt;.bashrc&lt;/code&gt; file which shall contain a lot of oher things. The &lt;code class=&quot;highlighter-rouge&quot;&gt;.bashrc&lt;/code&gt; file is a script which executes evereytime a terminal is started in the &lt;strong&gt;interactive mode&lt;/strong&gt;. It contains a set of configurations for the terminal.  The &lt;code class=&quot;highlighter-rouge&quot;&gt;.bashrc&lt;/code&gt; file provides a space to set up variables, functions, aliases etc that you may want to use. The &lt;code class=&quot;highlighter-rouge&quot;&gt;.bashrc&lt;/code&gt; is then run every time you open up a new terminal. Be careful, that any error or change you make in the &lt;code class=&quot;highlighter-rouge&quot;&gt;.bashrc&lt;/code&gt; file will be reflected in all subsequent terminal windows launced. Also if you have a terminal window running, and you make changes to the &lt;code class=&quot;highlighter-rouge&quot;&gt;.bashrc&lt;/code&gt; file thereafter, you will obviously have no effect on the running terminal and you may want to restart it.&lt;/p&gt;
 
-&lt;h3 id=&quot;loading-the-bashaliases-file&quot;&gt;Loading the &lt;strong&gt;&lt;em&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.bash_aliases&lt;/code&gt;&lt;/em&gt;&lt;/strong&gt; file&lt;/h3&gt;
+&lt;h3 id=&quot;loading-the-bash_aliases-file&quot;&gt;Loading the &lt;strong&gt;&lt;em&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.bash_aliases&lt;/code&gt;&lt;/em&gt;&lt;/strong&gt; file&lt;/h3&gt;
 &lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;.bashrc&lt;/code&gt; file does a fine job of loading the &lt;code class=&quot;highlighter-rouge&quot;&gt;.bash_aliases&lt;/code&gt; file like so:&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; -f ~/.bash_aliases &lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;; &lt;span class=&quot;k&quot;&gt;then&lt;/span&gt;
