@@ -10,15 +10,14 @@ tags:
 - GCI
 ---
 
-{: .center}
-![GSoC]({{ site.baseurl }}/img/GSoC.png "GSoC")
+<p class="center">{% picture GSoC.png alt="GSoC" title="GSoC" width="30%" %}</p>
 
 After an exciting and productive summer that saw huge commitment, dedication and interest from students and mentors alike in MovingBlock's first ever Google Summer of Code participation, it was time to gear up for some new beginnings.
 
 ## Google Code-In
 
-{: .center}
-![GCI]({{ site.baseurl }}/img/GCI.png "GCI")
+
+<p class="center">{% picture GCI.png alt="GCI" title="GCI" width="30%" %}</p>
 
 Google Code-in is a contest that introduces pre-university students (ages 13-17) to open source software development. Students claim tasks from a pre-selected pool of problems from varying genres and difficulty-levels, work on them one at a time, have them approved by the mentors and repeat. At the end, students are awarded with t-shirts, hoodies and a certificate. The top two winners from each organisation get to go on a trip to Google's Mountain View office in California, along with a mentor. This year, that is the winter of 2016-17, saw **1,340 students from 62 countries** completing an impressive 6,418 tasks.
 
@@ -26,8 +25,7 @@ MovingBlocks having become a veteran org in GSoC, was eligible to participate in
 
 ## Winter Has Come
 
-{: .center}
-![Winter Has Come]({{ site.baseurl }}/img/winterhascome.jpg "Winter Has Come")
+<p class="center">{% picture winterhascome.jpg alt="winter" title="winter" width="100%" %}</p>
 
 With the winter winds came gusts of excited students ready to dive into the pool of tasks that we had created. We had for long discussed how the first week (called the "hell week") is usually the most intense and oh boy, it did get hectic and overwhelming at times. We saw the pile of tasks deplete faster than we could imagine, and students kept sending in work faster than we could review it. At times it became really helpful to have mentors dispersed over the globe so that we spanned all time-zones. At other times, caffeine was our only reliable salvation.
 
@@ -41,8 +39,7 @@ The "hell week" concept which we had just heard about prior to our participation
 
 ## Crossing the Finish Line
 
-{: .center}
-![Finish Line]({{ site.baseurl }}/img/finishflag.png "Finish Line")
+<p class="center">{% picture finishflag.png alt="Finish Line" title="Finish Line" width="30%" %}</p>
 
 On 18th January, the closing whistle for this edition of Google Code-In was blown. At the end we had- **606 tasks completed by 138 students**, with a total of 222 starting or otherwise getting in touch with us. The **highest** was from a student who had **42 tasks** completed. Out of the 17 organisations that had participated, we came out as the **third highest org** (with respect to number of tasks completed) which was impressive for a first-timer.
 
@@ -52,8 +49,7 @@ Once again with the end of winter, we saw amazing work by so many students aroun
 
 With GCI closing, there was one more task left, but this time for the mentors. But this was no 'bite-sized' task. The mentors were required to select the winners, from the top 11 students by quantity of tasks completed (we had a three way tie at the bottom of the top 10 so it became a top 11). This was extremely difficult as all the students in the list had done great and it was just a numbers game for us to select only 5 winners.
 
-{: .center}
-![GCI Winners]({{ site.baseurl }}/img/GCIwinners.png "GCI Winners")
+<p class="center">{% picture GCIwinners.png alt="GCIWinners" title="GCIWinners" width="60%" %}</p>
 
 Here are two articles that have our top 2 winners featured- [Isaac Ong](http://www.straitstimes.com/singapore/education/third-time-lucky-for-student-in-googles-coding-competition) and [Scott M. Sunarto](http://www.thejakartapost.com/life/2017/02/04/three-indonesian-students-win-google-open-source-competition.html).
 
@@ -67,8 +63,7 @@ We ended GCI with a [recap thread](http://forum.terasology.org/threads/google-co
 
 The interests in various parts of the game varied and the we received valuable input on how we could improve on our tasks next year. Overall we received compliments on areas such as interaction, assistance, availability and speedy reviews. General feedback about mentors and our review system was very flattering. Some students described us as the "most accommodating org" and our response rates as "phenonmenal". One student descibed our tasks as much more fun to do (having advantage of being a game) while another talks about the second family nature of our IRC.
 
-{: .center}
-![Terasology]({{ site.baseurl }}/img/terasologylogo.png "Terasology")
+<p class="center">{% picture terasologylogo.png alt="terasology" title="terasology" width="100%" %}</p>
 
 All in all, it was a huge learning experience, both for the students and for the Terasology community. We now know a lot many ways in which we can improve the next year. Till then it is time to prepare for GSoC '17.
 

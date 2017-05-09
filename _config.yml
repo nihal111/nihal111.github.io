@@ -64,6 +64,19 @@ kramdown:
   input: GFM
 gems:
   - jekyll-redirect-from
-
+  - jekyll-picture-tag
 whitelist:
   - jekyll-redirect-from
+
+picture:
+  source: "img"
+  output: "img/resize"
+  markup: "picture"
+  presets:
+    default:
+      ppi: [1, 1.5, 2.0]
+      source_medium:
+        media: "(min-width: 40em)"
+        width: "600"
+      source_default:
+        width: "600"
