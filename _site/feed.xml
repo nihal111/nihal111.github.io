@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 10 May 2017 00:23:43 +0530</pubDate>
-    <lastBuildDate>Wed, 10 May 2017 00:23:43 +0530</lastBuildDate>
+    <pubDate>Wed, 10 May 2017 01:22:48 +0530</pubDate>
+    <lastBuildDate>Wed, 10 May 2017 01:22:48 +0530</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>
@@ -138,7 +138,7 @@ Once an animal prefab is made, it can be spawned in game by typing &lt;code clas
 
 &lt;h2 id=&quot;what-am-i-doing&quot;&gt;What am I doing?&lt;/h2&gt;
 
-&lt;p&gt;My &lt;a href=&quot;https://summerofcode.withgoogle.com/projects/#6685506025816064&quot;&gt;project&lt;/a&gt; is titled as &lt;strong&gt;Exploration World- Improved Gameplay&lt;/strong&gt; (proposal &lt;a href=&quot;https://drive.google.com/file/d/0B3HM64I0M4DmYnVWUUpyQkZ2b1k/view&quot;&gt;here&lt;/a&gt;). In a gist, I plan to add WildAnimals, Puzzles, Exploration and other content to create a new gameplay module. The new gameplay module would pack together the best of whatever is created yet, to create a new gameplay setting that would add meaning and purpose for the end user.&lt;/p&gt;
+&lt;p&gt;My &lt;a href=&quot;https://summerofcode.withgoogle.com/projects/#6685506025816064&quot;&gt;project&lt;/a&gt; is titled as &lt;strong&gt;Exploration World- Improved Gameplay&lt;/strong&gt; (proposal &lt;a href=&quot;https://drive.google.com/file/d/0B3HM64I0M4DmYnVWUUpyQkZ2b1k/view&quot;&gt;here&lt;/a&gt;). In a gist, I plan to add WildAnimals, Puzzles, Exploration and other content to create a new gameplay module. The new gameplay module would pack together the best of whatever is created yet, to create a new gameplay setting that would add meaning and purpose for the end user. My primary mentor would be Skylar ‘skysom’ Sommers and secondary mentors would be- Florian ‘flo’ Köberle, Xavier ‘xtariq’ Tariq and Isaac ‘iojw’ Ong.&lt;/p&gt;
 
 &lt;h2 id=&quot;when-am-i-doing-this&quot;&gt;When am I doing this?&lt;/h2&gt;
 
