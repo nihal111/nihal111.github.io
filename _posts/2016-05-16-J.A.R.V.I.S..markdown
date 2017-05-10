@@ -8,7 +8,7 @@ tags:
 - python
 ---
 
-{: .center}
+{: .center .w100}
 ![J.A.R.V.I.S.]({{ site.baseurl }}/img/jarvis.jpg "J.A.R.V.I.S.")
 
 Almost a week ago, I attempted to create [my own version](https://github.com/nihal111/J.A.R.V.I.S) of Iron Man's J.A.R.V.I.S. which would perform a few tasks and have chatbot like abilities. After a bit of research I found out about [AIML](http://www.alicebot.org/aiml.html) and its [interpreter for python](https://pypi.python.org/pypi/PyAIML). I also found ways to convert text to speech and speech to to text using python libraries like [pyttsx](https://pypi.python.org/pypi/pyttsx) and [SpeechRecognition](https://pypi.python.org/pypi/SpeechRecognition/3.4.3). I soon ended up making a J.A.R.V.I.S. which understood some of the things I said and performed a few fun actions.

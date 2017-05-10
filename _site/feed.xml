@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 10 May 2017 01:22:48 +0530</pubDate>
-    <lastBuildDate>Wed, 10 May 2017 01:22:48 +0530</lastBuildDate>
+    <pubDate>Wed, 10 May 2017 08:56:33 +0530</pubDate>
+    <lastBuildDate>Wed, 10 May 2017 08:56:33 +0530</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>
@@ -101,21 +101,12 @@ Once an animal prefab is made, it can be spawned in game by typing &lt;code clas
       </item>
     
       <item>
-        <title>Google Summer of Code 2017 Selection</title>
+        <title>Google Summer of Code Selection</title>
         <description>&lt;p&gt;Summer has kicked off with great news. My proposal for the Google Summer of Code with MovingBlocks- Terasology has been selected.&lt;/p&gt;
 
 &lt;h2 id=&quot;what-is-the-google-summer-of-code&quot;&gt;What is the Google Summer of Code?&lt;/h2&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;picture&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/GSoC-225by225-a67707.png&quot; media=&quot;(min-width: 40em) and (-webkit-min-device-pixel-ratio: 2.0), (min-width: 40em) and (min-resolution: 192dpi)&quot; /&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/GSoC-225by225-a67707.png&quot; media=&quot;(min-width: 40em) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 40em) and (min-resolution: 144dpi)&quot; /&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/GSoC-225by225-a67707.png&quot; media=&quot;(min-width: 40em)&quot; /&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/GSoC-225by225-a67707.png&quot; media=&quot;(-webkit-min-device-pixel-ratio: 2.0), (min-resolution: 192dpi)&quot; /&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/GSoC-225by225-a67707.png&quot; media=&quot;(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)&quot; /&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/GSoC-225by225-a67707.png&quot; /&gt;
-    &lt;img src=&quot;http://localhost:4000/img/resize/GSoC-225by225-a67707.png&quot; alt=&quot;GSoC&quot; title=&quot;GSoC&quot; width=&quot;30%&quot; /&gt;
-  &lt;/picture&gt;
-&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/GSoC.png&quot; alt=&quot;GSoC&quot; title=&quot;GSoC&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;To the uninitiated, Google Summer of Code is a global program targeted at bringing university students into open source. Students work with an open source organization on a 3 month programming project during their summer break. Google first selects around 200 organisations and funds their open source projects. It’s a win-win. The students get an awesome learning experience and a huge stipend. The organisations get a lot of work done from the dedicated students. Well, Google just plays the nice guy being a good Samaritan.&lt;/p&gt;
 
@@ -123,22 +114,15 @@ Once an animal prefab is made, it can be spawned in game by typing &lt;code clas
 
 &lt;h2 id=&quot;what-is-movingblocks--terasology&quot;&gt;What is MovingBlocks- Terasology?&lt;/h2&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;picture&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/gooey-460by460-6c1ca4.png&quot; media=&quot;(min-width: 40em) and (-webkit-min-device-pixel-ratio: 2.0), (min-width: 40em) and (min-resolution: 192dpi)&quot; /&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/gooey-460by460-6c1ca4.png&quot; media=&quot;(min-width: 40em) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 40em) and (min-resolution: 144dpi)&quot; /&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/gooey-460by460-6c1ca4.png&quot; media=&quot;(min-width: 40em)&quot; /&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/gooey-460by460-6c1ca4.png&quot; media=&quot;(-webkit-min-device-pixel-ratio: 2.0), (min-resolution: 192dpi)&quot; /&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/gooey-460by460-6c1ca4.png&quot; media=&quot;(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)&quot; /&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/gooey-460by460-6c1ca4.png&quot; /&gt;
-    &lt;img src=&quot;http://localhost:4000/img/resize/gooey-460by460-6c1ca4.png&quot; alt=&quot;Gooey&quot; title=&quot;Gooey&quot; width=&quot;50%&quot; /&gt;
-  &lt;/picture&gt;
-&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/gooey.png&quot; alt=&quot;Gooey&quot; title=&quot;Gooey&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/MovingBlocks/Terasology&quot;&gt;Moving Blocks- Terasology&lt;/a&gt; is a minecraft-like open source game built in a voxel world. A &lt;a href=&quot;https://en.wikipedia.org/wiki/Voxel&quot;&gt;voxel&lt;/a&gt; world is essentially a 3-D world made up from blocks. Terasology is still in it’s Alpha stage, but what makes it really special is it’s modularity. With a huge, diverse set of modules already developed/in-development, Terasology offers amazing possibilities. It has a very basic minimal engine, where even core features like health, inventory, combat etc can be added on top or removed as plug-in modules.&lt;/p&gt;
 
 &lt;h2 id=&quot;what-am-i-doing&quot;&gt;What am I doing?&lt;/h2&gt;
 
-&lt;p&gt;My &lt;a href=&quot;https://summerofcode.withgoogle.com/projects/#6685506025816064&quot;&gt;project&lt;/a&gt; is titled as &lt;strong&gt;Exploration World- Improved Gameplay&lt;/strong&gt; (proposal &lt;a href=&quot;https://drive.google.com/file/d/0B3HM64I0M4DmYnVWUUpyQkZ2b1k/view&quot;&gt;here&lt;/a&gt;). In a gist, I plan to add WildAnimals, Puzzles, Exploration and other content to create a new gameplay module. The new gameplay module would pack together the best of whatever is created yet, to create a new gameplay setting that would add meaning and purpose for the end user. My primary mentor would be Skylar ‘skysom’ Sommers and secondary mentors would be- Florian ‘flo’ Köberle, Xavier ‘xtariq’ Tariq and Isaac ‘iojw’ Ong.&lt;/p&gt;
+&lt;p&gt;My &lt;a href=&quot;https://summerofcode.withgoogle.com/projects/#6685506025816064&quot;&gt;project&lt;/a&gt; is titled as &lt;strong&gt;Exploration World- Improved Gameplay&lt;/strong&gt; (proposal &lt;a href=&quot;https://drive.google.com/file/d/0B3HM64I0M4DmYnVWUUpyQkZ2b1k/view&quot;&gt;here&lt;/a&gt;). In a gist, I plan to add WildAnimals, Puzzles, Exploration and other content to create a new gameplay module. The new gameplay module would pack together the best of whatever is created yet, to create a new gameplay setting that would add meaning and purpose for the end user.&lt;/p&gt;
+
+&lt;p&gt;My primary mentor would be Skylar ‘skysom’ Sommers and secondary mentors would be- Florian ‘flo’ Köberle, Xavier ‘xtariq’ Tariq and Isaac ‘iojw’ Ong.&lt;/p&gt;
 
 &lt;h2 id=&quot;when-am-i-doing-this&quot;&gt;When am I doing this?&lt;/h2&gt;
 
@@ -165,31 +149,13 @@ Once an animal prefab is made, it can be spawned in game by typing &lt;code clas
     
       <item>
         <title>MovingBlocks- GCI Wrap Up</title>
-        <description>&lt;p class=&quot;center&quot;&gt;&lt;picture&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/GSoC-225by225-a67707.png&quot; media=&quot;(min-width: 40em) and (-webkit-min-device-pixel-ratio: 2.0), (min-width: 40em) and (min-resolution: 192dpi)&quot; /&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/GSoC-225by225-a67707.png&quot; media=&quot;(min-width: 40em) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 40em) and (min-resolution: 144dpi)&quot; /&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/GSoC-225by225-a67707.png&quot; media=&quot;(min-width: 40em)&quot; /&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/GSoC-225by225-a67707.png&quot; media=&quot;(-webkit-min-device-pixel-ratio: 2.0), (min-resolution: 192dpi)&quot; /&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/GSoC-225by225-a67707.png&quot; media=&quot;(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)&quot; /&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/GSoC-225by225-a67707.png&quot; /&gt;
-    &lt;img src=&quot;http://localhost:4000/img/resize/GSoC-225by225-a67707.png&quot; alt=&quot;GSoC&quot; title=&quot;GSoC&quot; width=&quot;30%&quot; /&gt;
-  &lt;/picture&gt;
-&lt;/p&gt;
+        <description>&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/GSoC.png&quot; alt=&quot;GSoC&quot; title=&quot;GSoC&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;After an exciting and productive summer that saw huge commitment, dedication and interest from students and mentors alike in MovingBlock’s first ever Google Summer of Code participation, it was time to gear up for some new beginnings.&lt;/p&gt;
 
 &lt;h2 id=&quot;google-code-in&quot;&gt;Google Code-In&lt;/h2&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;picture&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/GCI-250by218-ac9b73.png&quot; media=&quot;(min-width: 40em) and (-webkit-min-device-pixel-ratio: 2.0), (min-width: 40em) and (min-resolution: 192dpi)&quot; /&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/GCI-250by218-ac9b73.png&quot; media=&quot;(min-width: 40em) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 40em) and (min-resolution: 144dpi)&quot; /&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/GCI-250by218-ac9b73.png&quot; media=&quot;(min-width: 40em)&quot; /&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/GCI-250by218-ac9b73.png&quot; media=&quot;(-webkit-min-device-pixel-ratio: 2.0), (min-resolution: 192dpi)&quot; /&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/GCI-250by218-ac9b73.png&quot; media=&quot;(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)&quot; /&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/GCI-250by218-ac9b73.png&quot; /&gt;
-    &lt;img src=&quot;http://localhost:4000/img/resize/GCI-250by218-ac9b73.png&quot; alt=&quot;GCI&quot; title=&quot;GCI&quot; width=&quot;30%&quot; /&gt;
-  &lt;/picture&gt;
-&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/GCI.png&quot; alt=&quot;GCI&quot; title=&quot;GCI&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Google Code-in is a contest that introduces pre-university students (ages 13-17) to open source software development. Students claim tasks from a pre-selected pool of problems from varying genres and difficulty-levels, work on them one at a time, have them approved by the mentors and repeat. At the end, students are awarded with t-shirts, hoodies and a certificate. The top two winners from each organisation get to go on a trip to Google’s Mountain View office in California, along with a mentor. This year, that is the winter of 2016-17, saw &lt;strong&gt;1,340 students from 62 countries&lt;/strong&gt; completing an impressive 6,418 tasks.&lt;/p&gt;
 
@@ -197,16 +163,7 @@ Once an animal prefab is made, it can be spawned in game by typing &lt;code clas
 
 &lt;h2 id=&quot;winter-has-come&quot;&gt;Winter Has Come&lt;/h2&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;picture&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/winterhascome-640by360-0fa095.jpg&quot; media=&quot;(min-width: 40em) and (-webkit-min-device-pixel-ratio: 2.0), (min-width: 40em) and (min-resolution: 192dpi)&quot; /&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/winterhascome-640by360-0fa095.jpg&quot; media=&quot;(min-width: 40em) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 40em) and (min-resolution: 144dpi)&quot; /&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/winterhascome-600by338-0fa095.jpg&quot; media=&quot;(min-width: 40em)&quot; /&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/winterhascome-640by360-0fa095.jpg&quot; media=&quot;(-webkit-min-device-pixel-ratio: 2.0), (min-resolution: 192dpi)&quot; /&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/winterhascome-640by360-0fa095.jpg&quot; media=&quot;(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)&quot; /&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/winterhascome-600by338-0fa095.jpg&quot; /&gt;
-    &lt;img src=&quot;http://localhost:4000/img/resize/winterhascome-600by338-0fa095.jpg&quot; alt=&quot;winter&quot; title=&quot;winter&quot; width=&quot;100%&quot; /&gt;
-  &lt;/picture&gt;
-&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/winterhascome.jpg&quot; alt=&quot;Winter Has Come&quot; title=&quot;Winter Has Come&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;With the winter winds came gusts of excited students ready to dive into the pool of tasks that we had created. We had for long discussed how the first week (called the “hell week”) is usually the most intense and oh boy, it did get hectic and overwhelming at times. We saw the pile of tasks deplete faster than we could imagine, and students kept sending in work faster than we could review it. At times it became really helpful to have mentors dispersed over the globe so that we spanned all time-zones. At other times, caffeine was our only reliable salvation.&lt;/p&gt;
 
@@ -220,16 +177,7 @@ Once an animal prefab is made, it can be spawned in game by typing &lt;code clas
 
 &lt;h2 id=&quot;crossing-the-finish-line&quot;&gt;Crossing the Finish Line&lt;/h2&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;picture&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/finishflag-259by194-5ff0a0.png&quot; media=&quot;(min-width: 40em) and (-webkit-min-device-pixel-ratio: 2.0), (min-width: 40em) and (min-resolution: 192dpi)&quot; /&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/finishflag-259by194-5ff0a0.png&quot; media=&quot;(min-width: 40em) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 40em) and (min-resolution: 144dpi)&quot; /&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/finishflag-259by194-5ff0a0.png&quot; media=&quot;(min-width: 40em)&quot; /&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/finishflag-259by194-5ff0a0.png&quot; media=&quot;(-webkit-min-device-pixel-ratio: 2.0), (min-resolution: 192dpi)&quot; /&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/finishflag-259by194-5ff0a0.png&quot; media=&quot;(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)&quot; /&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/finishflag-259by194-5ff0a0.png&quot; /&gt;
-    &lt;img src=&quot;http://localhost:4000/img/resize/finishflag-259by194-5ff0a0.png&quot; alt=&quot;Finish Line&quot; title=&quot;Finish Line&quot; width=&quot;30%&quot; /&gt;
-  &lt;/picture&gt;
-&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/finishflag.png&quot; alt=&quot;Finish Line&quot; title=&quot;Finish Line&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;On 18th January, the closing whistle for this edition of Google Code-In was blown. At the end we had- &lt;strong&gt;606 tasks completed by 138 students&lt;/strong&gt;, with a total of 222 starting or otherwise getting in touch with us. The &lt;strong&gt;highest&lt;/strong&gt; was from a student who had &lt;strong&gt;42 tasks&lt;/strong&gt; completed. Out of the 17 organisations that had participated, we came out as the &lt;strong&gt;third highest org&lt;/strong&gt; (with respect to number of tasks completed) which was impressive for a first-timer.&lt;/p&gt;
 
@@ -239,16 +187,7 @@ Once an animal prefab is made, it can be spawned in game by typing &lt;code clas
 
 &lt;p&gt;With GCI closing, there was one more task left, but this time for the mentors. But this was no ‘bite-sized’ task. The mentors were required to select the winners, from the top 11 students by quantity of tasks completed (we had a three way tie at the bottom of the top 10 so it became a top 11). This was extremely difficult as all the students in the list had done great and it was just a numbers game for us to select only 5 winners.&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;picture&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/GCIwinners-457by388-fd576b.png&quot; media=&quot;(min-width: 40em) and (-webkit-min-device-pixel-ratio: 2.0), (min-width: 40em) and (min-resolution: 192dpi)&quot; /&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/GCIwinners-457by388-fd576b.png&quot; media=&quot;(min-width: 40em) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 40em) and (min-resolution: 144dpi)&quot; /&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/GCIwinners-457by388-fd576b.png&quot; media=&quot;(min-width: 40em)&quot; /&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/GCIwinners-457by388-fd576b.png&quot; media=&quot;(-webkit-min-device-pixel-ratio: 2.0), (min-resolution: 192dpi)&quot; /&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/GCIwinners-457by388-fd576b.png&quot; media=&quot;(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)&quot; /&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/GCIwinners-457by388-fd576b.png&quot; /&gt;
-    &lt;img src=&quot;http://localhost:4000/img/resize/GCIwinners-457by388-fd576b.png&quot; alt=&quot;GCIWinners&quot; title=&quot;GCIWinners&quot; width=&quot;60%&quot; /&gt;
-  &lt;/picture&gt;
-&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/GCIwinners.png&quot; alt=&quot;GCI Winners&quot; title=&quot;GCI Winners&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Here are two articles that have our top 2 winners featured- &lt;a href=&quot;http://www.straitstimes.com/singapore/education/third-time-lucky-for-student-in-googles-coding-competition&quot;&gt;Isaac Ong&lt;/a&gt; and &lt;a href=&quot;http://www.thejakartapost.com/life/2017/02/04/three-indonesian-students-win-google-open-source-competition.html&quot;&gt;Scott M. Sunarto&lt;/a&gt;.&lt;/p&gt;
 
@@ -262,16 +201,7 @@ Once an animal prefab is made, it can be spawned in game by typing &lt;code clas
 
 &lt;p&gt;The interests in various parts of the game varied and the we received valuable input on how we could improve on our tasks next year. Overall we received compliments on areas such as interaction, assistance, availability and speedy reviews. General feedback about mentors and our review system was very flattering. Some students described us as the “most accommodating org” and our response rates as “phenonmenal”. One student descibed our tasks as much more fun to do (having advantage of being a game) while another talks about the second family nature of our IRC.&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;picture&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/terasologylogo-443by88-7857ca.png&quot; media=&quot;(min-width: 40em) and (-webkit-min-device-pixel-ratio: 2.0), (min-width: 40em) and (min-resolution: 192dpi)&quot; /&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/terasologylogo-443by88-7857ca.png&quot; media=&quot;(min-width: 40em) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 40em) and (min-resolution: 144dpi)&quot; /&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/terasologylogo-443by88-7857ca.png&quot; media=&quot;(min-width: 40em)&quot; /&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/terasologylogo-443by88-7857ca.png&quot; media=&quot;(-webkit-min-device-pixel-ratio: 2.0), (min-resolution: 192dpi)&quot; /&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/terasologylogo-443by88-7857ca.png&quot; media=&quot;(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)&quot; /&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/terasologylogo-443by88-7857ca.png&quot; /&gt;
-    &lt;img src=&quot;http://localhost:4000/img/resize/terasologylogo-443by88-7857ca.png&quot; alt=&quot;terasology&quot; title=&quot;terasology&quot; width=&quot;100%&quot; /&gt;
-  &lt;/picture&gt;
-&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/terasologylogo.png&quot; alt=&quot;Terasology&quot; title=&quot;Terasology&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;All in all, it was a huge learning experience, both for the students and for the Terasology community. We now know a lot many ways in which we can improve the next year. Till then it is time to prepare for GSoC ‘17.&lt;/p&gt;
 
@@ -336,16 +266,7 @@ $(document).ready(function(){
 
 &lt;/script&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;picture&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/Terasology-800by450-fb05ef.jpg&quot; media=&quot;(min-width: 40em) and (-webkit-min-device-pixel-ratio: 2.0), (min-width: 40em) and (min-resolution: 192dpi)&quot; /&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/Terasology-800by450-fb05ef.jpg&quot; media=&quot;(min-width: 40em) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 40em) and (min-resolution: 144dpi)&quot; /&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/Terasology-600by338-fb05ef.jpg&quot; media=&quot;(min-width: 40em)&quot; /&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/Terasology-800by450-fb05ef.jpg&quot; media=&quot;(-webkit-min-device-pixel-ratio: 2.0), (min-resolution: 192dpi)&quot; /&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/Terasology-800by450-fb05ef.jpg&quot; media=&quot;(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)&quot; /&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/Terasology-600by338-fb05ef.jpg&quot; /&gt;
-    &lt;img src=&quot;http://localhost:4000/img/resize/Terasology-600by338-fb05ef.jpg&quot; alt=&quot;Terasology&quot; title=&quot;Terasology&quot; width=&quot;100%&quot; /&gt;
-  &lt;/picture&gt;
-&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/Terasology.jpg&quot; alt=&quot;Terasology&quot; title=&quot;Terasology&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;This is a comprehensive guide for getting started with your first contribution to the Terasology project. If you’ve stumbled here and don’t know what Terasology is, check out the &lt;a href=&quot;https://github.com/MovingBlocks/Terasology&quot;&gt;github repository&lt;/a&gt;.&lt;/p&gt;
 
@@ -624,16 +545,7 @@ In git, when you push, you bring the changes on your local repository come into 
     
       <item>
         <title>J.A.R.V.I.S.</title>
-        <description>&lt;p class=&quot;center&quot;&gt;&lt;picture&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/jarvis-800by450-13807b.jpg&quot; media=&quot;(min-width: 40em) and (-webkit-min-device-pixel-ratio: 2.0), (min-width: 40em) and (min-resolution: 192dpi)&quot; /&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/jarvis-800by450-13807b.jpg&quot; media=&quot;(min-width: 40em) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 40em) and (min-resolution: 144dpi)&quot; /&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/jarvis-600by338-13807b.jpg&quot; media=&quot;(min-width: 40em)&quot; /&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/jarvis-800by450-13807b.jpg&quot; media=&quot;(-webkit-min-device-pixel-ratio: 2.0), (min-resolution: 192dpi)&quot; /&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/jarvis-800by450-13807b.jpg&quot; media=&quot;(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)&quot; /&gt;
-    &lt;source srcset=&quot;http://localhost:4000/img/resize/jarvis-600by338-13807b.jpg&quot; /&gt;
-    &lt;img src=&quot;http://localhost:4000/img/resize/jarvis-600by338-13807b.jpg&quot; alt=&quot;J.A.R.V.I.S.&quot; title=&quot;J.A.R.V.I.S.&quot; width=&quot;100%&quot; /&gt;
-  &lt;/picture&gt;
-&lt;/p&gt;
+        <description>&lt;p class=&quot;center w100&quot;&gt;&lt;img src=&quot;/img/jarvis.jpg&quot; alt=&quot;J.A.R.V.I.S.&quot; title=&quot;J.A.R.V.I.S.&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Almost a week ago, I attempted to create &lt;a href=&quot;https://github.com/nihal111/J.A.R.V.I.S&quot;&gt;my own version&lt;/a&gt; of Iron Man’s J.A.R.V.I.S. which would perform a few tasks and have chatbot like abilities. After a bit of research I found out about &lt;a href=&quot;http://www.alicebot.org/aiml.html&quot;&gt;AIML&lt;/a&gt; and its &lt;a href=&quot;https://pypi.python.org/pypi/PyAIML&quot;&gt;interpreter for python&lt;/a&gt;. I also found ways to convert text to speech and speech to to text using python libraries like &lt;a href=&quot;https://pypi.python.org/pypi/pyttsx&quot;&gt;pyttsx&lt;/a&gt; and &lt;a href=&quot;https://pypi.python.org/pypi/SpeechRecognition/3.4.3&quot;&gt;SpeechRecognition&lt;/a&gt;. I soon ended up making a J.A.R.V.I.S. which understood some of the things I said and performed a few fun actions.&lt;/p&gt;
 
