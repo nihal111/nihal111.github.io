@@ -51,7 +51,8 @@ $(document).ready(function(){
 
 </script>
 
-<p class="center">{% picture Terasology.jpg alt="Terasology" title="Terasology" width="100%" %}</p>
+{: .center}
+![Terasology]({{ site.baseurl }}/img/Terasology.jpg "Terasology")
 
 This is a comprehensive guide for getting started with your first contribution to the Terasology project. If you've stumbled here and don't know what Terasology is, check out the [github repository][Repo].
 

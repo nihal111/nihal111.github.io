@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Google Summer of Code 2017 Selection"
+title:  "Google Summer of Code Selection"
 date: 2017-05-04
 comments: true
 tags:
@@ -14,7 +14,8 @@ Summer has kicked off with great news. My proposal for the Google Summer of Code
 
 ## What is the Google Summer of Code?
 
-<p class="center">{% picture GSoC.png alt="GSoC" title="GSoC" width="30%" %}</p>
+{: .center}
+![GSoC]({{ site.baseurl }}/img/GSoC.png "GSoC")
 
 To the uninitiated, Google Summer of Code is a global program targeted at bringing university students into open source. Students work with an open source organization on a 3 month programming project during their summer break. Google first selects around 200 organisations and funds their open source projects. It's a win-win. The students get an awesome learning experience and a huge stipend. The organisations get a lot of work done from the dedicated students. Well, Google just plays the nice guy being a good Samaritan.
 
@@ -22,13 +23,16 @@ This would be MovingBlocks' second GSoC selection as a mentoring organisation, w
 
 ## What is MovingBlocks- Terasology?
 
-<p class="center">{% picture gooey.png alt="Gooey" title="Gooey" width="50%" %}</p>
+{: .center}
+![Gooey]({{ site.baseurl }}/img/gooey.png "Gooey")
 
 [Moving Blocks- Terasology](https://github.com/MovingBlocks/Terasology) is a minecraft-like open source game built in a voxel world. A [voxel](https://en.wikipedia.org/wiki/Voxel) world is essentially a 3-D world made up from blocks. Terasology is still in it's Alpha stage, but what makes it really special is it's modularity. With a huge, diverse set of modules already developed/in-development, Terasology offers amazing possibilities. It has a very basic minimal engine, where even core features like health, inventory, combat etc can be added on top or removed as plug-in modules.
 
 ## What am I doing?
 
-My [project](https://summerofcode.withgoogle.com/projects/#6685506025816064) is titled as **Exploration World- Improved Gameplay** (proposal [here](https://drive.google.com/file/d/0B3HM64I0M4DmYnVWUUpyQkZ2b1k/view)). In a gist, I plan to add WildAnimals, Puzzles, Exploration and other content to create a new gameplay module. The new gameplay module would pack together the best of whatever is created yet, to create a new gameplay setting that would add meaning and purpose for the end user. My primary mentor would be Skylar 'skysom' Sommers and secondary mentors would be- Florian 'flo' Köberle, Xavier 'xtariq' Tariq and Isaac 'iojw' Ong.
+My [project](https://summerofcode.withgoogle.com/projects/#6685506025816064) is titled as **Exploration World- Improved Gameplay** (proposal [here](https://drive.google.com/file/d/0B3HM64I0M4DmYnVWUUpyQkZ2b1k/view)). In a gist, I plan to add WildAnimals, Puzzles, Exploration and other content to create a new gameplay module. The new gameplay module would pack together the best of whatever is created yet, to create a new gameplay setting that would add meaning and purpose for the end user. 
+
+My primary mentor would be Skylar 'skysom' Sommers and secondary mentors would be- Florian 'flo' Köberle, Xavier 'xtariq' Tariq and Isaac 'iojw' Ong.
 
 ## When am I doing this?
 
