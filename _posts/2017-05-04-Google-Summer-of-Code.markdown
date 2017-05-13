@@ -32,7 +32,7 @@ This would be MovingBlocks' second GSoC selection as a mentoring organisation, w
 
 My [project](https://summerofcode.withgoogle.com/projects/#6685506025816064) is titled as **Exploration World- Improved Gameplay** (proposal [here](https://drive.google.com/file/d/0B3HM64I0M4DmYnVWUUpyQkZ2b1k/view)). In a gist, I plan to add WildAnimals, Puzzles, Exploration and other content to create a new gameplay module. The new gameplay module would pack together the best of whatever is created yet, to create a new gameplay setting that would add meaning and purpose for the end user. 
 
-My primary mentor would be Skylar 'skysom' Sommers and secondary mentors would be- Florian 'flo' Köberle, Xavier 'xtariq' Tariq and Isaac 'iojw' Ong.
+My primary mentor would be [Skylar 'skysom' Sommers](http://forum.terasology.org/members/skysom.1621/) and secondary mentors would be- [Florian 'flo' Köberle](http://forum.terasology.org/members/florian.1335/), [Xavier 'xtariq' Tariq](http://forum.terasology.org/members/xtariq.1697/) and [Isaac 'iojw' Ong](http://forum.terasology.org/members/isaac.1943/).
 
 ## When am I doing this?
 

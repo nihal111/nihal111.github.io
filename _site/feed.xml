@@ -6,12 +6,12 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 10 May 2017 13:13:13 +0530</pubDate>
-    <lastBuildDate>Wed, 10 May 2017 13:13:13 +0530</lastBuildDate>
+    <pubDate>Sat, 13 May 2017 21:28:51 +0530</pubDate>
+    <lastBuildDate>Sat, 13 May 2017 21:28:51 +0530</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>
-        <title>GSoC Week 1</title>
+        <title>GSoC Week 1 and 2: Wild Animals Behavior System</title>
         <description>&lt;style type=&quot;text/css&quot;&gt;
     .collapsiblecontainer {
     width:100%;
@@ -55,23 +55,31 @@ $(document).ready(function(){
 
 &lt;/script&gt;
 
-&lt;p&gt;The start to GSoC has been smooth. Currently as I write this wrap up post for week one, my work has already crossed the week 3 mark according to my proposal.&lt;/p&gt;
+&lt;p&gt;The start to GSoC has been smooth. Currently as I write this wrap up post for week one and two, my work has already crossed the week 3 mark according to my proposal.&lt;/p&gt;
 
 &lt;h1 id=&quot;what-have-i-been-up-to&quot;&gt;What have I been up to?&lt;/h1&gt;
 &lt;p&gt;I’ve been adding new features to the &lt;a href=&quot;https://github.com/Terasology/WildAnimals&quot;&gt;WildAnimals&lt;/a&gt; module. The module only had a deer that idly moved around and did nothing else. When hit it would lose health and ultimately just disappear as a glitch when it’s health reached 0.&lt;/p&gt;
 
 &lt;p&gt;A lot has happened since and at this point there are 4 variants of the deer that exhibit very different behaviors- &lt;code class=&quot;highlighter-rouge&quot;&gt;deer&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;insensitiveDeer&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;aggressiveDeer&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;hostileDeer&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;Before we get into details of each individual deer, let’s talk about how behavior is defined and how animals work in the game.&lt;/p&gt;
+&lt;p&gt;Before we get into details of these were built, let’s have a look at a few preview videos of these deer.&lt;/p&gt;
+
+&lt;div class=&quot;videowrapper&quot;&gt;
+    &lt;iframe width=&quot;1024&quot; height=&quot;768&quot; src=&quot;https://www.youtube.com/embed/unAqMHKkSC0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;div class=&quot;videowrapper&quot;&gt;
+    &lt;iframe width=&quot;1024&quot; height=&quot;768&quot; src=&quot;https://www.youtube.com/embed/SjuMzl-5qIc&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 
 &lt;h3 id=&quot;importing-an-animal-in-game&quot;&gt;Importing an animal in game&lt;/h3&gt;
-&lt;p&gt;First an animal model is made in blender. After an artist finishes up a model, gets it rigged, UV Mapped and adds animations, it is pushed to this Meta repository that holds all the blender files for creature models. There is a comprehensive guide on how to add creatures in game &lt;a href=&quot;https://github.com/Terasology/TutorialAssetSystem/wiki/Add-a-creature&quot;&gt;here&lt;/a&gt; that I’ve written. Also there is one written by flo, &lt;a href=&quot;https://github.com/MovingBlocks/TeraMisc/blob/master/blender_addons/io_md5_exporter/tutorial/Tutorial.md&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;First an animal model is made in blender. After an artist finishes up a model, gets it rigged, UV Mapped and adds animations, it is pushed to the &lt;a href=&quot;https://github.com/MetaTerasology/WildAnimals/&quot;&gt;Meta repository&lt;/a&gt; that holds all the blender files for creature models. There is a comprehensive guide on how to add creatures in game &lt;a href=&quot;https://github.com/Terasology/TutorialAssetSystem/wiki/Add-a-creature&quot;&gt;here&lt;/a&gt; that I’ve written. Also there is one written by flo, &lt;a href=&quot;https://github.com/MovingBlocks/TeraMisc/blob/master/blender_addons/io_md5_exporter/tutorial/Tutorial.md&quot;&gt;here&lt;/a&gt;. Thanks to &lt;a href=&quot;https://github.com/quaternius&quot;&gt;quaternius&lt;/a&gt;, I’ve been getting some help with animal models.&lt;/p&gt;
 
 &lt;h3 id=&quot;working-with-the-animal-in-game&quot;&gt;Working with the animal in game&lt;/h3&gt;
 &lt;p&gt;Each animal has a prefab file located &lt;a href=&quot;https://github.com/Terasology/WildAnimals/tree/master/assets/prefabs/animals&quot;&gt;here&lt;/a&gt; that details the characterstics of the animal as components. To know more about content and the Entity system architecture, go &lt;a href=&quot;https://github.com/MovingBlocks/Terasology/wiki/Entity-System-Architecture&quot;&gt;here&lt;/a&gt;.
 Once an animal prefab is made, it can be spawned in game by typing &lt;code class=&quot;highlighter-rouge&quot;&gt;spawnPrefab prefabName&lt;/code&gt; in the console.&lt;/p&gt;
 
-&lt;h2 id=&quot;event-driven-behavior-system&quot;&gt;Event driven Behavior System&lt;/h2&gt;
+&lt;h1 id=&quot;event-driven-behavior-system&quot;&gt;Event driven Behavior System&lt;/h1&gt;
 &lt;p&gt;The four different deer I mentioned really have the same animal model, animations and texture. They only vary in behavior. This behavior handling forms the crux of the WildAnimals module. Let’s dive into a little more detail.&lt;/p&gt;
 
 &lt;p&gt;The Behavior System built in the engine allows something known as behavior trees, to define a certain behavior.&lt;/p&gt;
@@ -79,15 +87,114 @@ Once an animal prefab is made, it can be spawned in game by typing &lt;code clas
 &lt;div class=&quot;collapsiblecontainer&quot;&gt;
 &lt;div class=&quot;collapsibleheader&quot;&gt;&lt;span&gt;+ &lt;/span&gt;&lt;span&gt;What is a behavior tree?&lt;/span&gt;&lt;/div&gt;
 &lt;div class=&quot;collapsiblecontent&quot;&gt;   
-	A behavior tree is used to define conditional behavior for an entity. A behavior tree essentially has a set of nodes, each node executes some logic and has a condition set for when it would return a status of FAILURE, SUCCESS or simply keep RUNNING. An involved behavior tree can have switches happen to different nodes based on the previous or child node's status.
+	A behavior tree is used to define conditional behavior for an entity. A behavior tree essentially has a set of nodes, each node executes some logic and has a condition set for when it would return a status of FAILURE, SUCCESS or simply keep RUNNING. An involved behavior tree can switch among different nodes based on the previous or child node's status.
 	&lt;br /&gt;
 	This &lt;a target=&quot;_blank&quot; href=&quot;http://forum.terasology.org/threads/behavior-trees.882/&quot;&gt;forum post&lt;/a&gt; and &lt;a target=&quot;_blank&quot; href=&quot;https://www.youtube.com/watch?v=gPwBSwq4_mg&quot;&gt;youtube video&lt;/a&gt; would really give you a feel for behavior trees.
 &lt;/div&gt;
 &lt;/div&gt;
+
+&lt;p&gt;These behavior trees are central to the event driven behavior system. Each behavior tree defines a particular type of behavior that can be applied to an entity, for eg-&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A “stray” behavior can have a deer idly roam around, walk and stand for a while.&lt;/li&gt;
+  &lt;li&gt;A “flee” behavior can have the deer run away from the player until it’s at a safe (defined minimum) distance.&lt;/li&gt;
+  &lt;li&gt;A “hostile” behavior can have the deer close in on the player and then inflict damage.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The “stray” behavior tree that exists in the &lt;a href=&quot;https://github.com/Terasology/Pathfinding&quot;&gt;Pathfinding module&lt;/a&gt; module looks like this:&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/strayBT.png&quot; alt=&quot;stray&quot; title=&quot;stray BT&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Each of these behavior trees can be applied to the entity by simply defining it in the entity’s prefab under the BehaviorComponent. But what’s needed for the animals, is a behavior system that controls what behavior the animal has at any point in time. A system that controls when the behavior needs to switch, what should trigger such a switch and which behavior takes a higher precedence. Enter Event Driven Behavior System.&lt;/p&gt;
+
+&lt;div class=&quot;collapsiblecontainer&quot;&gt;
+&lt;div class=&quot;collapsibleheader&quot;&gt;&lt;span&gt;+ &lt;/span&gt;&lt;span&gt;What is an event?&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;collapsiblecontent&quot;&gt;   
+    An event is an action that propagates through all systems in the game to trigger a change or execute some logic. An event is sent to exactly one entity. An event can be received by event handlers, which can add filters for selecting only entities having a certain set of components. Different event handlers can receive the same event in a priority based order, by specifying a priority.
+    &lt;br /&gt;
+    This &lt;a target=&quot;_blank&quot; href=&quot;https://github.com/MovingBlocks/Terasology/wiki/Events-and-Systems&quot;&gt;wiki page&lt;/a&gt; describes in detail how events work.
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The WildAnimals module has different packages for different behaviors like “FleeOnHit”, “AttackOnHit”, “AttackInProximity”, “StrayIfIdle”, etc. Each of these packages consists of a system and a component. If such a component is attached to an entity, the respective system takes care of handling the behavior changes associated with that package.&lt;/p&gt;
+
+&lt;div class=&quot;collapsiblecontainer&quot;&gt;
+&lt;div class=&quot;collapsibleheader&quot;&gt;&lt;span&gt;+ &lt;/span&gt;&lt;span&gt;How does it work?&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;collapsiblecontent&quot;&gt;
+    The component from the package whose behavior is to be implemented in an entity, is added to the entity's prefab. Whenever an action/event happens in the game that could trigger a change in the behavior of an entity, an UpdateBehaviorEvent (a consumable event) is sent to the entity. This event is received by event handlers present in any such package's system. These event handlers receive the event based on a priority and trigger the behavior switch by changing the entity's behavior tree inside it's BehaviorComponent.
+    &lt;br /&gt;&lt;br /&gt;
+    Let's take the example of the &quot;FleeOnHit&quot; and &quot;StrayIfIdle&quot; package, the first such packages. &lt;br /&gt;
+    &lt;ul&gt;
+    &lt;li&gt;
+    The FleeOnHit package has a FleeOnHitComponent, which when attached to any wild animal entity would let it exhibit the &quot;flee&quot; behavior when it is hit. &lt;br /&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    The StrayIfIdle package has a StrayIfIdleComponent, which when attached to any wild animal entity would let it exhibit the stray behavior when it is idle and has no other behavior that could get triggered. &lt;br /&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    For the deer, by default it has a behavior of &quot;stray&quot; defined in it's prefab.&lt;br /&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    The FleeOnHitSystem watches for the OnDamageEvent to happen to an entity which has the WildAnimalComponent and FleeOnHitComponent. It saves the event instigator (damage inflictor) to the FleeOnHitComponent and then sends an UpdateBehaviorEvent to the entity to trigger a change if it's needed.
+    &lt;/li&gt;
+    &lt;li&gt;
+    The UpdateBehaviorEvent is received by the FleeOnHitSystem. It checks for the instigator inside &quot;FleeOnHit&quot; to be non-null, triggers the behavior switch to &quot;flee&quot; and consumes the UpdateBehaviorEvent.&lt;br /&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    The StrayIfIdleSystem also receives the UpdateBehaviorSystem, but with a lower priority.
+    &lt;/li&gt;
+    &lt;li&gt;
+    When the deer reaches a safe (defined minimum) distance from the player, the instigator in the FleeOnHitComponent is set to null and another UpdateBehaviorEvent is fired from the CheckFleeStopNode (a part of the &quot;flee&quot; Behavior Tree).&lt;br /&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    This event is not consumed by the FleeOnHitSystem event handler as the instigator in FleeOnHitComponent is null. It then is received by the StrayIfIdleSystem event handler, which triggers a behavior switch to &quot;stray&quot; and consumes the event.
+    &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;br /&gt;
+    The behavior switches simply happen based on the different priorities the event handlers in the different packages have.
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;advantages-of-the-event-driven-behavior-system&quot;&gt;Advantages of the Event Driven Behavior System&lt;/h3&gt;
+&lt;p&gt;There are quite a few advantages of using this approach for dealing with complex and multiple behaviors.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Easily Extendable and Reusable&lt;/strong&gt;: A package consisting of a particular conditional behavior can be used for multiple animals/entities. For eg- the “FleeOnHit” package made for the deer can easily be added to other animals like cows, dogs etc.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Efficient&lt;/strong&gt;: There would be no constant checks and running loops. The behavior switch would be instant.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Simple Behavior Trees&lt;/strong&gt;: The behavior trees remain bare-bones and minimal, as they have to deal with only one behavior and not worry about switching behavior.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Neat Prefabs&lt;/strong&gt;: The prefab for the animal now gives a good picture of what all behaviors it exhibits. A simple deer’s prefab would just have the “FleeOnHit” and “StrayIfIdle” components. A deer’s prefab could look like this:
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&quot;FleesOnHit&quot;: {
+&quot;minDistance&quot;: 15.0
+},
+&quot;EatsFromBlockIfHungry&quot;: {
+ &quot;block&quot;: &quot;grass&quot;,
+ &quot;maxWalkDistance&quot;: 4
+},
+&quot;AttractedByHoldItems&quot;: {
+ &quot;items&quot;: [&quot;apple&quot;, &quot;nut&quot;]
+}
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Clear order of precedence&lt;/strong&gt;: Different behaviors can be given different weights as per priority. A hungry deer when hurt would run for it’s life instead of looking for food. A priority list of behaviors could look like this:
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; ensure safety (flee if recently damaged)
+ ensure not hungry
+ ensure not thirsty
+ ensure not tired
+ ensure not curious (has not watched player / player action / player item recently)
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Easy development&lt;/strong&gt;: With this system, someone who’s making the “EatIfHungry” package does not have to worry about what will happen if the animal is hit when it’s hungry. All he has to do is assign the event handler for the “EatIfHungry” package a lesser priority than say, the “FleeOnHit” package’s event handler.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The post went longer than I had expected it to be. The next post would contain details of the deer that have been implemented in the game. Most deer at this point are just placeholders for other animals whose models aren’t ready yet. Thanks to &lt;a href=&quot;http://forum.terasology.org/members/florian.1335/&quot;&gt;flo&lt;/a&gt; for all his help lately. The whole event driven behavior system idea was born out of a discussion with him. He’s been really helpful in getting my PRs reviewed and merged too.&lt;/p&gt;
+
+&lt;p&gt;In other news, I was away for 3 days (10th to 12th May) for the &lt;a href=&quot;https://www.acadaccelerator.com/Home/CFDShowCase&quot;&gt;Microsoft code.fun.do SHOWCASE event&lt;/a&gt; that was held in Hyderabad. The trip was fun with sponsored flight trips and hotel stay. Have to catch up with lost time on GSoC though.&lt;/p&gt;
 </description>
         <pubDate>Mon, 08 May 2017 00:00:00 +0530</pubDate>
-        <link>http://localhost:4000/2017/05/08/GSoC-week1.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/05/08/GSoC-week1.html</guid>
+        <link>http://localhost:4000/2017/05/08/GSoC-week1-2.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/05/08/GSoC-week1-2.html</guid>
         
         <category>open source</category>
         
@@ -122,7 +229,7 @@ Once an animal prefab is made, it can be spawned in game by typing &lt;code clas
 
 &lt;p&gt;My &lt;a href=&quot;https://summerofcode.withgoogle.com/projects/#6685506025816064&quot;&gt;project&lt;/a&gt; is titled as &lt;strong&gt;Exploration World- Improved Gameplay&lt;/strong&gt; (proposal &lt;a href=&quot;https://drive.google.com/file/d/0B3HM64I0M4DmYnVWUUpyQkZ2b1k/view&quot;&gt;here&lt;/a&gt;). In a gist, I plan to add WildAnimals, Puzzles, Exploration and other content to create a new gameplay module. The new gameplay module would pack together the best of whatever is created yet, to create a new gameplay setting that would add meaning and purpose for the end user.&lt;/p&gt;
 
-&lt;p&gt;My primary mentor would be Skylar ‘skysom’ Sommers and secondary mentors would be- Florian ‘flo’ Köberle, Xavier ‘xtariq’ Tariq and Isaac ‘iojw’ Ong.&lt;/p&gt;
+&lt;p&gt;My primary mentor would be &lt;a href=&quot;http://forum.terasology.org/members/skysom.1621/&quot;&gt;Skylar ‘skysom’ Sommers&lt;/a&gt; and secondary mentors would be- &lt;a href=&quot;http://forum.terasology.org/members/florian.1335/&quot;&gt;Florian ‘flo’ Köberle&lt;/a&gt;, &lt;a href=&quot;http://forum.terasology.org/members/xtariq.1697/&quot;&gt;Xavier ‘xtariq’ Tariq&lt;/a&gt; and &lt;a href=&quot;http://forum.terasology.org/members/isaac.1943/&quot;&gt;Isaac ‘iojw’ Ong&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;when-am-i-doing-this&quot;&gt;When am I doing this?&lt;/h2&gt;
 
