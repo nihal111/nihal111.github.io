@@ -19,6 +19,8 @@ Here is the list of projects I own or have contributed to:
 
 ### Hackathons
 
+* [Run][Run]: The Run app was born at the Yahoo! hackathon and ended up winning the “most creative and fun hack” award. It is basically a multiplayer(currently only 1v1) photo treasure hunt game.
+
 * [LendIt][LendIt]: An online sharing platform that connects lenders to borrowers. Sign in with facebook, find people near you (integrated Bing maps), request for any item. Generate and deliver the OTP to complete the transaction. Hosted temporarily online [here](http://pacific-dawn-55810.herokuapp.com/). Third prize winner in Microsoft code.fun.do November '16.
 
 * [RPG][RPG]: An real time RPG game in which players assume roles of characters lost on a island. Players are each given a backstory and an objective. Players can interact and communicate with each other using video chat. The story progresses and you have to convince the other player to join your objective and let you live. Made using Kandy API. Third prize winner in Kandy Hackathon 2016.
@@ -49,3 +51,4 @@ Here is the list of projects I own or have contributed to:
 [AssistANT]: https://drive.google.com/folderview?id=0B3HM64I0M4DmR3cyX3hBWnVoSXM&usp=sharing
 [RPG]: https://github.com/nihal111/RPG
 [alCHEMy]: https://github.com/nihal111/alCHEMy
+[Run]: https://github.com/CodeMaxx/Run-App
