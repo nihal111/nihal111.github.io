@@ -58,7 +58,7 @@ I've been adding new features to the [WildAnimals](https://github.com/Terasology
 
 A lot has happened since and at this point there are 4 variants of the deer that exhibit very different behaviors- `deer`, `insensitiveDeer`, `aggressiveDeer` and `hostileDeer`.
 
-Before we get into details of these were built, let's have a look at a few preview videos of these deer.
+Before we get into details of how these were built, let's have a look at a few preview videos:
 
 <div class="videowrapper">
     <iframe width="1024" height="768" src="https://www.youtube.com/embed/unAqMHKkSC0" frameborder="0" allowfullscreen></iframe>
@@ -72,7 +72,7 @@ Before we get into details of these were built, let's have a look at a few previ
 First an animal model is made in blender. After an artist finishes up a model, gets it rigged, UV Mapped and adds animations, it is pushed to the [Meta repository](https://github.com/MetaTerasology/WildAnimals/) that holds all the blender files for creature models. There is a comprehensive guide on how to add creatures in game [here](https://github.com/Terasology/TutorialAssetSystem/wiki/Add-a-creature) that I've written. Also there is one written by flo, [here](https://github.com/MovingBlocks/TeraMisc/blob/master/blender_addons/io_md5_exporter/tutorial/Tutorial.md). Thanks to [quaternius](https://github.com/quaternius), I've been getting some help with animal models.
 
 ### Working with the animal in game
-Each animal has a prefab file located [here](https://github.com/Terasology/WildAnimals/tree/master/assets/prefabs/animals) that details the characterstics of the animal as components. To know more about content and the Entity system architecture, go [here](https://github.com/MovingBlocks/Terasology/wiki/Entity-System-Architecture).
+Each animal has a prefab file located [here](https://github.com/Terasology/WildAnimals/tree/master/assets/prefabs/animals) that details the characterstics of the animal as components. To know more about components and the Entity system architecture, go [here](https://github.com/MovingBlocks/Terasology/wiki/Entity-System-Architecture).
 Once an animal prefab is made, it can be spawned in game by typing `spawnPrefab prefabName` in the console.
 
 # Event driven Behavior System
@@ -83,7 +83,7 @@ The Behavior System built in the engine allows something known as behavior trees
 <div class="collapsiblecontainer">
 <div class="collapsibleheader"><span>+ </span><span>What is a behavior tree?</span></div>
 <div class="collapsiblecontent">   
-	A behavior tree is used to define conditional behavior for an entity. A behavior tree essentially has a set of nodes, each node executes some logic and has a condition set for when it would return a status of FAILURE, SUCCESS or simply keep RUNNING. An involved behavior tree can switch among different nodes based on the previous or child node's status.
+	A behavior tree is used to define conditional or sequential behavior for an entity. A behavior tree essentially has a set of nodes, each node executes some logic and has a condition set for when it would return a status of FAILURE, SUCCESS or simply keep RUNNING. An involved behavior tree can switch among different nodes based on the previous or child node's status.
 	<br/>
 	This <a target="_blank" href="http://forum.terasology.org/threads/behavior-trees.882/">forum post</a> and <a target="_blank" href="https://www.youtube.com/watch?v=gPwBSwq4_mg">youtube video</a> would really give you a feel for behavior trees.
 </div>
@@ -91,9 +91,9 @@ The Behavior System built in the engine allows something known as behavior trees
 
 These behavior trees are central to the event driven behavior system. Each behavior tree defines a particular type of behavior that can be applied to an entity, for eg- 
 
-+ A "stray" behavior can have a deer idly roam around, walk and stand for a while.
-+ A "flee" behavior can have the deer run away from the player until it's at a safe (defined minimum) distance.
-+ A "hostile" behavior can have the deer close in on the player and then inflict damage.
++ A "**stray**" behavior can have a deer idly roam around, walk and stand for a while.
++ A "**flee**" behavior can have the deer run away from the player until it's at a safe (defined minimum) distance.
++ A "**hostile**" behavior can have the deer close in on the player and then inflict damage.
 
 The "stray" behavior tree that exists in the [Pathfinding module](https://github.com/Terasology/Pathfinding) module looks like this:
 
@@ -105,7 +105,7 @@ Each of these behavior trees can be applied to the entity by simply defining it 
 <div class="collapsiblecontainer">
 <div class="collapsibleheader"><span>+ </span><span>What is an event?</span></div>
 <div class="collapsiblecontent">   
-    An event is an action that propagates through all systems in the game to trigger a change or execute some logic. An event is sent to exactly one entity. An event can be received by event handlers, which can add filters for selecting only entities having a certain set of components. Different event handlers can receive the same event in a priority based order, by specifying a priority.
+    An event is an action that propagates through all systems in the game to trigger a change or execute some logic. An event is sent to exactly one entity. An event can be received by event handlers, which can add filters for selecting only entities having a certain set of components. Different event handlers can receive the same event in an order of precedence, by specifying a priority.
     <br/>
     This <a target="_blank" href="https://github.com/MovingBlocks/Terasology/wiki/Events-and-Systems">wiki page</a> describes in detail how events work.
 </div>
@@ -153,8 +153,8 @@ The WildAnimals module has different packages for different behaviors like "Flee
 ### Advantages of the Event Driven Behavior System
 There are quite a few advantages of using this approach for dealing with complex and multiple behaviors.
 
-+ **Easily Extendable and Reusable**: A package consisting of a particular conditional behavior can be used for multiple animals/entities. For eg- the "FleeOnHit" package made for the deer can easily be added to other animals like cows, dogs etc.
-+ **Efficient**: There would be no constant checks and running loops. The behavior switch would be instant.
++ **Easily Extendable and Reusable**: A package consisting of a particular conditional behavior can be used for multiple animals/entities. For eg- the "FleeOnHit" package made for the deer can easily be added to other animals like cows, dogs etc. Adding a behavior is as simple as attaching a component.
++ **Efficient**: There are no constant checks and running loops. The behavior switch is instant.
 + **Simple Behavior Trees**: The behavior trees remain bare-bones and minimal, as they have to deal with only one behavior and not worry about switching behavior.
 + **Neat Prefabs**: The prefab for the animal now gives a good picture of what all behaviors it exhibits. A simple deer's prefab would just have the "FleeOnHit" and "StrayIfIdle" components. A deer's prefab could look like this:
 ```
@@ -177,8 +177,8 @@ There are quite a few advantages of using this approach for dealing with complex
  ensure not tired
  ensure not curious (has not watched player / player action / player item recently)
  ```
-+ **Easy development**: With this system, someone who's making the "EatIfHungry" package does not have to worry about what will happen if the animal is hit when it's hungry. All he has to do is assign the event handler for the "EatIfHungry" package a lesser priority than say, the "FleeOnHit" package's event handler.
++ **Easy development**: With this system, someone who's making the "EatIfHungry" package does not have to worry about what will happen if the animal is hit when it's hungry. All he has to do is assign the event handler for the "EatIfHungry" package a lesser priority than the "FleeOnHit" package's event handler.
 
-The post went longer than I had expected it to be. The next post would contain details of the deer that have been implemented in the game. Most deer at this point are just placeholders for other animals whose models aren't ready yet. Thanks to [flo](http://forum.terasology.org/members/florian.1335/) for all his help lately. The whole event driven behavior system idea was born out of a discussion with him. He's been really helpful in getting my PRs reviewed and merged too.
+The post went longer than I had expected it to. The next post would contain details of the deer that have been implemented and maybe new creatures! Most deer at this point are just placeholders for other animals whose models aren't ready yet. Thanks to [flo](http://forum.terasology.org/members/florian.1335/) for all his help lately. The whole event driven behavior system idea was born out of a discussion with him. He's been really helpful in getting my PRs reviewed and merged too.
 
 In other news, I was away for 3 days (10th to 12th May) for the [Microsoft code.fun.do SHOWCASE event](https://www.acadaccelerator.com/Home/CFDShowCase) that was held in Hyderabad. The trip was fun with sponsored flight trips and hotel stay. Have to catch up with lost time on GSoC though.
