@@ -282,6 +282,7 @@ nav {
     color: $grey-color;
     margin-left: -$spacing-unit / 2;
     @extend %clearfix;
+    margin: auto;
 }
 
 .footer-col {
