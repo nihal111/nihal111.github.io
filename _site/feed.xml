@@ -6,9 +6,136 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 14 May 2017 12:14:57 +0530</pubDate>
-    <lastBuildDate>Sun, 14 May 2017 12:14:57 +0530</lastBuildDate>
+    <pubDate>Fri, 19 May 2017 17:17:03 +0530</pubDate>
+    <lastBuildDate>Fri, 19 May 2017 17:17:03 +0530</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title>GSoC Week 3: Advanced Behaviors and Taming</title>
+        <description>&lt;style type=&quot;text/css&quot;&gt;
+    .collapsiblecontainer {
+    width:100%;
+    border:1px solid #d3d3d3;
+}
+.collapsiblecontainer div {
+    width:100%;
+}
+.collapsiblecontainer .collapsibleheader {
+    background-color:#d3d3d3;
+    padding: 2px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.collapsiblecontainer .collapsiblecontent {
+    display: none;
+    padding : 5px;
+}
+&lt;/style&gt;
+
+&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+$(document).ready(function(){
+    $(&quot;.collapsibleheader&quot;).click(function () {
+        $collapsibleheader = $(this);
+        //getting the next element
+        $collapsiblecontent = $collapsibleheader.next();
+        //open up the collapsiblecontent needed - toggle the slide- if visible, slide up, if not slidedown.
+        $collapsiblecontent.slideToggle(500, function () {
+            //execute this after slideToggle is done
+            //change text of collapsibleheader based on visibility of collapsiblecontent div
+            $collapsibleheader.find(&quot;span:first-child&quot;).text(function () {
+                //change text based on condition
+                return $collapsiblecontent.is(&quot;:visible&quot;) ? &quot;- &quot; : &quot;+ &quot;;
+            });
+        });
+
+    });
+}); 
+
+&lt;/script&gt;
+
+&lt;p&gt;The past week has been lighter compared to the previous two, involving a lot more of packing and moving, research and documentation.&lt;/p&gt;
+
+&lt;h1 id=&quot;what-have-i-been-up-to&quot;&gt;What have I been up to?&lt;/h1&gt;
+
+&lt;h2 id=&quot;more-behaviors&quot;&gt;More behaviors&lt;/h2&gt;
+
+&lt;p&gt;Adding to the 4 deer (&lt;code class=&quot;highlighter-rouge&quot;&gt;deer&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;insensitiveDeer&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;aggressiveDeer&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;hostileDeer&lt;/code&gt;) from last time two new behaviors have been added namely- &lt;code class=&quot;highlighter-rouge&quot;&gt;scared&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;friendly&lt;/code&gt;. Again these are just placeholders for actual animals that would display such behavior like a chicken (timid) and a dog (friendly). Here are two new videos that would give a quick preview.&lt;/p&gt;
+
+&lt;div class=&quot;videowrapper&quot;&gt;
+    &lt;iframe width=&quot;1024&quot; height=&quot;768&quot; src=&quot;https://www.youtube.com/embed/5VREvBUPmA0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;div class=&quot;videowrapper&quot;&gt;
+    &lt;iframe width=&quot;1024&quot; height=&quot;768&quot; src=&quot;https://www.youtube.com/embed/GbeXKIi9Mvs&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Also, the flee behavior is now improved such that the animal would always run in a direction away from the player as compared to randomly moving about like last time.&lt;/p&gt;
+
+&lt;h2 id=&quot;packing-and-moving--advancedbehaviors&quot;&gt;Packing and Moving- AdvancedBehaviors&lt;/h2&gt;
+&lt;p&gt;It was felt that the behavior work that I had been up to, should not really be restricted to the WildAnimals module. It had great potential outside for other NPCs like monsters, zombies, aliens.. you name it. One particular requirement was that of the GooeysQuests’ skeleton which would try its best to kill you in the dungeons. Currently the skeleton just has a hostile behavior, which means that it does nothing at all until a player comes close to it. After which, it would follow the player in an attempt to kill. When the player dies or escapes the skelton would return to doing nothing (standing still) where ever it had reached. The &lt;code class=&quot;highlighter-rouge&quot;&gt;hostileInProximity&lt;/code&gt; behavior that I had implemented for the hostileDeer is probably a better alternative, where in the deer switches from hostile to stray behavior. Further the behavior switching systems could be used to add a &lt;strong&gt;guard behavior&lt;/strong&gt; that would allow the skeleton to return to a specific location that it guards (a tressure, a secret door, who knows?).&lt;/p&gt;
+
+&lt;p&gt;All this just meant one thing, that the core behavior systems should not be kept restricted to the &lt;a href=&quot;https://github.com/Terasology/WildAnimals&quot;&gt;WildAnimals&lt;/a&gt; module as they would have great use even in other modules. With this need was born the &lt;a href=&quot;https://github.com/Terasology/AdvancedBehaviors&quot;&gt;AdvancedBehaviors&lt;/a&gt; module which would just be a library module having logic and systems that are required by other modules as dependencies, but no content of its own. All the behavior systems and behavior components were packaged and moved to this new module.&lt;/p&gt;
+
+&lt;h2 id=&quot;optional-dependencies-and-libraryapi-modules&quot;&gt;Optional Dependencies and Library/API modules&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/Terasology/AdvancedBehaviors&quot;&gt;AdvancedBehaviors&lt;/a&gt; would be my second module in the game, the first being the &lt;a href=&quot;https://github.com/Terasology/WorldlyTooltipAPI&quot;&gt;WorldlyTooltipAPI&lt;/a&gt; module which too has no content of its own, but just serves as an API module for &lt;a href=&quot;https://github.com/Terasology/WorldlyTooltip&quot;&gt;WorldlyTooltip&lt;/a&gt;. This was decided to be a better alternative to optional dependencies.&lt;/p&gt;
+
+&lt;div class=&quot;collapsiblecontainer&quot;&gt;
+&lt;div class=&quot;collapsibleheader&quot;&gt;&lt;span&gt;+ &lt;/span&gt;&lt;span&gt;What is a Library module?&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;collapsiblecontent&quot;&gt;   
+    A library module is one that does not have any features or content of its own. It only provides systems that are used by other modules. An example of such a module is the Pathfinding module. Also the newly created, AdvancedBehaviors module would just be a library module.
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Modules like WildAnimals that use events from the WorldlyTooltip module should not have a dependency on it as it doesn’t need to be necessarily activated. A user should be able to enjoy the WildAnimals module without having to activate the WorldlyTooltip module. One possible way to solve this is using optional dependencies.&lt;/p&gt;
+
+&lt;div class=&quot;collapsiblecontainer&quot;&gt;
+&lt;div class=&quot;collapsibleheader&quot;&gt;&lt;span&gt;+ &lt;/span&gt;&lt;span&gt;What is an optional dependency?&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;collapsiblecontent&quot;&gt;   
+	An optional dependency allows the user to activate modules that depend on other modules without activating the other module. The features that rely on the other module would just be enabled when the other module is activated.
+    &lt;br /&gt;
+    Lets take the WildAnimals and WorldlyTooltip module as an example. If the WildAnimals module is made to have an optional dependency on the WorldlyTooltip module, it's core features would be accessible even when the WorldlyTooltip module is inactive. Activating the WorldlyTooltip module just would enable the features that rely on it.
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;collapsiblecontainer&quot;&gt;
+&lt;div class=&quot;collapsibleheader&quot;&gt;&lt;span&gt;+ &lt;/span&gt;&lt;span&gt;What are the problems with optional dependencies?&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;collapsiblecontent&quot;&gt;   
+    Optional dependencies make sure that the user doesn't have to forcefully download a module that serves as an optional dependency. But for a developer, the module would not compile unless the developer manually downloads all the optional dependencies. Also there is a chance that with some changes happening in Java, this feature might not be available later.
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The other way to do this is using what are called API modules.&lt;/p&gt;
+
+&lt;div class=&quot;collapsiblecontainer&quot;&gt;
+&lt;div class=&quot;collapsibleheader&quot;&gt;&lt;span&gt;+ &lt;/span&gt;&lt;span&gt;What is an API module?&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;collapsiblecontent&quot;&gt; 
+    An API module is one that allows for modules to use on a feature that is present in an external module without having a direct dependency on it. In short it is an alternative to optional dependencies. It can be thought of as an interface to a class. If a module X relies on some classes in Y for a feature, the classes can be moved to Z. Both X and Y can now have dependency on Z and everything would work naturally. This means that Y does not necessarily need to be activated for the user to enjoy the core features of X.
+    &lt;br /&gt;&lt;br /&gt;
+    For example, the WildAnimals module uses the events from the WorldlyTooltip module for the tooltip feature. To enable this, the events were moved to the API module called WorldlyTooltipAPI. Both WildAnimals and WorldlyTooltip had a dependency on the WorldlyTooltipAPI module. WildAnimals module could now be activated without activating the WorldlyTooltip functionality (even though the dependency WorldlyTooltipAPI got activated).
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;taming-animals&quot;&gt;Taming animals&lt;/h2&gt;
+&lt;p&gt;With behaviors being defined for animals, it would be fun to turn a hostile or aggressive animal into a friendly one. Having a horse that you can ride, a donkey that carries around materials, a dog that guards an entrance, a cow that gives milk, all sound like a fun idea to have in game.&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 08 May 2017 00:00:00 +0530</pubDate>
+        <link>http://localhost:4000/2017/05/08/GSoC-week3.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/05/08/GSoC-week3.html</guid>
+        
+        <category>open source</category>
+        
+        <category>MovingBlocks</category>
+        
+        <category>Terasology</category>
+        
+        <category>GSoC</category>
+        
+        
+      </item>
     
       <item>
         <title>GSoC Week 1 and 2: Wild Animals Behavior System</title>
