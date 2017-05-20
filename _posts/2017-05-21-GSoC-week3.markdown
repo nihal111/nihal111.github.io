@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "GSoC Week 3: Advanced Behaviors and Taming"
-date: 2017-05-08
+date: 2017-05-21
 comments: true
 tags:
 - open source

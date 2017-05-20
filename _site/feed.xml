@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 21 May 2017 02:59:41 +0530</pubDate>
-    <lastBuildDate>Sun, 21 May 2017 02:59:41 +0530</lastBuildDate>
+    <pubDate>Sun, 21 May 2017 03:01:03 +0530</pubDate>
+    <lastBuildDate>Sun, 21 May 2017 03:01:03 +0530</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>
@@ -160,9 +160,9 @@ $(document).ready(function(){
 
 &lt;p&gt;Implementing taming in game is still a bonus item, probably something I’d get back to after I’ve checked off the main items. Next week should involve a start to all the puzzle work and making of the new gameplay module.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 08 May 2017 00:00:00 +0530</pubDate>
-        <link>http://localhost:4000/2017/05/08/GSoC-week3.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/05/08/GSoC-week3.html</guid>
+        <pubDate>Sun, 21 May 2017 00:00:00 +0530</pubDate>
+        <link>http://localhost:4000/2017/05/21/GSoC-week3.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/05/21/GSoC-week3.html</guid>
         
         <category>open source</category>
         
