@@ -114,7 +114,41 @@ The other way to do this is using what are called API modules.
     For example, the WildAnimals module uses the events from the WorldlyTooltip module for the tooltip feature. To enable this, the events were moved to the API module called WorldlyTooltipAPI. Both WildAnimals and WorldlyTooltip had a dependency on the WorldlyTooltipAPI module. WildAnimals module could now be activated without activating the WorldlyTooltip functionality (even though the dependency WorldlyTooltipAPI got activated).
 </div>
 </div>
+<br/>
 
+---
 ## Taming animals
-With behaviors being defined for animals, it would be fun to turn a hostile or aggressive animal into a friendly one. Having a horse that you can ride, a donkey that carries around materials, a dog that guards an entrance, a cow that gives milk, all sound like a fun idea to have in game.
+With behaviors being defined for animals, it would be fun to turn a hostile or aggressive animal into a friendly one. Having a horse that you can ride, a donkey that carries around some load, a dog that guards an entrance, a cow that gives milk, all sound like a fun idea to have in game. Here are some thoughts on how taming can work in game.
 
+Animals can be broadly and vaguely grouped into friendly and unfriendly, with different animals falling at different levels in this classification. Generally, the friendlier the animal, the easier it would be to tame it.
+
+### How would taming work?
+Possibly there could be a taming progress bar that gives the player an idea of how long should he continue the efforts on taming. There might be more than one ways to tame an animal, some more effective than the others. The more effective ones would increase the progress bar quicker allowing for speedy taming.
+
+### Taming Methods
+1. **Petting**- Some very friendly animals like dogs might just be tamed after a while of petting.
+2. **Feeding**- Every animal would have a preferred food item (or rather a list of food items it eats with an order of preference). Feeding an animal with its favorite food item would increase the taming progress quicker than with other foods.
+3. **Sedating or Tranquilising**- Animals can be fed poisonous berries or some other substances to intoxicate them. These would leave them vulnerable and make them easier to tame. Such an approach would be useful for more unfriendly or aggressive animals.
+4. **Tranquiliser darts**- For animals that are hostile and would attack when in proximity of the player, tranquiliser darts could be used to intoxicate and subdue the animal, leaving it in a vulnerable state where it can be fed and tamed easily.
+5. **Trap**- Animals that are timid or hostile would either run away from the player or chase the player. A good idea is to trap the animals and then approach them when they are not in a position to run away or attack. An animal trapped in such a manner would have the feed option available now (which wouldn't have been available earlier).
+6. **Knocking out**- The animals can be knocked out by fighting off with different equipment. When an animal reaches a low health the player can choose to knock it out. If the player continues to attack it and makes it health reach 0, the animal simply dies as it now does. Knocking out would have a similar effect like tranquilising, it would leave the animal in a vulnerable state where it can be fed and tamed easily.
+
+These options of **Feed**, **Pet**, **Knock Out**, **Poison** (selectively enabled) can be displayed in a radial menu that appears on `E` click on an animal. The radial menu can have a circular progressbar outside that also shows the taming progress.
+
+Since methods like knocking out or hurting an animal before attempting to tame it seems odd. It can be made possible that the animal remembers only the player which hurt it. This would allow any other player (or even the same player in disguise) to befriend or tame the animal. Such an approach would be necessary only for hostile and aggressive animals and might also bring into picture multiplayer taming.
+
+### Animal Utilities
+1. **Mount for travel**- Some animals can be chosen as a mount to ride on and for fast travel. Animals would have different speeds, jump heights, stamina etc. Some animals would be suitable for short distance while others for long commutes. Some animals would be stronger than others making them a safer choice of travel. Additionally, some animals may be faster in the day and some faster at night.
+2. **Carry load and inventory**- Most animals would have an inventory of their own that can be used for carrying goods around.
+3. **Mining**- Animals can dig through (with various speeds and capacities) and collect ores and minerals present inside the crust.
+4. **Food supply**- Animals can give eggs or milk that can be used as food.
+5. **Wood and stone gatherers**- Some animals could fell trees and collect wood from their barks. Others could simply go around collecting stone, making construction easier.
+6. **Specialised gatherers**- Some animals could be gatherers for specific items like berries, a specific fruit etc.
+7. **Organic Polymer Producer** - Some animals can be tamed (or killed) to obtain fibre.
+8. **Food hunter**- Tamed carnivores can be trusted to hunt other animals and bring meat. Tamed herbivores can be used to get raw products from trees.
+9. **Guard animals**- Animals can be instructed to guard a location and attack all other players/animals that try to enter.
+10. **Combat**- Different animals can have different special combat abilities that protect the player from attackers.
+11. **Sea creatures**- Sea creatures can be used as a mount to cross oceans or for fishing. Some sea creatures can share their reserve of oxygen increasing the player's breathing capacity. Some sea creatures could be used to collect resources at the bottom of the sea like oil.
+12. **Companion**- An animal that simply follows you around so that you never feel lonely.
+
+Implementing taming in game is still a bonus item, probably something I'd get back to after I've checked off the main items. Next week should involve a start to all the puzzle work and making of the new gameplay module.
