@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "GSoC Week 4: Integrating Journals"
+title:  "GSoC Week 4: Integrating Journal"
 date: 2017-05-30
 comments: true
 tags:
