@@ -95,9 +95,9 @@ I tried to make the blade move by linearly varying the `pitch` (as in rotation's
 ![crudeSB]({{ site.baseurl }}/img/crudeSwingingBlade.gif "crude SB")
 
 ### Alignment and orientation
-The swinging blade was misaligned and I wanted it to rotate in a direction purpendicular to it's current rotation. Soon I realised that I had no control on the orientaion of how the Swinging Blade entity that was being spawned by the Structure Template. I could choose the position but I couldn't change the orientation and rotation. This is because the Structure Template module allows you to spawn the structure anywhere in the world, regardless of the orientation in which they were created. Meaning, a structure that faces North can be spawned in a manner that it now faces East. All contents of the structure should undergo a similar change in their orientation too. But the entities didn't. Till now, it wasn't a problem as the only things being spawned were the GooeysQuests' skeletons. Their orientation didn't matter as they were live entities that would come running after you for your life.
+The swinging blade was misaligned and I wanted it to rotate in a direction purpendicular to it's current rotation. Soon I realised that I had no control on the orientaion of the Swinging Blade entity that was being spawned by the Structure Template. I could choose the position but I couldn't change the orientation and rotation. This is because the Structure Template module allows you to spawn the structure anywhere in the world, regardless of the orientation in which they were created. Meaning, a structure that faced North could be spawned in a manner that it now faces East. All contents of the structure should undergo a similar change in their orientation too. But the entities didn't. Till now, it wasn't a problem as the only things being spawned were the GooeysQuests' skeletons. Their orientation didn't matter as they were live entities that would come running after you for your life.
 
-[This PR](https://github.com/Terasology/StructureTemplates/pull/15) adds the rotational control to spawning entities while using the SpawnPrefabComponent in the Structure Templates module.
+[This PR](https://github.com/Terasology/StructureTemplates/pull/15) adds the rotational control to spawning entities while using the `SpawnPrefabsComponent` in the Structure Templates module.
 
 <div class="collapsiblecontainer">
 <div class="collapsibleheader"><span>+ </span><span>Dealing with Quaternions (Quat4f)</span></div>
@@ -134,11 +134,11 @@ First step was to make the entity a rigid body and add box shape colliders. Sinc
 #### Adding the DoDamageEvent
 Since the blade was the part which would hurt, a `DamagePlayerComponent` was added to the blade to detect collisions with the player and trigger a `DoDamageEvent`. However, simply sending a `DoDamageEvent` would kill the player in no time as however small the damage being sent, being in contact with the blade even for a second would trigger the `OnCollide` method several times to result in death.  
 #### Sending a CharacterImpulse
-The solution to this was sending a `CharacterImpulseEvent` to the player as well, in a direction outward from the blade. This sends the player to a relatively safer zone and also deals some damage.
+The solution to this was sending a `CharacterImpulseEvent` to the player as well, in a direction outward from the blade. This sends the player to a relatively safer zone while also dealing some damage.
 
 ### Multiplayer ready?
 
-The swinging blade is not yet multiplayer ready. There are quite a few issues on dealing with the Swinging Blade in multiplayer. The movement prediction on the server side deals with the CharacterImpulseEvent which makes the damaging systems function very differently even if there is a little lag. Often the player experiences too many impulses in a short time frame that end up killing him alone.
+The swinging blade is not yet multiplayer ready. There are quite a few issues on dealing with the Swinging Blade in multiplayer. The movement prediction on the server side deals with the `CharacterImpulseEvent` which makes the damaging systems function very differently even if there is a little lag. Often the player experiences too many impulses in a short time frame that end up killing him alone, even without the `DoDamageEvent` being sent.
 
 The PR which deals with the entire work on the swinging blade is [here](https://github.com/Terasology/AdventureAssets/pull/2/). It is still in progress with only the task of making it work in multiplayer remaining outstanding.
 
