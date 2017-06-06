@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 06 Jun 2017 23:54:08 +0530</pubDate>
-    <lastBuildDate>Tue, 06 Jun 2017 23:54:08 +0530</lastBuildDate>
+    <pubDate>Wed, 07 Jun 2017 00:54:56 +0530</pubDate>
+    <lastBuildDate>Wed, 07 Jun 2017 00:54:56 +0530</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>
@@ -64,12 +64,12 @@ $(document).ready(function(){
 &lt;h1 id=&quot;what-have-i-been-upto&quot;&gt;What have I been upto?&lt;/h1&gt;
 
 &lt;h2 id=&quot;woodandstonecraftingjournal&quot;&gt;WoodAndStoneCraftingJournal&lt;/h2&gt;
-&lt;p&gt;With last week’s journal improvements, it was time to put the journal to some good use. A good technique to do this is to use the main Gampleay module for all story/lore related journal entries. However for most of the content related entries like crafting tutorials or cooking recipes, the best way to go is to create Journal extension modules. These extension modules would connect each content module to the Journal module. Essentially, the Journal extension module would house the Journal entries related to that content module which can easily be reused by multiple gameplay modules.&lt;/p&gt;
+&lt;p&gt;With last week’s journal improvements, it was time to put the journal to some good use. A good technique to do this is to use the main Gamplay module for all story/lore related journal entries. However for most of the content related entries like crafting tutorials or cooking recipes, the best way to go is to create Journal extension modules. These extension modules would connect each content module to the Journal module. Essentially, the Journal extension module would house the Journal entries related to that content module which can easily be reused by multiple gameplay modules.&lt;/p&gt;
 
-&lt;p&gt;I went ahead and created the first Journal Extension module as a proof of concept with only about 6 entries to demonstrate how it would work. The WoodAndStoneCraftingJournal has a dependency on WoodCrafting, StoneCrafting and Journal. It contains the journal entries pertaining to both WoodCrafting and StoneCrafting (since both are a little related).&lt;/p&gt;
+&lt;p&gt;I went ahead and created the first Journal Extension module as a proof of concept with only about 8 entries to demonstrate how it would work. The &lt;a href=&quot;https://github.com/Terasology/WoodAndStoneCraftingJournal/&quot;&gt;WoodAndStoneCraftingJournal&lt;/a&gt; has a dependency on &lt;a href=&quot;https://github.com/Terasology/WoodCrafting&quot;&gt;WoodCrafting&lt;/a&gt;, &lt;a href=&quot;https://github.com/Terasology/StoneCrafting&quot;&gt;StoneCrafting&lt;/a&gt; and &lt;a href=&quot;https://github.com/Terasology/Journal&quot;&gt;Journal&lt;/a&gt;. It contains the journal entries pertaining to both WoodCrafting and StoneCrafting (since both are a little related).&lt;/p&gt;
 
 &lt;h2 id=&quot;where-are-the-puzzles&quot;&gt;Where are the puzzles?&lt;/h2&gt;
-&lt;p&gt;A major chunk of my last two month work consists of making Puzzles and adding them to my exploration based module.
+&lt;p&gt;A major chunk of my last two month work consists of making Puzzles and adding them to my exploration centered gameplay module.
 After some discussion with flo about cata’s project on scenarios, I realised that it would be redundant to spend time working on mechanisms for action/event triggered changes. Since the Scenarios project would be focused on dealing with this, it would be a better idea that I aim towards making puzzle elements like traps, portals and other dangerous pieces.&lt;/p&gt;
 
 &lt;h3 id=&quot;adventure-assets&quot;&gt;Adventure Assets&lt;/h3&gt;
@@ -80,7 +80,7 @@ After some discussion with flo about cata’s project on scenarios, I realised t
 &lt;div class=&quot;collapsiblecontainer&quot;&gt;
 &lt;div class=&quot;collapsibleheader&quot;&gt;&lt;span&gt;+ &lt;/span&gt;&lt;span&gt;Why do I want to use Structure Templates?&lt;/span&gt;&lt;/div&gt;
 &lt;div class=&quot;collapsiblecontent&quot;&gt;   
-    Structure Templates allows me to create a puzzle setting or essentially a puzzle map, as a prefab. I can arrange the elements in the manner I want and also edit the map later. In theory, I could create the puzzles by hand in the saved world that I plan to share, without using Structure Templates at all. However using Structure Templates allows me to concentrate on making the puzzles one by one without worrying about how I would place them in the world. Once I have the Structure Templates for the puzzles ready I can place them however I want in the world. Also, this allows the same created puzzle to be reused multiple times. An existing puzzle can be extended or modified slightly to create a new one. Further, if a puzzle consists of multiple rooms of the same type, a single room created using ST can be easily reused to create more.
+    &lt;a target=&quot;_blank&quot; href=&quot;https://github.com/Terasology/StructureTemplates&quot;&gt;Structure Templates&lt;/a&gt; allows me to create a puzzle setting or essentially a puzzle map, as a prefab. I can arrange the elements in the manner I want and also edit the map later. In theory, I could create the puzzles by hand in the saved world that I plan to share, without using Structure Templates at all. However using Structure Templates allows me to concentrate on making the puzzles one by one without worrying about how I would place them in the world. Once I have the Structure Templates for the puzzles ready I can place them however I want in the world. Also, this allows the same created puzzle to be reused multiple times. An existing puzzle can be extended or modified slightly to create a new one. Further, if a puzzle consists of multiple rooms of the same type, a single room created using ST can be easily reused to create more.
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -89,8 +89,10 @@ After some discussion with flo about cata’s project on scenarios, I realised t
 
 &lt;p&gt;I started working with a crude swinging blade model made by flo.&lt;/p&gt;
 
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/crudeSB.png&quot; alt=&quot;crudeSB&quot; title=&quot;crude SB&quot; style=&quot;max-height: 400px;&quot; /&gt;&lt;/p&gt;
+
 &lt;h3 id=&quot;animating-the-blade&quot;&gt;Animating the blade&lt;/h3&gt;
-&lt;p&gt;I tried to make the blade move by linearly varying the &lt;code class=&quot;highlighter-rouge&quot;&gt;pitch&lt;/code&gt;(as in rotation’s &lt;code class=&quot;highlighter-rouge&quot;&gt;yaw, pitch and roll&lt;/code&gt;) of the entity. The GIF below has this linear movement. This motion was later changed to an angular harmonic function, which factors in a time period (in seconds), an amplitude (in radians) and an offset/phase difference (in radians) which looks like &lt;code class=&quot;highlighter-rouge&quot;&gt;theta = Acos((2*pi/T)*t + phi)&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;I tried to make the blade move by linearly varying the &lt;code class=&quot;highlighter-rouge&quot;&gt;pitch&lt;/code&gt; (as in rotation’s &lt;code class=&quot;highlighter-rouge&quot;&gt;yaw, pitch and roll&lt;/code&gt;) of the entity. The GIF below shows this linear movement. This motion was later changed to an angular harmonic function, which factors in a time period (in seconds), an amplitude (in radians) and an offset/phase difference (in radians) which altogether looks like &lt;code class=&quot;highlighter-rouge&quot;&gt;theta = Acos((2*pi/T)*t + phi)&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/crudeSwingingBlade.gif&quot; alt=&quot;crudeSB&quot; title=&quot;crude SB&quot; /&gt;&lt;/p&gt;
 
@@ -110,19 +112,23 @@ After some discussion with flo about cata’s project on scenarios, I realised t
 
 &lt;p&gt;Soon after I asked Quaternius to make a better model for the swinging blade and one thing led to another. Not before long, we had a full nice looking model ready with texture.&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/SB1.jpeg&quot; alt=&quot;SB1&quot; title=&quot;SB1&quot; style=&quot;width: 70%;&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;strong&gt;Inspiration&lt;/strong&gt;&lt;br /&gt;
+&lt;img src=&quot;/img/SB1.jpeg&quot; alt=&quot;SB1&quot; title=&quot;SB1&quot; style=&quot;width: 70%;&quot; /&gt;&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/SB2.jpg&quot; alt=&quot;SB2&quot; title=&quot;SB2&quot; style=&quot;width: 70%;&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;strong&gt;Model imported&lt;/strong&gt;&lt;br /&gt;
+&lt;img src=&quot;/img/SB2.jpg&quot; alt=&quot;SB2&quot; title=&quot;SB2&quot; style=&quot;width: 70%;&quot; /&gt;&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/SB3.png&quot; alt=&quot;SB3&quot; title=&quot;SB3&quot; style=&quot;width: 70%;&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;strong&gt;Texture mapped&lt;/strong&gt;&lt;br /&gt;
+&lt;img src=&quot;/img/SB3.png&quot; alt=&quot;SB3&quot; title=&quot;SB3&quot; style=&quot;width: 70%; max-height: 500px;&quot; /&gt;&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/SB4.jpg&quot; alt=&quot;SB4&quot; title=&quot;SB4&quot; style=&quot;width: 70%;&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;strong&gt;Final model imported&lt;/strong&gt;&lt;br /&gt;
+&lt;img src=&quot;/img/SB4.jpg&quot; alt=&quot;SB4&quot; title=&quot;SB4&quot; style=&quot;width: 70%;&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;making-it-hurt&quot;&gt;Making it hurt&lt;/h3&gt;
 
-&lt;p&gt;I had a fine looking swinging blade, but it didn’t hurt yet. I could pass through it without damaging a hair on my body.&lt;/p&gt;
+&lt;p&gt;I had a fine looking swinging blade, but it didn’t hurt yet. I could pass through it like silk.&lt;/p&gt;
 &lt;h4 id=&quot;adding-colliders&quot;&gt;Adding Colliders&lt;/h4&gt;
-&lt;p&gt;First step was to make the entity a rigid body add box shape colliders. Since the shape of the entity was not so simple, I had to create two different entities- one for the blade and one for the rod.&lt;/p&gt;
+&lt;p&gt;First step was to make the entity a rigid body and add box shape colliders. Since the shape of the entity was not so simple, I had to create two different entities- one for the blade and one for the rod.&lt;/p&gt;
 &lt;h4 id=&quot;adding-the-dodamageevent&quot;&gt;Adding the DoDamageEvent&lt;/h4&gt;
 &lt;p&gt;Since the blade was the part which would hurt, a &lt;code class=&quot;highlighter-rouge&quot;&gt;DamagePlayerComponent&lt;/code&gt; was added to the blade to detect collisions with the player and trigger a &lt;code class=&quot;highlighter-rouge&quot;&gt;DoDamageEvent&lt;/code&gt;. However, simply sending a &lt;code class=&quot;highlighter-rouge&quot;&gt;DoDamageEvent&lt;/code&gt; would kill the player in no time as however small the damage being sent, being in contact with the blade even for a second would trigger the &lt;code class=&quot;highlighter-rouge&quot;&gt;OnCollide&lt;/code&gt; method several times to result in death.&lt;/p&gt;
 &lt;h4 id=&quot;sending-a-characterimpulse&quot;&gt;Sending a CharacterImpulse&lt;/h4&gt;
@@ -130,9 +136,9 @@ After some discussion with flo about cata’s project on scenarios, I realised t
 
 &lt;h3 id=&quot;multiplayer-ready&quot;&gt;Multiplayer ready?&lt;/h3&gt;
 
-&lt;p&gt;The swinging blade is not yet multiplayer ready. There are quite a few issues on dealing with the Swinging Blade in multiplayer. The movement prediction on the server side deals with the CharacterImpulseEvent which makes the damaging systems function very differently even if there is a little lag.&lt;/p&gt;
+&lt;p&gt;The swinging blade is not yet multiplayer ready. There are quite a few issues on dealing with the Swinging Blade in multiplayer. The movement prediction on the server side deals with the CharacterImpulseEvent which makes the damaging systems function very differently even if there is a little lag. Often the player experiences too many impulses in a short time frame that end up killing him alone.&lt;/p&gt;
 
-&lt;p&gt;The PR which deals with the entire work on the swinging blade is &lt;a href=&quot;https://github.com/Terasology/AdventureAssets/pull/2/&quot;&gt;here&lt;/a&gt;. It is still in progress with only the task of making it work in multiplayer being outstanding.&lt;/p&gt;
+&lt;p&gt;The PR which deals with the entire work on the swinging blade is &lt;a href=&quot;https://github.com/Terasology/AdventureAssets/pull/2/&quot;&gt;here&lt;/a&gt;. It is still in progress with only the task of making it work in multiplayer remaining outstanding.&lt;/p&gt;
 
 &lt;p&gt;Up for next week should be more work on puzzles, a few more interesting traps and hopefully multiplayer fixes.&lt;/p&gt;
 </description>

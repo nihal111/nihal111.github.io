@@ -60,12 +60,12 @@ Last week involved a lot of discussions. The plan for the next two months is now
 # What have I been upto?
 
 ## WoodAndStoneCraftingJournal
-With last week's journal improvements, it was time to put the journal to some good use. A good technique to do this is to use the main Gampleay module for all story/lore related journal entries. However for most of the content related entries like crafting tutorials or cooking recipes, the best way to go is to create Journal extension modules. These extension modules would connect each content module to the Journal module. Essentially, the Journal extension module would house the Journal entries related to that content module which can easily be reused by multiple gameplay modules.
+With last week's journal improvements, it was time to put the journal to some good use. A good technique to do this is to use the main Gamplay module for all story/lore related journal entries. However for most of the content related entries like crafting tutorials or cooking recipes, the best way to go is to create Journal extension modules. These extension modules would connect each content module to the Journal module. Essentially, the Journal extension module would house the Journal entries related to that content module which can easily be reused by multiple gameplay modules.
 
-I went ahead and created the first Journal Extension module as a proof of concept with only about 6 entries to demonstrate how it would work. The WoodAndStoneCraftingJournal has a dependency on WoodCrafting, StoneCrafting and Journal. It contains the journal entries pertaining to both WoodCrafting and StoneCrafting (since both are a little related).
+I went ahead and created the first Journal Extension module as a proof of concept with only about 8 entries to demonstrate how it would work. The [WoodAndStoneCraftingJournal](https://github.com/Terasology/WoodAndStoneCraftingJournal/) has a dependency on [WoodCrafting](https://github.com/Terasology/WoodCrafting), [StoneCrafting](https://github.com/Terasology/StoneCrafting) and [Journal](https://github.com/Terasology/Journal). It contains the journal entries pertaining to both WoodCrafting and StoneCrafting (since both are a little related).
 
 ## Where are the puzzles?
-A major chunk of my last two month work consists of making Puzzles and adding them to my exploration based module.
+A major chunk of my last two month work consists of making Puzzles and adding them to my exploration centered gameplay module.
 After some discussion with flo about cata's project on scenarios, I realised that it would be redundant to spend time working on mechanisms for action/event triggered changes. Since the Scenarios project would be focused on dealing with this, it would be a better idea that I aim towards making puzzle elements like traps, portals and other dangerous pieces.
 
 ### Adventure Assets
@@ -76,7 +76,7 @@ The idea now, is that I would create various puzzle elements and combine them to
 <div class="collapsiblecontainer">
 <div class="collapsibleheader"><span>+ </span><span>Why do I want to use Structure Templates?</span></div>
 <div class="collapsiblecontent">   
-    Structure Templates allows me to create a puzzle setting or essentially a puzzle map, as a prefab. I can arrange the elements in the manner I want and also edit the map later. In theory, I could create the puzzles by hand in the saved world that I plan to share, without using Structure Templates at all. However using Structure Templates allows me to concentrate on making the puzzles one by one without worrying about how I would place them in the world. Once I have the Structure Templates for the puzzles ready I can place them however I want in the world. Also, this allows the same created puzzle to be reused multiple times. An existing puzzle can be extended or modified slightly to create a new one. Further, if a puzzle consists of multiple rooms of the same type, a single room created using ST can be easily reused to create more.
+    <a target="_blank" href="https://github.com/Terasology/StructureTemplates">Structure Templates</a> allows me to create a puzzle setting or essentially a puzzle map, as a prefab. I can arrange the elements in the manner I want and also edit the map later. In theory, I could create the puzzles by hand in the saved world that I plan to share, without using Structure Templates at all. However using Structure Templates allows me to concentrate on making the puzzles one by one without worrying about how I would place them in the world. Once I have the Structure Templates for the puzzles ready I can place them however I want in the world. Also, this allows the same created puzzle to be reused multiple times. An existing puzzle can be extended or modified slightly to create a new one. Further, if a puzzle consists of multiple rooms of the same type, a single room created using ST can be easily reused to create more.
 </div>
 </div>
 
@@ -85,8 +85,11 @@ The first item I decided to work on was the Swinging Blade. The setup consists o
 
 I started working with a crude swinging blade model made by flo.
 
+{: .center}
+![crudeSB]({{ site.baseurl }}/img/crudeSB.png "crude SB"){:style="max-height: 400px;"}
+
 ### Animating the blade
-I tried to make the blade move by linearly varying the `pitch`(as in rotation's `yaw, pitch and roll`) of the entity. The GIF below has this linear movement. This motion was later changed to an angular harmonic function, which factors in a time period (in seconds), an amplitude (in radians) and an offset/phase difference (in radians) which looks like `theta = Acos((2*pi/T)*t + phi)`.
+I tried to make the blade move by linearly varying the `pitch` (as in rotation's `yaw, pitch and roll`) of the entity. The GIF below shows this linear movement. This motion was later changed to an angular harmonic function, which factors in a time period (in seconds), an amplitude (in radians) and an offset/phase difference (in radians) which altogether looks like `theta = Acos((2*pi/T)*t + phi)`.
 
 {: .center}
 ![crudeSB]({{ site.baseurl }}/img/crudeSwingingBlade.gif "crude SB")
@@ -108,22 +111,26 @@ The swinging blade was misaligned and I wanted it to rotate in a direction purpe
 Soon after I asked Quaternius to make a better model for the swinging blade and one thing led to another. Not before long, we had a full nice looking model ready with texture.
 
 {: .center}
+**Inspiration**  
 ![SB1]({{ site.baseurl }}/img/SB1.jpeg "SB1"){:style="width: 70%;"}
 
 {: .center}
+**Model imported**  
 ![SB2]({{ site.baseurl }}/img/SB2.jpg "SB2"){:style="width: 70%;"}
 
 {: .center}
-![SB3]({{ site.baseurl }}/img/SB3.png "SB3"){:style="width: 70%;"}
+**Texture mapped**  
+![SB3]({{ site.baseurl }}/img/SB3.png "SB3"){:style="width: 70%; max-height: 500px;"}
 
 {: .center}
+**Final model imported**  
 ![SB4]({{ site.baseurl }}/img/SB4.jpg "SB4"){:style="width: 70%;"}
 
 ### Making it hurt
 
-I had a fine looking swinging blade, but it didn't hurt yet. I could pass through it without damaging a hair on my body. 
+I had a fine looking swinging blade, but it didn't hurt yet. I could pass through it like silk. 
 #### Adding Colliders
-First step was to make the entity a rigid body add box shape colliders. Since the shape of the entity was not so simple, I had to create two different entities- one for the blade and one for the rod. 
+First step was to make the entity a rigid body and add box shape colliders. Since the shape of the entity was not so simple, I had to create two different entities- one for the blade and one for the rod. 
 #### Adding the DoDamageEvent
 Since the blade was the part which would hurt, a `DamagePlayerComponent` was added to the blade to detect collisions with the player and trigger a `DoDamageEvent`. However, simply sending a `DoDamageEvent` would kill the player in no time as however small the damage being sent, being in contact with the blade even for a second would trigger the `OnCollide` method several times to result in death.  
 #### Sending a CharacterImpulse
@@ -131,9 +138,9 @@ The solution to this was sending a `CharacterImpulseEvent` to the player as well
 
 ### Multiplayer ready?
 
-The swinging blade is not yet multiplayer ready. There are quite a few issues on dealing with the Swinging Blade in multiplayer. The movement prediction on the server side deals with the CharacterImpulseEvent which makes the damaging systems function very differently even if there is a little lag.
+The swinging blade is not yet multiplayer ready. There are quite a few issues on dealing with the Swinging Blade in multiplayer. The movement prediction on the server side deals with the CharacterImpulseEvent which makes the damaging systems function very differently even if there is a little lag. Often the player experiences too many impulses in a short time frame that end up killing him alone.
 
-The PR which deals with the entire work on the swinging blade is [here](https://github.com/Terasology/AdventureAssets/pull/2/). It is still in progress with only the task of making it work in multiplayer being outstanding.
+The PR which deals with the entire work on the swinging blade is [here](https://github.com/Terasology/AdventureAssets/pull/2/). It is still in progress with only the task of making it work in multiplayer remaining outstanding.
 
   
 Up for next week should be more work on puzzles, a few more interesting traps and hopefully multiplayer fixes.
