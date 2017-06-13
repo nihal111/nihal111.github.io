@@ -128,7 +128,11 @@ The root block approach basically meant that each and every trap would have a un
 The problem with this approach is that the root block might be unreachable or at distances that cannot be reached without cheats (`ghost`) like inside walls or up in the air. To allow for easier property changes, the entire mesh of the trap can be made a collider that the player can interact with.
 One more problem is that the editing and removal of the trap (basically, interacting with the root block) has to be limited in some way so that player's in normal gameplay cannot make changes. These will be implemented soon.
 
-This is a huge step forward and it will make setting up traps easy and intuitive, even for a layman.
+This is a huge step forward and it will make setting up traps easy and intuitive, even for a layman. The whole thing in game, looks like this:
+
+<div class="videowrapper">
+    <iframe width="1024" height="768" src="https://www.youtube.com/embed/t3h1n7WBtLU" frameborder="0" allowfullscreen></iframe>
+</div>
 
 ## Wipe-out
 The next trap I'm trying to build is a bit complicated. The idea is to create a horizontal platform attached at the end of a rod that moves in circles. There would exist a pit of lava underneath. The objective of the player would be to time his jump to hop onto the platform and jump past to dodge obstacles that come in the way, to reach the other side. Fall, and the player would be incinerated in the lava pool.

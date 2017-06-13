@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 13 Jun 2017 17:42:59 +0530</pubDate>
-    <lastBuildDate>Tue, 13 Jun 2017 17:42:59 +0530</lastBuildDate>
+    <pubDate>Tue, 13 Jun 2017 22:37:07 +0530</pubDate>
+    <lastBuildDate>Tue, 13 Jun 2017 22:37:07 +0530</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>
@@ -132,7 +132,11 @@ $(document).ready(function(){
 &lt;p&gt;The problem with this approach is that the root block might be unreachable or at distances that cannot be reached without cheats (&lt;code class=&quot;highlighter-rouge&quot;&gt;ghost&lt;/code&gt;) like inside walls or up in the air. To allow for easier property changes, the entire mesh of the trap can be made a collider that the player can interact with.
 One more problem is that the editing and removal of the trap (basically, interacting with the root block) has to be limited in some way so that player’s in normal gameplay cannot make changes. These will be implemented soon.&lt;/p&gt;
 
-&lt;p&gt;This is a huge step forward and it will make setting up traps easy and intuitive, even for a layman.&lt;/p&gt;
+&lt;p&gt;This is a huge step forward and it will make setting up traps easy and intuitive, even for a layman. The whole thing in game, looks like this:&lt;/p&gt;
+
+&lt;div class=&quot;videowrapper&quot;&gt;
+    &lt;iframe width=&quot;1024&quot; height=&quot;768&quot; src=&quot;https://www.youtube.com/embed/t3h1n7WBtLU&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 
 &lt;h2 id=&quot;wipe-out&quot;&gt;Wipe-out&lt;/h2&gt;
 &lt;p&gt;The next trap I’m trying to build is a bit complicated. The idea is to create a horizontal platform attached at the end of a rod that moves in circles. There would exist a pit of lava underneath. The objective of the player would be to time his jump to hop onto the platform and jump past to dodge obstacles that come in the way, to reach the other side. Fall, and the player would be incinerated in the lava pool.&lt;/p&gt;
