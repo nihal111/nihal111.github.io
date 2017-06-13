@@ -1,0 +1,143 @@
+---
+layout: post
+title:  "GSoC Week 6: Setting the trap"
+date: 2017-06-06
+comments: true
+tags:
+- open source
+- MovingBlocks
+- Terasology
+- GSoC
+---
+
+<style type="text/css">
+    .collapsiblecontainer {
+    width:100%;
+    border:1px solid #d3d3d3;
+}
+.collapsiblecontainer div {
+    width:100%;
+}
+.collapsiblecontainer .collapsibleheader {
+    background-color:#d3d3d3;
+    padding: 2px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.collapsiblecontainer .collapsiblecontent {
+    display: none;
+    padding : 5px;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $(".collapsibleheader").click(function () {
+        $collapsibleheader = $(this);
+        //getting the next element
+        $collapsiblecontent = $collapsibleheader.next();
+        //open up the collapsiblecontent needed - toggle the slide- if visible, slide up, if not slidedown.
+        $collapsiblecontent.slideToggle(500, function () {
+            //execute this after slideToggle is done
+            //change text of collapsibleheader based on visibility of collapsiblecontent div
+            $collapsibleheader.find("span:first-child").text(function () {
+                //change text based on condition
+                return $collapsiblecontent.is(":visible") ? "- " : "+ ";
+            });
+        });
+
+    });
+}); 
+
+</script>
+
+With the swinging blade almost ready last week, this week involved a lot of focused efforts on making traps easy and intuitive to set up.
+
+# What have I been upto?
+
+## The Swinging Blade
+Here's some more detail about the swinging blade I made last week.
+
+The Swinging Blade arrangement looks like this:
+
+{: .center}
+![SBentities]({{ site.baseurl }}/img/swingingbladeentities.png "Swinging Blade Entities"){:style="max-height: 700px;"}
+
+There are 4 entities- A **root** entity, the **rod**, the **blade** and the **mesh** entity. The root entity **owns** all the other entities and has the **network component** which replicates it across all clients. Creation of the root entity triggers the creation of the other three entites. The rod and blade entity only exist on the server side and are loaded by the `SwingingBladeServerSystem` that is registered as `AUTHORITY`. The mesh entity exists only on the client side and is loaded by the `SwingingBladeClientSystem` that is registered as `CLIENT`. The rod and blade entities are simply rigid bodies. The blade, in addition has a `DamageComponent` that sends an impulse and deals damage to character entities. The mesh entity has the mesh and material which basically is the model exported from blender. The root entity is the one on which the rotation animations are made. The other entities have their location attached to the Swinging Blade, which makes them go through the rotations too.
+
+
+## The Blade Runner
+After I had made the swinging blade last week, I couldn't stop myself from creating a room full of swinging blades in series. I arranged the swinging blades in such a manner that there would be only one (or two) safe way past. The player has to time his sprint perfectly such that he gets past each blade safely. Interestingly, with the setup I had made manually, there was no safe way back.
+
+<div class="videowrapper">
+    <iframe width="1024" height="768" src="https://www.youtube.com/embed/MYmNFplY8Sc" frameborder="0" allowfullscreen></iframe>
+</div>
+
+This brought me to the question, how can I generate such puzzles in which the swinging blades are so set that there are only few safe ways past. I had control over three parameters- the **amplitude** (maximum angle), the **time period** (time for one two and fro motion) and the **phase difference** (an angle to generate an offset).
+
+The motion of the swinging blade was much akin to that of a simple pendulum, following the equation-  
+
+`theta = A * cos (w*t + phi)`  
+{: .center}
+Where,  
+`theta:` is the angle, the rod makes with the vertical   
+`w:` is the angular velocity (`w = 2 * pi / timePeriod`)  
+`t:` is the game time at the given instant  
+`phi:` is the phase difference or offset  
+
+{: .center}
+![SBmath]({{ site.baseurl }}/img/SBmath.png "Swinging Blade Math"){:style="max-height: 500px;"}
+
+## Setting the trap- Creative Mode
+After the first trap- the Swinging Blade had been made, a major concern was how to make it easy and intuitive to set up traps in game. At the same time creating puzzles had to be made easy using Structure Templates. Also the editing of the trap settings, or removal of the trap had to be limited so that every player could not disble a trap and move past it.
+
+### The Trap Placeholder and Trap Configuration Tool
+The first approach I had taken was to use a trap placeholder. This would be similar to the Structure Template Placeholder that is used to allow spawning of a new structure template when it is placed inside a structure template. This approach basically consisted of a trap placeholder that would allow for spawning any trap by selecting a trap in the dropdown menu of a UI Screen. After a trap is selected, it is automatically spawned. Mining the placeholder block would remove the trap from the world.
+
+The trap configuration tool is essentially an item that lets you edit the properties of a trap by aiming at the trap and interacting with the item (right-clicking). The trap configuration tool loads up a UI Screen populated with the properties of the targetted trap. The properties can then be edited and saved changes are immediately reflected in the world.
+
+Integrating this with Structural Templates meant that the trap placeholder blocks won't show up when the traps are spawned using a structure spawner. This would essentially be a way to prevent editing or even removal of traps by any player in game who doesn't have the trap configuration tool.
+
+Here are a few videos of how that looked like:
+
+<div class="videowrapper">
+    <iframe width="1024" height="768" src="https://www.youtube.com/embed/ywD2XsqtGh8" frameborder="0" allowfullscreen></iframe>
+</div>
+<br/>
+<div class="videowrapper">
+    <iframe width="1024" height="768" src="https://www.youtube.com/embed/I0nH9RWeQHU" frameborder="0" allowfullscreen></iframe>
+</div>
+
+There were several problems with this approach:
+
+1. Aiming might not work well in multiplayer. Since the targetted entity was usually the mesh, that existed only on the client side.
+2. Multiple steps are necessary to place a trap. You first have to place the placeholder and then activate it and then select the trap then close that dialog select the tool for configuring it and use it to select the details. This makes setting up traps difficult for a layman.
+3. Traps can’t be replaced as there is no item that remembers the trap settings when the trap is mined. Destroying a trap placeholder doesn't save the previously configured settings.
+4. Requires Trap Configuration Tool for editing trap properties and removal. Difficult removal of traps if structure is mistakenly spawned a little off.
+5. Inconsistent design. Some traps (spawned by structure spawners) don't have an associated trap placeholder block, while others do.
+
+### The Root Block- a better approach
+The root block approach basically meant that each and every trap would have a unique origin block. For traps that are block based, for e.g. for a block with retracting blades that pop out of it, the origin block would be the trap itself. This block would be the owner to the root entity that has the Trap component. Here are a few features about the root block approach-
+
+1. Root block can have a unique look for each trap- different shape and block tiles.
+2. Root block is the owner of the entity that controls the trap.
+3. Root block upon interaction creates a UI screen that allows for modification of trap properties.
+4. Mining a root block would destroy the trap and create a root block item. Placing the root block item again in the world would spawn the trap with the same properties before destruction.
+5. With Structure Templates, the root blocks would still exist and would be dealt in a similar way as chests. This would make the traps appear consistent.
+
+The problem with this approach is that the root block might be unreachable or at distances that cannot be reached without cheats (`ghost`) like inside walls or up in the air. To allow for easier property changes, the entire mesh of the trap can be made a collider that the player can interact with.
+One more problem is that the editing and removal of the trap (basically, interacting with the root block) has to be limited in some way so that player's in normal gameplay cannot make changes. These will be implemented soon.
+
+This is a huge step forward and it will make setting up traps easy and intuitive, even for a layman.
+
+## Wipe-out
+The next trap I'm trying to build is a bit complicated. The idea is to create a horizontal platform attached at the end of a rod that moves in circles. There would exist a pit of lava underneath. The objective of the player would be to time his jump to hop onto the platform and jump past to dodge obstacles that come in the way, to reach the other side. Fall, and the player would be incinerated in the lava pool.
+
+It would look something like this:
+
+{: .center}
+![wipeout]({{ site.baseurl }}/img/wipeout.png "Wipe Out"){:style="max-width: 700px;"}
+
+Achieving this would be a challenge and I'll need to get started with the physics engine.
+
+Next week should involve a lot more tinkering with the Physics Engine and trying to make new puzzles since the base architecture is now decided.
