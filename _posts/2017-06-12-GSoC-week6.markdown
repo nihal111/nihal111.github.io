@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "GSoC Week 6: Setting the trap"
-date: 2017-06-06
+date: 2017-06-12
 comments: true
 tags:
 - open source
