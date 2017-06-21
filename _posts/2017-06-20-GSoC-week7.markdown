@@ -1,0 +1,109 @@
+---
+layout: post
+title:  "GSoC Week 7: The Wipe Out and the Fireball Launcher"
+date: 2017-06-06
+comments: true
+tags:
+- open source
+- MovingBlocks
+- Terasology
+- GSoC
+---
+
+<style type="text/css">
+    .collapsiblecontainer {
+    width:100%;
+    border:1px solid #d3d3d3;
+}
+.collapsiblecontainer div {
+    width:100%;
+}
+.collapsiblecontainer .collapsibleheader {
+    background-color:#d3d3d3;
+    padding: 2px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.collapsiblecontainer .collapsiblecontent {
+    display: none;
+    padding : 5px;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $(".collapsibleheader").click(function () {
+        $collapsibleheader = $(this);
+        //getting the next element
+        $collapsiblecontent = $collapsibleheader.next();
+        //open up the collapsiblecontent needed - toggle the slide- if visible, slide up, if not slidedown.
+        $collapsiblecontent.slideToggle(500, function () {
+            //execute this after slideToggle is done
+            //change text of collapsibleheader based on visibility of collapsiblecontent div
+            $collapsibleheader.find("span:first-child").text(function () {
+                //change text based on condition
+                return $collapsiblecontent.is(":visible") ? "- " : "+ ";
+            });
+        });
+
+    });
+}); 
+
+</script>
+
+After having set up the base to create traps last week, this week involved creation of two new traps.
+
+# What have I been upto?
+
+## The Wipe Out
+This trap is inspired from the shows Takeshi's Castle and Wipe Out. The setup consists of a platform attached to a rod pivoted at a root block and rotated around in horizontal circles. The trap can be configured by adjusting these parameters:
+
+**Time Period**: The time taken to complete a whole circle.  
+**Offset**: Two add a phase difference between two otherwise identical wipe out traps.  
+**Sense**: Sense of rotation. (clockwise or anti-clockwise)  
+**Rotation**: The wipe out is conventionally meant to be rotated horizontally, but the pitch can be changed to give it a different look.
+
+Here's a video showing how the Wipe Out looks and how it's properties can be altered:
+<div class="videowrapper">
+    <iframe width="1024" height="768" src="https://www.youtube.com/embed/qce497AebYQ" frameborder="0" allowfullscreen></iframe>
+</div>
+
+The wipe out has a very similar architecture as the swinging blade:  
+There are 4 entities- A **root** entity, the **rod**, the **surfboard** and the **mesh** entity. The root entity **owns** all the other entities and has the **network component** which replicates it across all clients. Creation of the root entity triggers the creation of the other three entites. The rod and surfboard entity only exist on the server side and are loaded by the `WipeOutServerSystem` that is registered as `AUTHORITY`. The mesh entity exists only on the client side and is loaded by the `WipeOutClientSystem` that is registered as `CLIENT`. The rod and surfboard entities are simply rigid bodies. The mesh entity has the mesh and material which basically is the model exported from blender. The root entity is the one on which the rotation animations are made. The other entities have their location attached to the root entity, which makes them go through the rotations too.
+
+
+## The Wipe Out Lava Room
+After I completed the trap, I went ahead and created a room consisting of two wipe outs with a pit of lava underneath and a treasure chest on the far end of the room. I arranged the wipe outs in such a manner that there would be one moment when they would align, allowing the player to jump from one to the next. The player has to time his jump perfectly such that he gets onto each surfboard, or else the player would fall into the pit of lava.
+
+<div class="videowrapper">
+    <iframe width="1024" height="768" src="https://www.youtube.com/embed/djTG0Ovf_UI" frameborder="0" allowfullscreen></iframe>
+</div>
+
+The motion of the wipe out is pretty straight forward and follows the equation-  
+
+`theta = ((t + offset) % timePeriod)*(2 * Math.PI / timePeriod)* direction`  
+{: .center}
+Where,  
+`theta:` is the angle, the rod makes with the vertical  
+`timePeriod:` is the time taken for one rotation  
+`direction:` +1 (anti-clockwise) or -1 (clockwise)
+
+{: .center}
+![WipeOutMath]({{ site.baseurl }}/img/wipeOutMath.PNG "Wipe Out Math"){:style="max-height: 500px;"}
+
+## The Fireball Launcher
+The Fireball Launcher was the next trap I worked on. With some help from [niksoc](https://github.com/niksoc/), I was able to restructure the Projectile module. This made shooting fireballs as easy as sending a `FireProjectileEvent` on the created fireball entity.
+
+The fireball launcher trap also has a few properties that allow for custom configurations:
+
+**Time Period**: Time interval between two consecutive fireball shots.  
+**Offset**: Time offset between two fireball launchers that have the same time period.  
+**Max Distance**: Maximum distance after which the fireball dies.  
+**Direction**: Direction in vector form (x, y and z) towards which the fireball is launched.
+
+Here is a video showing how the fireball launcher works:
+<div class="videowrapper">
+    <iframe width="1024" height="768" src="https://www.youtube.com/embed/0N-cD8o6ZLU" frameborder="0" allowfullscreen></iframe>
+</div>
+
+The next item I'm working on is the revival stone which is an artifact that when activated, allows the player to respawn at its location. Also I'm going to get started with using some particle effects. That would come in handy for the revival stone and the fireball. 

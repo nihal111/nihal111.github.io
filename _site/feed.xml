@@ -6,9 +6,123 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 13 Jun 2017 22:37:07 +0530</pubDate>
-    <lastBuildDate>Tue, 13 Jun 2017 22:37:07 +0530</lastBuildDate>
+    <pubDate>Wed, 21 Jun 2017 13:02:18 +0530</pubDate>
+    <lastBuildDate>Wed, 21 Jun 2017 13:02:18 +0530</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title>GSoC Week 7: The Wipe Out and the Fireball Launcher</title>
+        <description>&lt;style type=&quot;text/css&quot;&gt;
+    .collapsiblecontainer {
+    width:100%;
+    border:1px solid #d3d3d3;
+}
+.collapsiblecontainer div {
+    width:100%;
+}
+.collapsiblecontainer .collapsibleheader {
+    background-color:#d3d3d3;
+    padding: 2px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.collapsiblecontainer .collapsiblecontent {
+    display: none;
+    padding : 5px;
+}
+&lt;/style&gt;
+
+&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+$(document).ready(function(){
+    $(&quot;.collapsibleheader&quot;).click(function () {
+        $collapsibleheader = $(this);
+        //getting the next element
+        $collapsiblecontent = $collapsibleheader.next();
+        //open up the collapsiblecontent needed - toggle the slide- if visible, slide up, if not slidedown.
+        $collapsiblecontent.slideToggle(500, function () {
+            //execute this after slideToggle is done
+            //change text of collapsibleheader based on visibility of collapsiblecontent div
+            $collapsibleheader.find(&quot;span:first-child&quot;).text(function () {
+                //change text based on condition
+                return $collapsiblecontent.is(&quot;:visible&quot;) ? &quot;- &quot; : &quot;+ &quot;;
+            });
+        });
+
+    });
+}); 
+
+&lt;/script&gt;
+
+&lt;p&gt;After having set up the base to create traps last week, this week involved creation of two new traps.&lt;/p&gt;
+
+&lt;h1 id=&quot;what-have-i-been-upto&quot;&gt;What have I been upto?&lt;/h1&gt;
+
+&lt;h2 id=&quot;the-wipe-out&quot;&gt;The Wipe Out&lt;/h2&gt;
+&lt;p&gt;This trap is inspired from the shows Takeshi’s Castle and Wipe Out. The setup consists of a platform attached to a rod pivoted at a root block and rotated around in horizontal circles. The trap can be configured by adjusting these parameters:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Time Period&lt;/strong&gt;: The time taken to complete a whole circle.&lt;br /&gt;
+&lt;strong&gt;Offset&lt;/strong&gt;: Two add a phase difference between two otherwise identical wipe out traps.&lt;br /&gt;
+&lt;strong&gt;Sense&lt;/strong&gt;: Sense of rotation. (clockwise or anti-clockwise)&lt;br /&gt;
+&lt;strong&gt;Rotation&lt;/strong&gt;: The wipe out is conventionally meant to be rotated horizontally, but the pitch can be changed to give it a different look.&lt;/p&gt;
+
+&lt;p&gt;Here’s a video showing how the Wipe Out looks and how it’s properties can be altered:&lt;/p&gt;
+&lt;div class=&quot;videowrapper&quot;&gt;
+    &lt;iframe width=&quot;1024&quot; height=&quot;768&quot; src=&quot;https://www.youtube.com/embed/qce497AebYQ&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The wipe out has a very similar architecture as the swinging blade:&lt;br /&gt;
+There are 4 entities- A &lt;strong&gt;root&lt;/strong&gt; entity, the &lt;strong&gt;rod&lt;/strong&gt;, the &lt;strong&gt;surfboard&lt;/strong&gt; and the &lt;strong&gt;mesh&lt;/strong&gt; entity. The root entity &lt;strong&gt;owns&lt;/strong&gt; all the other entities and has the &lt;strong&gt;network component&lt;/strong&gt; which replicates it across all clients. Creation of the root entity triggers the creation of the other three entites. The rod and surfboard entity only exist on the server side and are loaded by the &lt;code class=&quot;highlighter-rouge&quot;&gt;WipeOutServerSystem&lt;/code&gt; that is registered as &lt;code class=&quot;highlighter-rouge&quot;&gt;AUTHORITY&lt;/code&gt;. The mesh entity exists only on the client side and is loaded by the &lt;code class=&quot;highlighter-rouge&quot;&gt;WipeOutClientSystem&lt;/code&gt; that is registered as &lt;code class=&quot;highlighter-rouge&quot;&gt;CLIENT&lt;/code&gt;. The rod and surfboard entities are simply rigid bodies. The mesh entity has the mesh and material which basically is the model exported from blender. The root entity is the one on which the rotation animations are made. The other entities have their location attached to the root entity, which makes them go through the rotations too.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-wipe-out-lava-room&quot;&gt;The Wipe Out Lava Room&lt;/h2&gt;
+&lt;p&gt;After I completed the trap, I went ahead and created a room consisting of two wipe outs with a pit of lava underneath and a treasure chest on the far end of the room. I arranged the wipe outs in such a manner that there would be one moment when they would align, allowing the player to jump from one to the next. The player has to time his jump perfectly such that he gets onto each surfboard, or else the player would fall into the pit of lava.&lt;/p&gt;
+
+&lt;div class=&quot;videowrapper&quot;&gt;
+    &lt;iframe width=&quot;1024&quot; height=&quot;768&quot; src=&quot;https://www.youtube.com/embed/djTG0Ovf_UI&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The motion of the wipe out is pretty straight forward and follows the equation-&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;theta = ((t + offset) % timePeriod)*(2 * Math.PI / timePeriod)* direction&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Where,&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;theta:&lt;/code&gt; is the angle, the rod makes with the vertical&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;timePeriod:&lt;/code&gt; is the time taken for one rotation&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;direction:&lt;/code&gt; +1 (anti-clockwise) or -1 (clockwise)&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/wipeOutMath.PNG&quot; alt=&quot;WipeOutMath&quot; title=&quot;Wipe Out Math&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;the-fireball-launcher&quot;&gt;The Fireball Launcher&lt;/h2&gt;
+&lt;p&gt;The Fireball Launcher was the next trap I worked on. With some help from &lt;a href=&quot;https://github.com/niksoc/&quot;&gt;niksoc&lt;/a&gt;, I was able to restructure the Projectile module. This made shooting fireballs as easy as sending a &lt;code class=&quot;highlighter-rouge&quot;&gt;FireProjectileEvent&lt;/code&gt; on the created fireball entity.&lt;/p&gt;
+
+&lt;p&gt;The fireball launcher trap also has a few properties that allow for custom configurations:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Time Period&lt;/strong&gt;: Time interval between two consecutive fireball shots.&lt;br /&gt;
+&lt;strong&gt;Offset&lt;/strong&gt;: Time offset between two fireball launchers that have the same time period.&lt;br /&gt;
+&lt;strong&gt;Max Distance&lt;/strong&gt;: Maximum distance after which the fireball dies.&lt;br /&gt;
+&lt;strong&gt;Direction&lt;/strong&gt;: Direction in vector form (x, y and z) towards which the fireball is launched.&lt;/p&gt;
+
+&lt;p&gt;Here is a video showing how the fireball launcher works:&lt;/p&gt;
+&lt;div class=&quot;videowrapper&quot;&gt;
+    &lt;iframe width=&quot;1024&quot; height=&quot;768&quot; src=&quot;https://www.youtube.com/embed/0N-cD8o6ZLU&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The next item I’m working on is the revival stone which is an artifact that when activated, allows the player to respawn at its location. Also I’m going to get started with using some particle effects. That would come in handy for the revival stone and the fireball.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 06 Jun 2017 00:00:00 +0530</pubDate>
+        <link>http://localhost:4000/2017/06/06/GSoC-week7.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/06/06/GSoC-week7.html</guid>
+        
+        <category>open source</category>
+        
+        <category>MovingBlocks</category>
+        
+        <category>Terasology</category>
+        
+        <category>GSoC</category>
+        
+        
+      </item>
     
       <item>
         <title>GSoC Week 6: Setting the trap</title>
@@ -66,7 +180,7 @@ $(document).ready(function(){
 
 &lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/swingingbladeentities.png&quot; alt=&quot;SBentities&quot; title=&quot;Swinging Blade Entities&quot; style=&quot;max-height: 700px;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;There are 4 entities- A &lt;strong&gt;root&lt;/strong&gt; entity, the &lt;strong&gt;rod&lt;/strong&gt;, the &lt;strong&gt;blade&lt;/strong&gt; and the &lt;strong&gt;mesh&lt;/strong&gt; entity. The root entity &lt;strong&gt;owns&lt;/strong&gt; all the other entities and has the &lt;strong&gt;network component&lt;/strong&gt; which replicates it across all clients. Creation of the root entity triggers the creation of the other three entites. The rod and blade entity only exist on the server side and are loaded by the &lt;code class=&quot;highlighter-rouge&quot;&gt;SwingingBladeServerSystem&lt;/code&gt; that is registered as &lt;code class=&quot;highlighter-rouge&quot;&gt;AUTHORITY&lt;/code&gt;. The mesh entity exists only on the client side and is loaded by the &lt;code class=&quot;highlighter-rouge&quot;&gt;SwingingBladeClientSystem&lt;/code&gt; that is registered as &lt;code class=&quot;highlighter-rouge&quot;&gt;CLIENT&lt;/code&gt;. The rod and blade entities are simply rigid bodies. The blade, in addition has a &lt;code class=&quot;highlighter-rouge&quot;&gt;DamageComponent&lt;/code&gt; that sends an impulse and deals damage to character entities. The mesh entity has the mesh and material which basically is the model exported from blender. The root entity is the one on which the rotation animations are made. The other entities have their location attached to the Swinging Blade, which makes them go through the rotations too.&lt;/p&gt;
+&lt;p&gt;There are 4 entities- A &lt;strong&gt;root&lt;/strong&gt; entity, the &lt;strong&gt;rod&lt;/strong&gt;, the &lt;strong&gt;blade&lt;/strong&gt; and the &lt;strong&gt;mesh&lt;/strong&gt; entity. The root entity &lt;strong&gt;owns&lt;/strong&gt; all the other entities and has the &lt;strong&gt;network component&lt;/strong&gt; which replicates it across all clients. Creation of the root entity triggers the creation of the other three entites. The rod and blade entity only exist on the server side and are loaded by the &lt;code class=&quot;highlighter-rouge&quot;&gt;SwingingBladeServerSystem&lt;/code&gt; that is registered as &lt;code class=&quot;highlighter-rouge&quot;&gt;AUTHORITY&lt;/code&gt;. The mesh entity exists only on the client side and is loaded by the &lt;code class=&quot;highlighter-rouge&quot;&gt;SwingingBladeClientSystem&lt;/code&gt; that is registered as &lt;code class=&quot;highlighter-rouge&quot;&gt;CLIENT&lt;/code&gt;. The rod and blade entities are simply rigid bodies. The blade, in addition has a &lt;code class=&quot;highlighter-rouge&quot;&gt;DamageComponent&lt;/code&gt; that sends an impulse and deals damage to character entities. The mesh entity has the mesh and material which basically is the model exported from blender. The root entity is the one on which the rotation animations are made. The other entities have their location attached to the root entity, which makes them go through the rotations too.&lt;/p&gt;
 
 &lt;h2 id=&quot;the-blade-runner&quot;&gt;The Blade Runner&lt;/h2&gt;
 &lt;p&gt;After I had made the swinging blade last week, I couldn’t stop myself from creating a room full of swinging blades in series. I arranged the swinging blades in such a manner that there would be only one (or two) safe way past. The player has to time his sprint perfectly such that he gets past each blade safely. Interestingly, with the setup I had made manually, there was no safe way back.&lt;/p&gt;
@@ -1194,56 +1308,6 @@ In git, when you push, you bring the changes on your local repository come into 
         <category>open source</category>
         
         <category>mozilla</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Auto Deploy on Server</title>
-        <description>&lt;p&gt;It had been a while since I had been using a server to host the &lt;a href=&quot;http://www.wncc-iitb.org&quot;&gt;website for WnCC&lt;/a&gt;. With a lot of development happening around, updating and testing changes on the server, had become a requirement. Having built the site in Jekyll, I required to shift the contents of &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; from my local machine to &lt;code class=&quot;highlighter-rouge&quot;&gt;/var/www/html&lt;/code&gt; on the server, after every build. I had been following the simple, standard method of using scp, for a long time. Copying all the content from &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;/var/www/html&lt;/code&gt; was now becoming inefficient (as I copied all the files in the folder all over again), took a lot of time as the site started expanding with more multimedia content, and required a long terminal command too. I could have used a probably more efficient way of SSHing into the server, pulling from the git repository and copying the contents of the &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; folder into &lt;code class=&quot;highlighter-rouge&quot;&gt;/var/www/html&lt;/code&gt;. But this would have been tedious too, and probably could have been made easier with a script. Nevertheless, it would have required me to SSH into the server, and atleast a couple of terminal commands.&lt;/p&gt;
-
-&lt;h3 id=&quot;discovering-github-webhooks&quot;&gt;Discovering &lt;a href=&quot;https://developer.github.com/webhooks/&quot;&gt;Github Webhooks&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Enter webhooks. &lt;a href=&quot;https://developer.github.com/webhooks/&quot;&gt;Webhooks&lt;/a&gt; allow one to set up an integration with their github repository to listen for one or more events. Whenever such an event occurs, Github sends a HTTP POST payload to the webhook’s configured URL. An event can occur with the creation of an issue, a push to the server or be triggered whenever a repository is starred, forked etc. Webhooks can be used to do a lot of things. I have used a webhook, in this example for the quite general purpose of setting up an auto-deplow on my server.&lt;/p&gt;
-
-&lt;p&gt;Github provides a quite &lt;a href=&quot;https://developer.github.com/webhooks/configuring/&quot;&gt;comprehensive guide&lt;/a&gt; about how to set up a webhook to the local host which is connected to the web using &lt;a href=&quot;https://ngrok.com/download&quot;&gt;ngrok&lt;/a&gt;. I followed the guide and replicated similar steps on my server to get my webhook configured to send a HTTP POST payload to the server.&lt;/p&gt;
-
-&lt;h3 id=&quot;using-sinatra&quot;&gt;Using &lt;a href=&quot;http://www.sinatrarb.com/&quot;&gt;Sinatra&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;I used Sintara to create a simple web framework which would receive a HTTP POST made to the configured server URL, and run a small shell command. Having written this small piece of code, I could now reflect all changes made in the repository on the website, everytime a push is made to the repository. The following code renames the &lt;code class=&quot;highlighter-rouge&quot;&gt;html&lt;/code&gt; folder inside &lt;code class=&quot;highlighter-rouge&quot;&gt;/var/www/&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; and performs a git pull inside &lt;code class=&quot;highlighter-rouge&quot;&gt;/var/www&lt;/code&gt; and later renames it back to &lt;code class=&quot;highlighter-rouge&quot;&gt;html&lt;/code&gt;. This is done as the built site lies inside the &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; folder of the repository. I&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;c1&quot;&gt;# hook.rb&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'sinatra'&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'json'&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:bind&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'0.0.0.0'&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;post&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'/payload'&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;#push = JSON.parse(request.body.read)&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;#puts &quot;I got some JSON: #{push.inspect}&quot;&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;output&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;sb&quot;&gt;`mv html _site ; git pull origin master; mv _site html`&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;output&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Running a &lt;code class=&quot;highlighter-rouge&quot;&gt;ruby hook.rb -o 0.0.0.0&lt;/code&gt; will give a message like &lt;code class=&quot;highlighter-rouge&quot;&gt;Sinatra/1.4.4 has taken the stage on 4567...&lt;/code&gt;. Making a POST request on http://IP:4567/payload, will now trigger the shell command in the above script. (&lt;code class=&quot;highlighter-rouge&quot;&gt;-o 0.0.0.0&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;set :bind, '0.0.0.0'&lt;/code&gt; allows access from networks other than localhost)&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; You may have to enable the port if you are using a firewall on your server. A simple &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo ufw allow 4567&lt;/code&gt; should do it.&lt;/p&gt;
-
-&lt;p&gt;However this session of Sinatra will close as soon as you CTRL+C out of it or logout. To keep such an instance running even after logout you could try&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;nohup sudo ruby hook.rb -o 0.0.0.0 &amp;amp;&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;This would put the Sinatra process in background and keep it running even after you have logged out.&lt;/p&gt;
-
-&lt;p&gt;I did not know about github webhooks earlier and this was an interesting find. The above was a quick setup for automation. If you know a way in which I could improve it, do let me know in the comments.&lt;/p&gt;
-
-&lt;p&gt;Till next time!&lt;/p&gt;
-</description>
-        <pubDate>Wed, 18 May 2016 00:00:00 +0530</pubDate>
-        <link>http://localhost:4000/2016/05/18/auto-deploy.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2016/05/18/auto-deploy.html</guid>
-        
-        <category>git</category>
-        
-        <category>ruby</category>
         
         
       </item>
