@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 21 Jun 2017 13:02:18 +0530</pubDate>
-    <lastBuildDate>Wed, 21 Jun 2017 13:02:18 +0530</lastBuildDate>
+    <pubDate>Wed, 21 Jun 2017 13:06:30 +0530</pubDate>
+    <lastBuildDate>Wed, 21 Jun 2017 13:06:30 +0530</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>
@@ -109,9 +109,9 @@ There are 4 entities- A &lt;strong&gt;root&lt;/strong&gt; entity, the &lt;strong
 
 &lt;p&gt;The next item I’m working on is the revival stone which is an artifact that when activated, allows the player to respawn at its location. Also I’m going to get started with using some particle effects. That would come in handy for the revival stone and the fireball.&lt;/p&gt;
 </description>
-        <pubDate>Tue, 06 Jun 2017 00:00:00 +0530</pubDate>
-        <link>http://localhost:4000/2017/06/06/GSoC-week7.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/06/06/GSoC-week7.html</guid>
+        <pubDate>Tue, 20 Jun 2017 00:00:00 +0530</pubDate>
+        <link>http://localhost:4000/2017/06/20/GSoC-week7.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/06/20/GSoC-week7.html</guid>
         
         <category>open source</category>
         
@@ -263,9 +263,9 @@ One more problem is that the editing and removal of the trap (basically, interac
 
 &lt;p&gt;Next week should involve a lot more tinkering with the Physics Engine and trying to make new puzzles since the base architecture is now decided.&lt;/p&gt;
 </description>
-        <pubDate>Tue, 06 Jun 2017 00:00:00 +0530</pubDate>
-        <link>http://localhost:4000/2017/06/06/GSoC-week6.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/06/06/GSoC-week6.html</guid>
+        <pubDate>Mon, 12 Jun 2017 00:00:00 +0530</pubDate>
+        <link>http://localhost:4000/2017/06/12/GSoC-week6.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/06/12/GSoC-week6.html</guid>
         
         <category>open source</category>
         

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "GSoC Week 7: The Wipe Out and the Fireball Launcher"
-date: 2017-06-06
+date: 2017-06-20
 comments: true
 tags:
 - open source
