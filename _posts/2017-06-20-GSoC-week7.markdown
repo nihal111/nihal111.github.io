@@ -99,6 +99,7 @@ The fireball launcher trap also has a few properties that allow for custom confi
 **Time Period**: Time interval between two consecutive fireball shots.  
 **Offset**: Time offset between two fireball launchers that have the same time period.  
 **Max Distance**: Maximum distance after which the fireball dies.  
+**Damage Amount**: Total collective damage the fireball can inflict. Acts as *health* for the fireball. The fireball is destroyed after it has inflicted a total damage equal to its health, or unitl it comes across an indestructible entity.  
 **Direction**: Direction in vector form (x, y and z) towards which the fireball is launched.
 
 Here is a video showing how the fireball launcher works:
