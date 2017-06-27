@@ -6,29 +6,29 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 27 Jun 2017 22:32:22 +0530</pubDate>
-    <lastBuildDate>Tue, 27 Jun 2017 22:32:22 +0530</lastBuildDate>
+    <pubDate>Tue, 27 Jun 2017 22:56:09 +0530</pubDate>
+    <lastBuildDate>Tue, 27 Jun 2017 22:56:09 +0530</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>
         <title>GSoC Week 8: The Revival stone and the Password Door</title>
         <description>&lt;style type=&quot;text/css&quot;&gt;
-    .collapsiblecontainer {
-    width:100%;
-    border:1px solid #d3d3d3;
+.collapsiblecontainer {
+width:100%;
+border:1px solid #d3d3d3;
 }
 .collapsiblecontainer div {
-    width:100%;
+width:100%;
 }
 .collapsiblecontainer .collapsibleheader {
-    background-color:#d3d3d3;
-    padding: 2px;
-    cursor: pointer;
-    font-weight: bold;
+background-color:#d3d3d3;
+padding: 2px;
+cursor: pointer;
+font-weight: bold;
 }
 .collapsiblecontainer .collapsiblecontent {
-    display: none;
-    padding : 5px;
+display: none;
+padding : 5px;
 }
 &lt;/style&gt;
 
@@ -36,22 +36,22 @@
 
 &lt;script type=&quot;text/javascript&quot;&gt;
 $(document).ready(function(){
-    $(&quot;.collapsibleheader&quot;).click(function () {
-        $collapsibleheader = $(this);
-        //getting the next element
-        $collapsiblecontent = $collapsibleheader.next();
-        //open up the collapsiblecontent needed - toggle the slide- if visible, slide up, if not slidedown.
-        $collapsiblecontent.slideToggle(500, function () {
-            //execute this after slideToggle is done
-            //change text of collapsibleheader based on visibility of collapsiblecontent div
-            $collapsibleheader.find(&quot;span:first-child&quot;).text(function () {
-                //change text based on condition
-                return $collapsiblecontent.is(&quot;:visible&quot;) ? &quot;- &quot; : &quot;+ &quot;;
-            });
-        });
+$(&quot;.collapsibleheader&quot;).click(function () {
+$collapsibleheader = $(this);
+//getting the next element
+$collapsiblecontent = $collapsibleheader.next();
+//open up the collapsiblecontent needed - toggle the slide- if visible, slide up, if not slidedown.
+$collapsiblecontent.slideToggle(500, function () {
+//execute this after slideToggle is done
+//change text of collapsibleheader based on visibility of collapsiblecontent div
+$collapsibleheader.find(&quot;span:first-child&quot;).text(function () {
+//change text based on condition
+return $collapsiblecontent.is(&quot;:visible&quot;) ? &quot;- &quot; : &quot;+ &quot;;
+});
+});
 
-    });
-}); 
+});
+});
 
 &lt;/script&gt;
 
@@ -82,10 +82,10 @@ $(document).ready(function(){
 
 &lt;div class=&quot;collapsiblecontainer&quot;&gt;
 &lt;div class=&quot;collapsibleheader&quot;&gt;&lt;span&gt;+ &lt;/span&gt;&lt;span&gt;How does the texture change happen?&lt;/span&gt;&lt;/div&gt;
-&lt;div class=&quot;collapsiblecontent&quot;&gt;   
-    Every model is added to the game by first exporting the model to a .obj file and then creating an associated prefab for it. The associated prefab needs to have a MeshComponent that describes the mesh and the material. The mesh points to the .obj file exported using Blender. The material on the other hand is the texture (png image) that is UV mapped to the model.
-    &lt;br /&gt;
-    The two states of the revival stone model only differ in texture. This is implemented using a simple material (texture) switch when the player interacts with the statue to activate it. As far as I know, this is the first usage of such a material switch in the game and it can definitely be used for more models to depict a change in state.
+&lt;div class=&quot;collapsiblecontent&quot;&gt;
+Every model is added to the game by first exporting the model to a .obj file and then creating an associated prefab for it. The associated prefab needs to have a MeshComponent that describes the mesh and the material. The mesh points to the .obj file exported using Blender. The material, on the other hand, is the texture (png image) that is UV mapped to the model.
+&lt;br /&gt;
+The two states of the revival stone model only differ in texture. This is implemented using a simple material (texture) switch when the player interacts with the statue to activate it. As far as I know, this is the first usage of such a material switch in the game and it can definitely be used for more models to depict a change in state.
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -98,12 +98,12 @@ $(document).ready(function(){
 
 &lt;div class=&quot;collapsiblecontainer&quot;&gt;
 &lt;div class=&quot;collapsibleheader&quot;&gt;&lt;span&gt;+ &lt;/span&gt;&lt;span&gt;How is the respawn mechanism implemented?&lt;/span&gt;&lt;/div&gt;
-&lt;div class=&quot;collapsiblecontent&quot;&gt;   
-    The RespawnRequestEvent that is sent when the &quot;Respawn&quot; button is clicked on the Death Screen was being used to modify the LocationComponent of the player entity and line it up for respawn.
-    &lt;br /&gt;
-    This process has now been broken into multiple parts. A method receives the RespawnRequestEvent with a &quot;CRITICAL&quot; priority and sets the respawn location as per the World Generator information. Another method in the PlayerSystem receives the RespawnRequestEvent with a &quot;TRIVIAL&quot; priority and initiates the whole respawn process for the player entity.
-    &lt;br /&gt;
-    Any other system present in any module can receive the RespawnRequestEvent with a priority between TRIVIAL and CRITICAL (both exclusive) and make change to the LocationComponent of the player entity to allow for a custom respawn location.
+&lt;div class=&quot;collapsiblecontent&quot;&gt;
+The RespawnRequestEvent that is sent when the &quot;Respawn&quot; button is clicked on the Death Screen was being used to modify the LocationComponent of the player entity and line it up for respawn.
+&lt;br /&gt;
+This process has now been broken into multiple parts. A method receives the RespawnRequestEvent with a &quot;CRITICAL&quot; priority and sets the respawn location as per the World Generator information. Another method in the PlayerSystem receives the RespawnRequestEvent with a &quot;TRIVIAL&quot; priority and initiates the whole respawn process for the player entity.
+&lt;br /&gt;
+Any other system present in any module can receive the RespawnRequestEvent with a priority between TRIVIAL and CRITICAL (both exclusive) and make a change to the LocationComponent of the player entity to allow for a custom respawn location.
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -114,30 +114,30 @@ $(document).ready(function(){
 
 &lt;div class=&quot;collapsiblecontainer&quot;&gt;
 &lt;div class=&quot;collapsibleheader&quot;&gt;&lt;span&gt;+ &lt;/span&gt;&lt;span&gt;How to create such particle effects?&lt;/span&gt;&lt;/div&gt;
-&lt;div class=&quot;collapsiblecontent&quot;&gt;   
-    To create the above kind of particle effects I had to create &lt;a href=&quot;https://gist.github.com/nihal111/c419716b6227b7cb469e6885cce76c47&quot; target=&quot;_blank&quot;&gt;a prefab for the particle effects&lt;/a&gt; and then build and spawn this as an entity. The linked gist has a lot of parameters as components that allow me precise and specific control over the particles.
-    &lt;br /&gt;
-    For instance- the positionRangeGenerator allows me to ensure that all particles spawn at the bottom of the staue and the velocityRangeGenerator allows me to make all the particles ascend upwards. 
+&lt;div class=&quot;collapsiblecontent&quot;&gt;
+To create the above kind of particle effects I had to create &lt;a href=&quot;https://gist.github.com/nihal111/c419716b6227b7cb469e6885cce76c47&quot; target=&quot;_blank&quot;&gt;a prefab for the particle effects&lt;/a&gt; and then build and spawn this as an entity. The linked gist has a lot of parameters as components that allow me precise and specific control over the particles.
+&lt;br /&gt;
+For instance- the positionRangeGenerator allows me to ensure that all particles spawn at the bottom of the statue and the velocityRangeGenerator allows me to make all the particles ascend upwards.
 &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;p&gt;Upon deactivation, only the smoke effect is played.&lt;/p&gt;
 
 &lt;h3 id=&quot;lighting&quot;&gt;Lighting&lt;/h3&gt;
-&lt;p&gt;In addition to the texture change, there was a need to add lighting for the orb to appear as glowng. This is done by creating a simple orb entity which spawns near the location of the orb and has a &lt;code class=&quot;highlighter-rouge&quot;&gt;LightComponent&lt;/code&gt; attached. Using the light component the two states of the revival stone appear as such at night-&lt;/p&gt;
+&lt;p&gt;In addition to the texture change, there was a need to add lighting for the orb to appear as glowing. This is done by creating a simple orb entity which spawns near the location of the orb and has a &lt;code class=&quot;highlighter-rouge&quot;&gt;LightComponent&lt;/code&gt; attached. Using the light component the two states of the revival stone appear as such at night-&lt;/p&gt;
 
 &lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/angelLightAndDark.png&quot; alt=&quot;angelLightAndDark&quot; title=&quot;angelLightAndDark&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The PR for the revival stone is not complete yet, as some fixes are still required to make it multiplayer compatible. &lt;a href=&quot;https://github.com/Terasology/AdventureAssets/pull/11&quot;&gt;This PR&lt;/a&gt; contains all the progress so far. A working video with the placeholder model completely functioning in Single Player follows-&lt;/p&gt;
 
 &lt;div class=&quot;videowrapper&quot;&gt;
-    &lt;iframe width=&quot;1024&quot; height=&quot;768&quot; src=&quot;https://www.youtube.com/embed/67TY2BpaZxQ&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;iframe width=&quot;1024&quot; height=&quot;768&quot; src=&quot;https://www.youtube.com/embed/67TY2BpaZxQ&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 &lt;h2 id=&quot;password-locked-door&quot;&gt;Password Locked Door&lt;/h2&gt;
-&lt;p&gt;There already existed a door in the Core module that allows for simple opening and closing with player interactions. It has a nice system that takes care of placing the two block long door in the world, with a nice texture and cool sound effects. I decided to reuse all of this to create a door that would require a password to unlock.&lt;/p&gt;
+&lt;p&gt;There already existed a door in the Core module that allows for simple opening and closing with player interactions. It has a nice system that takes care of placing the two blocks long door in the world, with a nice texture and cool sound effects. I decided to reuse all of this to create a door that would require a password to unlock.&lt;/p&gt;
 
-&lt;p&gt;The password door essentially extends the door from the core module. It uses the existing systems in core for the basic features and simply overrides over the functionality that needs to change by receiving the respective events with a higher priority. For instance the ActivateEvent handler in the &lt;code class=&quot;highlighter-rouge&quot;&gt;PasswordDoorSystem&lt;/code&gt; receives (and consumes) the ActivateEvent with a higher priority than Core’s &lt;code class=&quot;highlighter-rouge&quot;&gt;DoorSystem&lt;/code&gt;. This allows the display of a UI Screen that lets the player enter the password to unlock the door.&lt;/p&gt;
+&lt;p&gt;The password door essentially extends the door from the core module. It uses the existing systems in Core for the basic features and simply overrides over the functionality that needs to change by receiving the respective events with a higher priority. For instance, the ActivateEvent handler in the &lt;code class=&quot;highlighter-rouge&quot;&gt;PasswordDoorSystem&lt;/code&gt; receives (and consumes) the ActivateEvent with a higher priority than Core’s &lt;code class=&quot;highlighter-rouge&quot;&gt;DoorSystem&lt;/code&gt;. This allows the display of a UI Screen that lets the player enter the password to unlock the door.&lt;/p&gt;
 
 &lt;h3 id=&quot;features&quot;&gt;Features:&lt;/h3&gt;
 &lt;ul&gt;
@@ -151,7 +151,7 @@ $(document).ready(function(){
 
 &lt;p&gt;Here’s a full video showing the Password Door in action:&lt;/p&gt;
 &lt;div class=&quot;videowrapper&quot;&gt;
-    &lt;iframe width=&quot;1024&quot; height=&quot;768&quot; src=&quot;https://www.youtube.com/embed/D_apW1PYTEI&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;iframe width=&quot;1024&quot; height=&quot;768&quot; src=&quot;https://www.youtube.com/embed/D_apW1PYTEI&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 &lt;h1 id=&quot;whats-next&quot;&gt;What’s next?&lt;/h1&gt;
@@ -262,6 +262,7 @@ There are 4 entities- A &lt;strong&gt;root&lt;/strong&gt; entity, the &lt;strong
 &lt;p&gt;&lt;strong&gt;Time Period&lt;/strong&gt;: Time interval between two consecutive fireball shots.&lt;br /&gt;
 &lt;strong&gt;Offset&lt;/strong&gt;: Time offset between two fireball launchers that have the same time period.&lt;br /&gt;
 &lt;strong&gt;Max Distance&lt;/strong&gt;: Maximum distance after which the fireball dies.&lt;br /&gt;
+&lt;strong&gt;Damage Amount&lt;/strong&gt;: Total collective damage the fireball can inflict. Acts as &lt;em&gt;health&lt;/em&gt; for the fireball. The fireball is destroyed after it has inflicted a total damage equal to its health, or unitl it comes across an indestructible entity.&lt;br /&gt;
 &lt;strong&gt;Direction&lt;/strong&gt;: Direction in vector form (x, y and z) towards which the fireball is launched.&lt;/p&gt;
 
 &lt;p&gt;Here is a video showing how the fireball launcher works:&lt;/p&gt;
