@@ -6,9 +6,171 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 21 Jun 2017 14:05:35 +0530</pubDate>
-    <lastBuildDate>Wed, 21 Jun 2017 14:05:35 +0530</lastBuildDate>
+    <pubDate>Tue, 27 Jun 2017 22:32:22 +0530</pubDate>
+    <lastBuildDate>Tue, 27 Jun 2017 22:32:22 +0530</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title>GSoC Week 8: The Revival stone and the Password Door</title>
+        <description>&lt;style type=&quot;text/css&quot;&gt;
+    .collapsiblecontainer {
+    width:100%;
+    border:1px solid #d3d3d3;
+}
+.collapsiblecontainer div {
+    width:100%;
+}
+.collapsiblecontainer .collapsibleheader {
+    background-color:#d3d3d3;
+    padding: 2px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.collapsiblecontainer .collapsiblecontent {
+    display: none;
+    padding : 5px;
+}
+&lt;/style&gt;
+
+&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+$(document).ready(function(){
+    $(&quot;.collapsibleheader&quot;).click(function () {
+        $collapsibleheader = $(this);
+        //getting the next element
+        $collapsiblecontent = $collapsibleheader.next();
+        //open up the collapsiblecontent needed - toggle the slide- if visible, slide up, if not slidedown.
+        $collapsiblecontent.slideToggle(500, function () {
+            //execute this after slideToggle is done
+            //change text of collapsibleheader based on visibility of collapsiblecontent div
+            $collapsibleheader.find(&quot;span:first-child&quot;).text(function () {
+                //change text based on condition
+                return $collapsiblecontent.is(&quot;:visible&quot;) ? &quot;- &quot; : &quot;+ &quot;;
+            });
+        });
+
+    });
+}); 
+
+&lt;/script&gt;
+
+&lt;p&gt;Week 8 has come to an end and quite a few of the proposal targets have been met. The last two months have been phenomenal, to say the least. Since I had started work around 1 month in advance, I would be completing two months by the time the first evaluation completes in a few days.&lt;/p&gt;
+
+&lt;h1 id=&quot;what-have-i-been-upto&quot;&gt;What have I been upto?&lt;/h1&gt;
+&lt;p&gt;This week saw more work on traps, two items in particular- the &lt;strong&gt;Revival Stone&lt;/strong&gt; (to be named the &lt;strong&gt;Altar of Resurrection&lt;/strong&gt;) and a &lt;strong&gt;Password locked door&lt;/strong&gt; .&lt;/p&gt;
+
+&lt;h2 id=&quot;revival-stone&quot;&gt;Revival Stone&lt;/h2&gt;
+
+&lt;h3 id=&quot;concept&quot;&gt;Concept&lt;/h3&gt;
+&lt;p&gt;With all the previous traps created (swinging blade, wipe out over lava, fireball launcher) being dangerous in nature, there was a definite need for a checkpoint that allows the player to respawn just before the trap. The revival stone does exactly this. A statue of an angel serves as a checkpoint that can be activated by the player. Upon activation, the angel statue lights up and the orb held by the angel starts glowing. At a time, a player can have only one checkpoint activated. Upon death, the player respawns at the last and only activated checkpoint.&lt;/p&gt;
+
+&lt;h3 id=&quot;model&quot;&gt;Model&lt;/h3&gt;
+&lt;p&gt;The idea for the design of the model was very intricate. Unable to catch &lt;a href=&quot;https://github.com/quaternius&quot;&gt;quaternius&lt;/a&gt; online, I went forward with a placeholder model for the time being, which looked like this-&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/angelOld.png&quot; alt=&quot;angelOld&quot; title=&quot;Old Angel Model&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Soon after, &lt;a href=&quot;https://github.com/quaternius&quot;&gt;quaternius&lt;/a&gt; was back and ready to do some Blender magic. This was also probably the most elegant and beautiful work of his that has been added to the game.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/angelNew.png&quot; alt=&quot;angelNew&quot; title=&quot;New Angel Model&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The initial model he made was a flat one (left), but it was soon changed to a smooth version (right) which looked better.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/angelFlatAndSmooth.png&quot; alt=&quot;angelFlatAndSmooth&quot; title=&quot;Angel Flat And Smooth&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The model is completely static and has no built-in animations. The same model is intelligently used for both the active and inactive states of the angel statue using just a texture change.&lt;/p&gt;
+
+&lt;div class=&quot;collapsiblecontainer&quot;&gt;
+&lt;div class=&quot;collapsibleheader&quot;&gt;&lt;span&gt;+ &lt;/span&gt;&lt;span&gt;How does the texture change happen?&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;collapsiblecontent&quot;&gt;   
+    Every model is added to the game by first exporting the model to a .obj file and then creating an associated prefab for it. The associated prefab needs to have a MeshComponent that describes the mesh and the material. The mesh points to the .obj file exported using Blender. The material on the other hand is the texture (png image) that is UV mapped to the model.
+    &lt;br /&gt;
+    The two states of the revival stone model only differ in texture. This is implemented using a simple material (texture) switch when the player interacts with the statue to activate it. As far as I know, this is the first usage of such a material switch in the game and it can definitely be used for more models to depict a change in state.
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The two different textures being used only differ slightly- the texture for the active state has a brighter color for the angel’s statue and an orange color for the orb to make it appear lit.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/angelActiveAndInactive.png&quot; alt=&quot;angelActiveAndInactive&quot; title=&quot;angelActiveAndInactive&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;respawn-mechanism&quot;&gt;Respawn mechanism&lt;/h3&gt;
+&lt;p&gt;After a player dies a Death Screen is displayed. Upon clicking the “Respawn” button a &lt;code class=&quot;highlighter-rouge&quot;&gt;RespawnRequestEvent&lt;/code&gt; is sent and the spawn location is found using the World Generator information and the player respawn happens. This whole process was broken down using &lt;a href=&quot;https://github.com/MovingBlocks/Terasology/pull/2983&quot;&gt;this Engine PR&lt;/a&gt; allowing other systems to alter a player’s respawn location.&lt;/p&gt;
+
+&lt;div class=&quot;collapsiblecontainer&quot;&gt;
+&lt;div class=&quot;collapsibleheader&quot;&gt;&lt;span&gt;+ &lt;/span&gt;&lt;span&gt;How is the respawn mechanism implemented?&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;collapsiblecontent&quot;&gt;   
+    The RespawnRequestEvent that is sent when the &quot;Respawn&quot; button is clicked on the Death Screen was being used to modify the LocationComponent of the player entity and line it up for respawn.
+    &lt;br /&gt;
+    This process has now been broken into multiple parts. A method receives the RespawnRequestEvent with a &quot;CRITICAL&quot; priority and sets the respawn location as per the World Generator information. Another method in the PlayerSystem receives the RespawnRequestEvent with a &quot;TRIVIAL&quot; priority and initiates the whole respawn process for the player entity.
+    &lt;br /&gt;
+    Any other system present in any module can receive the RespawnRequestEvent with a priority between TRIVIAL and CRITICAL (both exclusive) and make change to the LocationComponent of the player entity to allow for a custom respawn location.
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;particle-effects&quot;&gt;Particle Effects&lt;/h3&gt;
+&lt;p&gt;This was the first time I fiddled around with any particle effects of my own. The particle effects consisted of a bunch of blue mystical particles that rise from the base of the statue towards the top, upon activation. I also reused the smoke explosion particle effect from the core module along with it, to give an added effect. The whole thing in action looks like this-&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/angelParticleEffects.gif&quot; alt=&quot;angelParticleEffects&quot; title=&quot;angelParticleEffects&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;collapsiblecontainer&quot;&gt;
+&lt;div class=&quot;collapsibleheader&quot;&gt;&lt;span&gt;+ &lt;/span&gt;&lt;span&gt;How to create such particle effects?&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;collapsiblecontent&quot;&gt;   
+    To create the above kind of particle effects I had to create &lt;a href=&quot;https://gist.github.com/nihal111/c419716b6227b7cb469e6885cce76c47&quot; target=&quot;_blank&quot;&gt;a prefab for the particle effects&lt;/a&gt; and then build and spawn this as an entity. The linked gist has a lot of parameters as components that allow me precise and specific control over the particles.
+    &lt;br /&gt;
+    For instance- the positionRangeGenerator allows me to ensure that all particles spawn at the bottom of the staue and the velocityRangeGenerator allows me to make all the particles ascend upwards. 
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Upon deactivation, only the smoke effect is played.&lt;/p&gt;
+
+&lt;h3 id=&quot;lighting&quot;&gt;Lighting&lt;/h3&gt;
+&lt;p&gt;In addition to the texture change, there was a need to add lighting for the orb to appear as glowng. This is done by creating a simple orb entity which spawns near the location of the orb and has a &lt;code class=&quot;highlighter-rouge&quot;&gt;LightComponent&lt;/code&gt; attached. Using the light component the two states of the revival stone appear as such at night-&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/angelLightAndDark.png&quot; alt=&quot;angelLightAndDark&quot; title=&quot;angelLightAndDark&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The PR for the revival stone is not complete yet, as some fixes are still required to make it multiplayer compatible. &lt;a href=&quot;https://github.com/Terasology/AdventureAssets/pull/11&quot;&gt;This PR&lt;/a&gt; contains all the progress so far. A working video with the placeholder model completely functioning in Single Player follows-&lt;/p&gt;
+
+&lt;div class=&quot;videowrapper&quot;&gt;
+    &lt;iframe width=&quot;1024&quot; height=&quot;768&quot; src=&quot;https://www.youtube.com/embed/67TY2BpaZxQ&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;password-locked-door&quot;&gt;Password Locked Door&lt;/h2&gt;
+&lt;p&gt;There already existed a door in the Core module that allows for simple opening and closing with player interactions. It has a nice system that takes care of placing the two block long door in the world, with a nice texture and cool sound effects. I decided to reuse all of this to create a door that would require a password to unlock.&lt;/p&gt;
+
+&lt;p&gt;The password door essentially extends the door from the core module. It uses the existing systems in core for the basic features and simply overrides over the functionality that needs to change by receiving the respective events with a higher priority. For instance the ActivateEvent handler in the &lt;code class=&quot;highlighter-rouge&quot;&gt;PasswordDoorSystem&lt;/code&gt; receives (and consumes) the ActivateEvent with a higher priority than Core’s &lt;code class=&quot;highlighter-rouge&quot;&gt;DoorSystem&lt;/code&gt;. This allows the display of a UI Screen that lets the player enter the password to unlock the door.&lt;/p&gt;
+
+&lt;h3 id=&quot;features&quot;&gt;Features:&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;The passwordDoor on placement opens a UI Screen for the player to enter the details for it. It takes input for a &lt;strong&gt;Title&lt;/strong&gt;, &lt;strong&gt;Message&lt;/strong&gt; and the &lt;strong&gt;Password&lt;/strong&gt;. Upon entering all the fields and hitting “Ok”, the door is placed in the world.&lt;/li&gt;
+  &lt;li&gt;Upon interacting with an open door, the door close.&lt;/li&gt;
+  &lt;li&gt;Upon interacting with a closed door, a UI Screen is displayed, showing the Title and Message, which can serve as a clue for the password. An empty text box exists for the user to input the password. If the entered password is wrong, a “&lt;span style=&quot;color: red;&quot;&gt;Invalid Password!&lt;/span&gt;” text appears in red just above the text box. Entering the correct password closes the UI Screen and opens the door.&lt;/li&gt;
+  &lt;li&gt;The password door can be mined to get the password door as an item. This can be placed again in the world, cycling to the top step.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Note: A password door can be made indestructible in an area, for the purpose of being used in traps and puzzles.&lt;/p&gt;
+
+&lt;p&gt;Here’s a full video showing the Password Door in action:&lt;/p&gt;
+&lt;div class=&quot;videowrapper&quot;&gt;
+    &lt;iframe width=&quot;1024&quot; height=&quot;768&quot; src=&quot;https://www.youtube.com/embed/D_apW1PYTEI&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&quot;whats-next&quot;&gt;What’s next?&lt;/h1&gt;
+&lt;p&gt;For next week, I would spend most of my time working on trying to make most of the created traps compatible in Multiplayer mode so that they can be tested out in the Multiplayer play-test scheduled to happen this Saturday- the first of July.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 20 Jun 2017 00:00:00 +0530</pubDate>
+        <link>http://localhost:4000/2017/06/20/GSoC-week8.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/06/20/GSoC-week8.html</guid>
+        
+        <category>open source</category>
+        
+        <category>MovingBlocks</category>
+        
+        <category>Terasology</category>
+        
+        <category>GSoC</category>
+        
+        
+      </item>
     
       <item>
         <title>GSoC Week 7: The Wipe Out and the Fireball Launcher</title>
@@ -1276,41 +1438,6 @@ In git, when you push, you bring the changes on your local repository come into 
         <category>Terasology</category>
         
         <category>GCI</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Mozilla: Quarter of Contribution</title>
-        <description>&lt;p&gt;I have decided to dive into open source development this summer. Under the WnCC Seasons of Code programme, I have chosen to take part in the Mozilla Quarter of Contribution project mentored by Kalpesh Krishna (&lt;a href=&quot;https://github.com/martiansideofthemoon&quot;&gt;martiansideofthemoon&lt;/a&gt;). The &lt;a href=&quot;http://wncc-iitb.org/soc/&quot;&gt;WnCC Seasons of Code&lt;/a&gt; is an initiative by the Web and Coding Club of IIT Bombay, much akin to the Google Summer Of Code but without any monetary incentive.&lt;/p&gt;
-
-&lt;h3 id=&quot;mozilla-quarter-of-contribution&quot;&gt;Mozilla: Quarter of Contribution&lt;/h3&gt;
-&lt;p&gt;The &lt;a href=&quot;https://wiki.mozilla.org/Auto-tools/New_Contributor/Quarter_of_Contribution&quot;&gt;Mozilla: Quarter of Contribution&lt;/a&gt; is an opportunity to work on a large project for a couple of months. Current projects for Summer 2016 are:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Web Platform Tests - Results Viewer Refactoring (:jgraham, :martianwars)&lt;/li&gt;
-  &lt;li&gt;Perfherder (:wlach, :jmaher)&lt;/li&gt;
-  &lt;li&gt;Talos (:jmaher, :rwood)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I have made a few bug fixes and have merged PRs on Web Platform Tests as well as Perfherder. I have decided to work on wptview under &lt;a href=&quot;https://github.com/jgraham&quot;&gt;:jgraham&lt;/a&gt; and &lt;a href=&quot;https://mozillians.org/en-US/u/martianwars/&quot;&gt;:martianwars&lt;/a&gt; as a part of Mozilla QoC.&lt;/p&gt;
-
-&lt;h3 id=&quot;wptview&quot;&gt;wptview&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/mozilla/wptview&quot;&gt;Wptview&lt;/a&gt; is a web platform test viewer. The Web Platform Tests (WPT) are a set of cross browser validation tests designed to validate common functionality on the web between browsers. Wptview is used for viewing the results of web-platform-tests and for easy visual comparison between different tests results. One can add the test data available as mozlog files and all the tests along with their results will be loaded in the form of a table. These results can be studied further by adding filters and sorting by status.&lt;/p&gt;
-
-&lt;p&gt;The &lt;a href=&quot;https://wiki.mozilla.org/Auto-tools/New_Contributor/Quarter_of_Contribution/WPTViewer_Refactor&quot;&gt;agenda for the QoC&lt;/a&gt; is a UI revamp, addition of unit testing as well as adding visualizations to be accompanied by test results. I would like to work on all these fratures.&lt;/p&gt;
-
-&lt;p&gt;I have fixed a few basic bugs due to which I know a little about the codebase. I am a beginner in AngularJS and plan to learn as I go on contributing to this project.&lt;/p&gt;
-
-&lt;p&gt;In conclusion, I plan to learn a lot contributing to this project. This is my first hand at open source as well, so I hope it turns out to be an exciting learning experience.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 03 Jun 2016 00:00:00 +0530</pubDate>
-        <link>http://localhost:4000/2016/06/03/Mozilla-Quarter-of-Contribution.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2016/06/03/Mozilla-Quarter-of-Contribution.html</guid>
-        
-        <category>open source</category>
-        
-        <category>mozilla</category>
         
         
       </item>
