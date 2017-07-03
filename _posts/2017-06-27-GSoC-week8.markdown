@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "GSoC Week 8: The Revival stone and the Password Door"
-date: 2017-06-20
+date: 2017-06-27
 comments: true
 tags:
 - open source

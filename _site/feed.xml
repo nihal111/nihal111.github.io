@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 27 Jun 2017 22:56:09 +0530</pubDate>
-    <lastBuildDate>Tue, 27 Jun 2017 22:56:09 +0530</lastBuildDate>
+    <pubDate>Tue, 04 Jul 2017 03:26:00 +0530</pubDate>
+    <lastBuildDate>Tue, 04 Jul 2017 03:26:00 +0530</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>
@@ -157,9 +157,9 @@ For instance- the positionRangeGenerator allows me to ensure that all particles 
 &lt;h1 id=&quot;whats-next&quot;&gt;What’s next?&lt;/h1&gt;
 &lt;p&gt;For next week, I would spend most of my time working on trying to make most of the created traps compatible in Multiplayer mode so that they can be tested out in the Multiplayer play-test scheduled to happen this Saturday- the first of July.&lt;/p&gt;
 </description>
-        <pubDate>Tue, 20 Jun 2017 00:00:00 +0530</pubDate>
-        <link>http://localhost:4000/2017/06/20/GSoC-week8.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/06/20/GSoC-week8.html</guid>
+        <pubDate>Tue, 27 Jun 2017 00:00:00 +0530</pubDate>
+        <link>http://localhost:4000/2017/06/27/GSoC-week8.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/06/27/GSoC-week8.html</guid>
         
         <category>open source</category>
         
