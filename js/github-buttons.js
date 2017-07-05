@@ -1,5 +1,5 @@
 function PRButtonCreate() {
-	console.log("PRButtonCreate");
+	console.log("PRButtonCreate 1");
     var PRButtons = document.getElementsByClassName("PR-button");
     [].forEach.call(PRButtons, function (button) {
     	var url = button.getAttribute("url");
@@ -25,6 +25,7 @@ var HttpClient = function() {
         }
 
         anHttpRequest.open( "GET", aUrl, true );
+        anHttpRequest.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8')
         anHttpRequest.setRequestHeader("Access-Control-Allow-Origin","*");
 		anHttpRequest.setRequestHeader("Access-Control-Allow-Credentials", "true");
 		anHttpRequest.setRequestHeader("Access-Control-Allow-Methods", "GET");
