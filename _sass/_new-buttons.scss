@@ -4,27 +4,40 @@
   box-sizing: border-box;
 }
 
-.PR-button {
+.github-button {
   display: block;
   position: relative;
   padding: .75em 5em .75em 1em;
   border-radius: .25em;
   margin-bottom: .5em;
   background: #fff;
-  box-shadow:
+}
+
+.open-PR-button {
+    box-shadow:
     0 .0625em .125em rgba(0, 0, 0, .125),
     inset 0 -.25em 0 -.125em rgba(0, 0, 0, .125),
     inset 7.5em 0 0 -.7em rgba(20, 160, 0, .5),
     inset -4em 0 0 -.3em rgba(20, 160, 0, .5);
 }
 
-.issue-button {
-  display: block;
-  position: relative;
-  padding: .75em 5em .75em 1em;
-  border-radius: .25em;
-  margin-bottom: .5em;
-  background: #fff;
+.merged-PR-button {
+    box-shadow:
+    0 .0625em .125em rgba(0, 0, 0, .125),
+    inset 0 -.25em 0 -.125em rgba(0, 0, 0, .125),
+    inset 7.5em 0 0 -.7em rgba(30, 144, 255, .5),
+    inset -4em 0 0 -.3em rgba(30, 144, 255, .5);
+}
+
+.open-issue-button {
+  box-shadow:
+    0 .0625em .125em rgba(0, 0, 0, .125),
+    inset 0 -.25em 0 -.125em rgba(0, 0, 0, .125),
+    inset 7.5em 0 0 -.7em rgba(210, 15, 0, .5),
+    inset -4em 0 0 -.3em rgba(210, 15, 0, .5);
+}
+
+.closed-issue-button {
   box-shadow:
     0 .0625em .125em rgba(0, 0, 0, .125),
     inset 0 -.25em 0 -.125em rgba(0, 0, 0, .125),
@@ -91,37 +104,9 @@
   font-weight: normal;
 }
 
-.clock {
+.octicon-clock {
   display: inline-block;
-  position: relative;
-  width: 1.333em;
-  height: 1.333em;
   margin-left: .333em;
-  border: .25em solid #95979d;
-  border-radius: 50%;
-  vertical-align: middle;
-}
-
-.clock:before,
-.clock:after {
-  content: '';
-  display: block;
-  position: absolute;
-  width: .125em;
-  height: .25em;
-  background: #95979d;
-}
-
-.clock:before {
-  left: 50%;
-  bottom: 47%;
-  margin-left: -.0625em;
-}
-
-.clock:after {
-  transform: rotate( 135deg );
-  left: 63%;
-  top: 47%;
 }
 
 .right-icon {

@@ -10,28 +10,15 @@ tags:
 - GSoC
 ---
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/font/octicons.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script type="text/javascript" src="/js/github-buttons.js"></script> 
 
 Hey
 
-<div class="PR-button" url="https://github.com/MovingBlocks/Terasology/pull/2958">
-  <a class="number">#2945</a>
-  <a class="title">Added a Swinging Blade</a>
-  <span class="meta">
-	  <a class="repo">AdventureAssets</a>
-	  <i class="octicon octicon-clock"></i>
-	  <span class="date">Mar 12, 2013</span>
-  </span>
-  <i class="right-icon mega-octicon octicon-git-pull-request"></i>
-</div>
+<div class="github-button" url="https://github.com/Terasology/AdventureAssets/pull/14"></div>
 
-<div class="issue-button" url="">
-  <a class="number">#30</a>
-  <a class="title">Make Password Door multiplayer ready</a>
-  <span class="meta">
-	  <a class="repo">AdventureAssets</a>
-	  <i class="octicon octicon-clock"></i>
-	  <span class="date">Mar 12, 2013</span>
-  </span>
-  <i class="right-icon mega-octicon octicon-issue-opened"></i>
-</div>
+<div class="github-button" url="https://github.com/MovingBlocks/Terasology/pull/2994"></div>
+
+<div class="github-button" url="https://github.com/Terasology/WildAnimals/issues/7"></div>
+
+<div class="github-button" url="https://github.com/MovingBlocks/Terasology/issues/2995"></div>

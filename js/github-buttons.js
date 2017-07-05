@@ -1,55 +1,77 @@
-function PRButtonCreate() {
-	console.log("PRButtonCreate 1");
-    var PRButtons = document.getElementsByClassName("PR-button");
-    [].forEach.call(PRButtons, function (button) {
-    	var url = button.getAttribute("url");
+$(function() {
+    createButtons();
+});
+
+function createButtons() {
+	$('.github-button').each(function(i, button) {
+		var url = $(button).attr("url");
     	var params = url.split("/");
     	var owner = params[3];
     	var repo = params[4];
     	var num = params[6];
-    	url = "https://api.github.com/repos/" + owner + "/" + repo + "/pulls/" + num;
+
+    	if (url.indexOf("pull") !== -1) {
+    		url = "https://api.github.com/repos/" + owner + "/" + repo + "/pulls/" + num;
+    		$.get(
+			    url,
+			    function(data) {
+			    	var date = formatDate(new Date(data.created_at));
+			        $(button).append(
+			       	$('<a/>', {'class': 'number', 'text': "#" + data.number}),
+			       	$('<a/>', {'class': 'title', 'href': data.html_url, 'text': data.title}),
+			       	$('<span/>', {'class': 'meta'}).append(
+			       		$('<a/>', {'class': 'repo', 'href': data.base.repo.html_url, 'text': data.base.repo.full_name}),
+			       		$('<i/>', {'class': 'octicon octicon-clock'}),
+			       		$('<span/>', {'class': 'date', 'text': date})
+			       		),
+			       	$('<i/>', {'class': 'right-icon mega-octicon octicon-git-pull-request'}),
+			       	)
+			       	console.log(data.merged);
+			     	if (data.merged ) {
+			     		$(button).find('.octicon-git-pull-request').addClass('octicon-git-merge').removeClass('octicon-git-pull-request');
+			     		$(button).addClass('merged-PR-button');
+			     	} else {
+			     		$(button).addClass('open-PR-button');
+			     	}
+			    }
+			);
+    	} else if (url.indexOf("issue") !== -1) {
+    		url = "https://api.github.com/repos/" + owner + "/" + repo + "/issues/" + num;
+    		$.get(
+			    url,
+			    function(data) {
+					var repo_name = data.repository_url.split("/");
+					repo_name = repo_name[repo_name.length - 2] + "/" + repo_name[repo_name.length - 1];
+					var date = formatDate(new Date(data.created_at));
+					$(button).append(
+			       	$('<a/>', {'class': 'number', 'text': "#" + data.number}),
+			       	$('<a/>', {'class': 'title', 'href': data.html_url, 'text': data.title}),
+			       	$('<span/>', {'class': 'meta'}).append(
+			       		$('<a/>', {'class': 'repo', 'href': data.repository_url, 'text': repo_name}),
+			       		$('<i/>', {'class': 'octicon octicon-clock'}),
+			       		$('<span/>', {'class': 'date', 'text': date})
+			       		),
+			       	$('<i/>', {'class': 'right-icon mega-octicon octicon-issue-opened'}),
+			       	)
+			       	var open = "open";
+			       	if (data.state === "open") {
+			     		$(button).addClass('open-issue-button');
+			     	} else {
+			     		$(button).find('.octicon-issue-opened').addClass('octicon-issue-closed').removeClass('octicon-issue-opened');
+			     		$(button).addClass('closed-issue-button');
+			     	}
+			    }
+			);
+    	}
     	console.log(url);
-    	var client = new HttpClient();
-		client.get(url, function(response) {
-		    console.log(response);
-		});
-    });
+	});
 }
 
-var HttpClient = function() {
-    this.get = function(aUrl, aCallback) {
-        var anHttpRequest = new XMLHttpRequest();
-        anHttpRequest.onreadystatechange = function() { 
-            if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200)
-                aCallback(anHttpRequest.responseText);
-        }
-
-        anHttpRequest.open( "GET", aUrl, true );
-        anHttpRequest.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8')
-        anHttpRequest.setRequestHeader("Access-Control-Allow-Origin","*");
-		anHttpRequest.setRequestHeader("Access-Control-Allow-Credentials", "true");
-		anHttpRequest.setRequestHeader("Access-Control-Allow-Methods", "GET");
-		anHttpRequest.setRequestHeader("Access-Control-Allow-Headers", "Content-Type");          
-        anHttpRequest.send( null );
-    }
-}
-
-function createButtons() {
-	console.log("createButtons");
-	PRButtonCreate();
-}
-
-if(window.attachEvent) {
-    window.attachEvent('onload', createButtons);
-} else {
-    if(window.onload) {
-        var curronload = window.onload;
-        var newonload = function(evt) {
-            curronload(evt);
-            createButtons(evt);
-        };
-        window.onload = newonload;
-    } else {
-        window.onload = createButtons;
-    }
+function formatDate(d) {
+	var m_names = new Array("Jan", "Feb", "Mar", "Apr", "May", "Jun", 
+		"Jul", "Aug", "Sept", "Oct", "Nov", "Dec");
+	var curr_date = d.getDate();
+	var curr_month = d.getMonth();
+	var curr_year = d.getFullYear();
+	return   m_names[curr_month] + " " + curr_date + ", " + curr_year;
 }

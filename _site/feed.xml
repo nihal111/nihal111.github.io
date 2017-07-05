@@ -6,39 +6,27 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 05 Jul 2017 23:05:48 +0530</pubDate>
-    <lastBuildDate>Wed, 05 Jul 2017 23:05:48 +0530</lastBuildDate>
+    <pubDate>Thu, 06 Jul 2017 02:44:57 +0530</pubDate>
+    <lastBuildDate>Thu, 06 Jul 2017 02:44:57 +0530</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>
         <title>Test</title>
         <description>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/font/octicons.css&quot; /&gt;
 
+&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js&quot;&gt;&lt;/script&gt;
+
 &lt;script type=&quot;text/javascript&quot; src=&quot;/js/github-buttons.js&quot;&gt;&lt;/script&gt;
 
 &lt;p&gt;Hey&lt;/p&gt;
 
-&lt;div class=&quot;PR-button&quot; url=&quot;https://github.com/MovingBlocks/Terasology/pull/2958&quot;&gt;
-  &lt;a class=&quot;number&quot;&gt;#2945&lt;/a&gt;
-  &lt;a class=&quot;title&quot;&gt;Added a Swinging Blade&lt;/a&gt;
-  &lt;span class=&quot;meta&quot;&gt;
-	  &lt;a class=&quot;repo&quot;&gt;AdventureAssets&lt;/a&gt;
-	  &lt;i class=&quot;octicon octicon-clock&quot;&gt;&lt;/i&gt;
-	  &lt;span class=&quot;date&quot;&gt;Mar 12, 2013&lt;/span&gt;
-  &lt;/span&gt;
-  &lt;i class=&quot;right-icon mega-octicon octicon-git-pull-request&quot;&gt;&lt;/i&gt;
-&lt;/div&gt;
+&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/AdventureAssets/pull/14&quot;&gt;&lt;/div&gt;
 
-&lt;div class=&quot;issue-button&quot; url=&quot;&quot;&gt;
-  &lt;a class=&quot;number&quot;&gt;#30&lt;/a&gt;
-  &lt;a class=&quot;title&quot;&gt;Make Password Door multiplayer ready&lt;/a&gt;
-  &lt;span class=&quot;meta&quot;&gt;
-	  &lt;a class=&quot;repo&quot;&gt;AdventureAssets&lt;/a&gt;
-	  &lt;i class=&quot;octicon octicon-clock&quot;&gt;&lt;/i&gt;
-	  &lt;span class=&quot;date&quot;&gt;Mar 12, 2013&lt;/span&gt;
-  &lt;/span&gt;
-  &lt;i class=&quot;right-icon mega-octicon octicon-issue-opened&quot;&gt;&lt;/i&gt;
-&lt;/div&gt;
+&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/MovingBlocks/Terasology/pull/2994&quot;&gt;&lt;/div&gt;
+
+&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/WildAnimals/issues/7&quot;&gt;&lt;/div&gt;
+
+&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/MovingBlocks/Terasology/issues/2995&quot;&gt;&lt;/div&gt;
 </description>
         <pubDate>Tue, 04 Jul 2017 00:00:00 +0530</pubDate>
         <link>http://localhost:4000/2017/07/04/test.html</link>
