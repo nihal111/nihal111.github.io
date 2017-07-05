@@ -25,7 +25,7 @@ function createButtons() {
 			       		$('<i/>', {'class': 'octicon octicon-clock'}),
 			       		$('<span/>', {'class': 'date', 'text': date})
 			       		),
-			       	$('<i/>', {'class': 'right-icon mega-octicon octicon-git-pull-request'}),
+			       	$('<i/>', {'class': 'right-icon mega-octicon octicon-git-pull-request'})
 			       	)
 			     	if (data.merged ) {
 			     		$(button).find('.octicon-git-pull-request').addClass('octicon-git-merge').removeClass('octicon-git-pull-request');
@@ -51,7 +51,7 @@ function createButtons() {
 			       		$('<i/>', {'class': 'octicon octicon-clock'}),
 			       		$('<span/>', {'class': 'date', 'text': date})
 			       		),
-			       	$('<i/>', {'class': 'right-icon mega-octicon octicon-issue-opened'}),
+			       	$('<i/>', {'class': 'right-icon mega-octicon octicon-issue-opened'})
 			       	)
 			       	var open = "open";
 			       	if (data.state === "open") {
