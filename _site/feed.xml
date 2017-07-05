@@ -6,9 +6,170 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 04 Jul 2017 03:26:00 +0530</pubDate>
-    <lastBuildDate>Tue, 04 Jul 2017 03:26:00 +0530</lastBuildDate>
+    <pubDate>Wed, 05 Jul 2017 15:19:09 +0530</pubDate>
+    <lastBuildDate>Wed, 05 Jul 2017 15:19:09 +0530</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title>GSoC Week 9: A fair share of Multiplayer</title>
+        <description>&lt;style type=&quot;text/css&quot;&gt;
+.collapsiblecontainer {
+width:100%;
+border:1px solid #d3d3d3;
+}
+.collapsiblecontainer div {
+width:100%;
+}
+.collapsiblecontainer .collapsibleheader {
+background-color:#d3d3d3;
+padding: 2px;
+cursor: pointer;
+font-weight: bold;
+}
+.collapsiblecontainer .collapsiblecontent {
+display: none;
+padding : 5px;
+}
+&lt;/style&gt;
+
+&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+$(document).ready(function(){
+$(&quot;.collapsibleheader&quot;).click(function () {
+$collapsibleheader = $(this);
+//getting the next element
+$collapsiblecontent = $collapsibleheader.next();
+//open up the collapsiblecontent needed - toggle the slide- if visible, slide up, if not slidedown.
+$collapsiblecontent.slideToggle(500, function () {
+//execute this after slideToggle is done
+//change text of collapsibleheader based on visibility of collapsiblecontent div
+$collapsibleheader.find(&quot;span:first-child&quot;).text(function () {
+//change text based on condition
+return $collapsiblecontent.is(&quot;:visible&quot;) ? &quot;- &quot; : &quot;+ &quot;;
+});
+});
+
+});
+});
+
+&lt;/script&gt;
+
+&lt;h1 id=&quot;what-have-i-been-upto&quot;&gt;What have I been upto?&lt;/h1&gt;
+&lt;p&gt;The Revival Stone created last week has been polished and is now renamed as the Altar Of Resurrection. All the existing traps and adventure items- Swinging Blade, Wipe Out, Fireball Launcher, Altar of Resurrection and Password Door have been made multiplayer ready.&lt;/p&gt;
+
+&lt;h2 id=&quot;altar-of-resurrection&quot;&gt;Altar of Resurrection&lt;/h2&gt;
+
+&lt;p&gt;With most of the work been done last week, this week simply saw a finishing touch and some other minor additions.&lt;/p&gt;
+
+&lt;h3 id=&quot;floating-text&quot;&gt;Floating Text&lt;/h3&gt;
+&lt;p&gt;Instead of sending a chat message to describe the state of the Altar of Resurrection, a better idea was to have a floating text that appears when the angel statue is targeted. The floating text now looks like-&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/angelFloatingText.png&quot; alt=&quot;angelFloatingText&quot; title=&quot;Floating Text&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;new-particle-effects&quot;&gt;New Particle Effects&lt;/h3&gt;
+
+&lt;p&gt;The blue opaque Particle Effects have been switched to transparent orange ones, that match with the theme of the angel. The orange color goes along with the color of the orb.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/angelNewPE.png&quot; alt=&quot;angelNewPE&quot; title=&quot;New Particle Effects&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;collapsiblecontainer&quot;&gt;
+&lt;div class=&quot;collapsibleheader&quot;&gt;&lt;span&gt;+ &lt;/span&gt;&lt;span&gt;How to create transparent particle effects?&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;collapsiblecontent&quot;&gt;
+Transparent particled effects only require the texture file for the effect to have the required transparecy. To make such a texture file I used the software &lt;a href=&quot;https://www.getpaint.net/&quot; target=&quot;_blank&quot;&gt;Paint.NET&lt;/a&gt;. A simple way to do this is-
+&lt;ul&gt;
+&lt;li&gt;Open a new file in Paint.NET. &lt;/li&gt;
+&lt;li&gt;Resize the canvas to the desired size (e.g. 32x32). &lt;/li&gt;
+&lt;li&gt;Select all (Ctrl + A) and delete. This would leave you with a empty transparent canvas.&lt;/li&gt;
+&lt;li&gt;Select the Shapes tool and select Ellipse.&lt;/li&gt;
+&lt;li&gt;In the shape styles menu select &quot;Draw Filled Shape&quot;.&lt;/li&gt;
+&lt;li&gt;Select the desired color for fill.&lt;/li&gt;
+&lt;li&gt;From the color toolbar, select &quot;More &amp;gt;&amp;gt;&quot; and adjust the &quot;Opacity- Alpha&quot; value to make the color transparent. For e.g. if you need 50% transparency, set Opacity to 128.&lt;/li&gt;
+&lt;li&gt;Drag the cursor to draw the ellipse on the canvas. The image can be then resized and adjusted. The color can also be adjusted later to see a live preview.&lt;/li&gt;
+&lt;/ul&gt;
+The above should give you an image like &lt;a href=&quot;https://github.com/Terasology/AdventureAssets/blob/master/assets/textures/altarOfResurrection/orangeParticle.png&quot; target=&quot;_blank&quot;&gt;this&lt;/a&gt;.
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;After all this, the final Alar of Resurrection looks like this-&lt;/p&gt;
+
+&lt;div class=&quot;videowrapper&quot;&gt;
+&lt;iframe width=&quot;1024&quot; height=&quot;768&quot; src=&quot;https://www.youtube.com/embed/mOG_v2AkBwo&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;multiplayer-fixes&quot;&gt;Multiplayer Fixes&lt;/h2&gt;
+&lt;p&gt;A large amount of last week went into making the already created traps functional in multiplayer. Here is a brief collection of the issues I faced and how I solved them. Please read through the wiki page for &lt;a href=&quot;https://github.com/MovingBlocks/Terasology/wiki/Entities%2C-Components-and-Events-on-the-Network&quot;&gt;Entities, Components and Events on the Network&lt;/a&gt; if you already haven’t.&lt;/p&gt;
+
+&lt;h3 id=&quot;entities-on-the-network&quot;&gt;Entities on the network&lt;/h3&gt;
+&lt;p&gt;An entity on the network (one that has a Network Component) exists both on the server and the client. This poses a problem if you are depending on a component addition/activation event to perform an activity. For eg- For the wipe out trap, the mesh for the model was to be created only on the client side. This was supposed to happen on the OnActivatedComponent event for the &lt;code class=&quot;highlighter-rouge&quot;&gt;components = {WipeOutComponent, BlockComponent}&lt;/code&gt; which would trigger when the WipeOutRoot block is placed in the world. However, this event gets triggered twice, on the Client System once for the server entity and once for the client side entity. This creates two meshes- one that stays stationary and the other that rotates as expected. Note that the Authority/Server system only has the event handled once since it gets triggered only for the server entity.&lt;/p&gt;
+
+&lt;p&gt;As a workaround to fix this, I received the event on the Authority system with a higher priority. The Authority system event handler would then make changes to the server entity’s WipeOutComponent (add the rod and surfboard collider entities to the childrenEntities list). I would then receive the event on the Client system and recognize the server entity by these changes that have been made. The client entity would not have the changes made by the Authority system (the childrenEntities list would be empty). The Client System event handler for the OnComponentActivated event would now run only for the server entity and the extra static mesh would no longer be created.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://github.com/Terasology/AdventureAssets/blob/master/src/main/java/org/terasology/adventureassets/traps/wipeout/WipeOutServerSystem.java#L114-L134&quot;&gt;Server System event handler&lt;/a&gt; looks like-&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;nd&quot;&gt;@ReceiveEvent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;priority&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;EventPriority&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;PRIORITY_HIGH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;components&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;WipeOutComponent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;BlockComponent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;})&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;onWipeOutActivated&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;OnActivatedComponent&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;EntityRef&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;entity&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;WipeOutComponent&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;wipeOutComponent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// Create server entities for rod and surfboard&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;wipeOutComponent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;childrenEntities&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rod&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;wipeOutComponent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;childrenEntities&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;surfboard&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://github.com/Terasology/AdventureAssets/blob/master/src/main/java/org/terasology/adventureassets/traps/wipeout/WipeOutClientSystem.java#L66-L80&quot;&gt;Client System event handler&lt;/a&gt; looks like-&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;nd&quot;&gt;@ReceiveEvent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;components&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;WipeOutComponent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;BlockComponent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;})&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;onWipeOutActivated&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;OnActivatedComponent&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;EntityRef&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;entity&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;WipeOutComponent&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;wipeOutComponent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// So that only the relevant server entity is operated on.&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;wipeOutComponent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;childrenEntities&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;isEmpty&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;())&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// Create mesh entity on client side&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;saving-component-of-an-entity&quot;&gt;Saving Component of an Entity&lt;/h3&gt;
+&lt;p&gt;Before going into the specifics of the issue I faced, let’s discuss how the &lt;span style=&quot;color: #CCCC00&quot;&gt;&lt;strong&gt;@Replicate&lt;/strong&gt;&lt;/span&gt; annotation works.&lt;/p&gt;
+
+&lt;p&gt;Straight from the wiki-&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;@Replicate&lt;/code&gt; is an annotation used to mark types or fields to indicate that these types or fields should be replicated between the server and the client. In other words, when changes are made to these types or fields on the server, these changes will be reflected in the clients as well.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;By default, the FieldReplicate type is set to &lt;code class=&quot;highlighter-rouge&quot;&gt;SERVER_TO_CLIENT&lt;/code&gt;. This basically means that whatever the state of the entity on the server, such will be replicated to the entity on the client side. Changing a component on the client entity would not be reflected on the server entity.&lt;/p&gt;
+
+&lt;p&gt;Since all of the traps I made were on the network (possessed a NetworkComponent and had entities on both the client side and the server side), altering their settings required a change in one of the components. For instance, let’s consider the Fireball Launcher. On interaction with the Fireball Launcher block, the player sees a Settings screen where he can alter the properties for that Fireball Launcher. On hitting “Ok” on the Settings window, the component change happens from the FireballSettingsScreen class which is launched on the client side and instantiated with the client side Fireball Launcher Root entity. The component change thus happens only on the client entity and isn’t taken into account by the server entity.&lt;/p&gt;
+
+&lt;p&gt;To solve this, I created a new event- &lt;code class=&quot;highlighter-rouge&quot;&gt;SetFireballLauncherEvent&lt;/code&gt;. This event basically carries all the new values that need to be applied to the &lt;code class=&quot;highlighter-rouge&quot;&gt;FireballLauncherComponent&lt;/code&gt;. The event is then received on the Authority/Server system which then makes the change on the server side Fireball Launcher entity. This change is then reflected on the client side Fireball Launcher entities as they replicate the changes made to the server entity. The event can however not be sent to the FireballLauncherRoot entity from the FireballSettingsScreen class since the FireballLauncherRoot entity is the local client entity that does not exist on the server. Instead, the event can be sent to the local player’s character or client entity with the FireballLauncherRoot entity as a parameter.&lt;/p&gt;
+
+&lt;h3 id=&quot;how-does-the-chest-work&quot;&gt;How does the chest work?&lt;/h3&gt;
+&lt;p&gt;All these issues I faced, made me wonder how the chest entity works. The chest opens an Inventory screen on interaction. It has an InventoryComponent and any change made by one client is reflected on any other client.&lt;/p&gt;
+
+&lt;p&gt;The chest entity has the network component and has &lt;span style=&quot;color: #CCCC00&quot;&gt;&lt;strong&gt;@Replicate&lt;/strong&gt;&lt;/span&gt; on all relevant component fields to ensure that the state is replicated from &lt;strong&gt;SERVER_TO_CLIENT&lt;/strong&gt;. Again, whatever the state of the server entity, so will be replicated on the client.
+Since the entity has a Network Component, it exists on both the client side and the server side.
+Consider a client opening the chest (by interaction) and adding a sand block to it (the inventory of the chest). This action is performed on the local entity (the one on that client’s side). So simply saving the new InventoryComponent (with an added sand block) on the client side in the client system won’t work since all client chest entities replicate the state of the server entity, which remains unaltered.
+To deal with this, the component change must happen on the server entity which can be accessed only at the Authority system. This can be made possible by sending an event that is received and handled by the Authority/Server system.
+Note that the event cannot be sent to the chest entity (since the player interacts with the chest entity that only exists locally). However, this event can be sent to the player’s character entity with the chest entity as a parameter of the event. The event can then be received and the server side chest entity can be saved with the new InventoryComponent.&lt;/p&gt;
+
+&lt;p&gt;Citing from code-&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;InventoryClientSystem&lt;/code&gt; sends an event on the local player’s client entity &lt;a href=&quot;https://github.com/MovingBlocks/Terasology/blob/43f05baf94be707d5e3743300759fb530cf67e0f/modules/Core/src/main/java/org/terasology/logic/inventory/InventoryClientSystem.java#L258-L258&quot;&gt;here&lt;/a&gt;.&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;InventoryAuthoritySystem&lt;/code&gt; receives the event and does its thing &lt;a href=&quot;https://github.com/MovingBlocks/Terasology/blob/80702ce7751699d93467cc843dd4ac682edcf21b/modules/Core/src/main/java/org/terasology/logic/inventory/InventoryAuthoritySystem.java#L250-L250&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Note that some of my approaches might be incorrect. I’m not a hundred percent sure about whether the above is the right way to deal with the issues. However, having had a glance at how the Inventory stuff is handled for the chest entity, I’m more or less convinced that it is the right way.&lt;/p&gt;
+
+&lt;h1 id=&quot;whats-next&quot;&gt;What’s next?&lt;/h1&gt;
+&lt;p&gt;Maybe a few more traps like a pressure plate and some more triggers like buttons and levers. The major part that’s really left is to integrate all of what’s made into a world and package it into the Lost module with the supporting Lore.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 04 Jul 2017 00:00:00 +0530</pubDate>
+        <link>http://localhost:4000/2017/07/04/GSoC-week9.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/07/04/GSoC-week9.html</guid>
+        
+        <category>open source</category>
+        
+        <category>MovingBlocks</category>
+        
+        <category>Terasology</category>
+        
+        <category>GSoC</category>
+        
+        
+      </item>
     
       <item>
         <title>GSoC Week 8: The Revival stone and the Password Door</title>
@@ -1194,243 +1355,6 @@ Once an animal prefab is made, it can be spawned in game by typing &lt;code clas
         <pubDate>Sat, 18 Feb 2017 00:00:00 +0530</pubDate>
         <link>http://localhost:4000/2017/02/18/MovingBlocks-GCI-Wrap-Up.html</link>
         <guid isPermaLink="true">http://localhost:4000/2017/02/18/MovingBlocks-GCI-Wrap-Up.html</guid>
-        
-        <category>open source</category>
-        
-        <category>MovingBlocks</category>
-        
-        <category>Terasology</category>
-        
-        <category>GCI</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Terasology: Getting Started</title>
-        <description>&lt;style type=&quot;text/css&quot;&gt;
-    .collapsiblecontainer {
-    width:100%;
-    border:1px solid #d3d3d3;
-}
-.collapsiblecontainer div {
-    width:100%;
-}
-.collapsiblecontainer .collapsibleheader {
-    background-color:#d3d3d3;
-    padding: 2px;
-    cursor: pointer;
-    font-weight: bold;
-}
-.collapsiblecontainer .collapsiblecontent {
-    display: none;
-    padding : 5px;
-}
-&lt;/style&gt;
-
-&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js&quot;&gt;&lt;/script&gt;
-
-&lt;script type=&quot;text/javascript&quot;&gt;
-$(document).ready(function(){
-    $(&quot;.collapsibleheader&quot;).click(function () {
-        $collapsibleheader = $(this);
-        //getting the next element
-        $collapsiblecontent = $collapsibleheader.next();
-        //open up the collapsiblecontent needed - toggle the slide- if visible, slide up, if not slidedown.
-        $collapsiblecontent.slideToggle(500, function () {
-            //execute this after slideToggle is done
-            //change text of collapsibleheader based on visibility of collapsiblecontent div
-            $collapsibleheader.find(&quot;span:first-child&quot;).text(function () {
-                //change text based on condition
-                return $collapsiblecontent.is(&quot;:visible&quot;) ? &quot;- &quot; : &quot;+ &quot;;
-            });
-        });
-
-    });
-}); 
-
-&lt;/script&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/Terasology.jpg&quot; alt=&quot;Terasology&quot; title=&quot;Terasology&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;This is a comprehensive guide for getting started with your first contribution to the Terasology project. If you’ve stumbled here and don’t know what Terasology is, check out the &lt;a href=&quot;https://github.com/MovingBlocks/Terasology&quot;&gt;github repository&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The &lt;a href=&quot;https://github.com/MovingBlocks/Terasology/wiki/Dev-Setup&quot;&gt;Quick Start guide&lt;/a&gt; on the github wiki of the repository is pretty complete, but it can get a little confusing if this is your first time. If not and you want to get cracking as soon as possible, do head over there.&lt;/p&gt;
-
-&lt;p&gt;Without any further ado, let’s get started.&lt;/p&gt;
-
-&lt;h1 id=&quot;run-from-source&quot;&gt;Run from source&lt;/h1&gt;
-&lt;p&gt;This is probably the first and most important step you need to do before you can do anything else. Also, the first question you’ll be asked on IRC when you’re in doubt, is whether you’re able to “run from source”.&lt;/p&gt;
-
-&lt;h2 id=&quot;1-get-java&quot;&gt;1. Get Java&lt;/h2&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/java.png&quot; alt=&quot;Java&quot; title=&quot;Java&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Java 8 SDK is a requirement for the game to run. You can download this from &lt;a href=&quot;http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html&quot;&gt;here&lt;/a&gt; by choosing your OS.&lt;/p&gt;
-
-&lt;h2 id=&quot;2-get-git&quot;&gt;2. Get Git&lt;/h2&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/git.png&quot; alt=&quot;Git&quot; title=&quot;Git&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;If you don’t have git setup, you need to do so before going any further. You’ll need git to collaborate and contribute to this project.&lt;/p&gt;
-&lt;div class=&quot;collapsiblecontainer&quot;&gt;
-&lt;div class=&quot;collapsibleheader&quot;&gt;&lt;span&gt;+ &lt;/span&gt;&lt;span&gt;What is git?&lt;/span&gt;&lt;/div&gt;
-&lt;div class=&quot;collapsiblecontent&quot;&gt;   
-	Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
-	Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later.
-	&lt;br /&gt;
-	Git allows the users working on a project to mirror and save all changes they make on the central server as well as keep a copy in their own system.
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h4 id=&quot;for-linux&quot;&gt;For Linux:&lt;/h4&gt;
-&lt;p&gt;If you’re on Fedora, you can use yum:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;sudo yum install git-all&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;If you’re on a Debian-based distribution like Ubuntu, try apt-get:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;sudo apt-get install git-all&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;h4 id=&quot;for-windows&quot;&gt;For Windows:&lt;/h4&gt;
-&lt;p&gt;Download git for windows &lt;a href=&quot;https://git-scm.com/download/win&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h4 id=&quot;configuration&quot;&gt;Configuration:&lt;/h4&gt;
-&lt;p&gt;Once you have git installed, open bash (terminal) in Linux or git bash (from Programs) in Windows and get it configured.
-git config –global user.name “Your Name”
-git config –global user.email “your_email@whatever.com”&lt;/p&gt;
-
-&lt;h2 id=&quot;3-fork&quot;&gt;3. Fork&lt;/h2&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/fork.png&quot; alt=&quot;Fork&quot; title=&quot;Fork&quot; /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;collapsiblecontainer&quot;&gt;
-&lt;div class=&quot;collapsibleheader&quot;&gt;&lt;span&gt;+ &lt;/span&gt;&lt;span&gt;What is a fork?&lt;/span&gt;&lt;/div&gt;
-&lt;div class=&quot;collapsiblecontent&quot;&gt;   
-A fork is a copy of a repository. Forking a repository allows you to freely experiment with changes without affecting the original project. Forking the &lt;a href=&quot;https://github.com/MovingBlocks/Terasology&quot;&gt;MovingBlocks/Terasology&lt;/a&gt; repository would create a copy of it at &lt;a&gt;www.github.com/your_github_username/Terasology&lt;/a&gt;.
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Click &lt;em&gt;&lt;a href=&quot;https://github.com/MovingBlocks/Terasology/fork&quot;&gt;here&lt;/a&gt;&lt;/em&gt; to fork the &lt;em&gt;&lt;a href=&quot;https://github.com/MovingBlocks/Terasology&quot;&gt;Terasology github repository&lt;/a&gt;.&lt;/em&gt; Doing so will create a repository named “Terasology” under your github account and take you to it. From now you can access your copy of the repository here: &lt;a&gt;www.github.com/your_github_username/Terasology&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;4-clone&quot;&gt;4. Clone&lt;/h2&gt;
-&lt;div class=&quot;collapsiblecontainer&quot;&gt;
-&lt;div class=&quot;collapsibleheader&quot;&gt;&lt;span&gt;+ &lt;/span&gt;&lt;span&gt;What is cloning?&lt;/span&gt;&lt;/div&gt;
-&lt;div class=&quot;collapsiblecontent&quot;&gt;   
-Cloning downloads or &quot;clones&quot; a repository into a newly created directory by the name of the repository. Cloning www.github.com/your_github_username/Terasology on your machine would create a folder named Teraslogy and download all the content inside it. Use cd to move in and out of directories when inside bash/git-bash.
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Open up bash (Linux) or git-bash (Windows), go to the directory where you want to clone the repository:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;path/to/directory/
-git clone www.github.com/your_github_username/Terasology
-&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;Terasology/&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;h2 id=&quot;5-run-the-game&quot;&gt;5. Run the game&lt;/h2&gt;
-&lt;p&gt;You now have the repository cloned and can run the game using gradlew.&lt;/p&gt;
-
-&lt;p&gt;Open bash or git-bash, cd in to the Terasology directory and type in:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;./gradlew game&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;div class=&quot;collapsiblecontainer&quot;&gt;
-&lt;div class=&quot;collapsibleheader&quot;&gt;&lt;span&gt;+ &lt;/span&gt;&lt;span&gt;What is gradlew?&lt;/span&gt;&lt;/div&gt;
-&lt;div class=&quot;collapsiblecontent&quot;&gt;   
-The gradlew is a script which downloads a version of the Gradle through which most of the automation happens. The initial gradlew execution will download all project dependencies and could take a while. So, be patient.&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;This should show a build log, and launch the game. If this worked you’re able to run from source. If it didn’t you should get back to IRC and ask for help in debugging. However, any problem encountered at this point is usually from Java not being configured right, such as having an older version as your default Java. See &lt;a href=&quot;https://github.com/MovingBlocks/Terasology/wiki/Common-Issues&quot;&gt;Common Issues&lt;/a&gt; for more.&lt;/p&gt;
-
-&lt;p&gt;Ask in the Support Forum if issues remain, or come join us on #terasology on Freenode IRC. See &lt;a href=&quot;https://github.com/MovingBlocks/Terasology/wiki/Using-IRC&quot;&gt;Using IRC&lt;/a&gt; and please be patient! IRC isn’t necessarily instant communication and it may take a while to get a reply.&lt;/p&gt;
-
-&lt;h2 id=&quot;6-use-an-ide&quot;&gt;6. Use an IDE&lt;/h2&gt;
-
-&lt;p&gt;With this large a project, you could easily get lost and ‘grep’ing would be inefficient. We have a series of customizations that prepare run configurations, Git integration, and so on for the project, specifically for IntelliJ. Eclipse has fewer of these but is still entirely usable, as is NetBeans, but you’ll need to figure out some details there yourself. I personally recommend the use of Intelij IDEA.&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/intellij.jpeg&quot; alt=&quot;Intellij&quot; title=&quot;Intellij&quot; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;install-intellij-idea-on-linux&quot;&gt;Install Intellij IDEA on Linux:&lt;/h4&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;sudo apt-add-repository ppa:mmk2410/intellij-idea-community
-sudo apt-get update
-sudo apt-get install intellij-idea-community&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;h4 id=&quot;install-intellij-idea-on-windows&quot;&gt;Install Intellij IDEA on Windows:&lt;/h4&gt;
-
-&lt;p&gt;Download and install the setup from &lt;a href=&quot;https://www.jetbrains.com/idea/download/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Open bash or git-bash and type:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;./gradlew idea&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;This would prepare project files for Intellij. Open the resulting Terasology.ipr as an existing project in IntelliJ - do not create a new project or attempt to import the project via Gradle.&lt;/p&gt;
-
-&lt;h2 id=&quot;7-find-a-bug&quot;&gt;7. Find a Bug&lt;/h2&gt;
-
-&lt;p&gt;Once you are able to run from source and preferably have an IDE set up, you should get started with working on your first bug. The complete list of issues can be found &lt;a href=&quot;https://github.com/MovingBlocks/Terasology/issues&quot;&gt;here&lt;/a&gt;. However, you should look for issus with the tag &lt;code class=&quot;highlighter-rouge&quot;&gt;Bite-size&lt;/code&gt;. All bite-sized issues can be found &lt;a href=&quot;https://github.com/MovingBlocks/Terasology/issues?q=is%3Aissue+is%3Aopen+label%3ABite-size&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;8-code-code-and-code&quot;&gt;8. Code, code and code&lt;/h2&gt;
-
-&lt;p&gt;By default you would be on the develop branch. Before you start making changes to the code, remember to create a new branch. This can be skipped, however it is the best practice, especially when working on multiple issues. Also, if you don’t create a new branch, a Pull Request for your second bug fix will also contain a fix for the first bug, if the first PR isn’t merged till then.&lt;/p&gt;
-
-&lt;div class=&quot;collapsiblecontainer&quot;&gt;
-&lt;div class=&quot;collapsibleheader&quot;&gt;&lt;span&gt;+ &lt;/span&gt;&lt;span&gt;What is a branch?&lt;/span&gt;&lt;/div&gt;
-&lt;div class=&quot;collapsiblecontent&quot;&gt;   
-Within a repository you have branches, which are effectively forks within your own repository. Your branches will have an ancestor commit in your repository, and will diverge from that commit with your changes. You can later merge your branch changes. Branches let you work on multiple disparate features at once.
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;creating-a-new-branch&quot;&gt;Creating a new branch&lt;/h3&gt;
-&lt;p&gt;Open bash or git-bash and type:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;git checkout -b new_branch_name&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Get cracking on a solution. Ask on IRC when in doubt.&lt;/p&gt;
-
-&lt;h2 id=&quot;9-make-your-first-contribution&quot;&gt;9. Make your first contribution&lt;/h2&gt;
-
-&lt;p&gt;Once you’ve come up with a fix, it’s time to commit those changes and create a pull request.&lt;/p&gt;
-
-&lt;h3 id=&quot;commit-your-changes&quot;&gt;Commit your changes&lt;/h3&gt;
-&lt;p&gt;Open bash or git-bash and type:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;git add -A
-&lt;span class=&quot;c&quot;&gt;# to add all files to staging. You could select individual files too&lt;/span&gt;
-git commit -m &lt;span class=&quot;s2&quot;&gt;&quot;Fix for #1234&quot;&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# to commit changes with a relevant commit message.&lt;/span&gt;
-git push origin new_branch_name
-&lt;span class=&quot;c&quot;&gt;# Push to the newly created branch on your fork&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;div class=&quot;collapsiblecontainer&quot;&gt;
-&lt;div class=&quot;collapsibleheader&quot;&gt;&lt;span&gt;+ &lt;/span&gt;&lt;span&gt;What is a commit?&lt;/span&gt;&lt;/div&gt;
-&lt;div class=&quot;collapsiblecontent&quot;&gt;   
-Whenever you commit in git, you take a screenshot of your working directory or your repository. You could come back to this state of your repository later at any point or publish these changes to your fork of the repository.
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;collapsiblecontainer&quot;&gt;
-&lt;div class=&quot;collapsibleheader&quot;&gt;&lt;span&gt;+ &lt;/span&gt;&lt;span&gt;What is pushing?&lt;/span&gt;&lt;/div&gt;
-&lt;div class=&quot;collapsiblecontent&quot;&gt;   
-In git, when you push, you bring the changes on your local repository come into effect in the remote repository. In this case changes to the branch &quot;new_branch_name&quot; are published on the remote (&quot;origin&quot;) repository www.github.com/your_github_username/Terasology.
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Once you’ve pushed successfully, open up your fork (www.github.com/your_github_username/Terasology). This should show something like:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/terasologyPR.png&quot; alt=&quot;PR&quot; title=&quot;PR&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Clicking on “Compare &amp;amp; pull request” opens a page for you to describe your bug and solution. The pull request compares (head) your_github_username/Terasology/new_branch_name with (base) MovingBlocks/Terasology/develop. Fill in everything and hit “Create Pull Request”.&lt;/p&gt;
-
-&lt;p&gt;Once done, let the mentors have a look at your PR. If they want changes, you should make the required changes, test locally and then, create a new commit in the same branch and finally push.&lt;/p&gt;
-
-&lt;h2 id=&quot;10-goto-7&quot;&gt;10. Goto 7&lt;/h2&gt;
-
-&lt;p&gt;Don’t stop now. Go find another bug to fix! :D&lt;/p&gt;
-
-</description>
-        <pubDate>Tue, 22 Nov 2016 00:00:00 +0530</pubDate>
-        <link>http://localhost:4000/2016/11/22/Terasology-Getting-started.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2016/11/22/Terasology-Getting-started.html</guid>
         
         <category>open source</category>
         

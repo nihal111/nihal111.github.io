@@ -600,3 +600,6 @@ pre {
   /* Opera 7 */
   word-wrap: break-word;
   /* Internet Explorer 5.5+ */ }
+
+code.highlighter-rouge {
+  background-color: #d3d3d3; }
