@@ -618,16 +618,16 @@ code.highlighter-rouge {
   background: #fff; }
 
 .open-PR-button {
-  box-shadow: 0 0.0625em 0.125em rgba(0, 0, 0, 0.125), inset 0 -0.25em 0 -0.125em rgba(0, 0, 0, 0.125), inset 7.5em 0 0 -0.7em rgba(20, 160, 0, 0.5), inset -4em 0 0 -0.3em rgba(20, 160, 0, 0.5); }
+  box-shadow: 0 0.0625em 0.125em rgba(0, 0, 0, 0.125), inset 0 -0.25em 0 -0.125em rgba(0, 0, 0, 0.125), inset 7.5em 0 0 -0.7em rgba(20, 160, 0, 0.8), inset -4em 0 0 -0.3em rgba(20, 160, 0, 0.8); }
 
 .merged-PR-button {
   box-shadow: 0 0.0625em 0.125em rgba(0, 0, 0, 0.125), inset 0 -0.25em 0 -0.125em rgba(0, 0, 0, 0.125), inset 7.5em 0 0 -0.7em rgba(30, 144, 255, 0.5), inset -4em 0 0 -0.3em rgba(30, 144, 255, 0.5); }
 
 .open-issue-button {
-  box-shadow: 0 0.0625em 0.125em rgba(0, 0, 0, 0.125), inset 0 -0.25em 0 -0.125em rgba(0, 0, 0, 0.125), inset 7.5em 0 0 -0.7em rgba(210, 15, 0, 0.5), inset -4em 0 0 -0.3em rgba(210, 15, 0, 0.5); }
+  box-shadow: 0 0.0625em 0.125em rgba(0, 0, 0, 0.125), inset 0 -0.25em 0 -0.125em rgba(0, 0, 0, 0.125), inset 7.5em 0 0 -0.7em rgba(20, 160, 0, 0.5), inset -4em 0 0 -0.3em rgba(20, 160, 0, 0.5); }
 
 .closed-issue-button {
-  box-shadow: 0 0.0625em 0.125em rgba(0, 0, 0, 0.125), inset 0 -0.25em 0 -0.125em rgba(0, 0, 0, 0.125), inset 7.5em 0 0 -0.7em rgba(210, 15, 0, 0.5), inset -4em 0 0 -0.3em rgba(210, 15, 0, 0.5); }
+  box-shadow: 0 0.0625em 0.125em rgba(0, 0, 0, 0.125), inset 0 -0.25em 0 -0.125em rgba(0, 0, 0, 0.125), inset 7.5em 0 0 -0.7em rgba(178, 34, 34, 0.8), inset -4em 0 0 -0.3em rgba(178, 34, 34, 0.8); }
 
 .number {
   position: absolute;
@@ -640,6 +640,10 @@ code.highlighter-rouge {
   text-align: center;
   left: .125em;
   top: 0.5em;
+  color: #000; }
+
+.number:hover {
+  font-weight: bold;
   color: #000; }
 
 .title {

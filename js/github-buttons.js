@@ -1,4 +1,5 @@
 $(function() {
+	$('head').append('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/font/octicons.css" type="text/css" />');
     createButtons();
 });
 
@@ -17,7 +18,7 @@ function createButtons() {
 			    function(data) {
 			    	var date = formatDate(new Date(data.created_at));
 			        $(button).append(
-			       	$('<a/>', {'class': 'number', 'text': "#" + data.number}),
+			       	$('<a/>', {'class': 'number', 'href': data.html_url, 'text': "#" + data.number}),
 			       	$('<a/>', {'class': 'title', 'href': data.html_url, 'text': data.title}),
 			       	$('<span/>', {'class': 'meta'}).append(
 			       		$('<a/>', {'class': 'repo', 'href': data.base.repo.html_url, 'text': data.base.repo.full_name}),
@@ -26,7 +27,6 @@ function createButtons() {
 			       		),
 			       	$('<i/>', {'class': 'right-icon mega-octicon octicon-git-pull-request'}),
 			       	)
-			       	console.log(data.merged);
 			     	if (data.merged ) {
 			     		$(button).find('.octicon-git-pull-request').addClass('octicon-git-merge').removeClass('octicon-git-pull-request');
 			     		$(button).addClass('merged-PR-button');
@@ -44,7 +44,7 @@ function createButtons() {
 					repo_name = repo_name[repo_name.length - 2] + "/" + repo_name[repo_name.length - 1];
 					var date = formatDate(new Date(data.created_at));
 					$(button).append(
-			       	$('<a/>', {'class': 'number', 'text': "#" + data.number}),
+			       	$('<a/>', {'class': 'number', 'href': data.html_url, 'text': "#" + data.number}),
 			       	$('<a/>', {'class': 'title', 'href': data.html_url, 'text': data.title}),
 			       	$('<span/>', {'class': 'meta'}).append(
 			       		$('<a/>', {'class': 'repo', 'href': data.repository_url, 'text': repo_name}),
@@ -63,7 +63,6 @@ function createButtons() {
 			    }
 			);
     	}
-    	console.log(url);
 	});
 }
 
