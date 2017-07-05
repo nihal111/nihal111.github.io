@@ -603,3 +603,115 @@ pre {
 
 code.highlighter-rouge {
   background-color: #d3d3d3; }
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+.PR-button {
+  display: block;
+  position: relative;
+  padding: .75em 5em .75em 1em;
+  border-radius: .25em;
+  margin-bottom: .5em;
+  background: #fff;
+  box-shadow: 0 0.0625em 0.125em rgba(0, 0, 0, 0.125), inset 0 -0.25em 0 -0.125em rgba(0, 0, 0, 0.125), inset 7.5em 0 0 -0.7em rgba(20, 160, 0, 0.5), inset -4em 0 0 -0.3em rgba(20, 160, 0, 0.5); }
+
+.issue-button {
+  display: block;
+  position: relative;
+  padding: .75em 5em .75em 1em;
+  border-radius: .25em;
+  margin-bottom: .5em;
+  background: #fff;
+  box-shadow: 0 0.0625em 0.125em rgba(0, 0, 0, 0.125), inset 0 -0.25em 0 -0.125em rgba(0, 0, 0, 0.125), inset 7.5em 0 0 -0.7em rgba(210, 15, 0, 0.5), inset -4em 0 0 -0.3em rgba(210, 15, 0, 0.5); }
+
+.number {
+  position: absolute;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 24pt;
+  height: 4em;
+  width: 3.6em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  left: .125em;
+  top: 0.5em;
+  color: #000; }
+
+.title {
+  margin-left: 6em;
+  display: block;
+  font-size: 14pt;
+  font-weight: bold;
+  color: #000;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden; }
+
+.title:after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 100%; }
+
+.meta {
+  display: block;
+  margin-left: 7em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 12pt;
+  line-height: 2;
+  /* 16 "px" */
+  font-weight: bold;
+  color: #2f4f4f; }
+
+.repo {
+  font-weight: bold;
+  color: #2f4f4f; }
+
+.date {
+  font-weight: bold;
+  color: #2f4f4f; }
+
+.date:before {
+  content: ' ';
+  font-weight: normal; }
+
+.clock {
+  display: inline-block;
+  position: relative;
+  width: 1.333em;
+  height: 1.333em;
+  margin-left: .333em;
+  border: .25em solid #95979d;
+  border-radius: 50%;
+  vertical-align: middle; }
+
+.clock:before,
+.clock:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: .125em;
+  height: .25em;
+  background: #95979d; }
+
+.clock:before {
+  left: 50%;
+  bottom: 47%;
+  margin-left: -.0625em; }
+
+.clock:after {
+  transform: rotate(135deg);
+  left: 63%;
+  top: 47%; }
+
+.right-icon {
+  display: block;
+  position: absolute;
+  right: 0.5em;
+  top: 50%;
+  margin-top: -.6em; }

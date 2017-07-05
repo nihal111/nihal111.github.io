@@ -1,0 +1,37 @@
+---
+layout: post
+title: "Test"
+date: 2017-07-04
+comments: true
+tags:
+- open source
+- MovingBlocks
+- Terasology
+- GSoC
+---
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/font/octicons.css"/>
+<script type="text/javascript" src="/js/github-buttons.js"></script> 
+
+Hey
+
+<div class="PR-button" url="https://github.com/MovingBlocks/Terasology/pull/2958">
+  <a class="number">#2945</a>
+  <a class="title">Added a Swinging Blade</a>
+  <span class="meta">
+	  <a class="repo">AdventureAssets</a>
+	  <i class="octicon octicon-clock"></i>
+	  <span class="date">Mar 12, 2013</span>
+  </span>
+  <i class="right-icon mega-octicon octicon-git-pull-request"></i>
+</div>
+
+<div class="issue-button" url="">
+  <a class="number">#30</a>
+  <a class="title">Make Password Door multiplayer ready</a>
+  <span class="meta">
+	  <a class="repo">AdventureAssets</a>
+	  <i class="octicon octicon-clock"></i>
+	  <span class="date">Mar 12, 2013</span>
+  </span>
+  <i class="right-icon mega-octicon octicon-issue-opened"></i>
+</div>
