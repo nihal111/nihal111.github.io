@@ -30,6 +30,7 @@ tags:
 }
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script type="text/javascript" src="/js/github-buttons.js"></script> 
 <script type="text/javascript">
 $(document).ready(function(){
     $(".collapsibleheader").click(function () {
@@ -56,6 +57,9 @@ After having set up the base to create traps last week, this week involved creat
 # What have I been upto?
 
 ## The Wipe Out
+
+<div class="github-button" url="https://github.com/Terasology/AdventureAssets/pull/5"></div>
+
 This trap is inspired from the shows Takeshi's Castle and Wipe Out. The setup consists of a platform attached to a rod pivoted at a root block and rotated around in horizontal circles. The trap can be configured by adjusting these parameters:
 
 **Time Period**: The time taken to complete a whole circle.  
@@ -92,6 +96,9 @@ Where,
 ![WipeOutMath]({{ site.baseurl }}/img/wipeOutMath.PNG "Wipe Out Math"){:style="max-height: 500px;"}
 
 ## The Fireball Launcher
+
+<div class="github-button" url="https://github.com/Terasology/AdventureAssets/pull/6"></div>
+
 The Fireball Launcher was the next trap I worked on. With some help from [niksoc](https://github.com/niksoc/), I was able to restructure the Projectile module. This made shooting fireballs as easy as sending a `FireProjectileEvent` on the created fireball entity.
 
 The fireball launcher trap also has a few properties that allow for custom configurations:
@@ -101,6 +108,8 @@ The fireball launcher trap also has a few properties that allow for custom confi
 **Max Distance**: Maximum distance after which the fireball dies.  
 **Damage Amount**: Total collective damage the fireball can inflict. Acts as *health* for the fireball. The fireball is destroyed after it has inflicted a total damage equal to its health, or unitl it comes across an indestructible entity.  
 **Direction**: Direction in vector form (x, y and z) towards which the fireball is launched.
+
+<div class="github-button" url="https://github.com/Terasology/AdventureAssets/pull/8"></div>
 
 Here is a video showing how the fireball launcher works:
 <div class="videowrapper">

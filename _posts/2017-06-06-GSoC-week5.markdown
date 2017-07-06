@@ -30,6 +30,7 @@ tags:
 }
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script type="text/javascript" src="/js/github-buttons.js"></script> 
 <script type="text/javascript">
 $(document).ready(function(){
     $(".collapsibleheader").click(function () {
@@ -81,6 +82,9 @@ The idea now, is that I would create various puzzle elements and combine them to
 </div>
 
 ## The Swinging Blade
+
+<div class="github-button" url="https://github.com/Terasology/AdventureAssets/pull/2"></div>
+
 The first item I decided to work on was the Swinging Blade. The setup consists of a huge blade that swings to and fro from one edge of the room to the other. This would serve as on obstacle and coming in contact with the blade would deal damage to the player.
 
 I started working with a crude swinging blade model made by flo.
@@ -96,6 +100,8 @@ I tried to make the blade move by linearly varying the `pitch` (as in rotation's
 
 ### Alignment and orientation
 The swinging blade was misaligned and I wanted it to rotate in a direction purpendicular to it's current rotation. Soon I realised that I had no control on the orientaion of the Swinging Blade entity that was being spawned by the Structure Template. I could choose the position but I couldn't change the orientation and rotation. This is because the Structure Template module allows you to spawn the structure anywhere in the world, regardless of the orientation in which they were created. Meaning, a structure that faced North could be spawned in a manner that it now faces East. All contents of the structure should undergo a similar change in their orientation too. But the entities didn't. Till now, it wasn't a problem as the only things being spawned were the GooeysQuests' skeletons. Their orientation didn't matter as they were live entities that would come running after you for your life.
+
+<div class="github-button" url="https://github.com/Terasology/StructureTemplates/pull/15"></div>
 
 [This PR](https://github.com/Terasology/StructureTemplates/pull/15) adds the rotational control to spawning entities while using the `SpawnPrefabsComponent` in the Structure Templates module.
 

@@ -30,6 +30,7 @@ padding : 5px;
 }
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script type="text/javascript" src="/js/github-buttons.js"></script> 
 <script type="text/javascript">
 $(document).ready(function(){
 $(".collapsibleheader").click(function () {
@@ -55,6 +56,8 @@ return $collapsiblecontent.is(":visible") ? "- " : "+ ";
 The Revival Stone created last week has been polished and is now renamed as the Altar Of Resurrection. All the existing traps and adventure items- Swinging Blade, Wipe Out, Fireball Launcher, Altar of Resurrection and Password Door have been made multiplayer ready.
 
 ## Altar of Resurrection
+
+<div class="github-button" url="https://github.com/Terasology/AdventureAssets/pull/11"></div>
 
 With most of the work been done last week, this week simply saw a finishing touch and some other minor additions.
 
@@ -96,6 +99,17 @@ After all this, the final Alar of Resurrection looks like this-
 </div>
 
 ## Multiplayer Fixes
+
+<div class="github-button" url="https://github.com/Terasology/AdventureAssets/pull/13"></div>
+
+<div class="github-button" url="https://github.com/Terasology/AdventureAssets/pull/14"></div>
+
+<div class="github-button" url="https://github.com/Terasology/AdventureAssets/pull/15"></div>
+
+<div class="github-button" url="https://github.com/Terasology/AdventureAssets/pull/16"></div>
+
+<div class="github-button" url="https://github.com/Terasology/AdventureAssets/pull/17"></div>
+
 A large amount of last week went into making the already created traps functional in multiplayer. Here is a brief collection of the issues I faced and how I solved them. Please read through the wiki page for [Entities, Components and Events on the Network](https://github.com/MovingBlocks/Terasology/wiki/Entities%2C-Components-and-Events-on-the-Network) if you already haven't.
 
 ### Entities on the network

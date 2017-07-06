@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 06 Jul 2017 15:32:39 +0530</pubDate>
-    <lastBuildDate>Thu, 06 Jul 2017 15:32:39 +0530</lastBuildDate>
+    <pubDate>Thu, 06 Jul 2017 16:23:21 +0530</pubDate>
+    <lastBuildDate>Thu, 06 Jul 2017 16:23:21 +0530</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>
@@ -111,6 +111,8 @@ padding : 5px;
 
 &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js&quot;&gt;&lt;/script&gt;
 
+&lt;script type=&quot;text/javascript&quot; src=&quot;/js/github-buttons.js&quot;&gt;&lt;/script&gt;
+
 &lt;script type=&quot;text/javascript&quot;&gt;
 $(document).ready(function(){
 $(&quot;.collapsibleheader&quot;).click(function () {
@@ -136,6 +138,8 @@ return $collapsiblecontent.is(&quot;:visible&quot;) ? &quot;- &quot; : &quot;+ &
 &lt;p&gt;The Revival Stone created last week has been polished and is now renamed as the Altar Of Resurrection. All the existing traps and adventure items- Swinging Blade, Wipe Out, Fireball Launcher, Altar of Resurrection and Password Door have been made multiplayer ready.&lt;/p&gt;
 
 &lt;h2 id=&quot;altar-of-resurrection&quot;&gt;Altar of Resurrection&lt;/h2&gt;
+
+&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/AdventureAssets/pull/11&quot;&gt;&lt;/div&gt;
 
 &lt;p&gt;With most of the work been done last week, this week simply saw a finishing touch and some other minor additions.&lt;/p&gt;
 
@@ -175,6 +179,17 @@ The above should give you an image like &lt;a href=&quot;https://github.com/Tera
 &lt;/div&gt;
 
 &lt;h2 id=&quot;multiplayer-fixes&quot;&gt;Multiplayer Fixes&lt;/h2&gt;
+
+&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/AdventureAssets/pull/13&quot;&gt;&lt;/div&gt;
+
+&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/AdventureAssets/pull/14&quot;&gt;&lt;/div&gt;
+
+&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/AdventureAssets/pull/15&quot;&gt;&lt;/div&gt;
+
+&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/AdventureAssets/pull/16&quot;&gt;&lt;/div&gt;
+
+&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/AdventureAssets/pull/17&quot;&gt;&lt;/div&gt;
+
 &lt;p&gt;A large amount of last week went into making the already created traps functional in multiplayer. Here is a brief collection of the issues I faced and how I solved them. Please read through the wiki page for &lt;a href=&quot;https://github.com/MovingBlocks/Terasology/wiki/Entities%2C-Components-and-Events-on-the-Network&quot;&gt;Entities, Components and Events on the Network&lt;/a&gt; if you already haven’t.&lt;/p&gt;
 
 &lt;h3 id=&quot;entities-on-the-network&quot;&gt;Entities on the network&lt;/h3&gt;
@@ -274,6 +289,8 @@ padding : 5px;
 
 &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js&quot;&gt;&lt;/script&gt;
 
+&lt;script type=&quot;text/javascript&quot; src=&quot;/js/github-buttons.js&quot;&gt;&lt;/script&gt;
+
 &lt;script type=&quot;text/javascript&quot;&gt;
 $(document).ready(function(){
 $(&quot;.collapsibleheader&quot;).click(function () {
@@ -301,6 +318,8 @@ return $collapsiblecontent.is(&quot;:visible&quot;) ? &quot;- &quot; : &quot;+ &
 &lt;p&gt;This week saw more work on traps, two items in particular- the &lt;strong&gt;Revival Stone&lt;/strong&gt; (to be named the &lt;strong&gt;Altar of Resurrection&lt;/strong&gt;) and a &lt;strong&gt;Password locked door&lt;/strong&gt; .&lt;/p&gt;
 
 &lt;h2 id=&quot;revival-stone&quot;&gt;Revival Stone&lt;/h2&gt;
+
+&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/AdventureAssets/pull/11&quot;&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;concept&quot;&gt;Concept&lt;/h3&gt;
 &lt;p&gt;With all the previous traps created (swinging blade, wipe out over lava, fireball launcher) being dangerous in nature, there was a definite need for a checkpoint that allows the player to respawn just before the trap. The revival stone does exactly this. A statue of an angel serves as a checkpoint that can be activated by the player. Upon activation, the angel statue lights up and the orb held by the angel starts glowing. At a time, a player can have only one checkpoint activated. Upon death, the player respawns at the last and only activated checkpoint.&lt;/p&gt;
@@ -375,6 +394,9 @@ For instance- the positionRangeGenerator allows me to ensure that all particles 
 &lt;/div&gt;
 
 &lt;h2 id=&quot;password-locked-door&quot;&gt;Password Locked Door&lt;/h2&gt;
+
+&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/AdventureAssets/pull/12&quot;&gt;&lt;/div&gt;
+
 &lt;p&gt;There already existed a door in the Core module that allows for simple opening and closing with player interactions. It has a nice system that takes care of placing the two blocks long door in the world, with a nice texture and cool sound effects. I decided to reuse all of this to create a door that would require a password to unlock.&lt;/p&gt;
 
 &lt;p&gt;The password door essentially extends the door from the core module. It uses the existing systems in Core for the basic features and simply overrides over the functionality that needs to change by receiving the respective events with a higher priority. For instance, the ActivateEvent handler in the &lt;code class=&quot;highlighter-rouge&quot;&gt;PasswordDoorSystem&lt;/code&gt; receives (and consumes) the ActivateEvent with a higher priority than Core’s &lt;code class=&quot;highlighter-rouge&quot;&gt;DoorSystem&lt;/code&gt;. This allows the display of a UI Screen that lets the player enter the password to unlock the door.&lt;/p&gt;
@@ -436,6 +458,8 @@ For instance- the positionRangeGenerator allows me to ensure that all particles 
 
 &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js&quot;&gt;&lt;/script&gt;
 
+&lt;script type=&quot;text/javascript&quot; src=&quot;/js/github-buttons.js&quot;&gt;&lt;/script&gt;
+
 &lt;script type=&quot;text/javascript&quot;&gt;
 $(document).ready(function(){
     $(&quot;.collapsibleheader&quot;).click(function () {
@@ -462,6 +486,9 @@ $(document).ready(function(){
 &lt;h1 id=&quot;what-have-i-been-upto&quot;&gt;What have I been upto?&lt;/h1&gt;
 
 &lt;h2 id=&quot;the-wipe-out&quot;&gt;The Wipe Out&lt;/h2&gt;
+
+&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/AdventureAssets/pull/5&quot;&gt;&lt;/div&gt;
+
 &lt;p&gt;This trap is inspired from the shows Takeshi’s Castle and Wipe Out. The setup consists of a platform attached to a rod pivoted at a root block and rotated around in horizontal circles. The trap can be configured by adjusting these parameters:&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Time Period&lt;/strong&gt;: The time taken to complete a whole circle.&lt;br /&gt;
@@ -495,6 +522,9 @@ There are 4 entities- A &lt;strong&gt;root&lt;/strong&gt; entity, the &lt;strong
 &lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/wipeOutMath.PNG&quot; alt=&quot;WipeOutMath&quot; title=&quot;Wipe Out Math&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;the-fireball-launcher&quot;&gt;The Fireball Launcher&lt;/h2&gt;
+
+&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/AdventureAssets/pull/6&quot;&gt;&lt;/div&gt;
+
 &lt;p&gt;The Fireball Launcher was the next trap I worked on. With some help from &lt;a href=&quot;https://github.com/niksoc/&quot;&gt;niksoc&lt;/a&gt;, I was able to restructure the Projectile module. This made shooting fireballs as easy as sending a &lt;code class=&quot;highlighter-rouge&quot;&gt;FireProjectileEvent&lt;/code&gt; on the created fireball entity.&lt;/p&gt;
 
 &lt;p&gt;The fireball launcher trap also has a few properties that allow for custom configurations:&lt;/p&gt;
@@ -504,6 +534,8 @@ There are 4 entities- A &lt;strong&gt;root&lt;/strong&gt; entity, the &lt;strong
 &lt;strong&gt;Max Distance&lt;/strong&gt;: Maximum distance after which the fireball dies.&lt;br /&gt;
 &lt;strong&gt;Damage Amount&lt;/strong&gt;: Total collective damage the fireball can inflict. Acts as &lt;em&gt;health&lt;/em&gt; for the fireball. The fireball is destroyed after it has inflicted a total damage equal to its health, or unitl it comes across an indestructible entity.&lt;br /&gt;
 &lt;strong&gt;Direction&lt;/strong&gt;: Direction in vector form (x, y and z) towards which the fireball is launched.&lt;/p&gt;
+
+&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/AdventureAssets/pull/8&quot;&gt;&lt;/div&gt;
 
 &lt;p&gt;Here is a video showing how the fireball launcher works:&lt;/p&gt;
 &lt;div class=&quot;videowrapper&quot;&gt;
@@ -550,6 +582,8 @@ There are 4 entities- A &lt;strong&gt;root&lt;/strong&gt; entity, the &lt;strong
 &lt;/style&gt;
 
 &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;/js/github-buttons.js&quot;&gt;&lt;/script&gt;
 
 &lt;script type=&quot;text/javascript&quot;&gt;
 $(document).ready(function(){
@@ -606,6 +640,7 @@ $(document).ready(function(){
 &lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/SBmath.png&quot; alt=&quot;SBmath&quot; title=&quot;Swinging Blade Math&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;setting-the-trap--creative-mode&quot;&gt;Setting the trap- Creative Mode&lt;/h2&gt;
+
 &lt;p&gt;After the first trap- the Swinging Blade had been made, a major concern was how to make it easy and intuitive to set up traps in game. At the same time creating puzzles had to be made easy using Structure Templates. Also the editing of the trap settings, or removal of the trap had to be limited so that every player could not disble a trap and move past it.&lt;/p&gt;
 
 &lt;h3 id=&quot;the-trap-placeholder-and-trap-configuration-tool&quot;&gt;The Trap Placeholder and Trap Configuration Tool&lt;/h3&gt;
@@ -636,6 +671,9 @@ $(document).ready(function(){
 &lt;/ol&gt;
 
 &lt;h3 id=&quot;the-root-block--a-better-approach&quot;&gt;The Root Block- a better approach&lt;/h3&gt;
+
+&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/AdventureAssets/pull/4&quot;&gt;&lt;/div&gt;
+
 &lt;p&gt;The root block approach basically meant that each and every trap would have a unique origin block. For traps that are block based, for e.g. for a block with retracting blades that pop out of it, the origin block would be the trap itself. This block would be the owner to the root entity that has the Trap component. Here are a few features about the root block approach-&lt;/p&gt;
 
 &lt;ol&gt;
@@ -705,6 +743,8 @@ One more problem is that the editing and removal of the trap (basically, interac
 
 &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js&quot;&gt;&lt;/script&gt;
 
+&lt;script type=&quot;text/javascript&quot; src=&quot;/js/github-buttons.js&quot;&gt;&lt;/script&gt;
+
 &lt;script type=&quot;text/javascript&quot;&gt;
 $(document).ready(function(){
     $(&quot;.collapsibleheader&quot;).click(function () {
@@ -756,6 +796,9 @@ After some discussion with flo about cata’s project on scenarios, I realised t
 &lt;/div&gt;
 
 &lt;h2 id=&quot;the-swinging-blade&quot;&gt;The Swinging Blade&lt;/h2&gt;
+
+&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/AdventureAssets/pull/2&quot;&gt;&lt;/div&gt;
+
 &lt;p&gt;The first item I decided to work on was the Swinging Blade. The setup consists of a huge blade that swings to and fro from one edge of the room to the other. This would serve as on obstacle and coming in contact with the blade would deal damage to the player.&lt;/p&gt;
 
 &lt;p&gt;I started working with a crude swinging blade model made by flo.&lt;/p&gt;
@@ -769,6 +812,8 @@ After some discussion with flo about cata’s project on scenarios, I realised t
 
 &lt;h3 id=&quot;alignment-and-orientation&quot;&gt;Alignment and orientation&lt;/h3&gt;
 &lt;p&gt;The swinging blade was misaligned and I wanted it to rotate in a direction purpendicular to it’s current rotation. Soon I realised that I had no control on the orientaion of the Swinging Blade entity that was being spawned by the Structure Template. I could choose the position but I couldn’t change the orientation and rotation. This is because the Structure Template module allows you to spawn the structure anywhere in the world, regardless of the orientation in which they were created. Meaning, a structure that faced North could be spawned in a manner that it now faces East. All contents of the structure should undergo a similar change in their orientation too. But the entities didn’t. Till now, it wasn’t a problem as the only things being spawned were the GooeysQuests’ skeletons. Their orientation didn’t matter as they were live entities that would come running after you for your life.&lt;/p&gt;
+
+&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/StructureTemplates/pull/15&quot;&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/Terasology/StructureTemplates/pull/15&quot;&gt;This PR&lt;/a&gt; adds the rotational control to spawning entities while using the &lt;code class=&quot;highlighter-rouge&quot;&gt;SpawnPrefabsComponent&lt;/code&gt; in the Structure Templates module.&lt;/p&gt;
 
@@ -852,6 +897,8 @@ After some discussion with flo about cata’s project on scenarios, I realised t
 
 &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js&quot;&gt;&lt;/script&gt;
 
+&lt;script type=&quot;text/javascript&quot; src=&quot;/js/github-buttons.js&quot;&gt;&lt;/script&gt;
+
 &lt;script type=&quot;text/javascript&quot;&gt;
 $(document).ready(function(){
     $(&quot;.collapsibleheader&quot;).click(function () {
@@ -907,6 +954,10 @@ $(document).ready(function(){
 
 &lt;p&gt;In the image above, Exploration Log #111 is a “read” entry while Exploration Log #112 is a new/”unread” entry.&lt;/p&gt;
 
+&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/Journal/pull/3&quot;&gt;&lt;/div&gt;
+
+&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/Journal/pull/4&quot;&gt;&lt;/div&gt;
+
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;Roadblock:&lt;/em&gt;&lt;/strong&gt; There was a problem with the Journal module though, the first journal entry that was required to be sent only once when the player was spawned was resent every time the player respawned. This happened because the &lt;code class=&quot;highlighter-rouge&quot;&gt;onPlayerSpawnedEvent&lt;/code&gt; was sent to the Player entity even on respawn.&lt;br /&gt;
 A bigger problem was that whatever entries that the player had in his journal would all disappear when the player respawned. This happened because the player entity in the game was completely destroyed when the player died. In the process all components attached to the player were stripped and destroyed too.&lt;/p&gt;
 
@@ -925,6 +976,8 @@ A bigger problem was that whatever entries that the player had in his journal wo
 &lt;/ol&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/MovingBlocks/Terasology/pull/2958&quot;&gt;This PR&lt;/a&gt; makes the said change. It adds the &lt;strong&gt;OnPlayerRespawnedEvent, PlayerDeathEvent, AliveCharacterComponent, PlayerCharacterComponent.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/MovingBlocks/Terasology/pull/2958&quot;&gt;&lt;/div&gt;
 
 &lt;h4 id=&quot;what-happens-now&quot;&gt;What happens now&lt;/h4&gt;
 
@@ -984,6 +1037,8 @@ Components that need to be reset are done by receiving the &lt;code class=&quot;
 
 &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js&quot;&gt;&lt;/script&gt;
 
+&lt;script type=&quot;text/javascript&quot; src=&quot;/js/github-buttons.js&quot;&gt;&lt;/script&gt;
+
 &lt;script type=&quot;text/javascript&quot;&gt;
 $(document).ready(function(){
     $(&quot;.collapsibleheader&quot;).click(function () {
@@ -1013,6 +1068,10 @@ $(document).ready(function(){
 
 &lt;p&gt;Adding to the 4 deer (&lt;code class=&quot;highlighter-rouge&quot;&gt;deer&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;insensitiveDeer&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;aggressiveDeer&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;hostileDeer&lt;/code&gt;) from last time two new behaviors have been added namely- &lt;code class=&quot;highlighter-rouge&quot;&gt;scared&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;friendly&lt;/code&gt;. Again these are just placeholders for actual animals that would display such behavior like a chicken (timid) and a dog (friendly). Here are two new videos that would give a quick preview.&lt;/p&gt;
 
+&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/WildAnimals/pull/14&quot;&gt;&lt;/div&gt;
+
+&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/WildAnimals/pull/15&quot;&gt;&lt;/div&gt;
+
 &lt;div class=&quot;videowrapper&quot;&gt;
     &lt;iframe width=&quot;1024&quot; height=&quot;768&quot; src=&quot;https://www.youtube.com/embed/5VREvBUPmA0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
@@ -1020,15 +1079,31 @@ $(document).ready(function(){
 &lt;div class=&quot;videowrapper&quot;&gt;
     &lt;iframe width=&quot;1024&quot; height=&quot;768&quot; src=&quot;https://www.youtube.com/embed/GbeXKIi9Mvs&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/WildAnimals/pull/12&quot;&gt;&lt;/div&gt;
+
+&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/AdvancedBehaviors/pull/2&quot;&gt;&lt;/div&gt;
+
+&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/AdvancedBehaviors/pull/3&quot;&gt;&lt;/div&gt;
 
 &lt;p&gt;Also, the flee behavior is now improved such that the animal would always run in a direction away from the player as compared to randomly moving about like last time.&lt;/p&gt;
+
+&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/Pathfinding/pull/29&quot;&gt;&lt;/div&gt;
+
+&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/AdvancedBehaviors/pull/6&quot;&gt;&lt;/div&gt;
 
 &lt;p&gt;In addition, last year’s GCI saw a lot of students write up formal descriptions about AI for animals and their behavior. This can be found &lt;a href=&quot;http://forum.terasology.org/search/2685474/?q=Formal+Description&amp;amp;o=date&quot;&gt;here&lt;/a&gt; and is possibly a good reference for future.&lt;/p&gt;
 
 &lt;h2 id=&quot;packing-and-moving--advancedbehaviors&quot;&gt;Packing and Moving- AdvancedBehaviors&lt;/h2&gt;
+
 &lt;p&gt;It was felt that the behavior work that I had been up to, should not really be restricted to the WildAnimals module. It had great potential outside for other NPCs like monsters, zombies, aliens.. you name it. One particular requirement was that of the GooeysQuests’ skeleton which would try its best to kill you in the dungeons. Currently the skeleton just has a hostile behavior, which means that it does nothing at all until a player comes close to it. After which, it would follow the player in an attempt to kill. When the player dies or escapes the skelton would return to doing nothing (standing still) where ever it had reached. The &lt;code class=&quot;highlighter-rouge&quot;&gt;hostileInProximity&lt;/code&gt; behavior that I had implemented for the hostileDeer is probably a better alternative, where in the deer switches from hostile to stray behavior. Further the behavior switching systems could be used to add a &lt;strong&gt;guard behavior&lt;/strong&gt; that would allow the skeleton to return to a specific location that it guards (a tressure, a secret door, who knows?).&lt;/p&gt;
 
 &lt;p&gt;All this just meant one thing, that the core behavior systems should not be kept restricted to the &lt;a href=&quot;https://github.com/Terasology/WildAnimals&quot;&gt;WildAnimals&lt;/a&gt; module as they would have great use even in other modules. With this need was born the &lt;a href=&quot;https://github.com/Terasology/AdvancedBehaviors&quot;&gt;AdvancedBehaviors&lt;/a&gt; module which would just be a library module having logic and systems that are required by other modules as dependencies, but no content of its own. All the behavior systems and behavior components were packaged and moved to this new module.&lt;/p&gt;
+
+&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/AdvancedBehaviors/pull/1&quot;&gt;&lt;/div&gt;
+
+&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/WildAnimals/pull/13&quot;&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;optional-dependencies-and-libraryapi-modules&quot;&gt;Optional Dependencies and Library/API modules&lt;/h2&gt;
 
@@ -1070,6 +1145,12 @@ $(document).ready(function(){
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/WorldlyTooltip/pull/6&quot;&gt;&lt;/div&gt;
+
+&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/WildAnimals/pull/9&quot;&gt;&lt;/div&gt;
+
+&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/WorldlyTooltip/pull/7&quot;&gt;&lt;/div&gt;
 
 &lt;hr /&gt;
 &lt;h2 id=&quot;taming-animals&quot;&gt;Taming animals&lt;/h2&gt;
@@ -1152,6 +1233,8 @@ Implementing taming in game is still a bonus item, probably something I’d get 
 
 &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js&quot;&gt;&lt;/script&gt;
 
+&lt;script type=&quot;text/javascript&quot; src=&quot;/js/github-buttons.js&quot;&gt;&lt;/script&gt;
+
 &lt;script type=&quot;text/javascript&quot;&gt;
 $(document).ready(function(){
     $(&quot;.collapsibleheader&quot;).click(function () {
@@ -1180,6 +1263,12 @@ $(document).ready(function(){
 
 &lt;p&gt;A lot has happened since and at this point there are 4 variants of the deer that exhibit very different behaviors- &lt;code class=&quot;highlighter-rouge&quot;&gt;deer&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;insensitiveDeer&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;aggressiveDeer&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;hostileDeer&lt;/code&gt;.&lt;/p&gt;
 
+&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/WildAnimals/pull/10&quot;&gt;&lt;/div&gt;
+
+&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/WildAnimals/pull/12&quot;&gt;&lt;/div&gt;
+
+&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/Pathfinding/pull/28&quot;&gt;&lt;/div&gt;
+
 &lt;p&gt;Before we get into details of how these were built, let’s have a look at a few preview videos:&lt;/p&gt;
 
 &lt;div class=&quot;videowrapper&quot;&gt;
@@ -1198,6 +1287,9 @@ $(document).ready(function(){
 Once an animal prefab is made, it can be spawned in game by typing &lt;code class=&quot;highlighter-rouge&quot;&gt;spawnPrefab prefabName&lt;/code&gt; in the console.&lt;/p&gt;
 
 &lt;h1 id=&quot;event-driven-behavior-system&quot;&gt;Event driven Behavior System&lt;/h1&gt;
+
+&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/WildAnimals/pull/8&quot;&gt;&lt;/div&gt;
+
 &lt;p&gt;The four different deer I mentioned really have the same animal model, animations and texture. They only vary in behavior. This behavior handling forms the crux of the WildAnimals module. Let’s dive into a little more detail.&lt;/p&gt;
 
 &lt;p&gt;The Behavior System built in the engine allows something known as behavior trees, to define a certain behavior.&lt;/p&gt;

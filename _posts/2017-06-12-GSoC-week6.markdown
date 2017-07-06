@@ -30,6 +30,7 @@ tags:
 }
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script type="text/javascript" src="/js/github-buttons.js"></script> 
 <script type="text/javascript">
 $(document).ready(function(){
     $(".collapsibleheader").click(function () {
@@ -89,6 +90,7 @@ Where,
 ![SBmath]({{ site.baseurl }}/img/SBmath.png "Swinging Blade Math"){:style="max-height: 500px;"}
 
 ## Setting the trap- Creative Mode
+
 After the first trap- the Swinging Blade had been made, a major concern was how to make it easy and intuitive to set up traps in game. At the same time creating puzzles had to be made easy using Structure Templates. Also the editing of the trap settings, or removal of the trap had to be limited so that every player could not disble a trap and move past it.
 
 ### The Trap Placeholder and Trap Configuration Tool
@@ -117,6 +119,9 @@ There were several problems with this approach:
 5. Inconsistent design. Some traps (spawned by structure spawners) don't have an associated trap placeholder block, while others do.
 
 ### The Root Block- a better approach
+
+<div class="github-button" url="https://github.com/Terasology/AdventureAssets/pull/4"></div>
+
 The root block approach basically meant that each and every trap would have a unique origin block. For traps that are block based, for e.g. for a block with retracting blades that pop out of it, the origin block would be the trap itself. This block would be the owner to the root entity that has the Trap component. Here are a few features about the root block approach-
 
 1. Root block can have a unique look for each trap- different shape and block tiles.

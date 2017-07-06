@@ -30,6 +30,7 @@ tags:
 }
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script type="text/javascript" src="/js/github-buttons.js"></script> 
 <script type="text/javascript">
 $(document).ready(function(){
     $(".collapsibleheader").click(function () {
@@ -85,6 +86,10 @@ I've added another enhancement which now makes the Journal more interactive. Ear
 
 In the image above, Exploration Log #111 is a "read" entry while Exploration Log #112 is a new/"unread" entry.
 
+<div class="github-button" url="https://github.com/Terasology/Journal/pull/3"></div>
+
+<div class="github-button" url="https://github.com/Terasology/Journal/pull/4"></div>
+
 ***Roadblock:*** There was a problem with the Journal module though, the first journal entry that was required to be sent only once when the player was spawned was resent every time the player respawned. This happened because the `onPlayerSpawnedEvent` was sent to the Player entity even on respawn.  
 A bigger problem was that whatever entries that the player had in his journal would all disappear when the player respawned. This happened because the player entity in the game was completely destroyed when the player died. In the process all components attached to the player were stripped and destroyed too.
 
@@ -101,6 +106,8 @@ I felt this problem for the first time when I realised that my player would lose
 3. There was no separate event that would be sent upon respawning. Now there is an additional `onPlayerRespawnedEvent` that can be used for this purpose. The `onPlayerSpawnedEvent` is simply an event that only gets fired once when the player enters a world for the first time.
 
 [This PR](https://github.com/MovingBlocks/Terasology/pull/2958) makes the said change. It adds the **OnPlayerRespawnedEvent, PlayerDeathEvent, AliveCharacterComponent, PlayerCharacterComponent.**
+
+<div class="github-button" url="https://github.com/MovingBlocks/Terasology/pull/2958"></div>
 
 #### What happens now
 

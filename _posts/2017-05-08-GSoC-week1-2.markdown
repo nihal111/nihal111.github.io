@@ -30,6 +30,7 @@ tags:
 }
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script type="text/javascript" src="/js/github-buttons.js"></script> 
 <script type="text/javascript">
 $(document).ready(function(){
     $(".collapsibleheader").click(function () {
@@ -58,6 +59,12 @@ I've been adding new features to the [WildAnimals](https://github.com/Terasology
 
 A lot has happened since and at this point there are 4 variants of the deer that exhibit very different behaviors- `deer`, `insensitiveDeer`, `aggressiveDeer` and `hostileDeer`.
 
+<div class="github-button" url="https://github.com/Terasology/WildAnimals/pull/10"></div>
+
+<div class="github-button" url="https://github.com/Terasology/WildAnimals/pull/12"></div>
+
+<div class="github-button" url="https://github.com/Terasology/Pathfinding/pull/28"></div>
+
 Before we get into details of how these were built, let's have a look at a few preview videos:
 
 <div class="videowrapper">
@@ -76,6 +83,9 @@ Each animal has a prefab file located [here](https://github.com/Terasology/WildA
 Once an animal prefab is made, it can be spawned in game by typing `spawnPrefab prefabName` in the console.
 
 # Event driven Behavior System
+
+<div class="github-button" url="https://github.com/Terasology/WildAnimals/pull/8"></div>
+
 The four different deer I mentioned really have the same animal model, animations and texture. They only vary in behavior. This behavior handling forms the crux of the WildAnimals module. Let's dive into a little more detail.
 
 The Behavior System built in the engine allows something known as behavior trees, to define a certain behavior. 

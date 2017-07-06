@@ -30,6 +30,7 @@ padding : 5px;
 }
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script type="text/javascript" src="/js/github-buttons.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
 $(".collapsibleheader").click(function () {
@@ -57,6 +58,8 @@ Week 8 has come to an end and quite a few of the proposal targets have been met.
 This week saw more work on traps, two items in particular- the **Revival Stone** (to be named the **Altar of Resurrection**) and a **Password locked door** .
 
 ## Revival Stone
+
+<div class="github-button" url="https://github.com/Terasology/AdventureAssets/pull/11"></div>
 
 ### Concept
 With all the previous traps created (swinging blade, wipe out over lava, fireball launcher) being dangerous in nature, there was a definite need for a checkpoint that allows the player to respawn just before the trap. The revival stone does exactly this. A statue of an angel serves as a checkpoint that can be activated by the player. Upon activation, the angel statue lights up and the orb held by the angel starts glowing. At a time, a player can have only one checkpoint activated. Upon death, the player respawns at the last and only activated checkpoint.
@@ -137,6 +140,9 @@ The PR for the revival stone is not complete yet, as some fixes are still requir
 </div>
 
 ## Password Locked Door
+
+<div class="github-button" url="https://github.com/Terasology/AdventureAssets/pull/12"></div>
+
 There already existed a door in the Core module that allows for simple opening and closing with player interactions. It has a nice system that takes care of placing the two blocks long door in the world, with a nice texture and cool sound effects. I decided to reuse all of this to create a door that would require a password to unlock.
 
 The password door essentially extends the door from the core module. It uses the existing systems in Core for the basic features and simply overrides over the functionality that needs to change by receiving the respective events with a higher priority. For instance, the ActivateEvent handler in the `PasswordDoorSystem` receives (and consumes) the ActivateEvent with a higher priority than Core's `DoorSystem`. This allows the display of a UI Screen that lets the player enter the password to unlock the door.
