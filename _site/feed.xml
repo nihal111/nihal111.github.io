@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 06 Jul 2017 13:58:20 +0530</pubDate>
-    <lastBuildDate>Thu, 06 Jul 2017 13:58:20 +0530</lastBuildDate>
+    <pubDate>Thu, 06 Jul 2017 15:32:39 +0530</pubDate>
+    <lastBuildDate>Thu, 06 Jul 2017 15:32:39 +0530</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>
@@ -213,7 +213,7 @@ The above should give you an image like &lt;a href=&quot;https://github.com/Tera
 
 &lt;p&gt;Since all of the traps I made were on the network (possessed a NetworkComponent and had entities on both the client side and the server side), altering their settings required a change in one of the components. For instance, let’s consider the Fireball Launcher. On interaction with the Fireball Launcher block, the player sees a Settings screen where he can alter the properties for that Fireball Launcher. On hitting “Ok” on the Settings window, the component change happens from the FireballSettingsScreen class which is launched on the client side and instantiated with the client side Fireball Launcher Root entity. The component change thus happens only on the client entity and isn’t taken into account by the server entity.&lt;/p&gt;
 
-&lt;p&gt;To solve this, I created a new event- &lt;code class=&quot;highlighter-rouge&quot;&gt;SetFireballLauncherEvent&lt;/code&gt;. This event basically carries all the new values that need to be applied to the &lt;code class=&quot;highlighter-rouge&quot;&gt;FireballLauncherComponent&lt;/code&gt;. The event is then received on the Authority/Server system which then makes the change on the server side Fireball Launcher entity. This change is then reflected on the client side Fireball Launcher entities as they replicate the changes made to the server entity. The event can however not be sent to the FireballLauncherRoot entity from the FireballSettingsScreen class since the FireballLauncherRoot entity is the local client entity that does not exist on the server. Instead, the event can be sent to the local player’s character or client entity with the FireballLauncherRoot entity as a parameter.&lt;/p&gt;
+&lt;p&gt;To solve this, I created a new event- &lt;code class=&quot;highlighter-rouge&quot;&gt;SetFireballLauncherEvent&lt;/code&gt;. This event basically carries all the new values that need to be applied to the &lt;code class=&quot;highlighter-rouge&quot;&gt;FireballLauncherComponent&lt;/code&gt;. The event is then received on the Authority/Server system which then makes the change on the server side Fireball Launcher entity. This change is then reflected on the client side Fireball Launcher entities as they replicate the changes made to the server entity. The event can however not be sent to the FireballLauncherRoot entity from the FireballSettingsScreen class. This is because the FireballLauncherRoot entity that the player interacts with, is the client side entity. Making the change on the client side entity would not make the change register on the associated server entity. Instead, the event can be sent to the local player’s character or client entity with the FireballLauncherRoot entity as a parameter.&lt;/p&gt;
 
 &lt;h3 id=&quot;how-does-the-chest-work&quot;&gt;How does the chest work?&lt;/h3&gt;
 &lt;p&gt;All these issues I faced, made me wonder how the chest entity works. The chest opens an Inventory screen on interaction. It has an InventoryComponent and any change made by one client is reflected on any other client.&lt;/p&gt;
@@ -222,7 +222,9 @@ The above should give you an image like &lt;a href=&quot;https://github.com/Tera
 Since the entity has a Network Component, it exists on both the client side and the server side.
 Consider a client opening the chest (by interaction) and adding a sand block to it (the inventory of the chest). This action is performed on the local entity (the one on that client’s side). So simply saving the new InventoryComponent (with an added sand block) on the client side in the client system won’t work since all client chest entities replicate the state of the server entity, which remains unaltered.
 To deal with this, the component change must happen on the server entity which can be accessed only at the Authority system. This can be made possible by sending an event that is received and handled by the Authority/Server system.
-Note that the event cannot be sent to the chest entity (since the player interacts with the chest entity that only exists locally). However, this event can be sent to the player’s character entity with the chest entity as a parameter of the event. The event can then be received and the server side chest entity can be saved with the new InventoryComponent.&lt;/p&gt;
+Note that the event cannot be sent to the client side chest entity (since the player interacts with the client side chest entity, not the one that exists on the server). However, this event can be sent to the player’s character entity with the chest entity as a parameter of the event. The event can then be received and the server side chest entity can be saved with the new InventoryComponent.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt;  Making a change to the client side entity can be done to register the change on the associated server entity. But this requires the entity to be owned by the player and the &lt;code class=&quot;highlighter-rouge&quot;&gt;FieldReplicateType&lt;/code&gt; to be set to &lt;code class=&quot;highlighter-rouge&quot;&gt;OWNER_TO_SERVER_TO_CLIENT&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;Citing from code-&lt;br /&gt;
 &lt;code class=&quot;highlighter-rouge&quot;&gt;InventoryClientSystem&lt;/code&gt; sends an event on the local player’s client entity &lt;a href=&quot;https://github.com/MovingBlocks/Terasology/blob/43f05baf94be707d5e3743300759fb530cf67e0f/modules/Core/src/main/java/org/terasology/logic/inventory/InventoryClientSystem.java#L258-L258&quot;&gt;here&lt;/a&gt;.&lt;br /&gt;
