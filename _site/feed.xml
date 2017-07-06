@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 06 Jul 2017 13:32:23 +0530</pubDate>
-    <lastBuildDate>Thu, 06 Jul 2017 13:32:23 +0530</lastBuildDate>
+    <pubDate>Thu, 06 Jul 2017 13:58:20 +0530</pubDate>
+    <lastBuildDate>Thu, 06 Jul 2017 13:58:20 +0530</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>
@@ -47,6 +47,11 @@ The color and the icon of the right side icon is changed depending on the state.
 The icons that have been included belong to the &lt;a href=&quot;https://octicons.github.com/&quot;&gt;Github Octicon&lt;/a&gt; pack. The stylesheet for the icons is loaded directly by the plugin from &lt;a href=&quot;https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/font/octicons.css&quot;&gt;CDN&lt;/a&gt; and does not need to be included separately.&lt;/p&gt;
 
 &lt;p&gt;This plugin is very minimal and can be easily customised to make it look different. The jQuery code resides in one file, while the CSS code lies in another file.&lt;/p&gt;
+
+&lt;h3 id=&quot;responsive&quot;&gt;Responsive&lt;/h3&gt;
+&lt;p&gt;Since, the plugin is tailor-made to fit my needs, I rely on a single &lt;a href=&quot;https://www.w3schools.com/css/css_rwd_mediaqueries.asp&quot;&gt;media query&lt;/a&gt; to adjust the font and width of the elements to suit a mobile device. This is a screenshot of how it looks on my phone-&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/githubButtonResponsive.png&quot; alt=&quot;githubButtonResponsive&quot; title=&quot;Github Button Responsive&quot; style=&quot;max-height: 800px;&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;usage&quot;&gt;Usage&lt;/h2&gt;
 

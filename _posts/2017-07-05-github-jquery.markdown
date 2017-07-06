@@ -46,6 +46,12 @@ The icons that have been included belong to the [Github Octicon](https://octicon
 
 This plugin is very minimal and can be easily customised to make it look different. The jQuery code resides in one file, while the CSS code lies in another file.
 
+### Responsive
+Since, the plugin is tailor-made to fit my needs, I rely on a single [media query](https://www.w3schools.com/css/css_rwd_mediaqueries.asp) to adjust the font and width of the elements to suit a mobile device. This is a screenshot of how it looks on my phone-
+
+{: .center}
+![githubButtonResponsive]({{ site.baseurl }}/img/githubButtonResponsive.png "Github Button Responsive"){:style="max-height: 800px;"}
+
 ## Usage
 
 Here is the [FIDDLE](https://jsfiddle.net/2r10thcb/).
