@@ -696,3 +696,46 @@ code.highlighter-rouge {
   right: 0.5em;
   top: 50%;
   margin-top: -.6em; }
+
+@media screen and (max-width: 600px) {
+  .github-button {
+    padding: .75em 5em .75em 1em;
+    border-radius: .25em;
+    margin-bottom: .5em; }
+
+  .open-PR-button {
+    box-shadow: 0 0.0625em 0.125em rgba(0, 0, 0, 0.125), inset 0 -0.25em 0 -0.125em rgba(0, 0, 0, 0.125), inset 4em 0 0 -0.7em rgba(20, 160, 0, 0.8), inset -3em 0 0 -0.3em rgba(20, 160, 0, 0.8); }
+
+  .merged-PR-button {
+    box-shadow: 0 0.0625em 0.125em rgba(0, 0, 0, 0.125), inset 0 -0.25em 0 -0.125em rgba(0, 0, 0, 0.125), inset 4em 0 0 -0.7em rgba(30, 144, 255, 0.5), inset -3em 0 0 -0.3em rgba(30, 144, 255, 0.5); }
+
+  .open-issue-button {
+    box-shadow: 0 0.0625em 0.125em rgba(0, 0, 0, 0.125), inset 0 -0.25em 0 -0.125em rgba(0, 0, 0, 0.125), inset 4em 0 0 -0.7em rgba(20, 160, 0, 0.5), inset -3em 0 0 -0.3em rgba(20, 160, 0, 0.5); }
+
+  .closed-issue-button {
+    box-shadow: 0 0.0625em 0.125em rgba(0, 0, 0, 0.125), inset 0 -0.25em 0 -0.125em rgba(0, 0, 0, 0.125), inset 4em 0 0 -0.7em rgba(178, 34, 34, 0.8), inset -3em 0 0 -0.3em rgba(178, 34, 34, 0.8); }
+
+  .number {
+    font-size: 13pt;
+    height: 4em;
+    width: 3em;
+    left: 0.125em;
+    top: 1.25em; }
+
+  .title {
+    margin-left: 3.5em;
+    font-size: 10pt; }
+
+  .meta {
+    margin-left: 4.25em;
+    font-size: 8pt;
+    line-height: 2;
+    /* 16 "px" */ }
+
+  .octicon-clock {
+    margin-left: .333em; }
+
+  .right-icon {
+    right: 0.25em;
+    top: 50%;
+    margin-top: -.6em; } }
