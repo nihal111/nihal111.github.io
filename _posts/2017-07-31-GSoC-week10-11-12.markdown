@@ -61,7 +61,12 @@ Before you proceed any further, I'd like to make it bold and clear that there li
 2. Extract the Omega.
 3. Move the save folder called "Lost" inside `omega796/saves` to the save directory-
 - in Windows, C:/Users/name/Saved Games/Terasology/
-- in Linux, /home/name/.local/share/terasology/saves/
+- in Linux, /home/name/.local/share/terasology/saves/  
+  ***Alternatively***, you can run the game with the `-homedir` flag.  
+- in Windows, run the game from cmd using a command like: `Terasology.x64.exe -homedir`
+  or add the `-homedir` flag to the target field of the shortcut to the exe file.
+- in Linux, modify the run_linux.sh script so that it has a `-homedir` flag at the end, like so:
+  `java -Xms128m -Xmx1536m -jar libs/Terasology.jar -homedir`
 4. Launch the game using the script or the .exe file.
 5. Select Singleplayer -> Lost and load the saved game.
 

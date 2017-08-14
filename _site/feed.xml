@@ -6,9 +6,230 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 14 Aug 2017 09:31:07 +0530</pubDate>
-    <lastBuildDate>Mon, 14 Aug 2017 09:31:07 +0530</lastBuildDate>
+    <pubDate>Tue, 15 Aug 2017 01:07:56 +0530</pubDate>
+    <lastBuildDate>Tue, 15 Aug 2017 01:07:56 +0530</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title>GSoC Wrap Up</title>
+        <description>&lt;style type=&quot;text/css&quot;&gt;
+.collapsiblecontainer {
+width:100%;
+border:1px solid #d3d3d3;
+}
+.collapsiblecontainer div {
+width:100%;
+}
+.collapsiblecontainer .collapsibleheader {
+background-color:#d3d3d3;
+padding: 2px;
+cursor: pointer;
+font-weight: bold;
+}
+.collapsiblecontainer .collapsiblecontent {
+display: none;
+padding : 5px;
+}
+&lt;/style&gt;
+
+&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;/js/github-buttons.js&quot;&gt;&lt;/script&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+$(document)  .ready(function()  {
+$(&quot;.collapsibleheader&quot;)  .click(function ()   {
+$collapsibleheader = $(this)  ;
+//getting the next element
+$collapsiblecontent = $collapsibleheader.next()  ;
+//open up the collapsiblecontent needed - toggle the slide- if visible, slide up, if not slidedown.
+$collapsiblecontent.slideToggle(500, function ()   {
+//execute this after slideToggle is done
+//change text of collapsibleheader based on visibility of collapsiblecontent div
+$collapsibleheader.find(&quot;span:first-child&quot;)  .text(function ()   {
+//change text based on condition
+return $collapsiblecontent.is(&quot;:visible&quot;)   ? &quot;- &quot; : &quot;+ &quot;;
+})  ;
+})  ;
+
+})  ;
+})  ;
+
+&lt;/script&gt;
+
+&lt;p&gt;Finally the time has come for the wrap up post. It has been an amazing experience. I’ve learned a lot over the summer, spending countless days and nights in a row to add new things to this game. The community has been more than helpful. I couldn’t hope for more.&lt;/p&gt;
+
+&lt;p&gt;This wrap up post links to all the work done over the summer. There have been a total of &lt;strong&gt;72 PRs&lt;/strong&gt; and quite a few independent commits in the new modules I’ve created. With over &lt;strong&gt;19,000 lines of code&lt;/strong&gt;, this summer has boosted my Github stats to a whole new level.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/GSoCStreak.png&quot; alt=&quot;GSoCStreak&quot; title=&quot;GSoCStreak&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;final-product&quot;&gt;Final Product&lt;/h2&gt;
+&lt;p&gt;The final product out of my GSoC is a whole new gameplay setting in the world of Terasology. It is a single player gameplay mode called &lt;strong&gt;Lost&lt;/strong&gt;. You take up the role of a player that ends up stranded on a planet with no way left to get back home. Set on an expedition to find signs of life in neighbouring galaxies, you come across several intriguing things that confirm the existence of intelligent life outside your planet. &lt;em&gt;Are you truly lost? Will you ever return home?&lt;/em&gt;&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/lostBackground.png&quot; alt=&quot;lostBackground&quot; title=&quot;Lost&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;To test it out simply follow the below instructions-&lt;/p&gt;
+
+&lt;h4 id=&quot;instructions-to-run-lost&quot;&gt;Instructions to run Lost:&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;Download &lt;a href=&quot;https://slack-files.com/T03G8SB1X-F6N474GS0-867f5f5289&quot;&gt;this&lt;/a&gt; Omega.&lt;/li&gt;
+  &lt;li&gt;Extract the Omega.&lt;/li&gt;
+  &lt;li&gt;Move the save folder called “Lost” inside &lt;code class=&quot;highlighter-rouge&quot;&gt;omega796/saves&lt;/code&gt; to the save directory-
+    &lt;ul&gt;
+      &lt;li&gt;in Windows, C:/Users/name/Saved Games/Terasology/&lt;/li&gt;
+      &lt;li&gt;in Linux, /home/name/.local/share/terasology/saves/&lt;br /&gt;
+&lt;strong&gt;&lt;em&gt;Alternatively&lt;/em&gt;&lt;/strong&gt;, you can run the game with the &lt;code class=&quot;highlighter-rouge&quot;&gt;-homedir&lt;/code&gt; flag.&lt;/li&gt;
+      &lt;li&gt;in Windows, run the game from cmd using a command like: &lt;code class=&quot;highlighter-rouge&quot;&gt;Terasology.x64.exe -homedir&lt;/code&gt;
+or add the &lt;code class=&quot;highlighter-rouge&quot;&gt;-homedir&lt;/code&gt; flag to the target field of the shortcut to the exe file.&lt;/li&gt;
+      &lt;li&gt;in Linux, modify the run_linux.sh script so that it has a &lt;code class=&quot;highlighter-rouge&quot;&gt;-homedir&lt;/code&gt; flag at the end, like so:
+&lt;code class=&quot;highlighter-rouge&quot;&gt;java -Xms128m -Xmx1536m -jar libs/Terasology.jar -homedir&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Launch the game using the script or the .exe file.&lt;/li&gt;
+  &lt;li&gt;Select Singleplayer -&amp;gt; Lost and load the saved game.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;list-of-new-modules-created-&quot;&gt;List of new modules created-&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Terasology/AdvancedBehaviors&quot;&gt;Terasology/AdvancedBehaviors&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Terasology/WorldlyTooltipAPI&quot;&gt;Terasology/WorldlyTooltipAPI&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Terasology/WoodAndStoneCraftingJournal&quot;&gt;Terasology/WoodAndStoneCraftingJournal&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Terasology/AdventureAssets&quot;&gt;Terasology/AdventureAssets&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Terasology/Lost&quot;&gt;Terasology/Lost&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/newModules.png&quot; alt=&quot;newModules&quot; title=&quot;newModules&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;list-of-repositories-contributed-to-&quot;&gt;List of repositories contributed to-&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/MovingBlocks/Terasology&quot;&gt;Engine- MovingBlocks/Terasology&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/engine.png&quot; alt=&quot;engine&quot; title=&quot;engine&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Terasology/WildAnimals&quot;&gt;Terasology/WildAnimals&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Terasology/StructureTemplates&quot;&gt;Terasology/StructureTemplates&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Terasology/Books&quot;&gt;Terasology/Books&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Terasology/WorldlyTooltip&quot;&gt;Terasology/WorldlyTooltip&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Terasology/Projectile&quot;&gt;Terasology/Projectile&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Terasology/Pathfinding&quot;&gt;Terasology/Pathfinding&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Terasology/Journal&quot;&gt;Terasology/Journal&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Terasology/Scenario&quot;&gt;Terasology/Scenario&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Terasology/Thirst&quot;&gt;Terasology/Thirst&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Terasology/Hunger&quot;&gt;Terasology/Hunger&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/oldModules.png&quot; alt=&quot;oldModules&quot; title=&quot;oldModules&quot; style=&quot;max-height: 700px;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;list-of-pull-requests-&quot;&gt;List of Pull Requests-&lt;/h3&gt;
+
+&lt;p&gt;Here is a &lt;a href=&quot;https://github.com/pulls?utf8=%E2%9C%93&amp;amp;q=is%3Apr+is%3Amerged+author%3Anihal111+created%3A2017-05-04..2017-08-15+&quot;&gt;list of pull requests&lt;/a&gt; from the start of GSoC up until now.&lt;/p&gt;
+
+&lt;div class=&quot;collapsiblecontainer&quot;&gt;
+&lt;div class=&quot;collapsibleheader&quot;&gt;&lt;span&gt;+ &lt;/span&gt;&lt;span&gt;Click here to view all PRs?&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;collapsiblecontent&quot;&gt;
+&lt;a href=&quot;https://github.com/MovingBlocks/Terasology/pull/3065&quot;&gt;&lt;strong&gt;MovingBlocks/Terasology&lt;/strong&gt; Added setSpawnLocation command&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/AdventureAssets/pull/20&quot;&gt;&lt;strong&gt;Terasology/AdventureAssets&lt;/strong&gt; Added MCQ Button Door&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/MovingBlocks/Terasology/pull/3061&quot;&gt;&lt;strong&gt;MovingBlocks/Terasology&lt;/strong&gt; Added removeAllWidgets method API UI&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/MovingBlocks/Terasology/pull/3033&quot;&gt;&lt;strong&gt;MovingBlocks/Terasology&lt;/strong&gt; Dead players alive-d on join&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/StructureTemplates/pull/20&quot;&gt;&lt;strong&gt;Terasology/StructureTemplates&lt;/strong&gt; Consumes AttackEvent for BlockRegions&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/MovingBlocks/Terasology/pull/3030&quot;&gt;&lt;strong&gt;MovingBlocks/Terasology&lt;/strong&gt; PlayerDeath event should be sent to character entity&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/Hunger/pull/12&quot;&gt;&lt;strong&gt;Terasology/Hunger&lt;/strong&gt; Fix for Hunger related Alive/Death handling&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/Thirst/pull/5&quot;&gt;&lt;strong&gt;Terasology/Thirst&lt;/strong&gt; Fix for Thirst related Alive/Death handling&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/AdventureAssets/pull/19&quot;&gt;&lt;strong&gt;Terasology/AdventureAssets&lt;/strong&gt; Added NoInteraction component&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/MovingBlocks/Terasology/pull/3024&quot;&gt;&lt;strong&gt;MovingBlocks/Terasology&lt;/strong&gt; Checking isHeadless from DisplayDevice&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/MovingBlocks/Terasology/pull/3020&quot;&gt;&lt;strong&gt;MovingBlocks/Terasology&lt;/strong&gt; Change ActivationPredicted to consumable event&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/StructureTemplates/pull/18&quot;&gt;&lt;strong&gt;Terasology/StructureTemplates&lt;/strong&gt; Consuming ActivationPredicted event&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/Scenario/pull/33&quot;&gt;&lt;strong&gt;Terasology/Scenario&lt;/strong&gt; Added Protected Regions and Resizing functionality&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/Projectile/pull/4&quot;&gt;&lt;strong&gt;Terasology/Projectile&lt;/strong&gt; MaxDistance check during displacement calculation&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/AdventureAssets/pull/18&quot;&gt;&lt;strong&gt;Terasology/AdventureAssets&lt;/strong&gt; Structure Template Integration fixes&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/Books/pull/15&quot;&gt;&lt;strong&gt;Terasology/Books&lt;/strong&gt; Multiplayer + newline fix&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/AdventureAssets/pull/17&quot;&gt;&lt;strong&gt;Terasology/AdventureAssets&lt;/strong&gt; Swinging Blade is multiplayer ready&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/AdventureAssets/pull/16&quot;&gt;&lt;strong&gt;Terasology/AdventureAssets&lt;/strong&gt; WipeOut is multiplayer ready&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/AdventureAssets/pull/15&quot;&gt;&lt;strong&gt;Terasology/AdventureAssets&lt;/strong&gt; Fixed Fireball Launcher for multiplayer&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/AdventureAssets/pull/14&quot;&gt;&lt;strong&gt;Terasology/AdventureAssets&lt;/strong&gt; Door works in multiplayer&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/AdventureAssets/pull/13&quot;&gt;&lt;strong&gt;Terasology/AdventureAssets&lt;/strong&gt; Password Door is now multiplayer ready&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/MovingBlocks/Terasology/pull/2994&quot;&gt;&lt;strong&gt;MovingBlocks/Terasology&lt;/strong&gt; Added door related events&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/MovingBlocks/Terasology/pull/2993&quot;&gt;&lt;strong&gt;MovingBlocks/Terasology&lt;/strong&gt; FloatingTextRenderer accepts multiple \n separated lines&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/MovingBlocks/Terasology/pull/2988&quot;&gt;&lt;strong&gt;MovingBlocks/Terasology&lt;/strong&gt; Multiline UIText, enter produces newline&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/MovingBlocks/Terasology/pull/2987&quot;&gt;&lt;strong&gt;MovingBlocks/Terasology&lt;/strong&gt; Store DoorRegion prefab as component parameter&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/AdventureAssets/pull/12&quot;&gt;&lt;strong&gt;Terasology/AdventureAssets&lt;/strong&gt; Added a UI Screen Password locked Door&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/MovingBlocks/Terasology/pull/2983&quot;&gt;&lt;strong&gt;MovingBlocks/Terasology&lt;/strong&gt; Separated spawnLocation calculation from respawnPlayer method&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/AdventureAssets/pull/11&quot;&gt;&lt;strong&gt;Terasology/AdventureAssets&lt;/strong&gt; Add the Revival Stone&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/AdventureAssets/pull/10&quot;&gt;&lt;strong&gt;Terasology/AdventureAssets&lt;/strong&gt; Moved duplicate methods to utility class&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/AdventureAssets/pull/9&quot;&gt;&lt;strong&gt;Terasology/AdventureAssets&lt;/strong&gt; Remember rotation after mining of trap blocks&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/Projectile/pull/3&quot;&gt;&lt;strong&gt;Terasology/Projectile&lt;/strong&gt; Revert to old constructor&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/AdventureAssets/pull/8&quot;&gt;&lt;strong&gt;Terasology/AdventureAssets&lt;/strong&gt; Added more parameters for Fireball with Structure Template integration&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/Projectile/pull/2&quot;&gt;&lt;strong&gt;Terasology/Projectile&lt;/strong&gt; Changed CollisionGroup filter to ALL&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/Projectile/pull/1&quot;&gt;&lt;strong&gt;Terasology/Projectile&lt;/strong&gt; Added new event constructor for configurable maxDistance&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/DamagingBlocks/pull/6&quot;&gt;&lt;strong&gt;Terasology/DamagingBlocks&lt;/strong&gt; Reverted the AliveCharacter check&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/AdventureAssets/pull/6&quot;&gt;&lt;strong&gt;Terasology/AdventureAssets&lt;/strong&gt; Added Fireball Launcher&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/MovingBlocks/Terasology/pull/2982&quot;&gt;&lt;strong&gt;MovingBlocks/Terasology&lt;/strong&gt; Prevents player entity from being destroyed after death onDamage&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/DamagingBlocks/pull/5&quot;&gt;&lt;strong&gt;Terasology/DamagingBlocks&lt;/strong&gt; Added Alive Character check&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/AdventureAssets/pull/5&quot;&gt;&lt;strong&gt;Terasology/AdventureAssets&lt;/strong&gt; Added Wipeout&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/AdventureAssets/pull/4&quot;&gt;&lt;strong&gt;Terasology/AdventureAssets&lt;/strong&gt; Changed trap placement approach to root block&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/AdventureAssets/pull/3&quot;&gt;&lt;strong&gt;Terasology/AdventureAssets&lt;/strong&gt; Changed trapPlaceholder block shape and fixed readme&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/StructureTemplates/pull/16&quot;&gt;&lt;strong&gt;Terasology/StructureTemplates&lt;/strong&gt; Moved rotation logic&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/MovingBlocks/Terasology/pull/2973&quot;&gt;&lt;strong&gt;MovingBlocks/Terasology&lt;/strong&gt; Fixes &lt;code class=&quot;highlighter-rouge&quot;&gt;dumpEntities&lt;/code&gt; console command&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/AdventureAssets/pull/2&quot;&gt;&lt;strong&gt;Terasology/AdventureAssets&lt;/strong&gt; Added SwingingBlade&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/StructureTemplates/pull/15&quot;&gt;&lt;strong&gt;Terasology/StructureTemplates&lt;/strong&gt; Added rotation logic for spawning entities&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/AdventureAssets/pull/1&quot;&gt;&lt;strong&gt;Terasology/AdventureAssets&lt;/strong&gt; Add module.txt and gitignore&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/AdvancedBehaviors/pull/7&quot;&gt;&lt;strong&gt;Terasology/AdvancedBehaviors&lt;/strong&gt; Added alive character check&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/Pathfinding/pull/31&quot;&gt;&lt;strong&gt;Terasology/Pathfinding&lt;/strong&gt; Added alive character check&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/WildAnimals/pull/16&quot;&gt;&lt;strong&gt;Terasology/WildAnimals&lt;/strong&gt; Added alive character component&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/GooeysQuests/pull/14&quot;&gt;&lt;strong&gt;Terasology/GooeysQuests&lt;/strong&gt; Added alive character component&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/Journal/pull/4&quot;&gt;&lt;strong&gt;Terasology/Journal&lt;/strong&gt; Added Recipe and Image paragraph&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/WoodCrafting/pull/3&quot;&gt;&lt;strong&gt;Terasology/WoodCrafting&lt;/strong&gt; Moved generators to NeoTTA&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/NeoTTA/pull/1&quot;&gt;&lt;strong&gt;Terasology/NeoTTA&lt;/strong&gt; Moved generators from WoodCrafting&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/MovingBlocks/Terasology/pull/2962&quot;&gt;&lt;strong&gt;MovingBlocks/Terasology&lt;/strong&gt; Fixed eye height movement debug command&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/PhysicalStats/pull/3&quot;&gt;&lt;strong&gt;Terasology/PhysicalStats&lt;/strong&gt; Fixes missing save component bugs&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/MovingBlocks/Terasology/pull/2958&quot;&gt;&lt;strong&gt;MovingBlocks/Terasology&lt;/strong&gt; Do not destroy player entity completely on death&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/Journal/pull/3&quot;&gt;&lt;strong&gt;Terasology/Journal&lt;/strong&gt; Adds different colored entries for Unread Journal entries&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/Pathfinding/pull/30&quot;&gt;&lt;strong&gt;Terasology/Pathfinding&lt;/strong&gt; Fixed intelligent flee&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/AdvancedBehaviors/pull/6&quot;&gt;&lt;strong&gt;Terasology/AdvancedBehaviors&lt;/strong&gt; Added intelligent flee&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/Pathfinding/pull/29&quot;&gt;&lt;strong&gt;Terasology/Pathfinding&lt;/strong&gt; Added intelligent flee&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/AdvancedBehaviors/pull/5&quot;&gt;&lt;strong&gt;Terasology/AdvancedBehaviors&lt;/strong&gt; Refactor&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/AdvancedBehaviors/pull/3&quot;&gt;&lt;strong&gt;Terasology/AdvancedBehaviors&lt;/strong&gt; Added the fleeInProximity package&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/WildAnimals/pull/15&quot;&gt;&lt;strong&gt;Terasology/WildAnimals&lt;/strong&gt; Added a scaredDeer&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/AdvancedBehaviors/pull/2&quot;&gt;&lt;strong&gt;Terasology/AdvancedBehaviors&lt;/strong&gt; Added followInProximity package&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/WildAnimals/pull/14&quot;&gt;&lt;strong&gt;Terasology/WildAnimals&lt;/strong&gt; Added a friendlyDeer&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/WildAnimals/pull/13&quot;&gt;&lt;strong&gt;Terasology/WildAnimals&lt;/strong&gt; Moved packages to AdvancedBehaviors** module&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/AdvancedBehaviors/pull/1&quot;&gt;&lt;strong&gt;Terasology/AdvancedBehaviors&lt;/strong&gt; Moved packages from WildAnimals** module&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/WildAnimals/pull/12&quot;&gt;&lt;strong&gt;Terasology/WildAnimals&lt;/strong&gt; AttackInProximity- adds hostile-stray behavior switching&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/FunnyBlocks/pull/11&quot;&gt;&lt;strong&gt;Terasology/FunnyBlocks&lt;/strong&gt; Portals work in multiplayer&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/WildAnimals/pull/10&quot;&gt;&lt;strong&gt;Terasology/WildAnimals&lt;/strong&gt; Added aggressiveDeer&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/WorldlyTooltip/pull/7&quot;&gt;&lt;strong&gt;Terasology/WorldlyTooltip&lt;/strong&gt; Configured with WorldlyTooltipAPI module&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/MovingBlocks/Terasology/pull/2932&quot;&gt;&lt;strong&gt;MovingBlocks/Terasology&lt;/strong&gt; Fixes the blocker #2913&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/WorldlyTooltip/pull/6&quot;&gt;&lt;strong&gt;Terasology/WorldlyTooltip&lt;/strong&gt; Added character entity support&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/MovingBlocks/Terasology/pull/2930&quot;&gt;&lt;strong&gt;MovingBlocks/Terasology&lt;/strong&gt; BehaviorSystem- use cachedInterpreters&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/MovingBlocks/Terasology/pull/2929&quot;&gt;&lt;strong&gt;MovingBlocks/Terasology&lt;/strong&gt; Worldly tooltip addition for character entities&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://github.com/Terasology/WildAnimals/pull/9&quot;&gt;&lt;strong&gt;Terasology/WildAnimals&lt;/strong&gt; Worldly tooltip Integration&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;All in all, it has been a thrilling summer. By this time I am familiar with a good part of the game’s codebase. I would love to continue contributing, albeit in different capacities. Let’s hope real life doesn’t get in the way too much. Also, GCI is almost here and another storm’s coming!&lt;/p&gt;
+
+&lt;p&gt;Here’s a snap from one of the many exciting multiplayer play test sessions-&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/multiplayerPlayTest.png&quot; alt=&quot;multiplayerPlayTest&quot; title=&quot;multiplayerPlayTest&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 14 Aug 2017 00:00:00 +0530</pubDate>
+        <link>http://localhost:4000/2017/08/14/GSoC-wrap-up.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/08/14/GSoC-wrap-up.html</guid>
+        
+        <category>open source</category>
+        
+        <category>MovingBlocks</category>
+        
+        <category>Terasology</category>
+        
+        <category>GSoC</category>
+        
+        
+      </item>
     
       <item>
         <title>GSoC Week 10, 11 and 12: Lost</title>
@@ -68,7 +289,12 @@ return $collapsiblecontent.is(&quot;:visible&quot;) ? &quot;- &quot; : &quot;+ &
   &lt;li&gt;Move the save folder called “Lost” inside &lt;code class=&quot;highlighter-rouge&quot;&gt;omega796/saves&lt;/code&gt; to the save directory-
     &lt;ul&gt;
       &lt;li&gt;in Windows, C:/Users/name/Saved Games/Terasology/&lt;/li&gt;
-      &lt;li&gt;in Linux, /home/name/.local/share/terasology/saves/&lt;/li&gt;
+      &lt;li&gt;in Linux, /home/name/.local/share/terasology/saves/&lt;br /&gt;
+&lt;strong&gt;&lt;em&gt;Alternatively&lt;/em&gt;&lt;/strong&gt;, you can run the game with the &lt;code class=&quot;highlighter-rouge&quot;&gt;-homedir&lt;/code&gt; flag.&lt;/li&gt;
+      &lt;li&gt;in Windows, run the game from cmd using a command like: &lt;code class=&quot;highlighter-rouge&quot;&gt;Terasology.x64.exe -homedir&lt;/code&gt;
+or add the &lt;code class=&quot;highlighter-rouge&quot;&gt;-homedir&lt;/code&gt; flag to the target field of the shortcut to the exe file.&lt;/li&gt;
+      &lt;li&gt;in Linux, modify the run_linux.sh script so that it has a &lt;code class=&quot;highlighter-rouge&quot;&gt;-homedir&lt;/code&gt; flag at the end, like so:
+&lt;code class=&quot;highlighter-rouge&quot;&gt;java -Xms128m -Xmx1536m -jar libs/Terasology.jar -homedir&lt;/code&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;Launch the game using the script or the .exe file.&lt;/li&gt;
@@ -1470,214 +1696,6 @@ Implementing taming in game is still a bonus item, probably something I’d get 
         <pubDate>Sun, 21 May 2017 00:00:00 +0530</pubDate>
         <link>http://localhost:4000/2017/05/21/GSoC-week3.html</link>
         <guid isPermaLink="true">http://localhost:4000/2017/05/21/GSoC-week3.html</guid>
-        
-        <category>open source</category>
-        
-        <category>MovingBlocks</category>
-        
-        <category>Terasology</category>
-        
-        <category>GSoC</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>GSoC Week 1 and 2: Wild Animals Behavior System</title>
-        <description>&lt;style type=&quot;text/css&quot;&gt;
-    .collapsiblecontainer {
-    width:100%;
-    border:1px solid #d3d3d3;
-}
-.collapsiblecontainer div {
-    width:100%;
-}
-.collapsiblecontainer .collapsibleheader {
-    background-color:#d3d3d3;
-    padding: 2px;
-    cursor: pointer;
-    font-weight: bold;
-}
-.collapsiblecontainer .collapsiblecontent {
-    display: none;
-    padding : 5px;
-}
-&lt;/style&gt;
-
-&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js&quot;&gt;&lt;/script&gt;
-
-&lt;script type=&quot;text/javascript&quot; src=&quot;/js/github-buttons.js&quot;&gt;&lt;/script&gt;
-
-&lt;script type=&quot;text/javascript&quot;&gt;
-$(document).ready(function(){
-    $(&quot;.collapsibleheader&quot;).click(function () {
-        $collapsibleheader = $(this);
-        //getting the next element
-        $collapsiblecontent = $collapsibleheader.next();
-        //open up the collapsiblecontent needed - toggle the slide- if visible, slide up, if not slidedown.
-        $collapsiblecontent.slideToggle(500, function () {
-            //execute this after slideToggle is done
-            //change text of collapsibleheader based on visibility of collapsiblecontent div
-            $collapsibleheader.find(&quot;span:first-child&quot;).text(function () {
-                //change text based on condition
-                return $collapsiblecontent.is(&quot;:visible&quot;) ? &quot;- &quot; : &quot;+ &quot;;
-            });
-        });
-
-    });
-}); 
-
-&lt;/script&gt;
-
-&lt;p&gt;The start to GSoC has been smooth. Currently as I write this wrap up post for week one and two, my work has already crossed the week 3 mark according to my proposal.&lt;/p&gt;
-
-&lt;h1 id=&quot;what-have-i-been-up-to&quot;&gt;What have I been up to?&lt;/h1&gt;
-&lt;p&gt;I’ve been adding new features to the &lt;a href=&quot;https://github.com/Terasology/WildAnimals&quot;&gt;WildAnimals&lt;/a&gt; module. The module only had a deer that idly moved around and did nothing else. When hit it would lose health and ultimately just disappear as a glitch when it’s health reached 0.&lt;/p&gt;
-
-&lt;p&gt;A lot has happened since and at this point there are 4 variants of the deer that exhibit very different behaviors- &lt;code class=&quot;highlighter-rouge&quot;&gt;deer&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;insensitiveDeer&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;aggressiveDeer&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;hostileDeer&lt;/code&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/WildAnimals/pull/10&quot;&gt;&lt;/div&gt;
-
-&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/WildAnimals/pull/12&quot;&gt;&lt;/div&gt;
-
-&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/Pathfinding/pull/28&quot;&gt;&lt;/div&gt;
-
-&lt;p&gt;Before we get into details of how these were built, let’s have a look at a few preview videos:&lt;/p&gt;
-
-&lt;div class=&quot;videowrapper&quot;&gt;
-    &lt;iframe width=&quot;1024&quot; height=&quot;768&quot; src=&quot;https://www.youtube.com/embed/unAqMHKkSC0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;div class=&quot;videowrapper&quot;&gt;
-    &lt;iframe width=&quot;1024&quot; height=&quot;768&quot; src=&quot;https://www.youtube.com/embed/SjuMzl-5qIc&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;importing-an-animal-in-game&quot;&gt;Importing an animal in game&lt;/h3&gt;
-&lt;p&gt;First an animal model is made in blender. After an artist finishes up a model, gets it rigged, UV Mapped and adds animations, it is pushed to the &lt;a href=&quot;https://github.com/MetaTerasology/WildAnimals/&quot;&gt;Meta repository&lt;/a&gt; that holds all the blender files for creature models. There is a comprehensive guide on how to add creatures in game &lt;a href=&quot;https://github.com/Terasology/TutorialAssetSystem/wiki/Add-a-creature&quot;&gt;here&lt;/a&gt; that I’ve written. Also there is one written by flo, &lt;a href=&quot;https://github.com/MovingBlocks/TeraMisc/blob/master/blender_addons/io_md5_exporter/tutorial/Tutorial.md&quot;&gt;here&lt;/a&gt;. Thanks to &lt;a href=&quot;https://github.com/quaternius&quot;&gt;quaternius&lt;/a&gt;, I’ve been getting some help with animal models.&lt;/p&gt;
-
-&lt;h3 id=&quot;working-with-the-animal-in-game&quot;&gt;Working with the animal in game&lt;/h3&gt;
-&lt;p&gt;Each animal has a prefab file located &lt;a href=&quot;https://github.com/Terasology/WildAnimals/tree/master/assets/prefabs/animals&quot;&gt;here&lt;/a&gt; that details the characterstics of the animal as components. To know more about components and the Entity system architecture, go &lt;a href=&quot;https://github.com/MovingBlocks/Terasology/wiki/Entity-System-Architecture&quot;&gt;here&lt;/a&gt;.
-Once an animal prefab is made, it can be spawned in game by typing &lt;code class=&quot;highlighter-rouge&quot;&gt;spawnPrefab prefabName&lt;/code&gt; in the console.&lt;/p&gt;
-
-&lt;h1 id=&quot;event-driven-behavior-system&quot;&gt;Event driven Behavior System&lt;/h1&gt;
-
-&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/WildAnimals/pull/8&quot;&gt;&lt;/div&gt;
-
-&lt;p&gt;The four different deer I mentioned really have the same animal model, animations and texture. They only vary in behavior. This behavior handling forms the crux of the WildAnimals module. Let’s dive into a little more detail.&lt;/p&gt;
-
-&lt;p&gt;The Behavior System built in the engine allows something known as behavior trees, to define a certain behavior.&lt;/p&gt;
-
-&lt;div class=&quot;collapsiblecontainer&quot;&gt;
-&lt;div class=&quot;collapsibleheader&quot;&gt;&lt;span&gt;+ &lt;/span&gt;&lt;span&gt;What is a behavior tree?&lt;/span&gt;&lt;/div&gt;
-&lt;div class=&quot;collapsiblecontent&quot;&gt;   
-	A behavior tree is used to define conditional or sequential behavior for an entity. A behavior tree essentially has a set of nodes, each node executes some logic and has a condition set for when it would return a status of FAILURE, SUCCESS or simply keep RUNNING. An involved behavior tree can switch among different nodes based on the previous or child node's status.
-	&lt;br /&gt;
-	This &lt;a target=&quot;_blank&quot; href=&quot;http://forum.terasology.org/threads/behavior-trees.882/&quot;&gt;forum post&lt;/a&gt; and &lt;a target=&quot;_blank&quot; href=&quot;https://www.youtube.com/watch?v=gPwBSwq4_mg&quot;&gt;youtube video&lt;/a&gt; would really give you a feel for behavior trees.
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;These behavior trees are central to the event driven behavior system. Each behavior tree defines a particular type of behavior that can be applied to an entity, for eg-&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;A “&lt;strong&gt;stray&lt;/strong&gt;” behavior can have a deer idly roam around, walk and stand for a while.&lt;/li&gt;
-  &lt;li&gt;A “&lt;strong&gt;flee&lt;/strong&gt;” behavior can have the deer run away from the player until it’s at a safe (defined minimum) distance.&lt;/li&gt;
-  &lt;li&gt;A “&lt;strong&gt;hostile&lt;/strong&gt;” behavior can have the deer close in on the player and then inflict damage.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The “stray” behavior tree that exists in the &lt;a href=&quot;https://github.com/Terasology/Pathfinding&quot;&gt;Pathfinding module&lt;/a&gt; module looks like this:&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/strayBT.png&quot; alt=&quot;stray&quot; title=&quot;stray BT&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Each of these behavior trees can be applied to the entity by simply defining it in the entity’s prefab under the BehaviorComponent. But what’s needed for the animals, is a behavior system that controls what behavior the animal has at any point in time. A system that controls when the behavior needs to switch, what should trigger such a switch and which behavior takes a higher precedence. Enter Event Driven Behavior System.&lt;/p&gt;
-
-&lt;div class=&quot;collapsiblecontainer&quot;&gt;
-&lt;div class=&quot;collapsibleheader&quot;&gt;&lt;span&gt;+ &lt;/span&gt;&lt;span&gt;What is an event?&lt;/span&gt;&lt;/div&gt;
-&lt;div class=&quot;collapsiblecontent&quot;&gt;   
-    An event is an action that propagates through all systems in the game to trigger a change or execute some logic. An event is sent to exactly one entity. An event can be received by event handlers, which can add filters for selecting only entities having a certain set of components. Different event handlers can receive the same event in an order of precedence, by specifying a priority.
-    &lt;br /&gt;
-    This &lt;a target=&quot;_blank&quot; href=&quot;https://github.com/MovingBlocks/Terasology/wiki/Events-and-Systems&quot;&gt;wiki page&lt;/a&gt; describes in detail how events work.
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;The WildAnimals module has different packages for different behaviors like “FleeOnHit”, “AttackOnHit”, “AttackInProximity”, “StrayIfIdle”, etc. Each of these packages consists of a system and a component. If such a component is attached to an entity, the respective system takes care of handling the behavior changes associated with that package.&lt;/p&gt;
-
-&lt;div class=&quot;collapsiblecontainer&quot;&gt;
-&lt;div class=&quot;collapsibleheader&quot;&gt;&lt;span&gt;+ &lt;/span&gt;&lt;span&gt;How does it work?&lt;/span&gt;&lt;/div&gt;
-&lt;div class=&quot;collapsiblecontent&quot;&gt;
-    The component from the package whose behavior is to be implemented in an entity, is added to the entity's prefab. Whenever an action/event happens in the game that could trigger a change in the behavior of an entity, an UpdateBehaviorEvent (a consumable event) is sent to the entity. This event is received by event handlers present in any such package's system. These event handlers receive the event based on a priority and trigger the behavior switch by changing the entity's behavior tree inside it's BehaviorComponent.
-    &lt;br /&gt;&lt;br /&gt;
-    Let's take the example of the &quot;FleeOnHit&quot; and &quot;StrayIfIdle&quot; package, the first such packages. &lt;br /&gt;
-    &lt;ul&gt;
-    &lt;li&gt;
-    The FleeOnHit package has a FleeOnHitComponent, which when attached to any wild animal entity would let it exhibit the &quot;flee&quot; behavior when it is hit. &lt;br /&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-    The StrayIfIdle package has a StrayIfIdleComponent, which when attached to any wild animal entity would let it exhibit the stray behavior when it is idle and has no other behavior that could get triggered. &lt;br /&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-    For the deer, by default it has a behavior of &quot;stray&quot; defined in it's prefab.&lt;br /&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-    The FleeOnHitSystem watches for the OnDamageEvent to happen to an entity which has the WildAnimalComponent and FleeOnHitComponent. It saves the event instigator (damage inflictor) to the FleeOnHitComponent and then sends an UpdateBehaviorEvent to the entity to trigger a change if it's needed.
-    &lt;/li&gt;
-    &lt;li&gt;
-    The UpdateBehaviorEvent is received by the FleeOnHitSystem. It checks for the instigator inside &quot;FleeOnHit&quot; to be non-null, triggers the behavior switch to &quot;flee&quot; and consumes the UpdateBehaviorEvent.&lt;br /&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-    The StrayIfIdleSystem also receives the UpdateBehaviorSystem, but with a lower priority.
-    &lt;/li&gt;
-    &lt;li&gt;
-    When the deer reaches a safe (defined minimum) distance from the player, the instigator in the FleeOnHitComponent is set to null and another UpdateBehaviorEvent is fired from the CheckFleeStopNode (a part of the &quot;flee&quot; Behavior Tree).&lt;br /&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-    This event is not consumed by the FleeOnHitSystem event handler as the instigator in FleeOnHitComponent is null. It then is received by the StrayIfIdleSystem event handler, which triggers a behavior switch to &quot;stray&quot; and consumes the event.
-    &lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;br /&gt;
-    The behavior switches simply happen based on the different priorities the event handlers in the different packages have.
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;advantages-of-the-event-driven-behavior-system&quot;&gt;Advantages of the Event Driven Behavior System&lt;/h3&gt;
-&lt;p&gt;There are quite a few advantages of using this approach for dealing with complex and multiple behaviors.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Easily Extendable and Reusable&lt;/strong&gt;: A package consisting of a particular conditional behavior can be used for multiple animals/entities. For eg- the “FleeOnHit” package made for the deer can easily be added to other animals like cows, dogs etc. Adding a behavior is as simple as attaching a component.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Efficient&lt;/strong&gt;: There are no constant checks and running loops. The behavior switch is instant.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Simple Behavior Trees&lt;/strong&gt;: The behavior trees remain bare-bones and minimal, as they have to deal with only one behavior and not worry about switching behavior.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Neat Prefabs&lt;/strong&gt;: The prefab for the animal now gives a good picture of what all behaviors it exhibits. A simple deer’s prefab would just have the “FleeOnHit” and “StrayIfIdle” components. A deer’s prefab could look like this:
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&quot;FleesOnHit&quot;: {
-&quot;minDistance&quot;: 15.0
-},
-&quot;EatsFromBlockIfHungry&quot;: {
- &quot;block&quot;: &quot;grass&quot;,
- &quot;maxWalkDistance&quot;: 4
-},
-&quot;AttractedByHoldItems&quot;: {
- &quot;items&quot;: [&quot;apple&quot;, &quot;nut&quot;]
-}
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Clear order of precedence&lt;/strong&gt;: Different behaviors can be given different weights as per priority. A hungry deer when hurt would run for it’s life instead of looking for food. A priority list of behaviors could look like this:
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; ensure safety (flee if recently damaged)
- ensure not hungry
- ensure not thirsty
- ensure not tired
- ensure not curious (has not watched player / player action / player item recently)
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Easy development&lt;/strong&gt;: With this system, someone who’s making the “EatIfHungry” package does not have to worry about what will happen if the animal is hit when it’s hungry. All he has to do is assign the event handler for the “EatIfHungry” package a lesser priority than the “FleeOnHit” package’s event handler.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The post went longer than I had expected it to. The next post would contain details of the deer that have been implemented and maybe new creatures! Most deer at this point are just placeholders for other animals whose models aren’t ready yet. Thanks to &lt;a href=&quot;http://forum.terasology.org/members/florian.1335/&quot;&gt;flo&lt;/a&gt; for all his help lately. The whole event driven behavior system idea was born out of a discussion with him. He’s been really helpful in getting my PRs reviewed and merged too.&lt;/p&gt;
-
-&lt;p&gt;In other news, I was away for 3 days (10th to 12th May) for the &lt;a href=&quot;https://www.acadaccelerator.com/Home/CFDShowCase&quot;&gt;Microsoft code.fun.do SHOWCASE event&lt;/a&gt; that was held in Hyderabad. The trip was fun with sponsored flight trips and hotel stay. Have to catch up with lost time on GSoC though.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 08 May 2017 00:00:00 +0530</pubDate>
-        <link>http://localhost:4000/2017/05/08/GSoC-week1-2.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/05/08/GSoC-week1-2.html</guid>
         
         <category>open source</category>
         
