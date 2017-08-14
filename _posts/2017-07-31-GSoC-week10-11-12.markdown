@@ -57,9 +57,9 @@ This post breaks a long silence. Most of the work in the last three weeks has be
 Before you proceed any further, I'd like to make it bold and clear that there lie **SPOILERS AHEAD**. I would highly recommend you give a shot to the game, as instructed below, before you move any further.
 
 ## Instructions to run Lost:
-1. Download [this](https://slack-files.com/T03G8SB1X-F6GSEKGLU-87475679ce) Omega.
+1. Download [this](https://slack-files.com/T03G8SB1X-F6N474GS0-867f5f5289) Omega.
 2. Extract the Omega.
-3. Move the save folder called "Lost" inside `omega788/saves` to the save directory-
+3. Move the save folder called "Lost" inside `omega796/saves` to the save directory-
 - in Windows, C:/Users/name/Saved Games/Terasology/
 - in Linux, /home/name/.local/share/terasology/saves/
 4. Launch the game using the script or the .exe file.
@@ -89,7 +89,7 @@ You can find the full Lore document [here](https://docs.google.com/document/d/1G
 
 With all the lore ready in a Google Doc, it was time to bring everything in-game.
 
-## Making the Books-
+### Making the Books-
 Most of the game revolves around the usage of books and the journal to convey and progress the story. There are a total of 6 books that were made. Three of these books can be found in treasure chests serving as instructions on usage of specific ingredients (kept alongside in the treasure chest) to make the catapult portal. The most crucial book is the book that carries all the secrets, mainly directions to puzzles and treasures. There is one book inside the hut that hints the player to look in the well for the Book of Secrets. There is another book that lies in a chest located inside the crash site where the player spawns. This book simply has stories on space exploration, serves as light reading. The list of books is as follows-
 
 1. Space Exploration Stories (Editable)
@@ -100,10 +100,11 @@ Most of the game revolves around the usage of books and the journal to convey an
 6. Treasure Chest 3- Facade of Truth Book (Read-Only)
 
 ### Antrum Sabre-
-The word "antrum" is latin for cave or hole. The antrum sabre is an item that the player uses to make a wormhole (a connection in space-time), to travel huge distances in a few seconds. This tool however becomes dysfunctional when the player arrives at the new planet.
 
 {: .center}
-![antrumSabre]({{ site.baseurl }}/img/antrumSabre.png "antrumSabre"){:style="max-height: 100px;"}
+![antrumSabre]({{ site.baseurl }}/img/antrumSabre.jpg "antrumSabre"){:style="max-height: 100px;"}
+
+The word "antrum" is latin for cave or hole. The antrum sabre is an item that the player uses to make a wormhole (a connection in space-time), to travel huge distances in a few seconds. This tool however becomes dysfunctional when the player arrives at the new planet.
 
 ### Arkenstone-
 
@@ -116,7 +117,7 @@ The arkenstone is the central part of the catapult portal. Preserved since the d
 ### Obsidian Torch-
 
 {: .center}
-![obsidianTorch]({{ site.baseurl }}/img/obsidianTorch.png "obsidianTorch"){:style="max-height: 100px;"}
+![obsidianTorch]({{ site.baseurl }}/img/obsidianTorch.jpg "obsidianTorch"){:style="max-height: 100px;"}
 
 The obsidian torch discovered by the natives in the West, was a remnant found inside the largest volcano. With an ever-glowing flame, it also has other mystical usages. Knocking on the arkenstone with the obsidian torch would light up the portal and activate it.
 
@@ -134,6 +135,14 @@ The shattered plasma is a green looking block made up from forging together sand
 
 The Facade of Truth is made up of blocks of a special type of Basalt. These blocks need to be piled up to create a 3x3 frame with a 1x2 hole for the tunnel in between.
 With the Shattered Plasma foundation laid, the Facade of Truth built on top, the arkenstone needs to be placed at the front of the foundation and tapped with the Obsidian Torch to activate and light up the portal.
+
+### The Final Portal
+
+The final catapult portal when put together from all the above blocks, looks like this-
+
+{: .center}
+![portal]({{ site.baseurl }}/img/portal.jpg "Portal"){:style="max-height: 400px;"}
+
 
 ## Making Structures
 The puzzle rooms were already made, complete with deadly and lethal traps. It was time to wrap these rooms around with some special structures to hide them from plain sight. There were three puzzle rooms that I hade made. To wrap around and hide these puzzle rooms, I made three additional structures- the pyramid, the stonehenge and an underground temple. In addition to these, there were two more structures that I made, the hut and the well, that exist near the spawn location which serve as a starting point for the player.
@@ -214,6 +223,21 @@ The hut and the well are the nearest structures to the spawn location. They are 
 
 The hut also has a treasure chest consisting of a Pickaxe and some other blocks. It also contains that book which points towards the well.
 
+## Protecting Regions
+
+<div class="github-button" url="https://github.com/Terasology/Scenario/pull/33"></div>
+
+<div class="github-button" url="https://github.com/Terasology/AdventureAssets/pull/19"></div>
+
+Most of the traps had a settings screen that was produced upon interaction. This behavior was to be prevented for the traps inside the puzzle rooms atleast. In addition the password doors could be broken down easily by attacking. These needed to be protected too.
+
+To protect the regions, I decided to take help of the Scenarios module (being developed in another GSoC project). I've added features like Region Resizing and marking regions Protected in the Regions section of Scenarios. Regions can be created, and their properties altered using the Scenario:HubTool.
+
+A protected region now has the following functionalities-
+- No block addition
+- No block attack/removal/mining
+- No interaction with entities having the `NoInteractionWhenProtected` component
+
 ## Journal Integration
 
 Finally, the Journal that's been out there dust-laden has finally been put to some good use. Lost makes immense use of the Journal. In addition to adding Journal posts related to WoodAndStoneCrafting (see [WoodAndStoneCraftingJournal](https://github.com/Terasology/WoodAndStoneCraftingJournal)), Lost adds its own section in the journal. There are multiple Journal articles that get added upon events like- killing a deer, finding a new treasure chest, finding the book of secrets etc.
@@ -223,9 +247,24 @@ Finally, the Journal that's been out there dust-laden has finally been put to so
 Near every trap or puzzle room, in close proximity an Angel of Resurrection is placed that could be activated to enable respawning near it, essentially acting as a checkpoint. The checkpoint is vital since death caused by the lethal traps would send the player to respawn back at the original spawn point (0, 0, 0). This causes the player to travel a huge distance to get back to the puzzle room. This has some serious chunk loading issues as well.
 
 {: .center}
-![pyramidAngel]({{ site.baseurl }}/img/pyramidAngel.jpg "pyramidAngel"){:style="max-width: 400px; max-height: 400px;"}
-![stonehengeAngel]({{ site.baseurl }}/img/stonehengeAngel.jpg "stonehengeAngel"){:style="max-width: 400px; max-height: 400px;"}
-![templeAngel]({{ site.baseurl }}/img/templeAngel.jpg "templeAngel"){:style="max-width: 400px; max-height: 400px;"}
+![pyramidAngel]({{ site.baseurl }}/img/pyramidAngel.jpg "pyramidAngel"){:style="max-width: 250px; max-height: 400px;"}
+![stonehengeAngel]({{ site.baseurl }}/img/stonehengeAngel.jpg "stonehengeAngel"){:style="max-width: 250px; max-height: 400px;"}
+![templeAngel]({{ site.baseurl }}/img/templeAngel.jpg "templeAngel"){:style="max-width: 250px; max-height: 400px;"}
+
+## MCQ Button Door
+The Password door allows the player to unlock the door only if the player enters the exact passphrase. The MCQ Button door is less cruel, it provides a set of options to choose from. However, it is dangerous and it kills the player instantly if they press the wrong button.
+
+<div class="videowrapper">
+<iframe width="1024" height="768" src="https://www.youtube.com/embed/hT9Dk_b7s6k" frameborder="0" allowfullscreen></iframe>
+</div>
+
+## Set Custom Spawn Location
+
+The world generator is used to set the spawn position at every RespawnRequest. For world generators like PolyWorld this can be troublesome, since there is no static spawn location and the generator finds a suitable spot in an area covered by a specified search radius.
+
+To allow more control over spawning, I added a new command- `setSpawnLocation` that sets the spawn location to the character's current location.
+
+<div class="github-button" url="https://github.com/MovingBlocks/Terasology/pull/3065/"></div>
 
 ## Putting it all together
 
@@ -233,4 +272,9 @@ The individual components were all ready as structures and items. What was left 
 
 The whole world is packed in the **Island World generator** from [PolyWorld](https://github.com/Terasology/PolyWorld) that has nice little islands to help contain all the features and prevent the player from wandering too far.
 
-I'll be making a wrap up post soon to cover all my contributions over the summer with a few stats. Plus, there might be a teaser video for the Lost module.
+Here is the background image for the Lost module-
+
+{: .center}
+![lostBackground]({{ site.baseurl }}/img/lostBackground.png "Lost"){:style="max-height: 500px;"}
+
+I'll be making a wrap up post soon to cover all my contributions over the summer with a few stats. Plus, I might make a teaser video for the Lost module.
