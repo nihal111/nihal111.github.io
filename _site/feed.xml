@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 15 Aug 2017 01:07:56 +0530</pubDate>
-    <lastBuildDate>Tue, 15 Aug 2017 01:07:56 +0530</lastBuildDate>
+    <pubDate>Tue, 15 Aug 2017 01:10:06 +0530</pubDate>
+    <lastBuildDate>Tue, 15 Aug 2017 01:10:06 +0530</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>
@@ -216,9 +216,9 @@ or add the &lt;code class=&quot;highlighter-rouge&quot;&gt;-homedir&lt;/code&gt;
 
 &lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/multiplayerPlayTest.png&quot; alt=&quot;multiplayerPlayTest&quot; title=&quot;multiplayerPlayTest&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Mon, 14 Aug 2017 00:00:00 +0530</pubDate>
-        <link>http://localhost:4000/2017/08/14/GSoC-wrap-up.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/08/14/GSoC-wrap-up.html</guid>
+        <pubDate>Tue, 15 Aug 2017 00:00:00 +0530</pubDate>
+        <link>http://localhost:4000/2017/08/15/GSoC-wrap-up.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/08/15/GSoC-wrap-up.html</guid>
         
         <category>open source</category>
         

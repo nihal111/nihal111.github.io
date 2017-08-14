@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "GSoC Wrap Up"
-date: 2017-08-14
+date: 2017-08-15
 comments: true
 tags:
 - open source
