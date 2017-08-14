@@ -52,7 +52,7 @@ return $collapsiblecontent.is(":visible")   ? "- " : "+ ";
 
 </script>
 
-Finally the time has come for the wrap up post. It has been an amazing experience. I've learned a lot over the summer, spending countless days and nights in a row to add new things to this game. The community has been more than helpful. I couldn't hope for more.
+Finally it is time for wrapping up my GSoC project and along with it a highly eventful summer. It has been an amazing experience. I've learned a lot over the summer, spending countless days and nights in a row to add new things to this game. The community has been more than helpful. I couldn't have asked for more.
 
 This wrap up post links to all the work done over the summer. There have been a total of **72 PRs** and quite a few independent commits in the new modules I've created. With over **19,000 lines of code**, this summer has boosted my Github stats to a whole new level.
 

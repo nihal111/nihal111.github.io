@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 15 Aug 2017 01:10:06 +0530</pubDate>
-    <lastBuildDate>Tue, 15 Aug 2017 01:10:06 +0530</lastBuildDate>
+    <pubDate>Tue, 15 Aug 2017 01:55:38 +0530</pubDate>
+    <lastBuildDate>Tue, 15 Aug 2017 01:55:38 +0530</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>
@@ -57,7 +57,7 @@ return $collapsiblecontent.is(&quot;:visible&quot;)   ? &quot;- &quot; : &quot;+
 
 &lt;/script&gt;
 
-&lt;p&gt;Finally the time has come for the wrap up post. It has been an amazing experience. I’ve learned a lot over the summer, spending countless days and nights in a row to add new things to this game. The community has been more than helpful. I couldn’t hope for more.&lt;/p&gt;
+&lt;p&gt;Finally it is time for wrapping up my GSoC project and along with it a highly eventful summer. It has been an amazing experience. I’ve learned a lot over the summer, spending countless days and nights in a row to add new things to this game. The community has been more than helpful. I couldn’t have asked for more.&lt;/p&gt;
 
 &lt;p&gt;This wrap up post links to all the work done over the summer. There have been a total of &lt;strong&gt;72 PRs&lt;/strong&gt; and quite a few independent commits in the new modules I’ve created. With over &lt;strong&gt;19,000 lines of code&lt;/strong&gt;, this summer has boosted my Github stats to a whole new level.&lt;/p&gt;
 
