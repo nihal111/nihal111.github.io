@@ -19,7 +19,7 @@ footer-links:
   flickr:
   github: nihal111
   instagram:
-  linkedin:
+  linkedin: nihal111
   pinterest:
   rss: # just type anything here for a working RSS icon
   twitter: 
@@ -53,8 +53,10 @@ description: >
   A guide to getting started with Jekyll.
 
 github_username:  nihal111
-facebook_username:  Nihal Singh
+facebook_username: Nihal Singh
+linkedin_username:  Nihal Singh
 facebook_id: nihal111
+linkedin_id: nihal111
 address: 136, Hostel-9, Indian Institue of Techonology, Bombay Mumbai-400076, India
 # Build Settings
 sass:

@@ -33,6 +33,12 @@
             {% include icon-facebook.html username=site.facebook_username id=site.facebook_id %}
           </li>
           {% endif %}
+
+          {% if site.linkedin_username %}
+          <li>
+            {% include icon-linkedin.html username=site.linkedin_username id=site.linkedin_id %}
+          </li>
+          {% endif %}
         </ul>
       </div>
 
