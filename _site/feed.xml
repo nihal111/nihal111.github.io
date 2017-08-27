@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 28 Aug 2017 04:12:58 +0530</pubDate>
-    <lastBuildDate>Mon, 28 Aug 2017 04:12:58 +0530</lastBuildDate>
+    <pubDate>Mon, 28 Aug 2017 04:26:04 +0530</pubDate>
+    <lastBuildDate>Mon, 28 Aug 2017 04:26:04 +0530</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>
@@ -228,7 +228,7 @@ or add the &lt;code class=&quot;highlighter-rouge&quot;&gt;-homedir&lt;/code&gt;
 
 &lt;h3 id=&quot;wrapping-it-up&quot;&gt;Wrapping it up&lt;/h3&gt;
 
-&lt;p&gt;Once again, I would like to thank all my mentors. My primary mentor, Skylar ‘skysom’ Sommers, for replying always within a splitsecond (save for the times when he forgets to hit the Send button :P). Florian ‘flo’ Köberle, who was my secondary but went out of his way and functioned effectively as my primary. I got a lot to learn from flo regarding various aspects about the game. It would have been impossible to complete my project without his aid. Xavier ‘xtariq’ Tariq, who was also my secondary mentor, helped me whenever I needed him. I’d like to specially thank Cervator here. Had he not been there that night in October, welcoming me on IRC and helping me set up my codebase, maybe I would have given up, moved on and never have done GSoC in the first place.&lt;/p&gt;
+&lt;p&gt;Once again, I would like to thank all my mentors. My primary mentor, &lt;a href=&quot;http://forum.terasology.org/members/skysom.1621/&quot;&gt;Skylar ‘skysom’ Sommers&lt;/a&gt;, for replying always within a splitsecond (save for the times when he forgets to hit the Send button :P). &lt;a href=&quot;http://forum.terasology.org/members/florian.1335/&quot;&gt;Florian ‘flo’ Köberle&lt;/a&gt;, who was my secondary but went out of his way and functioned effectively as my primary. I got a lot to learn from flo regarding various aspects about the game. It would have been impossible to complete my project without his aid. &lt;a href=&quot;http://forum.terasology.org/members/xtariq.1697/&quot;&gt;Xavier ‘xtariq’ Tariq&lt;/a&gt;, who was also my secondary mentor, helped me whenever I needed him. I’d like to specially thank &lt;a href=&quot;http://forum.terasology.org/members/cervator.2/&quot;&gt;Rasmus ‘cervator’ Praestholm&lt;/a&gt; here. Had he not been there that night in October, welcoming me on IRC and helping me set up my codebase, maybe I would have given up, moved on and never have done GSoC in the first place.&lt;/p&gt;
 
 &lt;p&gt;All in all, it has been a thrilling summer. By this time I am familiar with a good part of the game’s codebase. I would love to continue contributing, albeit in different capacities. Let’s hope real life doesn’t get in the way too much. Also, GCI is almost here and another storm’s coming!&lt;/p&gt;
 
