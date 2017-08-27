@@ -199,6 +199,24 @@ Here is a [list of pull requests](https://github.com/pulls?utf8=%E2%9C%93&q=is%3
 </div>
 </div>
 
+### What more to look at?
+
+There have been a whole lot of videos I've made over the summer. You can have a look at them at [my channel](https://www.youtube.com/channel/UCVDrDJDt7sI8A9Ww1FekUMQ).
+
+I have also written a set of blog posts marking the progress I made through the summers. A list of all these can be found under the #GSoC tag [here](http://nihal111.github.io/tags/#GSoC).
+
+### What's next?
+
+Although I have checked off most of my primary targets from the proposal. There are quite a few things that need work on-  
+1. Some of the traps like the Swinging Blade work well only in Single Player. This is because the Movement Prediction works quite differently on the server side. The `CharacterImpulseEvent` triggers differently even with a little lag.
+2. Traps like the Wipe Out, require the player to move constantly along with the surfboard. There have also been instances when a collision is not detected between the player and the surfboard. Again something to deal with the Movement Prediction and Physics engine.
+3. On the Gameplay side, I've attempted to make interesting short riddles for the three treasure locations, however they get boring very fast. The player might feel it is too much effort to solve a text based riddle. It can be difficult to strike the right chord while making riddles and clues that are both short, engaging and require the player to think.
+4. The Portal upon construction does nothing yet. Well, it is supposed to take you back to your home planet. But I guess we could display a "Game Over" dialog or somehow bring up the Credits screen.
+
+### Wrapping it up
+
+Once again, I would like to thank all my mentors. My primary mentor, Skylar 'skysom' Sommers, for replying always within a splitsecond (save for the times when he forgets to hit the Send button :P). Florian ‘flo’ Köberle, who was my secondary but went out of his way and functioned effectively as my primary. I got a lot to learn from flo regarding various aspects about the game. It would have been impossible to complete my project without his aid. Xavier ‘xtariq’ Tariq, who was also my secondary mentor, helped me whenever I needed him. I'd like to specially thank Cervator here. Had he not been there that night in October, welcoming me on IRC and helping me set up my codebase, maybe I would have given up, moved on and never have done GSoC in the first place.
+
 All in all, it has been a thrilling summer. By this time I am familiar with a good part of the game's codebase. I would love to continue contributing, albeit in different capacities. Let's hope real life doesn't get in the way too much. Also, GCI is almost here and another storm's coming!
 
 Here's a snap from one of the many exciting multiplayer play test sessions-
