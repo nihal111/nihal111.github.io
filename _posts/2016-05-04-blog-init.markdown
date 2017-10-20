@@ -7,7 +7,7 @@ tags:
 - firstpost
 - jekyll
 ---
-Hi, there! You've stumbled upon my first blog post.
+Hi, there! You've stumbled upon my first [blog](http://webanalyticshub.com/) post.
 
 It's been a while since I first thought of creating my github homepage and blog. And I can't believe I finally made it.
 
