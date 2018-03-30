@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 30 Mar 2018 20:40:28 +0530</pubDate>
-    <lastBuildDate>Fri, 30 Mar 2018 20:40:28 +0530</lastBuildDate>
+    <pubDate>Fri, 30 Mar 2018 20:43:09 +0530</pubDate>
+    <lastBuildDate>Fri, 30 Mar 2018 20:43:09 +0530</lastBuildDate>
     <generator>Jekyll v3.7.3</generator>
     
       <item>
@@ -238,1209 +238,6 @@ Cheers!&lt;/p&gt;
         <category>python</category>
         
         <category>windows</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Ntp Update Time</title>
-        <description>&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;&gt;&lt;meta name=&quot;date&quot; content=&quot;2018-03-30&quot;&gt;
-&lt;meta name=&quot;layout&quot; content=&quot;post&quot;&gt;
-&lt;meta name=&quot;tags&quot; content=&quot;&quot;&gt;
-&lt;meta name=&quot;comments&quot; content=&quot;true&quot;&gt;&lt;style&gt;body {
-  max-width: 980px;
-  border: 1px solid #ddd;
-  outline: 1300px solid #fff;
-  margin: 16px auto;
-}
-
-body .markdown-body
-{
-  padding: 45px;
-}
-
-@font-face {
-  font-family: fontawesome-mini;
-  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
-}
-
-@font-face {
-  font-family: octicons-anchor;
-  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
-}
-
-.markdown-body {
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  color: #333333;
-  overflow: hidden;
-  font-family: &quot;Helvetica Neue&quot;, Helvetica, &quot;Segoe UI&quot;, Arial, freesans, sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
-  word-wrap: break-word;
-}
-
-.markdown-body a {
-  background: transparent;
-}
-
-.markdown-body a:active,
-.markdown-body a:hover {
-  outline: 0;
-}
-
-.markdown-body b,
-.markdown-body strong {
-  font-weight: bold;
-}
-
-.markdown-body mark {
-  background: #ff0;
-  color: #000;
-  font-style: italic;
-  font-weight: bold;
-}
-
-.markdown-body sub,
-.markdown-body sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-.markdown-body sup {
-  top: -0.5em;
-}
-.markdown-body sub {
-  bottom: -0.25em;
-}
-
-.markdown-body h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
-.markdown-body img {
-  border: 0;
-}
-
-.markdown-body hr {
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  height: 0;
-}
-
-.markdown-body pre {
-  overflow: auto;
-}
-
-.markdown-body code,
-.markdown-body kbd,
-.markdown-body pre,
-.markdown-body samp {
-  font-family: monospace, monospace;
-  font-size: 1em;
-}
-
-.markdown-body input {
-  color: inherit;
-  font: inherit;
-  margin: 0;
-}
-
-.markdown-body html input[disabled] {
-  cursor: default;
-}
-
-.markdown-body input {
-  line-height: normal;
-}
-
-.markdown-body input[type=&quot;checkbox&quot;] {
-  box-sizing: border-box;
-  padding: 0;
-}
-
-.markdown-body table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-.markdown-body td,
-.markdown-body th {
-  padding: 0;
-}
-
-.markdown-body .codehilitetable {
-  border: 0;
-  border-spacing: 0;
-}
-
-.markdown-body .codehilitetable tr {
-  border: 0;
-}
-
-.markdown-body .codehilitetable pre,
-.markdown-body .codehilitetable div.codehilite {
-  margin: 0;
-}
-
-.markdown-body .linenos,
-.markdown-body .code,
-.markdown-body .codehilitetable td {
-  border: 0;
-  padding: 0;
-}
-
-.markdown-body td:not(.linenos) .linenodiv {
-  padding: 0 !important;
-}
-
-.markdown-body .code {
-  width: 100%;
-}
-
-.markdown-body .linenos div pre,
-.markdown-body .linenodiv pre,
-.markdown-body .linenodiv {
-  border: 0;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  -webkit-border-top-left-radius: 3px;
-  -webkit-border-bottom-left-radius: 3px;
-  -moz-border-radius-topleft: 3px;
-  -moz-border-radius-bottomleft: 3px;
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
-}
-
-.markdown-body .code div pre,
-.markdown-body .code div {
-  border: 0;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  -webkit-border-top-right-radius: 3px;
-  -webkit-border-bottom-right-radius: 3px;
-  -moz-border-radius-topright: 3px;
-  -moz-border-radius-bottomright: 3px;
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
-}
-
-.markdown-body * {
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.markdown-body input {
-  font: 13px Helvetica, arial, freesans, clean, sans-serif, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;;
-  line-height: 1.4;
-}
-
-.markdown-body a {
-  color: #4183c4;
-  text-decoration: none;
-}
-
-.markdown-body a:hover,
-.markdown-body a:focus,
-.markdown-body a:active {
-  text-decoration: underline;
-}
-
-.markdown-body hr {
-  height: 0;
-  margin: 15px 0;
-  overflow: hidden;
-  background: transparent;
-  border: 0;
-  border-bottom: 1px solid #ddd;
-}
-
-.markdown-body hr:before,
-.markdown-body hr:after {
-  display: table;
-  content: &quot; &quot;;
-}
-
-.markdown-body hr:after {
-  clear: both;
-}
-
-.markdown-body h1,
-.markdown-body h2,
-.markdown-body h3,
-.markdown-body h4,
-.markdown-body h5,
-.markdown-body h6 {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  line-height: 1.1;
-}
-
-.markdown-body h1 {
-  font-size: 30px;
-}
-
-.markdown-body h2 {
-  font-size: 21px;
-}
-
-.markdown-body h3 {
-  font-size: 16px;
-}
-
-.markdown-body h4 {
-  font-size: 14px;
-}
-
-.markdown-body h5 {
-  font-size: 12px;
-}
-
-.markdown-body h6 {
-  font-size: 11px;
-}
-
-.markdown-body blockquote {
-  margin: 0;
-}
-
-.markdown-body ul,
-.markdown-body ol {
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.markdown-body ol ol,
-.markdown-body ul ol {
-  list-style-type: lower-roman;
-}
-
-.markdown-body ul ul ol,
-.markdown-body ul ol ol,
-.markdown-body ol ul ol,
-.markdown-body ol ol ol {
-  list-style-type: lower-alpha;
-}
-
-.markdown-body dd {
-  margin-left: 0;
-}
-
-.markdown-body code,
-.markdown-body pre,
-.markdown-body samp {
-  font-family: Consolas, &quot;Liberation Mono&quot;, Menlo, Courier, monospace;
-  font-size: 12px;
-}
-
-.markdown-body pre {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.markdown-body kbd {
-  background-color: #e7e7e7;
-  background-image: -moz-linear-gradient(#fefefe, #e7e7e7);
-  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
-  background-image: linear-gradient(#fefefe, #e7e7e7);
-  background-repeat: repeat-x;
-  border-radius: 2px;
-  border: 1px solid #cfcfcf;
-  color: #000;
-  padding: 3px 5px;
-  line-height: 10px;
-  font: 11px Consolas, &quot;Liberation Mono&quot;, Menlo, Courier, monospace;
-  display: inline-block;
-}
-
-.markdown-body&gt;*:first-child {
-  margin-top: 0 !important;
-}
-
-.markdown-body&gt;*:last-child {
-  margin-bottom: 0 !important;
-}
-
-.markdown-body .headeranchor-link {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  display: block;
-  padding-right: 6px;
-  padding-left: 30px;
-  margin-left: -30px;
-}
-
-.markdown-body .headeranchor-link:focus {
-  outline: none;
-}
-
-.markdown-body h1,
-.markdown-body h2,
-.markdown-body h3,
-.markdown-body h4,
-.markdown-body h5,
-.markdown-body h6 {
-  position: relative;
-  margin-top: 1em;
-  margin-bottom: 16px;
-  font-weight: bold;
-  line-height: 1.4;
-}
-
-.markdown-body h1 .headeranchor,
-.markdown-body h2 .headeranchor,
-.markdown-body h3 .headeranchor,
-.markdown-body h4 .headeranchor,
-.markdown-body h5 .headeranchor,
-.markdown-body h6 .headeranchor {
-  display: none;
-  color: #000;
-  vertical-align: middle;
-}
-
-.markdown-body h1:hover .headeranchor-link,
-.markdown-body h2:hover .headeranchor-link,
-.markdown-body h3:hover .headeranchor-link,
-.markdown-body h4:hover .headeranchor-link,
-.markdown-body h5:hover .headeranchor-link,
-.markdown-body h6:hover .headeranchor-link {
-  height: 1em;
-  padding-left: 8px;
-  margin-left: -30px;
-  line-height: 1;
-  text-decoration: none;
-}
-
-.markdown-body h1:hover .headeranchor-link .headeranchor,
-.markdown-body h2:hover .headeranchor-link .headeranchor,
-.markdown-body h3:hover .headeranchor-link .headeranchor,
-.markdown-body h4:hover .headeranchor-link .headeranchor,
-.markdown-body h5:hover .headeranchor-link .headeranchor,
-.markdown-body h6:hover .headeranchor-link .headeranchor {
-  display: inline-block;
-}
-
-.markdown-body h1 {
-  padding-bottom: 0.3em;
-  font-size: 2.25em;
-  line-height: 1.2;
-  border-bottom: 1px solid #eee;
-}
-
-.markdown-body h2 {
-  padding-bottom: 0.3em;
-  font-size: 1.75em;
-  line-height: 1.225;
-  border-bottom: 1px solid #eee;
-}
-
-.markdown-body h3 {
-  font-size: 1.5em;
-  line-height: 1.43;
-}
-
-.markdown-body h4 {
-  font-size: 1.25em;
-}
-
-.markdown-body h5 {
-  font-size: 1em;
-}
-
-.markdown-body h6 {
-  font-size: 1em;
-  color: #777;
-}
-
-.markdown-body p,
-.markdown-body blockquote,
-.markdown-body ul,
-.markdown-body ol,
-.markdown-body dl,
-.markdown-body table,
-.markdown-body pre,
-.markdown-body .admonition {
-  margin-top: 0;
-  margin-bottom: 16px;
-}
-
-.markdown-body hr {
-  height: 4px;
-  padding: 0;
-  margin: 16px 0;
-  background-color: #e7e7e7;
-  border: 0 none;
-}
-
-.markdown-body ul,
-.markdown-body ol {
-  padding-left: 2em;
-}
-
-.markdown-body ul ul,
-.markdown-body ul ol,
-.markdown-body ol ol,
-.markdown-body ol ul {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.markdown-body li&gt;p {
-  margin-top: 16px;
-}
-
-.markdown-body dl {
-  padding: 0;
-}
-
-.markdown-body dl dt {
-  padding: 0;
-  margin-top: 16px;
-  font-size: 1em;
-  font-style: italic;
-  font-weight: bold;
-}
-
-.markdown-body dl dd {
-  padding: 0 16px;
-  margin-bottom: 16px;
-}
-
-.markdown-body blockquote {
-  padding: 0 15px;
-  color: #777;
-  border-left: 4px solid #ddd;
-}
-
-.markdown-body blockquote&gt;:first-child {
-  margin-top: 0;
-}
-
-.markdown-body blockquote&gt;:last-child {
-  margin-bottom: 0;
-}
-
-.markdown-body table {
-  display: block;
-  width: 100%;
-  overflow: auto;
-  word-break: normal;
-  word-break: keep-all;
-}
-
-.markdown-body table th {
-  font-weight: bold;
-}
-
-.markdown-body table th,
-.markdown-body table td {
-  padding: 6px 13px;
-  border: 1px solid #ddd;
-}
-
-.markdown-body table tr {
-  background-color: #fff;
-  border-top: 1px solid #ccc;
-}
-
-.markdown-body table tr:nth-child(2n) {
-  background-color: #f8f8f8;
-}
-
-.markdown-body img {
-  max-width: 100%;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.markdown-body code,
-.markdown-body samp {
-  padding: 0;
-  padding-top: 0.2em;
-  padding-bottom: 0.2em;
-  margin: 0;
-  font-size: 85%;
-  background-color: rgba(0,0,0,0.04);
-  border-radius: 3px;
-}
-
-.markdown-body code:before,
-.markdown-body code:after {
-  letter-spacing: -0.2em;
-  content: &quot;\00a0&quot;;
-}
-
-.markdown-body pre&gt;code {
-  padding: 0;
-  margin: 0;
-  font-size: 100%;
-  word-break: normal;
-  white-space: pre;
-  background: transparent;
-  border: 0;
-}
-
-.markdown-body .codehilite {
-  margin-bottom: 16px;
-}
-
-.markdown-body .codehilite pre,
-.markdown-body pre {
-  padding: 16px;
-  overflow: auto;
-  font-size: 85%;
-  line-height: 1.45;
-  background-color: #f7f7f7;
-  border-radius: 3px;
-}
-
-.markdown-body .codehilite pre {
-  margin-bottom: 0;
-  word-break: normal;
-}
-
-.markdown-body pre {
-  word-wrap: normal;
-}
-
-.markdown-body pre code {
-  display: inline;
-  max-width: initial;
-  padding: 0;
-  margin: 0;
-  overflow: initial;
-  line-height: inherit;
-  word-wrap: normal;
-  background-color: transparent;
-  border: 0;
-}
-
-.markdown-body pre code:before,
-.markdown-body pre code:after {
-  content: normal;
-}
-
-/* Admonition */
-.markdown-body .admonition {
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  position: relative;
-  border-radius: 3px;
-  border: 1px solid #e0e0e0;
-  border-left: 6px solid #333;
-  padding: 10px 10px 10px 30px;
-}
-
-.markdown-body .admonition table {
-  color: #333;
-}
-
-.markdown-body .admonition p {
-  padding: 0;
-}
-
-.markdown-body .admonition-title {
-  font-weight: bold;
-  margin: 0;
-}
-
-.markdown-body .admonition&gt;.admonition-title {
-  color: #333;
-}
-
-.markdown-body .attention&gt;.admonition-title {
-  color: #a6d796;
-}
-
-.markdown-body .caution&gt;.admonition-title {
-  color: #d7a796;
-}
-
-.markdown-body .hint&gt;.admonition-title {
-  color: #96c6d7;
-}
-
-.markdown-body .danger&gt;.admonition-title {
-  color: #c25f77;
-}
-
-.markdown-body .question&gt;.admonition-title {
-  color: #96a6d7;
-}
-
-.markdown-body .note&gt;.admonition-title {
-  color: #d7c896;
-}
-
-.markdown-body .admonition:before,
-.markdown-body .attention:before,
-.markdown-body .caution:before,
-.markdown-body .hint:before,
-.markdown-body .danger:before,
-.markdown-body .question:before,
-.markdown-body .note:before {
-  font: normal normal 16px fontawesome-mini;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  line-height: 1.5;
-  color: #333;
-  position: absolute;
-  left: 0;
-  top: 0;
-  padding-top: 10px;
-  padding-left: 10px;
-}
-
-.markdown-body .admonition:before {
-  content: &quot;\f056\00a0&quot;;
-  color: 333;
-}
-
-.markdown-body .attention:before {
-  content: &quot;\f058\00a0&quot;;
-  color: #a6d796;
-}
-
-.markdown-body .caution:before {
-  content: &quot;\f06a\00a0&quot;;
-  color: #d7a796;
-}
-
-.markdown-body .hint:before {
-  content: &quot;\f05a\00a0&quot;;
-  color: #96c6d7;
-}
-
-.markdown-body .danger:before {
-  content: &quot;\f057\00a0&quot;;
-  color: #c25f77;
-}
-
-.markdown-body .question:before {
-  content: &quot;\f059\00a0&quot;;
-  color: #96a6d7;
-}
-
-.markdown-body .note:before {
-  content: &quot;\f040\00a0&quot;;
-  color: #d7c896;
-}
-
-.markdown-body .admonition::after {
-  content: normal;
-}
-
-.markdown-body .attention {
-  border-left: 6px solid #a6d796;
-}
-
-.markdown-body .caution {
-  border-left: 6px solid #d7a796;
-}
-
-.markdown-body .hint {
-  border-left: 6px solid #96c6d7;
-}
-
-.markdown-body .danger {
-  border-left: 6px solid #c25f77;
-}
-
-.markdown-body .question {
-  border-left: 6px solid #96a6d7;
-}
-
-.markdown-body .note {
-  border-left: 6px solid #d7c896;
-}
-
-.markdown-body .admonition&gt;*:first-child {
-  margin-top: 0 !important;
-}
-
-.markdown-body .admonition&gt;*:last-child {
-  margin-bottom: 0 !important;
-}
-
-/* progress bar*/
-.markdown-body .progress {
-  display: block;
-  width: 300px;
-  margin: 10px 0;
-  height: 24px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  background-color: #ededed;
-  position: relative;
-  box-shadow: inset -1px 1px 3px rgba(0, 0, 0, .1);
-}
-
-.markdown-body .progress-label {
-  position: absolute;
-  text-align: center;
-  font-weight: bold;
-  width: 100%; margin: 0;
-  line-height: 24px;
-  color: #333;
-  text-shadow: 1px 1px 0 #fefefe, -1px -1px 0 #fefefe, -1px 1px 0 #fefefe, 1px -1px 0 #fefefe, 0 1px 0 #fefefe, 0 -1px 0 #fefefe, 1px 0 0 #fefefe, -1px 0 0 #fefefe, 1px 1px 2px #000;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.markdown-body .progress-bar {
-  height: 24px;
-  float: left;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  background-color: #96c6d7;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(0, 0, 0, .1);
-  background-size: 30px 30px;
-  background-image: -webkit-linear-gradient(
-    135deg, rgba(255, 255, 255, .4) 27%,
-    transparent 27%,
-    transparent 52%, rgba(255, 255, 255, .4) 52%,
-    rgba(255, 255, 255, .4) 77%,
-    transparent 77%, transparent
-  );
-  background-image: -moz-linear-gradient(
-    135deg,
-    rgba(255, 255, 255, .4) 27%, transparent 27%,
-    transparent 52%, rgba(255, 255, 255, .4) 52%,
-    rgba(255, 255, 255, .4) 77%, transparent 77%,
-    transparent
-  );
-  background-image: -ms-linear-gradient(
-    135deg,
-    rgba(255, 255, 255, .4) 27%, transparent 27%,
-    transparent 52%, rgba(255, 255, 255, .4) 52%,
-    rgba(255, 255, 255, .4) 77%, transparent 77%,
-    transparent
-  );
-  background-image: -o-linear-gradient(
-    135deg,
-    rgba(255, 255, 255, .4) 27%, transparent 27%,
-    transparent 52%, rgba(255, 255, 255, .4) 52%,
-    rgba(255, 255, 255, .4) 77%, transparent 77%,
-    transparent
-  );
-  background-image: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, .4) 27%, transparent 27%,
-    transparent 52%, rgba(255, 255, 255, .4) 52%,
-    rgba(255, 255, 255, .4) 77%, transparent 77%,
-    transparent
-  );
-}
-
-.markdown-body .progress-100plus .progress-bar {
-  background-color: #a6d796;
-}
-
-.markdown-body .progress-80plus .progress-bar {
-  background-color: #c6d796;
-}
-
-.markdown-body .progress-60plus .progress-bar {
-  background-color: #d7c896;
-}
-
-.markdown-body .progress-40plus .progress-bar {
-  background-color: #d7a796;
-}
-
-.markdown-body .progress-20plus .progress-bar {
-  background-color: #d796a6;
-}
-
-.markdown-body .progress-0plus .progress-bar {
-  background-color: #c25f77;
-}
-
-.markdown-body .candystripe-animate .progress-bar{
-  -webkit-animation: animate-stripes 3s linear infinite;
-  -moz-animation: animate-stripes 3s linear infinite;
-  animation: animate-stripes 3s linear infinite;
-}
-
-@-webkit-keyframes animate-stripes {
-  0% {
-    background-position: 0 0;
-  }
-
-  100% {
-    background-position: 60px 0;
-  }
-}
-
-@-moz-keyframes animate-stripes {
-  0% {
-    background-position: 0 0;
-  }
-
-  100% {
-    background-position: 60px 0;
-  }
-}
-
-@keyframes animate-stripes {
-  0% {
-    background-position: 0 0;
-  }
-
-  100% {
-    background-position: 60px 0;
-  }
-}
-
-.markdown-body .gloss .progress-bar {
-  box-shadow:
-    inset 0 4px 12px rgba(255, 255, 255, .7),
-    inset 0 -12px 0 rgba(0, 0, 0, .05);
-}
-
-/* Multimarkdown Critic Blocks */
-.markdown-body .critic_mark {
-  background: #ff0;
-}
-
-.markdown-body .critic_delete {
-  color: #c82829;
-  text-decoration: line-through;
-}
-
-.markdown-body .critic_insert {
-  color: #718c00 ;
-  text-decoration: underline;
-}
-
-.markdown-body .critic_comment {
-  color: #8e908c;
-  font-style: italic;
-}
-
-.markdown-body .headeranchor {
-  font: normal normal 16px octicons-anchor;
-  line-height: 1;
-  display: inline-block;
-  text-decoration: none;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.headeranchor:before {
-  content: '\f05c';
-}
-
-.markdown-body .task-list-item {
-  list-style-type: none;
-}
-
-.markdown-body .task-list-item+.task-list-item {
-  margin-top: 3px;
-}
-
-.markdown-body .task-list-item input {
-  margin: 0 4px 0.25em -20px;
-  vertical-align: middle;
-}
-
-/* Media */
-@media only screen and (min-width: 480px) {
-  .markdown-body {
-    font-size:14px;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .markdown-body {
-    font-size:16px;
-  }
-}
-
-@media print {
-  .markdown-body * {
-    background: transparent !important;
-    color: black !important;
-    filter:none !important;
-    -ms-filter: none !important;
-  }
-
-  .markdown-body {
-    font-size:12pt;
-    max-width:100%;
-    outline:none;
-    border: 0;
-  }
-
-  .markdown-body a,
-  .markdown-body a:visited {
-    text-decoration: underline;
-  }
-
-  .markdown-body .headeranchor-link {
-    display: none;
-  }
-
-  .markdown-body a[href]:after {
-    content: &quot; (&quot; attr(href) &quot;)&quot;;
-  }
-
-  .markdown-body abbr[title]:after {
-    content: &quot; (&quot; attr(title) &quot;)&quot;;
-  }
-
-  .markdown-body .ir a:after,
-  .markdown-body a[href^=&quot;javascript:&quot;]:after,
-  .markdown-body a[href^=&quot;#&quot;]:after {
-    content: &quot;&quot;;
-  }
-
-  .markdown-body pre {
-    white-space: pre;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-  }
-
-  .markdown-body pre,
-  .markdown-body blockquote {
-    border: 1px solid #999;
-    padding-right: 1em;
-    page-break-inside: avoid;
-  }
-
-  .markdown-body .progress,
-  .markdown-body .progress-bar {
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-  }
-
-  .markdown-body .progress {
-    border: 1px solid #ddd;
-  }
-
-  .markdown-body .progress-bar {
-    height: 22px;
-    border-right: 1px solid #ddd;
-  }
-
-  .markdown-body tr,
-  .markdown-body img {
-    page-break-inside: avoid;
-  }
-
-  .markdown-body img {
-    max-width: 100% !important;
-  }
-
-  .markdown-body p,
-  .markdown-body h2,
-  .markdown-body h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  .markdown-body h2,
-  .markdown-body h3 {
-    page-break-after: avoid;
-  }
-}
-&lt;/style&gt;&lt;title&gt;&quot;Update time on Windows with IIT Bombay NTP server&quot;&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;article class=&quot;markdown-body&quot;&gt;&lt;ul&gt;
-&lt;li&gt;python&lt;/li&gt;
-&lt;li&gt;windows&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;em&gt;The following blog post discusses two solutions to updating time through an external/local NTP server on a Windows machine.&lt;/em&gt;&lt;/p&gt;
-&lt;h1 id=&quot;problem&quot;&gt;&lt;a name=&quot;user-content-problem&quot; href=&quot;#problem&quot; class=&quot;headeranchor-link&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;headeranchor&quot;&gt;&lt;/span&gt;&lt;/a&gt;Problem&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;Windows would not update time using the standard NTP servers since they are blocked on the network.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;The system time often gets messed up when &lt;strong&gt;switching between different operating systems on a multi-boot machine&lt;/strong&gt;. This problem arises when you are on a network (like the IIT Bombay network) that blocks outside NTP servers. IIT Bombay has its own NTP server- ntp.iitb.ac.in. All other standard NTP servers (like time.windows.com, time.nist.gov, pool.ntp.org) are blocked. &lt;/p&gt;
-&lt;p&gt;This problem can be &lt;a href=&quot;https://askubuntu.com/questions/14558/how-do-i-setup-a-local-ntp-server&quot;&gt;easily solved&lt;/a&gt; on linux machines by simply adding the NTP server to &lt;code&gt;/etc/ntp.conf&lt;/code&gt;. However, in Windows, the control panel settings would not allow you to add an external NTP server (in our case ntp.iitb.ac.in).&lt;/p&gt;
-&lt;p&gt;{: .center}&lt;br /&gt;
-&lt;img alt=&quot;ntp_no_option&quot; src=&quot; style=/img/ntp_no_option.png &amp;quot;No Option&amp;quot;&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;Trying to force an update through a pre-defined NTP server (like time.nist.gov) results in a time out, as shown-&lt;/p&gt;
-&lt;p&gt;{: .center}&lt;br /&gt;
-&lt;img alt=&quot;ntp_no_option&quot; src=&quot; style=/img/ntp_timeout.png &amp;quot;Timeout&amp;quot;&quot; /&gt;&lt;/p&gt;
-&lt;h3 id=&quot;checking-if-an-ntp-server-is-accessible-&quot;&gt;&lt;a name=&quot;user-content-checking-if-an-ntp-server-is-accessible-&quot; href=&quot;#checking-if-an-ntp-server-is-accessible-&quot; class=&quot;headeranchor-link&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;headeranchor&quot;&gt;&lt;/span&gt;&lt;/a&gt;Checking if an NTP server is accessible-&lt;/h3&gt;
-&lt;p&gt;On windows you can check if an NTP server is accessible by running the following command in command prompt-&lt;/p&gt;
-&lt;p&gt;&lt;pre&gt;&lt;code&gt;w32tm /stripchart /computer:ntp.iitb.ac.in /dataonly /samples:3
-&lt;/code&gt;&lt;/pre&gt;&lt;br /&gt;
-(Replace ntp.iitb.ac.in with your NTP server address)&lt;/p&gt;
-&lt;p&gt;This command is analogous to running &lt;code&gt;ntpdate -q ntp.iitb.ac.in&lt;/code&gt; on a linux machine.&lt;/p&gt;
-&lt;p&gt;Testing the above command on IIT-B network, reveals this-&lt;/p&gt;
-&lt;p&gt;{: .center}&lt;br /&gt;
-&lt;img alt=&quot;cmd_check_ntp_server&quot; src=&quot; style=/img/cmd_check_ntp_server.png &amp;quot;cmd check ntp server&amp;quot;&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;time.nist.gov is inaccessible while ntp.iitb.ac.in is accessible.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h1 id=&quot;solution-1-python-script-with-windows-task-scheduler&quot;&gt;&lt;a name=&quot;user-content-solution-1-python-script-with-windows-task-scheduler&quot; href=&quot;#solution-1-python-script-with-windows-task-scheduler&quot; class=&quot;headeranchor-link&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;headeranchor&quot;&gt;&lt;/span&gt;&lt;/a&gt;Solution 1: Python Script with Windows Task Scheduler&lt;/h1&gt;
-&lt;p&gt;Description: Make a list of NTP servers, and send a request to each until a response is received. Use socket to send a request to the NTP server on port 123. (Reference: &lt;a href=&quot;http://code.activestate.com/recipes/117211-simple-very-sntp-client/&quot;&gt;Simon Foster&amp;rsquo;s recipe&lt;/a&gt;). Use win32api to update system time.&lt;/p&gt;
-&lt;h3 id=&quot;step-1-install-dependencies&quot;&gt;&lt;a name=&quot;user-content-step-1-install-dependencies&quot; href=&quot;#step-1-install-dependencies&quot; class=&quot;headeranchor-link&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;headeranchor&quot;&gt;&lt;/span&gt;&lt;/a&gt;Step 1: Install Dependencies:&lt;/h3&gt;
-&lt;p&gt;All dependencies are standard libraries apart from win32api (a.k.a. pywin32).&lt;/p&gt;
-&lt;p&gt;Install &lt;code&gt;pywin32&lt;/code&gt; from &lt;a href=&quot;https://sourceforge.net/projects/pywin32/&quot;&gt;here&lt;/a&gt; or simply do a &lt;code&gt;pip install pywin32&lt;/code&gt;.&lt;br /&gt;
-To install pip for Windows, refer &lt;a href=&quot;https://stackoverflow.com/questions/4750806/how-do-i-install-pip-on-windows&quot;&gt;this&lt;/a&gt;.&lt;/p&gt;
-&lt;h3 id=&quot;step-2-download-the-script&quot;&gt;&lt;a name=&quot;user-content-step-2-download-the-script&quot; href=&quot;#step-2-download-the-script&quot; class=&quot;headeranchor-link&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;headeranchor&quot;&gt;&lt;/span&gt;&lt;/a&gt;Step 2: Download the script&lt;/h3&gt;
-&lt;p&gt;The script can be found in &lt;a href=&quot;https://gist.github.com/nihal111/23faa51c3f88a281b676dcbac77ce015&quot;&gt;this gist&lt;/a&gt;.&lt;br /&gt;
-Find Raw file &lt;a href=&quot;https://gist.githubusercontent.com/nihal111/23faa51c3f88a281b676dcbac77ce015/raw/fc1e5009837ab7920cd34acc8113c2451618e6f5/ntp_update_time.py&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;This script is tested with Python 2 and 3.&lt;/p&gt;
-&lt;p&gt;&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;br&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;socket&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;br&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;struct&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;br&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sys&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;br&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;br&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;datetime&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;br&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;win32api&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h1&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;list-of-servers-in-order-of-attempt-of-fetching&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;user-content-list-of-servers-in-order-of-attempt-of-fetching&quot;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#list-of-servers-in-order-of-attempt-of-fetching&quot;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;headeranchor-link&quot;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;aria&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hidden&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;true&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;span&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;headeranchor&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;span&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;List&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;of&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;servers&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;order&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;of&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;attempt&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;of&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fetching&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;server_list&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lsquo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ntp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iitb&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ac&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rsquo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lsquo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nist&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gov&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rsquo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lsquo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;windows&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;com&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rsquo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lsquo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pool&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ntp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;org&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rsquo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rsquo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lsquo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rsquo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;br&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;Returns&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;epoch&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;time&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fetched&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;NTP&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;server&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;passed&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;argument.&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;br&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;/&amp;gt;
-&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;Returns&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;none&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;request&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;timed&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;out&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;(5&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;seconds&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;br&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;/&amp;gt;
-&amp;amp;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;lsquo&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;rsquo&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;lsquo&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;br&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;/&amp;gt;
-&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;gettime_ntp&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;addr&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;=&amp;amp;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;rsquo&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;time.nist.gov&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;rsquo&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;):&amp;lt;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;br&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;/&amp;gt;
-&lt;/span&gt;    &lt;span class=&quot;err&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;=&quot;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;://&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;code.activestate.com&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;recipes&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;/117211-&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;simple&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;very&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;sntp&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;client&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;/&quot;&amp;gt;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;://&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;code.activestate.com&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;recipes&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;/117211-&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;simple&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;very&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;sntp&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;client&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;/&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;br&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;/&amp;gt;
-&lt;/span&gt;    &lt;span class=&quot;nn&quot;&gt;TIME1970&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;2208988800&lt;/span&gt;      &lt;span class=&quot;err&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Thanks&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;F.Lundh&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;br&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;/&amp;gt;
-&lt;/span&gt;    &lt;span class=&quot;nn&quot;&gt;client&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;socket.socket&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;socket.AF_INET&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;socket.SOCK_DGRAM&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;)&amp;lt;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;br&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;/&amp;gt;
-&lt;/span&gt;    &lt;span class=&quot;nn&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;lsquo&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;\&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;x1b&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;rsquo&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;47&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;lsquo&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;\0&amp;amp;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;rsquo&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;br&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;/&amp;gt;
-&lt;/span&gt;    &lt;span class=&quot;nn&quot;&gt;try&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&amp;lt;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;br&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;/&amp;gt;
-&lt;/span&gt;        &lt;span class=&quot;err&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Timing&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;out&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;connection&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;after&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;5&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;seconds&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;no&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;response&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;received&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;br&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;/&amp;gt;
-&lt;/span&gt;        &lt;span class=&quot;nn&quot;&gt;client.settimeout&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;(5&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;.0&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;)&amp;lt;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;br&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;/&amp;gt;
-&lt;/span&gt;        &lt;span class=&quot;nn&quot;&gt;client.sendto&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;addr&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;123))&amp;lt;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;br&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;/&amp;gt;
-&lt;/span&gt;        &lt;span class=&quot;nn&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;address&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;client.recvfrom&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;1024&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;)&amp;lt;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;br&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;/&amp;gt;
-&lt;/span&gt;        &lt;span class=&quot;nn&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&amp;lt;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;br&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;/&amp;gt;
-&lt;/span&gt;            &lt;span class=&quot;nn&quot;&gt;epoch_time&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;struct.unpack&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;lsquo&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;!12&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;I&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;rsquo&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;,&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;)[10]&amp;lt;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;br&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;/&amp;gt;
-&lt;/span&gt;            &lt;span class=&quot;nn&quot;&gt;epoch_time&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;-=&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;TIME1970&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;br&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;/&amp;gt;
-&lt;/span&gt;            &lt;span class=&quot;nn&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;epoch_time&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;br&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;/&amp;gt;
-&lt;/span&gt;    &lt;span class=&quot;nn&quot;&gt;except&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;socket.timeout&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&amp;lt;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;br&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;/&amp;gt;
-&lt;/span&gt;        &lt;span class=&quot;nn&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&amp;lt;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;strong&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;strong&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;ldquo&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;strong&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;strong&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;rdquo&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;:&amp;lt;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;br&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;/&amp;gt;
-&lt;/span&gt;    &lt;span class=&quot;err&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Iterates&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;over&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;every&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;server&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;list&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;until&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;it&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;finds&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;time&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;any&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;one.&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;br&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;/&amp;gt;
-&lt;/span&gt;    &lt;span class=&quot;nn&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;server&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;server_list&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&amp;lt;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;br&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;/&amp;gt;
-&lt;/span&gt;        &lt;span class=&quot;nn&quot;&gt;epoch_time&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;gettime_ntp&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;server&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;)&amp;lt;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;br&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;/&amp;gt;
-&lt;/span&gt;        &lt;span class=&quot;nn&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;epoch_time&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&amp;lt;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;br&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;/&amp;gt;
-&lt;/span&gt;            &lt;span class=&quot;err&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;SetSystemTime&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;takes&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;time&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;argument&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;UTC&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;time.&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;UTC&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;time&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;obtained&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;utcfromtimestamp&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;()&amp;lt;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;br&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;/&amp;gt;
-&lt;/span&gt;            &lt;span class=&quot;nn&quot;&gt;utcTime&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;datetime.datetime.utcfromtimestamp&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;epoch_time&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;)&amp;lt;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;br&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;/&amp;gt;
-&lt;/span&gt;            &lt;span class=&quot;nn&quot;&gt;win32api.SetSystemTime&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;utcTime.year&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;utcTime.month&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;utcTime.weekday&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;(),&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;utcTime.day&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;utcTime.hour&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;utcTime.minute&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;utcTime.second&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;0)&amp;lt;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;br&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;/&amp;gt;
-&lt;/span&gt;            &lt;span class=&quot;err&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Local&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;time&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;obtained&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;fromtimestamp&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;()&amp;lt;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;br&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;/&amp;gt;
-&lt;/span&gt;            &lt;span class=&quot;nn&quot;&gt;localTime&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;datetime.datetime.fromtimestamp&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;epoch_time&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;)&amp;lt;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;br&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;/&amp;gt;
-&lt;/span&gt;            &lt;span class=&quot;nn&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;(&amp;amp;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;ldquo&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;Time&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;updated&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;to&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;rdquo&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;localTime.strftime&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;(&amp;amp;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;ldquo&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;%&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;Y&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;-%&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;-%&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;d&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;H&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:%&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;M&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;rdquo&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;)&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;rdquo&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;rdquo&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;server&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;)&amp;lt;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;br&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;/&amp;gt;
-&lt;/span&gt;            &lt;span class=&quot;nn&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;br&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;/&amp;gt;
-&lt;/span&gt;        &lt;span class=&quot;nn&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&amp;lt;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;br&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;/&amp;gt;
-&lt;/span&gt;            &lt;span class=&quot;nn&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;(&amp;amp;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;ldquo&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;Could&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;find&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;time&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;rdquo&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;server&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;)&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&amp;lt;&lt;/span&gt;&lt;span class=&quot;nn&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;Download the file and save it at a location you&amp;rsquo;ll remember.&lt;br /&gt;
-For the purpose of this demonstration, I&amp;rsquo;ll be saving it inside- &lt;code&gt;C:\Python27\ntp_update_time.py&lt;/code&gt; with my Python installation directory as &lt;code&gt;C:\Python27&lt;/code&gt;.&lt;/p&gt;
-&lt;h3 id=&quot;step-3-test-the-script&quot;&gt;&lt;a name=&quot;user-content-step-3-test-the-script&quot; href=&quot;#step-3-test-the-script&quot; class=&quot;headeranchor-link&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;headeranchor&quot;&gt;&lt;/span&gt;&lt;/a&gt;Step 3: Test the script&lt;/h3&gt;
-&lt;p&gt;Open Command Prompt with admin privileges- Hit key combo &lt;code&gt;Windows&lt;/code&gt; + &lt;code&gt;X&lt;/code&gt;, and click on &lt;code&gt;Command Prompt (Admin)&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Type:&lt;br /&gt;
-&lt;pre&gt;&lt;code&gt;cd C:\Python27
-python ntp_update_time.py
-&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;
-&lt;p&gt;If you were on IIT-B network and everything worked well, it should say- &lt;code&gt;Time updated to: 2018-03-30 19:04 from ntp.iitb.ac.in&lt;/code&gt;&lt;/p&gt;
-&lt;h3 id=&quot;step-4-schedule-a-task&quot;&gt;&lt;a name=&quot;user-content-step-4-schedule-a-task&quot; href=&quot;#step-4-schedule-a-task&quot; class=&quot;headeranchor-link&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;headeranchor&quot;&gt;&lt;/span&gt;&lt;/a&gt;Step 4: Schedule a Task&lt;/h3&gt;
-&lt;p&gt;Similar to a cronjob in Unix, you can create a task to run periodically using Windows Task Scheduler.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Search for &amp;ldquo;Task Scheduler&amp;rdquo; from the start menu and open it.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Create a basic task from the Actions menu at the right&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;{: .center}&lt;br /&gt;
-&lt;img alt=&quot;ntp_ts_1&quot; src=&quot; style=/img/ntp_ts_1.png &amp;quot;ntp_ts_1&amp;quot;&quot; /&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Under the General tab, give a name and description to the task. Check the &amp;ldquo;Run with highest privileges&amp;rdquo; checkbox.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;{: .center}&lt;br /&gt;
-&lt;img alt=&quot;ntp_ts_2&quot; src=&quot; style=/img/ntp_ts_2.png &amp;quot;ntp_ts_2&amp;quot;&quot; /&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Under the Triggers tab, click on New, and set &amp;ldquo;Begin the task:&amp;rdquo; to &amp;ldquo;On workstation unlock&amp;rdquo;. Leave everything as is, and hit Ok.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;{: .center}&lt;br /&gt;
-&lt;img alt=&quot;ntp_ts_3&quot; src=&quot; style=/img/ntp_ts_3.png &amp;quot;ntp_ts_3&amp;quot;&quot; /&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Under the Actions tab, set Program/Script to your python path (&lt;code&gt;C:\Python27\python.exe&lt;/code&gt;) and set &amp;ldquo;Add arguments (optional)&amp;rdquo; to the script path (&lt;code&gt;C:\Python27\ntp_update_time.py&lt;/code&gt;).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;{: .center}&lt;br /&gt;
-&lt;img alt=&quot;ntp_ts_4&quot; src=&quot; style=/img/ntp_ts_4.png &amp;quot;ntp_ts_4&amp;quot;&quot; /&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Under the Conditions tab, uncheck the checkbox under Power which says &amp;ldquo;Start the task only if the computer is on AC power&amp;rdquo;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;{: .center}&lt;br /&gt;
-&lt;img alt=&quot;ntp_ts_5&quot; src=&quot; style=/img/ntp_ts_5.png &amp;quot;ntp_ts_5&amp;quot;&quot; /&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Hit Ok and save the Task. Return to the Task Scheduler window, double click on &amp;ldquo;Task Scheduler Library&amp;rdquo; on the left navigation drawer. Select the task you made from the list and click on it. Hit &amp;ldquo;Run&amp;rdquo; from the right hand actions menu. (Make sure to screw up your system time before running. If it gets fixed after you run the task, everything is set up to work.)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;{: .center}&lt;br /&gt;
-&lt;img alt=&quot;ntp_ts_6&quot; src=&quot; style=/img/ntp_ts_6.png &amp;quot;ntp_ts_6&amp;quot;&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;The task would be scheduled to run every time you unlock your machine. This makes sense since mostly the time gets messed up when switching between two different Operating Systems on a multi-boot machine.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h1 id=&quot;solution-2-use-windows-time-service-tools-to-query-local-ntp-server&quot;&gt;&lt;a name=&quot;user-content-solution-2-use-windows-time-service-tools-to-query-local-ntp-server&quot; href=&quot;#solution-2-use-windows-time-service-tools-to-query-local-ntp-server&quot; class=&quot;headeranchor-link&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;headeranchor&quot;&gt;&lt;/span&gt;&lt;/a&gt;Solution 2: Use Windows Time Service tools to query local NTP server&lt;/h1&gt;
-&lt;p&gt;This solution uses the Windows Time Service tool to add an external/local NTP server.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Open Command Prompt with admin privileges- Hit key combo &lt;code&gt;Windows&lt;/code&gt; + &lt;code&gt;X&lt;/code&gt;, and click on &lt;code&gt;Command Prompt (Admin)&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Stop the time service- &lt;code&gt;net stop w32time&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Type in &lt;code&gt;w32tm /config /syncfromflags:manual /manualpeerlist:&quot;ntp.iitb.ac.in,pool.ntp.org&quot;&lt;/code&gt; to manually set the list of external/local NTP servers.&lt;/li&gt;
-&lt;li&gt;Force set the connection as reliable- &lt;code&gt;w32tm /config /reliable:yes&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Start the time service- &lt;code&gt;net start w32time&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Check if the configuration has been written successfully- &lt;code&gt;w32tm /query /configuration&lt;/code&gt; and &lt;code&gt;w32tm /query /status&lt;/code&gt;. You should see &amp;ldquo;NtpServer: ntp.iitb.ac.in,pool.ntp.org (Local)&amp;rdquo;.&lt;/li&gt;
-&lt;li&gt;Do a &lt;code&gt;w32tm /resync&lt;/code&gt; to force an update. (Make sure your system time is messed up to see if it gets corrected).&lt;/li&gt;
-&lt;/ol&gt;
-&lt;hr /&gt;
-&lt;h1 id=&quot;solution-3-no-ntp-server-reachable-update-using-https&quot;&gt;&lt;a name=&quot;user-content-solution-3-no-ntp-server-reachable-update-using-https&quot; href=&quot;#solution-3-no-ntp-server-reachable-update-using-https&quot; class=&quot;headeranchor-link&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;headeranchor&quot;&gt;&lt;/span&gt;&lt;/a&gt;Solution 3: No NTP server reachable, update using HTTPS&lt;/h1&gt;
-&lt;p&gt;In case you are unable to reach any NTP server, you can use the following script to update the time by scraping duration since epoch time from &lt;a href=&quot;http://www.unixtimestamp.com&quot;&gt;www.unixtimestamp.com&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;The script can be found in &lt;a href=&quot;https://gist.github.com/nihal111/7d95fa52fb91bf3298947cd36b700ce8&quot;&gt;this gist&lt;/a&gt;.&lt;br /&gt;
-Find Raw file &lt;a href=&quot;https://gist.githubusercontent.com/nihal111/7d95fa52fb91bf3298947cd36b700ce8/raw/b65d8c187329d85ac971efc23291c06eff4d433b/update_time.py&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;br&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;requests&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;br&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;datetime&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;br&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;win32api&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;page&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;requests&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lsquo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://www.unixtimestamp.com/&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;https&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;www&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;unixtimestamp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;com&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&amp;lt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rsquo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;headers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lsquo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Cache&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Control&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rsquo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lsquo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;no&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cache&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rsquo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;})&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;br&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;line&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ldquo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;\&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rdquo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;):&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;br&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;match_text&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ldquo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h3&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;\&lt;span class=&quot;s&quot;&gt;&quot;text-danger&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;gt;&amp;amp;ldquo;&amp;lt;br /&amp;gt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;    suffix = &amp;amp;rdquo; &amp;lt;small&amp;gt;seconds since Jan 01 1970. (UTC)&amp;lt;/small&amp;gt;&amp;lt;/h3&amp;gt;&amp;amp;ldquo;&amp;lt;br /&amp;gt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;    if match_text in line:&amp;lt;br /&amp;gt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;        line = line.replace(&amp;amp;lsquo;&amp;amp;lt;&amp;amp;rsquo;,&amp;amp;rsquo; &amp;amp;lsquo;).replace(&amp;amp;lsquo;&amp;amp;gt;&amp;amp;rsquo;,&amp;amp;rsquo; &amp;amp;lsquo;)&amp;lt;br /&amp;gt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;        epoch_time = [int(s) for s in line.split() if s.isdigit()][0]&amp;lt;br /&amp;gt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;        break&amp;lt;/p&amp;gt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;lt;p&amp;gt;utcTime = datetime.datetime.utcfromtimestamp(epoch_time)&amp;lt;/p&amp;gt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;lt;p&amp;gt;try:&amp;lt;br /&amp;gt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;    # SetSystemTime takes time as argument in UTC time&amp;lt;br /&amp;gt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;    win32api.SetSystemTime(utcTime.year, utcTime.month, utcTime.weekday(), utcTime.day, utcTime.hour, utcTime.minute, utcTime.second, 0)&amp;lt;br /&amp;gt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;    localTime = datetime.datetime.fromtimestamp(epoch_time)&amp;lt;br /&amp;gt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;    print(&amp;amp;ldquo;Time updated to: &amp;amp;rdquo; + localTime.strftime(&amp;amp;ldquo;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Y-&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;m-&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;d &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;H:&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;M&amp;amp;rdquo;))&amp;lt;br /&amp;gt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;except:&amp;lt;br /&amp;gt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;    print(&amp;amp;ldquo;Could not update time&amp;amp;rdquo;)&amp;lt;/p&amp;gt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Install requests- &lt;code&gt;pip install requests&lt;/code&gt;.&lt;br /&gt;
-To install pip for Windows, refer &lt;a href=&quot;https://stackoverflow.com/questions/4750806/how-do-i-install-pip-on-windows&quot;&gt;this&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Follow Step 3 and Step 4 from Solution 1, using the script above.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;hr /&gt;
-&lt;p&gt;That should save you from manually setting time again.&lt;/p&gt;
-&lt;p&gt;Till next &amp;lsquo;time&amp;rsquo;..&lt;br /&gt;
-Cheers!&lt;/p&gt;&lt;/article&gt;&lt;/body&gt;&lt;/html&gt;</description>
-        <pubDate>Fri, 30 Mar 2018 00:00:00 +0530</pubDate>
-        <link>http://localhost:4000/2018/03/30/ntp-update-time.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/03/30/ntp-update-time.html</guid>
         
         
       </item>
@@ -2818,6 +1615,146 @@ After some discussion with flo about cata’s project on scenarios, I realised t
         <pubDate>Tue, 06 Jun 2017 00:00:00 +0530</pubDate>
         <link>http://localhost:4000/2017/06/06/GSoC-week5.html</link>
         <guid isPermaLink="true">http://localhost:4000/2017/06/06/GSoC-week5.html</guid>
+        
+        <category>open source</category>
+        
+        <category>MovingBlocks</category>
+        
+        <category>Terasology</category>
+        
+        <category>GSoC</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>GSoC Week 4: Integrating Journal</title>
+        <description>&lt;style type=&quot;text/css&quot;&gt;
+    .collapsiblecontainer {
+    width:100%;
+    border:1px solid #d3d3d3;
+}
+.collapsiblecontainer div {
+    width:100%;
+}
+.collapsiblecontainer .collapsibleheader {
+    background-color:#d3d3d3;
+    padding: 2px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.collapsiblecontainer .collapsiblecontent {
+    display: none;
+    padding : 5px;
+}
+&lt;/style&gt;
+
+&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;/js/github-buttons.js&quot;&gt;&lt;/script&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+$(document).ready(function(){
+    $(&quot;.collapsibleheader&quot;).click(function () {
+        $collapsibleheader = $(this);
+        //getting the next element
+        $collapsiblecontent = $collapsibleheader.next();
+        //open up the collapsiblecontent needed - toggle the slide- if visible, slide up, if not slidedown.
+        $collapsiblecontent.slideToggle(500, function () {
+            //execute this after slideToggle is done
+            //change text of collapsibleheader based on visibility of collapsiblecontent div
+            $collapsibleheader.find(&quot;span:first-child&quot;).text(function () {
+                //change text based on condition
+                return $collapsiblecontent.is(&quot;:visible&quot;) ? &quot;- &quot; : &quot;+ &quot;;
+            });
+        });
+
+    });
+}); 
+
+&lt;/script&gt;
+
+&lt;p&gt;The past week involved creating the new module for my exploration world and getting sarted with it.&lt;/p&gt;
+
+&lt;h1 id=&quot;what-have-i-been-up-to&quot;&gt;What have I been up to?&lt;/h1&gt;
+
+&lt;h2 id=&quot;creating-the-lost-module&quot;&gt;Creating the Lost module&lt;/h2&gt;
+
+&lt;p&gt;The Lost module is the new gameplay module that I have created and would be working on for the next two months. I’m still working on writing some logs but the general idea for the &lt;a href=&quot;https://docs.google.com/document/d/1GVmJEV2KKjqgxjtVR-_Lh7QsvRzQbfxg9qeHjimIbPg/edit?usp=sharing&quot;&gt;lore&lt;/a&gt; is complete. In short the story is centered around an intergalactic explorer who while exploring the vast world of Terasology, gets stranded. The wormhole creator that allows him to travel through space becomes dysfunctional. Fornlorn with no way to return to his home planet, he starts exploring the planet, trying to survive on what may become the last planet he would ever set his foot on.&lt;/p&gt;
+
+&lt;h2 id=&quot;integrating-journal&quot;&gt;Integrating Journal&lt;/h2&gt;
+&lt;p&gt;A key part of the new explorationn world would be a journal that links several things. The main purpose of the Journal would be to serve as a secondary memory for the player. I plan to use the Journal in several ways-&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Exploration logs that would be generated as time passes or when an event occurs. Like when the player first spots a deer or finds a treasure.&lt;/li&gt;
+  &lt;li&gt;New recipes would show up when the player pick a new item. Like picking up a stone would create an entry with the recipe for hammer.&lt;/li&gt;
+  &lt;li&gt;The journal would be integrated with books. Whenever you open an important book, the key parts of the book would be stored in the journal.&lt;/li&gt;
+  &lt;li&gt;Integrations with content modules like WoodCrafting, StoneCrafting (earlier WoodAndStone), CopperAndBronze, Alchemy, EquipmentSmithing, Equipment, Cooking and SimpleFarming. These would essentially be tutorials to help the player. Essentially recipes that show up, guides about more involved process like different quality of ingredients resulting in different final products.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;As of now the Journal has only been integrated with item pick up events and an initial on-spawn event that sends the first journal entry.&lt;/p&gt;
+
+&lt;h2 id=&quot;improvements-in-journal&quot;&gt;Improvements in Journal&lt;/h2&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://github.com/Terasology/Journal&quot;&gt;Journal module&lt;/a&gt; was left pretty much untouched since &lt;a href=&quot;https://github.com/MarcinSc&quot;&gt;MarcinSc&lt;/a&gt; had created. The Journal module looks like so-&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/WaSJournal.png&quot; alt=&quot;WoodAndStone Journal&quot; title=&quot;WoodAndStone Journal&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It has a left panel for different chapters and each chapter has its own entries. This handles categorisation pretty well, making it easier for the user to access specific entries and saving a long scroll.&lt;/p&gt;
+
+&lt;p&gt;I’ve added another enhancement which now makes the Journal more interactive. Earlier there was just a notification that would pop up when a new Journal Entry was added. However, it wouldn’t be highlighted in any way in the Journal. With the &lt;a href=&quot;https://github.com/Terasology/Journal/pull/3/&quot;&gt;latest PR&lt;/a&gt; merged, now the unread Journal entries appear highlightedin yellow, until the chapter they belong to gets opened once.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/UnreadJournal.png&quot; alt=&quot;Unread Journal&quot; title=&quot;Unread Journal&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In the image above, Exploration Log #111 is a “read” entry while Exploration Log #112 is a new/”unread” entry.&lt;/p&gt;
+
+&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/Journal/pull/3&quot;&gt;&lt;/div&gt;
+
+&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/Journal/pull/4&quot;&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Roadblock:&lt;/em&gt;&lt;/strong&gt; There was a problem with the Journal module though, the first journal entry that was required to be sent only once when the player was spawned was resent every time the player respawned. This happened because the &lt;code class=&quot;highlighter-rouge&quot;&gt;onPlayerSpawnedEvent&lt;/code&gt; was sent to the Player entity even on respawn.&lt;br /&gt;
+A bigger problem was that whatever entries that the player had in his journal would all disappear when the player respawned. This happened because the player entity in the game was completely destroyed when the player died. In the process all components attached to the player were stripped and destroyed too.&lt;/p&gt;
+
+&lt;p&gt;This was what I dealt with for the larger part of last week.&lt;/p&gt;
+
+&lt;h2 id=&quot;saving-the-player-entity-from-destruction&quot;&gt;Saving the player entity from destruction&lt;/h2&gt;
+&lt;p&gt;All existing systems relied on the player entity to be totally destroyed (and stripped of all components) when the player dies in game. This however wasn’t a nice approach, as the player entity carried a lot of data that potentially could be preserved or dealt with a better way even on death.&lt;/p&gt;
+
+&lt;p&gt;I felt this problem for the first time when I realised that my player would lose all it’s journal entries on death. However there are many other cases which require the player entity and it’s components to not be totally destroyed.&lt;/p&gt;
+
+&lt;h4 id=&quot;the-need&quot;&gt;The need&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;A player’s inventory is always lost on death. It just disappears. With the player entity now being preserved, the player simply gets to keep its inventory after respawn. However, if needed a system can easily be added to allow items from inventory to drop when a player dies (even probabilistically).&lt;/li&gt;
+  &lt;li&gt;Many other components would be better off having persisted than being destroyed at death. For eg. the EventualSkills module makes learning and gaining skills possible. All the skills a player has just would disappear if the player entity is completely destroyed, which might be undesirable.&lt;/li&gt;
+  &lt;li&gt;There was no separate event that would be sent upon respawning. Now there is an additional &lt;code class=&quot;highlighter-rouge&quot;&gt;onPlayerRespawnedEvent&lt;/code&gt; that can be used for this purpose. The &lt;code class=&quot;highlighter-rouge&quot;&gt;onPlayerSpawnedEvent&lt;/code&gt; is simply an event that only gets fired once when the player enters a world for the first time.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/MovingBlocks/Terasology/pull/2958&quot;&gt;This PR&lt;/a&gt; makes the said change. It adds the &lt;strong&gt;OnPlayerRespawnedEvent, PlayerDeathEvent, AliveCharacterComponent, PlayerCharacterComponent.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/MovingBlocks/Terasology/pull/2958&quot;&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;what-happens-now&quot;&gt;What happens now&lt;/h4&gt;
+
+&lt;p&gt;A character lives. It has the AliveComponent.
+It dies.
+A &lt;code class=&quot;highlighter-rouge&quot;&gt;BeforeDestroyEvent&lt;/code&gt; handler receives all entities having &lt;code class=&quot;highlighter-rouge&quot;&gt;AliveCharacterComponent&lt;/code&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;If the entity also has a &lt;code class=&quot;highlighter-rouge&quot;&gt;PlayerCharacterComponent&lt;/code&gt;, the event is consumed to prevent destruction. The &lt;code class=&quot;highlighter-rouge&quot;&gt;AliveCharacterComponent&lt;/code&gt; is stripped off adn a &lt;code class=&quot;highlighter-rouge&quot;&gt;PlayerDeathEvent&lt;/code&gt; sent along with &lt;code class=&quot;highlighter-rouge&quot;&gt;DeathEvent&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Else just a &lt;code class=&quot;highlighter-rouge&quot;&gt;DeathEvent&lt;/code&gt; sent  and the &lt;code class=&quot;highlighter-rouge&quot;&gt;AliveCharacterComponent&lt;/code&gt; stripped off.
+DeathScreen launches on &lt;code class=&quot;highlighter-rouge&quot;&gt;PlayerDeathEvent&lt;/code&gt; and sends the &lt;code class=&quot;highlighter-rouge&quot;&gt;RespawnRequestEvent&lt;/code&gt;.
+&lt;code class=&quot;highlighter-rouge&quot;&gt;RespawnRequestEvent&lt;/code&gt; is received by the &lt;code class=&quot;highlighter-rouge&quot;&gt;PlayerSystem&lt;/code&gt;.
+&lt;code class=&quot;highlighter-rouge&quot;&gt;PlayerSystem&lt;/code&gt; then respawns player, sets the location for &lt;code class=&quot;highlighter-rouge&quot;&gt;clientEntity&lt;/code&gt; to spawn location. Sends &lt;code class=&quot;highlighter-rouge&quot;&gt;OnPlayerRespawnedEvent&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Components that need to be removed on death are removed by receiving the &lt;code class=&quot;highlighter-rouge&quot;&gt;PlayerDeathEvent&lt;/code&gt;.
+Components that need to be reset are done by receiving the &lt;code class=&quot;highlighter-rouge&quot;&gt;OnPlayerRespawnedEvent&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Next week would see more work on the exploration module. I need to experiment with Structural Templates and see what’s the best way to spawn structures in different places.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 30 May 2017 00:00:00 +0530</pubDate>
+        <link>http://localhost:4000/2017/05/30/GSoC-week4.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/05/30/GSoC-week4.html</guid>
         
         <category>open source</category>
         
