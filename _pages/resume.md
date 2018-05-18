@@ -7,5 +7,5 @@ redirect_from:
   - /cv
   - /CV
 redirect_to:
-  - docs/resume.pdf
+  - /docs/resume.pdf
 ---
