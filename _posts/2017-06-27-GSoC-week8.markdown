@@ -68,17 +68,17 @@ With all the previous traps created (swinging blade, wipe out over lava, firebal
 The idea for the design of the model was very intricate. Unable to catch [quaternius](https://github.com/quaternius) online, I went forward with a placeholder model for the time being, which looked like this-
 
 {: .center}
-![angelOld]({{ site.baseurl }}/img/angelOld.png "Old Angel Model"){:style="max-height: 500px;"}
+![angelOld]({{ site.baseurl }}/img/angelOld.jpg "Old Angel Model"){:<s></s>tyle="max-height: 500px;"}
 
 Soon after, [quaternius](https://github.com/quaternius) was back and ready to do some Blender magic. This was also probably the most elegant and beautiful work of his that has been added to the game.
 
 {: .center}
-![angelNew]({{ site.baseurl }}/img/angelNew.png "New Angel Model"){:style="max-height: 500px;"}
+![angelNew]({{ site.baseurl }}/img/angelNew.jpg "New Angel Model"){:style="max-height: 500px;"}
 
 The initial model he made was a flat one (left), but it was soon changed to a smooth version (right) which looked better.
 
 {: .center}
-![angelFlatAndSmooth]({{ site.baseurl }}/img/angelFlatAndSmooth.png "Angel Flat And Smooth"){:style="max-height: 500px;"}
+![angelFlatAndSmooth]({{ site.baseurl }}/img/angelFlatAndSmooth.jpg "Angel Flat And Smooth"){:style="max-height: 500px;"}
 
 The model is completely static and has no built-in animations. The same model is intelligently used for both the active and inactive states of the angel statue using just a texture change.
 
@@ -94,7 +94,7 @@ The two states of the revival stone model only differ in texture. This is implem
 The two different textures being used only differ slightly- the texture for the active state has a brighter color for the angel's statue and an orange color for the orb to make it appear lit.
 
 {: .center}
-![angelActiveAndInactive]({{ site.baseurl }}/img/angelActiveAndInactive.png "angelActiveAndInactive"){:style="max-height: 500px;"}
+![angelActiveAndInactive]({{ site.baseurl }}/img/angelActiveAndInactive.jpg "angelActiveAndInactive"){:style="max-height: 500px;"}
 
 ### Respawn mechanism
 After a player dies a Death Screen is displayed. Upon clicking the "Respawn" button a `RespawnRequestEvent` is sent and the spawn location is found using the World Generator information and the player respawn happens. This whole process was broken down using [this Engine PR](https://github.com/MovingBlocks/Terasology/pull/2983) allowing other systems to alter a player's respawn location.
@@ -131,7 +131,7 @@ Upon deactivation, only the smoke effect is played.
 In addition to the texture change, there was a need to add lighting for the orb to appear as glowing. This is done by creating a simple orb entity which spawns near the location of the orb and has a `LightComponent` attached. Using the light component the two states of the revival stone appear as such at night-
 
 {: .center}
-![angelLightAndDark]({{ site.baseurl }}/img/angelLightAndDark.png "angelLightAndDark"){:style="max-height: 500px;"}
+![angelLightAndDark]({{ site.baseurl }}/img/angelLightAndDark.jpg "angelLightAndDark"){:style="max-height: 500px;"}
 
 The PR for the revival stone is not complete yet, as some fixes are still required to make it multiplayer compatible. [This PR](https://github.com/Terasology/AdventureAssets/pull/11) contains all the progress so far. A working video with the placeholder model completely functioning in Single Player follows-
 

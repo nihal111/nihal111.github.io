@@ -14,7 +14,7 @@ tags:
 # Problem
 **Windows would not update time using the standard NTP servers since they are blocked on the network.**
 
-The system time often gets messed up when **switching between different operating systems on a multi-boot machine**. This problem arises when you are on a network (like the IIT Bombay network) that blocks outside NTP servers. IIT Bombay has its own NTP server- ntp.iitb.ac.in. All other standard NTP servers (like time.windows.com, time.nist.gov, pool.ntp.org) are blocked. 
+The system time often gets messed up when **switching between different operating systems on a multi-boot machine** (solution to this specific problem in [appendix](#appendix)). This problem arises when you are on a network (like the IIT Bombay network) that blocks outside NTP servers. IIT Bombay has its own NTP server- ntp.iitb.ac.in. All other standard NTP servers (like time.windows.com, time.nist.gov, pool.ntp.org) are blocked. 
 
 This problem can be [easily solved](https://askubuntu.com/questions/14558/how-do-i-setup-a-local-ntp-server) on linux machines by simply adding the NTP server to `/etc/ntp.conf`. However, in Windows, the control panel settings would not allow you to add an external NTP server (in our case ntp.iitb.ac.in).
 
@@ -216,6 +216,17 @@ except:
 1. Install requests- `pip install requests`.
 To install pip for Windows, refer [this](https://stackoverflow.com/questions/4750806/how-do-i-install-pip-on-windows).
 2. Follow Step 3 and Step 4 from Solution 1, using the script above.
+
+---
+
+
+### Appendix
+
+Specifically pertaining to the problem of the system time going haywire when dual booting across Windows and Linux, the [Official Ubuntu documentation explains](https://help.ubuntu.com/community/UbuntuTime#Multiple_Boot_Systems_Time_Conflicts) what causes this.
+
+In essence, Linux/Unix systems store UTC as the time on the hardware clock and with good reason, since this saves unnecessary changes to the hardware clock when moving between timezones. On the other hand, Windows stores the local time as the time on the hardware clock. This ends up messing with the system time since both OS deal with the hardware clock differently.
+
+The [Official Ubuntu Docs](https://help.ubuntu.com/community/UbuntuTime#Multiple_Boot_Systems_Time_Conflicts) list down a step by step solution to avoid this from happening.
 
 ---
 

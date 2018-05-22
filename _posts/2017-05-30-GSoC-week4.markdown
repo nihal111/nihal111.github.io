@@ -75,14 +75,14 @@ As of now the Journal has only been integrated with item pick up events and an i
 The [Journal module](https://github.com/Terasology/Journal) was left pretty much untouched since [MarcinSc](https://github.com/MarcinSc) had created. The Journal module looks like so-
 
 {: .center}
-![WoodAndStone Journal]({{ site.baseurl }}/img/WaSJournal.png "WoodAndStone Journal")
+![WoodAndStone Journal]({{ site.baseurl }}/img/WaSJournal.jpg "WoodAndStone Journal")
 
 It has a left panel for different chapters and each chapter has its own entries. This handles categorisation pretty well, making it easier for the user to access specific entries and saving a long scroll.
 
 I've added another enhancement which now makes the Journal more interactive. Earlier there was just a notification that would pop up when a new Journal Entry was added. However, it wouldn't be highlighted in any way in the Journal. With the [latest PR](https://github.com/Terasology/Journal/pull/3/) merged, now the unread Journal entries appear highlightedin yellow, until the chapter they belong to gets opened once.
 
 {: .center}
-![Unread Journal]({{ site.baseurl }}/img/UnreadJournal.png "Unread Journal")
+![Unread Journal]({{ site.baseurl }}/img/UnreadJournal.jpg "Unread Journal")
 
 In the image above, Exploration Log #111 is a "read" entry while Exploration Log #112 is a new/"unread" entry.
 

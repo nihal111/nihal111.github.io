@@ -145,7 +145,7 @@ The next trap I'm trying to build is a bit complicated. The idea is to create a 
 It would look something like this:
 
 {: .center}
-![wipeout]({{ site.baseurl }}/img/wipeout.png "Wipe Out"){:style="max-width: 700px;"}
+![wipeout]({{ site.baseurl }}/img/wipeout.jpg "Wipe Out"){:style="max-width: 700px;"}
 
 Achieving this would be a challenge and I'll need to get started with the physics engine.
 

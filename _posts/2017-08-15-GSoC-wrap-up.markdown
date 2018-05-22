@@ -63,7 +63,7 @@ This wrap up post links to all the work done over the summer. There have been a 
 The final product out of my GSoC is a whole new gameplay setting in the world of Terasology. It is a single player gameplay mode called **Lost**. You take up the role of a player that ends up stranded on a planet with no way left to get back home. Set on an expedition to find signs of life in neighbouring galaxies, you come across several intriguing things that confirm the existence of intelligent life outside your planet. *Are you truly lost? Will you ever return home?*
 
 {: .center}
-![lostBackground]({{ site.baseurl }}/img/lostBackground.png "Lost"){:style="max-height: 500px;"}
+![lostBackground]({{ site.baseurl }}/img/lostBackground.jpg "Lost"){:style="max-height: 500px;"}
 
 To test it out simply follow the below instructions-
 
@@ -111,7 +111,7 @@ To test it out simply follow the below instructions-
 - [Terasology/Hunger](https://github.com/Terasology/Hunger)
 
 {: .center}
-![oldModules]({{ site.baseurl }}/img/oldModules.png "oldModules"){:style="max-height: 700px;"}
+![oldModules]({{ site.baseurl }}/img/oldModules.jpg "oldModules"){:style="max-height: 700px;"}
 
 ### List of Pull Requests-
 
@@ -225,4 +225,4 @@ All in all, it has been a thrilling summer. By this time I am familiar with a go
 Here's a snap from one of the many exciting multiplayer play test sessions-
 
 {: .center}
-![multiplayerPlayTest]({{ site.baseurl }}/img/multiplayerPlayTest.png "multiplayerPlayTest"){:style="max-height: 500px;"}
+![multiplayerPlayTest]({{ site.baseurl }}/img/multiplayerPlayTest.jpg "multiplayerPlayTest"){:style="max-height: 500px;"}

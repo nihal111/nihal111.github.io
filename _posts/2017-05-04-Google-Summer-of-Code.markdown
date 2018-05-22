@@ -24,7 +24,7 @@ This would be MovingBlocks' second GSoC selection as a mentoring organisation, w
 ## What is MovingBlocks- Terasology?
 
 {: .center}
-![Gooey]({{ site.baseurl }}/img/gooey.png "Gooey")
+![Gooey]({{ site.baseurl }}/img/gooey.jpg "Gooey")
 
 [Moving Blocks- Terasology](https://github.com/MovingBlocks/Terasology) is a minecraft-like open source game built in a voxel world. A [voxel](https://en.wikipedia.org/wiki/Voxel) world is essentially a 3-D world made up from blocks. Terasology is still in it's Alpha stage, but what makes it really special is it's modularity. With a huge, diverse set of modules already developed/in-development, Terasology offers amazing possibilities. It has a very basic minimal engine, where even core features like health, inventory, combat etc can be added on top or removed as plug-in modules.
 

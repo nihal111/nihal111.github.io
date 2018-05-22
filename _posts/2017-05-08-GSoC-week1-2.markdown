@@ -108,7 +108,7 @@ These behavior trees are central to the event driven behavior system. Each behav
 The "stray" behavior tree that exists in the [Pathfinding module](https://github.com/Terasology/Pathfinding) module looks like this:
 
 {: .center}
-![stray]({{ site.baseurl }}/img/strayBT.png "stray BT")
+![stray]({{ site.baseurl }}/img/strayBT.jpg "stray BT")
 
 Each of these behavior trees can be applied to the entity by simply defining it in the entity's prefab under the BehaviorComponent. But what's needed for the animals, is a behavior system that controls what behavior the animal has at any point in time. A system that controls when the behavior needs to switch, what should trigger such a switch and which behavior takes a higher precedence. Enter Event Driven Behavior System.
 

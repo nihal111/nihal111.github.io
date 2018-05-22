@@ -65,14 +65,14 @@ With most of the work been done last week, this week simply saw a finishing touc
 Instead of sending a chat message to describe the state of the Altar of Resurrection, a better idea was to have a floating text that appears when the angel statue is targeted. The floating text now looks like-
 
 {: .center}
-![angelFloatingText]({{ site.baseurl }}/img/angelFloatingText.png "Floating Text"){:style="max-height: 500px;"}
+![angelFloatingText]({{ site.baseurl }}/img/angelFloatingText.jpg "Floating Text"){:style="max-height: 500px;"}
 
 ### New Particle Effects
 
 The blue opaque Particle Effects have been switched to transparent orange ones, that match with the theme of the angel. The orange color goes along with the color of the orb.
 
 {: .center}
-![angelNewPE]({{ site.baseurl }}/img/angelNewPE.png "New Particle Effects"){:style="max-height: 500px;"}
+![angelNewPE]({{ site.baseurl }}/img/angelNewPE.jpg "New Particle Effects"){:style="max-height: 500px;"}
 
 <div class="collapsiblecontainer">
 <div class="collapsibleheader"><span>+ </span><span>How to create transparent particle effects?</span></div>

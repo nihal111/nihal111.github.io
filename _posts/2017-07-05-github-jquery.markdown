@@ -50,7 +50,7 @@ This plugin is very minimal and can be easily customised to make it look differe
 Since, the plugin is tailor-made to fit my needs, I rely on a single [media query](https://www.w3schools.com/css/css_rwd_mediaqueries.asp) to adjust the font and width of the elements to suit a mobile device. This is a screenshot of how it looks on my phone-
 
 {: .center}
-![githubButtonResponsive]({{ site.baseurl }}/img/githubButtonResponsive.png "Github Button Responsive"){:style="max-height: 800px;"}
+![githubButtonResponsive]({{ site.baseurl }}/img/githubButtonResponsive.jpg "Github Button Responsive"){:style="max-height: 800px;"}
 
 ## Usage
 

@@ -191,7 +191,7 @@ Note that the generated output would not account for the surrounding air blocks.
 ### Making the Stonehenge-
 
 {: .center}
-![stonehengeActual]({{ site.baseurl }}/img/stonehengeActual.jpeg "Stonehenge Actual"){:style="max-height: 400px;"}
+![stonehengeActual]({{ site.baseurl }}/img/stonehengeActual.jpg "Stonehenge Actual"){:style="max-height: 400px;"}
 
 Another one such structure to conceal the puzzle room is the stone henge. The stone henge much like the real world stone henge comprises of gaping tall pillars.
 
@@ -280,6 +280,6 @@ The whole world is packed in the **Island World generator** from [PolyWorld](htt
 Here is the background image for the Lost module-
 
 {: .center}
-![lostBackground]({{ site.baseurl }}/img/lostBackground.png "Lost"){:style="max-height: 500px;"}
+![lostBackground]({{ site.baseurl }}/img/lostBackground.jpg "Lost"){:style="max-height: 500px;"}
 
 I'll be making a wrap up post soon to cover all my contributions over the summer with a few stats. Plus, I might make a teaser video for the Lost module.

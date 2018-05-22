@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 18 May 2018 23:15:20 +0530</pubDate>
-    <lastBuildDate>Fri, 18 May 2018 23:15:20 +0530</lastBuildDate>
+    <pubDate>Tue, 22 May 2018 13:30:47 +0530</pubDate>
+    <lastBuildDate>Tue, 22 May 2018 13:30:47 +0530</lastBuildDate>
     <generator>Jekyll v3.8.1</generator>
     
       <item>
@@ -17,7 +17,7 @@
 &lt;h1 id=&quot;problem&quot;&gt;Problem&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;Windows would not update time using the standard NTP servers since they are blocked on the network.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;The system time often gets messed up when &lt;strong&gt;switching between different operating systems on a multi-boot machine&lt;/strong&gt;. This problem arises when you are on a network (like the IIT Bombay network) that blocks outside NTP servers. IIT Bombay has its own NTP server- ntp.iitb.ac.in. All other standard NTP servers (like time.windows.com, time.nist.gov, pool.ntp.org) are blocked.&lt;/p&gt;
+&lt;p&gt;The system time often gets messed up when &lt;strong&gt;switching between different operating systems on a multi-boot machine&lt;/strong&gt; (solution to this specific problem in &lt;a href=&quot;#appendix&quot;&gt;appendix&lt;/a&gt;). This problem arises when you are on a network (like the IIT Bombay network) that blocks outside NTP servers. IIT Bombay has its own NTP server- ntp.iitb.ac.in. All other standard NTP servers (like time.windows.com, time.nist.gov, pool.ntp.org) are blocked.&lt;/p&gt;
 
 &lt;p&gt;This problem can be &lt;a href=&quot;https://askubuntu.com/questions/14558/how-do-i-setup-a-local-ntp-server&quot;&gt;easily solved&lt;/a&gt; on linux machines by simply adding the NTP server to &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/ntp.conf&lt;/code&gt;. However, in Windows, the control panel settings would not allow you to add an external NTP server (in our case ntp.iitb.ac.in).&lt;/p&gt;
 
@@ -224,6 +224,16 @@ To install pip for Windows, refer &lt;a href=&quot;https://stackoverflow.com/que
 
 &lt;hr /&gt;
 
+&lt;h3 id=&quot;appendix&quot;&gt;Appendix&lt;/h3&gt;
+
+&lt;p&gt;Specifically pertaining to the problem of the system time going haywire when dual booting across Windows and Linux, the &lt;a href=&quot;https://help.ubuntu.com/community/UbuntuTime#Multiple_Boot_Systems_Time_Conflicts&quot;&gt;Official Ubuntu documentation explains&lt;/a&gt; what causes this.&lt;/p&gt;
+
+&lt;p&gt;In essence, Linux/Unix systems store UTC as the time on the hardware clock and with good reason, since this saves unnecessary changes to the hardware clock when moving between timezones. On the other hand, Windows stores the local time as the time on the hardware clock. This ends up messing with the system time since both OS deal with the hardware clock differently.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://help.ubuntu.com/community/UbuntuTime#Multiple_Boot_Systems_Time_Conflicts&quot;&gt;Official Ubuntu Docs&lt;/a&gt; list down a step by step solution to avoid this from happening.&lt;/p&gt;
+
+&lt;hr /&gt;
+
 &lt;p&gt;That should save you from manually setting time again.&lt;/p&gt;
 
 &lt;p&gt;Till next ‘time’..&lt;br /&gt;
@@ -296,7 +306,7 @@ return $collapsiblecontent.is(&quot;:visible&quot;)   ? &quot;- &quot; : &quot;+
 &lt;h2 id=&quot;final-product&quot;&gt;Final Product&lt;/h2&gt;
 &lt;p&gt;The final product out of my GSoC is a whole new gameplay setting in the world of Terasology. It is a single player gameplay mode called &lt;strong&gt;Lost&lt;/strong&gt;. You take up the role of a player that ends up stranded on a planet with no way left to get back home. Set on an expedition to find signs of life in neighbouring galaxies, you come across several intriguing things that confirm the existence of intelligent life outside your planet. &lt;em&gt;Are you truly lost? Will you ever return home?&lt;/em&gt;&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/lostBackground.png&quot; alt=&quot;lostBackground&quot; title=&quot;Lost&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/lostBackground.jpg&quot; alt=&quot;lostBackground&quot; title=&quot;Lost&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;To test it out simply follow the below instructions-&lt;/p&gt;
 
@@ -352,7 +362,7 @@ or add the &lt;code class=&quot;highlighter-rouge&quot;&gt;-homedir&lt;/code&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/Terasology/Hunger&quot;&gt;Terasology/Hunger&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/oldModules.png&quot; alt=&quot;oldModules&quot; title=&quot;oldModules&quot; style=&quot;max-height: 700px;&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/oldModules.jpg&quot; alt=&quot;oldModules&quot; title=&quot;oldModules&quot; style=&quot;max-height: 700px;&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;list-of-pull-requests-&quot;&gt;List of Pull Requests-&lt;/h3&gt;
 
@@ -467,7 +477,7 @@ With the completion of this GSoC project making adventure assets like locked doo
 
 &lt;p&gt;Here’s a snap from one of the many exciting multiplayer play test sessions-&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/multiplayerPlayTest.png&quot; alt=&quot;multiplayerPlayTest&quot; title=&quot;multiplayerPlayTest&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/multiplayerPlayTest.jpg&quot; alt=&quot;multiplayerPlayTest&quot; title=&quot;multiplayerPlayTest&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 15 Aug 2017 00:00:00 +0530</pubDate>
         <link>http://localhost:4000/2017/08/15/GSoC-wrap-up.html</link>
@@ -660,7 +670,7 @@ With the Shattered Plasma foundation laid, the Facade of Truth built on top, the
 
 &lt;h3 id=&quot;making-the-stonehenge-&quot;&gt;Making the Stonehenge-&lt;/h3&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/stonehengeActual.jpeg&quot; alt=&quot;stonehengeActual&quot; title=&quot;Stonehenge Actual&quot; style=&quot;max-height: 400px;&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/stonehengeActual.jpg&quot; alt=&quot;stonehengeActual&quot; title=&quot;Stonehenge Actual&quot; style=&quot;max-height: 400px;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Another one such structure to conceal the puzzle room is the stone henge. The stone henge much like the real world stone henge comprises of gaping tall pillars.&lt;/p&gt;
 
@@ -743,7 +753,7 @@ With the Shattered Plasma foundation laid, the Facade of Truth built on top, the
 
 &lt;p&gt;Here is the background image for the Lost module-&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/lostBackground.png&quot; alt=&quot;lostBackground&quot; title=&quot;Lost&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/lostBackground.jpg&quot; alt=&quot;lostBackground&quot; title=&quot;Lost&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I’ll be making a wrap up post soon to cover all my contributions over the summer with a few stats. Plus, I might make a teaser video for the Lost module.&lt;/p&gt;
 </description>
@@ -803,7 +813,7 @@ The icons that have been included belong to the &lt;a href=&quot;https://octicon
 &lt;h3 id=&quot;responsive&quot;&gt;Responsive&lt;/h3&gt;
 &lt;p&gt;Since, the plugin is tailor-made to fit my needs, I rely on a single &lt;a href=&quot;https://www.w3schools.com/css/css_rwd_mediaqueries.asp&quot;&gt;media query&lt;/a&gt; to adjust the font and width of the elements to suit a mobile device. This is a screenshot of how it looks on my phone-&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/githubButtonResponsive.png&quot; alt=&quot;githubButtonResponsive&quot; title=&quot;Github Button Responsive&quot; style=&quot;max-height: 800px;&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/githubButtonResponsive.jpg&quot; alt=&quot;githubButtonResponsive&quot; title=&quot;Github Button Responsive&quot; style=&quot;max-height: 800px;&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;usage&quot;&gt;Usage&lt;/h2&gt;
 
@@ -898,13 +908,13 @@ return $collapsiblecontent.is(&quot;:visible&quot;) ? &quot;- &quot; : &quot;+ &
 &lt;h3 id=&quot;floating-text&quot;&gt;Floating Text&lt;/h3&gt;
 &lt;p&gt;Instead of sending a chat message to describe the state of the Altar of Resurrection, a better idea was to have a floating text that appears when the angel statue is targeted. The floating text now looks like-&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/angelFloatingText.png&quot; alt=&quot;angelFloatingText&quot; title=&quot;Floating Text&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/angelFloatingText.jpg&quot; alt=&quot;angelFloatingText&quot; title=&quot;Floating Text&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;new-particle-effects&quot;&gt;New Particle Effects&lt;/h3&gt;
 
 &lt;p&gt;The blue opaque Particle Effects have been switched to transparent orange ones, that match with the theme of the angel. The orange color goes along with the color of the orb.&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/angelNewPE.png&quot; alt=&quot;angelNewPE&quot; title=&quot;New Particle Effects&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/angelNewPE.jpg&quot; alt=&quot;angelNewPE&quot; title=&quot;New Particle Effects&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;collapsiblecontainer&quot;&gt;
 &lt;div class=&quot;collapsibleheader&quot;&gt;&lt;span&gt;+ &lt;/span&gt;&lt;span&gt;How to create transparent particle effects?&lt;/span&gt;&lt;/div&gt;
@@ -1079,15 +1089,15 @@ return $collapsiblecontent.is(&quot;:visible&quot;) ? &quot;- &quot; : &quot;+ &
 &lt;h3 id=&quot;model&quot;&gt;Model&lt;/h3&gt;
 &lt;p&gt;The idea for the design of the model was very intricate. Unable to catch &lt;a href=&quot;https://github.com/quaternius&quot;&gt;quaternius&lt;/a&gt; online, I went forward with a placeholder model for the time being, which looked like this-&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/angelOld.png&quot; alt=&quot;angelOld&quot; title=&quot;Old Angel Model&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/angelOld.jpg&quot; alt=&quot;angelOld&quot; title=&quot;Old Angel Model&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Soon after, &lt;a href=&quot;https://github.com/quaternius&quot;&gt;quaternius&lt;/a&gt; was back and ready to do some Blender magic. This was also probably the most elegant and beautiful work of his that has been added to the game.&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/angelNew.png&quot; alt=&quot;angelNew&quot; title=&quot;New Angel Model&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/angelNew.jpg&quot; alt=&quot;angelNew&quot; title=&quot;New Angel Model&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The initial model he made was a flat one (left), but it was soon changed to a smooth version (right) which looked better.&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/angelFlatAndSmooth.png&quot; alt=&quot;angelFlatAndSmooth&quot; title=&quot;Angel Flat And Smooth&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/angelFlatAndSmooth.jpg&quot; alt=&quot;angelFlatAndSmooth&quot; title=&quot;Angel Flat And Smooth&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The model is completely static and has no built-in animations. The same model is intelligently used for both the active and inactive states of the angel statue using just a texture change.&lt;/p&gt;
 
@@ -1102,7 +1112,7 @@ The two states of the revival stone model only differ in texture. This is implem
 
 &lt;p&gt;The two different textures being used only differ slightly- the texture for the active state has a brighter color for the angel’s statue and an orange color for the orb to make it appear lit.&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/angelActiveAndInactive.png&quot; alt=&quot;angelActiveAndInactive&quot; title=&quot;angelActiveAndInactive&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/angelActiveAndInactive.jpg&quot; alt=&quot;angelActiveAndInactive&quot; title=&quot;angelActiveAndInactive&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;respawn-mechanism&quot;&gt;Respawn mechanism&lt;/h3&gt;
 &lt;p&gt;After a player dies a Death Screen is displayed. Upon clicking the “Respawn” button a &lt;code class=&quot;highlighter-rouge&quot;&gt;RespawnRequestEvent&lt;/code&gt; is sent and the spawn location is found using the World Generator information and the player respawn happens. This whole process was broken down using &lt;a href=&quot;https://github.com/MovingBlocks/Terasology/pull/2983&quot;&gt;this Engine PR&lt;/a&gt; allowing other systems to alter a player’s respawn location.&lt;/p&gt;
@@ -1137,7 +1147,7 @@ For instance- the positionRangeGenerator allows me to ensure that all particles 
 &lt;h3 id=&quot;lighting&quot;&gt;Lighting&lt;/h3&gt;
 &lt;p&gt;In addition to the texture change, there was a need to add lighting for the orb to appear as glowing. This is done by creating a simple orb entity which spawns near the location of the orb and has a &lt;code class=&quot;highlighter-rouge&quot;&gt;LightComponent&lt;/code&gt; attached. Using the light component the two states of the revival stone appear as such at night-&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/angelLightAndDark.png&quot; alt=&quot;angelLightAndDark&quot; title=&quot;angelLightAndDark&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/angelLightAndDark.jpg&quot; alt=&quot;angelLightAndDark&quot; title=&quot;angelLightAndDark&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The PR for the revival stone is not complete yet, as some fixes are still required to make it multiplayer compatible. &lt;a href=&quot;https://github.com/Terasology/AdventureAssets/pull/11&quot;&gt;This PR&lt;/a&gt; contains all the progress so far. A working video with the placeholder model completely functioning in Single Player follows-&lt;/p&gt;
 
@@ -1450,7 +1460,7 @@ One more problem is that the editing and removal of the trap (basically, interac
 
 &lt;p&gt;It would look something like this:&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/wipeout.png&quot; alt=&quot;wipeout&quot; title=&quot;Wipe Out&quot; style=&quot;max-width: 700px;&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/wipeout.jpg&quot; alt=&quot;wipeout&quot; title=&quot;Wipe Out&quot; style=&quot;max-width: 700px;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Achieving this would be a challenge and I’ll need to get started with the physics engine.&lt;/p&gt;
 
@@ -1696,13 +1706,13 @@ $(document).ready(function(){
 
 &lt;p&gt;The &lt;a href=&quot;https://github.com/Terasology/Journal&quot;&gt;Journal module&lt;/a&gt; was left pretty much untouched since &lt;a href=&quot;https://github.com/MarcinSc&quot;&gt;MarcinSc&lt;/a&gt; had created. The Journal module looks like so-&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/WaSJournal.png&quot; alt=&quot;WoodAndStone Journal&quot; title=&quot;WoodAndStone Journal&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/WaSJournal.jpg&quot; alt=&quot;WoodAndStone Journal&quot; title=&quot;WoodAndStone Journal&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;It has a left panel for different chapters and each chapter has its own entries. This handles categorisation pretty well, making it easier for the user to access specific entries and saving a long scroll.&lt;/p&gt;
 
 &lt;p&gt;I’ve added another enhancement which now makes the Journal more interactive. Earlier there was just a notification that would pop up when a new Journal Entry was added. However, it wouldn’t be highlighted in any way in the Journal. With the &lt;a href=&quot;https://github.com/Terasology/Journal/pull/3/&quot;&gt;latest PR&lt;/a&gt; merged, now the unread Journal entries appear highlightedin yellow, until the chapter they belong to gets opened once.&lt;/p&gt;
 
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/UnreadJournal.png&quot; alt=&quot;Unread Journal&quot; title=&quot;Unread Journal&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/UnreadJournal.jpg&quot; alt=&quot;Unread Journal&quot; title=&quot;Unread Journal&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;In the image above, Exploration Log #111 is a “read” entry while Exploration Log #112 is a new/”unread” entry.&lt;/p&gt;
 
