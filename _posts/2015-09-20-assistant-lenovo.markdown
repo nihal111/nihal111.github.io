@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AssistANT- Lenovo GameJam"
+title: "Lenovo GameJam- First Hackathon Experience"
 date: 2015-09-20
 comments: true
 tags:
@@ -31,7 +31,7 @@ The 72-hour countdown was to start as soon as the clock hit **00:00 on September
 A little past midnight, we reconciled to the idea of a [classic bulldozer game](https://www.microsoft.com/en-us/store/p/bulldozer-classic/9nblgggzm5sm), where, in a puzzle setting a bulldozer has to push boulders to targets. Just that, the bulldozers are ants, the boulders are sugar cubes, and the targets are holes. Almost instantly, we came up with a name for it- **AssistANT**. The player has to assist an ant in order to send food to its family.
 
 ### OK, now what?
-We had done C++ in school but barely knew anything about building games. '**Unity**' stuck with us from the briefing and within a few minutes, we were already installing Unity while simultaneously watching tutorial videos. We decided to pair-program on Arpan's new laptop. Mine was a junk box, back then. Most of the initial stuff was pretty intuitive and we were soon fiddling around with an ant sprite on screen, experimenting with friction, gravity and all sorts of Physics stuff that came out of the box. 
+We had done a bit of C++ in school but barely knew anything about building games. '**Unity**' stuck with us from the briefing and within a few minutes, we were already installing Unity while simultaneously watching tutorial videos. We decided to pair-program on Arpan's new laptop. Mine was a junk box, back then. Most of the initial stuff was pretty intuitive and we were soon fiddling around with an ant sprite on screen, experimenting with friction, gravity and all sorts of Physics stuff that came out of the box. 
 
 It was 3 AM, and we decided to sleep and rendezvous at the morning 8:30 AM lecture. We couldn't concentrate in class and spent the entire time going through tutorial videos and docs. We rushed back to the room and spent the entire day building our first level. We had baked up a quick, basic map on MS Paint. Soon, we were playing around with Box Colliders and other 2D Physics stuff, writing code in C#. By around midnight, Level 1 was ready, but it was quirky, almost unplayable. I had a date the next day and I needed a time out.
 
@@ -52,8 +52,8 @@ Satisfied with our effort and pleased with the outcome, we submit and go to bed.
 ### Result Day
 The results took a long time to arrive. I received a call from Pradyot, the then WnCC manager. He invited me to attend the prize distribution ceremony. The venue had been changed to the [Tinkerers' Lab](http://tinkerers-lab.org/). We expected a consolation prize or perhaps the best freshmen game prize. These existed in addition to the top 3 primary cash prizes (breakup- 50k, 30k, 20k). The distribution started from the bottom and as names went by, we realised we had made a podium finish.
 
-We ended up receiving the 2nd prize with a cash prize of 30,000 INR. Our happiness knew no bounds and the prize money was a cherry on top.
+We ended up **winning the 2nd prize with a cash prize of 30,000 INR**. Our happiness knew no bounds and the prize money was a cherry on top.
 
-The game can be downloaded from [here](https://github.com/nihal111/nihal111.github.io/releases/download/v0.1/AssistANT.zip). The zip file contains an executable with instruction on how to run. Unfortunately, we lost the source code for the project by the time we learned Git.
+**The game can be downloaded from [here](https://github.com/nihal111/nihal111.github.io/releases/download/v0.1/AssistANT.zip).** The zip file contains an executable with instruction on how to run. Unfortunately, we lost the source code for the project by the time we learned Git.
 
 **Note from the future**: *I believe that this one event sparked a butterfly effect. I feel it has had a considerable impact on my life choices pertaining towards WnCC, shaping my interests and pursuing coding as a hobby. I look back to this with a vivid memory and great pleasure.*
