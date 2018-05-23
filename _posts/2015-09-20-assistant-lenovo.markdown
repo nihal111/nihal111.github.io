@@ -54,6 +54,6 @@ The results took a long time to arrive. I received a call from Pradyot, the then
 
 We ended up **winning the 2nd prize with a cash prize of 30,000 INR**. Our happiness knew no bounds and the prize money was a cherry on top.
 
-**The game can be downloaded from [here](https://github.com/nihal111/nihal111.github.io/releases/download/v0.1/AssistANT.zip).** The zip file contains an executable with instruction on how to run. Unfortunately, we lost the source code for the project by the time we learned Git.
+**The game can be downloaded from [here](https://github.com/nihal111/nihal111.github.io/releases/download/v0.1/AssistANT.zip).** The zip file contains an executable with instruction on how to run. Unfortunately, the source code didn't survive since we didn't know any version controlbak then.
 
 **Note from the future**: *I believe that this one event sparked a butterfly effect. I feel it has had a considerable impact on my life choices pertaining towards WnCC, shaping my interests and pursuing coding as a hobby. I look back to this with a vivid memory and great pleasure.*
