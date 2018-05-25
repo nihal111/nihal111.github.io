@@ -210,8 +210,27 @@ nav {
     letter-spacing: 1px; }
     @media screen and (max-width: 640px) {
       nav a {
-        margin: 0 10px;
-        color: #4183C4; } }
+        margin: 0 10px; } }
+
+.site-title {
+  font-weight: 300;
+  line-height: 56px;
+  margin-bottom: -1px;
+  float: left;
+  color: #111;
+  letter-spacing: 1px;
+  text-decoration: none;
+  display: block;
+  padding: 0 15px;
+  font-family: 'Muli', sans-serif;
+  box-shadow: 0; }
+  .site-title:hover, .site-title:active {
+    background: #1D1425;
+    text-decoration: none;
+    color: #19CCAA; }
+  @media screen and (max-width: 640px) {
+    .site-title {
+      margin: 0 10px; } }
 
 .site-nav {
   float: right;
@@ -227,7 +246,7 @@ nav {
 .site-nav .page-link:not(:last-child) {
   margin-right: 20px; }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
   .site-nav {
     position: absolute;
     top: 9px;
@@ -449,6 +468,120 @@ nav {
   left: 0;
   width: 100%;
   height: 100%; }
+
+/* For new home/landing page */
+.hero {
+  display: table;
+  margin-top: 150px;
+  width: 100%;
+  height: 100%; }
+
+.hero-inner {
+  width: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center; }
+
+.hero-inner .dot {
+  padding: 5px;
+  border: 1px solid #dedede; }
+
+.hero-inner h1, .hero-inner h3 {
+  max-width: 760px;
+  display: block; }
+
+.hero-inner h1 {
+  margin-top: .7em;
+  font-size: 2.5rem;
+  margin: 0 auto; }
+
+.hero-inner h3 {
+  font-size: 1.25rem;
+  margin: 0.8em auto 1.2em; }
+
+.hero-inner h3, .hero-inner em {
+  font-weight: 300; }
+
+.hero-inner em {
+  color: #337ab7; }
+
+.hero-inner strong {
+  font-weight: 700; }
+
+.dot {
+  max-height: 200px;
+  border-radius: 50%; }
+
+.hero-container {
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5em;
+  padding-right: 1.5em; }
+
+@media screen and (min-width: 768px) {
+  .hero-container {
+    max-width: 768px; } }
+@media screen and (min-width: 1240px) {
+  .hero-container {
+    max-width: 960px; } }
+button, input[type="button"], input[type="reset"], input[type="submit"], .button, .toggle-navbar-button {
+  appearance: none;
+  background-color: #337ab7;
+  border: 0;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 700;
+  line-height: 1;
+  padding: .75em 1.5em;
+  text-decoration: none;
+  transition: background-color .3s ease-in-out;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap; }
+
+button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover, .button:hover, .toggle-navbar-button:hover, button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus, .button:focus, .toggle-navbar-button:focus {
+  background-color: #296292; }
+
+button.disabled, input.disabled[type="button"], input.disabled[type="reset"], input.disabled[type="submit"], .disabled.button, .disabled.toggle-navbar-button, button:disabled, input[type="button"]:disabled, input[type="reset"]:disabled, input[type="submit"]:disabled, .button:disabled, .toggle-navbar-button:disabled {
+  color: inherit;
+  cursor: not-allowed;
+  box-shadow: none;
+  opacity: 0.65; }
+
+button.disabled:hover, input.disabled[type="button"]:hover, input.disabled[type="reset"]:hover, input.disabled[type="submit"]:hover, .disabled.button:hover, .disabled.toggle-navbar-button:hover, button.disabled:focus, input.disabled[type="button"]:focus, input.disabled[type="reset"]:focus, input.disabled[type="submit"]:focus, .disabled.button:focus, .disabled.toggle-navbar-button:focus, button:disabled:hover, input[type="button"]:disabled:hover, input[type="reset"]:disabled:hover, input[type="submit"]:disabled:hover, .button:disabled:hover, .toggle-navbar-button:disabled:hover, button:disabled:focus, input[type="button"]:disabled:focus, input[type="reset"]:disabled:focus, input[type="submit"]:disabled:focus, .button:disabled:focus, .toggle-navbar-button:disabled:focus {
+  color: inherit;
+  background: none transparent; }
+
+.button-ghost {
+  background-color: transparent;
+  border: 2px solid #337ab7;
+  color: #337ab7;
+  margin-bottom: 2px; }
+
+.button-ghost:hover, .button-ghost:focus {
+  color: #fff; }
+
+.social {
+  padding: 1.5em 0; }
+
+.social li {
+  display: inline-block;
+  padding: 0 0.6em; }
+
+.social a {
+  color: #9a9a9a; }
+
+.social a:hover, .social a:active, .social a:focus {
+  color: #337ab7; }
+
+.social i {
+  font-size: 1.6em; }
 
 /**
  * Syntax highlighting styles

@@ -1,5 +1,8 @@
 <aside>
 	<div class="container">
+    <nav>
+      <a class="site-title" href="/">nihal111</a>
+    </nav>
 		<nav class="site-nav">
      <a href="#" class="menu-icon">
         <svg viewBox="0 0 18 15">
@@ -9,7 +12,7 @@
         </svg>
       </a>
       <div class="trigger">
-			<ul> 
+			<ul>
 				{% for page in site.pages %}
           {% if page.header %}
           {% if page.title %}
@@ -17,28 +20,10 @@
           {% endif %}
           {% endif %}
         {% endfor %}
-            <li><a href="{{ "/docs/resume.pdf" | prepend: site.baseurl }}">Résumé</a></li>
-        		<li><a href="{{ "/blog" | prepend: site.baseurl }}">Blog</a></li>
+          <li><a href="{{ "/docs/resume.pdf" | prepend: site.baseurl }}">CV</a></li>
+      		<li><a href="{{ "/blog" | prepend: site.baseurl }}">Blog</a></li>
 			</ul>
       </div>
 		</nav>
 	</div>
 </aside>
-
-<div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.myname }}</a></h1>
-            <p class="site-description">{{ site.byline }}</p>
-          </div>
-          
-          <nav>
-            {% include social.html %}
-          </nav>
-          
-        </header>
-      </div>
-</div>
