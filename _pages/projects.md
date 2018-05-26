@@ -64,7 +64,7 @@ Here is the list of projects I own or have contributed to:
 [J.A.R.V.I.S.]:https://github.com/nihal111/J.A.R.V.I.S
 [Terasology]: https://github.com/MovingBlocks/Terasology
 [EVENTual android app]: https://play.google.com/store/apps/details?id=co.eventual.ferozepurvale.eventual
-[EVENTual]: http://www.eventual.co.in/
+[EVENTual]: https://github.com/Ferozepurwale/EVENTual
 [WnCCRepo]: https://github.com/nihal111/WnCC
 [WnCC Website]: http://wncc-iitb.org/
 [Lend-It]: http://pacific-dawn-55810.herokuapp.com
