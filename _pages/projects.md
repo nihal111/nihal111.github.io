@@ -67,7 +67,7 @@ Here is the list of projects I own or have contributed to:
 [EVENTual]: http://www.eventual.co.in/
 [WnCCRepo]: https://github.com/nihal111/WnCC
 [WnCC Website]: http://wncc-iitb.org/
-[LendIt]: http://pacific-dawn-55810.herokuapp.com
+[Lend-It]: http://pacific-dawn-55810.herokuapp.com
 [MooDLD]: https://github.com/nihal111/MooDLD
 [IITB login extension for Chrome]: https://github.com/nihal111/IITB-login-extension-Chrome
 [AssistANT]: https://github.com/nihal111/nihal111.github.io/releases/download/v0.1/AssistANT.zip
