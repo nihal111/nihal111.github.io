@@ -6,9 +6,53 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 29 May 2018 17:08:54 +0900</pubDate>
-    <lastBuildDate>Tue, 29 May 2018 17:08:54 +0900</lastBuildDate>
+    <pubDate>Wed, 30 May 2018 01:04:37 +0900</pubDate>
+    <lastBuildDate>Wed, 30 May 2018 01:04:37 +0900</lastBuildDate>
     <generator>Jekyll v3.8.2</generator>
+    
+      <item>
+        <title>Flying a DJI Mavic</title>
+        <description>&lt;p&gt;On yet another Summer weekend, I drove to the NRI Complex in Seawoods. It was a sunny day, and we were to fly a drone that evening.&lt;/p&gt;
+
+&lt;p&gt;The Lake
+Just adjacent to the NRI Estate is a lake where a raft of flamingoes with almost a dozen other species visit during the summer. During the season, the lake also becomes a hive for photographers from all over Navi Mumbai. 
+During winter, this lake also becomes home to thousands of migratory aquatic birds including ducks, herons, and kingfishers. There’s also an interesting &lt;a href=&quot;https://www.thebetterindia.com/120843/shruti-agarwal-sunil-agarwal-seawoods-lake-mumbai/&quot;&gt;story&lt;/a&gt; behind the lake’s preservation and it’s battle against being converted to a golf course.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/lake.jpg&quot; alt=&quot;Lake&quot; title=&quot;Lake&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The Drone
+The drone belonged to Vaibhav. It was a DJI Mavic, the one listed &lt;a href=&quot;https://www.dji.com/mavic&quot;&gt;here&lt;/a&gt;. A small transmitter hooks on to a phone, and the drone relays a clear view to the phone’s screen, saving higher quality footage to the SD card. There were four of us flying that evening, each reluctantly passing on the transmitter to the other.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/drone1.jpg&quot; alt=&quot;drone1&quot; title=&quot;drone1&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The drone is pretty smart and packed with features including collision avoidance, wind monitoring, constant battery monitoring for safe return and a fantastic return-to-home option that brings the drone back to the take-off point with centimeter accuracy.&lt;/p&gt;
+
+&lt;p&gt;The software side from DJI is pretty amazing too. In addition to providing the above-listed features in a clean interface, it does a great job at pre-processing too- threading together an entire video from the shots taken during flight and overlaying music with one button tap. The videos attached below are created automagically by the DJI app.&lt;/p&gt;
+
+&lt;div class=&quot;videowrapper&quot;&gt;
+    &lt;iframe width=&quot;1024&quot; height=&quot;768&quot; src=&quot;https://www.youtube.com/embed/_7gnN7xBIlM&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;After Saturday’s exciting flight session, Arpan and I couldn’t get enough and ended up exhorting Vaibhav for another flying session on Sunday.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/drone2.jpg&quot; alt=&quot;drone2&quot; title=&quot;drone2&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This time we took off from Vaibhav’s roof (14 storeys high) getting an aerial perspective and a larger field of view to maneuver the drone. We flew past the lake again and also took cinematic landscapes shots of the NRP colony.&lt;/p&gt;
+
+&lt;div class=&quot;videowrapper&quot;&gt;
+    &lt;iframe width=&quot;1024&quot; height=&quot;768&quot; src=&quot;https://www.youtube.com/embed/iOXtOOut9f4&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Overall, it was a weekend well spent. Also, this happens to be my last weekend here in Mumbai as I fly to Tokyo this Saturday for my internship.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 27 May 2018 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2018/05/27/flying-dji-mavic.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/05/27/flying-dji-mavic.html</guid>
+        
+        <category>drone</category>
+        
+        
+      </item>
     
       <item>
         <title>Update time on Windows with IIT Bombay NTP server</title>
@@ -1623,146 +1667,6 @@ After some discussion with flo about cata’s project on scenarios, I realised t
         <pubDate>Tue, 06 Jun 2017 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/2017/06/06/GSoC-week5.html</link>
         <guid isPermaLink="true">http://localhost:4000/2017/06/06/GSoC-week5.html</guid>
-        
-        <category>open source</category>
-        
-        <category>MovingBlocks</category>
-        
-        <category>Terasology</category>
-        
-        <category>GSoC</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>GSoC Week 4: Integrating Journal</title>
-        <description>&lt;style type=&quot;text/css&quot;&gt;
-    .collapsiblecontainer {
-    width:100%;
-    border:1px solid #d3d3d3;
-}
-.collapsiblecontainer div {
-    width:100%;
-}
-.collapsiblecontainer .collapsibleheader {
-    background-color:#d3d3d3;
-    padding: 2px;
-    cursor: pointer;
-    font-weight: bold;
-}
-.collapsiblecontainer .collapsiblecontent {
-    display: none;
-    padding : 5px;
-}
-&lt;/style&gt;
-
-&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js&quot;&gt;&lt;/script&gt;
-
-&lt;script type=&quot;text/javascript&quot; src=&quot;/js/github-buttons.js&quot;&gt;&lt;/script&gt;
-
-&lt;script type=&quot;text/javascript&quot;&gt;
-$(document).ready(function(){
-    $(&quot;.collapsibleheader&quot;).click(function () {
-        $collapsibleheader = $(this);
-        //getting the next element
-        $collapsiblecontent = $collapsibleheader.next();
-        //open up the collapsiblecontent needed - toggle the slide- if visible, slide up, if not slidedown.
-        $collapsiblecontent.slideToggle(500, function () {
-            //execute this after slideToggle is done
-            //change text of collapsibleheader based on visibility of collapsiblecontent div
-            $collapsibleheader.find(&quot;span:first-child&quot;).text(function () {
-                //change text based on condition
-                return $collapsiblecontent.is(&quot;:visible&quot;) ? &quot;- &quot; : &quot;+ &quot;;
-            });
-        });
-
-    });
-}); 
-
-&lt;/script&gt;
-
-&lt;p&gt;The past week involved creating the new module for my exploration world and getting sarted with it.&lt;/p&gt;
-
-&lt;h1 id=&quot;what-have-i-been-up-to&quot;&gt;What have I been up to?&lt;/h1&gt;
-
-&lt;h2 id=&quot;creating-the-lost-module&quot;&gt;Creating the Lost module&lt;/h2&gt;
-
-&lt;p&gt;The Lost module is the new gameplay module that I have created and would be working on for the next two months. I’m still working on writing some logs but the general idea for the &lt;a href=&quot;https://docs.google.com/document/d/1GVmJEV2KKjqgxjtVR-_Lh7QsvRzQbfxg9qeHjimIbPg/edit?usp=sharing&quot;&gt;lore&lt;/a&gt; is complete. In short the story is centered around an intergalactic explorer who while exploring the vast world of Terasology, gets stranded. The wormhole creator that allows him to travel through space becomes dysfunctional. Fornlorn with no way to return to his home planet, he starts exploring the planet, trying to survive on what may become the last planet he would ever set his foot on.&lt;/p&gt;
-
-&lt;h2 id=&quot;integrating-journal&quot;&gt;Integrating Journal&lt;/h2&gt;
-&lt;p&gt;A key part of the new explorationn world would be a journal that links several things. The main purpose of the Journal would be to serve as a secondary memory for the player. I plan to use the Journal in several ways-&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Exploration logs that would be generated as time passes or when an event occurs. Like when the player first spots a deer or finds a treasure.&lt;/li&gt;
-  &lt;li&gt;New recipes would show up when the player pick a new item. Like picking up a stone would create an entry with the recipe for hammer.&lt;/li&gt;
-  &lt;li&gt;The journal would be integrated with books. Whenever you open an important book, the key parts of the book would be stored in the journal.&lt;/li&gt;
-  &lt;li&gt;Integrations with content modules like WoodCrafting, StoneCrafting (earlier WoodAndStone), CopperAndBronze, Alchemy, EquipmentSmithing, Equipment, Cooking and SimpleFarming. These would essentially be tutorials to help the player. Essentially recipes that show up, guides about more involved process like different quality of ingredients resulting in different final products.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;As of now the Journal has only been integrated with item pick up events and an initial on-spawn event that sends the first journal entry.&lt;/p&gt;
-
-&lt;h2 id=&quot;improvements-in-journal&quot;&gt;Improvements in Journal&lt;/h2&gt;
-
-&lt;p&gt;The &lt;a href=&quot;https://github.com/Terasology/Journal&quot;&gt;Journal module&lt;/a&gt; was left pretty much untouched since &lt;a href=&quot;https://github.com/MarcinSc&quot;&gt;MarcinSc&lt;/a&gt; had created. The Journal module looks like so-&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/WaSJournal.jpg&quot; alt=&quot;WoodAndStone Journal&quot; title=&quot;WoodAndStone Journal&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;It has a left panel for different chapters and each chapter has its own entries. This handles categorisation pretty well, making it easier for the user to access specific entries and saving a long scroll.&lt;/p&gt;
-
-&lt;p&gt;I’ve added another enhancement which now makes the Journal more interactive. Earlier there was just a notification that would pop up when a new Journal Entry was added. However, it wouldn’t be highlighted in any way in the Journal. With the &lt;a href=&quot;https://github.com/Terasology/Journal/pull/3/&quot;&gt;latest PR&lt;/a&gt; merged, now the unread Journal entries appear highlightedin yellow, until the chapter they belong to gets opened once.&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/UnreadJournal.jpg&quot; alt=&quot;Unread Journal&quot; title=&quot;Unread Journal&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;In the image above, Exploration Log #111 is a “read” entry while Exploration Log #112 is a new/”unread” entry.&lt;/p&gt;
-
-&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/Journal/pull/3&quot;&gt;&lt;/div&gt;
-
-&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/Journal/pull/4&quot;&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Roadblock:&lt;/em&gt;&lt;/strong&gt; There was a problem with the Journal module though, the first journal entry that was required to be sent only once when the player was spawned was resent every time the player respawned. This happened because the &lt;code class=&quot;highlighter-rouge&quot;&gt;onPlayerSpawnedEvent&lt;/code&gt; was sent to the Player entity even on respawn.&lt;br /&gt;
-A bigger problem was that whatever entries that the player had in his journal would all disappear when the player respawned. This happened because the player entity in the game was completely destroyed when the player died. In the process all components attached to the player were stripped and destroyed too.&lt;/p&gt;
-
-&lt;p&gt;This was what I dealt with for the larger part of last week.&lt;/p&gt;
-
-&lt;h2 id=&quot;saving-the-player-entity-from-destruction&quot;&gt;Saving the player entity from destruction&lt;/h2&gt;
-&lt;p&gt;All existing systems relied on the player entity to be totally destroyed (and stripped of all components) when the player dies in game. This however wasn’t a nice approach, as the player entity carried a lot of data that potentially could be preserved or dealt with a better way even on death.&lt;/p&gt;
-
-&lt;p&gt;I felt this problem for the first time when I realised that my player would lose all it’s journal entries on death. However there are many other cases which require the player entity and it’s components to not be totally destroyed.&lt;/p&gt;
-
-&lt;h4 id=&quot;the-need&quot;&gt;The need&lt;/h4&gt;
-&lt;ol&gt;
-  &lt;li&gt;A player’s inventory is always lost on death. It just disappears. With the player entity now being preserved, the player simply gets to keep its inventory after respawn. However, if needed a system can easily be added to allow items from inventory to drop when a player dies (even probabilistically).&lt;/li&gt;
-  &lt;li&gt;Many other components would be better off having persisted than being destroyed at death. For eg. the EventualSkills module makes learning and gaining skills possible. All the skills a player has just would disappear if the player entity is completely destroyed, which might be undesirable.&lt;/li&gt;
-  &lt;li&gt;There was no separate event that would be sent upon respawning. Now there is an additional &lt;code class=&quot;highlighter-rouge&quot;&gt;onPlayerRespawnedEvent&lt;/code&gt; that can be used for this purpose. The &lt;code class=&quot;highlighter-rouge&quot;&gt;onPlayerSpawnedEvent&lt;/code&gt; is simply an event that only gets fired once when the player enters a world for the first time.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/MovingBlocks/Terasology/pull/2958&quot;&gt;This PR&lt;/a&gt; makes the said change. It adds the &lt;strong&gt;OnPlayerRespawnedEvent, PlayerDeathEvent, AliveCharacterComponent, PlayerCharacterComponent.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/MovingBlocks/Terasology/pull/2958&quot;&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;what-happens-now&quot;&gt;What happens now&lt;/h4&gt;
-
-&lt;p&gt;A character lives. It has the AliveComponent.
-It dies.
-A &lt;code class=&quot;highlighter-rouge&quot;&gt;BeforeDestroyEvent&lt;/code&gt; handler receives all entities having &lt;code class=&quot;highlighter-rouge&quot;&gt;AliveCharacterComponent&lt;/code&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;If the entity also has a &lt;code class=&quot;highlighter-rouge&quot;&gt;PlayerCharacterComponent&lt;/code&gt;, the event is consumed to prevent destruction. The &lt;code class=&quot;highlighter-rouge&quot;&gt;AliveCharacterComponent&lt;/code&gt; is stripped off adn a &lt;code class=&quot;highlighter-rouge&quot;&gt;PlayerDeathEvent&lt;/code&gt; sent along with &lt;code class=&quot;highlighter-rouge&quot;&gt;DeathEvent&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Else just a &lt;code class=&quot;highlighter-rouge&quot;&gt;DeathEvent&lt;/code&gt; sent  and the &lt;code class=&quot;highlighter-rouge&quot;&gt;AliveCharacterComponent&lt;/code&gt; stripped off.
-DeathScreen launches on &lt;code class=&quot;highlighter-rouge&quot;&gt;PlayerDeathEvent&lt;/code&gt; and sends the &lt;code class=&quot;highlighter-rouge&quot;&gt;RespawnRequestEvent&lt;/code&gt;.
-&lt;code class=&quot;highlighter-rouge&quot;&gt;RespawnRequestEvent&lt;/code&gt; is received by the &lt;code class=&quot;highlighter-rouge&quot;&gt;PlayerSystem&lt;/code&gt;.
-&lt;code class=&quot;highlighter-rouge&quot;&gt;PlayerSystem&lt;/code&gt; then respawns player, sets the location for &lt;code class=&quot;highlighter-rouge&quot;&gt;clientEntity&lt;/code&gt; to spawn location. Sends &lt;code class=&quot;highlighter-rouge&quot;&gt;OnPlayerRespawnedEvent&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Components that need to be removed on death are removed by receiving the &lt;code class=&quot;highlighter-rouge&quot;&gt;PlayerDeathEvent&lt;/code&gt;.
-Components that need to be reset are done by receiving the &lt;code class=&quot;highlighter-rouge&quot;&gt;OnPlayerRespawnedEvent&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Next week would see more work on the exploration module. I need to experiment with Structural Templates and see what’s the best way to spawn structures in different places.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 30 May 2017 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2017/05/30/GSoC-week4.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/05/30/GSoC-week4.html</guid>
         
         <category>open source</category>
         
