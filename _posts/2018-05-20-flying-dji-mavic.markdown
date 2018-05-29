@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Flying a DJI Mavic"
-date: 2018-05-27
+date: 2018-05-20
 comments: true
 tags:
 - drone

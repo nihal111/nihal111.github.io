@@ -6,9 +6,42 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 30 May 2018 01:04:37 +0900</pubDate>
-    <lastBuildDate>Wed, 30 May 2018 01:04:37 +0900</lastBuildDate>
+    <pubDate>Wed, 30 May 2018 01:44:36 +0900</pubDate>
+    <lastBuildDate>Wed, 30 May 2018 01:44:36 +0900</lastBuildDate>
     <generator>Jekyll v3.8.2</generator>
+    
+      <item>
+        <title>I just flew to Japan</title>
+        <description>&lt;p&gt;Wifi or SkyTV, I needed at least one. The UEFA Champions League Final was on at night, and I was flying the ANA to Tokyo.&lt;/p&gt;
+
+&lt;p&gt;I was travelling from Mumbai to Tokyo for my summer internship at Mercari. I left for the airport at 4 PM. My plane was to depart at 8:15 PM. The traffic was unusually high for a non-working Saturday afternoon; I ended up reaching the airport at 5:45 PM. The airport stuff didn’t take long, and I was near the boarding gates by 6:30. I decided to wait in the lounge. &lt;strong&gt;PROTIP&lt;/strong&gt;: always try to carry a &lt;a href=&quot;https://www1.mastercard.com/content/mc/campaign-exchange/moments/india/en/local-campaigns/exclusive-airport-lounge-access.html&quot;&gt;MasterCard&lt;/a&gt; to the lounge, you get free food and drinks.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/lounge.jpg&quot; alt=&quot;Lounge&quot; title=&quot;Lounge&quot; style=&quot;max-height: 250px;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As soon as I boarded the flight, I checked the entertainment system. SkyTV was disabled. I accepted my fate of missing the finals and decided to watch a movie- The Butterfly Effect. My flight’s departure got delayed by an hour. After the flight took off, I realised that SkyTV started working. With my plans of sleeping destroyed, I braced myself for the match. The match was disappointing (save for Bale’s bicycle), thanks to Sergio Ramos’ &lt;a href=&quot;https://www.youtube.com/watch?v=UxCcZe_q1iI&quot;&gt;love for clean play&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Barely able to sleep at night, I arrived in Japan with numb legs. I found Emily-san from Fourth Valley Concierge waiting to pick me up. The other interns had already reached. We took a bus to the Ginza station and then a train to the Tameikei Sanno station. Our apartment was located somewhere in Roppongi. We picked up the keys to our apartments and went in to freshen up. Seeing the apartment for the first time was a delight, and I really couldn’t wish for better.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/homeJapan.jpeg&quot; alt=&quot;Home&quot; title=&quot;Home&quot; style=&quot;max-height: 300px;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Emily-san and Tanaka-san took us out for lunch and showed us around. I started falling in love with Tokyo. I spent most of the afternoon unpacking and getting used to my new home. I had a hard time trying to figure out a few things since almost everything was documented in Japanese, from the toilet seat temperature controls to the TV remote. The waste segregation was pretty complicated too, and I pushed it off for later.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/viewJapan.jpeg&quot; alt=&quot;View&quot; title=&quot;View&quot; style=&quot;max-height: 400px;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I called over Prateek in the evening, who lives only an hour away. He was doing his research internship at the University of Tokyo. We went out and explored the locality, hopped across a few convenience stores and got a few ready to cook items for dinner.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/dinnerJapan.jpeg&quot; alt=&quot;dinnerJapan&quot; title=&quot;Dinner&quot; style=&quot;max-height: 250px;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I retired to bed early, super excited for my first day at work.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 28 May 2018 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2018/05/28/flew-to-japan.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/05/28/flew-to-japan.html</guid>
+        
+        <category>Japan</category>
+        
+        
+      </item>
     
       <item>
         <title>Flying a DJI Mavic</title>
@@ -45,9 +78,9 @@ The drone belonged to Vaibhav. It was a DJI Mavic, the one listed &lt;a href=&qu
 
 &lt;p&gt;Overall, it was a weekend well spent. Also, this happens to be my last weekend here in Mumbai as I fly to Tokyo this Saturday for my internship.&lt;/p&gt;
 </description>
-        <pubDate>Sun, 27 May 2018 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2018/05/27/flying-dji-mavic.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/05/27/flying-dji-mavic.html</guid>
+        <pubDate>Sun, 20 May 2018 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2018/05/20/flying-dji-mavic.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/05/20/flying-dji-mavic.html</guid>
         
         <category>drone</category>
         
@@ -1513,160 +1546,6 @@ One more problem is that the editing and removal of the trap (basically, interac
         <pubDate>Mon, 12 Jun 2017 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/2017/06/12/GSoC-week6.html</link>
         <guid isPermaLink="true">http://localhost:4000/2017/06/12/GSoC-week6.html</guid>
-        
-        <category>open source</category>
-        
-        <category>MovingBlocks</category>
-        
-        <category>Terasology</category>
-        
-        <category>GSoC</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>GSoC Week 5: The Swing King</title>
-        <description>&lt;style type=&quot;text/css&quot;&gt;
-    .collapsiblecontainer {
-    width:100%;
-    border:1px solid #d3d3d3;
-}
-.collapsiblecontainer div {
-    width:100%;
-}
-.collapsiblecontainer .collapsibleheader {
-    background-color:#d3d3d3;
-    padding: 2px;
-    cursor: pointer;
-    font-weight: bold;
-}
-.collapsiblecontainer .collapsiblecontent {
-    display: none;
-    padding : 5px;
-}
-&lt;/style&gt;
-
-&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js&quot;&gt;&lt;/script&gt;
-
-&lt;script type=&quot;text/javascript&quot; src=&quot;/js/github-buttons.js&quot;&gt;&lt;/script&gt;
-
-&lt;script type=&quot;text/javascript&quot;&gt;
-$(document).ready(function(){
-    $(&quot;.collapsibleheader&quot;).click(function () {
-        $collapsibleheader = $(this);
-        //getting the next element
-        $collapsiblecontent = $collapsibleheader.next();
-        //open up the collapsiblecontent needed - toggle the slide- if visible, slide up, if not slidedown.
-        $collapsiblecontent.slideToggle(500, function () {
-            //execute this after slideToggle is done
-            //change text of collapsibleheader based on visibility of collapsiblecontent div
-            $collapsibleheader.find(&quot;span:first-child&quot;).text(function () {
-                //change text based on condition
-                return $collapsiblecontent.is(&quot;:visible&quot;) ? &quot;- &quot; : &quot;+ &quot;;
-            });
-        });
-
-    });
-}); 
-
-&lt;/script&gt;
-
-&lt;p&gt;Last week involved a lot of discussions. The plan for the next two months is now a lot clearer. Here’s a quick fun video that should explain the title of this blog post.&lt;/p&gt;
-
-&lt;div class=&quot;videowrapper&quot;&gt;
-    &lt;iframe width=&quot;1024&quot; height=&quot;768&quot; src=&quot;https://www.youtube.com/embed/efCmy_e7JRU&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h1 id=&quot;what-have-i-been-upto&quot;&gt;What have I been upto?&lt;/h1&gt;
-
-&lt;h2 id=&quot;woodandstonecraftingjournal&quot;&gt;WoodAndStoneCraftingJournal&lt;/h2&gt;
-&lt;p&gt;With last week’s journal improvements, it was time to put the journal to some good use. A good technique to do this is to use the main Gamplay module for all story/lore related journal entries. However for most of the content related entries like crafting tutorials or cooking recipes, the best way to go is to create Journal extension modules. These extension modules would connect each content module to the Journal module. Essentially, the Journal extension module would house the Journal entries related to that content module which can easily be reused by multiple gameplay modules.&lt;/p&gt;
-
-&lt;p&gt;I went ahead and created the first Journal Extension module as a proof of concept with only about 8 entries to demonstrate how it would work. The &lt;a href=&quot;https://github.com/Terasology/WoodAndStoneCraftingJournal/&quot;&gt;WoodAndStoneCraftingJournal&lt;/a&gt; has a dependency on &lt;a href=&quot;https://github.com/Terasology/WoodCrafting&quot;&gt;WoodCrafting&lt;/a&gt;, &lt;a href=&quot;https://github.com/Terasology/StoneCrafting&quot;&gt;StoneCrafting&lt;/a&gt; and &lt;a href=&quot;https://github.com/Terasology/Journal&quot;&gt;Journal&lt;/a&gt;. It contains the journal entries pertaining to both WoodCrafting and StoneCrafting (since both are a little related).&lt;/p&gt;
-
-&lt;h2 id=&quot;where-are-the-puzzles&quot;&gt;Where are the puzzles?&lt;/h2&gt;
-&lt;p&gt;A major chunk of my last two month work consists of making Puzzles and adding them to my exploration centered gameplay module.
-After some discussion with flo about cata’s project on scenarios, I realised that it would be redundant to spend time working on mechanisms for action/event triggered changes. Since the Scenarios project would be focused on dealing with this, it would be a better idea that I aim towards making puzzle elements like traps, portals and other dangerous pieces.&lt;/p&gt;
-
-&lt;h3 id=&quot;adventure-assets&quot;&gt;Adventure Assets&lt;/h3&gt;
-&lt;p&gt;With this new direction to work on, I’ve created a &lt;a href=&quot;https://docs.google.com/document/d/1Go425IJSUEI2baXX0PkSamLIHZf7qYOA7emu6qH7PvE/edit?usp=sharing&quot;&gt;list of potential items&lt;/a&gt; that I could work on. Also a new module called &lt;a href=&quot;https://github.com/Terasology/AdventureAssets/&quot;&gt;AdventureAssets&lt;/a&gt; has been created to house such elements.&lt;/p&gt;
-
-&lt;p&gt;The idea now, is that I would create various puzzle elements and combine them together in a few different settings. I would create structure templates for these puzzles akin to the dungeons in GooeysQuests. This would allow me to place these puzzles in my exploration world manually by using a structure spawner. I plan to place these puzzles in the world manually and share the saved file which could be played with.&lt;/p&gt;
-
-&lt;div class=&quot;collapsiblecontainer&quot;&gt;
-&lt;div class=&quot;collapsibleheader&quot;&gt;&lt;span&gt;+ &lt;/span&gt;&lt;span&gt;Why do I want to use Structure Templates?&lt;/span&gt;&lt;/div&gt;
-&lt;div class=&quot;collapsiblecontent&quot;&gt;   
-    &lt;a target=&quot;_blank&quot; href=&quot;https://github.com/Terasology/StructureTemplates&quot;&gt;Structure Templates&lt;/a&gt; allows me to create a puzzle setting or essentially a puzzle map, as a prefab. I can arrange the elements in the manner I want and also edit the map later. In theory, I could create the puzzles by hand in the saved world that I plan to share, without using Structure Templates at all. However using Structure Templates allows me to concentrate on making the puzzles one by one without worrying about how I would place them in the world. Once I have the Structure Templates for the puzzles ready I can place them however I want in the world. Also, this allows the same created puzzle to be reused multiple times. An existing puzzle can be extended or modified slightly to create a new one. Further, if a puzzle consists of multiple rooms of the same type, a single room created using ST can be easily reused to create more.
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;the-swinging-blade&quot;&gt;The Swinging Blade&lt;/h2&gt;
-
-&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/AdventureAssets/pull/2&quot;&gt;&lt;/div&gt;
-
-&lt;p&gt;The first item I decided to work on was the Swinging Blade. The setup consists of a huge blade that swings to and fro from one edge of the room to the other. This would serve as on obstacle and coming in contact with the blade would deal damage to the player.&lt;/p&gt;
-
-&lt;p&gt;I started working with a crude swinging blade model made by flo.&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/crudeSB.png&quot; alt=&quot;crudeSB&quot; title=&quot;crude SB&quot; style=&quot;max-height: 400px;&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;animating-the-blade&quot;&gt;Animating the blade&lt;/h3&gt;
-&lt;p&gt;I tried to make the blade move by linearly varying the &lt;code class=&quot;highlighter-rouge&quot;&gt;pitch&lt;/code&gt; (as in rotation’s &lt;code class=&quot;highlighter-rouge&quot;&gt;yaw, pitch and roll&lt;/code&gt;) of the entity. The GIF below shows this linear movement. This motion was later changed to an angular harmonic function, which factors in a time period (in seconds), an amplitude (in radians) and an offset/phase difference (in radians) which altogether looks like &lt;code class=&quot;highlighter-rouge&quot;&gt;theta = Acos((2*pi/T)*t + phi)&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/crudeSwingingBlade.gif&quot; alt=&quot;crudeSB&quot; title=&quot;crude SB&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;alignment-and-orientation&quot;&gt;Alignment and orientation&lt;/h3&gt;
-&lt;p&gt;The swinging blade was misaligned and I wanted it to rotate in a direction purpendicular to it’s current rotation. Soon I realised that I had no control on the orientaion of the Swinging Blade entity that was being spawned by the Structure Template. I could choose the position but I couldn’t change the orientation and rotation. This is because the Structure Template module allows you to spawn the structure anywhere in the world, regardless of the orientation in which they were created. Meaning, a structure that faced North could be spawned in a manner that it now faces East. All contents of the structure should undergo a similar change in their orientation too. But the entities didn’t. Till now, it wasn’t a problem as the only things being spawned were the GooeysQuests’ skeletons. Their orientation didn’t matter as they were live entities that would come running after you for your life.&lt;/p&gt;
-
-&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/StructureTemplates/pull/15&quot;&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/Terasology/StructureTemplates/pull/15&quot;&gt;This PR&lt;/a&gt; adds the rotational control to spawning entities while using the &lt;code class=&quot;highlighter-rouge&quot;&gt;SpawnPrefabsComponent&lt;/code&gt; in the Structure Templates module.&lt;/p&gt;
-
-&lt;div class=&quot;collapsiblecontainer&quot;&gt;
-&lt;div class=&quot;collapsibleheader&quot;&gt;&lt;span&gt;+ &lt;/span&gt;&lt;span&gt;Dealing with Quaternions (Quat4f)&lt;/span&gt;&lt;/div&gt;
-&lt;div class=&quot;collapsiblecontent&quot;&gt;   
-    I hadn't dealt with quaternions before and the above fix in the PR wasn't as straightforward to me as it looks like. I didn't really want to spend too much time learning how Quaternions work to make a simple change. I knew how the yaw, pitch and roll system worked and all I needed was to change the yaw value by a mutiple of 90 degree depending on the orientation in which the room was spawned. After a few attempts of Googling and ending up on wikipedia pages that deal with rigorous math to show how Quaternions work I was almost ready to give up. It was then that I bumped into this &lt;a target=&quot;_blank&quot; href=&quot;http://developerblog.myo.com/quaternions/&quot;&gt;blog post&lt;/a&gt; that made me understand and appreciate Quaternions. Soon after I found a &lt;a target=&quot;_blank&quot; href=&quot;https://gamedev.stackexchange.com/questions/23510/rotate-an-existing-quaternion-around-an-axis&quot;&gt;forum answer&lt;/a&gt; that gave me a good idea on how to solve my problem.
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;new-model-and-texture&quot;&gt;New model and texture&lt;/h3&gt;
-
-&lt;p&gt;Soon after I asked Quaternius to make a better model for the swinging blade and one thing led to another. Not before long, we had a full nice looking model ready with texture.&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;strong&gt;Inspiration&lt;/strong&gt;&lt;br /&gt;
-&lt;img src=&quot;/img/SB1.jpeg&quot; alt=&quot;SB1&quot; title=&quot;SB1&quot; style=&quot;width: 70%;&quot; /&gt;&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;strong&gt;Model imported&lt;/strong&gt;&lt;br /&gt;
-&lt;img src=&quot;/img/SB2.jpg&quot; alt=&quot;SB2&quot; title=&quot;SB2&quot; style=&quot;width: 70%;&quot; /&gt;&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;strong&gt;Texture mapped&lt;/strong&gt;&lt;br /&gt;
-&lt;img src=&quot;/img/SB3.png&quot; alt=&quot;SB3&quot; title=&quot;SB3&quot; style=&quot;width: 70%; max-height: 500px;&quot; /&gt;&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;strong&gt;Final model imported&lt;/strong&gt;&lt;br /&gt;
-&lt;img src=&quot;/img/SB4.jpg&quot; alt=&quot;SB4&quot; title=&quot;SB4&quot; style=&quot;width: 70%;&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;making-it-hurt&quot;&gt;Making it hurt&lt;/h3&gt;
-
-&lt;p&gt;I had a fine looking swinging blade, but it didn’t hurt yet. I could pass through it like silk.&lt;/p&gt;
-&lt;h4 id=&quot;adding-colliders&quot;&gt;Adding Colliders&lt;/h4&gt;
-&lt;p&gt;First step was to make the entity a rigid body and add box shape colliders. Since the shape of the entity was not so simple, I had to create two different entities- one for the blade and one for the rod.&lt;/p&gt;
-&lt;h4 id=&quot;adding-the-dodamageevent&quot;&gt;Adding the DoDamageEvent&lt;/h4&gt;
-&lt;p&gt;Since the blade was the part which would hurt, a &lt;code class=&quot;highlighter-rouge&quot;&gt;DamagePlayerComponent&lt;/code&gt; was added to the blade to detect collisions with the player and trigger a &lt;code class=&quot;highlighter-rouge&quot;&gt;DoDamageEvent&lt;/code&gt;. However, simply sending a &lt;code class=&quot;highlighter-rouge&quot;&gt;DoDamageEvent&lt;/code&gt; would kill the player in no time as however small the damage being sent, being in contact with the blade even for a second would trigger the &lt;code class=&quot;highlighter-rouge&quot;&gt;OnCollide&lt;/code&gt; method several times to result in death.&lt;/p&gt;
-&lt;h4 id=&quot;sending-a-characterimpulse&quot;&gt;Sending a CharacterImpulse&lt;/h4&gt;
-&lt;p&gt;The solution to this was sending a &lt;code class=&quot;highlighter-rouge&quot;&gt;CharacterImpulseEvent&lt;/code&gt; to the player as well, in a direction outward from the blade. This sends the player to a relatively safer zone while also dealing some damage.&lt;/p&gt;
-
-&lt;h3 id=&quot;multiplayer-ready&quot;&gt;Multiplayer ready?&lt;/h3&gt;
-
-&lt;p&gt;The swinging blade is not yet multiplayer ready. There are quite a few issues on dealing with the Swinging Blade in multiplayer. The movement prediction on the server side deals with the &lt;code class=&quot;highlighter-rouge&quot;&gt;CharacterImpulseEvent&lt;/code&gt; which makes the damaging systems function very differently even if there is a little lag. Often the player experiences too many impulses in a short time frame that end up killing him alone, even without the &lt;code class=&quot;highlighter-rouge&quot;&gt;DoDamageEvent&lt;/code&gt; being sent.&lt;/p&gt;
-
-&lt;p&gt;The PR which deals with the entire work on the swinging blade is &lt;a href=&quot;https://github.com/Terasology/AdventureAssets/pull/2/&quot;&gt;here&lt;/a&gt;. It is still in progress with only the task of making it work in multiplayer remaining outstanding.&lt;/p&gt;
-
-&lt;p&gt;Up for next week should be more work on puzzles, a few more interesting traps and hopefully multiplayer fixes.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 06 Jun 2017 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2017/06/06/GSoC-week5.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/06/06/GSoC-week5.html</guid>
         
         <category>open source</category>
         
