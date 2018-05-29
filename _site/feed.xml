@@ -6,9 +6,9 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 26 May 2018 15:26:35 +0530</pubDate>
-    <lastBuildDate>Sat, 26 May 2018 15:26:35 +0530</lastBuildDate>
-    <generator>Jekyll v3.8.1</generator>
+    <pubDate>Tue, 29 May 2018 17:08:54 +0900</pubDate>
+    <lastBuildDate>Tue, 29 May 2018 17:08:54 +0900</lastBuildDate>
+    <generator>Jekyll v3.8.2</generator>
     
       <item>
         <title>Update time on Windows with IIT Bombay NTP server</title>
@@ -239,7 +239,7 @@ To install pip for Windows, refer &lt;a href=&quot;https://stackoverflow.com/que
 &lt;p&gt;Till next ‘time’..&lt;br /&gt;
 Cheers!&lt;/p&gt;
 </description>
-        <pubDate>Fri, 30 Mar 2018 00:00:00 +0530</pubDate>
+        <pubDate>Fri, 30 Mar 2018 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/2018/03/30/ntp-update-time.html</link>
         <guid isPermaLink="true">http://localhost:4000/2018/03/30/ntp-update-time.html</guid>
         
@@ -479,7 +479,7 @@ With the completion of this GSoC project making adventure assets like locked doo
 
 &lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/multiplayerPlayTest.jpg&quot; alt=&quot;multiplayerPlayTest&quot; title=&quot;multiplayerPlayTest&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Tue, 15 Aug 2017 00:00:00 +0530</pubDate>
+        <pubDate>Tue, 15 Aug 2017 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/2017/08/15/GSoC-wrap-up.html</link>
         <guid isPermaLink="true">http://localhost:4000/2017/08/15/GSoC-wrap-up.html</guid>
         
@@ -757,7 +757,7 @@ With the Shattered Plasma foundation laid, the Facade of Truth built on top, the
 
 &lt;p&gt;I’ll be making a wrap up post soon to cover all my contributions over the summer with a few stats. Plus, I might make a teaser video for the Lost module.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 31 Jul 2017 00:00:00 +0530</pubDate>
+        <pubDate>Mon, 31 Jul 2017 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/2017/07/31/GSoC-week10-11-12.html</link>
         <guid isPermaLink="true">http://localhost:4000/2017/07/31/GSoC-week10-11-12.html</guid>
         
@@ -836,7 +836,7 @@ The icons that have been included belong to the &lt;a href=&quot;https://octicon
 
 &lt;p&gt;That’s all for now. Feel free to use and share this plugin. Cheers!&lt;/p&gt;
 </description>
-        <pubDate>Wed, 05 Jul 2017 00:00:00 +0530</pubDate>
+        <pubDate>Wed, 05 Jul 2017 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/2017/07/05/github-jquery.html</link>
         <guid isPermaLink="true">http://localhost:4000/2017/07/05/github-jquery.html</guid>
         
@@ -1012,7 +1012,7 @@ Note that the event cannot be sent to the client side chest entity (since the pl
 &lt;h1 id=&quot;whats-next&quot;&gt;What’s next?&lt;/h1&gt;
 &lt;p&gt;Maybe a few more traps like a pressure plate and some more triggers like buttons and levers. The major part that’s really left is to integrate all of what’s made into a world and package it into the Lost module with the supporting Lore.&lt;/p&gt;
 </description>
-        <pubDate>Tue, 04 Jul 2017 00:00:00 +0530</pubDate>
+        <pubDate>Tue, 04 Jul 2017 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/2017/07/04/GSoC-week9.html</link>
         <guid isPermaLink="true">http://localhost:4000/2017/07/04/GSoC-week9.html</guid>
         
@@ -1181,7 +1181,7 @@ For instance- the positionRangeGenerator allows me to ensure that all particles 
 &lt;h1 id=&quot;whats-next&quot;&gt;What’s next?&lt;/h1&gt;
 &lt;p&gt;For next week, I would spend most of my time working on trying to make most of the created traps compatible in Multiplayer mode so that they can be tested out in the Multiplayer play-test scheduled to happen this Saturday- the first of July.&lt;/p&gt;
 </description>
-        <pubDate>Tue, 27 Jun 2017 00:00:00 +0530</pubDate>
+        <pubDate>Tue, 27 Jun 2017 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/2017/06/27/GSoC-week8.html</link>
         <guid isPermaLink="true">http://localhost:4000/2017/06/27/GSoC-week8.html</guid>
         
@@ -1306,7 +1306,7 @@ There are 4 entities- A &lt;strong&gt;root&lt;/strong&gt; entity, the &lt;strong
 
 &lt;p&gt;The next item I’m working on is the revival stone which is an artifact that when activated, allows the player to respawn at its location. Also I’m going to get started with using some particle effects. That would come in handy for the revival stone and the fireball.&lt;/p&gt;
 </description>
-        <pubDate>Tue, 20 Jun 2017 00:00:00 +0530</pubDate>
+        <pubDate>Tue, 20 Jun 2017 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/2017/06/20/GSoC-week7.html</link>
         <guid isPermaLink="true">http://localhost:4000/2017/06/20/GSoC-week7.html</guid>
         
@@ -1466,7 +1466,7 @@ One more problem is that the editing and removal of the trap (basically, interac
 
 &lt;p&gt;Next week should involve a lot more tinkering with the Physics Engine and trying to make new puzzles since the base architecture is now decided.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 12 Jun 2017 00:00:00 +0530</pubDate>
+        <pubDate>Mon, 12 Jun 2017 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/2017/06/12/GSoC-week6.html</link>
         <guid isPermaLink="true">http://localhost:4000/2017/06/12/GSoC-week6.html</guid>
         
@@ -1620,7 +1620,7 @@ After some discussion with flo about cata’s project on scenarios, I realised t
 
 &lt;p&gt;Up for next week should be more work on puzzles, a few more interesting traps and hopefully multiplayer fixes.&lt;/p&gt;
 </description>
-        <pubDate>Tue, 06 Jun 2017 00:00:00 +0530</pubDate>
+        <pubDate>Tue, 06 Jun 2017 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/2017/06/06/GSoC-week5.html</link>
         <guid isPermaLink="true">http://localhost:4000/2017/06/06/GSoC-week5.html</guid>
         
@@ -1760,7 +1760,7 @@ Components that need to be reset are done by receiving the &lt;code class=&quot;
 
 &lt;p&gt;Next week would see more work on the exploration module. I need to experiment with Structural Templates and see what’s the best way to spawn structures in different places.&lt;/p&gt;
 </description>
-        <pubDate>Tue, 30 May 2017 00:00:00 +0530</pubDate>
+        <pubDate>Tue, 30 May 2017 00:00:00 +0900</pubDate>
         <link>http://localhost:4000/2017/05/30/GSoC-week4.html</link>
         <guid isPermaLink="true">http://localhost:4000/2017/05/30/GSoC-week4.html</guid>
         
