@@ -8,7 +8,7 @@ tags:
 ---
 My time in Japan comes to a close as I enter the last week of my stay here. The experience so far has been nothing short of crazy.
 
-I was fortunate to spend the summer of '18 in Tokyo doing my internship at Mercari, an e-commerce unicorn. I spent most of my working days writing Android code for the main Japanese marketplace app-[Mercari](https://play.google.com/store/apps/details?id=com.kouzoh.mercari). My weekends were well spent touring around Japan. This is an attempt to lookback and document some of my adventures in Japan.
+I was fortunate to spend the summer of '18 in Tokyo doing my internship at Mercari, an e-commerce unicorn. I spent most of my working days writing Android code for the main Japanese marketplace app-[Mercari](https://play.google.com/store/apps/details?id=com.kouzoh.mercari). My weekends were well spent touring around Japan. This is an attempt to lookback and document some of my adventures in Japan. Most of the following adventures were made with a varying subset of the 8 co-interns I was lucky to be in company of.
 
 ### Week 1: Tokyo Disney Sea
 We were planning to get the 2 day Disney Land + Disney Sea pass, but better judgement prevailed and we went ahead with only getting the Disney Sea tickets.  
@@ -52,3 +52,4 @@ We made it to the 5th station at around 16:00 and started the climb at 19:30. Th
 {: .center}
 ![Lounge]({{ site.baseurl }}/img/tokyo/mtfuji.jpg "Mt. Fuji"){:style="max-height: 500px;"}
 
+There were a few mini adventures on weekdays, but the bulk of my expeditions in Japan have been recorded above. Woo!
