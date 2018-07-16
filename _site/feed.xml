@@ -6,9 +6,9 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 13 Jul 2018 16:45:26 +0900</pubDate>
-    <lastBuildDate>Fri, 13 Jul 2018 16:45:26 +0900</lastBuildDate>
-    <generator>Jekyll v3.8.2</generator>
+    <pubDate>Mon, 16 Jul 2018 16:56:46 +0530</pubDate>
+    <lastBuildDate>Mon, 16 Jul 2018 16:56:46 +0530</lastBuildDate>
+    <generator>Jekyll v3.8.1</generator>
     
       <item>
         <title>Adventures in Japan</title>
@@ -53,7 +53,59 @@ We made it to the 5th station at around 16:00 and started the climb at 19:30. Th
 &lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/tokyo/mtfuji.jpg&quot; alt=&quot;Lounge&quot; title=&quot;Mt. Fuji&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
 
 </description>
-        <pubDate>Mon, 09 Jul 2018 00:00:00 +0900</pubDate>
+        <pubDate>Mon, 09 Jul 2018 00:00:00 +0530</pubDate>
+        <link>http://localhost:4000/2018/07/09/mercari-internship.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/07/09/mercari-internship.html</guid>
+        
+        <category>Japan</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Adventures in Japan</title>
+        <description>&lt;p&gt;My time in Japan comes to a close as I enter the last week of my stay here. The experience so far has been nothing short of crazy.&lt;/p&gt;
+
+&lt;p&gt;I was fortunate to spend the summer of ‘18 in Tokyo doing my internship at Mercari, an e-commerce unicorn. I spent most of my working days writing Android code for the main Japanese marketplace app-&lt;a href=&quot;https://play.google.com/store/apps/details?id=com.kouzoh.mercari&quot;&gt;Mercari&lt;/a&gt;. My weekends were well spent touring around Japan. This is an attempt to lookback and document some of my adventures in Japan.&lt;/p&gt;
+
+&lt;h3 id=&quot;week-1-tokyo-disney-sea&quot;&gt;Week 1: Tokyo Disney Sea&lt;/h3&gt;
+&lt;p&gt;We were planning to get the 2 day Disney Land + Disney Sea pass, but better judgement prevailed and we went ahead with only getting the Disney Sea tickets.&lt;br /&gt;
+This was my first Disney experience and it was the best theme park experience I had so far. The landscapes were beyond amazing. Being a weekend, it was super crowded. But with our strong fast pass game, we managed to ride through to most of the attractions with great efficiency. The evening fireworks show- Fantasmic was true to its name. I walked over 15k steps that day and returned home with tired legs.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/tokyo/disneysea.jpg&quot; alt=&quot;Lounge&quot; title=&quot;DisneySea&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;week-2-akihbara--the-electric-town&quot;&gt;Week 2: Akihbara- the electric town&lt;/h3&gt;
+&lt;p&gt;With our first attempt at making a booking for FujiQ online having failed, we were left with an empty weekend. I decided to make the most of it by going shopping.&lt;br /&gt;
+I went to Akihabara, the electric town of Japan, filled with electronic stores of all sizes and interspersed with Anime cafes and Manga stores of all sorts. I explored the world’s largest electronics store- the Yodobashi Camera. I bought a few things from BIC Camera and also a lot of handy items from small stores around. I went to Gachapon store and got a few capsule toys. I roamed around and went to a few other interesting stores as well…&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/tokyo/akihabara.jpg&quot; alt=&quot;Lounge&quot; title=&quot;Akihabara&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;week-3-exploring-kyoto&quot;&gt;Week 3: Exploring Kyoto&lt;/h3&gt;
+&lt;p&gt;How can you come to Japan and not go to the ancient capital to witness true Japanese tradition?&lt;br /&gt;
+We took the Shinkansen to Kyoto on our third weekend. We left early Saturday morning and reached there by 10 AM. We had planned an efficient route that would get us to a lot of good spots without having to travel a lot. We started off with &lt;strong&gt;Nijo Castle&lt;/strong&gt;, which was home to the shoguns from the Edo period. Next up, we went to the &lt;strong&gt;Imperial Palace&lt;/strong&gt; and then to &lt;strong&gt;Kinkakuji&lt;/strong&gt;, the golden shrine. We paused for lunch and then continued to &lt;strong&gt;Ryōan-ji&lt;/strong&gt;, a Zen temple with a rock garden. We then headed to the &lt;strong&gt;Fushimi-inari&lt;/strong&gt; shrine. The climb to the top was tiring, but the view from the top was spectacular. After sundown, we made our way to the Ryokan we had booked for the night. It was a small place, but we had a fun night sleeping in traditional Japanese rooms. The next day, we went to the &lt;strong&gt;Arashiyama&lt;/strong&gt; bamboo forest and enjoyed boating in the Hozugawa river. Later, we went to the Arashiyama monkey park to watch some macaque from real close. We returned in time to catch one of the last Shinkansen back to Tokyo.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/tokyo/kyoto.jpg&quot; alt=&quot;Lounge&quot; title=&quot;Kyoto&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;week-4-fujiq-roller-coaster-madness&quot;&gt;Week 4: FujiQ, roller coaster madness&lt;/h3&gt;
+&lt;p&gt;We really got lucky with this one. With most weekends having heavy rainfall forecast, we had almost given up on our roller coaster hopes. Until one Saturday we made an instant plan and went ahead since the next day showed very little rainfall.&lt;br /&gt;
+We took the Q-Pack which includes the to and fro ride from Shinjuku and the day pass to the park. To make the most out of our lucky chance, we further bought express passes to three of the crowded roller coasters. There are a total of four popular roller coasters- Fujiyama, Eejanaika, Takabisha and Do-Dodonpa. Fujiyama surprisingly had smaller queues and we ended up going for Fujiyama twice despite not having a fast pass for it. With the express passes, we were able to get done with the popular rides in less time and had enough time on our hands to try out most of the other attractions as well. Overall, I enjoyed a lot. Some of the roller coasters are world record holders and it was a completely thrilling experience to ride them.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/tokyo/fujiq.jpg&quot; alt=&quot;Lounge&quot; title=&quot;FujiQ&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;week-5-oshima--an-island-escapade&quot;&gt;Week 5: Oshima- an island escapade&lt;/h3&gt;
+&lt;p&gt;This was definitely one of the best weekends spent in Japan. Izu Oshima is the largest of the Izu islands that fall under the administeration of Tokyo. It has a population of around 2500 people but for long stretches, we barely saw any people when we went cycling around the island.&lt;br /&gt;
+We took the overnight ferry from Tokyo to Oshima, that docked at early Saturday morning. We quickly went ahead and rented out cycles to begin our expedition. The island’s perimeter has a nice circuit made for cycling. Cycling along the oceanline with a constant ocean breeze and through the mountains was definitely my best cycling experience so far. We cycled for a good 30+ km and headed back to our hotel. It was a small nice place called the Book Tea Bed. We went to the Hama-no-yu onsen next to have a hot water bath to relax our tired muscles whilst watching the sun set on the horizon as we sat at the edge of the island surrounded by the ocean. What followed was a good night’s sleep and another cycle journey to head to the Okata port where we went snorkeling. Snorkeling was fun and we saw a lot of fish. Bringing a GoPro to record the underwater sights and the cycle journeys was one of my better decisions. We had to rush back to Motomachi port for our ship back to Tokyo. The ship had some of the coolest vending machines, ones with built in microwave for warm food and hot water dispensers for cup noodles.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/tokyo/oshima.jpg&quot; alt=&quot;Lounge&quot; title=&quot;Oshima&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;week-6-conquering-mt-fuji&quot;&gt;Week 6: Conquering Mt. Fuji&lt;/h3&gt;
+&lt;p&gt;This was probably the stupidest, albeit the most adventurous thing I did in Japan. The proper and recommended way to climb Mt. Fuji and witness the literally ‘breath-taking’ sunrise involves making a climb during day, and resting in a hut for the night, waking up energized and making to the top just in time for the sunrise. We weren’t able to book a hut, thanks to our last moment planning and we decided to do it the hard way- rush to the top, see the sunrise and come back.&lt;br /&gt;
+We made it to the 5th station at around 16:00 and started the climb at 19:30. The Yoshida trail is the easiest way to the top and that’s the one we took. With frequent stops, we took it slow and made it to the top at 04:00 just in time to see the sunrise. The view was nothing short of spectacular, but it was freezing cold at the summit. The temperature touched zero degree Celcius and there were super strong chilly winds blowing. Altitude sickness and asphixiation had started taking a toll on me. It was a super cloudy day and the crater was completely shielded with fog. The sun was hidden behind the clouds intermittently too. Somehow, I survived and started descending. The descent was torturous with steep curved paths that have slippery gravel for extremely long stretches. With an extreme body ache and a severe headache, I took the bus to take me home.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/tokyo/mtfuji.jpg&quot; alt=&quot;Lounge&quot; title=&quot;Mt. Fuji&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 09 Jul 2018 00:00:00 +0530</pubDate>
         <link>http://localhost:4000/2018/07/09/japan-lookback.html</link>
         <guid isPermaLink="true">http://localhost:4000/2018/07/09/japan-lookback.html</guid>
         
@@ -86,7 +138,7 @@ We made it to the 5th station at around 16:00 and started the climb at 19:30. Th
 
 &lt;p&gt;I retired to bed early, super excited for my first day at work.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 28 May 2018 00:00:00 +0900</pubDate>
+        <pubDate>Mon, 28 May 2018 00:00:00 +0530</pubDate>
         <link>http://localhost:4000/2018/05/28/flew-to-japan.html</link>
         <guid isPermaLink="true">http://localhost:4000/2018/05/28/flew-to-japan.html</guid>
         
@@ -132,7 +184,7 @@ During winter, this lake also becomes home to thousands of migratory aquatic bir
 
 &lt;p&gt;Overall, it was a weekend well spent. Also, this happens to be my last weekend here in Mumbai as I fly to Tokyo this Saturday for my internship.&lt;/p&gt;
 </description>
-        <pubDate>Sun, 20 May 2018 00:00:00 +0900</pubDate>
+        <pubDate>Sun, 20 May 2018 00:00:00 +0530</pubDate>
         <link>http://localhost:4000/2018/05/20/flying-dji-mavic.html</link>
         <guid isPermaLink="true">http://localhost:4000/2018/05/20/flying-dji-mavic.html</guid>
         
@@ -370,7 +422,7 @@ To install pip for Windows, refer &lt;a href=&quot;https://stackoverflow.com/que
 &lt;p&gt;Till next ‘time’..&lt;br /&gt;
 Cheers!&lt;/p&gt;
 </description>
-        <pubDate>Fri, 30 Mar 2018 00:00:00 +0900</pubDate>
+        <pubDate>Fri, 30 Mar 2018 00:00:00 +0530</pubDate>
         <link>http://localhost:4000/2018/03/30/ntp-update-time.html</link>
         <guid isPermaLink="true">http://localhost:4000/2018/03/30/ntp-update-time.html</guid>
         
@@ -610,7 +662,7 @@ With the completion of this GSoC project making adventure assets like locked doo
 
 &lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/multiplayerPlayTest.jpg&quot; alt=&quot;multiplayerPlayTest&quot; title=&quot;multiplayerPlayTest&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Tue, 15 Aug 2017 00:00:00 +0900</pubDate>
+        <pubDate>Tue, 15 Aug 2017 00:00:00 +0530</pubDate>
         <link>http://localhost:4000/2017/08/15/GSoC-wrap-up.html</link>
         <guid isPermaLink="true">http://localhost:4000/2017/08/15/GSoC-wrap-up.html</guid>
         
@@ -888,7 +940,7 @@ With the Shattered Plasma foundation laid, the Facade of Truth built on top, the
 
 &lt;p&gt;I’ll be making a wrap up post soon to cover all my contributions over the summer with a few stats. Plus, I might make a teaser video for the Lost module.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 31 Jul 2017 00:00:00 +0900</pubDate>
+        <pubDate>Mon, 31 Jul 2017 00:00:00 +0530</pubDate>
         <link>http://localhost:4000/2017/07/31/GSoC-week10-11-12.html</link>
         <guid isPermaLink="true">http://localhost:4000/2017/07/31/GSoC-week10-11-12.html</guid>
         
@@ -967,7 +1019,7 @@ The icons that have been included belong to the &lt;a href=&quot;https://octicon
 
 &lt;p&gt;That’s all for now. Feel free to use and share this plugin. Cheers!&lt;/p&gt;
 </description>
-        <pubDate>Wed, 05 Jul 2017 00:00:00 +0900</pubDate>
+        <pubDate>Wed, 05 Jul 2017 00:00:00 +0530</pubDate>
         <link>http://localhost:4000/2017/07/05/github-jquery.html</link>
         <guid isPermaLink="true">http://localhost:4000/2017/07/05/github-jquery.html</guid>
         
@@ -1143,7 +1195,7 @@ Note that the event cannot be sent to the client side chest entity (since the pl
 &lt;h1 id=&quot;whats-next&quot;&gt;What’s next?&lt;/h1&gt;
 &lt;p&gt;Maybe a few more traps like a pressure plate and some more triggers like buttons and levers. The major part that’s really left is to integrate all of what’s made into a world and package it into the Lost module with the supporting Lore.&lt;/p&gt;
 </description>
-        <pubDate>Tue, 04 Jul 2017 00:00:00 +0900</pubDate>
+        <pubDate>Tue, 04 Jul 2017 00:00:00 +0530</pubDate>
         <link>http://localhost:4000/2017/07/04/GSoC-week9.html</link>
         <guid isPermaLink="true">http://localhost:4000/2017/07/04/GSoC-week9.html</guid>
         
@@ -1312,134 +1364,9 @@ For instance- the positionRangeGenerator allows me to ensure that all particles 
 &lt;h1 id=&quot;whats-next&quot;&gt;What’s next?&lt;/h1&gt;
 &lt;p&gt;For next week, I would spend most of my time working on trying to make most of the created traps compatible in Multiplayer mode so that they can be tested out in the Multiplayer play-test scheduled to happen this Saturday- the first of July.&lt;/p&gt;
 </description>
-        <pubDate>Tue, 27 Jun 2017 00:00:00 +0900</pubDate>
+        <pubDate>Tue, 27 Jun 2017 00:00:00 +0530</pubDate>
         <link>http://localhost:4000/2017/06/27/GSoC-week8.html</link>
         <guid isPermaLink="true">http://localhost:4000/2017/06/27/GSoC-week8.html</guid>
-        
-        <category>open source</category>
-        
-        <category>MovingBlocks</category>
-        
-        <category>Terasology</category>
-        
-        <category>GSoC</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>GSoC Week 7: The Wipe Out and the Fireball Launcher</title>
-        <description>&lt;style type=&quot;text/css&quot;&gt;
-    .collapsiblecontainer {
-    width:100%;
-    border:1px solid #d3d3d3;
-}
-.collapsiblecontainer div {
-    width:100%;
-}
-.collapsiblecontainer .collapsibleheader {
-    background-color:#d3d3d3;
-    padding: 2px;
-    cursor: pointer;
-    font-weight: bold;
-}
-.collapsiblecontainer .collapsiblecontent {
-    display: none;
-    padding : 5px;
-}
-&lt;/style&gt;
-
-&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js&quot;&gt;&lt;/script&gt;
-
-&lt;script type=&quot;text/javascript&quot; src=&quot;/js/github-buttons.js&quot;&gt;&lt;/script&gt;
-
-&lt;script type=&quot;text/javascript&quot;&gt;
-$(document).ready(function(){
-    $(&quot;.collapsibleheader&quot;).click(function () {
-        $collapsibleheader = $(this);
-        //getting the next element
-        $collapsiblecontent = $collapsibleheader.next();
-        //open up the collapsiblecontent needed - toggle the slide- if visible, slide up, if not slidedown.
-        $collapsiblecontent.slideToggle(500, function () {
-            //execute this after slideToggle is done
-            //change text of collapsibleheader based on visibility of collapsiblecontent div
-            $collapsibleheader.find(&quot;span:first-child&quot;).text(function () {
-                //change text based on condition
-                return $collapsiblecontent.is(&quot;:visible&quot;) ? &quot;- &quot; : &quot;+ &quot;;
-            });
-        });
-
-    });
-}); 
-
-&lt;/script&gt;
-
-&lt;p&gt;After having set up the base to create traps last week, this week involved creation of two new traps.&lt;/p&gt;
-
-&lt;h1 id=&quot;what-have-i-been-upto&quot;&gt;What have I been upto?&lt;/h1&gt;
-
-&lt;h2 id=&quot;the-wipe-out&quot;&gt;The Wipe Out&lt;/h2&gt;
-
-&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/AdventureAssets/pull/5&quot;&gt;&lt;/div&gt;
-
-&lt;p&gt;This trap is inspired from the shows Takeshi’s Castle and Wipe Out. The setup consists of a platform attached to a rod pivoted at a root block and rotated around in horizontal circles. The trap can be configured by adjusting these parameters:&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Time Period&lt;/strong&gt;: The time taken to complete a whole circle.&lt;br /&gt;
-&lt;strong&gt;Offset&lt;/strong&gt;: Two add a phase difference between two otherwise identical wipe out traps.&lt;br /&gt;
-&lt;strong&gt;Sense&lt;/strong&gt;: Sense of rotation. (clockwise or anti-clockwise)&lt;br /&gt;
-&lt;strong&gt;Rotation&lt;/strong&gt;: The wipe out is conventionally meant to be rotated horizontally, but the pitch can be changed to give it a different look.&lt;/p&gt;
-
-&lt;p&gt;Here’s a video showing how the Wipe Out looks and how it’s properties can be altered:&lt;/p&gt;
-&lt;div class=&quot;videowrapper&quot;&gt;
-    &lt;iframe width=&quot;1024&quot; height=&quot;768&quot; src=&quot;https://www.youtube.com/embed/qce497AebYQ&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;The wipe out has a very similar architecture as the swinging blade:&lt;br /&gt;
-There are 4 entities- A &lt;strong&gt;root&lt;/strong&gt; entity, the &lt;strong&gt;rod&lt;/strong&gt;, the &lt;strong&gt;surfboard&lt;/strong&gt; and the &lt;strong&gt;mesh&lt;/strong&gt; entity. The root entity &lt;strong&gt;owns&lt;/strong&gt; all the other entities and has the &lt;strong&gt;network component&lt;/strong&gt; which replicates it across all clients. Creation of the root entity triggers the creation of the other three entites. The rod and surfboard entity only exist on the server side and are loaded by the &lt;code class=&quot;highlighter-rouge&quot;&gt;WipeOutServerSystem&lt;/code&gt; that is registered as &lt;code class=&quot;highlighter-rouge&quot;&gt;AUTHORITY&lt;/code&gt;. The mesh entity exists only on the client side and is loaded by the &lt;code class=&quot;highlighter-rouge&quot;&gt;WipeOutClientSystem&lt;/code&gt; that is registered as &lt;code class=&quot;highlighter-rouge&quot;&gt;CLIENT&lt;/code&gt;. The rod and surfboard entities are simply rigid bodies. The mesh entity has the mesh and material which basically is the model exported from blender. The root entity is the one on which the rotation animations are made. The other entities have their location attached to the root entity, which makes them go through the rotations too.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-wipe-out-lava-room&quot;&gt;The Wipe Out Lava Room&lt;/h2&gt;
-&lt;p&gt;After I completed the trap, I went ahead and created a room consisting of two wipe outs with a pit of lava underneath and a treasure chest on the far end of the room. I arranged the wipe outs in such a manner that there would be one moment when they would align, allowing the player to jump from one to the next. The player has to time his jump perfectly such that he gets onto each surfboard, or else the player would fall into the pit of lava.&lt;/p&gt;
-
-&lt;div class=&quot;videowrapper&quot;&gt;
-    &lt;iframe width=&quot;1024&quot; height=&quot;768&quot; src=&quot;https://www.youtube.com/embed/djTG0Ovf_UI&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;The motion of the wipe out is pretty straight forward and follows the equation-&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;theta = ((t + offset) % timePeriod)*(2 * Math.PI / timePeriod)* direction&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Where,&lt;br /&gt;
-&lt;code class=&quot;highlighter-rouge&quot;&gt;theta:&lt;/code&gt; is the angle, the rod makes with the vertical&lt;br /&gt;
-&lt;code class=&quot;highlighter-rouge&quot;&gt;timePeriod:&lt;/code&gt; is the time taken for one rotation&lt;br /&gt;
-&lt;code class=&quot;highlighter-rouge&quot;&gt;direction:&lt;/code&gt; +1 (anti-clockwise) or -1 (clockwise)&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/wipeOutMath.PNG&quot; alt=&quot;WipeOutMath&quot; title=&quot;Wipe Out Math&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;the-fireball-launcher&quot;&gt;The Fireball Launcher&lt;/h2&gt;
-
-&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/AdventureAssets/pull/6&quot;&gt;&lt;/div&gt;
-
-&lt;p&gt;The Fireball Launcher was the next trap I worked on. With some help from &lt;a href=&quot;https://github.com/niksoc/&quot;&gt;niksoc&lt;/a&gt;, I was able to restructure the Projectile module. This made shooting fireballs as easy as sending a &lt;code class=&quot;highlighter-rouge&quot;&gt;FireProjectileEvent&lt;/code&gt; on the created fireball entity.&lt;/p&gt;
-
-&lt;p&gt;The fireball launcher trap also has a few properties that allow for custom configurations:&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Time Period&lt;/strong&gt;: Time interval between two consecutive fireball shots.&lt;br /&gt;
-&lt;strong&gt;Offset&lt;/strong&gt;: Time offset between two fireball launchers that have the same time period.&lt;br /&gt;
-&lt;strong&gt;Max Distance&lt;/strong&gt;: Maximum distance after which the fireball dies.&lt;br /&gt;
-&lt;strong&gt;Damage Amount&lt;/strong&gt;: Total collective damage the fireball can inflict. Acts as &lt;em&gt;health&lt;/em&gt; for the fireball. The fireball is destroyed after it has inflicted a total damage equal to its health, or unitl it comes across an indestructible entity.&lt;br /&gt;
-&lt;strong&gt;Direction&lt;/strong&gt;: Direction in vector form (x, y and z) towards which the fireball is launched.&lt;/p&gt;
-
-&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/AdventureAssets/pull/8&quot;&gt;&lt;/div&gt;
-
-&lt;p&gt;Here is a video showing how the fireball launcher works:&lt;/p&gt;
-&lt;div class=&quot;videowrapper&quot;&gt;
-    &lt;iframe width=&quot;1024&quot; height=&quot;768&quot; src=&quot;https://www.youtube.com/embed/0N-cD8o6ZLU&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;The next item I’m working on is the revival stone which is an artifact that when activated, allows the player to respawn at its location. Also I’m going to get started with using some particle effects. That would come in handy for the revival stone and the fireball.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 20 Jun 2017 00:00:00 +0900</pubDate>
-        <link>http://localhost:4000/2017/06/20/GSoC-week7.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/06/20/GSoC-week7.html</guid>
         
         <category>open source</category>
         
