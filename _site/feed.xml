@@ -6,29 +6,29 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 16 Jul 2018 20:22:36 +0530</pubDate>
-    <lastBuildDate>Mon, 16 Jul 2018 20:22:36 +0530</lastBuildDate>
+    <pubDate>Mon, 16 Jul 2018 20:33:41 +0530</pubDate>
+    <lastBuildDate>Mon, 16 Jul 2018 20:33:41 +0530</lastBuildDate>
     <generator>Jekyll v3.8.1</generator>
     
       <item>
         <title>Internship at Mercari</title>
-        <description>&lt;p&gt;I’m back in Mumbai as I write this recap blog post describing my summer spent in the heart of Tokyo, during my internship at Merari. This blog post is going to be specfic to my internship. I’ve written about my travelling experiences in a &lt;a href=&quot;https://nihal111.github.io/2018/07/09/japan-lookback.html&quot;&gt;different post&lt;/a&gt;.&lt;/p&gt;
+        <description>&lt;p&gt;I’m back in Mumbai as I write this recap blog post describing my summer spent in the heart of Tokyo, during my internship at Merari. This blog post is going to be specific to my internship. I’ve written about my travelling experiences in a &lt;a href=&quot;https://nihal111.github.io/2018/07/09/japan-lookback.html&quot;&gt;different post&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;about-mercari&quot;&gt;About Mercari&lt;/h2&gt;
 
-&lt;p&gt;Mercari is an e-commerce startup that was founded in 2013. Their main product is the Mercari flea market mobile-first app. In just 5 years, the company has sky-rocketed to become Japan’s largest community-driven marketplace. The company also gained the pre-IPO unicorn status, being a privately help company valued over $1 billion. This was before the company went public this June on the Toyko Stock Exchange’s Mothers Market, during my stay there.&lt;/p&gt;
+&lt;p&gt;Mercari is an e-commerce startup that was founded in 2013. Their main product is the Mercari flea market mobile-first app. In just 5 years, the company has skyrocketed to become Japan’s largest community-driven marketplace. The company also gained the pre-IPO unicorn status, being a privately held company valued over $1 billion. This was before the company went public this June on the Toyko Stock Exchange’s Mothers Market, during my stay there.&lt;/p&gt;
 
 &lt;h2 id=&quot;the-office&quot;&gt;The Office&lt;/h2&gt;
 
 &lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/mercari/officeview.jpg&quot; alt=&quot;Office View&quot; title=&quot;Office View&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;The Mercari office is located at the 18th floor of Mori Tower, the 6th tallest building in Tokyo. The view from the office is amazing and the breeze on the top, at the observation desk is better. There is a giant spider outside the office, that should remind you of &lt;a href=&quot;http://silverscreensnobs.com/spiders-doppelgangers-secrets-enemy-expained/&quot;&gt;Enemy&lt;/a&gt; if you’re into sci-fi.&lt;/p&gt;
+&lt;p&gt;The Mercari office is located on the 18th floor of Mori Tower, the 6th tallest building in Tokyo. The view from the office is fantastic and the breeze on the top, at the observation deck is better. There is a giant spider outside the office, that should remind you of &lt;a href=&quot;http://silverscreensnobs.com/spiders-doppelgangers-secrets-enemy-expained/&quot;&gt;Enemy&lt;/a&gt; if you’re into sci-fi.&lt;/p&gt;
 
 &lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/mercari/moritower.jpg&quot; alt=&quot;Mori Tower&quot; title=&quot;Mori Tower&quot; style=&quot;max-height: 500px;&quot; /&gt;
 &lt;img src=&quot;/img/mercari/spider.jpg&quot; alt=&quot;spider&quot; title=&quot;Spider&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;the-honeymoon-phase&quot;&gt;The Honeymoon Phase&lt;/h2&gt;
-&lt;p&gt;The first week was nothing short of overwhelming. Even for honeymoon phase, things seemed too good to be true. The onboarding and orientation was smooth and we were given our gear. We got company phones, portable wifi and the $2000 MacBook Pro amongst other goodies.&lt;/p&gt;
+&lt;p&gt;The first week was nothing short of overwhelming. Even for the honeymoon phase, things seemed too good to be true. The onboarding and orientation were smooth, and we were given our gear. We got company phones, portable wifi and the $2000 MacBook Pro amongst other goodies.&lt;/p&gt;
 
 &lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/mercari/gear.jpg&quot; alt=&quot;Gear&quot; title=&quot;Gear&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
 
@@ -41,11 +41,11 @@
 &lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/mercari/balloons.jpg&quot; alt=&quot;Balloons&quot; title=&quot;Balloons&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;the-android-team&quot;&gt;The Android Team&lt;/h2&gt;
-&lt;p&gt;I had the pleasure to work with the JP Android Team, the team working on the main marketplace app- &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.kouzoh.mercari&quot;&gt;Mercari&lt;/a&gt; for Japan. It was a medium sized team with just over 10 people. The bulk of my task for the summer was to implement client facing feature on the Android app. I also worked on a few isolated issues all over the codebase and took initiative to improve the code quality in the codebase which was very well received by the team.&lt;/p&gt;
+&lt;p&gt;I had the pleasure to work with the JP Android Team, the team working on the main marketplace app- &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.kouzoh.mercari&quot;&gt;Mercari&lt;/a&gt; for Japan. It was a medium sized team with just over 10 people. The bulk of my task for the summer was to implement client facing feature on the Android app. I also worked on a few isolated issues all over the codebase and took the initiative to improve the code quality in the codebase which was very well received by the team.&lt;/p&gt;
 
 &lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/mercari/androidteam.jpg&quot; alt=&quot;Android Team&quot; title=&quot;Android Team&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;My team was largely global, consisting of a large number of Gaijins (Japanese for foreigners). I benefited largely from this and learned how to work in a multi-cultural team. I learned the flow for how a spec moves to feature that gets shipped and how each detail in the middle matters.&lt;/p&gt;
+&lt;p&gt;My team was largely global, consisting of a large number of Gaijins (Japanese for foreigners). I benefited hugely from this and learned how to work in a multi-cultural team. I learned the flow for how a spec moves to feature that gets shipped and how each detail in the middle matters.&lt;/p&gt;
 
 &lt;p&gt;On the technical side, for the first time I &lt;strong&gt;implemented a software architecture&lt;/strong&gt;, &lt;strong&gt;wrote Kotlin code&lt;/strong&gt;, &lt;strong&gt;wrote Unit tests using Mockito and Robolectric&lt;/strong&gt; and &lt;strong&gt;created an automation task using CI&lt;/strong&gt;. I’m glad to have been able to achieve this in a small period of just over a month.&lt;/p&gt;
 
@@ -57,7 +57,7 @@
 
 &lt;h2 id=&quot;experience&quot;&gt;Experience&lt;/h2&gt;
 
-&lt;p&gt;All in all, the whole experience over the course of my internship was more than I could have asked for. Mercari was great to me and it was a crazy time to be there. Amidst the whole IPO frenzy and the company celebrating it’s 5th anniversary, I was lucky to go to all the parties.&lt;/p&gt;
+&lt;p&gt;All in all, the whole experience over the course of my internship was more than I could have asked for. Mercari was great to me, and it was a crazy time to be there. Amidst the whole IPO frenzy and the company celebrating its 5th anniversary, I was lucky to go to all the parties.&lt;/p&gt;
 
 &lt;p&gt;I learned how to work efficiently in a team, picked up on a few technical things, got to meet a whole bunch of great people, got exposed to a whole new culture and travelled as much as I could (more about that &lt;a href=&quot;https://nihal111.github.io/2018/07/09/japan-lookback.html&quot;&gt;here&lt;/a&gt;).&lt;/p&gt;
 
