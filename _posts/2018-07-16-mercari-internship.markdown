@@ -12,7 +12,7 @@ I'm back in Mumbai as I write this recap blog post describing my summer spent in
 
 ## About Mercari
 
-Mercari is an e-commerce startup that was founded in 2013. Their main product is the Mercari flea market mobile-first app. In just 5 years, the company has skyrocketed to become Japan's largest community-driven marketplace. The company also gained the pre-IPO unicorn status, being a privately held company valued over $1 billion. This was before the company went public this June on the Toyko Stock Exchange’s Mothers Market, during my stay there.
+Mercari is a CtoC marketplace startup that was founded in 2013. Their main product is the Mercari CtoC marketplace app. In just 5 years, the company has skyrocketed to become Japan's largest community-driven marketplace. The company also gained the pre-IPO unicorn status, being a privately held company valued over $1 billion. This was before the company went public this June on the Toyko Stock Exchange’s Mothers Market, during my stay there.
 
 ## The Office
 
