@@ -6,17 +6,148 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 16 Jul 2018 20:33:41 +0530</pubDate>
-    <lastBuildDate>Mon, 16 Jul 2018 20:33:41 +0530</lastBuildDate>
+    <pubDate>Thu, 27 Sep 2018 18:22:30 +0530</pubDate>
+    <lastBuildDate>Thu, 27 Sep 2018 18:22:30 +0530</lastBuildDate>
     <generator>Jekyll v3.8.1</generator>
     
       <item>
+        <title>To hell and back again, US B1 Visa</title>
+        <description>&lt;p&gt;Having been selected as one of the representatives from MovingBlocks, I was all excited about being able to attend the GSoC Mentor Summit for 2018. It would be the first time I would be travelling to the States. The timeline worked out well, and I was also able to fit Github Universe in my schedule. In little time, I had my flight tickets booked and reserved a room at the hotel provided by Google. Everything was in order and only acquiring the Visa remained.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-visa-process&quot;&gt;The Visa Process&lt;/h2&gt;
+&lt;p&gt;I started my Visa process around mid-August, filled out my DS160, made the 160$ payment and booked dates for the VAC (Biometrics) and VI (Consular Interview). The earliest date that I could find for the interview was 24th September.&lt;/p&gt;
+
+&lt;h2 id=&quot;nearly-there-but-oh-well&quot;&gt;Nearly there but oh, well&lt;/h2&gt;
+&lt;p&gt;I reached just in time for my 10 AM appointment at the Mumbai consulate, owing to the deplorable peak-hour traffic. I had barely done any reading up about what the interview is like, apart from some tips shared on the GSoC mailing list and a few stories from friends.&lt;/p&gt;
+
+&lt;p&gt;I had read about a good number of cases on the mailing thread, where fellow mentors had their Visa denied, and there was absolutely nothing that could be done after that. I had a word with the person standing next to me in the queue, who mentioned that it was his second attempt. The last time he had appeared, the interview lasted for 10 seconds. As soon as he said he was an IT professional, the Consular officer handed him the rejection letter saying- “I cannot approve your Visa this time”.&lt;/p&gt;
+
+&lt;p&gt;With these stories in my head, I was partly nervous but still convinced that my purpose of travelling was entirely legitimate. I had an invitation letter from Google, and I had to complete my undergraduate studies, which meant that I was bound to return.&lt;/p&gt;
+
+&lt;p&gt;After a long wait, and slowly moving through the serpentine queue my turn arrived. While I was waiting at the counter, the person ahead of me, had his Visa denied. As I walked up to the counter, I could see that the consular officer was unhappy.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;Me:&lt;/strong&gt; Good morning&lt;br /&gt;
+&lt;strong&gt;Officer:&lt;/strong&gt; May I have your passport? &lt;br /&gt;
+(I pass my passport) &lt;br /&gt;
+Officer: Why would you be travelling to the United States? &lt;br /&gt;
+&lt;strong&gt;M:&lt;/strong&gt; To attend a conference. &lt;br /&gt;
+(I kept my answers brief and answered only what I was asked. I had read this tip somewhere, and I was extra cautious to not annoy the officer further.) &lt;br /&gt;
+&lt;strong&gt;O:&lt;/strong&gt; What conference is this? &lt;br /&gt;
+&lt;strong&gt;M:&lt;/strong&gt; It’s a conference about open source software. It’s called the Google Summer of Code mentor summit. &lt;br /&gt;
+(He starts looking at the screen and typing in something.) &lt;br /&gt;
+&lt;strong&gt;O:&lt;/strong&gt; Who would be paying for your trip? &lt;br /&gt;
+&lt;strong&gt;M:&lt;/strong&gt; Google would be paying. They would be paying 1100$ for every attendee, and if that falls short, my organisation can cover the rest. 
+(More typing and looking at the screen) &lt;br /&gt;
+&lt;strong&gt;O:&lt;/strong&gt; Are you pursuing your undergraduate studies? &lt;br /&gt;
+&lt;strong&gt;M:&lt;/strong&gt; Yes. I am a fourth-year student. &lt;br /&gt;
+&lt;strong&gt;O:&lt;/strong&gt; Do you have your old passports. May I see them? &lt;br /&gt;
+(I pass my older passports) &lt;br /&gt;
+&lt;strong&gt;O:&lt;/strong&gt; What does your father do? &lt;br /&gt;
+&lt;strong&gt;M:&lt;/strong&gt; He is an engineer. He works at X. &lt;br /&gt;
+&lt;strong&gt;O:&lt;/strong&gt; Who pays for your education? &lt;br /&gt;
+&lt;strong&gt;M:&lt;/strong&gt; My father does. &lt;br /&gt;
+(More typing. Longer this time.) &lt;br /&gt;
+&lt;strong&gt;O:&lt;/strong&gt; Your Visa application has been denied. The reason is written in this paper. You may apply again.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Profoundly disappointed and dissatisfied with how the interview went, I left. I had carried a file with all the documents I could think of, and the interviewer didn’t ask for even a single document.&lt;/p&gt;
+
+&lt;p&gt;My plans had come to an end. There was no way I could apply again. It took me more than a month to get my first appointment. I barely had 2 weeks before my flight, this time.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-gamble&quot;&gt;The Gamble&lt;/h2&gt;
+&lt;p&gt;I heard from a friend (&lt;a href=&quot;https://mozillians.org/en-US/u/ydidwania/&quot;&gt;Yashvardhan Didwania&lt;/a&gt;, thanks again) that it isn’t all that impossible to get an appointment on a date before the expected waiting period. He had pulled it off in the past by continually refreshing the webpage and checking for available dates. When someone cancels or reschedules, an earlier date becomes available for a short while. That’s when you grab it.&lt;/p&gt;
+
+&lt;p&gt;I had to wait for the next day to start a new application since the website still showed my present-day appointment (24 September) as active. I filled out the DS-160 in the meantime and spent the entire day reading stories about Visa rejections and searching for ways to overcome them. I woke up on 25th September and at 10:21 AM, on my way to class, I made the MRV payment of 160$ again. I remember it took around 1-2 hours for my receipt to get activated and reflect on the website, last time. However, I kept checking during class, and the receipt was activated at sharp 11:00 AM. The earliest available date was 19 October at the Mumbai Consulate, as I had expected. Chennai had an earlier date of 3 October available, but I dropped that thought. Better judgement prevailed, and I kept refreshing the page hoping for a miracle to happen. At 11:21 AM, I made my last refresh, and to my surprise, the website now showed the earliest available date as 27th September. Within what were an intense 15 seconds, I had managed to secure my second interview on the 27th of September. It was unbelievable, and I was happy beyond my wits.&lt;/p&gt;
+
+&lt;h2 id=&quot;turning-my-luck-upside-down&quot;&gt;Turning my luck upside down&lt;/h2&gt;
+
+&lt;p&gt;Fast forward to 27th September. Again, I saw rejections all over the place and people returning with their passports. I saw three applicants have their Visa denied by the very same officer who had denied my Visa last time. I kept my head clear, and I approached the counter.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;Me:&lt;/strong&gt; Good morning ma’am. &lt;br /&gt;
+&lt;strong&gt;Officer:&lt;/strong&gt; Good morning. May I have your passport? &lt;br /&gt;
+&lt;em&gt;(I pass my passport along with the 4 most essential supporting documents)&lt;/em&gt; &lt;br /&gt;
+&lt;strong&gt;O:&lt;/strong&gt; Why would you be travelling? &lt;br /&gt;
+&lt;strong&gt;M:&lt;/strong&gt; I am invited to attend a conference. The conference is called the Google Summer of Code Mentor Summit. It’s a conference where mentors from different open source organisations come together to discuss how the Google Summer of Code program can be made better and how the open source community can improve as a whole.&lt;br /&gt;
+&lt;strong&gt;O:&lt;/strong&gt; I’m sorry, can you explain what the conference is about again? &lt;br /&gt;
+&lt;strong&gt;M:&lt;/strong&gt; Alright, so Google has a program called the Google Summer of Code wherein students participate by contributing to open source   organisations. I am a student myself, and I participated in the summer of 2017 by contributing to an organisation called MovingBlocks. In 2018, I became a mentor. Each organisation is supposed to send two representatives to the Mentor Summit, to come together and discuss how the program can be improved. I would be representing MovingBlocks this time.&lt;br /&gt;
+&lt;em&gt;(Looks at the screen, types a little)&lt;/em&gt;&lt;br /&gt;
+&lt;strong&gt;O:&lt;/strong&gt; Who would be paying for your trip? &lt;br /&gt;
+&lt;strong&gt;M:&lt;/strong&gt; My expenses would be covered directly by my organisation. Google, in turn, would fund each organisation by paying 1100$ for each   representative and also arranging for a hotel during the period of the conference.&lt;br /&gt;
+&lt;em&gt;(She scrolls through the documents I forwarded)&lt;/em&gt;&lt;br /&gt;
+&lt;strong&gt;O:&lt;/strong&gt; I see you have travelled to Japan recently. What was that for? &lt;br /&gt;
+&lt;strong&gt;M:&lt;/strong&gt; I was doing an internship in Japan in the past summer. &lt;em&gt;//Explain a little more&lt;/em&gt; &lt;br /&gt;
+&lt;strong&gt;O:&lt;/strong&gt; Is there any other country you have travelled to? &lt;br /&gt;
+&lt;strong&gt;M:&lt;/strong&gt; Yes, &lt;em&gt;// Explain&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;(She starts typing and continues for a long time)&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;(I see her look up at the clock and press key combinations this time, she then keeps my passport on the side.)&lt;/em&gt;&lt;br /&gt;
+&lt;strong&gt;O:&lt;/strong&gt; Your Visa application has been approved. Have a nice trip. &lt;br /&gt;
+&lt;strong&gt;M:&lt;/strong&gt; Thank you so much.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;I come to realise that I’ve pulled it off. The gamble had paid off perfectly well, and all plans were back on track.&lt;/p&gt;
+
+&lt;h3 id=&quot;tips&quot;&gt;Tips:&lt;/h3&gt;
+
+&lt;p&gt;The following are a few tips from my personal experience. I do not claim that these would generalize across different consulates and the following should not be considered in any way as formal/legal advice.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Be confident. If you deserve the Visa, act like you already have it.&lt;/li&gt;
+  &lt;li&gt;Always explain in great depth. Give no excuse to the officer to think that you’re making things up. If the officer enjoys brevity, they will ask you to stop or shoot another question.&lt;/li&gt;
+  &lt;li&gt;Push your papers forward initially. If they are returned, make further attempts to show them relevant papers whenever a document supports something you’re saying. Remember, the burden of proof is on the applicant.&lt;/li&gt;
+  &lt;li&gt;Hope for the best, expect the worst. In my opinion, the process is semi-arbitrary, and you may be unlucky to have a short interview or a grumpy interviewer. Be prepared for this and leave no effort in making sure you deliver all the information you can.&lt;/li&gt;
+  &lt;li&gt;A denial is only temporary, and it can be turned easily if you have all the right reasons. Advice on forums echoed with- “Don’t apply immediately after a rejection. Wait till your circumstances change”. While this may be true, if you feel there was no real reason for your application to be rejected, applying again immediately may work in your favour. Here is a timeline of how I flipped my rejection in 4 days.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;24th September - (VI appointment) Interview. Visa Denied&lt;/em&gt;&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;&lt;em&gt;25th September - Paid for next appointment.&lt;/em&gt;&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;&lt;em&gt;26th September - (VAC appointment) Biometrics&lt;/em&gt;&lt;/strong&gt; &lt;br /&gt;
+&lt;strong&gt;&lt;em&gt;27th September - (VI appointment) Interview. Visa approved.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;I’m delighted that my gamble worked out well and excited more than ever to fly to California.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 27 Sep 2018 00:00:00 +0530</pubDate>
+        <link>http://localhost:4000/2018/09/27/us-visa-b1.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/09/27/us-visa-b1.html</guid>
+        
+        <category>Visa</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Dissecting an RNNLM</title>
+        <description>&lt;p&gt;The following is a slightly more verbose explanation of how an RNNLM works. This is mainly a note to self, although it might help someone who’s just starting off.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/mercari/rum.jpg&quot; alt=&quot;rum&quot; title=&quot;rum&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 23 Sep 2018 00:00:00 +0530</pubDate>
+        <link>http://localhost:4000/2018/09/23/dissecting-an-rnnlm.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/09/23/dissecting-an-rnnlm.html</guid>
+        
+        <category>Machine Learning</category>
+        
+        <category>Language Modeling</category>
+        
+        <category>NLP</category>
+        
+        
+      </item>
+    
+      <item>
         <title>Internship at Mercari</title>
-        <description>&lt;p&gt;I’m back in Mumbai as I write this recap blog post describing my summer spent in the heart of Tokyo, during my internship at Merari. This blog post is going to be specific to my internship. I’ve written about my travelling experiences in a &lt;a href=&quot;https://nihal111.github.io/2018/07/09/japan-lookback.html&quot;&gt;different post&lt;/a&gt;.&lt;/p&gt;
+        <description>&lt;p&gt;I’m back in Mumbai as I write this recap blog post describing my summer spent in the heart of Tokyo, during my internship at Mercari. This blog post is going to be specific to my internship. I’ve written about my travelling experiences in a &lt;a href=&quot;https://nihal111.github.io/2018/07/09/japan-lookback.html&quot;&gt;different post&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;about-mercari&quot;&gt;About Mercari&lt;/h2&gt;
 
-&lt;p&gt;Mercari is an e-commerce startup that was founded in 2013. Their main product is the Mercari flea market mobile-first app. In just 5 years, the company has skyrocketed to become Japan’s largest community-driven marketplace. The company also gained the pre-IPO unicorn status, being a privately held company valued over $1 billion. This was before the company went public this June on the Toyko Stock Exchange’s Mothers Market, during my stay there.&lt;/p&gt;
+&lt;p&gt;Mercari is a CtoC marketplace startup that was founded in 2013. Their main product is the Mercari CtoC marketplace app. In just 5 years, the company has skyrocketed to become Japan’s largest community-driven marketplace. The company also gained the pre-IPO unicorn status, being a privately held company valued over $1 billion. This was before the company went public this June on the Toyko Stock Exchange’s Mothers Market, during my stay there.&lt;/p&gt;
 
 &lt;h2 id=&quot;the-office&quot;&gt;The Office&lt;/h2&gt;
 
@@ -1045,353 +1176,6 @@ The icons that have been included belong to the &lt;a href=&quot;https://octicon
         <category>CSS</category>
         
         <category>HTML</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>GSoC Week 9: A fair share of Multiplayer</title>
-        <description>&lt;style type=&quot;text/css&quot;&gt;
-.collapsiblecontainer {
-width:100%;
-border:1px solid #d3d3d3;
-}
-.collapsiblecontainer div {
-width:100%;
-}
-.collapsiblecontainer .collapsibleheader {
-background-color:#d3d3d3;
-padding: 2px;
-cursor: pointer;
-font-weight: bold;
-}
-.collapsiblecontainer .collapsiblecontent {
-display: none;
-padding : 5px;
-}
-&lt;/style&gt;
-
-&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js&quot;&gt;&lt;/script&gt;
-
-&lt;script type=&quot;text/javascript&quot; src=&quot;/js/github-buttons.js&quot;&gt;&lt;/script&gt;
-
-&lt;script type=&quot;text/javascript&quot;&gt;
-$(document).ready(function(){
-$(&quot;.collapsibleheader&quot;).click(function () {
-$collapsibleheader = $(this);
-//getting the next element
-$collapsiblecontent = $collapsibleheader.next();
-//open up the collapsiblecontent needed - toggle the slide- if visible, slide up, if not slidedown.
-$collapsiblecontent.slideToggle(500, function () {
-//execute this after slideToggle is done
-//change text of collapsibleheader based on visibility of collapsiblecontent div
-$collapsibleheader.find(&quot;span:first-child&quot;).text(function () {
-//change text based on condition
-return $collapsiblecontent.is(&quot;:visible&quot;) ? &quot;- &quot; : &quot;+ &quot;;
-});
-});
-
-});
-});
-
-&lt;/script&gt;
-
-&lt;h1 id=&quot;what-have-i-been-upto&quot;&gt;What have I been upto?&lt;/h1&gt;
-&lt;p&gt;The Revival Stone created last week has been polished and is now renamed as the Altar Of Resurrection. All the existing traps and adventure items- Swinging Blade, Wipe Out, Fireball Launcher, Altar of Resurrection and Password Door have been made multiplayer ready.&lt;/p&gt;
-
-&lt;h2 id=&quot;altar-of-resurrection&quot;&gt;Altar of Resurrection&lt;/h2&gt;
-
-&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/AdventureAssets/pull/11&quot;&gt;&lt;/div&gt;
-
-&lt;p&gt;With most of the work been done last week, this week simply saw a finishing touch and some other minor additions.&lt;/p&gt;
-
-&lt;h3 id=&quot;floating-text&quot;&gt;Floating Text&lt;/h3&gt;
-&lt;p&gt;Instead of sending a chat message to describe the state of the Altar of Resurrection, a better idea was to have a floating text that appears when the angel statue is targeted. The floating text now looks like-&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/angelFloatingText.jpg&quot; alt=&quot;angelFloatingText&quot; title=&quot;Floating Text&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;new-particle-effects&quot;&gt;New Particle Effects&lt;/h3&gt;
-
-&lt;p&gt;The blue opaque Particle Effects have been switched to transparent orange ones, that match with the theme of the angel. The orange color goes along with the color of the orb.&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/angelNewPE.jpg&quot; alt=&quot;angelNewPE&quot; title=&quot;New Particle Effects&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;collapsiblecontainer&quot;&gt;
-&lt;div class=&quot;collapsibleheader&quot;&gt;&lt;span&gt;+ &lt;/span&gt;&lt;span&gt;How to create transparent particle effects?&lt;/span&gt;&lt;/div&gt;
-&lt;div class=&quot;collapsiblecontent&quot;&gt;
-Transparent particled effects only require the texture file for the effect to have the required transparecy. To make such a texture file I used the software &lt;a href=&quot;https://www.getpaint.net/&quot; target=&quot;_blank&quot;&gt;Paint.NET&lt;/a&gt;. A simple way to do this is-
-&lt;ul&gt;
-&lt;li&gt;Open a new file in Paint.NET. &lt;/li&gt;
-&lt;li&gt;Resize the canvas to the desired size (e.g. 32x32). &lt;/li&gt;
-&lt;li&gt;Select all (Ctrl + A) and delete. This would leave you with a empty transparent canvas.&lt;/li&gt;
-&lt;li&gt;Select the Shapes tool and select Ellipse.&lt;/li&gt;
-&lt;li&gt;In the shape styles menu select &quot;Draw Filled Shape&quot;.&lt;/li&gt;
-&lt;li&gt;Select the desired color for fill.&lt;/li&gt;
-&lt;li&gt;From the color toolbar, select &quot;More &amp;gt;&amp;gt;&quot; and adjust the &quot;Opacity- Alpha&quot; value to make the color transparent. For e.g. if you need 50% transparency, set Opacity to 128.&lt;/li&gt;
-&lt;li&gt;Drag the cursor to draw the ellipse on the canvas. The image can be then resized and adjusted. The color can also be adjusted later to see a live preview.&lt;/li&gt;
-&lt;/ul&gt;
-The above should give you an image like &lt;a href=&quot;https://github.com/Terasology/AdventureAssets/blob/master/assets/textures/altarOfResurrection/orangeParticle.png&quot; target=&quot;_blank&quot;&gt;this&lt;/a&gt;.
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;After all this, the final Alar of Resurrection looks like this-&lt;/p&gt;
-
-&lt;div class=&quot;videowrapper&quot;&gt;
-&lt;iframe width=&quot;1024&quot; height=&quot;768&quot; src=&quot;https://www.youtube.com/embed/mOG_v2AkBwo&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;multiplayer-fixes&quot;&gt;Multiplayer Fixes&lt;/h2&gt;
-
-&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/AdventureAssets/pull/13&quot;&gt;&lt;/div&gt;
-
-&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/AdventureAssets/pull/14&quot;&gt;&lt;/div&gt;
-
-&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/AdventureAssets/pull/15&quot;&gt;&lt;/div&gt;
-
-&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/AdventureAssets/pull/16&quot;&gt;&lt;/div&gt;
-
-&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/AdventureAssets/pull/17&quot;&gt;&lt;/div&gt;
-
-&lt;p&gt;A large amount of last week went into making the already created traps functional in multiplayer. Here is a brief collection of the issues I faced and how I solved them. Please read through the wiki page for &lt;a href=&quot;https://github.com/MovingBlocks/Terasology/wiki/Entities%2C-Components-and-Events-on-the-Network&quot;&gt;Entities, Components and Events on the Network&lt;/a&gt; if you already haven’t.&lt;/p&gt;
-
-&lt;h3 id=&quot;entities-on-the-network&quot;&gt;Entities on the network&lt;/h3&gt;
-&lt;p&gt;An entity on the network (one that has a Network Component) exists both on the server and the client. This poses a problem if you are depending on a component addition/activation event to perform an activity. For eg- For the wipe out trap, the mesh for the model was to be created only on the client side. This was supposed to happen on the OnActivatedComponent event for the &lt;code class=&quot;highlighter-rouge&quot;&gt;components = {WipeOutComponent, BlockComponent}&lt;/code&gt; which would trigger when the WipeOutRoot block is placed in the world. However, this event gets triggered twice, on the Client System once for the server entity and once for the client side entity. This creates two meshes- one that stays stationary and the other that rotates as expected. Note that the Authority/Server system only has the event handled once since it gets triggered only for the server entity.&lt;/p&gt;
-
-&lt;p&gt;As a workaround to fix this, I received the event on the Authority system with a higher priority. The Authority system event handler would then make changes to the server entity’s WipeOutComponent (add the rod and surfboard collider entities to the childrenEntities list). I would then receive the event on the Client system and recognize the server entity by these changes that have been made. The client entity would not have the changes made by the Authority system (the childrenEntities list would be empty). The Client System event handler for the OnComponentActivated event would now run only for the server entity and the extra static mesh would no longer be created.&lt;/p&gt;
-
-&lt;p&gt;The &lt;a href=&quot;https://github.com/Terasology/AdventureAssets/blob/master/src/main/java/org/terasology/adventureassets/traps/wipeout/WipeOutServerSystem.java#L114-L134&quot;&gt;Server System event handler&lt;/a&gt; looks like-&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;nd&quot;&gt;@ReceiveEvent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;priority&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;EventPriority&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;PRIORITY_HIGH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;components&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;WipeOutComponent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;BlockComponent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;})&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;onWipeOutActivated&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;OnActivatedComponent&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;EntityRef&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;entity&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;WipeOutComponent&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;wipeOutComponent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;// Create server entities for rod and surfboard&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;wipeOutComponent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;childrenEntities&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rod&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;wipeOutComponent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;childrenEntities&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;surfboard&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;The &lt;a href=&quot;https://github.com/Terasology/AdventureAssets/blob/master/src/main/java/org/terasology/adventureassets/traps/wipeout/WipeOutClientSystem.java#L66-L80&quot;&gt;Client System event handler&lt;/a&gt; looks like-&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;nd&quot;&gt;@ReceiveEvent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;components&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;WipeOutComponent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;BlockComponent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;})&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;onWipeOutActivated&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;OnActivatedComponent&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;EntityRef&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;entity&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;WipeOutComponent&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;wipeOutComponent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;// So that only the relevant server entity is operated on.&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;wipeOutComponent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;childrenEntities&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;isEmpty&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;())&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;// Create mesh entity on client side&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;h3 id=&quot;saving-component-of-an-entity&quot;&gt;Saving Component of an Entity&lt;/h3&gt;
-&lt;p&gt;Before going into the specifics of the issue I faced, let’s discuss how the &lt;span style=&quot;color: #CCCC00&quot;&gt;&lt;strong&gt;@Replicate&lt;/strong&gt;&lt;/span&gt; annotation works.&lt;/p&gt;
-
-&lt;p&gt;Straight from the wiki-&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;@Replicate&lt;/code&gt; is an annotation used to mark types or fields to indicate that these types or fields should be replicated between the server and the client. In other words, when changes are made to these types or fields on the server, these changes will be reflected in the clients as well.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;By default, the FieldReplicate type is set to &lt;code class=&quot;highlighter-rouge&quot;&gt;SERVER_TO_CLIENT&lt;/code&gt;. This basically means that whatever the state of the entity on the server, such will be replicated to the entity on the client side. Changing a component on the client entity would not be reflected on the server entity.&lt;/p&gt;
-
-&lt;p&gt;Since all of the traps I made were on the network (possessed a NetworkComponent and had entities on both the client side and the server side), altering their settings required a change in one of the components. For instance, let’s consider the Fireball Launcher. On interaction with the Fireball Launcher block, the player sees a Settings screen where he can alter the properties for that Fireball Launcher. On hitting “Ok” on the Settings window, the component change happens from the FireballSettingsScreen class which is launched on the client side and instantiated with the client side Fireball Launcher Root entity. The component change thus happens only on the client entity and isn’t taken into account by the server entity.&lt;/p&gt;
-
-&lt;p&gt;To solve this, I created a new event- &lt;code class=&quot;highlighter-rouge&quot;&gt;SetFireballLauncherEvent&lt;/code&gt;. This event basically carries all the new values that need to be applied to the &lt;code class=&quot;highlighter-rouge&quot;&gt;FireballLauncherComponent&lt;/code&gt;. The event is then received on the Authority/Server system which then makes the change on the server side Fireball Launcher entity. This change is then reflected on the client side Fireball Launcher entities as they replicate the changes made to the server entity. The event can however not be sent to the FireballLauncherRoot entity from the FireballSettingsScreen class. This is because the FireballLauncherRoot entity that the player interacts with, is the client side entity. Making the change on the client side entity would not make the change register on the associated server entity. Instead, the event can be sent to the local player’s character or client entity with the FireballLauncherRoot entity as a parameter.&lt;/p&gt;
-
-&lt;h3 id=&quot;how-does-the-chest-work&quot;&gt;How does the chest work?&lt;/h3&gt;
-&lt;p&gt;All these issues I faced, made me wonder how the chest entity works. The chest opens an Inventory screen on interaction. It has an InventoryComponent and any change made by one client is reflected on any other client.&lt;/p&gt;
-
-&lt;p&gt;The chest entity has the network component and has &lt;span style=&quot;color: #CCCC00&quot;&gt;&lt;strong&gt;@Replicate&lt;/strong&gt;&lt;/span&gt; on all relevant component fields to ensure that the state is replicated from &lt;strong&gt;SERVER_TO_CLIENT&lt;/strong&gt;. Again, whatever the state of the server entity, so will be replicated on the client.
-Since the entity has a Network Component, it exists on both the client side and the server side.
-Consider a client opening the chest (by interaction) and adding a sand block to it (the inventory of the chest). This action is performed on the local entity (the one on that client’s side). So simply saving the new InventoryComponent (with an added sand block) on the client side in the client system won’t work since all client chest entities replicate the state of the server entity, which remains unaltered.
-To deal with this, the component change must happen on the server entity which can be accessed only at the Authority system. This can be made possible by sending an event that is received and handled by the Authority/Server system.
-Note that the event cannot be sent to the client side chest entity (since the player interacts with the client side chest entity, not the one that exists on the server). However, this event can be sent to the player’s character entity with the chest entity as a parameter of the event. The event can then be received and the server side chest entity can be saved with the new InventoryComponent.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt;  Making a change to the client side entity can be done to register the change on the associated server entity. But this requires the entity to be owned by the player and the &lt;code class=&quot;highlighter-rouge&quot;&gt;FieldReplicateType&lt;/code&gt; to be set to &lt;code class=&quot;highlighter-rouge&quot;&gt;OWNER_TO_SERVER_TO_CLIENT&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Citing from code-&lt;br /&gt;
-&lt;code class=&quot;highlighter-rouge&quot;&gt;InventoryClientSystem&lt;/code&gt; sends an event on the local player’s client entity &lt;a href=&quot;https://github.com/MovingBlocks/Terasology/blob/43f05baf94be707d5e3743300759fb530cf67e0f/modules/Core/src/main/java/org/terasology/logic/inventory/InventoryClientSystem.java#L258-L258&quot;&gt;here&lt;/a&gt;.&lt;br /&gt;
-&lt;code class=&quot;highlighter-rouge&quot;&gt;InventoryAuthoritySystem&lt;/code&gt; receives the event and does its thing &lt;a href=&quot;https://github.com/MovingBlocks/Terasology/blob/80702ce7751699d93467cc843dd4ac682edcf21b/modules/Core/src/main/java/org/terasology/logic/inventory/InventoryAuthoritySystem.java#L250-L250&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Note that some of my approaches might be incorrect. I’m not a hundred percent sure about whether the above is the right way to deal with the issues. However, having had a glance at how the Inventory stuff is handled for the chest entity, I’m more or less convinced that it is the right way.&lt;/p&gt;
-
-&lt;h1 id=&quot;whats-next&quot;&gt;What’s next?&lt;/h1&gt;
-&lt;p&gt;Maybe a few more traps like a pressure plate and some more triggers like buttons and levers. The major part that’s really left is to integrate all of what’s made into a world and package it into the Lost module with the supporting Lore.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 04 Jul 2017 00:00:00 +0530</pubDate>
-        <link>http://localhost:4000/2017/07/04/GSoC-week9.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/07/04/GSoC-week9.html</guid>
-        
-        <category>open source</category>
-        
-        <category>MovingBlocks</category>
-        
-        <category>Terasology</category>
-        
-        <category>GSoC</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>GSoC Week 8: The Revival stone and the Password Door</title>
-        <description>&lt;style type=&quot;text/css&quot;&gt;
-.collapsiblecontainer {
-width:100%;
-border:1px solid #d3d3d3;
-}
-.collapsiblecontainer div {
-width:100%;
-}
-.collapsiblecontainer .collapsibleheader {
-background-color:#d3d3d3;
-padding: 2px;
-cursor: pointer;
-font-weight: bold;
-}
-.collapsiblecontainer .collapsiblecontent {
-display: none;
-padding : 5px;
-}
-&lt;/style&gt;
-
-&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js&quot;&gt;&lt;/script&gt;
-
-&lt;script type=&quot;text/javascript&quot; src=&quot;/js/github-buttons.js&quot;&gt;&lt;/script&gt;
-
-&lt;script type=&quot;text/javascript&quot;&gt;
-$(document).ready(function(){
-$(&quot;.collapsibleheader&quot;).click(function () {
-$collapsibleheader = $(this);
-//getting the next element
-$collapsiblecontent = $collapsibleheader.next();
-//open up the collapsiblecontent needed - toggle the slide- if visible, slide up, if not slidedown.
-$collapsiblecontent.slideToggle(500, function () {
-//execute this after slideToggle is done
-//change text of collapsibleheader based on visibility of collapsiblecontent div
-$collapsibleheader.find(&quot;span:first-child&quot;).text(function () {
-//change text based on condition
-return $collapsiblecontent.is(&quot;:visible&quot;) ? &quot;- &quot; : &quot;+ &quot;;
-});
-});
-
-});
-});
-
-&lt;/script&gt;
-
-&lt;p&gt;Week 8 has come to an end and quite a few of the proposal targets have been met. The last two months have been phenomenal, to say the least. Since I had started work around 1 month in advance, I would be completing two months by the time the first evaluation completes in a few days.&lt;/p&gt;
-
-&lt;h1 id=&quot;what-have-i-been-upto&quot;&gt;What have I been upto?&lt;/h1&gt;
-&lt;p&gt;This week saw more work on traps, two items in particular- the &lt;strong&gt;Revival Stone&lt;/strong&gt; (to be named the &lt;strong&gt;Altar of Resurrection&lt;/strong&gt;) and a &lt;strong&gt;Password locked door&lt;/strong&gt; .&lt;/p&gt;
-
-&lt;h2 id=&quot;revival-stone&quot;&gt;Revival Stone&lt;/h2&gt;
-
-&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/AdventureAssets/pull/11&quot;&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;concept&quot;&gt;Concept&lt;/h3&gt;
-&lt;p&gt;With all the previous traps created (swinging blade, wipe out over lava, fireball launcher) being dangerous in nature, there was a definite need for a checkpoint that allows the player to respawn just before the trap. The revival stone does exactly this. A statue of an angel serves as a checkpoint that can be activated by the player. Upon activation, the angel statue lights up and the orb held by the angel starts glowing. At a time, a player can have only one checkpoint activated. Upon death, the player respawns at the last and only activated checkpoint.&lt;/p&gt;
-
-&lt;h3 id=&quot;model&quot;&gt;Model&lt;/h3&gt;
-&lt;p&gt;The idea for the design of the model was very intricate. Unable to catch &lt;a href=&quot;https://github.com/quaternius&quot;&gt;quaternius&lt;/a&gt; online, I went forward with a placeholder model for the time being, which looked like this-&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/angelOld.jpg&quot; alt=&quot;angelOld&quot; title=&quot;Old Angel Model&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Soon after, &lt;a href=&quot;https://github.com/quaternius&quot;&gt;quaternius&lt;/a&gt; was back and ready to do some Blender magic. This was also probably the most elegant and beautiful work of his that has been added to the game.&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/angelNew.jpg&quot; alt=&quot;angelNew&quot; title=&quot;New Angel Model&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The initial model he made was a flat one (left), but it was soon changed to a smooth version (right) which looked better.&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/angelFlatAndSmooth.jpg&quot; alt=&quot;angelFlatAndSmooth&quot; title=&quot;Angel Flat And Smooth&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The model is completely static and has no built-in animations. The same model is intelligently used for both the active and inactive states of the angel statue using just a texture change.&lt;/p&gt;
-
-&lt;div class=&quot;collapsiblecontainer&quot;&gt;
-&lt;div class=&quot;collapsibleheader&quot;&gt;&lt;span&gt;+ &lt;/span&gt;&lt;span&gt;How does the texture change happen?&lt;/span&gt;&lt;/div&gt;
-&lt;div class=&quot;collapsiblecontent&quot;&gt;
-Every model is added to the game by first exporting the model to a .obj file and then creating an associated prefab for it. The associated prefab needs to have a MeshComponent that describes the mesh and the material. The mesh points to the .obj file exported using Blender. The material, on the other hand, is the texture (png image) that is UV mapped to the model.
-&lt;br /&gt;
-The two states of the revival stone model only differ in texture. This is implemented using a simple material (texture) switch when the player interacts with the statue to activate it. As far as I know, this is the first usage of such a material switch in the game and it can definitely be used for more models to depict a change in state.
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;The two different textures being used only differ slightly- the texture for the active state has a brighter color for the angel’s statue and an orange color for the orb to make it appear lit.&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/angelActiveAndInactive.jpg&quot; alt=&quot;angelActiveAndInactive&quot; title=&quot;angelActiveAndInactive&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;respawn-mechanism&quot;&gt;Respawn mechanism&lt;/h3&gt;
-&lt;p&gt;After a player dies a Death Screen is displayed. Upon clicking the “Respawn” button a &lt;code class=&quot;highlighter-rouge&quot;&gt;RespawnRequestEvent&lt;/code&gt; is sent and the spawn location is found using the World Generator information and the player respawn happens. This whole process was broken down using &lt;a href=&quot;https://github.com/MovingBlocks/Terasology/pull/2983&quot;&gt;this Engine PR&lt;/a&gt; allowing other systems to alter a player’s respawn location.&lt;/p&gt;
-
-&lt;div class=&quot;collapsiblecontainer&quot;&gt;
-&lt;div class=&quot;collapsibleheader&quot;&gt;&lt;span&gt;+ &lt;/span&gt;&lt;span&gt;How is the respawn mechanism implemented?&lt;/span&gt;&lt;/div&gt;
-&lt;div class=&quot;collapsiblecontent&quot;&gt;
-The RespawnRequestEvent that is sent when the &quot;Respawn&quot; button is clicked on the Death Screen was being used to modify the LocationComponent of the player entity and line it up for respawn.
-&lt;br /&gt;
-This process has now been broken into multiple parts. A method receives the RespawnRequestEvent with a &quot;CRITICAL&quot; priority and sets the respawn location as per the World Generator information. Another method in the PlayerSystem receives the RespawnRequestEvent with a &quot;TRIVIAL&quot; priority and initiates the whole respawn process for the player entity.
-&lt;br /&gt;
-Any other system present in any module can receive the RespawnRequestEvent with a priority between TRIVIAL and CRITICAL (both exclusive) and make a change to the LocationComponent of the player entity to allow for a custom respawn location.
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;particle-effects&quot;&gt;Particle Effects&lt;/h3&gt;
-&lt;p&gt;This was the first time I fiddled around with any particle effects of my own. The particle effects consisted of a bunch of blue mystical particles that rise from the base of the statue towards the top, upon activation. I also reused the smoke explosion particle effect from the core module along with it, to give an added effect. The whole thing in action looks like this-&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/angelParticleEffects.gif&quot; alt=&quot;angelParticleEffects&quot; title=&quot;angelParticleEffects&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;collapsiblecontainer&quot;&gt;
-&lt;div class=&quot;collapsibleheader&quot;&gt;&lt;span&gt;+ &lt;/span&gt;&lt;span&gt;How to create such particle effects?&lt;/span&gt;&lt;/div&gt;
-&lt;div class=&quot;collapsiblecontent&quot;&gt;
-To create the above kind of particle effects I had to create &lt;a href=&quot;https://gist.github.com/nihal111/c419716b6227b7cb469e6885cce76c47&quot; target=&quot;_blank&quot;&gt;a prefab for the particle effects&lt;/a&gt; and then build and spawn this as an entity. The linked gist has a lot of parameters as components that allow me precise and specific control over the particles.
-&lt;br /&gt;
-For instance- the positionRangeGenerator allows me to ensure that all particles spawn at the bottom of the statue and the velocityRangeGenerator allows me to make all the particles ascend upwards.
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Upon deactivation, only the smoke effect is played.&lt;/p&gt;
-
-&lt;h3 id=&quot;lighting&quot;&gt;Lighting&lt;/h3&gt;
-&lt;p&gt;In addition to the texture change, there was a need to add lighting for the orb to appear as glowing. This is done by creating a simple orb entity which spawns near the location of the orb and has a &lt;code class=&quot;highlighter-rouge&quot;&gt;LightComponent&lt;/code&gt; attached. Using the light component the two states of the revival stone appear as such at night-&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/angelLightAndDark.jpg&quot; alt=&quot;angelLightAndDark&quot; title=&quot;angelLightAndDark&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The PR for the revival stone is not complete yet, as some fixes are still required to make it multiplayer compatible. &lt;a href=&quot;https://github.com/Terasology/AdventureAssets/pull/11&quot;&gt;This PR&lt;/a&gt; contains all the progress so far. A working video with the placeholder model completely functioning in Single Player follows-&lt;/p&gt;
-
-&lt;div class=&quot;videowrapper&quot;&gt;
-&lt;iframe width=&quot;1024&quot; height=&quot;768&quot; src=&quot;https://www.youtube.com/embed/67TY2BpaZxQ&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;password-locked-door&quot;&gt;Password Locked Door&lt;/h2&gt;
-
-&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/AdventureAssets/pull/12&quot;&gt;&lt;/div&gt;
-
-&lt;p&gt;There already existed a door in the Core module that allows for simple opening and closing with player interactions. It has a nice system that takes care of placing the two blocks long door in the world, with a nice texture and cool sound effects. I decided to reuse all of this to create a door that would require a password to unlock.&lt;/p&gt;
-
-&lt;p&gt;The password door essentially extends the door from the core module. It uses the existing systems in Core for the basic features and simply overrides over the functionality that needs to change by receiving the respective events with a higher priority. For instance, the ActivateEvent handler in the &lt;code class=&quot;highlighter-rouge&quot;&gt;PasswordDoorSystem&lt;/code&gt; receives (and consumes) the ActivateEvent with a higher priority than Core’s &lt;code class=&quot;highlighter-rouge&quot;&gt;DoorSystem&lt;/code&gt;. This allows the display of a UI Screen that lets the player enter the password to unlock the door.&lt;/p&gt;
-
-&lt;h3 id=&quot;features&quot;&gt;Features:&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;The passwordDoor on placement opens a UI Screen for the player to enter the details for it. It takes input for a &lt;strong&gt;Title&lt;/strong&gt;, &lt;strong&gt;Message&lt;/strong&gt; and the &lt;strong&gt;Password&lt;/strong&gt;. Upon entering all the fields and hitting “Ok”, the door is placed in the world.&lt;/li&gt;
-  &lt;li&gt;Upon interacting with an open door, the door close.&lt;/li&gt;
-  &lt;li&gt;Upon interacting with a closed door, a UI Screen is displayed, showing the Title and Message, which can serve as a clue for the password. An empty text box exists for the user to input the password. If the entered password is wrong, a “&lt;span style=&quot;color: red;&quot;&gt;Invalid Password!&lt;/span&gt;” text appears in red just above the text box. Entering the correct password closes the UI Screen and opens the door.&lt;/li&gt;
-  &lt;li&gt;The password door can be mined to get the password door as an item. This can be placed again in the world, cycling to the top step.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Note: A password door can be made indestructible in an area, for the purpose of being used in traps and puzzles.&lt;/p&gt;
-
-&lt;p&gt;Here’s a full video showing the Password Door in action:&lt;/p&gt;
-&lt;div class=&quot;videowrapper&quot;&gt;
-&lt;iframe width=&quot;1024&quot; height=&quot;768&quot; src=&quot;https://www.youtube.com/embed/D_apW1PYTEI&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h1 id=&quot;whats-next&quot;&gt;What’s next?&lt;/h1&gt;
-&lt;p&gt;For next week, I would spend most of my time working on trying to make most of the created traps compatible in Multiplayer mode so that they can be tested out in the Multiplayer play-test scheduled to happen this Saturday- the first of July.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 27 Jun 2017 00:00:00 +0530</pubDate>
-        <link>http://localhost:4000/2017/06/27/GSoC-week8.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/06/27/GSoC-week8.html</guid>
-        
-        <category>open source</category>
-        
-        <category>MovingBlocks</category>
-        
-        <category>Terasology</category>
-        
-        <category>GSoC</category>
         
         
       </item>
