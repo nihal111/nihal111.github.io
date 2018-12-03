@@ -39,7 +39,7 @@ It was 3 AM, and we decided to sleep and rendezvous at the morning 8:30 AM lectu
 ![lenovoposterAssistANTLevel1]({{ site.baseurl }}/img/AssistANTLevel1.jpg "Level 1"){:style="max-height: 500px;"}
 
 ### 72 to 48
-Around early evening, having nicely cleared my other appointments, I called up Arpan only to find out that he's left for home and won't be back by next morning. I decide not to waste more time and start designing levels in MS Paint based on raw ideas from the previous day. I finish with 4 levels ready.
+Around early evening, having nicely cleared my other appointments, I called up Arpan only to find out that he's left for home and won't be back by next morning. I decided not to waste more time and started designing levels in MS Paint based on raw ideas from the previous day. I finished the day with 4 levels ready.
 
 {: .center}
 ![lenovoposterAssistANTNewLevel]({{ site.baseurl }}/img/AssistANTNewLevel.jpg "New level"){:style="max-height: 500px;"}
@@ -54,6 +54,6 @@ The results took a long time to arrive. I received a call from Pradyot, the then
 
 We ended up **winning the 2nd prize with a cash prize of 30,000 INR**. Our happiness knew no bounds and the prize money was a cherry on top.
 
-**The game can be downloaded from [here](https://github.com/nihal111/nihal111.github.io/releases/download/v0.1/AssistANT.zip).** The zip file contains an executable with instruction on how to run. Unfortunately, the source code didn't survive since we didn't know any version controlbak then.
+**The game can be downloaded from [here](https://github.com/nihal111/nihal111.github.io/releases/download/v0.1/AssistANT.zip).** The zip file contains an executable with instruction on how to run. Unfortunately, the source code didn't survive since we didn't know any version control back then.
 
 **Note from the future**: *I believe that this one event sparked a butterfly effect. I feel it has had a considerable impact on my life choices pertaining towards WnCC, shaping my interests and pursuing coding as a hobby. I look back to this with a vivid memory and great pleasure.*
