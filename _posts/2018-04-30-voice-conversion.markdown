@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Voice Conversion- Machine Project"
+title: "Voice Conversion- Machine Learning Project"
 date: 2018-04-30
 comments: true
 tags:
