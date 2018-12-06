@@ -36,9 +36,9 @@ Here is the list of projects I own or have contributed to:
 
 * **Synthetic generation and Language Modeling of Code-Switched Hindi-English Text**: Working on the generation of code-mixed Hindi-English text using linguistic theories and several strategies by leveraging parse-trees. Using the synthetic code-mixed data to improve performance of a language model.
 
-* [**Pommerman**][Pommerman]: Explored different strategies for training learning agents in a multi-agent scenario as part of the NeurIPS 2018 Pommerman Challenge. Read more [here][pommerman-blog].
+* [**Pommerman**][pommerman-blog]: Explored different strategies for training learning agents in a multi-agent scenario as part of the NeurIPS 2018 Pommerman Challenge. Read more [here][pommerman-blog].
 
-* [**Voice Conversion**][Voice Conversion]: Built a pipelined approach to convert one person’s voice into another person’s voice. Proposed a deep learning approach to convert source waveform to phonemes and further phonemes to target waveform. Read more [here][voice-conversion-blog].
+* [**Voice Conversion**][voice-conversion-blog]: Built a pipelined approach to convert one person’s voice into another person’s voice. Proposed a deep learning approach to convert source waveform to phonemes and further phonemes to target waveform. Read more [here][voice-conversion-blog].
 
 * [**SAFE Quiz App**][SAFE Quiz App]: Worked for the development of the SAFE Android application that facilitates online paperless tests in educational institutes. Multiple devices concurrently connect to a Wireless Access Point to fetch test data with action-logging happening in real time at the invigilator’s console. Worked on fetching and displaying of performance history and correct/incorrect answer visuals on the app. I worked on this as a part of my R & D Project in Fall '16.
 
