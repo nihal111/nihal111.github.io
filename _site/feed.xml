@@ -6,9 +6,37 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 27 Sep 2018 18:22:30 +0530</pubDate>
-    <lastBuildDate>Thu, 27 Sep 2018 18:22:30 +0530</lastBuildDate>
+    <pubDate>Thu, 06 Dec 2018 16:42:46 +0530</pubDate>
+    <lastBuildDate>Thu, 06 Dec 2018 16:42:46 +0530</lastBuildDate>
     <generator>Jekyll v3.8.1</generator>
+    
+      <item>
+        <title>Pommerman- Reinforcement Learning Project</title>
+        <description>&lt;p&gt;As the course project for CS 747 - Foundations of Intelligent &amp;amp; Learning Agents, Fall 2018, I teamed up with Chinmay Talegaonkar and Dhruv Shah to take on the &lt;a href=&quot;https://www.pommerman.com/&quot;&gt;Pommerman Challenge&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/pommerman.gif&quot; alt=&quot;Pommerman&quot; title=&quot;Pommerman&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The Pommerman Challenge essentially serves as a test bed for multi-agent learning algorithms. It is essentially a clone of the popular Bomberman game, providing a constantly changing environment with bombs going off, power-ups to be collected and other agents to be eliminated. There are mainly two modes to the game, &lt;strong&gt;FFA&lt;/strong&gt;- where each of the four agents battle against each other and the last one to survive wins, &lt;strong&gt;Team&lt;/strong&gt;- where there are two teams of two agents which compete against each other.&lt;/p&gt;
+
+&lt;p&gt;We took on the FFA challenge, trying a few different approaches. After facing a few hurdles, we found that the DQfD agent performed remarkably well as against our other approaches.&lt;/p&gt;
+
+&lt;p&gt;Our experiments and approaches are detailed here- &lt;a href=&quot;/docs/FILA_2018.pdf&quot;&gt;Report&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;To see our agent in action, watch the video below-&lt;/p&gt;
+
+&lt;iframe width=&quot;100%&quot; height=&quot;400px&quot; src=&quot;https://www.youtube.com/embed/DtiyIrMZ69A&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+</description>
+        <pubDate>Sun, 25 Nov 2018 00:00:00 +0530</pubDate>
+        <link>http://localhost:4000/2018/11/25/pommerman-rl.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/11/25/pommerman-rl.html</guid>
+        
+        <category>Machine Learning</category>
+        
+        <category>Reinforcement Learning</category>
+        
+        
+      </item>
     
       <item>
         <title>To hell and back again, US B1 Visa</title>
@@ -24,14 +52,14 @@
 
 &lt;p&gt;With these stories in my head, I was partly nervous but still convinced that my purpose of travelling was entirely legitimate. I had an invitation letter from Google, and I had to complete my undergraduate studies, which meant that I was bound to return.&lt;/p&gt;
 
-&lt;p&gt;After a long wait, and slowly moving through the serpentine queue my turn arrived. While I was waiting at the counter, the person ahead of me, had his Visa denied. As I walked up to the counter, I could see that the consular officer was unhappy.&lt;/p&gt;
+&lt;p&gt;After a long wait, and slowly moving through the serpentine queue my turn arrived. While I was waiting at the counter, the person ahead of me had his Visa denied. As I walked up to the counter, I could see that the consular officer was unhappy.&lt;/p&gt;
 
 &lt;hr /&gt;
 
 &lt;p&gt;&lt;strong&gt;Me:&lt;/strong&gt; Good morning&lt;br /&gt;
 &lt;strong&gt;Officer:&lt;/strong&gt; May I have your passport? &lt;br /&gt;
 (I pass my passport) &lt;br /&gt;
-Officer: Why would you be travelling to the United States? &lt;br /&gt;
+&lt;strong&gt;O:&lt;/strong&gt; Why would you be travelling to the United States? &lt;br /&gt;
 &lt;strong&gt;M:&lt;/strong&gt; To attend a conference. &lt;br /&gt;
 (I kept my answers brief and answered only what I was asked. I had read this tip somewhere, and I was extra cautious to not annoy the officer further.) &lt;br /&gt;
 &lt;strong&gt;O:&lt;/strong&gt; What conference is this? &lt;br /&gt;
@@ -53,12 +81,14 @@ Officer: Why would you be travelling to the United States? &lt;br /&gt;
 
 &lt;hr /&gt;
 
-&lt;p&gt;Profoundly disappointed and dissatisfied with how the interview went, I left. I had carried a file with all the documents I could think of, and the interviewer didn’t ask for even a single document.&lt;/p&gt;
+&lt;p&gt;Profoundly disappointed and dissatisfied with how the interview went, I left. I had carried a file with all the documents I could think of, and the interviewer didn’t ask for even a single document. The paper given to me cited Section 214 (b) as the ground for denial, which essentially means I couldn’t prove strong ties to my home country. Baseless in my case, since I needed to come back to finish my undergrad.&lt;/p&gt;
 
 &lt;p&gt;My plans had come to an end. There was no way I could apply again. It took me more than a month to get my first appointment. I barely had 2 weeks before my flight, this time.&lt;/p&gt;
 
 &lt;h2 id=&quot;the-gamble&quot;&gt;The Gamble&lt;/h2&gt;
 &lt;p&gt;I heard from a friend (&lt;a href=&quot;https://mozillians.org/en-US/u/ydidwania/&quot;&gt;Yashvardhan Didwania&lt;/a&gt;, thanks again) that it isn’t all that impossible to get an appointment on a date before the expected waiting period. He had pulled it off in the past by continually refreshing the webpage and checking for available dates. When someone cancels or reschedules, an earlier date becomes available for a short while. That’s when you grab it.&lt;/p&gt;
+
+&lt;p&gt;The gamble was that I would have to pay 160$ before I become able to book an appointment. To get the Visa on my passport in time, I needed to get an interview date on or before October 8. There was a good chance that I would not get such a date but I decided to play the odds.&lt;/p&gt;
 
 &lt;p&gt;I had to wait for the next day to start a new application since the website still showed my present-day appointment (24 September) as active. I filled out the DS-160 in the meantime and spent the entire day reading stories about Visa rejections and searching for ways to overcome them. I woke up on 25th September and at 10:21 AM, on my way to class, I made the MRV payment of 160$ again. I remember it took around 1-2 hours for my receipt to get activated and reflect on the website, last time. However, I kept checking during class, and the receipt was activated at sharp 11:00 AM. The earliest available date was 19 October at the Mumbai Consulate, as I had expected. Chennai had an earlier date of 3 October available, but I dropped that thought. Better judgement prevailed, and I kept refreshing the page hoping for a miracle to happen. At 11:21 AM, I made my last refresh, and to my surprise, the website now showed the earliest available date as 27th September. Within what were an intense 15 seconds, I had managed to secure my second interview on the 27th of September. It was unbelievable, and I was happy beyond my wits.&lt;/p&gt;
 
@@ -118,25 +148,6 @@ Officer: Why would you be travelling to the United States? &lt;br /&gt;
         <guid isPermaLink="true">http://localhost:4000/2018/09/27/us-visa-b1.html</guid>
         
         <category>Visa</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Dissecting an RNNLM</title>
-        <description>&lt;p&gt;The following is a slightly more verbose explanation of how an RNNLM works. This is mainly a note to self, although it might help someone who’s just starting off.&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/mercari/rum.jpg&quot; alt=&quot;rum&quot; title=&quot;rum&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sun, 23 Sep 2018 00:00:00 +0530</pubDate>
-        <link>http://localhost:4000/2018/09/23/dissecting-an-rnnlm.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/09/23/dissecting-an-rnnlm.html</guid>
-        
-        <category>Machine Learning</category>
-        
-        <category>Language Modeling</category>
-        
-        <category>NLP</category>
         
         
       </item>
