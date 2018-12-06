@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 06 Dec 2018 16:42:46 +0530</pubDate>
-    <lastBuildDate>Thu, 06 Dec 2018 16:42:46 +0530</lastBuildDate>
+    <pubDate>Thu, 06 Dec 2018 17:04:47 +0530</pubDate>
+    <lastBuildDate>Thu, 06 Dec 2018 17:04:47 +0530</lastBuildDate>
     <generator>Jekyll v3.8.1</generator>
     
       <item>
@@ -20,7 +20,7 @@
 
 &lt;p&gt;We took on the FFA challenge, trying a few different approaches. After facing a few hurdles, we found that the DQfD agent performed remarkably well as against our other approaches.&lt;/p&gt;
 
-&lt;p&gt;Our experiments and approaches are detailed here- &lt;a href=&quot;/docs/FILA_2018.pdf&quot;&gt;Report&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Our experiments and approaches are detailed here- &lt;a href=&quot;/docs/pommerman_report.pdf&quot;&gt;Report&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;To see our agent in action, watch the video below-&lt;/p&gt;
 
@@ -348,6 +348,38 @@ During winter, this lake also becomes home to thousands of migratory aquatic bir
         <guid isPermaLink="true">http://localhost:4000/2018/05/20/flying-dji-mavic.html</guid>
         
         <category>drone</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Voice Conversion- Machine Project</title>
+        <description>&lt;p&gt;As the course project for CS 419 - Introducing to Machine Learning, Spring 2018, I teamed up with Arpan Banerjee and Srivatsan Sridhar to work on the task of Voice Conversion.&lt;/p&gt;
+
+&lt;p&gt;We built a pipelined approach to convert one person’s voice into another person’s voice. We proposed a deep learning approach to convert source waveform to phonemes and further phonemes to target waveform. This approach consisted of two neural networks.
+The first network was used to convert the source speaker’s waveforms to phonemes.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/voice-conversion/net1.png&quot; alt=&quot;Net1&quot; title=&quot;Net1&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;While the second network involved converting the obtained phonemes to the target speaker’s waveforms.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/voice-conversion/net2.png&quot; alt=&quot;Net2&quot; title=&quot;Net2&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We used the TIMIT (different sources) and CMU ARCTIC (single target) corpus respectively for training our network. As part of our project, we performed extensive experimentation with bi-directional Recurrent Neural Networks using LSTM and GRU cells.&lt;/p&gt;
+
+&lt;p&gt;We’ve used the multitask approach to train the network as per both the mel spectral coefficients (as an intermediate representation) and magnitude spectrum which forms the final output while using a pyramidal network architecture.&lt;/p&gt;
+
+&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/voice-conversion/multitask.png&quot; alt=&quot;multitask&quot; title=&quot;multitask&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Our experiments and approaches are detailed here- &lt;a href=&quot;/docs/voice_conversion_report.pdf&quot;&gt;Report&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 30 Apr 2018 00:00:00 +0530</pubDate>
+        <link>http://localhost:4000/2018/04/30/voice-conversion.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/04/30/voice-conversion.html</guid>
+        
+        <category>Machine Learning</category>
+        
+        <category>Reinforcement Learning</category>
         
         
       </item>
@@ -1110,83 +1142,6 @@ With the Shattered Plasma foundation laid, the Facade of Truth built on top, the
         <category>Terasology</category>
         
         <category>GSoC</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Github Button jQuery Plugin</title>
-        <description>&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js&quot;&gt;&lt;/script&gt;
-
-&lt;script type=&quot;text/javascript&quot; src=&quot;/js/github-buttons.js&quot;&gt;&lt;/script&gt;
-
-&lt;p&gt;Lately, I’ve created a lot of blog posts in which I’ve felt the need to link a Github Pull Request or an Issue. Creating a vanilla link in markdown is easy but not aesthetically appealing. I wanted a ribbon sort-of thing that would distinguish between issues and PRs. Unable to find something good online, I went ahead and created my own jQuery plugin.&lt;/p&gt;
-
-&lt;h2 id=&quot;how-does-it-look&quot;&gt;How does it look?&lt;/h2&gt;
-&lt;p&gt;Without further ado, this is how it looks like:&lt;/p&gt;
-
-&lt;p&gt;This is an un-merged open PR.&lt;/p&gt;
-
-&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/AdventureAssets/pull/14&quot;&gt;&lt;/div&gt;
-
-&lt;p&gt;This is a merged PR.&lt;/p&gt;
-
-&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/MovingBlocks/Terasology/pull/2994&quot;&gt;&lt;/div&gt;
-
-&lt;p&gt;This is an open issue.&lt;/p&gt;
-
-&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/WildAnimals/issues/7&quot;&gt;&lt;/div&gt;
-
-&lt;p&gt;This is a closed issue.&lt;/p&gt;
-
-&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/Books/issues/5&quot;&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;how-does-it-work&quot;&gt;How does it work?&lt;/h2&gt;
-&lt;p&gt;Generating such a button only requires creating a div with the appropriate URL and it is super simple. Here’s how the HTML for one button looks like-&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;github-button&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;url=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://github.com/Terasology/Books/issues/5&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;The plugin uses the &lt;a href=&quot;https://api.github.com/&quot;&gt;Github API&lt;/a&gt; to fetch details of the PR or the issue, like the date, status and the repository.&lt;br /&gt;
-The color and the icon of the right side icon is changed depending on the state. The hyperlinks to the issue/PR and associated repository are created.&lt;br /&gt;
-The icons that have been included belong to the &lt;a href=&quot;https://octicons.github.com/&quot;&gt;Github Octicon&lt;/a&gt; pack. The stylesheet for the icons is loaded directly by the plugin from &lt;a href=&quot;https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/font/octicons.css&quot;&gt;CDN&lt;/a&gt; and does not need to be included separately.&lt;/p&gt;
-
-&lt;p&gt;This plugin is very minimal and can be easily customised to make it look different. The jQuery code resides in one file, while the CSS code lies in another file.&lt;/p&gt;
-
-&lt;h3 id=&quot;responsive&quot;&gt;Responsive&lt;/h3&gt;
-&lt;p&gt;Since, the plugin is tailor-made to fit my needs, I rely on a single &lt;a href=&quot;https://www.w3schools.com/css/css_rwd_mediaqueries.asp&quot;&gt;media query&lt;/a&gt; to adjust the font and width of the elements to suit a mobile device. This is a screenshot of how it looks on my phone-&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/githubButtonResponsive.jpg&quot; alt=&quot;githubButtonResponsive&quot; title=&quot;Github Button Responsive&quot; style=&quot;max-height: 800px;&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;usage&quot;&gt;Usage&lt;/h2&gt;
-
-&lt;p&gt;Here is the &lt;a href=&quot;https://jsfiddle.net/2r10thcb/&quot;&gt;FIDDLE&lt;/a&gt;.&lt;/p&gt;
-&lt;div style=&quot;height:400px; overflow: scroll&quot;&gt;
-&lt;script style=&quot;height:400px&quot; async=&quot;&quot; src=&quot;//jsfiddle.net/2r10thcb/1/embed/&quot;&gt;&lt;/script&gt;
-&lt;/div&gt;
-
-&lt;p&gt;The fiddle consists of the CSS and the Javascript (jQuery) code. It only has jQuery added as an external library. Simply download the CSS code into &lt;code class=&quot;highlighter-rouge&quot;&gt;github-buttons.css&lt;/code&gt; and jQuery code into &lt;code class=&quot;highlighter-rouge&quot;&gt;github-buttons.js&lt;/code&gt; and include it as shown-&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;stylesheet&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/css/github-buttons.css&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text/css&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text/javascript&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/js/github-buttons.js&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;h3 id=&quot;for-jekyll&quot;&gt;For Jekyll:&lt;/h3&gt;
-&lt;p&gt;This depends on the kind of setup you have. If you have a setup like &lt;a href=&quot;https://github.com/nihal111/nihal111.github.io&quot;&gt;mine&lt;/a&gt;, you might have to create a &lt;code class=&quot;highlighter-rouge&quot;&gt;github-buttons.scss&lt;/code&gt; file instead of the &lt;code class=&quot;highlighter-rouge&quot;&gt;github-buttons.css&lt;/code&gt; file with the same CSS code. Place the scss file inside the &lt;code class=&quot;highlighter-rouge&quot;&gt;_sass&lt;/code&gt; directory. The &lt;code class=&quot;highlighter-rouge&quot;&gt;main.css&lt;/code&gt; file then needs to be updated with&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; 
-	&lt;span class=&quot;s1&quot;&gt;&quot;github-buttons&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;That’s all for now. Feel free to use and share this plugin. Cheers!&lt;/p&gt;
-</description>
-        <pubDate>Wed, 05 Jul 2017 00:00:00 +0530</pubDate>
-        <link>http://localhost:4000/2017/07/05/github-jquery.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/07/05/github-jquery.html</guid>
-        
-        <category>jQuery</category>
-        
-        <category>CSS</category>
-        
-        <category>HTML</category>
         
         
       </item>

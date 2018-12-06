@@ -19,7 +19,7 @@ The Pommerman Challenge essentially serves as a test bed for multi-agent learnin
 
 We took on the FFA challenge, trying a few different approaches. After facing a few hurdles, we found that the DQfD agent performed remarkably well as against our other approaches.  
 
-Our experiments and approaches are detailed here- [Report]({{ site.baseurl }}/docs/FILA_2018.pdf)
+Our experiments and approaches are detailed here- [Report]({{ site.baseurl }}/docs/pommerman_report.pdf)
 
 To see our agent in action, watch the video below-
 
