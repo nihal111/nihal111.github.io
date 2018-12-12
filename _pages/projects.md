@@ -40,6 +40,8 @@ Here is the list of projects I own or have contributed to:
 
 * [**Voice Conversion**][voice-conversion-blog]: Built a pipelined approach to convert one person’s voice into another person’s voice. Proposed a deep learning approach to convert source waveform to phonemes and further phonemes to target waveform. Read more [here][voice-conversion-blog].
 
+* [**CFS Visualizer**][CFS-visualizer-blog]: Created a visualization tool to see the Completely Fair Scheduler in action. CFS is a widely used process scheduler present in Linux kernels. Read more [here][CFS-visualizer-blog].
+
 * [**SAFE Quiz App**][SAFE Quiz App]: Worked for the development of the SAFE Android application that facilitates online paperless tests in educational institutes. Multiple devices concurrently connect to a Wireless Access Point to fetch test data with action-logging happening in real time at the invigilator’s console. Worked on fetching and displaying of performance history and correct/incorrect answer visuals on the app. I worked on this as a part of my R & D Project in Fall '16.
 
 * [**Steganography Tool**][Steganography Tool]: Implemented a steganography tool using MATLAB with custom terminal GUI. Implemented variations of encryption algorithms using Least Significant Bit to encrypt/decrypt text within an image with a custom passphrase. This was done as a part of my Digital Image Processing course project in Fall '17.
@@ -84,3 +86,4 @@ Here is the list of projects I own or have contributed to:
 [Steganography Tool]: https://github.com/nihal111/steganography
 [voice-conversion-blog]: https://nihal111.github.io/2018/04/30/voice-conversion.html
 [pommerman-blog]: https://nihal111.github.io/2018/11/25/pommerman-rl.html
+[CFS-visualizer-blog]: https://nihal111.github.io/2017/11/15/cfs-visualizer.html

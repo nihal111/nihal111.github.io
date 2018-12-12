@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 06 Dec 2018 18:27:27 +0530</pubDate>
-    <lastBuildDate>Thu, 06 Dec 2018 18:27:27 +0530</lastBuildDate>
+    <pubDate>Wed, 12 Dec 2018 15:32:48 +0530</pubDate>
+    <lastBuildDate>Wed, 12 Dec 2018 15:32:48 +0530</lastBuildDate>
     <generator>Jekyll v3.8.1</generator>
     
       <item>
@@ -625,6 +625,38 @@ Cheers!&lt;/p&gt;
       </item>
     
       <item>
+        <title>CFS Visualizer- Operating Systems Project</title>
+        <description>&lt;p&gt;As the course project for CS 347 - Operating Systems, Fall 2017, I teamed up with Arpan Banerjee and Srivatsan Sridhar to work on building a visulizer for the Completely Fair Scheduler that’s widely present in all Linux systems as the default scheduler.&lt;/p&gt;
+
+&lt;p&gt;The visualizer is available at- &lt;a href=&quot;https://nihal111.github.io/CFS-visualizer/&quot;&gt;https://nihal111.github.io/CFS-visualizer/&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;schedulers&quot;&gt;Schedulers&lt;/h3&gt;
+
+&lt;p&gt;Linux is a multitasking operating system, and therefore, it has a scheduler to manage the processes. The Linux scheduler has evolved over time. With the Linux Kernerl 2.6, the O(1) scheduler came in. It relies on active and expired arrays of processes to achieve constant scheduling time. Each process is given a fixed time quantum, after which it is preempted and moved to the expired array. Once all the tasks from the active array have exhausted their time quantum and have been moved to the expired array, an array switch takes place. This switch makes the active array the new empty expired array, while the expired array becomes the active array. The main issue with this algorithm is the complex heuristics used to mark a task as interactive or non-interactive.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-completely-fair-scheduler&quot;&gt;The Completely Fair Scheduler&lt;/h3&gt;
+
+&lt;p&gt;The Completely Fair Scheduler is a process scheduler that handles CPU resource allocation for executing processes and aims to maximize overall CPU utilization while also maximizing interactive performance. This was merged into the 2.6.23 (October 2007) release of the Linux kernel and is the default scheduler.&lt;/p&gt;
+
+&lt;p&gt;By “Completely Fair”, the CFS Scheduler means to allocate the CPU resources equally and fairly among all the queued processes depending on their nice values.&lt;/p&gt;
+
+&lt;p&gt;The Completely Fair Scheduler uses a Red-Black tree to keep track of all the queued processes and handles switching with a nano second granularity. The fair queuing CFS scheduler has a scheduling complexity of &lt;code class=&quot;highlighter-rouge&quot;&gt;O(log N)&lt;/code&gt;, where &lt;code class=&quot;highlighter-rouge&quot;&gt;N&lt;/code&gt; is the number of tasks in the runqueue. Choosing a task can be done in constant time, but reinserting a task after it has run requires &lt;code class=&quot;highlighter-rouge&quot;&gt;O(log N)&lt;/code&gt; operations, because the runqueue is implemented as a red-black tree.
+The Visualizer&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://nihal111.github.io/CFS-visualizer/&quot;&gt;CFS visualizer&lt;/a&gt; allows one to look at the process queue and the populated dynamic red-black tree while the scheduler is in action. The time scale has been magnified so that one can slow down and visualize the scheduler with nano-second granularity work in real time.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 15 Nov 2017 00:00:00 +0530</pubDate>
+        <link>http://localhost:4000/2017/11/15/cfs-visualizer.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/11/15/cfs-visualizer.html</guid>
+        
+        <category>Machine Learning</category>
+        
+        <category>Reinforcement Learning</category>
+        
+        
+      </item>
+    
+      <item>
         <title>GSoC Wrap Up</title>
         <description>&lt;style type=&quot;text/css&quot;&gt;
 .collapsiblecontainer {
@@ -856,284 +888,6 @@ With the completion of this GSoC project making adventure assets like locked doo
         <pubDate>Tue, 15 Aug 2017 00:00:00 +0530</pubDate>
         <link>http://localhost:4000/2017/08/15/GSoC-wrap-up.html</link>
         <guid isPermaLink="true">http://localhost:4000/2017/08/15/GSoC-wrap-up.html</guid>
-        
-        <category>open source</category>
-        
-        <category>MovingBlocks</category>
-        
-        <category>Terasology</category>
-        
-        <category>GSoC</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>GSoC Week 10, 11 and 12: Lost</title>
-        <description>&lt;style type=&quot;text/css&quot;&gt;
-.collapsiblecontainer {
-width:100%;
-border:1px solid #d3d3d3;
-}
-.collapsiblecontainer div {
-width:100%;
-}
-.collapsiblecontainer .collapsibleheader {
-background-color:#d3d3d3;
-padding: 2px;
-cursor: pointer;
-font-weight: bold;
-}
-.collapsiblecontainer .collapsiblecontent {
-display: none;
-padding : 5px;
-}
-&lt;/style&gt;
-
-&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js&quot;&gt;&lt;/script&gt;
-
-&lt;script type=&quot;text/javascript&quot; src=&quot;/js/github-buttons.js&quot;&gt;&lt;/script&gt;
-
-&lt;script type=&quot;text/javascript&quot;&gt;
-$(document).ready(function(){
-$(&quot;.collapsibleheader&quot;).click(function () {
-$collapsibleheader = $(this);
-//getting the next element
-$collapsiblecontent = $collapsibleheader.next();
-//open up the collapsiblecontent needed - toggle the slide- if visible, slide up, if not slidedown.
-$collapsiblecontent.slideToggle(500, function () {
-//execute this after slideToggle is done
-//change text of collapsibleheader based on visibility of collapsiblecontent div
-$collapsibleheader.find(&quot;span:first-child&quot;).text(function () {
-//change text based on condition
-return $collapsiblecontent.is(&quot;:visible&quot;) ? &quot;- &quot; : &quot;+ &quot;;
-});
-});
-
-});
-});
-
-&lt;/script&gt;
-
-&lt;p&gt;This post breaks a long silence. Most of the work in the last three weeks has been discreet and low-key. Since all the elements were made ready, it was time to put it all together and package everything under one roof. A lot of work went into putting together the lore and making a good amount of riddles for a kind of treasure hunt in-game. Most of the reason for the confidentiality was to keep the spoilers at bay. I wanted folks from the community to try out the game without having any idea of what lies ahead.&lt;/p&gt;
-
-&lt;p&gt;Before you proceed any further, I’d like to make it bold and clear that there lie &lt;strong&gt;SPOILERS AHEAD&lt;/strong&gt;. I would highly recommend you give a shot to the game, as instructed below, before you move any further.&lt;/p&gt;
-
-&lt;h2 id=&quot;instructions-to-run-lost&quot;&gt;Instructions to run Lost:&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;Download &lt;a href=&quot;https://slack-files.com/T03G8SB1X-F6N474GS0-867f5f5289&quot;&gt;this&lt;/a&gt; Omega.&lt;/li&gt;
-  &lt;li&gt;Extract the Omega.&lt;/li&gt;
-  &lt;li&gt;Move the save folder called “Lost” inside &lt;code class=&quot;highlighter-rouge&quot;&gt;omega796/saves&lt;/code&gt; to the save directory-
-    &lt;ul&gt;
-      &lt;li&gt;in Windows, C:/Users/name/Saved Games/Terasology/&lt;/li&gt;
-      &lt;li&gt;in Linux, /home/name/.local/share/terasology/saves/&lt;br /&gt;
-&lt;strong&gt;&lt;em&gt;Alternatively&lt;/em&gt;&lt;/strong&gt;, you can run the game with the &lt;code class=&quot;highlighter-rouge&quot;&gt;-homedir&lt;/code&gt; flag.&lt;/li&gt;
-      &lt;li&gt;in Windows, run the game from cmd using a command like: &lt;code class=&quot;highlighter-rouge&quot;&gt;Terasology.x64.exe -homedir&lt;/code&gt;
-or add the &lt;code class=&quot;highlighter-rouge&quot;&gt;-homedir&lt;/code&gt; flag to the target field of the shortcut to the exe file.&lt;/li&gt;
-      &lt;li&gt;in Linux, modify the run_linux.sh script so that it has a &lt;code class=&quot;highlighter-rouge&quot;&gt;-homedir&lt;/code&gt; flag at the end, like so:
-&lt;code class=&quot;highlighter-rouge&quot;&gt;java -Xms128m -Xmx1536m -jar libs/Terasology.jar -homedir&lt;/code&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Launch the game using the script or the .exe file.&lt;/li&gt;
-  &lt;li&gt;Select Singleplayer -&amp;gt; Lost and load the saved game.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h1 id=&quot;what-have-i-been-upto&quot;&gt;What have I been upto?&lt;/h1&gt;
-
-&lt;p&gt;There’s a good amount of stuff that happened in the three weeks, from making tricky riddles interspersed with lore to making new blocks and items along with crafting a new world. I’ll try to narrate things in the order of occurence, although my hazy memory might make a few things non-linear.&lt;/p&gt;
-
-&lt;h2 id=&quot;packaging-the-save-game&quot;&gt;Packaging the save game&lt;/h2&gt;
-
-&lt;p&gt;After a bit of discussion, it was clear that it would not be possible to deal with the accurate spawning of the puzzles and other structures I want in game at world generation time, at least within the time and scope of my GSoC project. An alternative idea that was proposed was to let the world gen take care of the terrain, flora and fauna, while the other tricky elements be added (or rather placed) in-game manually. After everything gets placed, the player is moved back to the spawn location with all things like Health, Hunger and Thirst reset. This results in a base save game, that acts as a gameplay template and can be loaded instead of creating a new game. This would also serve as a final product of my GSoC project, something that is easily playable and showcases almost everything I’ve worked on.&lt;/p&gt;
-
-&lt;h2 id=&quot;lore-and-plot&quot;&gt;Lore and Plot&lt;/h2&gt;
-
-&lt;p&gt;After spending a good amount of time on thinking about the story and the character progress, I was able to come up with something. Here’s what the overall plot looks like-&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;The player ends up on a desolate planet devoid of other intelligent beings. He opens up his journal to find that this was meant to be just another exploration survey of one of the potential life-supporting planets in the neighbouring galaxy. However, the wormhole that he created to get here has malfunctioned and closed, leaving him stranded with no communication whatsoever. The situation seems grim and his forlorn attempts to fire up the wormhole again fail terribly. Left with no option, he wanders around to have a look at the planet that might be the last he ever set foot on. Born a survivor, he's able to hunt for food, and build basic tools to keep himself alive. Soon after he starts exploring, the player finds structures that clearly represent signs of existence of intelligent life forms. He becomes careful. Fearing his own death by the hands of the natives, he builds a few tools to defend himself. Underneath one of the structures, he discovers a secret passage. Gathering courage he goes through it. He finds a puzzle that needs to be solved to reach a treasure which seems to be concealed from the unworthy. He finds a book in the treasure chests which reveals a few secrets but creates even more mysteries..
-&quot;.. before the machines tear us apart, it's crucial to save the technology we've created for the survivors to grow and fight back, to take back what's theirs. Most of our defences have been destroyed, our houses burned and whatever we've created is lost, but knowledge is something that doesn't die easily. If you've survived and found this book, what follows are the blueprints of the revolutionary technologies that we’ve created. To build some of these, you might require some artifacts scattered around the entire world...&quot;
-Soon he solves a few more and realises that he can actually find a way back home by using the early civilization's technology to create what is known as a catapult portal that throws you across in space time. He sets on a journey to find and solve all puzzles to find the necessary artifacts and manuscripts to build the portal so that he can travel back home.&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;You can find the full Lore document &lt;a href=&quot;https://docs.google.com/document/d/1GVmJEV2KKjqgxjtVR-_Lh7QsvRzQbfxg9qeHjimIbPg/edit?usp=sharing&quot;&gt;here&lt;/a&gt;. The document also contains the whole list of riddles that need to be solved to access locked areas in game. Needless to say, &lt;strong&gt;SPOILER ALERT&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;making-items-and-blocks&quot;&gt;Making items and blocks&lt;/h2&gt;
-
-&lt;p&gt;With all the lore ready in a Google Doc, it was time to bring everything in-game.&lt;/p&gt;
-
-&lt;h3 id=&quot;making-the-books-&quot;&gt;Making the Books-&lt;/h3&gt;
-&lt;p&gt;Most of the game revolves around the usage of books and the journal to convey and progress the story. There are a total of 6 books that were made. Three of these books can be found in treasure chests serving as instructions on usage of specific ingredients (kept alongside in the treasure chest) to make the catapult portal. The most crucial book is the book that carries all the secrets, mainly directions to puzzles and treasures. There is one book inside the hut that hints the player to look in the well for the Book of Secrets. There is another book that lies in a chest located inside the crash site where the player spawns. This book simply has stories on space exploration, serves as light reading. The list of books is as follows-&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Space Exploration Stories (Editable)&lt;/li&gt;
-  &lt;li&gt;The Hut Book (Read-Only)&lt;/li&gt;
-  &lt;li&gt;Book of Secrets (Read-Only)&lt;/li&gt;
-  &lt;li&gt;Treasure Chest 1- Shattered Plasma Book (Read-Only)&lt;/li&gt;
-  &lt;li&gt;Treasure Chest 2- Arkenstone and obsidian Torch Book (Read-Only)&lt;/li&gt;
-  &lt;li&gt;Treasure Chest 3- Facade of Truth Book (Read-Only)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;antrum-sabre-&quot;&gt;Antrum Sabre-&lt;/h3&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/antrumSabre.jpg&quot; alt=&quot;antrumSabre&quot; title=&quot;antrumSabre&quot; style=&quot;max-height: 100px;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The word “antrum” is latin for cave or hole. The antrum sabre is an item that the player uses to make a wormhole (a connection in space-time), to travel huge distances in a few seconds. This tool however becomes dysfunctional when the player arrives at the new planet.&lt;/p&gt;
-
-&lt;h3 id=&quot;arkenstone-&quot;&gt;Arkenstone-&lt;/h3&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/arkenstone.jpg&quot; alt=&quot;arkenstone&quot; title=&quot;Arkenstone&quot; style=&quot;max-height: 100px;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The arkenstone is the central part of the catapult portal. Preserved since the dawn of the ancient ages, this stone serves as the key to the Portal. The kestone must be activated by tapping on it with the obsidian torch to fire up and ignite the portal.&lt;/p&gt;
-
-&lt;h3 id=&quot;obsidian-torch-&quot;&gt;Obsidian Torch-&lt;/h3&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/obsidianTorch.jpg&quot; alt=&quot;obsidianTorch&quot; title=&quot;obsidianTorch&quot; style=&quot;max-height: 100px;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The obsidian torch discovered by the natives in the West, was a remnant found inside the largest volcano. With an ever-glowing flame, it also has other mystical usages. Knocking on the arkenstone with the obsidian torch would light up the portal and activate it.&lt;/p&gt;
-
-&lt;h3 id=&quot;shattered-plasma-&quot;&gt;Shattered Plasma-&lt;/h3&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/shatteredPlasma.jpg&quot; alt=&quot;shatteredPlasma&quot; title=&quot;Shattered Plasma&quot; style=&quot;max-height: 100px;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The shattered plasma is a green looking block made up from forging together sand, glass and grass of Spero in the Kiln of Tudal. This forms the base or the foundation for the catapult portal.&lt;/p&gt;
-
-&lt;h3 id=&quot;facade-of-truth-&quot;&gt;Facade of Truth-&lt;/h3&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/facadeOfTruth.jpg&quot; alt=&quot;facadeOfTruth&quot; title=&quot;Facade Of Truth&quot; style=&quot;max-height: 100px;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The Facade of Truth is made up of blocks of a special type of Basalt. These blocks need to be piled up to create a 3x3 frame with a 1x2 hole for the tunnel in between.
-With the Shattered Plasma foundation laid, the Facade of Truth built on top, the arkenstone needs to be placed at the front of the foundation and tapped with the Obsidian Torch to activate and light up the portal.&lt;/p&gt;
-
-&lt;h3 id=&quot;the-final-portal&quot;&gt;The Final Portal&lt;/h3&gt;
-
-&lt;p&gt;The final catapult portal when put together from all the above blocks, looks like this-&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/portal.jpg&quot; alt=&quot;portal&quot; title=&quot;Portal&quot; style=&quot;max-height: 400px;&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;making-structures&quot;&gt;Making Structures&lt;/h2&gt;
-&lt;p&gt;The puzzle rooms were already made, complete with deadly and lethal traps. It was time to wrap these rooms around with some special structures to hide them from plain sight. There were three puzzle rooms that I hade made. To wrap around and hide these puzzle rooms, I made three additional structures- the pyramid, the stonehenge and an underground temple. In addition to these, there were two more structures that I made, the hut and the well, that exist near the spawn location which serve as a starting point for the player.&lt;/p&gt;
-
-&lt;h3 id=&quot;making-the-pyramid-&quot;&gt;Making the Pyramid-&lt;/h3&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/pyramidActual.jpg&quot; alt=&quot;pyramidActual&quot; title=&quot;Pyramid of Giza&quot; style=&quot;max-height: 400px;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;A good looking square pyramid made from blocks must have square layers stacked one on top of the other. For a neat looking pyramid that has a pointed top (of one block size), it is required to have each square layer have an odd length, i.e. the top layer would be 1x1, followed by layers having dimensions 3x3, 5x5, 7x7 and so on. For a pyramid having a length &lt;code class=&quot;highlighter-rouge&quot;&gt;l&lt;/code&gt;, the bottom-most layer has dimensions- &lt;code class=&quot;highlighter-rouge&quot;&gt;(2l - 1)x(2l - 1)&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;I decided to start by making a structural template for the pyramid, the pyramid would then have the puzzle room inside, at its heart, just like the tomb inside the Egyptian pyramids. To do this I required a very large pyramid which would have been extremely tedious to build manually. So, I went ahead and made a small pyramid with a height of 3 and studied the generated structure template. The structure template for a pyramid of height 3 and base of 5x5 looks like this:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-json&quot; data-lang=&quot;json&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;blockType&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;core:Sand&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;region&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;min&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;-2&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;size&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]}},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;blockType&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;core:Sand&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;region&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;min&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;-1&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;size&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]}},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;blockType&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;core:Sand&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;region&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;min&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;size&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]}},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-
-&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;...&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;air&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;blocks&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;...&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Apart from the air blocks, the sand block followed a nice pattern. So, I went ahead and made a python script to make the generation of square pyramids easy. Here’s the script I wrote-&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;n&quot;&gt;l&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;raw_input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Enter length of base of square pyramid (odd number)&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;l&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'{ &quot;blockType&quot;: &quot;core:Sand&quot;, &quot;region&quot;: { &quot;min&quot;: ['&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;' ,'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;', '&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'], &quot;size&quot;: ['&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;l&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;' , 1, '&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;l&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;']}},&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;l&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;l&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Note that the generated output would not account for the surrounding air blocks. It is advisable to place the structure (generated from the script) in the world using a spawner and then create another structure template by making a box size region that encompasses the whole pyramid. This ensures that no other block (like parts of a nearby tree) remains floating above the pyramid.&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/pyramid.jpg&quot; alt=&quot;pyramid&quot; title=&quot;Pyramid&quot; style=&quot;max-height: 400px;&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;making-the-stonehenge-&quot;&gt;Making the Stonehenge-&lt;/h3&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/stonehengeActual.jpg&quot; alt=&quot;stonehengeActual&quot; title=&quot;Stonehenge Actual&quot; style=&quot;max-height: 400px;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Another one such structure to conceal the puzzle room is the stone henge. The stone henge much like the real world stone henge comprises of gaping tall pillars.&lt;/p&gt;
-
-&lt;p&gt;Creating the stonehenge was relatively easy. I made long pillars of cobblestone by entering the ghost mode. Some pillars were broader than the others and some were connected to a neighboring pillar at the top.&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/stonehengePillar.jpg&quot; alt=&quot;stonehengePillar&quot; title=&quot;stonehengePillar&quot; style=&quot;max-width: 400px; max-height: 400px;&quot; /&gt;
-&lt;img src=&quot;/img/stonehengeTwoPillar.jpg&quot; alt=&quot;stonehengeTwoPillar&quot; title=&quot;stonehengeTwoPillar&quot; style=&quot;max-width: 400px; max-height: 400px;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The pillars together were arranged in a circular fashion. Inside the circle lay the puzzle room.&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/stonehenge.jpg&quot; alt=&quot;stonehenge&quot; title=&quot;Stonehenge&quot; style=&quot;max-height: 400px;&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;making-the-temple-&quot;&gt;Making the Temple-&lt;/h3&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/templeActual.jpg&quot; alt=&quot;templeActual&quot; title=&quot;Temple Actual&quot; style=&quot;max-height: 400px;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The third and last structure is an underground temple. The puzzle room is hidden underground in a cave like hollow. The entrance to the cave is marked as a large “T” on the ground made by dirt blocks. Breaking the dirt blocks brings out the hidden staircase that leads to the underground cave. The cave is lit up with torches and directly makes way for the puzzle room.&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/temple.jpg&quot; alt=&quot;temple&quot; title=&quot;Temple&quot; style=&quot;max-height: 400px;&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;making-the-hut-and-the-well-&quot;&gt;Making the Hut and the Well-&lt;/h3&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/well.jpg&quot; alt=&quot;well&quot; title=&quot;Well&quot; style=&quot;max-height: 400px;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The hut and the well are the nearest structures to the spawn location. They are pivotal to the plot. The well has a hidden treasure chest underground that contains the Book of Secrets. The Book of Secrets hides inside it the directions for the three structures that conceal the different pieces of the catapult portal.&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/hut.jpg&quot; alt=&quot;hut&quot; title=&quot;Hut&quot; style=&quot;max-height: 400px;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The hut also has a treasure chest consisting of a Pickaxe and some other blocks. It also contains that book which points towards the well.&lt;/p&gt;
-
-&lt;h2 id=&quot;protecting-regions&quot;&gt;Protecting Regions&lt;/h2&gt;
-
-&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/Scenario/pull/33&quot;&gt;&lt;/div&gt;
-
-&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/Terasology/AdventureAssets/pull/19&quot;&gt;&lt;/div&gt;
-
-&lt;p&gt;Most of the traps had a settings screen that was produced upon interaction. This behavior was to be prevented for the traps inside the puzzle rooms atleast. In addition the password doors could be broken down easily by attacking. These needed to be protected too.&lt;/p&gt;
-
-&lt;p&gt;To protect the regions, I decided to take help of the Scenarios module (being developed in another GSoC project). I’ve added features like Region Resizing and marking regions Protected in the Regions section of Scenarios. Regions can be created, and their properties altered using the Scenario:HubTool.&lt;/p&gt;
-
-&lt;p&gt;A protected region now has the following functionalities-&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;No block addition&lt;/li&gt;
-  &lt;li&gt;No block attack/removal/mining&lt;/li&gt;
-  &lt;li&gt;No interaction with entities having the &lt;code class=&quot;highlighter-rouge&quot;&gt;NoInteractionWhenProtected&lt;/code&gt; component&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;journal-integration&quot;&gt;Journal Integration&lt;/h2&gt;
-
-&lt;p&gt;Finally, the Journal that’s been out there dust-laden has finally been put to some good use. Lost makes immense use of the Journal. In addition to adding Journal posts related to WoodAndStoneCrafting (see &lt;a href=&quot;https://github.com/Terasology/WoodAndStoneCraftingJournal&quot;&gt;WoodAndStoneCraftingJournal&lt;/a&gt;), Lost adds its own section in the journal. There are multiple Journal articles that get added upon events like- killing a deer, finding a new treasure chest, finding the book of secrets etc.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-angel-of-resurrection&quot;&gt;The Angel of Resurrection&lt;/h2&gt;
-
-&lt;p&gt;Near every trap or puzzle room, in close proximity an Angel of Resurrection is placed that could be activated to enable respawning near it, essentially acting as a checkpoint. The checkpoint is vital since death caused by the lethal traps would send the player to respawn back at the original spawn point (0, 0, 0). This causes the player to travel a huge distance to get back to the puzzle room. This has some serious chunk loading issues as well.&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/pyramidAngel.jpg&quot; alt=&quot;pyramidAngel&quot; title=&quot;pyramidAngel&quot; style=&quot;max-width: 250px; max-height: 400px;&quot; /&gt;
-&lt;img src=&quot;/img/stonehengeAngel.jpg&quot; alt=&quot;stonehengeAngel&quot; title=&quot;stonehengeAngel&quot; style=&quot;max-width: 250px; max-height: 400px;&quot; /&gt;
-&lt;img src=&quot;/img/templeAngel.jpg&quot; alt=&quot;templeAngel&quot; title=&quot;templeAngel&quot; style=&quot;max-width: 250px; max-height: 400px;&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;mcq-button-door&quot;&gt;MCQ Button Door&lt;/h2&gt;
-&lt;p&gt;The Password door allows the player to unlock the door only if the player enters the exact passphrase. The MCQ Button door is less cruel, it provides a set of options to choose from. However, it is dangerous and it kills the player instantly if they press the wrong button.&lt;/p&gt;
-
-&lt;div class=&quot;videowrapper&quot;&gt;
-&lt;iframe width=&quot;1024&quot; height=&quot;768&quot; src=&quot;https://www.youtube.com/embed/hT9Dk_b7s6k&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;set-custom-spawn-location&quot;&gt;Set Custom Spawn Location&lt;/h2&gt;
-
-&lt;p&gt;The world generator is used to set the spawn position at every RespawnRequest. For world generators like PolyWorld this can be troublesome, since there is no static spawn location and the generator finds a suitable spot in an area covered by a specified search radius.&lt;/p&gt;
-
-&lt;p&gt;To allow more control over spawning, I added a new command- &lt;code class=&quot;highlighter-rouge&quot;&gt;setSpawnLocation&lt;/code&gt; that sets the spawn location to the character’s current location.&lt;/p&gt;
-
-&lt;div class=&quot;github-button&quot; url=&quot;https://github.com/MovingBlocks/Terasology/pull/3065/&quot;&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;putting-it-all-together&quot;&gt;Putting it all together&lt;/h2&gt;
-
-&lt;p&gt;The individual components were all ready as structures and items. What was left was placing everything together in a world to create the base save file. Piece by piece, I placed everything together. I had to take care of a few things like the directions for the structures as indicated in the Book of Secrets and subtleties like the fact that a mammoth sized pyramid of sand cannot lie on top of grassy meadows.&lt;/p&gt;
-
-&lt;p&gt;The whole world is packed in the &lt;strong&gt;Island World generator&lt;/strong&gt; from &lt;a href=&quot;https://github.com/Terasology/PolyWorld&quot;&gt;PolyWorld&lt;/a&gt; that has nice little islands to help contain all the features and prevent the player from wandering too far.&lt;/p&gt;
-
-&lt;p&gt;Here is the background image for the Lost module-&lt;/p&gt;
-
-&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/lostBackground.jpg&quot; alt=&quot;lostBackground&quot; title=&quot;Lost&quot; style=&quot;max-height: 500px;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I’ll be making a wrap up post soon to cover all my contributions over the summer with a few stats. Plus, I might make a teaser video for the Lost module.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 31 Jul 2017 00:00:00 +0530</pubDate>
-        <link>http://localhost:4000/2017/07/31/GSoC-week10-11-12.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/07/31/GSoC-week10-11-12.html</guid>
         
         <category>open source</category>
         
