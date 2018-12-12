@@ -9,7 +9,7 @@ I am a senior undergraduate student at the Indian Institute of Technology, Bomba
   
 Coding has been a serious hobby since long. I have enjoyed programming ever since I knew what it meant. I continue to learn, develop and build new things every day.  
 
-I'm interested in Natural Language Processing and Machine Learning as applied to speech and text processing. At present, I'm working with [Prof. Preethi Jyothi][pjothi] at [CSALT][csalt] on the task of synthetic generation and language modeling of code-switched Hindi-English text.
+I'm interested in Natural Language Processing and Machine Learning as applied to speech and text processing. At present, I'm working with [Prof. Preethi Jyothi][pjyothi] at [CSALT][csalt] on the task of synthetic generation and language modeling of code-switched Hindi-English text.
   
 I actively participate in hackathons. In my freshman year, along with two of my friends, Akash and Arpan, I formed the Ferozepurwale hackathon team. Together we have won several prizes (full list [here][hackathons]).
   
