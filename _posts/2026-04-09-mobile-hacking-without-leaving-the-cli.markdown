@@ -12,10 +12,6 @@ tags:
 
 *Personal field notes from a side project for practical vibe coding on the go.*
 
-## Context
-
-This is a hobby project by one developer. The goal was straightforward: keep shipping side projects from a phone without giving up terminal-native workflows.
-
 ## Why This Was Needed
 
 I tried OpenClaw early, then tried it again a few months later. In both rounds, I kept running into rough edges that made the IM-first flow feel worse than direct CLI for long, stateful work.
@@ -59,23 +55,23 @@ AI Traffic Control is a mobile-first control surface around terminal-native sess
 - Hot-dial tiles to spawn repeatable, directed agent flows fast
 - Structured launch flow (provider/template/persona/workdir)
 
-## Product Screenshots
+## What This Looks Like
 
 ### Dashboard overview
 
-<img src="https://drive.usercontent.google.com/download?id=179UyavAANO4LGiaEdBtOUlsnJBh_FJ1a&export=view" alt="Dashboard overview" height="780" />
+<img src="https://lh3.googleusercontent.com/d/179UyavAANO4LGiaEdBtOUlsnJBh_FJ1a=w2000" alt="Dashboard overview" height="780" />
 
 ### Browser terminal view
 
-<img src="https://drive.usercontent.google.com/download?id=1O7tuYj-3whmwcA4xieL-wykoFh0dZ6Us&export=view" alt="Browser terminal view" height="780" />
+<img src="https://lh3.googleusercontent.com/d/1O7tuYj-3whmwcA4xieL-wykoFh0dZ6Us=w2000" alt="Browser terminal view" height="780" />
 
 ### Intent modal
 
-<img src="https://drive.usercontent.google.com/download?id=1Hqo1obKcj0XxRYWk16M37dtXOuwwYZVs&export=view" alt="Intent modal" height="780" />
+<img src="https://lh3.googleusercontent.com/d/1Hqo1obKcj0XxRYWk16M37dtXOuwwYZVs=w2000" alt="Intent modal" height="780" />
 
 ### Fleet states
 
-<img src="https://drive.usercontent.google.com/download?id=1SPfvSTXpadh0AeBNuQk6TA6mZ963JMDA&export=view" alt="Scientist fleet states" height="780" />
+<img src="https://lh3.googleusercontent.com/d/1SPfvSTXpadh0AeBNuQk6TA6mZ963JMDA=w2000" alt="Scientist fleet states" height="780" />
 
 ## What This Improves in Practice
 
