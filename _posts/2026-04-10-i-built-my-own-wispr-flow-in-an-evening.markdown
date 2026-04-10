@@ -72,6 +72,11 @@ Even before I reached home Wi-Fi and installed on my physical phone, most of the
 
 By the time I did the first real phone install, I was mostly validating behavior, not starting from scratch.
 
+## Screenshot
+
+<img src="/img/wispr-flow-selfhost-evening.jpg" alt="Building a self-hosted Whisper Flow-style Android workflow from mobile" height="780" />
+
+
 ## What I Built
 
 Two repos now work together:
