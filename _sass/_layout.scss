@@ -82,16 +82,16 @@
 // Main content
 // ============================================
 main {
-  margin-top: calc($nav-height + 2rem);
+  margin-top: calc(#{$nav-height} + 2rem);
   padding: 0 1.5rem;
   max-width: $content-width;
   margin-left: auto;
   margin-right: auto;
-  min-height: calc(100vh - $nav-height - 200px);
+  min-height: calc(100vh - #{$nav-height} - 200px);
   margin-bottom: 4rem;
 
   @include mobile {
-    margin-top: calc($nav-height + 1rem);
+    margin-top: calc(#{$nav-height} + 1rem);
     padding: 0 1rem;
   }
 }
@@ -113,14 +113,14 @@ main {
 // Landing / Hero
 // ============================================
 .hero {
-  margin-top: calc($nav-height + 4rem);
+  margin-top: calc(#{$nav-height} + 4rem);
   max-width: $content-width;
   margin-left: auto;
   margin-right: auto;
   padding: 0 1.5rem 4rem;
 
   @include mobile {
-    margin-top: calc($nav-height + 2rem);
+    margin-top: calc(#{$nav-height} + 2rem);
     padding: 0 1rem 2rem;
   }
 }
@@ -175,10 +175,12 @@ main {
   display: inline-flex;
   align-items: baseline;
   gap: 0.08em;
+  max-width: 100%;
 }
 
 .byline-typewriter__text {
-  white-space: nowrap;
+  white-space: normal;
+  overflow-wrap: anywhere;
 }
 
 .byline-typewriter__cursor {
