@@ -1,10 +1,18 @@
 (function () {
   function startTypewriter(el) {
+    var rawPhrases = el.getAttribute('data-phrases') || '';
     var phrases;
-    try {
-      phrases = JSON.parse(el.getAttribute('data-phrases') || '[]');
-    } catch (err) {
+
+    if (!rawPhrases) {
       phrases = [];
+    } else if (rawPhrases.trim().charAt(0) === '[') {
+      try {
+        phrases = JSON.parse(rawPhrases);
+      } catch (err) {
+        phrases = [];
+      }
+    } else {
+      phrases = rawPhrases.split('||');
     }
 
     if (!phrases.length) return;

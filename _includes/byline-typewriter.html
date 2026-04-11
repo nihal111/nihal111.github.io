@@ -3,15 +3,15 @@
 <span
   class="byline-typewriter"
   data-byline-typewriter
-  data-phrases='{{ typewriter_bylines | jsonify }}'
+  data-phrases="{{ typewriter_bylines | join: '||' | escape }}"
   data-typing-speed="45"
   data-deleting-speed="24"
   data-pause-ms="3200"
 >
-  <span class="byline-typewriter__text">{{ typewriter_bylines[0] }}</span><span class="byline-typewriter__cursor" aria-hidden="true"></span>
+  <span class="byline-typewriter__text">{{ typewriter_bylines | first }}</span><span class="byline-typewriter__cursor" aria-hidden="true"></span>
 </span>
 {% else %}
-<span class="byline-typewriter" data-byline-typewriter data-phrases='["{{ site.byline | escape }}"]'>
+<span class="byline-typewriter" data-byline-typewriter data-phrases="{{ site.byline | escape }}">
   <span class="byline-typewriter__text">{{ site.byline }}</span><span class="byline-typewriter__cursor" aria-hidden="true"></span>
 </span>
 {% endif %}
