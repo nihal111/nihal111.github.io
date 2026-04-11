@@ -168,6 +168,31 @@ main {
   font-size: 1.125rem;
   color: var(--text-secondary);
   margin-top: 0.25rem;
+  min-height: 1.6em;
+}
+
+.byline-typewriter {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.08em;
+}
+
+.byline-typewriter__text {
+  white-space: nowrap;
+}
+
+.byline-typewriter__cursor {
+  display: inline-block;
+  width: 0.55ch;
+  height: 1em;
+  border-right: 2px solid currentColor;
+  transform: translateY(0.1em);
+  animation: byline-cursor-blink 1s steps(1, end) infinite;
+}
+
+@keyframes byline-cursor-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
 }
 
 .hero-bio {

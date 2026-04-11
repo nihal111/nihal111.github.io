@@ -1,0 +1,17 @@
+{% assign typewriter_bylines = site.data.typewriter_bylines.phrases %}
+{% if typewriter_bylines and typewriter_bylines.size > 0 %}
+<span
+  class="byline-typewriter"
+  data-byline-typewriter
+  data-phrases='{{ typewriter_bylines | jsonify }}'
+  data-typing-speed="45"
+  data-deleting-speed="24"
+  data-pause-ms="3200"
+>
+  <span class="byline-typewriter__text">{{ typewriter_bylines[0] }}</span><span class="byline-typewriter__cursor" aria-hidden="true"></span>
+</span>
+{% else %}
+<span class="byline-typewriter" data-byline-typewriter data-phrases='["{{ site.byline | escape }}"]'>
+  <span class="byline-typewriter__text">{{ site.byline }}</span><span class="byline-typewriter__cursor" aria-hidden="true"></span>
+</span>
+{% endif %}
