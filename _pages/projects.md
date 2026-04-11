@@ -14,9 +14,13 @@ Here is the list of projects I own or have contributed to:
 
 * [**WhisperClient + WhisperServer**][WhisperClientAndroid]- A self-hosted alternative to Wispr Flow, built in a single evening (from the gym, no less). Android client with a floating bubble for speech capture, paired with a self-hosted Whisper transcription server running on my Mac. Private-network access via Tailscale. Read more [here][whisper-blog].
 
+### College Days (from a past life)
+
+#### Featured
+
 * [**Google Summer of Code**][Google Summer of Code]- I completed my GSoC in 2017 under [MovingBlocks- Terasology][MovingBlocks- Terasology]. The broad goal was to introduce content systems and gameplay connections to support a new template with solid replayability. I developed a new survival gameplay mode called [Lost][Lost] involving puzzles, traps and exploration based content packed in a new world with a backing lore. Dealt with the game’s physics, multiplayer and Entity Component System. Created new modules like [AdvancedBehaviors][AdvancedBehaviors] (for event driven behavior switching), [AdventureAssets][AdventureAssets] (for traps and puzzle elements). Made several accompanying API changes to the engine. Created and added [WildAnimals] to the game.
 
-### Hackathons
+#### Hackathons
 
 * [**Flood League**][Flood League]: Designed and developed an endless runner game using Unity3D. Superheroes have to drive past the obstacles while rescuing the drowning civilians as their boat rushes past the flood-stricken city. Extensively worked on level design and implemented functionality such as continuous scoring, heat vision, super stretch arms, superpower cooldown among others. **First prize winner in Ubisoft GameJam 2017**.
 
@@ -30,7 +34,7 @@ Here is the list of projects I own or have contributed to:
 
 * [**alCHEMy**][alCHEMy]: A game which completes chemical reactions, much like the classical Alchemy. Microsoft code.fun.do submission in January '16.
 
-### Open Source
+#### Open Source
 
 * [**WnCC Website**][WnCC Website]: The official Web and Coding Club, IIT Bombay website. Created, managed and maintained largely by me. The entire website is static and runs on Jekyll. Mainly serves as a portal for the Seasons Of Code (SOC) program. If you want to mentor a SOC project or have any ideas to make it look better, send a PR [here][WnCCRepo].
 
@@ -38,7 +42,7 @@ Here is the list of projects I own or have contributed to:
 
 * [**Terasology**][Terasology]: Terasology is an open source rendition of Minecraft and is a platform to develop gameplay settings in the voxel world. I've been contributing to this project since October '16. The community is very active and enthusiastic, and I've had a great time with them.
 
-### Course Projects and Research Work
+#### Course Projects and Research Work
 
 * **Synthetic generation and Language Modeling of Code-Switched Hindi-English Text**: Working on the generation of code-mixed Hindi-English text using linguistic theories and several strategies by leveraging parse-trees. Using the synthetic code-mixed data to improve performance of a language model.
 
@@ -52,7 +56,7 @@ Here is the list of projects I own or have contributed to:
 
 * [**Steganography Tool**][Steganography Tool]: Implemented a steganography tool using MATLAB with custom terminal GUI. Implemented variations of encryption algorithms using Least Significant Bit to encrypt/decrypt text within an image with a custom passphrase. This was done as a part of my Digital Image Processing course project in Fall '17.
 
-### Hobby Projects
+#### Hobby Projects
 
 * [**MooDLD**][MooDLD]: A python application that automates the download of course material from [moodle.iitb.ac.in](moodle.iitb.ac.in). It has a Tkinter based GUI and uses Mechanize for scraping. Made independently for Windows, it consists of a setup which installs MooDLD with all dependencies. Developed further as an android app that lets you download all the courses with the click of a button. [***UPDATE***: **Was officially launched by the UG Academics Council at IIT Bombay in Aug '16**. However, project has been ***discontinued*** due to the recent Moodle version bump to support the official Moodle Mobile app.]
 
