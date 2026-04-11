@@ -1,16 +1,19 @@
 ---
 layout: default
+title: Blog
 ---
 
-<h2>Blog</h2>
+<h1 class="page-title">Blog</h1>
+
+<div class="post-list">
 {% for post in site.posts %}
-		
-	<div class="blog_ele">
-		<a href="{{ post.url | prepend: site.baseurl }}">
-			<time>{{ post.date | date: "%b %-d, %Y" }}</time>
-		<h3>{{ post.title }}</h3>
-		</a>
-	</div>
+  <div class="post-item">
+    <a href="{{ post.url | prepend: site.baseurl }}">
+      <div class="post-item-inner">
+        <span class="post-item-title">{{ post.title }}</span>
+        <span class="post-item-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+      </div>
+    </a>
+  </div>
 {% endfor %}
-
-
+</div>

@@ -32,8 +32,6 @@ Here is the list of projects I own or have contributed to:
 
 * [**AssistANT**][AssistANT]: Help the ant find sugar for its family. Built a puzzle game using Unity similar to the classic Bulldozer game. Guide the ant to push the sugar cubes down the ant holes. Dealt with basic 2-D physics and box colliders. Made custom sprites and worked largely on level design. Created using Unity 2D. **Second prize winner for Lenovo GameJam '15**.
 
-* [**alCHEMy**][alCHEMy]: A game which completes chemical reactions, much like the classical Alchemy. Microsoft code.fun.do submission in January '16.
-
 #### Open Source
 
 * [**WnCC Website**][WnCC Website]: The official Web and Coding Club, IIT Bombay website. Created, managed and maintained largely by me. The entire website is static and runs on Jekyll. Mainly serves as a portal for the Seasons Of Code (SOC) program. If you want to mentor a SOC project or have any ideas to make it look better, send a PR [here][WnCCRepo].

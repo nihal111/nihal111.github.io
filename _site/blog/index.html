@@ -1,19 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Nihal Singh</title>
+	<title>Blog - Nihal Singh</title>
+	<meta name="description" content="Nihal Singh's personal blog.
+">
 
 	<link rel="stylesheet" href="/css/main.css">
-	<link rel="canonical" href="http://localhost:4000/blog/">
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,600' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
+	<link rel="canonical" href="http://0.0.0.0:4567/blog/">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
 	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+
+	<script>
+		// Theme toggle - check saved preference or system preference
+		(function() {
+			var saved = localStorage.getItem('theme');
+			if (saved) {
+				document.documentElement.setAttribute('data-theme', saved);
+			} else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+				document.documentElement.setAttribute('data-theme', 'dark');
+			}
+		})();
+	</script>
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114314056-1"></script>
@@ -21,413 +36,389 @@
 	  window.dataLayer = window.dataLayer || [];
 	  function gtag(){dataLayer.push(arguments);}
 	  gtag('js', new Date());
-
 	  gtag('config', 'UA-114314056-1');
 	</script>
-
-</head> 
+</head>
 
 
 <body>
-	<aside>
-	<div class="container">
-    <nav>
-      <a class="site-title" href="/">nihal111</a>
+	<header class="site-header">
+  <div class="wrapper">
+    <a class="site-title" href="/">Nihal Singh</a>
+    <nav class="site-nav">
+      
+        
+          
+            <a href="/about/">About</a>
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+            <a href="/projects/">Projects</a>
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      <a href="/blog">Blog</a>
+      <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
+        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
     </nav>
-		<nav class="site-nav">
-     <a href="#" class="menu-icon">
-        <svg viewBox="0 0 18 15">
-          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-        </svg>
-      </a>
-      <div class="trigger">
-			<ul>
-				
-          
-          
-  				<li><a href="/about/">About</a></li>
-          
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-          
-  				<li><a href="/projects/">Projects</a></li>
-          
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          <li><a href="/docs/CV.pdf">CV</a></li>
-      		<li><a href="/blog">Blog</a></li>
-			</ul>
-      </div>
-		</nav>
-	</div>
-</aside>
-	<div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="/" class="site-avatar"><img src="https://avatars1.githubusercontent.com/u/13916513?v=2&s=460" /></a>
+  </div>
+</header>
 
-          <div class="site-info">
-            <h1 class="site-name"><a href="/">Nihal Singh</a></h1>
-            <p class="site-description">I like to know things</p>
-          </div>
-          
-          <nav>
-            <a href="https://github.com/nihal111">
-<span class="icon icon--github">
-<img src="/img/github.png" class="darken" alt="GitHub">
-</span></a>
-
-<a href="https://facebook.com/nihal111">
-<span class="icon icon--facebook">
-<img src="/img/facebook.png" class="darken" alt="Facebook">
-</span>
-</a>
-
-<a href="https://linkedin.com/in/nihal111">
-<span class="icon icon--linkedin">
-<img src="/img/linkedin.png" class="darken" alt="LinkedIn">
-</span>
-</a>
-          </nav>
-          
-        </header>
-      </div>
-</div>
+<script>
+function toggleTheme() {
+  var current = document.documentElement.getAttribute('data-theme');
+  var next = current === 'dark' ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', next);
+  localStorage.setItem('theme', next);
+}
+// Show correct icon
+(function updateIcon() {
+  var style = document.createElement('style');
+  style.textContent = '[data-theme="dark"] .moon-icon { display: none; } [data-theme="dark"] .sun-icon { display: block; } :root .sun-icon { display: none; } :root .moon-icon { display: block; } [data-theme="light"] .sun-icon { display: none; } [data-theme="light"] .moon-icon { display: block; }';
+  document.head.appendChild(style);
+})();
+</script>
 
 	<main>
-		<article>
-			<h2>Blog</h2>
+		<h1 class="page-title">Blog</h1>
 
-		
-	<div class="blog_ele">
-		<a href="/2018/11/25/pommerman-rl.html">
-			<time>Nov 25, 2018</time>
-		<h3>Pommerman- Reinforcement Learning Project</h3>
-		</a>
-	</div>
+<div class="post-list">
 
-		
-	<div class="blog_ele">
-		<a href="/2018/09/27/us-visa-b1.html">
-			<time>Sep 27, 2018</time>
-		<h3>To hell and back again, US B1 Visa</h3>
-		</a>
-	</div>
-
-		
-	<div class="blog_ele">
-		<a href="/2018/07/09/mercari-internship.html">
-			<time>Jul 9, 2018</time>
-		<h3>Internship at Mercari</h3>
-		</a>
-	</div>
-
-		
-	<div class="blog_ele">
-		<a href="/2018/07/09/japan-lookback.html">
-			<time>Jul 9, 2018</time>
-		<h3>Adventures in Japan</h3>
-		</a>
-	</div>
-
-		
-	<div class="blog_ele">
-		<a href="/2018/05/28/flew-to-japan.html">
-			<time>May 28, 2018</time>
-		<h3>I just flew to Japan</h3>
-		</a>
-	</div>
-
-		
-	<div class="blog_ele">
-		<a href="/2018/05/20/flying-dji-mavic.html">
-			<time>May 20, 2018</time>
-		<h3>Flying a DJI Mavic</h3>
-		</a>
-	</div>
-
-		
-	<div class="blog_ele">
-		<a href="/2018/04/30/voice-conversion.html">
-			<time>Apr 30, 2018</time>
-		<h3>Voice Conversion- Machine Learning Project</h3>
-		</a>
-	</div>
-
-		
-	<div class="blog_ele">
-		<a href="/2018/03/30/ntp-update-time.html">
-			<time>Mar 30, 2018</time>
-		<h3>Update time on Windows with IIT Bombay NTP server</h3>
-		</a>
-	</div>
-
-		
-	<div class="blog_ele">
-		<a href="/2017/11/15/cfs-visualizer.html">
-			<time>Nov 15, 2017</time>
-		<h3>CFS Visualizer- Operating Systems Project</h3>
-		</a>
-	</div>
-
-		
-	<div class="blog_ele">
-		<a href="/2017/08/15/GSoC-wrap-up.html">
-			<time>Aug 15, 2017</time>
-		<h3>GSoC Wrap Up</h3>
-		</a>
-	</div>
-
-		
-	<div class="blog_ele">
-		<a href="/2017/07/31/GSoC-week10-11-12.html">
-			<time>Jul 31, 2017</time>
-		<h3>GSoC Week 10, 11 and 12: Lost</h3>
-		</a>
-	</div>
-
-		
-	<div class="blog_ele">
-		<a href="/2017/07/05/github-jquery.html">
-			<time>Jul 5, 2017</time>
-		<h3>Github Button jQuery Plugin</h3>
-		</a>
-	</div>
-
-		
-	<div class="blog_ele">
-		<a href="/2017/07/04/GSoC-week9.html">
-			<time>Jul 4, 2017</time>
-		<h3>GSoC Week 9: A fair share of Multiplayer</h3>
-		</a>
-	</div>
-
-		
-	<div class="blog_ele">
-		<a href="/2017/06/27/GSoC-week8.html">
-			<time>Jun 27, 2017</time>
-		<h3>GSoC Week 8: The Revival stone and the Password Door</h3>
-		</a>
-	</div>
-
-		
-	<div class="blog_ele">
-		<a href="/2017/06/20/GSoC-week7.html">
-			<time>Jun 20, 2017</time>
-		<h3>GSoC Week 7: The Wipe Out and the Fireball Launcher</h3>
-		</a>
-	</div>
-
-		
-	<div class="blog_ele">
-		<a href="/2017/06/12/GSoC-week6.html">
-			<time>Jun 12, 2017</time>
-		<h3>GSoC Week 6: Setting the trap</h3>
-		</a>
-	</div>
-
-		
-	<div class="blog_ele">
-		<a href="/2017/06/06/GSoC-week5.html">
-			<time>Jun 6, 2017</time>
-		<h3>GSoC Week 5: The Swing King</h3>
-		</a>
-	</div>
-
-		
-	<div class="blog_ele">
-		<a href="/2017/05/30/GSoC-week4.html">
-			<time>May 30, 2017</time>
-		<h3>GSoC Week 4: Integrating Journal</h3>
-		</a>
-	</div>
-
-		
-	<div class="blog_ele">
-		<a href="/2017/05/21/GSoC-week3.html">
-			<time>May 21, 2017</time>
-		<h3>GSoC Week 3: Advanced Behaviors and Taming</h3>
-		</a>
-	</div>
-
-		
-	<div class="blog_ele">
-		<a href="/2017/05/08/GSoC-week1-2.html">
-			<time>May 8, 2017</time>
-		<h3>GSoC Week 1 and 2: Wild Animals Behavior System</h3>
-		</a>
-	</div>
-
-		
-	<div class="blog_ele">
-		<a href="/2017/05/04/Google-Summer-of-Code.html">
-			<time>May 4, 2017</time>
-		<h3>Google Summer of Code Selection</h3>
-		</a>
-	</div>
-
-		
-	<div class="blog_ele">
-		<a href="/2017/02/18/MovingBlocks-GCI-Wrap-Up.html">
-			<time>Feb 18, 2017</time>
-		<h3>MovingBlocks- GCI Wrap Up</h3>
-		</a>
-	</div>
-
-		
-	<div class="blog_ele">
-		<a href="/2016/11/22/Terasology-Getting-started.html">
-			<time>Nov 22, 2016</time>
-		<h3>Terasology: Getting Started</h3>
-		</a>
-	</div>
-
-		
-	<div class="blog_ele">
-		<a href="/2016/06/03/Mozilla-Quarter-of-Contribution.html">
-			<time>Jun 3, 2016</time>
-		<h3>Mozilla: Quarter of Contribution</h3>
-		</a>
-	</div>
-
-		
-	<div class="blog_ele">
-		<a href="/2016/05/18/auto-deploy.html">
-			<time>May 18, 2016</time>
-		<h3>Auto Deploy on Server</h3>
-		</a>
-	</div>
-
-		
-	<div class="blog_ele">
-		<a href="/2016/05/16/J.A.R.V.I.S/html">
-			<time>May 16, 2016</time>
-		<h3>J.A.R.V.I.S.</h3>
-		</a>
-	</div>
-
-		
-	<div class="blog_ele">
-		<a href="/2016/05/08/playing-with-aliases.html">
-			<time>May 8, 2016</time>
-		<h3>Playing with aliases</h3>
-		</a>
-	</div>
-
-		
-	<div class="blog_ele">
-		<a href="/2016/05/04/blog-init.html">
-			<time>May 4, 2016</time>
-		<h3>Blog init</h3>
-		</a>
-	</div>
-
-		
-	<div class="blog_ele">
-		<a href="/2015/09/20/assistant-lenovo.html">
-			<time>Sep 20, 2015</time>
-		<h3>Lenovo GameJam- First Hackathon Experience</h3>
-		</a>
-	</div>
-
-
-
-
-		</article>
-		
-	</main>
-	<footer class="site-footer">
-
-  <div class="wrapper">
-
-   
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="name">Nihal Singh</li>
-          <li>-nihal111</li>
-          <li><a href="mailto:nihaliter@gmail.com">nihaliter@gmail.com</a></li>
-        </ul>
+  <div class="post-item">
+    <a href="/2026/04/10/i-built-my-own-wispr-flow-in-an-evening.html">
+      <div class="post-item-inner">
+        <span class="post-item-title">I Built My Own Wispr Flow in an Evening</span>
+        <span class="post-item-date">Apr 10, 2026</span>
       </div>
-
-      <div class="footer-col footer-col-2">
-        <p class="abode">Abode:</p>Indian Institue of Technology, Bombay Mumbai-400076, India
-      </div>
-      <div class="footer-col footer-filler">
-        <p> </p>
-      </div>
-      <div class="footer-col footer-col-3">
-        <ul class="social-media-list">
-          
-          <li>
-            <a href="https://github.com/nihal111"><span class="icon icon--github"><svg viewBox="0 0 16 16"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
-</span><span class="username">nihal111</span></a>
-
-          </li>
-          
-
-          
-          <li>
-            <a href="https://facebook.com/nihal111"><span class="icon icon--facebook">
-<svg  x="0px" y="0px" width="16px" height="16px" viewBox="0 0 90 90" style="enable-background:new 0 0 90 90;" xml:space="preserve">
-<g>
-	<path id="Facebook__x28_alt_x29_" d="M90,15.001C90,7.119,82.884,0,75,0H15C7.116,0,0,7.119,0,15.001v59.998   C0,82.881,7.116,90,15.001,90H45V56H34V41h11v-5.844C45,25.077,52.568,16,61.875,16H74v15H61.875C60.548,31,59,32.611,59,35.024V41   h15v15H59v34h16c7.884,0,15-7.119,15-15.001V15.001z" fill="#3A589B"/>
-</g>
-</svg>
-</span><span class="username">Nihal Singh</span></a>
-
-          </li>
-          
-
-          
-          <li>
-            <a href="https://linkedin.com/in/nihal111"><span class="icon icon--linkedin"><svg  x="0px" y="0px" width="16px" height="16px" viewBox="0 50 512 512" style="enable-background:new 0 0 90 90;" xml:space="preserve">
-<g>
-	<path fill="#828282" d="M150.65,100.682c0,27.992-22.508,50.683-50.273,50.683c-27.765,0-50.273-22.691-50.273-50.683
-	C50.104,72.691,72.612,50,100.377,50C128.143,50,150.65,72.691,150.65,100.682z M143.294,187.333H58.277V462h85.017V187.333z
-	M279.195,187.333h-81.541V462h81.541c0,0,0-101.877,0-144.181c0-38.624,17.779-61.615,51.807-61.615
-	c31.268,0,46.289,22.071,46.289,61.615c0,39.545,0,144.181,0,144.181h84.605c0,0,0-100.344,0-173.915
-	s-41.689-109.131-99.934-109.131s-82.768,45.369-82.768,45.369V187.333z"/>
-</g>
-</svg>
-</span><span class="username">Nihal Singh</span></a>
-
-          </li>
-          
-        </ul>
-      </div>
-
-      
-    </div>
-
+    </a>
   </div>
 
+  <div class="post-item">
+    <a href="/2026/04/09/mobile-hacking-without-leaving-the-cli.html">
+      <div class="post-item-inner">
+        <span class="post-item-title">Mobile Hacking, Without Leaving the CLI</span>
+        <span class="post-item-date">Apr 9, 2026</span>
+      </div>
+    </a>
+  </div>
+
+  <div class="post-item">
+    <a href="/2018/11/25/pommerman-rl.html">
+      <div class="post-item-inner">
+        <span class="post-item-title">Pommerman- Reinforcement Learning Project</span>
+        <span class="post-item-date">Nov 25, 2018</span>
+      </div>
+    </a>
+  </div>
+
+  <div class="post-item">
+    <a href="/2018/09/27/us-visa-b1.html">
+      <div class="post-item-inner">
+        <span class="post-item-title">To hell and back again, US B1 Visa</span>
+        <span class="post-item-date">Sep 27, 2018</span>
+      </div>
+    </a>
+  </div>
+
+  <div class="post-item">
+    <a href="/2018/07/09/mercari-internship.html">
+      <div class="post-item-inner">
+        <span class="post-item-title">Internship at Mercari</span>
+        <span class="post-item-date">Jul 9, 2018</span>
+      </div>
+    </a>
+  </div>
+
+  <div class="post-item">
+    <a href="/2018/07/09/japan-lookback.html">
+      <div class="post-item-inner">
+        <span class="post-item-title">Adventures in Japan</span>
+        <span class="post-item-date">Jul 9, 2018</span>
+      </div>
+    </a>
+  </div>
+
+  <div class="post-item">
+    <a href="/2018/05/28/flew-to-japan.html">
+      <div class="post-item-inner">
+        <span class="post-item-title">I just flew to Japan</span>
+        <span class="post-item-date">May 28, 2018</span>
+      </div>
+    </a>
+  </div>
+
+  <div class="post-item">
+    <a href="/2018/05/20/flying-dji-mavic.html">
+      <div class="post-item-inner">
+        <span class="post-item-title">Flying a DJI Mavic</span>
+        <span class="post-item-date">May 20, 2018</span>
+      </div>
+    </a>
+  </div>
+
+  <div class="post-item">
+    <a href="/2018/04/30/voice-conversion.html">
+      <div class="post-item-inner">
+        <span class="post-item-title">Voice Conversion- Machine Learning Project</span>
+        <span class="post-item-date">Apr 30, 2018</span>
+      </div>
+    </a>
+  </div>
+
+  <div class="post-item">
+    <a href="/2018/03/30/ntp-update-time.html">
+      <div class="post-item-inner">
+        <span class="post-item-title">Update time on Windows with IIT Bombay NTP server</span>
+        <span class="post-item-date">Mar 30, 2018</span>
+      </div>
+    </a>
+  </div>
+
+  <div class="post-item">
+    <a href="/2017/11/15/cfs-visualizer.html">
+      <div class="post-item-inner">
+        <span class="post-item-title">CFS Visualizer- Operating Systems Project</span>
+        <span class="post-item-date">Nov 15, 2017</span>
+      </div>
+    </a>
+  </div>
+
+  <div class="post-item">
+    <a href="/2017/08/15/GSoC-wrap-up.html">
+      <div class="post-item-inner">
+        <span class="post-item-title">GSoC Wrap Up</span>
+        <span class="post-item-date">Aug 15, 2017</span>
+      </div>
+    </a>
+  </div>
+
+  <div class="post-item">
+    <a href="/2017/07/31/GSoC-week10-11-12.html">
+      <div class="post-item-inner">
+        <span class="post-item-title">GSoC Week 10, 11 and 12: Lost</span>
+        <span class="post-item-date">Jul 31, 2017</span>
+      </div>
+    </a>
+  </div>
+
+  <div class="post-item">
+    <a href="/2017/07/05/github-jquery.html">
+      <div class="post-item-inner">
+        <span class="post-item-title">GitHub Button jQuery Plugin</span>
+        <span class="post-item-date">Jul 5, 2017</span>
+      </div>
+    </a>
+  </div>
+
+  <div class="post-item">
+    <a href="/2017/07/04/GSoC-week9.html">
+      <div class="post-item-inner">
+        <span class="post-item-title">GSoC Week 9: A fair share of Multiplayer</span>
+        <span class="post-item-date">Jul 4, 2017</span>
+      </div>
+    </a>
+  </div>
+
+  <div class="post-item">
+    <a href="/2017/06/27/GSoC-week8.html">
+      <div class="post-item-inner">
+        <span class="post-item-title">GSoC Week 8: The Revival stone and the Password Door</span>
+        <span class="post-item-date">Jun 27, 2017</span>
+      </div>
+    </a>
+  </div>
+
+  <div class="post-item">
+    <a href="/2017/06/20/GSoC-week7.html">
+      <div class="post-item-inner">
+        <span class="post-item-title">GSoC Week 7: The Wipe Out and the Fireball Launcher</span>
+        <span class="post-item-date">Jun 20, 2017</span>
+      </div>
+    </a>
+  </div>
+
+  <div class="post-item">
+    <a href="/2017/06/12/GSoC-week6.html">
+      <div class="post-item-inner">
+        <span class="post-item-title">GSoC Week 6: Setting the trap</span>
+        <span class="post-item-date">Jun 12, 2017</span>
+      </div>
+    </a>
+  </div>
+
+  <div class="post-item">
+    <a href="/2017/06/06/GSoC-week5.html">
+      <div class="post-item-inner">
+        <span class="post-item-title">GSoC Week 5: The Swing King</span>
+        <span class="post-item-date">Jun 6, 2017</span>
+      </div>
+    </a>
+  </div>
+
+  <div class="post-item">
+    <a href="/2017/05/30/GSoC-week4.html">
+      <div class="post-item-inner">
+        <span class="post-item-title">GSoC Week 4: Integrating Journal</span>
+        <span class="post-item-date">May 30, 2017</span>
+      </div>
+    </a>
+  </div>
+
+  <div class="post-item">
+    <a href="/2017/05/21/GSoC-week3.html">
+      <div class="post-item-inner">
+        <span class="post-item-title">GSoC Week 3: Advanced Behaviors and Taming</span>
+        <span class="post-item-date">May 21, 2017</span>
+      </div>
+    </a>
+  </div>
+
+  <div class="post-item">
+    <a href="/2017/05/08/GSoC-week1-2.html">
+      <div class="post-item-inner">
+        <span class="post-item-title">GSoC Week 1 and 2: Wild Animals Behavior System</span>
+        <span class="post-item-date">May 8, 2017</span>
+      </div>
+    </a>
+  </div>
+
+  <div class="post-item">
+    <a href="/2017/05/04/Google-Summer-of-Code.html">
+      <div class="post-item-inner">
+        <span class="post-item-title">Google Summer of Code Selection</span>
+        <span class="post-item-date">May 4, 2017</span>
+      </div>
+    </a>
+  </div>
+
+  <div class="post-item">
+    <a href="/2017/02/18/MovingBlocks-GCI-Wrap-Up.html">
+      <div class="post-item-inner">
+        <span class="post-item-title">MovingBlocks- GCI Wrap Up</span>
+        <span class="post-item-date">Feb 18, 2017</span>
+      </div>
+    </a>
+  </div>
+
+  <div class="post-item">
+    <a href="/2016/11/22/Terasology-Getting-started.html">
+      <div class="post-item-inner">
+        <span class="post-item-title">Terasology: Getting Started</span>
+        <span class="post-item-date">Nov 22, 2016</span>
+      </div>
+    </a>
+  </div>
+
+  <div class="post-item">
+    <a href="/2016/06/03/Mozilla-Quarter-of-Contribution.html">
+      <div class="post-item-inner">
+        <span class="post-item-title">Mozilla: Quarter of Contribution</span>
+        <span class="post-item-date">Jun 3, 2016</span>
+      </div>
+    </a>
+  </div>
+
+  <div class="post-item">
+    <a href="/2016/05/18/auto-deploy.html">
+      <div class="post-item-inner">
+        <span class="post-item-title">Auto Deploy on Server</span>
+        <span class="post-item-date">May 18, 2016</span>
+      </div>
+    </a>
+  </div>
+
+  <div class="post-item">
+    <a href="/2016/05/16/J.A.R.V.I.S.html">
+      <div class="post-item-inner">
+        <span class="post-item-title">J.A.R.V.I.S.</span>
+        <span class="post-item-date">May 16, 2016</span>
+      </div>
+    </a>
+  </div>
+
+  <div class="post-item">
+    <a href="/2016/05/08/playing-with-aliases.html">
+      <div class="post-item-inner">
+        <span class="post-item-title">Playing with aliases</span>
+        <span class="post-item-date">May 8, 2016</span>
+      </div>
+    </a>
+  </div>
+
+  <div class="post-item">
+    <a href="/2016/05/04/blog-init.html">
+      <div class="post-item-inner">
+        <span class="post-item-title">Blog init</span>
+        <span class="post-item-date">May 4, 2016</span>
+      </div>
+    </a>
+  </div>
+
+  <div class="post-item">
+    <a href="/2015/09/20/assistant-lenovo.html">
+      <div class="post-item-inner">
+        <span class="post-item-title">Lenovo GameJam- First Hackathon Experience</span>
+        <span class="post-item-date">Sep 20, 2015</span>
+      </div>
+    </a>
+  </div>
+
+</div>
+
+	</main>
+	<footer class="site-footer">
+  <div class="wrapper">
+    <div class="footer-info">
+      Nihal Singh
+    </div>
+    <ul class="footer-links">
+      
+      <li>
+        <a href="https://github.com/nihal111" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="https://linkedin.com/in/nihal111" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+      </li>
+      
+      <li>
+        <a href="mailto:nihaliter@gmail.com" aria-label="Email">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        </a>
+      </li>
+    </ul>
+  </div>
 </footer>
 
 </body>

@@ -65,24 +65,28 @@ AI Traffic Control is a mobile-first control surface around terminal-native sess
 
 <div class="center">
   <img src="https://lh3.googleusercontent.com/d/179UyavAANO4LGiaEdBtOUlsnJBh_FJ1a=w2000" alt="Dashboard overview" height="780" />
+  <p><em>The dashboard gives a top-level view across providers like Codex, Claude, and Gemini, plus hot tiles for repeated functions and a live view of which scientists are currently operating.</em></p>
 </div>
 
 ### Browser terminal view
 
 <div class="center">
   <img src="https://lh3.googleusercontent.com/d/1O7tuYj-3whmwcA4xieL-wykoFh0dZ6Us=w2000" alt="Browser terminal view" height="780" />
+  <p><em>This is what the embedded xterm.js terminal view looks like when you are driving real sessions inside the browser.</em></p>
 </div>
 
 ### Intent modal
 
 <div class="center">
   <img src="https://lh3.googleusercontent.com/d/1Hqo1obKcj0XxRYWk16M37dtXOuwwYZVs=w2000" alt="Intent modal" height="780" />
+  <p><em>The intent modal is where you fire off a new scientist session, pick a custom provider, assign a defined persona, and start it in a specific code directory or working directory.</em></p>
 </div>
 
 ### Fleet states
 
 <div class="center">
   <img src="https://lh3.googleusercontent.com/d/1SPfvSTXpadh0AeBNuQk6TA6mZ963JMDA=w2000" alt="Scientist fleet states" height="780" />
+  <p><em>The fleet state view shows that scientist sessions can move between unborn, idle, and active as work is launched and managed over time.</em></p>
 </div>
 
 ## What Improved in Practice
