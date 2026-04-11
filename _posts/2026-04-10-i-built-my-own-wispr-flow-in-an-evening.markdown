@@ -74,7 +74,10 @@ By the time I did the first real phone install, I was mostly validating behavior
 
 ## Screenshot
 
-<img src="/img/wispr-flow-selfhost-evening.jpg" alt="Building a self-hosted Whisper Flow-style Android workflow from mobile" height="780" />
+<div class="center">
+  <img src="/img/wispr-flow-selfhost-evening.jpg" alt="Building a self-hosted Whisper Flow-style Android workflow from mobile" height="780" />
+  <p><em>On the left edge is the real Whisper Flow and on the right edge is my clone.</em></p>
+</div>
 
 
 ## What I Built

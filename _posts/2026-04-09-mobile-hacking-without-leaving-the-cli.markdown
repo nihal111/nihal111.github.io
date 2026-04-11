@@ -63,19 +63,27 @@ AI Traffic Control is a mobile-first control surface around terminal-native sess
 
 ### Dashboard overview
 
-<img src="https://lh3.googleusercontent.com/d/179UyavAANO4LGiaEdBtOUlsnJBh_FJ1a=w2000" alt="Dashboard overview" height="780" />
+<div class="center">
+  <img src="https://lh3.googleusercontent.com/d/179UyavAANO4LGiaEdBtOUlsnJBh_FJ1a=w2000" alt="Dashboard overview" height="780" />
+</div>
 
 ### Browser terminal view
 
-<img src="https://lh3.googleusercontent.com/d/1O7tuYj-3whmwcA4xieL-wykoFh0dZ6Us=w2000" alt="Browser terminal view" height="780" />
+<div class="center">
+  <img src="https://lh3.googleusercontent.com/d/1O7tuYj-3whmwcA4xieL-wykoFh0dZ6Us=w2000" alt="Browser terminal view" height="780" />
+</div>
 
 ### Intent modal
 
-<img src="https://lh3.googleusercontent.com/d/1Hqo1obKcj0XxRYWk16M37dtXOuwwYZVs=w2000" alt="Intent modal" height="780" />
+<div class="center">
+  <img src="https://lh3.googleusercontent.com/d/1Hqo1obKcj0XxRYWk16M37dtXOuwwYZVs=w2000" alt="Intent modal" height="780" />
+</div>
 
 ### Fleet states
 
-<img src="https://lh3.googleusercontent.com/d/1SPfvSTXpadh0AeBNuQk6TA6mZ963JMDA=w2000" alt="Scientist fleet states" height="780" />
+<div class="center">
+  <img src="https://lh3.googleusercontent.com/d/1SPfvSTXpadh0AeBNuQk6TA6mZ963JMDA=w2000" alt="Scientist fleet states" height="780" />
+</div>
 
 ## What Improved in Practice
 
