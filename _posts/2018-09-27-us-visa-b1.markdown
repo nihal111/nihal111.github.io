@@ -7,35 +7,35 @@ tags:
 - Visa
 ---
 
-Having been selected as one of the representatives from MovingBlocks, I was all excited about being able to attend the GSoC Mentor Summit for 2018. It would be the first time I would be travelling to the States. The timeline worked out well, and I was also able to fit Github Universe in my schedule. In little time, I had my flight tickets booked and reserved a room at the hotel provided by Google. Everything was in order and only acquiring the Visa remained. 
+Having been selected as one of the representatives from MovingBlocks, I was excited to attend the GSoC Mentor Summit 2018. It would be my first trip to the States. The timeline worked out well, and I was also able to fit GitHub Universe into my schedule. In no time, I had my flight tickets booked and a room reserved at the hotel provided by Google. Everything was in order, and only the visa remained.
 
 ## The Visa Process
-I started my Visa process around mid-August, filled out my DS160, made the 160$ payment and booked dates for the VAC (Biometrics) and VI (Consular Interview). The earliest date that I could find for the interview was 24th September.
+I started my visa process around mid-August, filled out my DS-160, made the $160 payment, and booked dates for the VAC (Biometrics) and VI (Consular Interview). The earliest date I could find for the interview was September 24.
 
 ## Nearly there but oh, well
-I reached just in time for my 10 AM appointment at the Mumbai consulate, owing to the deplorable peak-hour traffic. I had barely done any reading up about what the interview is like, apart from some tips shared on the GSoC mailing list and a few stories from friends.
+I reached just in time for my 10 AM appointment at the Mumbai consulate, thanks to peak-hour traffic doing what it does best. I had barely read up on what the interview would be like, apart from some tips shared on the GSoC mailing list and a few stories from friends.
 
-I had read about a good number of cases on the mailing thread, where fellow mentors had their Visa denied, and there was absolutely nothing that could be done after that. I had a word with the person standing next to me in the queue, who mentioned that it was his second attempt. The last time he had appeared, the interview lasted for 10 seconds. As soon as he said he was an IT professional, the Consular officer handed him the rejection letter saying- "I cannot approve your Visa this time".
+I had read about a good number of cases on the mailing thread where fellow mentors had their visas denied, with absolutely nothing that could be done afterward. I spoke to the person standing next to me in the queue, who mentioned it was his second attempt. The last time he appeared, the interview lasted 10 seconds. As soon as he said he was an IT professional, the consular officer handed him a rejection letter saying, "I cannot approve your visa this time."
 
-With these stories in my head, I was partly nervous but still convinced that my purpose of travelling was entirely legitimate. I had an invitation letter from Google, and I had to complete my undergraduate studies, which meant that I was bound to return.
+With these stories in my head, I was partly nervous but still convinced that my purpose of travel was entirely legitimate. I had an invitation letter from Google, and I still had to complete my undergraduate studies, which meant I was bound to return.
 
-After a long wait, and slowly moving through the serpentine queue my turn arrived. While I was waiting at the counter, the person ahead of me had his Visa denied. As I walked up to the counter, I could see that the consular officer was unhappy. 
+After a long wait and a slow crawl through the serpentine queue, my turn arrived. While I was waiting at the counter, the person ahead of me had his visa denied. As I walked up, I could see the consular officer was unhappy.
 
 --- 
 
 **Me:** Good morning  
 **Officer:** May I have your passport?   
 (I pass my passport)   
-**O:** Why would you be travelling to the United States?   
+**O:** Why are you traveling to the United States?   
 **M:** To attend a conference.   
 (I kept my answers brief and answered only what I was asked. I had read this tip somewhere, and I was extra cautious to not annoy the officer further.)   
 **O:** What conference is this?   
-**M:** It's a conference about open source software. It's called the Google Summer of Code mentor summit.   
+**M:** It's a conference about open source software called the Google Summer of Code Mentor Summit.   
 (He starts looking at the screen and typing in something.)   
 **O:** Who would be paying for your trip?   
-**M:** Google would be paying. They would be paying 1100$ for every attendee, and if that falls short, my organisation can cover the rest. 
+**M:** Google would be paying. They would pay $1100 for every attendee, and if that falls short, my organization can cover the rest.
 (More typing and looking at the screen)   
-**O:** Are you pursuing your undergraduate studies?   
+**O:** Are you still pursuing your undergraduate studies?   
 **M:** Yes. I am a fourth-year student.   
 **O:** Do you have your old passports. May I see them?   
 (I pass my older passports)   
@@ -44,24 +44,24 @@ After a long wait, and slowly moving through the serpentine queue my turn arrive
 **O:** Who pays for your education?   
 **M:** My father does.   
 (More typing. Longer this time.)   
-**O:** Your Visa application has been denied. The reason is written in this paper. You may apply again.   
+**O:** Your visa application has been denied. The reason is written in this paper. You may apply again.
 
 --- 
 
-Profoundly disappointed and dissatisfied with how the interview went, I left. I had carried a file with all the documents I could think of, and the interviewer didn't ask for even a single document. The paper given to me cited Section 214 (b) as the ground for denial, which essentially means I couldn't prove strong ties to my home country. Baseless in my case, since I needed to come back to finish my undergrad.
+Profoundly disappointed with how the interview went, I left. I had carried a file with all the documents I could think of, and the interviewer didn't ask for even one. The paper cited Section 214(b) as the ground for denial, which essentially means I couldn't prove strong ties to my home country. In my case, that felt baseless since I needed to return to finish undergrad.
 
-My plans had come to an end. There was no way I could apply again. It took me more than a month to get my first appointment. I barely had 2 weeks before my flight, this time. 
+My plans seemed done. There was no way I could apply again, or so I thought. It took me more than a month to get my first appointment, and this time I had barely two weeks before my flight.
 
 ## The Gamble
-I heard from a friend ([Yashvardhan Didwania](https://mozillians.org/en-US/u/ydidwania/), thanks again) that it isn't all that impossible to get an appointment on a date before the expected waiting period. He had pulled it off in the past by continually refreshing the webpage and checking for available dates. When someone cancels or reschedules, an earlier date becomes available for a short while. That's when you grab it.
+I heard from a friend ([Yashvardhan Didwania](https://mozillians.org/en-US/u/ydidwania/), thanks again) that it wasn't impossible to get an appointment earlier than the expected waiting period. He had pulled it off in the past by continually refreshing the webpage and checking available dates. When someone cancels or reschedules, an earlier date becomes available briefly. That's when you grab it.
 
-The gamble was that I would have to pay 160$ before I become able to book an appointment. To get the Visa on my passport in time, I needed to get an interview date on or before October 8. There was a good chance that I would not get such a date but I decided to play the odds.
+The gamble was that I had to pay another $160 before I could even book an appointment. To get the visa on my passport in time, I needed an interview date on or before October 8. There was a good chance I wouldn't get one, but I decided to play the odds.
 
-I had to wait for the next day to start a new application since the website still showed my present-day appointment (24 September) as active. I filled out the DS-160 in the meantime and spent the entire day reading stories about Visa rejections and searching for ways to overcome them. I woke up on 25th September and at 10:21 AM, on my way to class, I made the MRV payment of 160$ again. I remember it took around 1-2 hours for my receipt to get activated and reflect on the website, last time. However, I kept checking during class, and the receipt was activated at sharp 11:00 AM. The earliest available date was 19 October at the Mumbai Consulate, as I had expected. Chennai had an earlier date of 3 October available, but I dropped that thought. Better judgement prevailed, and I kept refreshing the page hoping for a miracle to happen. At 11:21 AM, I made my last refresh, and to my surprise, the website now showed the earliest available date as 27th September. Within what were an intense 15 seconds, I had managed to secure my second interview on the 27th of September. It was unbelievable, and I was happy beyond my wits. 
+I had to wait until the next day to start a new application since the website still showed my same-day appointment (September 24) as active. I filled out the DS-160 in the meantime and spent the day reading stories about visa rejections and ways to overcome them. On September 25 at 10:21 AM, on my way to class, I made the MRV payment of $160 again. Last time, it had taken around 1 to 2 hours for my receipt to activate and reflect on the website. I kept checking during class, and the receipt activated at exactly 11:00 AM. The earliest available date was October 19 at the Mumbai Consulate, as expected. Chennai had an earlier date of October 3, but I dropped that idea. Better judgment prevailed, and I kept refreshing the page, hoping for a miracle. At 11:21 AM, I hit refresh one last time and, to my surprise, the earliest available date changed to September 27. In what felt like an intense 15 seconds, I secured my second interview for September 27. It was unbelievable, and I was happy beyond words.
 
 ## Turning my luck upside down
 
-Fast forward to 27th September. Again, I saw rejections all over the place and people returning with their passports. I saw three applicants have their Visa denied by the very same officer who had denied my Visa last time. I kept my head clear, and I approached the counter. 
+Fast forward to September 27. Again, I saw rejections all over the place and people returning with their passports. I watched three applicants get their visas denied by the same officer who had denied mine last time. I kept my head clear and approached the counter.
 
 ---
 
@@ -69,12 +69,12 @@ Fast forward to 27th September. Again, I saw rejections all over the place and p
 **Officer:** Good morning. May I have your passport?   
 *(I pass my passport along with the 4 most essential supporting documents)*   
 **O:** Why would you be travelling?   
-**M:** I am invited to attend a conference. The conference is called the Google Summer of Code Mentor Summit. It's a conference where mentors from different open source organisations come together to discuss how the Google Summer of Code program can be made better and how the open source community can improve as a whole.  
+**M:** I am invited to attend a conference called the Google Summer of Code Mentor Summit. It's where mentors from different open source organizations come together to discuss how the Google Summer of Code program can be improved and how the open source community can improve as a whole.
 **O:** I'm sorry, can you explain what the conference is about again?   
-**M:** Alright, so Google has a program called the Google Summer of Code wherein students participate by contributing to open source   organisations. I am a student myself, and I participated in the summer of 2017 by contributing to an organisation called MovingBlocks. In 2018, I became a mentor. Each organisation is supposed to send two representatives to the Mentor Summit, to come together and discuss how the program can be improved. I would be representing MovingBlocks this time.  
+**M:** Alright, so Google has a program called Google Summer of Code wherein students participate by contributing to open source organizations. I am a student, and I participated in summer 2017 by contributing to an organization called MovingBlocks. In 2018, I became a mentor. Each organization is supposed to send two representatives to the Mentor Summit to discuss how the program can be improved. I would be representing MovingBlocks this time.
 *(Looks at the screen, types a little)*  
 **O:** Who would be paying for your trip?   
-**M:** My expenses would be covered directly by my organisation. Google, in turn, would fund each organisation by paying 1100$ for each   representative and also arranging for a hotel during the period of the conference.  
+**M:** My expenses would be covered directly by my organization. Google, in turn, would fund each organization by paying $1100 for each representative and arranging a hotel during the conference period.
 *(She scrolls through the documents I forwarded)*  
 **O:** I see you have travelled to Japan recently. What was that for?   
 **M:** I was doing an internship in Japan in the past summer. *//Explain a little more*   
@@ -87,17 +87,17 @@ Fast forward to 27th September. Again, I saw rejections all over the place and p
 
 ---
 
-I come to realise that I've pulled it off. The gamble had paid off perfectly well, and all plans were back on track. 
+I realized I'd pulled it off. The gamble had paid off, and all plans were back on track.
 
 ### Tips:
 
-The following are a few tips from my personal experience. I do not claim that these would generalize across different consulates and the following should not be considered in any way as formal/legal advice.
+The following are a few tips from my personal experience. I do not claim these generalize across different consulates, and none of this should be considered formal or legal advice.
 
-1. Be confident. If you deserve the Visa, act like you already have it.
-2. Always explain in great depth. Give no excuse to the officer to think that you're making things up. If the officer enjoys brevity, they will ask you to stop or shoot another question. 
-3. Push your papers forward initially. If they are returned, make further attempts to show them relevant papers whenever a document supports something you're saying. Remember, the burden of proof is on the applicant. 
-4. Hope for the best, expect the worst. In my opinion, the process is semi-arbitrary, and you may be unlucky to have a short interview or a grumpy interviewer. Be prepared for this and leave no effort in making sure you deliver all the information you can. 
-5. A denial is only temporary, and it can be turned easily if you have all the right reasons. Advice on forums echoed with- "Don't apply immediately after a rejection. Wait till your circumstances change". While this may be true, if you feel there was no real reason for your application to be rejected, applying again immediately may work in your favour. Here is a timeline of how I flipped my rejection in 4 days. 
+1. Be confident. If you deserve the visa, act like you already have it.
+2. Explain clearly and in enough depth. Give no excuse to the officer to think you're making things up. If the officer prefers brevity, they will ask you to stop or ask another question.
+3. Push your papers forward initially. If they are returned, make further attempts to show relevant papers whenever a document supports what you're saying. Remember, the burden of proof is on the applicant.
+4. Hope for the best, expect the worst. In my opinion, the process is semi-arbitrary, and you may get unlucky with a short interview or a grumpy interviewer. Be prepared for this and do everything you can to deliver complete information.
+5. A denial can be temporary if you have the right reasons. Forum advice often says, "Don't apply immediately after a rejection. Wait until your circumstances change." While this may be true, if you feel there was no real reason for rejection, applying again immediately may work in your favor. Here is a timeline of how I flipped my rejection in four days.
 
 ***24th September - (VI appointment) Interview. Visa Denied***  
 ***25th September - Paid for next appointment.***  
@@ -106,4 +106,4 @@ The following are a few tips from my personal experience. I do not claim that th
 
 ---
 
-I'm delighted that my gamble worked out well and excited more than ever to fly to California. 
+I'm delighted that the gamble worked out and more excited than ever to fly to California.

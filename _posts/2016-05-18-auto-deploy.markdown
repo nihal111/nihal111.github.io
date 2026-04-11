@@ -7,15 +7,15 @@ tags:
 - git
 - ruby
 ---
-It had been a while since I had been using a server to host the [website for WnCC](http://www.wncc-iitb.org). With a lot of development happening around, updating and testing changes on the server, had become a requirement. Having built the site in Jekyll, I required to shift the contents of `_site` from my local machine to `/var/www/html` on the server, after every build. I had been following the simple, standard method of using scp, for a long time. Copying all the content from `_site` to `/var/www/html` was now becoming inefficient (as I copied all the files in the folder all over again), took a lot of time as the site started expanding with more multimedia content, and required a long terminal command too. I could have used a probably more efficient way of SSHing into the server, pulling from the git repository and copying the contents of the `_site` folder into `/var/www/html`. But this would have been tedious too, and probably could have been made easier with a script. Nevertheless, it would have required me to SSH into the server, and atleast a couple of terminal commands.
+I'd been using a server to host the [WnCC website](http://www.wncc-iitb.org) for a while. With development happening constantly, updating and testing changes on the server had become a regular chore. Having built the site in Jekyll, I needed to copy the contents of `_site` from my local machine to `/var/www/html` on the server after every build. I'd been doing this the brute-force way with `scp` -- copying every file in the folder each time. This was getting increasingly painful as the site grew with more multimedia content, and the terminal command wasn't short either. I could have SSH'd into the server, pulled from the git repo, and copied `_site` into `/var/www/html`, but that would still have been tedious. There had to be a better way.
 
 ### Discovering [Github Webhooks](https://developer.github.com/webhooks/)
-Enter webhooks. [Webhooks](https://developer.github.com/webhooks/) allow one to set up an integration with their github repository to listen for one or more events. Whenever such an event occurs, Github sends a HTTP POST payload to the webhook's configured URL. An event can occur with the creation of an issue, a push to the server or be triggered whenever a repository is starred, forked etc. Webhooks can be used to do a lot of things. I have used a webhook, in this example for the quite general purpose of setting up an auto-deplow on my server.
+Enter webhooks. [Webhooks](https://developer.github.com/webhooks/) let you set up an integration with your GitHub repository to listen for one or more events. Whenever such an event occurs, GitHub sends an HTTP POST payload to the webhook's configured URL. Events can be triggered by a push, the creation of an issue, a star, a fork -- you name it. I used a webhook here for the fairly common purpose of setting up auto-deploy on my server.
 
-Github provides a quite [comprehensive guide](https://developer.github.com/webhooks/configuring/) about how to set up a webhook to the local host which is connected to the web using [ngrok](https://ngrok.com/download). I followed the guide and replicated similar steps on my server to get my webhook configured to send a HTTP POST payload to the server.
+GitHub provides a [comprehensive guide](https://developer.github.com/webhooks/configuring/) on setting up a webhook to localhost connected through [ngrok](https://ngrok.com/download). I followed the guide and replicated similar steps on my server to get the webhook configured.
 
 ### Using [Sinatra](http://www.sinatrarb.com/)
-I used Sintara to create a simple web framework which would receive a HTTP POST made to the configured server URL, and run a small shell command. Having written this small piece of code, I could now reflect all changes made in the repository on the website, everytime a push is made to the repository. The following code renames the `html` folder inside `/var/www/` to `_site` and performs a git pull inside `/var/www` and later renames it back to `html`. This is done as the built site lies inside the `_site` folder of the repository. I
+I used Sinatra to create a simple web framework that receives an HTTP POST at the configured server URL and runs a shell command. With this small piece of code, every push to the repository is now automatically reflected on the website. The code renames the `html` folder inside `/var/www/` to `_site`, performs a git pull inside `/var/www`, and renames it back to `html` (since the built site lives inside the `_site` folder of the repository).
 
 {% highlight ruby %}
 # hook.rb
@@ -42,6 +42,6 @@ However this session of Sinatra will close as soon as you CTRL+C out of it or lo
 
 This would put the Sinatra process in background and keep it running even after you have logged out. 
 
-I did not know about github webhooks earlier and this was an interesting find. The above was a quick setup for automation. If you know a way in which I could improve it, do let me know in the comments.
+I didn't know about GitHub webhooks before this, and it turned out to be a neat discovery. The above is a quick and dirty automation setup. If you know a way to improve it, let me know in the comments.
 
 Till next time!

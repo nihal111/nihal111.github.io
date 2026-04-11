@@ -5,8 +5,14 @@ header: True
 permalink: /projects/
 ---
 
-Projects are good things. Perhaps the best of things and no good project ever gets completed.
+A running catalog of things I've built, broken, and occasionally shipped.
 Here is the list of projects I own or have contributed to:
+
+### Recent
+
+* [**AI Traffic Control**][AI Traffic Control]- A mobile-first control surface for managing terminal-native AI agent sessions on the go. Browser terminal layer over ttyd, persistent tmux sessions, provider usage telemetry, and hot-dial tiles to spawn repeatable agent flows. Built to replace the clumsy SSH-attach-inspect loop with something you can actually use while walking. Read more [here][ai-traffic-control-blog].
+
+* [**WhisperClient + WhisperServer**][WhisperClientAndroid]- A self-hosted alternative to Wispr Flow, built in a single evening (from the gym, no less). Android client with a floating bubble for speech capture, paired with a self-hosted Whisper transcription server running on my Mac. Private-network access via Tailscale. Read more [here][whisper-blog].
 
 * [**Google Summer of Code**][Google Summer of Code]- I completed my GSoC in 2017 under [MovingBlocks- Terasology][MovingBlocks- Terasology]. The broad goal was to introduce content systems and gameplay connections to support a new template with solid replayability. I developed a new survival gameplay mode called [Lost][Lost] involving puzzles, traps and exploration based content packed in a new world with a backing lore. Dealt with the game’s physics, multiplayer and Entity Component System. Created new modules like [AdvancedBehaviors][AdvancedBehaviors] (for event driven behavior switching), [AdventureAssets][AdventureAssets] (for traps and puzzle elements). Made several accompanying API changes to the engine. Created and added [WildAnimals] to the game.
 
@@ -30,7 +36,7 @@ Here is the list of projects I own or have contributed to:
 
 * [**Bashortcuts**][Bashortcuts]: 'bashortcuts' or bash-shortcuts is a skinny python script that helps build a personalized inputrc, which is a customized configuration of GNU Readline, the input related library used by bash and most other shells. Additionally, it makes it easy to define macros that can be used to tie shell_commands and functions to key sequences.
 
-* [**Terasology**][Terasology]: Terasology is an open source renedition of Minecraft and is a platform to develop gameplay settings in the voxel world. I've been contributing to this project since October '16. The community is very active and enthusiastic, and I've had a great time with them.
+* [**Terasology**][Terasology]: Terasology is an open source rendition of Minecraft and is a platform to develop gameplay settings in the voxel world. I've been contributing to this project since October '16. The community is very active and enthusiastic, and I've had a great time with them.
 
 ### Course Projects and Research Work
 
@@ -48,7 +54,7 @@ Here is the list of projects I own or have contributed to:
 
 ### Hobby Projects
 
-* [**MooDLD**][MooDLD]: A python application that automates the download of course material from [moodle.iitb.ac.in](moodle.iitb.ac.in). It has a Tkinter based GUI and uses Mechanize for scraping. Made independently for Windows, it consists of a setup which installs MooDLD with all dependencies. Developed further as an android app that lets you download all the courses with the click of a button. [***UPDATE***: **Was officially launched by the UG Academics Council at IIT Bombay in Aug '16**. However, project has been ***dicontinued*** due to the recent Moodle version bump to support the official Moodle Mobile app.]
+* [**MooDLD**][MooDLD]: A python application that automates the download of course material from [moodle.iitb.ac.in](moodle.iitb.ac.in). It has a Tkinter based GUI and uses Mechanize for scraping. Made independently for Windows, it consists of a setup which installs MooDLD with all dependencies. Developed further as an android app that lets you download all the courses with the click of a button. [***UPDATE***: **Was officially launched by the UG Academics Council at IIT Bombay in Aug '16**. However, project has been ***discontinued*** due to the recent Moodle version bump to support the official Moodle Mobile app.]
 
 * [**EVENTual**][EVENTual]: No more painstakingly filling or remembering event details. Save events to your default calendar with one tap. Fill out the details and get a sharable link and QR code. Use the [EVENTual android app] to directly add that. Created a platform for creating and sharing events easily, automating the task of filling details in the calendar by generating shareable links and QR Codes. Made a Django based web application to facilitate creation and searching of events. Developed an Android app which would pick up sharable links and scan QR Codes, to automatically add the event to calendar.
 
@@ -87,3 +93,7 @@ Here is the list of projects I own or have contributed to:
 [voice-conversion-blog]: https://nihal111.github.io/2018/04/30/voice-conversion.html
 [pommerman-blog]: https://nihal111.github.io/2018/11/25/pommerman-rl.html
 [CFS-visualizer-blog]: https://nihal111.github.io/2017/11/15/cfs-visualizer.html
+[AI Traffic Control]: https://github.com/nihal111/ai-traffic-control
+[ai-traffic-control-blog]: https://nihal111.github.io/2026/04/09/mobile-hacking-without-leaving-the-cli.html
+[WhisperClientAndroid]: https://github.com/nihal111/WhisperClientAndroid
+[whisper-blog]: https://nihal111.github.io/2026/04/10/i-built-my-own-wispr-flow-in-an-evening.html

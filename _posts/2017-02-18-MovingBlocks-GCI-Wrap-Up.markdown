@@ -13,7 +13,7 @@ tags:
 {: .center}
 ![GSoC]({{ site.baseurl }}/img/GSoC.png "GSoC")
 
-After an exciting and productive summer that saw huge commitment, dedication and interest from students and mentors alike in MovingBlock's first ever Google Summer of Code participation, it was time to gear up for some new beginnings.
+After an exciting and productive summer that saw huge commitment, dedication, and interest from students and mentors alike in MovingBlocks' first ever Google Summer of Code participation, it was time to gear up for new beginnings.
 
 ## Google Code-In
 
@@ -29,15 +29,15 @@ MovingBlocks having become a veteran org in GSoC, was eligible to participate in
 {: .center}
 ![Winter Has Come]({{ site.baseurl }}/img/winterhascome.jpg "Winter Has Come")
 
-With the winter winds came gusts of excited students ready to dive into the pool of tasks that we had created. We had for long discussed how the first week (called the "hell week") is usually the most intense and oh boy, it did get hectic and overwhelming at times. We saw the pile of tasks deplete faster than we could imagine, and students kept sending in work faster than we could review it. At times it became really helpful to have mentors dispersed over the globe so that we spanned all time-zones. At other times, caffeine was our only reliable salvation.
+With the winter winds came gusts of excited students ready to dive into the pool of tasks we had created. We had long discussed how the first week (the infamous "hell week") is usually the most intense, and oh boy, it did get hectic. We saw the pile of tasks deplete faster than we could imagine, and students kept sending in work faster than we could review it. Having mentors dispersed across the globe meant we spanned all time zones, which helped. At other times, caffeine was our only reliable salvation.
 
-IRC exploded with curious students asking for assistance, Github notifications set new records and we began running out of tasks before we could even wipe the sweat off our foreheads. But the entire mentor team pulled up their socks, converted half-baked ideas into well written task desciptions, added more research, design and documentation related tasks, allowed for existing issued on Github to count as tasks and did lots more. Luckily, Terasology had huge potential for multi-instance tasks in creating equipments, food items, recipes and even new plants inside the game. Some of the best works by students were the splendid World Generators they created. More often than not, most of these tasks were in chains containing sequential tasks, such that each bite-sized task provided an introduction to a topic and had a follow up tasks which ensured a gradual increase in complexity and provided direcion to students.
+IRC exploded with curious students asking for help, GitHub notifications set new records, and we began running out of tasks before we could even wipe the sweat off our foreheads. But the entire mentor team pulled up their socks, converted half-baked ideas into well-written task descriptions, added more research, design, and documentation tasks, allowed existing GitHub issues to count as tasks, and did lots more. Luckily, Terasology had huge potential for multi-instance tasks -- creating equipment, food items, recipes, and even new plants inside the game. Some of the best student work came in the form of splendid World Generators. Many of these tasks were chained sequentially, with each bite-sized task providing an introduction to a topic and a follow-up that ensured a gradual increase in complexity and gave students direction.
 
 The Alpha 6 release event happened midway through GCI and went great with several students checking out our event server, which didn't even crash once in over 60 hours.
 
 ## Hell Week is just one week?
 
-The "hell week" concept which we had just heard about prior to our participation in GCI, became so much more familiar that we realised how it missed an 's' at the end. The hell week had lasted for an entire three weeks with only slight variation in activity, before it took a stark downfall for Christmas. The majority of the "Create Content" tasks had gone into making new items for Cooking, Potions, Equipment, SimpleFarming and we had loads of new things to test out. Task piles were depleting as always and mentors had to stay on their toes to review work that came in like a storm.
+The "hell week" concept, which we had only heard about before our participation in GCI, became so much more familiar that we realised it was missing an 's' at the end. The hell *weeks* lasted for a solid three weeks with only slight variation in activity, before dropping off sharply for Christmas. The majority of "Create Content" tasks had gone into making new items for Cooking, Potions, Equipment, and SimpleFarming, and we had loads of new things to test out. Task piles were depleting as always, and mentors had to stay on their toes to review work that came in like a storm.
 
 ## Crossing the Finish Line
 
@@ -46,7 +46,7 @@ The "hell week" concept which we had just heard about prior to our participation
 
 On 18th January, the closing whistle for this edition of Google Code-In was blown. At the end we had- **606 tasks completed by 138 students**, with a total of 222 starting or otherwise getting in touch with us. The **highest** was from a student who had **42 tasks** completed. Out of the 17 organisations that had participated, we came out as the **third highest org** (with respect to number of tasks completed) which was impressive for a first-timer.
 
-Once again with the end of winter, we saw amazing work by so many students around the globe. A huge thank you to all the students who participated, for all their contributions. Keep up the entusiasm and foster the love for open source. Most of all, hats off to all of the 11 other overworked mentors (excluding myself)- **Cervator, Skaldarnar, rzats, oniatus, flo, xtariq, SkySom, manu3d, anthodeus, avalancs, josharias**. Lastly, thanks to Google for provinding us a platform once again to reach out to students and developers across the globe.
+Once again, we saw amazing work from students around the globe. A huge thank you to everyone who participated, for all their contributions. Keep up the enthusiasm and foster the love for open source. Most of all, hats off to the 11 other overworked mentors (excluding myself): **Cervator, Skaldarnar, rzats, oniatus, flo, xtariq, SkySom, manu3d, anthodeus, avalancs, josharias**. Lastly, thanks to Google for providing us a platform once again to reach out to students and developers across the globe.
 
 ## Who's the Winner?
 
@@ -65,7 +65,7 @@ The real winner, I believe was MovingBlocks, as we witnessed a load of talented 
 
 We ended GCI with a [recap thread](http://forum.terasology.org/threads/google-code-in-2016-recap-thread.1752/) to discuss students' experiences with Terasology. We even went ahead and made it a finishing task which students could claim.
 
-The interests in various parts of the game varied and the we received valuable input on how we could improve on our tasks next year. Overall we received compliments on areas such as interaction, assistance, availability and speedy reviews. General feedback about mentors and our review system was very flattering. Some students described us as the "most accommodating org" and our response rates as "phenonmenal". One student descibed our tasks as much more fun to do (having advantage of being a game) while another talks about the second family nature of our IRC.
+Interests in various parts of the game varied, and we received valuable input on how to improve our tasks next year. Overall, we received compliments on interaction, assistance, availability, and speedy reviews. General feedback about mentors and our review system was very flattering. Some students described us as the "most accommodating org" and our response rates as "phenomenal." One student described our tasks as much more fun than other orgs (the advantage of being a game), while another talked about the second-family nature of our IRC.
 
 {: .center}
 ![Terasology]({{ site.baseurl }}/img/terasologylogo.png "Terasology")

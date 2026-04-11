@@ -54,7 +54,7 @@ return $collapsiblecontent.is(":visible") ? "- " : "+ ";
 
 Week 8 has come to an end and quite a few of the proposal targets have been met. The last two months have been phenomenal, to say the least. Since I had started work around 1 month in advance, I would be completing two months by the time the first evaluation completes in a few days.
 
-# What have I been upto?
+# What have I been up to?
 This week saw more work on traps, two items in particular- the **Revival Stone** (to be named the **Altar of Resurrection**) and a **Password locked door** .
 
 ## Revival Stone

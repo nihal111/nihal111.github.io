@@ -70,7 +70,7 @@ Before you proceed any further, I'd like to make it bold and clear that there li
 4. Launch the game using the script or the .exe file.
 5. Select Singleplayer -> Lost and load the saved game.
 
-# What have I been upto?
+# What have I been up to?
 
 There's a good amount of stuff that happened in the three weeks, from making tricky riddles interspersed with lore to making new blocks and items along with crafting a new world. I'll try to narrate things in the order of occurence, although my hazy memory might make a few things non-linear.
 

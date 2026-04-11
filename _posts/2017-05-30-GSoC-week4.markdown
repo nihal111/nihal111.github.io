@@ -52,7 +52,7 @@ $(document).ready(function(){
 
 </script>
 
-The past week involved creating the new module for my exploration world and getting sarted with it.
+The past week involved creating the new module for my exploration world and getting started with it.
 
 # What have I been up to?
 
@@ -61,7 +61,7 @@ The past week involved creating the new module for my exploration world and gett
 The Lost module is the new gameplay module that I have created and would be working on for the next two months. I'm still working on writing some logs but the general idea for the [lore](https://docs.google.com/document/d/1GVmJEV2KKjqgxjtVR-_Lh7QsvRzQbfxg9qeHjimIbPg/edit?usp=sharing) is complete. In short the story is centered around an intergalactic explorer who while exploring the vast world of Terasology, gets stranded. The wormhole creator that allows him to travel through space becomes dysfunctional. Fornlorn with no way to return to his home planet, he starts exploring the planet, trying to survive on what may become the last planet he would ever set his foot on.
 
 ## Integrating Journal
-A key part of the new explorationn world would be a journal that links several things. The main purpose of the Journal would be to serve as a secondary memory for the player. I plan to use the Journal in several ways-
+A key part of the new exploration world would be a journal that links several things. The main purpose of the Journal would be to serve as a secondary memory for the player. I plan to use the Journal in several ways-
 
 1. Exploration logs that would be generated as time passes or when an event occurs. Like when the player first spots a deer or finds a treasure.
 2. New recipes would show up when the player pick a new item. Like picking up a stone would create an entry with the recipe for hammer.
@@ -79,7 +79,7 @@ The [Journal module](https://github.com/Terasology/Journal) was left pretty much
 
 It has a left panel for different chapters and each chapter has its own entries. This handles categorisation pretty well, making it easier for the user to access specific entries and saving a long scroll.
 
-I've added another enhancement which now makes the Journal more interactive. Earlier there was just a notification that would pop up when a new Journal Entry was added. However, it wouldn't be highlighted in any way in the Journal. With the [latest PR](https://github.com/Terasology/Journal/pull/3/) merged, now the unread Journal entries appear highlightedin yellow, until the chapter they belong to gets opened once.
+I've added another enhancement that makes the Journal more interactive. Previously, a notification would pop up when a new Journal Entry was added, but it wouldn't be highlighted in any way within the Journal itself. With the [latest PR](https://github.com/Terasology/Journal/pull/3/) merged, unread Journal entries now appear highlighted in yellow until their chapter gets opened once.
 
 {: .center}
 ![Unread Journal]({{ site.baseurl }}/img/UnreadJournal.jpg "Unread Journal")
@@ -115,7 +115,7 @@ A character lives. It has the AliveComponent.
 It dies.
 A `BeforeDestroyEvent` handler receives all entities having `AliveCharacterComponent`
 
-+ If the entity also has a `PlayerCharacterComponent`, the event is consumed to prevent destruction. The `AliveCharacterComponent` is stripped off adn a `PlayerDeathEvent` sent along with `DeathEvent`
++ If the entity also has a `PlayerCharacterComponent`, the event is consumed to prevent destruction. The `AliveCharacterComponent` is stripped off and a `PlayerDeathEvent` sent along with `DeathEvent`
 + Else just a `DeathEvent` sent  and the `AliveCharacterComponent` stripped off.
 DeathScreen launches on `PlayerDeathEvent` and sends the `RespawnRequestEvent`.
 `RespawnRequestEvent` is received by the `PlayerSystem`.

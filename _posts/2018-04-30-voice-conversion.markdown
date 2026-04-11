@@ -9,10 +9,10 @@ tags:
 ---
 
 
-As the course project for CS 419 - Introducing to Machine Learning, Spring 2018, I teamed up with Arpan Banerjee and Srivatsan Sridhar to work on the task of Voice Conversion.  
+For our CS 419 - Introduction to Machine Learning course project in Spring 2018, Arpan Banerjee, Srivatsan Sridhar, and I tackled the problem of Voice Conversion -- making one person’s voice sound like another’s. Think of it as the world’s most elaborate impression act, but with neural networks doing the impersonation.
 
-We built a pipelined approach to convert one person’s voice into another person’s voice. We proposed a deep learning approach to convert source waveform to phonemes and further phonemes to target waveform. This approach consisted of two neural networks.
-The first network was used to convert the source speaker's waveforms to phonemes.
+We built a pipelined approach using deep learning to convert source waveforms to phonemes, and then phonemes to target waveforms. Two neural networks in sequence.
+The first network converted the source speaker’s waveforms to phonemes.
 
 {: .center}
 ![Net1]({{ site.baseurl }}/img/voice-conversion/net1.png "Net1"){:style="max-height: 500px;"}
@@ -22,9 +22,9 @@ While the second network involved converting the obtained phonemes to the target
 {: .center}
 ![Net2]({{ site.baseurl }}/img/voice-conversion/net2.png "Net2"){:style="max-height: 500px;"}
 
-We used the TIMIT (different sources) and CMU ARCTIC (single target) corpus respectively for training our network. As part of our project, we performed extensive experimentation with bi-directional Recurrent Neural Networks using LSTM and GRU cells. 
+We used the TIMIT corpus (various sources) and CMU ARCTIC corpus (single target) for training. As part of the project, we performed extensive experimentation with bidirectional Recurrent Neural Networks using LSTM and GRU cells.
 
-We’ve used the multitask approach to train the network as per both the mel spectral coefficients (as an intermediate representation) and magnitude spectrum which forms the final output while using a pyramidal network architecture.
+We used a multitask approach to train the network on both mel spectral coefficients (as an intermediate representation) and magnitude spectrum (the final output), employing a pyramidal network architecture.
 
 {: .center}
 ![multitask]({{ site.baseurl }}/img/voice-conversion/multitask.png "multitask"){:style="max-height: 500px;"}

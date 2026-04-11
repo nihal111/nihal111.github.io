@@ -10,23 +10,23 @@ tags:
 - GSoC
 ---
 
-Summer has kicked off with great news. My proposal for the Google Summer of Code with MovingBlocks- Terasology has been selected. 
+Summer has kicked off with great news -- my proposal for Google Summer of Code with MovingBlocks-Terasology has been selected.
 
-## What is the Google Summer of Code?
+## What is Google Summer of Code?
 
 {: .center}
 ![GSoC]({{ site.baseurl }}/img/GSoC.png "GSoC")
 
-To the uninitiated, Google Summer of Code is a global program targeted at bringing university students into open source. Students work with an open source organization on a 3 month programming project during their summer break. Google first selects around 200 organisations and funds their open source projects. It's a win-win. The students get an awesome learning experience and a huge stipend. The organisations get a lot of work done from the dedicated students. Well, Google just plays the nice guy being a good Samaritan.
+For the uninitiated, Google Summer of Code is a global program aimed at bringing university students into open source. Students work with an open source organization on a 3-month programming project during their summer break. Google selects around 200 organizations and funds their projects. It's a win-win: students get an amazing learning experience and a generous stipend, organizations get dedicated contributors, and Google gets to play the benevolent patron.
 
-This would be MovingBlocks' second GSoC selection as a mentoring organisation, which makes it a veteran org already. With a total of 10 slots this year, way more than last year's 3, this summer might prove to be the immensely productive for MovingBlocks.
+This is MovingBlocks' second GSoC selection as a mentoring organization -- veteran status, basically. With 10 slots this year (up from last year's 3), this summer could be enormously productive for MovingBlocks.
 
 ## What is MovingBlocks- Terasology?
 
 {: .center}
 ![Gooey]({{ site.baseurl }}/img/gooey.jpg "Gooey")
 
-[Moving Blocks- Terasology](https://github.com/MovingBlocks/Terasology) is a minecraft-like open source game built in a voxel world. A [voxel](https://en.wikipedia.org/wiki/Voxel) world is essentially a 3-D world made up from blocks. Terasology is still in it's Alpha stage, but what makes it really special is it's modularity. With a huge, diverse set of modules already developed/in-development, Terasology offers amazing possibilities. It has a very basic minimal engine, where even core features like health, inventory, combat etc can be added on top or removed as plug-in modules.
+[MovingBlocks-Terasology](https://github.com/MovingBlocks/Terasology) is a Minecraft-like open source game built in a voxel world. A [voxel](https://en.wikipedia.org/wiki/Voxel) world is essentially a 3D world made up of blocks. Terasology is still in its Alpha stage, but what makes it special is its modularity. With a huge, diverse set of modules already developed or in development, Terasology offers amazing possibilities. It has a minimal engine where even core features like health, inventory, and combat can be added or removed as plug-in modules.
 
 ## What am I doing?
 
@@ -36,8 +36,8 @@ My primary mentor would be [Skylar 'skysom' Sommers](http://forum.terasology.org
 
 ## When am I doing this?
 
-Since my college reopens mid-July, I've already started work on the Project. Officially May is meant to be a Community-Bonding period for most and the Coding phase only starts in July. However I plan to finish my GSoC early and I've already started off with the coding phase.
+Since college reopens mid-July, I've already started work on the project. Officially, May is meant to be a community-bonding period and the coding phase only starts in July. But I plan to finish my GSoC early and have already jumped into coding.
 
 ## Blog for updates
 
-I plan to use this blog to keep updating my progress. This blog will also be an attempt to document the work that I'll be doing. This is gonna be an exciting summer!
+I plan to use this blog to track my progress and document the work along the way. This is going to be an exciting summer!

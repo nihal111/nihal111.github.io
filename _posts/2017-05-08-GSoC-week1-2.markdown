@@ -52,7 +52,7 @@ $(document).ready(function(){
 
 </script>
 
-The start to GSoC has been smooth. Currently as I write this wrap up post for week one and two, my work has already crossed the week 3 mark according to my proposal.
+The start to GSoC has been smooth. As I write this wrap-up post for weeks one and two, my work has already crossed the week 3 mark according to the proposal. Ahead of schedule -- the best kind of schedule.
 
 # What have I been up to?
 I've been adding new features to the [WildAnimals](https://github.com/Terasology/WildAnimals) module. The module only had a deer that idly moved around and did nothing else. When hit it would lose health and ultimately just disappear as a glitch when it's health reached 0.
@@ -189,6 +189,6 @@ There are quite a few advantages of using this approach for dealing with complex
  ```
 + **Easy development**: With this system, someone who's making the "EatIfHungry" package does not have to worry about what will happen if the animal is hit when it's hungry. All he has to do is assign the event handler for the "EatIfHungry" package a lesser priority than the "FleeOnHit" package's event handler.
 
-The post went longer than I had expected it to. The next post would contain details of the deer that have been implemented and maybe new creatures! Most deer at this point are just placeholders for other animals whose models aren't ready yet. Thanks to [flo](http://forum.terasology.org/members/florian.1335/) for all his help lately. The whole event driven behavior system idea was born out of a discussion with him. He's been really helpful in getting my PRs reviewed and merged too.
+This post ran longer than expected. The next one will cover details of the deer that have been implemented and maybe some new creatures. Most deer at this point are just placeholders for other animals whose models aren't ready yet. Huge thanks to [flo](http://forum.terasology.org/members/florian.1335/) for all his help -- the entire event-driven behavior system idea was born out of a discussion with him, and he's been invaluable in getting PRs reviewed and merged.
 
-In other news, I was away for 3 days (10th to 12th May) for the [Microsoft code.fun.do SHOWCASE event](https://www.acadaccelerator.com/Home/CFDShowCase) that was held in Hyderabad. The trip was fun with sponsored flight trips and hotel stay. Have to catch up with lost time on GSoC though.
+In other news, I was away for 3 days (10th to 12th May) for the [Microsoft code.fun.do SHOWCASE event](https://www.acadaccelerator.com/Home/CFDShowCase) in Hyderabad. Fun trip with sponsored flights and hotel stay. Time to catch up on GSoC now.

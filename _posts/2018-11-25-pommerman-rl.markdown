@@ -9,19 +9,18 @@ tags:
 ---
 
 
-As the course project for CS 747 - Foundations of Intelligent & Learning Agents, Fall 2018, I teamed up with Chinmay Talegaonkar and Dhruv Shah to take on the [Pommerman Challenge](https://www.pommerman.com/).  
-
+For our CS 747 - Foundations of Intelligent & Learning Agents course project in Fall 2018, Chinmay Talegaonkar, Dhruv Shah, and I took on the [Pommerman Challenge](https://www.pommerman.com/) -- a test bed for multi-agent learning algorithms.
 
 {: .center}
 ![Pommerman]({{ site.baseurl }}/img/pommerman.gif "Pommerman"){:style="max-height: 500px;"}
 
-The Pommerman Challenge essentially serves as a test bed for multi-agent learning algorithms. It is essentially a clone of the popular Bomberman game, providing a constantly changing environment with bombs going off, power-ups to be collected and other agents to be eliminated. There are mainly two modes to the game, **FFA**- where each of the four agents battle against each other and the last one to survive wins, **Team**- where there are two teams of two agents which compete against each other.  
+Pommerman is essentially a clone of the classic Bomberman game: a constantly changing environment with bombs going off, power-ups to collect, and other agents to eliminate. There are two main modes: **FFA** (four agents battle each other, last one standing wins) and **Team** (two teams of two agents compete).
 
-We took on the FFA challenge, trying a few different approaches. After facing a few hurdles, we found that the DQfD agent performed remarkably well as against our other approaches.  
+We took on the FFA challenge and explored several approaches, including vanilla DQN, rule-based heuristics, and imitation learning. After hitting various walls, we found that the DQfD (Deep Q-learning from Demonstrations) agent performed remarkably well compared to our other approaches -- it turns out that showing an agent how humans play before letting it loose is quite effective.
 
-Our experiments and approaches are detailed here- [Report]({{ site.baseurl }}/docs/pommerman_report.pdf)
+Our experiments and approaches are detailed in the full report: [Report]({{ site.baseurl }}/docs/pommerman_report.pdf)
 
-To see our agent in action, watch the video below-
+To see our agent in action, watch the video below:
 
 <iframe width="100%" height="400px" src="https://www.youtube.com/embed/DtiyIrMZ69A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 

@@ -11,7 +11,7 @@ tags:
 {: .center .w100}
 ![J.A.R.V.I.S.]({{ site.baseurl }}/img/jarvis.jpg "J.A.R.V.I.S.")
 
-Almost a week ago, I attempted to create [my own version](https://github.com/nihal111/J.A.R.V.I.S) of Iron Man's J.A.R.V.I.S. which would perform a few tasks and have chatbot like abilities. After a bit of research I found out about [AIML](http://www.alicebot.org/aiml.html) and its [interpreter for python](https://pypi.python.org/pypi/PyAIML). I also found ways to convert text to speech and speech to to text using python libraries like [pyttsx](https://pypi.python.org/pypi/pyttsx) and [SpeechRecognition](https://pypi.python.org/pypi/SpeechRecognition/3.4.3). I soon ended up making a J.A.R.V.I.S. which understood some of the things I said and performed a few fun actions.
+Almost a week ago, I attempted to create [my own version](https://github.com/nihal111/J.A.R.V.I.S) of Iron Man's J.A.R.V.I.S. -- a personal assistant that can perform tasks and hold chatbot-like conversations. After some research, I found [AIML](http://www.alicebot.org/aiml.html) and its [Python interpreter](https://pypi.python.org/pypi/PyAIML). I also discovered ways to convert text to speech and speech to text using Python libraries like [pyttsx](https://pypi.python.org/pypi/pyttsx) and [SpeechRecognition](https://pypi.python.org/pypi/SpeechRecognition/3.4.3). Before long, I had a J.A.R.V.I.S. that understood some of what I said and performed a few fun actions.
 
 ## Configuring voice input and output:
 
@@ -59,7 +59,7 @@ This should listen to an audio input once from the microphone. However this can 
 
 ## Working with AIML:
 
-AIML stands for Artificial Intelligence Markup Language. AIML is XML based markup language meant to create artificial intelligent application to create human interface. Using AIML, the implementation remains easy to program and highly maintainable. However, the development for AIML has become rather stagnant and AIML 1.0 (the one which has a python interpreter) has a documentation dating back to 2005, making it quite obsolete. Nevertheless, AIML is easy to learn and fun to use. At the very basic level, AIML recognizes patterns and gives responses as programmed. The patterns are called categories and responses are called templates. A very basic AIML code looks like this:
+AIML stands for Artificial Intelligence Markup Language. It's an XML-based markup language designed for creating conversational AI applications. Using AIML, implementations remain easy to program and highly maintainable. The catch is that AIML development has become rather stagnant -- AIML 1.0 (the version with a Python interpreter) has documentation dating back to 2005, making it fairly obsolete. Nevertheless, AIML is easy to learn and genuinely fun to tinker with. At its core, AIML recognizes patterns and gives responses as programmed. Patterns are called categories and responses are called templates. A basic AIML snippet looks like this:
 
 {% highlight XML %}
 <aiml version="1.0.1" encoding="UTF-8"?>
@@ -74,7 +74,7 @@ AIML stands for Artificial Intelligence Markup Language. AIML is XML based marku
 
 This small piece of code allows J.A.R.V.I.S. to reply with "Well, hello!" for every "HELLO" it gets as input.
 
-Such a code can then be customised to give a random output from a list of templates, redirect to a already defined pattern, use a part or whole of the user's input, run shell scripts etc. Out of all these running a shell script makes AIML, or atleast J.A.R.V.I.S. very powerful.
+This can be customised to give a random output from a list of templates, redirect to an already defined pattern, use part or all of the user's input, run shell scripts, and more. Out of all these, running shell scripts is what makes AIML -- or at least J.A.R.V.I.S. -- genuinely powerful.
 
 All one has to do to create a chatbot using AIML, is to make up a list of `.aiml` files containing categories like the one defined above and use the aiml library for python to import them into a kernel using a `startup.xml` file which looks like this:
 
@@ -123,7 +123,7 @@ Using the \<system> tag one can achieve a lot of functionalities like opening ap
 
 ## Integrating Python scripts
 
-Since it is easy enough to use shell commands through AIML. It is equally easy to use the shell to run python scripts and perform tasks using their output. A really fun example and perhaps the best feature of J.A.R.V.I.S. is the following.
+Since it's easy enough to use shell commands through AIML, it's equally easy to run Python scripts and use their output. The best feature of J.A.R.V.I.S. -- and the one I'm most proud of -- is the following.
 
 ### Finding and playing a song on youtube
 With the following python script, to find the link for first result for a given `query`:

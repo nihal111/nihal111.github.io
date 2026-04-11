@@ -38,13 +38,13 @@ At the same time, the April 4, 2026 Claude subscription change pushed many third
 - Axios (Apr 6, 2026): [The AI agent buffet is closed](https://www.axios.com/2026/04/06/anthropic-openclaw-subscription-openai)
 - OpenClaw FAQ reference on billing/auth paths: [OpenClaw FAQ](https://docs.openclaw.ai/help/faq)
 
-Meanwhile, terminal-native agents (Codex/Claude) kept improving fast. So I stopped waiting for the IM layer to catch up and built a mobile control plane around real terminal sessions.
+Meanwhile, terminal-native agents (Codex/Claude) kept improving quickly. So I stopped waiting for the IM layer to catch up and built a mobile control plane around real terminal sessions.
 
 ## The Friction Was Personal
 
-This had been a friction point for months. I kept trying different tools and kept abandoning them because there was always one more sharp edge that made true computer-free operation inconvenient.
+This had been a friction point for months. I kept trying different tools and abandoning them because there was always one more sharp edge that made truly computer-free operation inconvenient.
 
-With this tooling I built in conjunction with Wispr Flow, I’m basically speaking to my phone and turning that into running systems. That still feels insane. Idle minutes are no longer dead time; they are launch windows for the next idea running in the background.
+With this tooling I built in conjunction with Wispr Flow, I’m basically speaking to my phone and turning that into running systems. That still feels a little absurd in the best way. Idle minutes are no longer dead time; they are launch windows for the next idea running in the background.
 
 That quality-of-life shift is the whole point.
 
@@ -100,11 +100,11 @@ Steve Yegge’s *The AI Vampire* captures this tension in language that lands. H
 
 There’s definitely some truth there.
 
-To the extent that this tooling makes it easier to be creative and bring ideas to life, it has personally been a game changer. But it requires discipline: boundaries, recovery, and intentional off-switches.
+To the extent that this tooling makes it easier to be creative and bring ideas to life, it has personally been a game changer. But it still requires discipline: boundaries, recovery, and intentional off-switches.
 
 ## Access and Security Model
 
-Current setup is private-network first:
+The current setup is private-network first:
 
 - Dashboard runs locally
 - Remote access goes through private networking (for example Tailscale)

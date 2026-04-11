@@ -54,7 +54,7 @@ $(document).ready(function(){
 
 With the swinging blade almost ready last week, this week involved a lot of focused efforts on making traps easy and intuitive to set up.
 
-# What have I been upto?
+# What have I been up to?
 
 ## The Swinging Blade
 Here's some more detail about the swinging blade I made last week.

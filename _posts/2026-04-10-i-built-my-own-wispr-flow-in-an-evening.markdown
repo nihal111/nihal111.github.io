@@ -97,7 +97,7 @@ Private-network access via Tailscale makes this usable even when I’m away from
 
 This wasn’t a weekend novelty project.
 
-It was operational insurance for a workflow that has become central to how I think and ship.
+It was operational insurance for a workflow that has become central to how I think and build.
 
 And it reinforces a bigger point from the last post:
 

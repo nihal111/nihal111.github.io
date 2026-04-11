@@ -6,13 +6,13 @@ comments: true
 tags:
 - Japan
 ---
-My time in Japan comes to a close as I enter the last week of my stay here. The experience so far has been nothing short of crazy.
+My time in Japan is coming to a close as I enter the last week of my stay. The experience has been nothing short of incredible.
 
-I was fortunate to spend the summer of '18 in Tokyo doing my internship at Mercari, an e-commerce unicorn. I spent most of my working days writing Android code for the main Japanese marketplace app-[Mercari](https://play.google.com/store/apps/details?id=com.kouzoh.mercari). My weekends were well spent touring around Japan. This is an attempt to lookback and document some of my adventures in Japan. Most of the following adventures were made with a varying subset of the 8 co-interns I was lucky to be in company of.
+I was fortunate to spend the summer of '18 in Tokyo doing my internship at Mercari, an e-commerce unicorn. Weekdays were spent writing Android code for the main Japanese marketplace app -- [Mercari](https://play.google.com/store/apps/details?id=com.kouzoh.mercari). Weekends were spent touring Japan. This is an attempt to look back and document some of the adventures. Most of the following were undertaken with a varying subset of the 8 co-interns I was lucky to be in the company of.
 
-### Week 1: Tokyo Disney Sea
-We were planning to get the 2 day Disney Land + Disney Sea pass, but better judgement prevailed and we went ahead with only getting the Disney Sea tickets.  
-This was my first Disney experience and it was the best theme park experience I had so far. The landscapes were beyond amazing. Being a weekend, it was super crowded. But with our strong fast pass game, we managed to ride through to most of the attractions with great efficiency. The evening fireworks show- Fantasmic was true to its name. I walked over 15k steps that day and returned home with tired legs.
+### Week 1: Tokyo DisneySea
+We were planning to get the 2-day Disneyland + DisneySea pass, but better judgement prevailed and we went with just the DisneySea tickets.
+This was my first Disney experience, and it was the best theme park visit I'd had. The landscapes were beyond amazing. Being a weekend, it was super crowded. But with our strong fast pass game, we managed to ride through to most of the attractions with great efficiency. The evening fireworks show- Fantasmic was true to its name. I walked over 15k steps that day and returned home with tired legs.
 
 {: .center}
 ![Lounge]({{ site.baseurl }}/img/tokyo/disneysea.jpg "DisneySea"){:style="max-height: 500px;"}
@@ -46,10 +46,10 @@ We took the overnight ferry from Tokyo to Oshima, that docked at early Saturday 
 ![Lounge]({{ site.baseurl }}/img/tokyo/oshima.jpg "Oshima"){:style="max-height: 500px;"}
 
 ### Week 6: Conquering Mt. Fuji
-This was probably the stupidest, albeit the most adventurous thing I did in Japan. The proper and recommended way to climb Mt. Fuji and witness the literally 'breath-taking' sunrise involves making a climb during day, and resting in a hut for the night, waking up energized and making to the top just in time for the sunrise. We weren't able to book a hut, thanks to our last moment planning and we decided to do it the hard way- rush to the top, see the sunrise and come back.  
-We made it to the 5th station at around 16:00 and started the climb at 19:30. The Yoshida trail is the easiest way to the top and that's the one we took. With frequent stops, we took it slow and made it to the top at 04:00 just in time to see the sunrise. The view was nothing short of spectacular, but it was freezing cold at the summit. The temperature touched zero degree Celcius and there were super strong chilly winds blowing. Altitude sickness and asphixiation had started taking a toll on me. It was a super cloudy day and the crater was completely shielded with fog. The sun was hidden behind the clouds intermittently too. Somehow, I survived and started descending. The descent was torturous with steep curved paths that have slippery gravel for extremely long stretches. With an extreme body ache and a severe headache, I took the bus to take me home.
+This was probably the stupidest, yet most adventurous thing I did in Japan. The proper way to climb Mt. Fuji and witness the literally breathtaking sunrise involves climbing during the day, resting in a mountain hut overnight, and waking up energised to summit just in time for sunrise. We weren't able to book a hut (thanks to our last-minute planning), so we decided to do it the hard way: rush to the top, see the sunrise, and come back.
+We made it to the 5th station around 16:00 and started the climb at 19:30. The Yoshida trail is the easiest route to the top, and that's the one we took. With frequent stops, we took it slow and reached the summit at 04:00 -- just in time for sunrise. The view was spectacular, but it was absolutely freezing at the top. Temperatures touched zero degrees Celsius with fierce winds that cut right through you. Altitude sickness and asphyxiation had started taking a toll on me. It was cloudy, the crater was completely shrouded in fog, and the sun kept hiding behind clouds. Somehow I survived and started descending. The descent was torturous -- steep, winding paths covered in slippery gravel for what felt like an eternity. With extreme body ache and a pounding headache, I practically crawled onto the bus home.
 
 {: .center}
 ![Lounge]({{ site.baseurl }}/img/tokyo/mtfuji.jpg "Mt. Fuji"){:style="max-height: 500px;"}
 
-There were a few mini adventures on weekdays, but the bulk of my expeditions in Japan have been recorded above. Woo!
+There were a few mini adventures on weekdays, but the bulk of my Japan expeditions are captured above. What a summer.

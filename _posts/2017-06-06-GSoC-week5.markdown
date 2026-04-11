@@ -52,13 +52,13 @@ $(document).ready(function(){
 
 </script>
 
-Last week involved a lot of discussions. The plan for the next two months is now a lot clearer. Here's a quick fun video that should explain the title of this blog post.
+Last week involved a lot of discussions, and the plan for the next two months is now much clearer. Here's a quick fun video that should explain the title of this blog post.
 
 <div class="videowrapper">
     <iframe width="1024" height="768" src="https://www.youtube.com/embed/efCmy_e7JRU" frameborder="0" allowfullscreen></iframe>
 </div>
 
-# What have I been upto?
+# What have I been up to?
 
 ## WoodAndStoneCraftingJournal
 With last week's journal improvements, it was time to put the journal to some good use. A good technique to do this is to use the main Gamplay module for all story/lore related journal entries. However for most of the content related entries like crafting tutorials or cooking recipes, the best way to go is to create Journal extension modules. These extension modules would connect each content module to the Journal module. Essentially, the Journal extension module would house the Journal entries related to that content module which can easily be reused by multiple gameplay modules.
@@ -85,7 +85,7 @@ The idea now, is that I would create various puzzle elements and combine them to
 
 <div class="github-button" url="https://github.com/Terasology/AdventureAssets/pull/2"></div>
 
-The first item I decided to work on was the Swinging Blade. The setup consists of a huge blade that swings to and fro from one edge of the room to the other. This would serve as on obstacle and coming in contact with the blade would deal damage to the player.
+The first item I decided to work on was the Swinging Blade. The setup consists of a huge blade that swings to and fro from one edge of the room to the other. It serves as an obstacle -- coming in contact with the blade deals damage to the player.
 
 I started working with a crude swinging blade model made by flo.
 
@@ -99,7 +99,7 @@ I tried to make the blade move by linearly varying the `pitch` (as in rotation's
 ![crudeSB]({{ site.baseurl }}/img/crudeSwingingBlade.gif "crude SB")
 
 ### Alignment and orientation
-The swinging blade was misaligned and I wanted it to rotate in a direction purpendicular to it's current rotation. Soon I realised that I had no control on the orientaion of the Swinging Blade entity that was being spawned by the Structure Template. I could choose the position but I couldn't change the orientation and rotation. This is because the Structure Template module allows you to spawn the structure anywhere in the world, regardless of the orientation in which they were created. Meaning, a structure that faced North could be spawned in a manner that it now faces East. All contents of the structure should undergo a similar change in their orientation too. But the entities didn't. Till now, it wasn't a problem as the only things being spawned were the GooeysQuests' skeletons. Their orientation didn't matter as they were live entities that would come running after you for your life.
+The swinging blade was misaligned and I wanted it to rotate in a direction perpendicular to its current rotation. I soon realised that I had no control over the orientation of the Swinging Blade entity being spawned by the Structure Template. I could choose the position but I couldn't change the orientation and rotation. This is because the Structure Template module allows you to spawn the structure anywhere in the world, regardless of the orientation in which they were created. Meaning, a structure that faced North could be spawned in a manner that it now faces East. All contents of the structure should undergo a similar change in their orientation too. But the entities didn't. Till now, it wasn't a problem as the only things being spawned were the GooeysQuests' skeletons. Their orientation didn't matter as they were live entities that would come running after you for your life.
 
 <div class="github-button" url="https://github.com/Terasology/StructureTemplates/pull/15"></div>
 

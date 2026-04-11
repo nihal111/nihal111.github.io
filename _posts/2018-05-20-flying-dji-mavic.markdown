@@ -7,7 +7,7 @@ tags:
 - drone
 ---
 
-On yet another Summer weekend, I drove to the NRI Complex in Seawoods. It was a sunny day, and we were to fly a drone that evening.
+On yet another summer weekend, I drove to the NRI Complex in Seawoods. Sunny day, good company, and a drone to fly that evening. What more could you want?
 
 ### The Lake
 
@@ -19,7 +19,7 @@ During winter, this lake also becomes home to thousands of migratory aquatic bir
 
 ### The Drone
 
-The drone belonged to Vaibhav. It was a DJI Mavic, the one listed [here](https://www.dji.com/mavic). A small transmitter hooks on to a phone, and the drone relays a clear view to the phone's screen, saving higher quality footage to the SD card. There were four of us flying that evening, each reluctantly passing on the transmitter to the other.
+The drone belonged to Vaibhav -- a DJI Mavic, the one listed [here](https://www.dji.com/mavic). A small transmitter hooks onto a phone, and the drone relays a clear live view to the screen while saving higher-quality footage to the SD card. There were four of us flying that evening, each reluctantly surrendering the transmitter to the next person when our turn was up.
 
 {: .center}
 ![drone1]({{ site.baseurl }}/img/drone1.jpg "drone1"){:style="max-height: 500px;"}
@@ -43,4 +43,4 @@ This time we took off from Vaibhav's roof (14 storeys high) getting an aerial pe
     <iframe width="1024" height="768" src="https://www.youtube.com/embed/iOXtOOut9f4" frameborder="0" allowfullscreen></iframe>
 </div>
 
-Overall, it was a weekend well spent. Also, this happens to be my last weekend here in Mumbai as I fly to Tokyo this Saturday for my internship. 
+Overall, a weekend well spent. Also, this happens to be my last weekend in Mumbai -- I fly to Tokyo this Saturday for my internship.

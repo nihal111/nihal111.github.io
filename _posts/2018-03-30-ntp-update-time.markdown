@@ -230,7 +230,7 @@ The [Official Ubuntu Docs](https://help.ubuntu.com/community/UbuntuTime#Multiple
 
 ---
 
-That should save you from manually setting time again.
+That should save you from the indignity of manually setting your system clock ever again.
 
-Till next 'time'..  
+Till next *time*..
 Cheers!

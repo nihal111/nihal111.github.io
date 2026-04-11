@@ -8,11 +8,11 @@ tags:
 - Mercari
 - internship
 ---
-I'm back in Mumbai as I write this recap blog post describing my summer spent in the heart of Tokyo, during my internship at Mercari. This blog post is going to be specific to my internship. I've written about my travelling experiences in a [different post](https://nihal111.github.io/2018/07/09/japan-lookback.html).
+I'm back in Mumbai as I write this recap of my summer spent in the heart of Tokyo, interning at Mercari. This post covers the internship itself; I've written about the travelling adventures [separately](https://nihal111.github.io/2018/07/09/japan-lookback.html).
 
 ## About Mercari
 
-Mercari is a CtoC marketplace startup that was founded in 2013. Their main product is the Mercari CtoC marketplace app. In just 5 years, the company has skyrocketed to become Japan's largest community-driven marketplace. The company also gained the pre-IPO unicorn status, being a privately held company valued over $1 billion. This was before the company went public this June on the Toyko Stock Exchange’s Mothers Market, during my stay there.
+Mercari is a C2C marketplace startup founded in 2013. In just 5 years, it skyrocketed to become Japan’s largest community-driven marketplace, earning pre-IPO unicorn status with a valuation over $1 billion. The company went public in June on the Tokyo Stock Exchange’s Mothers Market -- right during my stay there. Quite the timing.
 
 ## The Office
 
@@ -26,7 +26,7 @@ The Mercari office is located on the 18th floor of Mori Tower, the 6th tallest b
 ![spider]({{ site.baseurl }}/img/mercari/spider.jpg "Spider"){:style="max-height: 500px;"}
 
 ## The Honeymoon Phase
-The first week was nothing short of overwhelming. Even for the honeymoon phase, things seemed too good to be true. The onboarding and orientation were smooth, and we were given our gear. We got company phones, portable wifi and the $2000 MacBook Pro amongst other goodies.
+The first week was nothing short of overwhelming. Even for a honeymoon phase, things seemed too good to be true. The onboarding and orientation were smooth, and the gear was generous: company phones, portable Wi-Fi, and a $2000 MacBook Pro among other goodies.
 
 {: .center}
 ![Gear]({{ site.baseurl }}/img/mercari/gear.jpg "Gear"){:style="max-height: 500px;"}
@@ -42,14 +42,14 @@ By week two, we were on our desks at our respective teams with the welcome ballo
 ![Balloons]({{ site.baseurl }}/img/mercari/balloons.jpg "Balloons"){:style="max-height: 500px;"}
 
 ## The Android Team
-I had the pleasure to work with the JP Android Team, the team working on the main marketplace app- [Mercari](https://play.google.com/store/apps/details?id=com.kouzoh.mercari) for Japan. It was a medium sized team with just over 10 people. The bulk of my task for the summer was to implement client facing feature on the Android app. I also worked on a few isolated issues all over the codebase and took the initiative to improve the code quality in the codebase which was very well received by the team.
+I had the pleasure of working with the JP Android Team, responsible for the main marketplace app -- [Mercari](https://play.google.com/store/apps/details?id=com.kouzoh.mercari) for Japan. It was a medium-sized team of just over 10 people. The bulk of my summer was spent implementing client-facing features on the Android app. I also tackled isolated issues across the codebase and took the initiative to improve code quality, which was well received by the team.
 
 {: .center}
 ![Android Team]({{ site.baseurl }}/img/mercari/androidteam.jpg "Android Team"){:style="max-height: 500px;"}
 
 My team was largely global, consisting of a large number of Gaijins (Japanese for foreigners). I benefited hugely from this and learned how to work in a multi-cultural team. I learned the flow for how a spec moves to feature that gets shipped and how each detail in the middle matters.
 
-On the technical side, for the first time I **implemented a software architecture**, **wrote Kotlin code**, **wrote Unit tests using Mockito and Robolectric** and **created an automation task using CI**. I'm glad to have been able to achieve this in a small period of just over a month.
+On the technical side, this summer marked my first time implementing a software architecture from scratch, writing Kotlin, writing unit tests using Mockito and Robolectric, and setting up a CI automation task. Doing all of that in just over a month felt like a real achievement.
 
 {: .center}
 ![Desk]({{ site.baseurl }}/img/mercari/desk.jpg "Desk"){:style="max-height: 500px;"}
@@ -61,10 +61,10 @@ My team was great in many ways, apart from the mentor lunches that all of us int
 
 ## Experience
 
-All in all, the whole experience over the course of my internship was more than I could have asked for. Mercari was great to me, and it was a crazy time to be there. Amidst the whole IPO frenzy and the company celebrating its 5th anniversary, I was lucky to go to all the parties. 
+All in all, the experience was more than I could have asked for. Mercari was great to me, and it was a wild time to be there -- between the IPO frenzy and the company's 5th anniversary, I was lucky to attend all the parties.
 
-I learned how to work efficiently in a team, picked up on a few technical things, got to meet a whole bunch of great people, got exposed to a whole new culture and travelled as much as I could (more about that [here](https://nihal111.github.io/2018/07/09/japan-lookback.html)).
+I learned how to work efficiently in a team, picked up several technical skills, met a bunch of great people, got immersed in a completely new culture, and travelled as much as I could (more about that [here](https://nihal111.github.io/2018/07/09/japan-lookback.html)).
 
 ---
 
-Summer of '18 was one of the best summers I've had so far. Being home feels warm but itchy.
+Summer of '18 was one of the best summers I've had. Being home feels warm but itchy.

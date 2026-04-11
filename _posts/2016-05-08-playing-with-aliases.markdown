@@ -8,16 +8,16 @@ tags:
 - tutorial
 ---
 
-Since I can't do without my games, I can't do without Windows, and I have to dualboot. This means that most of my data is stored on a disk shared between both the operating systems. The path to the directory where I keep my projects thus becomes rather long. And I like to keep an alias for it.
+Since I can't do without my games, I can't do without Windows, and I have to dual-boot. This means most of my data lives on a disk shared between both operating systems. The path to my projects directory is annoyingly long. Naturally, I keep an alias for it.
 
 {% highlight bash %}
 alias code='cd /media/Nihal/Code'
 {% endhighlight %}
 
-What this would do is create an alias by the name of 'code' which would exist till the time you killed the terminal. Rather I have created a permanent alias for it, which is stored by copying the above line into the **`.bash_aliases`** file in the home directory (if it doesn't exist, you should really create one). I wanted to create a few more permanent aliases as and when needed and the process to do so felt tedious. Alas! I wrote another alias for it. Let's talk about the **`.bashrc`** and **`.bash_aliases`** file before getting there.
+This creates an alias called 'code' that exists until you kill the terminal. I've made mine permanent by adding it to the **`.bash_aliases`** file in my home directory (if yours doesn't exist, go ahead and create one). I wanted to be able to add more permanent aliases on the fly, and the process of manually editing the file each time felt tedious. So naturally, I wrote another alias to solve that. But first, let's talk about **`.bashrc`** and **`.bash_aliases`**.
 
 ### The ***`.bashrc`*** file
-In the home directory there also exists a `.bashrc` file which shall contain a lot of oher things. The `.bashrc` file is a script which executes evereytime a terminal is started in the **interactive mode**. It contains a set of configurations for the terminal.  The `.bashrc` file provides a space to set up variables, functions, aliases etc that you may want to use. The `.bashrc` is then run every time you open up a new terminal. Be careful, that any error or change you make in the `.bashrc` file will be reflected in all subsequent terminal windows launced. Also if you have a terminal window running, and you make changes to the `.bashrc` file thereafter, you will obviously have no effect on the running terminal and you may want to restart it.
+In the home directory there also exists a `.bashrc` file which contains a lot of other things. The `.bashrc` file is a script that executes every time a terminal is started in **interactive mode**. It contains a set of configurations for the terminal -- variables, functions, aliases, and so on. Be careful: any error or change you make in `.bashrc` will be reflected in all subsequent terminal windows launched. And if you have a terminal window already running when you make changes, those changes won't take effect until you restart it.
 
 ### Loading the ***`.bash_aliases`*** file
 The `.bashrc` file does a fine job of loading the `.bash_aliases` file like so:
@@ -40,7 +40,7 @@ alias foo='bar'
 Whenever you type in "foo", "bar" will be passed as an input to the terminal.<br>
 **Note:** You can do this with ~/.bashrc as well but it is neater not to.
 
-A perhaps better way to do this would be to automate the task and save yourself the hassle of opening a the fine and appending to it manually. And what better way to create aliases by using another alias? I wanted to have a way to create a permanent alias by just typing in a 'p' before alias like so:
+A better way to do this is to automate the task and save yourself the hassle of opening the file and appending to it manually. And what better way to create aliases than by using another alias? I wanted to create a permanent alias by just typing 'p' before alias, like so:
 
 {% highlight bash %}
 palias foo='bar'

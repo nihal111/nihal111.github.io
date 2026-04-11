@@ -52,7 +52,7 @@ return $collapsiblecontent.is(":visible") ? "- " : "+ ";
 
 </script>
 
-# What have I been upto?
+# What have I been up to?
 The Revival Stone created last week has been polished and is now renamed as the Altar Of Resurrection. All the existing traps and adventure items- Swinging Blade, Wipe Out, Fireball Launcher, Altar of Resurrection and Password Door have been made multiplayer ready.
 
 ## Altar of Resurrection

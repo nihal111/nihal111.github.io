@@ -54,7 +54,7 @@ $(document).ready(function(){
 
 After having set up the base to create traps last week, this week involved creation of two new traps.
 
-# What have I been upto?
+# What have I been up to?
 
 ## The Wipe Out
 

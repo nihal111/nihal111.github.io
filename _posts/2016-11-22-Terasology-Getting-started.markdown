@@ -153,7 +153,7 @@ Ask in the Support Forum if issues remain, or come join us on #terasology on Fre
 
 ## 6. Use an IDE
 
-With this large a project, you could easily get lost and 'grep'ing would be inefficient. We have a series of customizations that prepare run configurations, Git integration, and so on for the project, specifically for IntelliJ. Eclipse has fewer of these but is still entirely usable, as is NetBeans, but you'll need to figure out some details there yourself. I personally recommend the use of Intelij IDEA.
+With this large a project, you could easily get lost and 'grep'ing would be inefficient. We have a series of customizations that prepare run configurations, Git integration, and so on for the project, specifically for IntelliJ. Eclipse has fewer of these but is still entirely usable, as is NetBeans, but you'll need to figure out some details there yourself. I personally recommend IntelliJ IDEA.
 
 {: .center}
 ![Intellij]({{ site.baseurl }}/img/intellij.jpeg "Intellij")
@@ -178,7 +178,7 @@ This would prepare project files for Intellij. Open the resulting Terasology.ipr
 
 ## 7. Find a Bug
 
-Once you are able to run from source and preferably have an IDE set up, you should get started with working on your first bug. The complete list of issues can be found [here](https://github.com/MovingBlocks/Terasology/issues). However, you should look for issus with the tag `Bite-size`. All bite-sized issues can be found [here](https://github.com/MovingBlocks/Terasology/issues?q=is%3Aissue+is%3Aopen+label%3ABite-size).
+Once you are able to run from source and preferably have an IDE set up, you should get started with working on your first bug. The complete list of issues can be found [here](https://github.com/MovingBlocks/Terasology/issues). However, you should look for issues with the tag `Bite-size`. All bite-sized issues can be found [here](https://github.com/MovingBlocks/Terasology/issues?q=is%3Aissue+is%3Aopen+label%3ABite-size).
 
 ## 8. Code, code and code
 

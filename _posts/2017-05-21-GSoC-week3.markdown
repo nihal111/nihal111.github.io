@@ -52,13 +52,13 @@ $(document).ready(function(){
 
 </script>
 
-The past week has been lighter compared to the previous two, involving a lot more of packing and moving, research and documentation.
+The past week has been lighter compared to the previous two, involving a lot more packing and moving, research, and documentation.
 
 # What have I been up to?
 
 ## More behaviors
 
-Adding to the 4 deer (`deer`, `insensitiveDeer`, `aggressiveDeer` and `hostileDeer`) from last time two new behaviors have been added namely- `scared` and `friendly`. Again these are just placeholders for actual animals that would display such behavior like a chicken (timid) and a dog (friendly). Here are two new videos that would give a quick preview.
+Adding to the 4 deer (`deer`, `insensitiveDeer`, `aggressiveDeer`, and `hostileDeer`) from last time, two new behaviors have been added: `scared` and `friendly`. Again, these are just placeholders for actual animals that would display such behavior, like a chicken (timid) and a dog (friendly). Here are two new videos that give a quick preview.
 
 <div class="github-button" url="https://github.com/Terasology/WildAnimals/pull/14"></div>
 
@@ -79,19 +79,19 @@ Adding to the 4 deer (`deer`, `insensitiveDeer`, `aggressiveDeer` and `hostileDe
 
 <div class="github-button" url="https://github.com/Terasology/AdvancedBehaviors/pull/3"></div>
 
-Also, the flee behavior is now improved such that the animal would always run in a direction away from the player as compared to randomly moving about like last time.
+Also, the flee behavior is now improved so that the animal always runs in a direction away from the player, instead of randomly moving about like last time.
 
 <div class="github-button" url="https://github.com/Terasology/Pathfinding/pull/29"></div>
 
 <div class="github-button" url="https://github.com/Terasology/AdvancedBehaviors/pull/6"></div>
 
-In addition, last year's GCI saw a lot of students write up formal descriptions about AI for animals and their behavior. This can be found [here](http://forum.terasology.org/search/2685474/?q=Formal+Description&o=date) and is possibly a good reference for future.
+In addition, last year's GCI saw a lot of students write formal descriptions about AI for animals and their behavior. These can be found [here](http://forum.terasology.org/search/2685474/?q=Formal+Description&o=date), and are possibly a good reference for the future.
 
 ## Packing and Moving- AdvancedBehaviors
 
-It was felt that the behavior work that I had been up to, should not really be restricted to the WildAnimals module. It had great potential outside for other NPCs like monsters, zombies, aliens.. you name it. One particular requirement was that of the GooeysQuests' skeleton which would try its best to kill you in the dungeons. Currently the skeleton just has a hostile behavior, which means that it does nothing at all until a player comes close to it. After which, it would follow the player in an attempt to kill. When the player dies or escapes the skelton would return to doing nothing (standing still) where ever it had reached. The `hostileInProximity` behavior that I had implemented for the hostileDeer is probably a better alternative, where in the deer switches from hostile to stray behavior. Further the behavior switching systems could be used to add a **guard behavior** that would allow the skeleton to return to a specific location that it guards (a tressure, a secret door, who knows?).
+It was felt that the behavior work I had been up to should not be restricted to the WildAnimals module. It had great potential for other NPCs like monsters, zombies, aliens... you name it. One particular requirement was GooeysQuests' skeleton, which tries its best to kill you in the dungeons. Currently, the skeleton just has a hostile behavior, which means it does nothing at all until a player comes close. After that, it follows the player in an attempt to kill. When the player dies or escapes, the skeleton returns to doing nothing (standing still) wherever it has reached. The `hostileInProximity` behavior that I implemented for the hostileDeer is probably a better alternative, wherein the deer switches from hostile to stray behavior. Further, the behavior-switching system could be used to add a **guard behavior** that would allow the skeleton to return to a specific location that it guards (a treasure, a secret door, who knows?).
 
-All this just meant one thing, that the core behavior systems should not be kept restricted to the [WildAnimals](https://github.com/Terasology/WildAnimals) module as they would have great use even in other modules. With this need was born the [AdvancedBehaviors](https://github.com/Terasology/AdvancedBehaviors) module which would just be a library module having logic and systems that are required by other modules as dependencies, but no content of its own. All the behavior systems and behavior components were packaged and moved to this new module. 
+All this meant one thing: the core behavior systems should not stay restricted to the [WildAnimals](https://github.com/Terasology/WildAnimals) module, as they would be useful in other modules too. With this need, the [AdvancedBehaviors](https://github.com/Terasology/AdvancedBehaviors) module was born. It would be a library module with logic and systems required by other modules as dependencies, but no content of its own. All the behavior systems and behavior components were packaged and moved to this new module.
 
 <div class="github-button" url="https://github.com/Terasology/AdvancedBehaviors/pull/1"></div>
 
@@ -99,7 +99,7 @@ All this just meant one thing, that the core behavior systems should not be kept
 
 ## Optional Dependencies and Library/API modules
 
-[AdvancedBehaviors](https://github.com/Terasology/AdvancedBehaviors) would be my second module in the game, the first being the [WorldlyTooltipAPI](https://github.com/Terasology/WorldlyTooltipAPI) module which too has no content of its own, but just serves as an API module for [WorldlyTooltip](https://github.com/Terasology/WorldlyTooltip). This was decided to be a better alternative to optional dependencies.
+[AdvancedBehaviors](https://github.com/Terasology/AdvancedBehaviors) would be my second module in the game, the first being [WorldlyTooltipAPI](https://github.com/Terasology/WorldlyTooltipAPI), which also has no content of its own and serves as an API module for [WorldlyTooltip](https://github.com/Terasology/WorldlyTooltip). This was decided to be a better alternative to optional dependencies.
 
 <div class="collapsiblecontainer">
 <div class="collapsibleheader"><span>+ </span><span>What is a Library module?</span></div>
@@ -108,32 +108,32 @@ All this just meant one thing, that the core behavior systems should not be kept
 </div>
 </div>
 
-Modules like WildAnimals that use events from the WorldlyTooltip module should not have a dependency on it as it doesn't need to be necessarily activated. A user should be able to enjoy the WildAnimals module without having to activate the WorldlyTooltip module. One possible way to solve this is using optional dependencies. 
+Modules like WildAnimals that use events from the WorldlyTooltip module should not have a hard dependency on it, as it doesn't need to be activated all the time. A user should be able to enjoy the WildAnimals module without activating the WorldlyTooltip module. One possible way to solve this is using optional dependencies.
 
 <div class="collapsiblecontainer">
 <div class="collapsibleheader"><span>+ </span><span>What is an optional dependency?</span></div>
 <div class="collapsiblecontent">   
-	An optional dependency allows the user to activate modules that depend on other modules without activating the other module. The features that rely on the other module would just be enabled when the other module is activated.
+	An optional dependency allows the user to activate modules that depend on other modules without activating the other module. The features that rely on the other module would be enabled only when that module is activated.
     <br/>
-    Lets take the WildAnimals and WorldlyTooltip module as an example. If the WildAnimals module is made to have an optional dependency on the WorldlyTooltip module, it's core features would be accessible even when the WorldlyTooltip module is inactive. Activating the WorldlyTooltip module just would enable the features that rely on it.
+    Let's take the WildAnimals and WorldlyTooltip modules as an example. If the WildAnimals module is given an optional dependency on the WorldlyTooltip module, its core features would be accessible even when the WorldlyTooltip module is inactive. Activating WorldlyTooltip would simply enable the features that rely on it.
 </div>
 </div>
 
 <div class="collapsiblecontainer">
 <div class="collapsibleheader"><span>+ </span><span>What are the problems with optional dependencies?</span></div>
 <div class="collapsiblecontent">   
-    Optional dependencies make sure that the user doesn't have to forcefully download a module that serves as an optional dependency. But for a developer, the module would not compile unless the developer manually downloads all the optional dependencies. Also there is a chance that with some changes happening in Java, this feature might not be available later.
+    Optional dependencies make sure users don't have to forcefully download a module that serves as an optional dependency. But for a developer, the module would not compile unless the developer manually downloads all optional dependencies. Also, with changes happening in Java, there is a chance this feature might not be available later.
 </div>
 </div>
 
-The other way to do this is using what are called API modules.
+The other way to do this is by using what are called API modules.
 
 <div class="collapsiblecontainer">
 <div class="collapsibleheader"><span>+ </span><span>What is an API module?</span></div>
 <div class="collapsiblecontent"> 
-    An API module is one that allows for modules to use on a feature that is present in an external module without having a direct dependency on it. In short it is an alternative to optional dependencies. It can be thought of as an interface to a class. If a module X relies on some classes in Y for a feature, the classes can be moved to Z. Both X and Y can now have dependency on Z and everything would work naturally. This means that Y does not necessarily need to be activated for the user to enjoy the core features of X.
+    An API module allows modules to use a feature present in an external module without having a direct dependency on it. In short, it is an alternative to optional dependencies. It can be thought of as an interface to a class. If a module X relies on some classes in Y for a feature, the classes can be moved to Z. Both X and Y can now depend on Z, and everything works naturally. This means Y does not necessarily need to be activated for users to enjoy the core features of X.
     <br/><br/>
-    For example, the WildAnimals module uses the events from the WorldlyTooltip module for the tooltip feature. To enable this, the events were moved to the API module called WorldlyTooltipAPI. Both WildAnimals and WorldlyTooltip had a dependency on the WorldlyTooltipAPI module. WildAnimals module could now be activated without activating the WorldlyTooltip functionality (even though the dependency WorldlyTooltipAPI got activated).
+    For example, the WildAnimals module uses events from the WorldlyTooltip module for the tooltip feature. To enable this, the events were moved to the API module called WorldlyTooltipAPI. Both WildAnimals and WorldlyTooltip now have a dependency on the WorldlyTooltipAPI module. The WildAnimals module can now be activated without activating WorldlyTooltip functionality (even though the WorldlyTooltipAPI dependency gets activated).
 </div>
 </div>
 <br/>
@@ -146,24 +146,24 @@ The other way to do this is using what are called API modules.
 
 ---
 ## Taming animals
-With behaviors being defined for animals, it would be fun to turn a hostile or aggressive animal into a friendly one. Having a horse that you can ride, a donkey that carries around some load, a dog that guards an entrance, a cow that gives milk, all sound like a fun idea to have in game. Here are some thoughts on how taming can work in game.
+With behaviors being defined for animals, it would be fun to turn a hostile or aggressive animal into a friendly one. Having a horse you can ride, a donkey that carries load, a dog that guards an entrance, or a cow that gives milk all sound like fun ideas to have in game. Here are some thoughts on how taming can work.
 
 Animals can be broadly and vaguely grouped into friendly and unfriendly, with different animals falling at different levels in this classification. Generally, the friendlier the animal, the easier it would be to tame it.
 
 ### How would taming work?
-Possibly there could be a taming progress bar that gives the player an idea of how long should he continue the efforts on taming. There might be more than one ways to tame an animal, some more effective than the others. The more effective ones would increase the progress bar quicker allowing for speedy taming.
+Possibly there could be a taming progress bar that gives the player an idea of how long they should continue their taming efforts. There might be more than one way to tame an animal, some more effective than others. The more effective methods would increase the progress bar faster, allowing for speedy taming.
 
 ### Taming Methods
 1. **Petting**- Some very friendly animals like dogs might just be tamed after a while of petting.
 2. **Feeding**- Every animal would have a preferred food item (or rather a list of food items it eats with an order of preference). Feeding an animal with its favorite food item would increase the taming progress quicker than with other foods.
 3. **Sedating or Tranquilising**- Animals can be fed poisonous berries or some other substances to intoxicate them. These would leave them vulnerable and make them easier to tame. Such an approach would be useful for more unfriendly or aggressive animals.
-4. **Tranquiliser darts**- For animals that are hostile and would attack when in proximity of the player, tranquiliser darts could be used to intoxicate and subdue the animal, leaving it in a vulnerable state where it can be fed and tamed easily.
-5. **Trap**- Animals that are timid or hostile would either run away from the player or chase the player. A good idea is to trap the animals and then approach them when they are not in a position to run away or attack. An animal trapped in such a manner would have the feed option available now (which wouldn't have been available earlier).
-6. **Knocking out**- The animals can be knocked out by fighting off with different equipment. When an animal reaches a low health the player can choose to knock it out. If the player continues to attack it and makes it health reach 0, the animal simply dies as it now does. Knocking out would have a similar effect like tranquilising, it would leave the animal in a vulnerable state where it can be fed and tamed easily.
+4. **Tranquiliser darts**- For animals that are hostile and attack when in proximity to the player, tranquiliser darts could be used to intoxicate and subdue the animal, leaving it in a vulnerable state where it can be fed and tamed easily.
+5. **Trap**- Animals that are timid or hostile either run away from the player or chase the player. A good idea is to trap the animals and then approach them when they are not in a position to run away or attack. An animal trapped in such a manner would now have the feed option available (which wouldn't have been available earlier).
+6. **Knocking out**- Animals can be knocked out by fighting them with different equipment. When an animal reaches low health, the player can choose to knock it out. If the player continues attacking and makes its health reach 0, the animal simply dies as it does now. Knocking out would have a similar effect to tranquilising: it leaves the animal in a vulnerable state where it can be fed and tamed easily.
 
-These options of **Feed**, **Pet**, **Knock Out**, **Poison** (selectively enabled) can be displayed in a radial menu that appears on `E` click on an animal. The radial menu can have a circular progressbar outside that also shows the taming progress.
+These options of **Feed**, **Pet**, **Knock Out**, **Poison** (selectively enabled) can be displayed in a radial menu that appears on `E` click on an animal. The radial menu can have a circular progress bar outside that also shows taming progress.
 
-Since methods like knocking out or hurting an animal before attempting to tame it seems odd. It can be made possible that the animal remembers only the player which hurt it. This would allow any other player (or even the same player in disguise) to befriend or tame the animal. Such an approach would be necessary only for hostile and aggressive animals and might also bring into picture multiplayer taming.
+Since methods like knocking out or hurting an animal before attempting to tame it seem odd, it can be made possible for the animal to remember only the player who hurt it. This would allow any other player (or even the same player in disguise) to befriend or tame the animal. Such an approach would be necessary only for hostile and aggressive animals and might also bring multiplayer taming into the picture.
 
 ### Animal Utilities
 1. **Mount for travel**- Some animals can be chosen as a mount to ride on and for fast travel. Animals would have different speeds, jump heights, stamina etc. Some animals would be suitable for short distance while others for long commutes. Some animals would be stronger than others making them a safer choice of travel. Additionally, some animals may be faster in the day and some faster at night.
@@ -177,7 +177,7 @@ Since methods like knocking out or hurting an animal before attempting to tame i
 9. **Guard animals**- Animals can be instructed to guard a location and attack all other players/animals that try to enter.
 10. **Combat**- Different animals can have different special combat abilities that protect the player from attackers.
 11. **Sea creatures**- Sea creatures can be used as a mount to cross oceans or for fishing. Some sea creatures can share their reserve of oxygen increasing the player's breathing capacity. Some sea creatures could be used to collect resources at the bottom of the sea like oil.
-12. **Companion**- An animal that simply follows you around so that you never feel lonely.
+12. **Companion**- An animal that simply follows you around so you never feel lonely (or at least less lonely when mining at 2 AM).
 
-A nice forum post by [Vaibhav Bajaj](http://forum.terasology.org/members/vaibhav-bajaj.1985/), last year's GCI student, talks about creating a Pets module and talks about taming at great detail [here](http://forum.terasology.org/threads/new-module-pets.1742/).
-Implementing taming in game is still a bonus item, probably something I'd get back to after I've checked off the main items. Next week should involve a start to all the puzzle work and making of the new gameplay module.
+A nice forum post by [Vaibhav Bajaj](http://forum.terasology.org/members/vaibhav-bajaj.1985/), last year's GCI student, talks about creating a Pets module and covers taming in great detail [here](http://forum.terasology.org/threads/new-module-pets.1742/).
+Implementing taming in game is still a bonus item, probably something I'd get back to after I've checked off the main items. Next week should involve starting the puzzle work and building the new gameplay module.

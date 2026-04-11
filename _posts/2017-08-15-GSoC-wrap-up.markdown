@@ -52,7 +52,7 @@ return $collapsiblecontent.is(":visible")   ? "- " : "+ ";
 
 </script>
 
-Finally it is time for wrapping up my GSoC project and along with it a highly eventful summer. It has been an amazing experience. I've learned a lot over the summer, spending countless days and nights in a row to add new things to this game. The community has been more than helpful. I couldn't have asked for more.
+Finally, it's time to wrap up my GSoC project and, with it, a highly eventful summer. It's been an amazing experience. I've learned a lot over these months, spending countless days and nights in a row adding new things to this game. The community has been more than helpful -- I couldn't have asked for more.
 
 This wrap up post links to all the work done over the summer. There have been a total of **72 PRs** and quite a few independent commits in the new modules I've created. With over **19,000 lines of code**, this summer has boosted my Github stats to a whole new level.
 
@@ -218,9 +218,9 @@ With the completion of this GSoC project making adventure assets like locked doo
 
 ### Wrapping it up
 
-Once again, I would like to thank all my mentors. My primary mentor, [Skylar 'skysom' Sommers](http://forum.terasology.org/members/skysom.1621/), for replying always within a splitsecond (save for the times when he forgets to hit the Send button :P). [Florian ‘flo’ Köberle](http://forum.terasology.org/members/florian.1335/), who was my secondary but went out of his way and functioned effectively as my primary. I got to learn a lot from flo regarding various aspects about the game. It would have been impossible to complete my project without his aid. [Xavier ‘xtariq’ Tariq](http://forum.terasology.org/members/xtariq.1697/), who was also my secondary mentor, helped me whenever I needed him. I'd like to specially thank [Rasmus 'cervator' Praestholm](http://forum.terasology.org/members/cervator.2/) here. Had he not been there that night in October, welcoming me on IRC and helping me set up my codebase, maybe I would have given up, moved on and never have done GSoC in the first place.
+Once again, I’d like to thank all my mentors. My primary mentor, [Skylar ‘skysom’ Sommers](http://forum.terasology.org/members/skysom.1621/), for always replying within a split second (save for the times he forgets to hit Send). [Florian ‘flo’ Köberle](http://forum.terasology.org/members/florian.1335/), who was technically my secondary but went out of his way and functioned as my primary in practice. I learned a ton from flo about the game’s inner workings. It would have been impossible to complete this project without his help. [Xavier ‘xtariq’ Tariq](http://forum.terasology.org/members/xtariq.1697/), also a secondary mentor, was always there when I needed him. And a special thank you to [Rasmus ‘cervator’ Praestholm](http://forum.terasology.org/members/cervator.2/) -- had he not been there that night in October, welcoming me on IRC and helping me set up my codebase, I might have given up and never done GSoC in the first place.
 
-All in all, it has been a thrilling summer. By this time I am familiar with a good part of the game's codebase. I would love to continue contributing, albeit in different capacities. Let's hope real life doesn't get in the way too much. Also, GCI is almost here and another storm's coming!
+All in all, it’s been a thrilling summer. By now, I’m familiar with a good chunk of the game’s codebase and would love to continue contributing in different capacities. Let’s hope real life doesn’t get in the way too much. GCI is almost here, and another storm’s coming!
 
 Here's a snap from one of the many exciting multiplayer play test sessions-
 
