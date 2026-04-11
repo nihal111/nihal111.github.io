@@ -31,18 +31,18 @@ $border-radius: 8px;
 
 // Dark theme
 [data-theme="dark"] {
-  --bg: #282828;
-  --bg-secondary: #3c3836;
-  --bg-tertiary: #504945;
-  --text-primary: #ebdbb2;
-  --text-secondary: #d5c4a1;
-  --text-tertiary: #bdae93;
-  --accent: #fabd2f;
-  --accent-hover: #fe8019;
-  --accent-light: #3c3836;
-  --border: #504945;
-  --border-light: #3c3836;
-  --code-bg: #3c3836;
+  --bg: #1b1d1e;
+  --bg-secondary: #232526;
+  --bg-tertiary: #2f3132;
+  --text-primary: #f8f8f2;
+  --text-secondary: #cfcfc2;
+  --text-tertiary: #75715e;
+  --accent: #ae81ff;
+  --accent-hover: #fd971f;
+  --accent-light: #2f3132;
+  --border: #3e3d32;
+  --border-light: #2f3132;
+  --code-bg: #272822;
   --shadow-sm: 0 1px 2px rgba(0,0,0,0.35);
   --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.45), 0 2px 4px -2px rgba(0,0,0,0.35);
   --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.55), 0 4px 6px -4px rgba(0,0,0,0.35);

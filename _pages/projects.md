@@ -8,7 +8,7 @@ permalink: /projects/
 A running catalog of things I've built, broken, and occasionally shipped.
 Here is the list of projects I own or have contributed to:
 
-### Recent
+### Recent (dusting off the keyboard at home with AI at my side)
 
 * [**AI Traffic Control**][AI Traffic Control]- A mobile-first control surface for managing terminal-native AI agent sessions on the go. Browser terminal layer over ttyd, persistent tmux sessions, provider usage telemetry, and hot-dial tiles to spawn repeatable agent flows. Built to replace the clumsy SSH-attach-inspect loop with something you can actually use while walking. Read more [here][ai-traffic-control-blog].
 
