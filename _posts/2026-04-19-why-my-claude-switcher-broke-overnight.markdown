@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Diving Deep Into Claude Code's Credential Rotation"
+title: "Dancing with Claude's Credentials"
 date: 2026-04-19
 comments: true
 tags:
