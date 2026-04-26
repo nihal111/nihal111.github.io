@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Dancing with Claude's Credentials"
-date: 2026-04-19
+date: 2026-04-25
 comments: true
 tags:
 - AI
@@ -11,107 +11,75 @@ tags:
 - OAuth
 ---
 
-*A follow-up to [yesterday's post](/2026/04/18/when-one-claude-subscription-isnt-enough.html) on rotating two Claude accounts. The switcher worked fine at first, then one morning both credentials were dead with an `invalid_grant` error. Fixing it once was easy. Fixing it properly — so it stays fixed while Claude CLI, MCP servers, IDE extensions, and stray tmux panes all silently rotate tokens behind your back — took the rest of the week and turned the switcher into something more like a credential warden.*
+*A follow-up to [last week's post](/2026/04/18/when-one-claude-subscription-isnt-enough.html) on rotating two Claude accounts. The switcher worked through the first day, then both credentials were dead by morning. Fixing it once was easy. Fixing it properly took the rest of the week, and most of that week was me letting the wrong loop keep running.*
 
-## The Problem
+## The wrong loop
 
-The switcher worked fine through that first day. I rotated between two accounts several times, everything responsive and smooth.
+I tapped switch the next morning and got `invalid_grant` from the refresh endpoint. Both accounts. No changes on my end, no re-login, no upgrades. Just dead.
 
-The next morning, I tapped switch and got an `invalid_grant` error from the refresh endpoint. Both accounts. Nothing had changed on my end: no re-login, no config touches, no upgrades. The credentials that worked last night were simply dead.
+I knew vaguely why this happens. Claude OAuth refresh tokens are single-use; they rotate on every refresh. Any other `claude` process (an MCP server, an IDE extension, a tmux pane I forgot about) that touches the Keychain while account B is active will rotate B's RT past the copy I have on disk. Switch back to B later and I'm installing a tombstone.
 
-I re-logged in to unblock my day, but "it works until it doesn't, and the fix is re-login" is exactly the friction I built the switcher to eliminate. So I went back in to figure out what was happening.
+The right fix is straightforward: keep the on-disk snapshot in lockstep with the Keychain that Claude keeps updating. The wrong fix, which I spent four days on, is everything else.
 
-## How Credential Rotation Works
+## How vibe coding builds a cliff
 
-Claude uses OAuth 2.0 where refresh tokens are single-use and rotate on every refresh. This is standard practice.
+I was vibe coding this with Claude. Each time the failure recurred, the next iteration shipped another sentry. A pre-swap identity check. A reactive refresh on `401`/`403`. Per-lineage cooldowns when `429`s started showing up. A per-alias refresh budget. An auto-quarantine when three lineages `429`'d in a window. A "needs recovery" badge on the profile card. A `cooldowns` CLI subcommand to list quarantines. A `clear-quarantine` command to override them.
 
-Your CLI stores `{ accessToken, refreshToken, expiresAt }`. The access token is short-lived (about an hour). When it's near expiry, the CLI POSTs the refresh token to the token endpoint and gets back a new pair: new access token and new refresh token. The old refresh token is revoked server-side immediately.
+To sharpen the iterations I fed the agent the reverse-engineered Claude Code mirror at [`yasasbanukaofficial/claude-code`](https://github.com/yasasbanukaofficial/claude-code), so it could compare upstream's OAuth client to mine line by line. Now the loop produced *better* harnesses. The diff between my refresh call and upstream's grew a list of small corrections (wrong endpoint host, wrong refresh skew, missing `scope` field), each of which the agent shipped, and each of which made the system more elaborate without making the failures stop.
 
-Now consider the setup I built. Each account has a `.cred` snapshot on disk, my stored copy of its `{ accessToken, refreshToken, expiresAt }`. When I switch from account A to account B, I install B's tokens into the Keychain; A's snapshot stays on disk, unchanged.
+By day three the dashboard had grown about a thousand lines of guardrail code, the defenses doc had four named failure modes and a Phase 3 quarantine flowchart, and the switch was still failing.
 
-Between switches, multiple `claude` processes may be running against the Keychain: an MCP server, a VS Code extension, maybe a tmux pane I forgot about. When one of them refreshes account B's token in the background, the `refreshToken` in my on-disk snapshot for B now points to a credential that's been revoked. I don't find out until the next time I run `use secondary` and the refresh fails with `invalid_grant`.
+## Diving in
 
-The failure mode is cache drift: my disk snapshot and the server's view of which refresh-token lineage is alive have diverged. The tokens I saved got rotated out from under me by a background process I didn't track.
+I took the agent off it and went looking myself. The log pattern was always the same: fresh login worked, the next few hours of switching worked, then `429 rate_limit_error` from the refresh endpoint, persistent, on every lineage, no `Retry-After` header, only ever from my code path. Claude Code's own background refreshes never tripped it.
+
+So I formed a hypothesis: the edge wasn't rate-limiting the token, it was rate-limiting the *caller*. Same token, same body, same endpoint, request envelope changed:
+
+```
+$ curl -H 'Content-Type: application/json' \
+       -d "$BODY" https://platform.claude.com/v1/oauth/token
+HTTP/2 429
+{"error": "rate_limit_error", ...}
+
+$ curl -H 'Content-Type: application/json' \
+       -H 'Accept: application/json, text/plain, */*' \
+       -H 'User-Agent: axios/1.7.7' \
+       -d "$BODY" https://platform.claude.com/v1/oauth/token
+HTTP/2 200
+{"access_token": "...", ...}
+```
+
+Two header lines of difference, `429` to `200`. Anthropic's edge fingerprints OAuth requests by client; bare `curl/*` gets bucketed as untrusted. I shipped the spoof and called it done.
+
+## The 200 was a lie
+
+It held for almost a day. Then I switched back to an account I hadn't touched since morning, opened Claude Code, and saw my 5-hour quota at 100%. I'd been on the other account all day. `claude /usage` confirmed it. I logged out and back in through Claude Code itself; the meter immediately reset to 0%.
+
+The `200` was technically correct: real token, valid JSON, parsed without complaint. But the bucket Anthropic put it in was tagged untrusted, and the meter Claude Code read for that account was the untrusted-bucket meter, pinned at the cap. The `429` had been the cheaper signal that the edge didn't recognize my client. The maxed-out quota was the more expensive signal. Both were saying the same thing: minting tokens from outside the allowlisted client doesn't actually work.
+
+## Don't refresh at all
+
+The only reason my dashboard ever called the refresh endpoint was to pre-validate a dormant profile's tokens before installing them. If I just install the dormant tokens as-is and let Claude Code refresh on its first API call, the whole class of problem disappears. The refresh endpoint is not the dashboard's to call.
+
+So the dashboard stopped calling it. The pre-swap identity check is now best-effort: try `/api/oauth/account` with whatever access token is in the blob, use the live response if the AT is fresh enough, and fall back to the byte-level email embedded in the blob plus the cached account UUID pin if it returns `401`/`403`. Either way the swap completes, Claude Code refreshes through its own allowlisted path on first use, and the credential lands in a clean attribution bucket.
+
+The other half of the fix was the piece I should have been investing in all week: a continuous mirror of the active Keychain entry to the on-disk `.cred`, gated by an identity check, running on every usage poll. With that running, the dormant `.cred` is always close to whatever Claude Code most recently rotated into the Keychain, and the switch is just a hot exchange of bytes.
 
 <div class="center">
-  <img src="/img/claude-credential-hot-swap-diagram.png" alt="Two-panel diagram: steady-state credential rotation with sync-daemon mirroring the live Keychain credential to disk; hot-swap moment showing capture-then-swap during a profile switch" />
-  <p><em>Steady state (top): the live credential rotates against Anthropic's server every few minutes; the sync-daemon mirrors each rotation back to the active profile's <code>.cred</code> on disk. Hot-swap (bottom): on <code>use secondary</code>, capture the latest tokens to disk, swap the dormant <code>.cred</code> into the Keychain, re-identify by email — Claude Code observes no discontinuity.</em></p>
+  <img src="/img/claude-credential-hot-swap-diagram.png" alt="Four-stage diagram of credential hot-swapping: Normal Operation (sync-daemon mirroring Keychain to disk), Capture Latest Tokens (freezing outgoing profile), Select New Profile (target ready to swap), Confirm Swap (new profile in Keychain, Claude Code observes no discontinuity)" />
+  <p><em>Stage 1: Normal operation with sync-daemon continuously mirroring the active Keychain credential to disk. Stage 2: On <code>use secondary</code>, capture the latest tokens from the current Keychain entry to the outgoing profile's <code>.cred</code>. Stage 3: Select the new profile and prepare to swap. Stage 4: Install the new profile into the Keychain; Claude Code reads the fresh credential on its next API call with no discontinuity.</em></p>
 </div>
 
-## Correcting Assumptions
+Removing the refresh call took about sixteen hundred lines out of the repo: the refresh function and its retry choreography, per-lineage cooldowns, per-alias quarantines, the "needs recovery" UI badge, the `cooldowns` and `clear-quarantine` CLI subcommands, and the runbook docs that all of it required. Every line was a defense against a class of failure the dashboard no longer creates.
 
-I also looked at the reverse-engineered Claude Code mirror at [`yasasbanukaofficial/claude-code`](https://github.com/yasasbanukaofficial/claude-code) and found a few assumptions I had gotten wrong. Nothing critical, but worth adapting to what the actual source uses.
+## What I take away
 
-I was hitting `console.anthropic.com/v1/oauth/token` instead of `platform.claude.com/v1/oauth/token`. Different authorization servers with different rate limits. I was also refreshing at 2-minute expiry skew instead of the upstream 5-minute window, and omitting the `scope` field from refresh requests (which is technically legal but different endpoints enforce it differently). None of these would have broken things entirely, but matching the actual source made the implementation cleaner.
+When a misbehaving system is one you're building with an agent that's eager to add layers, the instinct is to keep adding layers. Each layer fixes a specific log line. None of them fix the misframing.
 
-## Reactive Refresh for In-Flight Drift
+The misframing here was easy to miss because the agent was so productive inside it. The first refresh call had to happen on my side because the switcher needed to "validate" a dormant credential. From that one premise the agent extruded a whole runbook: cooldowns to handle the `429`s, budgets to handle the cooldowns, quarantines to handle the budgets, recovery commands to handle the quarantines. Every iteration shipped, every iteration was internally consistent, every iteration made the failure mode harder to see.
 
-Those three fixes reduced the drift. They didn't eliminate it. No amount of proactive refresh saves you from the case where *another* claude process rotated your refresh token between your last save and now. The token on disk is dead, you just don't know it yet.
+The actual fix was to delete the premise. Once I stopped calling that endpoint, the rest fell out of the codebase by itself.
 
-For that, I added a reactive path: when the live "is this access token still good" check against `api.anthropic.com/api/oauth/account` returns 401 or 403, attempt one refresh, then retry validation. Nine times out of ten, the access token is dead but the refresh token is still alive, the retry yields a fresh pair, and the user sees a `use <alias>` that "just works."
+A `200` is a guarantee that the surface contract was met. It is not a guarantee the resulting state is healthy. The honest fix wasn't a better spoof; it was admitting I shouldn't have been calling that endpoint at all.
 
-A small aside on *why* we validate against `api/oauth/account` and not `claude /status`: the CLI's status command reads `~/.claude.json`, which is a cache it writes itself. If the Keychain entry was swapped out underneath it, the JSON file is stale and `claude /status` will happily report the old account as still-authenticated. The only source of truth is the server — round-tripping the token to `api/oauth/account` and reading back the `email` field.
-
-## What Reactive Can't Save You From
-
-Reactive refresh handles one specific case: *access token dead, refresh token still alive*. The tenth time — when the refresh token itself has been rotated out — you can't reactive your way out of it. A dead RT gives `invalid_grant` both proactively and reactively.
-
-Once I started cataloguing the other ways the RT could die, the list was longer than I'd assumed:
-
-1. **Background rotation by a sibling claude process.** MCP server, IDE extension, a tmux pane ticking over. Any of them can call the token endpoint and consume my saved RT. The original overnight failure.
-2. **Manual `claude /logout && claude /login` into a different account.** The currently-active profile's RT is now on a lineage that's been revoked; its `.cred` on disk is dead. You discover this the next time you try to switch back.
-3. **Two claude processes racing on refresh.** First-to-rotate wins; the second holds an in-memory RT that no longer exists server-side. Both started with the same token; only one survives the race.
-4. **The alias just aged out.** Anthropic's RT lifetime is ~7 days. Don't touch a profile for eight days and its stored RT is stale on age alone.
-
-Reactive refresh covers case 1 when the access token is the only thing dead. Cases 2-4 need structural fixes, not retries.
-
-## The Safer Login Dance: `rotate`
-
-Case 2 was the one biting me the most. Any time I wanted to log in a fresh account, I reached for `claude /logout && claude /login` reflexively — and every time, that stranded whatever was currently active.
-
-So I added a `rotate <alias>` command that owns the whole logout-login-register cycle. The shape is: save and back up the active profile's tokens first, wipe the Keychain so no stray process can rotate them during the gap, guide you through logging in as the new account, and register on confirm or roll back to the frozen state on cancel. It's ceremonial, but when the CLI itself runs out-of-process, ceremony is the only way to make this operation atomic.
-
-`rotate` is the supported complement to `use`: `use` moves between already-registered aliases, `rotate` introduces a new one (or refreshes a stale one) without stranding the active one. I also taught `add` to detect external log-out-and-back-in and warn before clobbering anything, pointing at `rotate` as the safer flow.
-
-## Continuous Sync: Treating the Dashboard as a Warden
-
-The structural fix for cases 1 and 3 was to stop treating the disk snapshot as a frozen-at-register copy and start treating it as a trailing-but-near-live mirror of the Keychain (panel A in the diagram above).
-
-The dashboard was already polling Claude usage every couple minutes. Cheap addition: on every successful poll, snapshot the live Keychain blob back to the active profile's `.cred`. Gated by an identity check — because the right "should I save this rotation?" question is not "did the token change?" (background rotations are normal and we *want* to capture those) but "is this still the same account?". The former lets silent drift through; the latter is the invariant actually worth defending.
-
-With that running, the stored `.cred` for the active profile is always close to whatever the Keychain currently holds. By the time I run `use <other>`, the outgoing alias is effectively synced for free. The sync-daemon step inside `use` is now a belt-and-suspenders fallback for when the dashboard hasn't been running.
-
-The switch itself is a hot-swap (panel B): capture the active profile's latest tokens to disk, install the target profile's tokens into the Keychain, re-identify by email. Claude Code is reading the Keychain on each call, so it observes no discontinuity — just a new credential the next time it looks.
-
-## Making Drift Visible
-
-Silent drift is worse than loud drift, because you only find out when the switch fails. So the dashboard now publishes a staleness signal per profile, rendered as a small badge on the profile card. Active profile sitting green means the sync-daemon is healthy; inactive profile going yellow is a free hint to switch through it preemptively before its stored token ages out.
-
-There was a smaller UI papercut I hadn't even noticed: the usage cache has a throttle to keep us off the rate limit, and right after a switch it was serving the *outgoing* account's usage back into the card for the next few minutes. Fixed with a forced refresh on switch plus optimistic rendering from the target profile's saved cache — the card now matches reality from t=0 instead of lagging for a cycle.
-
-## What Changed
-
-In [AI Traffic Control](https://github.com/nihal111/ai-traffic-control):
-
-- Refresh now hits the right authorization server, at the right expiry skew, with the right scope claim — matching the upstream CLI.
-- Reactive refresh retries once on 401/403 and uses the server's identity endpoint as the source of truth rather than the CLI's own status cache.
-- The dashboard continuously syncs Keychain → active `.cred`, gated by an identity check so drift can't slip through silently.
-- `use` does the same sync on the outgoing profile as a fallback for when the dashboard isn't running.
-- New `rotate` command owns the logout-login-register cycle safely, with rollback on cancel.
-- `add` warns when the Keychain identity has drifted away from the active profile.
-- Profile card shows a per-alias staleness badge so drift is visible before it bites.
-- Post-switch cards no longer render the outgoing account's cached usage during the reconcile poll.
-
-Full mechanics are at [`docs/claude-account-switching.md`](https://github.com/nihal111/ai-traffic-control/blob/main/docs/claude-account-switching.md).
-
-## What This Taught Me
-
-Three things stick with me now.
-
-First: managing multiple rotating-token credentials in a sidecar is not a protocol problem, it's a synchronization problem. OAuth's semantics are straightforward. The actual complexity is "how do I keep on-disk snapshots in lockstep with a Keychain that other processes are silently rotating the bytes of." The answer turned out not to be a cleverer snapshot but a sync-daemon — the dashboard is now as much a credential warden as a status display.
-
-Second: identity is the right equality check, not bytes. The wrong instinct is "save when the token changed." The right instinct is "save every rotation of *this* account, loudly warn when the account itself changed out from under us." Every time I reached for byte comparison, I was building a silent-drift failure into the system.
-
-Third: having the source available, even as a reverse-engineered mirror, was a huge multiplier. It closed the loop from "something is wrong" to "here's the exact constant I had wrong" in an hour, and when I later needed to understand why `claude /status` lied after a Keychain swap, the answer was right there in the mirror's `invalidateOAuthCacheIfDiskChanged`.
-
-I said in yesterday's post that I'd rather own a switchboard than pay for a bigger meter. A switchboard only helps if I don't get my wires crossed. It turns out keeping the wires uncrossed isn't a one-time wiring job — it's an ongoing watch.
+I said in last week's post that I'd rather own a switchboard than pay for a bigger meter. A switchboard only helps if I don't get my wires crossed. It turns out keeping the wires uncrossed isn't even a wiring job; it's a discipline about which wires are actually mine to touch.
