@@ -5,5 +5,5 @@ permalink: /resume/
 redirect_from:
   - /Resume
 redirect_to:
-  - /docs/resume.pdf
+  - /docs/NihalSinghResume.pdf
 ---

@@ -15,7 +15,7 @@ I'm an open source enthusiast and a contributor and former organization member a
 
 I like to listen to rock music, specifically progressive rock, post-rock, classic and heavy metal. I enjoy science fiction and thrillers. Football fan, occasional gamer, lifelong builder, always learning.
 
-For a detailed list of my projects and achievements, check out my [CV][CV].
+For a detailed list of my projects and achievements, check out my [Resume][Resume].
 
 I write infrequently, check out my [blog].
 
@@ -24,5 +24,5 @@ I write infrequently, check out my [blog].
 [WnCC Website]: http://wncc-iitb.org/
 [projects]: /projects
 [hackathons]: /projects#hackathons
-[CV]: /cv
+[Resume]: /resume
 [blog]: /blog
