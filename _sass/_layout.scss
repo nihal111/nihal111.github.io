@@ -114,7 +114,7 @@ main {
 // ============================================
 .hero {
   margin-top: calc(#{$nav-height} + 4rem);
-  max-width: $content-width;
+  max-width: 880px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 1.5rem 4rem;
@@ -128,8 +128,8 @@ main {
 .hero-intro {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
-  margin-bottom: 2rem;
+  gap: 2.5rem;
+  margin-bottom: 3rem;
 
   @include mobile {
     flex-direction: column;
@@ -138,17 +138,21 @@ main {
   }
 }
 
+.hero-text {
+  min-width: 0;
+}
+
 .hero-avatar {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  border-radius: 12px;
   object-fit: cover;
   flex-shrink: 0;
-  border: 2px solid var(--border);
+  border: 3px solid var(--border);
 
   @include mobile {
-    width: 96px;
-    height: 96px;
+    width: 220px;
+    height: 220px;
   }
 }
 
@@ -198,10 +202,10 @@ main {
 }
 
 .hero-bio {
-  font-size: 1.1rem;
-  line-height: 1.8;
+  font-size: 1.05rem;
+  line-height: 1.7;
   color: var(--text-secondary);
-  margin-bottom: 2rem;
+  margin: 1rem 0 1.5rem;
   max-width: 600px;
 
   @include mobile {
